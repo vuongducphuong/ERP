@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_gia_thanh_tap_hop_chi_phi_truc_tiep_hop_dong_tham_so_form" model="ir.ui.view">
+            <field name="name">gia.thanh.tap.hop.chi.phi.truc.tiep.form</field>
+            <field name="model">gia.thanh.tap.hop.chi.phi.truc.tiep</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="tinh_gia_thanh_tap_hop_chi_phi_truc_tiep_hop_dong_form_view">
+                    <sheet>
+                        <group col="2">
+                            <field name="KY_TINH_GIA_THANH" readonly="1" colspan="2" />
+                            <field name="CHE_DO_KE_TOAN" invisible="1"/>
+                        </group>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="GIA_THANH_TAP_HOP_CHI_PHI_TRUC_TIEP_CHI_TIET_IDS" mode="tree">
+                                    <!-- <tree editable="false" create="false" options="{'group_by': ['HOP_DONG_BAN_ID']}"> -->
+                                    <tree editable="false" create="false" >
+                                        <field name="NGAY_HACH_TOAN" fixed_column="True" />
+                                        <field name="NGAY_CHUNG_TU" fixed_column="True" />
+                                        <field name="SO_CHUNG_TU" fixed_column="True" />
+                                        <field name="LOAI_CHUNG_TU" />
+                                        <field name="DIEN_GIAI" />
+                                        <field name="TK_CHI_PHI_ID" />
+                                        <field name="MA_KHOAN_MUC_CP" attrs="{'column_invisible': [('parent.CHE_DO_KE_TOAN', '!=', '48')]}"/>
+                                        <field name="TEN_KHOAN_MUC_CP" attrs="{'column_invisible': [('parent.CHE_DO_KE_TOAN', '!=', '48')]}"/>
+                                        <field name="SO_TIEN" sum="Tổng" />
+                                        <field name="HOP_DONG_BAN_ID" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button name="btn_nap" string="Nạp" class="oe_highlight" />
+                            <button name="button_cancel" string="Đóng" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_gia_thanh_tap_hop_chi_phi_truc_tiep_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Tập hợp chi phí trực tiếp</field>
+            <field name="res_model">gia.thanh.tap.hop.chi.phi.truc.tiep</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_gia_thanh_tap_hop_chi_phi_truc_tiep_hop_dong_tham_so_form" />
+        </record>
+        <record id="action_open_gia_thanh_tap_hop_chi_phi_truc_tiep_form" model="ir.actions.act_window">
+            <field name="name">Tập hợp chi phí trực tiếp</field>
+            <field name="res_model">gia.thanh.tap.hop.chi.phi.truc.tiep</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <!-- <menuitem name="Tập hợp chi phí trực tiếp" action="gia_thanh.open_gia_thanh_tap_hop_chi_phi_truc_tiep_tham_so_form" id="menu_gia_thanh_tap_hop_chi_phi_truc_tiep" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

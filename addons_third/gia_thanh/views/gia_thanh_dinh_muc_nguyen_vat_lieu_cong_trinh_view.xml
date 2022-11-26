@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_gia_thanh_dinh_muc_nguyen_vat_lieu_cong_trinh_form" model="ir.ui.view">
+            <field name="name">gia.thanh.dinh.muc.nguyen.vat.lieu.cong.trinh.form</field>
+            <field name="model">gia.thanh.dinh.muc.nguyen.vat.lieu.cong.trinh</field>
+            <field name="arch" type="xml">
+                <form string="Định mức nguyên vật liệu công trình">
+                    <sheet>
+                        <group col="12" string="Thông tin chung">
+                            <group col="12" colspan="12">
+                                <group col="4" colspan="4">
+                                    <field name="CONG_TRINH_ID" options="{'columns': ['MA_CONG_TRINH', 'TEN_CONG_TRINH'], 'strings': ['Mã công trình', 'Tên công trình'] ,'displays': ['MA_CONG_TRINH']}" required="True" colspan="4" string="Công trình (*)" />
+                                </group>
+                                <group col="8" colspan="8">
+                                    <field name="TU_NGAY" required="True" colspan="4" string="A/D từ ngày (*)" />
+                                    <field name="DEN_NGAY" required="True" colspan="4" />
+                                </group>
+                            </group>
+                            <group col="12" colspan="12">
+                                <field name="DIEN_GIAI" colspan="12" />
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Định mức nguyên vật liệu công trình">
+                                <field name="GIA_THANH_DINH_MUC_NGUYEN_VAT_LIEU_CONG_TRINH_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="STT" widget="handle" invisible="1" />
+                                        <field name="MA_NGUYEN_VAT_LIEU_ID" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã hàng', 'Tên hàng'] ,'displays': ['MA']}" />
+                                        <field name="TEN_NGUYEN_VAT_LIEU" />
+                                        <field name="DVT_ID" />
+                                        <field name="SO_LUONG_DINH_MUC" sum="Tổng" />
+                                        <field name="DON_GIA_DINH_MUC" />
+                                        <field name="THANH_TIEN" readonly="1" sum="Tổng" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <field name="ACTIVE" />
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_gia_thanh_dinh_muc_nguyen_vat_lieu_cong_trinh_tree" model="ir.ui.view">
+            <field name="name">gia.thanh.dinh.muc.nguyen.vat.lieu.cong.trinh.tree</field>
+            <field name="model">gia.thanh.dinh.muc.nguyen.vat.lieu.cong.trinh</field>
+            <field name="arch" type="xml">
+                <tree string="Định mức nguyên vật liệu công trình">
+                    <field name="CONG_TRINH_ID" string="Mã công trình" />
+                    <field name="TEN_CONG_TRINH" string="Tên công trình" />
+                    <field name="TU_NGAY" string="Từ ngày" />
+                    <field name="DEN_NGAY" string="Đến ngày" />
+                    <field name="DIEN_GIAI" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_gia_thanh_dinh_muc_nguyen_vat_lieu_cong_trinh" model="ir.actions.act_window">
+            <field name="name">Định mức nguyên vật liệu công trình</field>
+            <field name="res_model">gia.thanh.dinh.muc.nguyen.vat.lieu.cong.trinh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_gia_thanh_dinh_muc_nguyen_vat_lieu_cong_trinh_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_gia_thanh_dinh_muc_nguyen_vat_lieu_cong_trinh_tree" />
+            <field name="act_window_id" ref="open_menu_gia_thanh_dinh_muc_nguyen_vat_lieu_cong_trinh" />
+        </record>
+        <record id="action_gia_thanh_dinh_muc_nguyen_vat_lieu_cong_trinh_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_gia_thanh_dinh_muc_nguyen_vat_lieu_cong_trinh_form" />
+            <field name="act_window_id" ref="open_menu_gia_thanh_dinh_muc_nguyen_vat_lieu_cong_trinh" />
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

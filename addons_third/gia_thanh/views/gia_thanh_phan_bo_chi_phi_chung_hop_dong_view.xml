@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_gia_thanh_phan_bo_chi_phi_chung_hop_dong_form" model="ir.ui.view">
+            <field name="name">gia.thanh.tinh.gia.thanh.form</field>
+            <field name="model">gia.thanh.tinh.gia.thanh</field>
+            <field name="arch" type="xml">
+                <form string="Phân bổ chi phí chung" cloudify_js="tinh_gia_thanh_phan_bo_chi_phi_chung_hop_dong_form_view">
+                    <sheet>
+                        <group col="4">
+                            <field name="KY_TINH_GIA_THANH" readonly="1" colspan="2" />
+                            <button name="btn_lay_lai_du_lieu" string="Lấy lại dữ liệu" class="oe_highlight" colspan="2"  />
+                            <field name="KY_TINH_GIA_THANH_ONCHANGE" invisible="1" />
+                            <field name="ONCHANGE_CLICK_PHAN_BO" invisible="1" /> 
+                            <field name="LOAI_TINH_GIA_THANH" invisible="1" />
+                            <field name="CHE_DO_KE_TOAN" invisible="1" />
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1.Xác định chi phí phân bổ">
+                                <field name="GIA_THANH_XAC_DINH_CHI_PHI_PHAN_BO_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false">
+                                        <field name="TAI_KHOAN_ID" fixed_column="True" readonly="1" attrs="{'column_invisible': [('parent.CHE_DO_KE_TOAN', '!=', '15')]}"/>
+                                        <field name="TEN_TAI_KHOAN" readonly="1" attrs="{'column_invisible': [('parent.CHE_DO_KE_TOAN', '!=', '15')]}"/>
+                                        <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục', 'Tên khoản mục'], 'displays': ['MA_KHOAN_MUC_CP']}" fixed_column="True" readonly="1" attrs="{'column_invisible': [('parent.CHE_DO_KE_TOAN', '!=', '48')]}"/>
+                                        <field name="TEN_KHOAN_MUC_CP" readonly="1" attrs="{'column_invisible': [('parent.CHE_DO_KE_TOAN', '!=', '48')]}"/> 
+                                        <field name="TONG_SO_TIEN" sum="Tổng" readonly="1" />
+                                        <field name="SO_CHUA_PHAN_BO" sum="Tổng" readonly="1" />
+                                        <field name="PHAN_TRAM_PB_LAN_NAY" />
+                                        <field name="SO_PHAN_BO_LAN_NAY" sum="Tổng" />
+                                        <field name="TIEU_THUC_PHAN_BO" />
+                                        <field name="HOP_DONG_BAN_ID" string="Hợp đồng" widget='many2many_tags'/>
+                                        <!-- <field name="CHI_TIET_CHUNG_TU" readonly="1" /> -->
+                                    </tree>
+                                </field>
+                                <button id="btn_phan_bo" string="Phân bổ" class="oe_highlight" />
+                            </page>
+                        </notebook>
+                        <notebook>
+                            <page string="2.Kết quả phân bổ ">
+                                <field name="GIA_THANH_KET_QUA_PHAN_BO_CHI_TIET_IDS" mode="tree">
+                                    <tree has_border="true" editable="bottom" create="false" delete="false" options="{'header_struct': [['Tài khoản 621', ['TY_LE_PHAN_TRAM_621','SO_TIEN_621']],['Tài khoản 622', ['TY_LE_PHAN_TRAM_622','SO_TIEN_622']],['Tài khoản 6271', ['TY_LE_PHAN_TRAM_6271','SO_TIEN_6271']],['Tài khoản 6272', ['TY_LE_PHAN_TRAM_6272','SO_TIEN_6272']],['Tài khoản 6273', ['TY_LE_PHAN_TRAM_6273','SO_TIEN_6273']],['Tài khoản 6274', ['TY_LE_PHAN_TRAM_6274','SO_TIEN_6274']],['Tài khoản 6277', ['TY_LE_PHAN_TRAM_6277','SO_TIEN_6277']],['Tài khoản 6278', ['TY_LE_PHAN_TRAM_6278','SO_TIEN_6278']]]}">
+                                        <field name="HOP_DONG_BAN_ID" readonly="1" string="Số hợp đồng" />
+                                        <field name="NGAY_KY" readonly="1" />
+                                        <field name="TRICH_YEU" readonly="1" />
+
+                                        <field name="TY_LE_PHAN_TRAM_621" string="Tỷ lệ (%)" sum="Tổng" />
+                                        <field name="SO_TIEN_621" sum="Tổng" />
+
+                                        <field name="TY_LE_PHAN_TRAM_622" string="Tỷ lệ (%)" sum="Tổng" />
+                                        <field name="SO_TIEN_622" sum="Tổng" />
+
+                                        <field name="TY_LE_PHAN_TRAM_6271" string="Tỷ lệ (%)" sum="Tổng" />
+                                        <field name="SO_TIEN_6271" sum="Tổng" />
+
+                                        <field name="TY_LE_PHAN_TRAM_6272" string="Tỷ lệ (%)" sum="Tổng" />
+                                        <field name="SO_TIEN_6272" sum="Tổng" />
+
+                                        <field name="TY_LE_PHAN_TRAM_6273" string="Tỷ lệ (%)" sum="Tổng" />
+                                        <field name="SO_TIEN_6273" sum="Tổng" />
+
+                                        <field name="TY_LE_PHAN_TRAM_6274" string="Tỷ lệ (%)" sum="Tổng" />
+                                        <field name="SO_TIEN_6274" sum="Tổng" />
+
+                                        <field name="TY_LE_PHAN_TRAM_6277" string="Tỷ lệ (%)" sum="Tổng" />
+                                        <field name="SO_TIEN_6277" sum="Tổng" />
+                                        <field name="TY_LE_PHAN_TRAM_6278" string="Tỷ lệ (%)" sum="Tổng" />
+                                        <field name="SO_TIEN_6278" sum="Tổng" />
+                                        
+                                        <field name="TONG_CHI_PHI" readonly="1" sum="Tổng" />
+                                        <field name="KY_TINH_GIA_THANH_ID" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="aaaaaaaaaaaaa" invisible="1">
+                                <field name="GIA_THANH_CHI_TIET_CHUNG_TU_PHAN_BO_CHI_PHI_CHUNG_IDS" mode="tree">
+                                <tree editable="bottom" create="false" delete="false">
+                                    <field name="NGAY_CHUNG_TU"  />
+                                    <field name="SO_CHUNG_TU"  />
+                                    <field name="LOAI_CHUNG_TU"  />
+                                    <field name="DIEN_GIAI"  />
+                                    <field name="TK_CHI_PHI_ID"  />
+                                    <field name="SO_TIEN"  />
+                                    <field name="SO_CHUA_PHAN_BO"  />
+                                    <field name="SO_PHAN_BO_LAN_NAY" />
+                                    <field name="TY_LE_PHAN_BO" />
+                                    <field name="ID_GOC"  />
+                                    <field name="MODEL_GOC"  />
+                                    <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục', 'Tên khoản mục'], 'displays': ['MA_KHOAN_MUC_CP']}"  />
+                                    <field name="NGAY_HACH_TOAN"  />
+                                    <field name="SO_TAI_KHOAN_CON_LAI"  />
+                                    <field name="SO_TAI_KHOAN_TONG_TIEN"  />
+                                </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button id="btn_luu" string="Lưu" class="btn btn-primary" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" /> 
+                        </footer>
+                    </sheet>
+                    <!-- <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div> -->
+                </form>
+            </field>
+        </record>
+        <record id="open_menu_gia_thanh_phan_bo_chi_phi_chung_cong_trinh" model="ir.actions.act_window">
+            <field name="name">Phân bổ chi phí chung</field>
+            <field name="res_model">gia.thanh.tinh.gia.thanh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <record id="action_gia_thanh_phan_bo_chi_phi_chung_cong_trinh_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_gia_thanh_phan_bo_chi_phi_chung_hop_dong_form" />
+            <field name="act_window_id" ref="open_menu_gia_thanh_phan_bo_chi_phi_chung_cong_trinh" />
+        </record>
+        <!-- <menuitem name="Phân bổ chi phí chung" action="gia_thanh.open_menu_gia_thanh_phan_bo_chi_phi_chung_cong_trinh" id="menu_gia_thanh_phan_bo_chi_phi_chung" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

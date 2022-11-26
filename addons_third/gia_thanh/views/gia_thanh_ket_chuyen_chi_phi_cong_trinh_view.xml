@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_gia_thanh_ket_chuyen_chi_phi_cong_trinh_form1" model="ir.ui.view">
+            <field name="name">gia.thanh.ket.chuyen.chi.phi.cong.trinh.form</field>
+            <field name="model">gia.thanh.ket.chuyen.chi.phi</field>
+            <field name="arch" type="xml">
+                <form string="Kết chuyển chi phí" cloudify_js="ket_chuyen_chi_phi_cong_trinh_form_view">
+                    <header>
+                        <button id="btn_duyet" string="Duyệt" class="oe_highlight" />
+                        <button name="action_ghi_so" string="Ghi sổ" type="object" class="oe_highlight" states="chua_ghi_so" />
+                        <button id="action_bo_ghi_so" string="Bỏ ghi" states="da_ghi_so" />
+                        <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so" />
+                    </header>
+                    <sheet>
+                        <group col="6">
+                            <group col="4" colspan="4" string="Thông tin chung">
+                                <field name="KY_TINH_GIA_THANH" readonly="1" colspan="4" />
+                                <field name="DIEN_GIAI" colspan="4" />
+                                <field name="THAM_CHIEU" readonly="1" colspan="4" />
+                                <button name="btn_lay_lai_du_lieu" string="Lấy lại dữ liệu" class="oe_highlight" />
+                                <field name="LOAI_CHUNG_TU" invisible="1" />
+                                <field name="LOAI_KET_CHUYEN_CHI_PHI" invisible="1" />
+                            </group>
+                            <group colspan="2" string="Chứng từ">
+                                <field name="NGAY_HACH_TOAN" />
+                                <field name="NGAY_CHUNG_TU" />
+                                <field name="SO_CHUNG_TU" />
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Hạch toán">
+                                <field name="GIA_THANH_KET_CHUYEN_CHI_PHI_HACH_TOAN_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="STT" widget="handle" invisible="1" />
+                                        <!-- <field name="MA_CONG_TRINH_ID" fixed_column="True" /> -->
+                                        <field name="MA_CONG_TRINH_ID" />
+                                        <field name="TEN_CONG_TRINH" readonly="1" />
+                                        <field name="LOAI_CONG_TRINH" readonly="1" />
+                                        <field name="DIEN_GIAI" />
+                                        <field name="TK_NO_ID" />
+                                        <field name="TK_CO_ID" />
+                                        <field name="SO_TIEN" sum="Tổng" />
+                                        <field name="MA_THONG_KE_ID" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_gia_thanh_ket_chuyen_chi_phi_cong_trinh_tree1" model="ir.ui.view">
+            <field name="name">gia.thanh.ket.chuyen.chi.phi.cong.trinh.tree</field>
+            <field name="model">gia.thanh.ket.chuyen.chi.phi</field>
+            <field name="arch" type="xml">
+                <tree string="Kết chuyển chi phí" cloudify_js="ket_chuyen_chi_phi_cong_trinh_list_view">
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="KY_TINH_GIA_THANH" />
+                    <field name="DIEN_GIAI" />
+                    <field name="SO_TIEN" sum="Tổng" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_gia_thanh_ket_chuyen_chi_phi_cong_trinh1" model="ir.actions.act_window">
+            <field name="name">Kết chuyển chi phí</field>
+            <field name="res_model">gia.thanh.ket.chuyen.chi.phi</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'default_LOAI_CHUNG_TU': 4081 }</field>
+            <field name="domain">[('LOAI_CHUNG_TU', '=', 4081)]</field>
+        </record>
+        <record id="action_gia_thanh_ket_chuyen_chi_phi_cong_trinh_tree1" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_gia_thanh_ket_chuyen_chi_phi_cong_trinh_tree1"/>
+            <field name="act_window_id" ref="open_menu_gia_thanh_ket_chuyen_chi_phi_cong_trinh1" />
+        </record>
+        <record id="action_gia_thanh_ket_chuyen_chi_phi_cong_trinh_form1" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_gia_thanh_ket_chuyen_chi_phi_cong_trinh_form1" />
+            <field name="act_window_id" ref="open_menu_gia_thanh_ket_chuyen_chi_phi_cong_trinh1" />
+        </record>
+        
+    </data>
+    <data noupdate="1">
+        <record id="sequence_gia_thanh_ket_chuyen_chi_phi_1" model="ir.sequence">
+            <field name="name">gia_thanh_ket_chuyen_chi_phi SO_CHUNG_TU sequence</field>
+            <field name="code">gia_thanh_ket_chuyen_chi_phi_SO_CHUNG_TU</field>
+            <field name="prefix">KC</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

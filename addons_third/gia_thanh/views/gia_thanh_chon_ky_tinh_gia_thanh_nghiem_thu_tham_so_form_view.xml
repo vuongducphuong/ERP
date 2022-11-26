@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_gia_thanh_chon_ky_tinh_gia_thanh_cong_trinh_form_tham_so_form" model="ir.ui.view">
+            <field name="name">gia.thanh.chon.ky.tinh.gia.thanh.form.form</field>
+            <field name="model">gia.thanh.chon.ky.tinh.gia.thanh.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_ky_tinh_gia_thanh_nghiem_thu_cong_trinh_form_view">
+                    <sheet>
+                        <group col="6">
+                            <field name="KY_TINH_GIA_THANH" colspan="4" readonly="1" />
+                            <button name="btn_lay_du_lieu" string="Lấy dữ liệu" class="oe_highlight" colspan="2" />
+							<field name="KY_TINH_GIA_THANH_ID" colspan="4" invisible="1" />
+                            <field name="TU_NGAY" colspan="4" invisible="1" />
+                            <field name="DEN_NGAY" colspan="4" invisible="1" />
+                        </group>
+                        <br />
+                        <span>Vui lòng nhấn "Lấy dữ liệu" để lấy số liệu cho "Doanh thu" và "Số chưa nghiệm thu"</span>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="GIA_THANH_CHON_KY_TINH_GIA_THANH_FORM_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                        <field name="MA_CONG_TRINH_ID" />
+                                        <field name="TEN_CONG_TRINH" />
+                                        <field name="DOANH_THU" sum="Tổng" />
+                                        <field name="SO_CHUA_NGHIEM_THU" sum="Tổng" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_gia_thanh_chon_ky_tinh_gia_thanh_cong_trinh_form_tham_so_form1" model="ir.ui.view">
+            <field name="name">gia.thanh.chon.ky.tinh.gia.thanh.form.form</field>
+            <field name="model">gia.thanh.chon.ky.tinh.gia.thanh.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_ky_tinh_gia_thanh_nghiem_thu_cong_trinh_form_tham_so_view">
+                    <sheet>
+                        <group col="6">
+                            <field name="KY_TINH_GIA_THANH_ID" colspan="4" required="1" />
+                            <button name="btn_lay_du_lieu" string="Lấy dữ liệu" class="oe_highlight" colspan="2" />
+                        </group>
+                        <br />
+                        <span>Vui lòng nhấn "Lấy dữ liệu" để lấy số liệu cho "Doanh thu" và "Số chưa nghiệm thu"</span>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="GIA_THANH_CHON_KY_TINH_GIA_THANH_FORM_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                        <field name="MA_CONG_TRINH_ID" />
+                                        <field name="TEN_CONG_TRINH" />
+                                        <field name="DOANH_THU" sum="Tổng" />
+                                        <field name="SO_CHUA_NGHIEM_THU" sum="Tổng" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_gia_thanh_chon_ky_tinh_gia_thanh_don_hang_form_tham_so_form" model="ir.ui.view">
+            <field name="name">gia.thanh.chon.ky.tinh.gia.thanh.form.form</field>
+            <field name="model">gia.thanh.chon.ky.tinh.gia.thanh.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_ky_tinh_gia_thanh_nghiem_thu_don_hang_form_view">
+                    <sheet>
+                        <group col="6">
+                            <field name="KY_TINH_GIA_THANH" colspan="4" readonly="1" />
+                            <button name="btn_lay_du_lieu" string="Lấy dữ liệu" class="oe_highlight" colspan="2" />
+							<field name="KY_TINH_GIA_THANH_ID" colspan="4" invisible="1" />
+                        </group>
+                        <br />
+                        <span>Vui lòng nhấn "Lấy dữ liệu" để lấy số liệu cho "Doanh thu" và "Số chưa nghiệm thu"</span>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="GIA_THANH_CHON_KY_TINH_GIA_THANH_FORM_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                        <field name="SO_DON_HANG_ID" />
+                                        <field name="NGAY_DON_HANG" />
+                                        <field name="KHACH_HANG" />
+                                        <field name="DOANH_THU" sum="Tổng" />
+                                        <field name="SO_CHUA_NGHIEM_THU" sum="Tổng" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_gia_thanh_chon_ky_tinh_gia_thanh_don_hang_form_tham_so_form1" model="ir.ui.view">
+            <field name="name">gia.thanh.chon.ky.tinh.gia.thanh.form.form</field>
+            <field name="model">gia.thanh.chon.ky.tinh.gia.thanh.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_ky_tinh_gia_thanh_nghiem_thu_don_hang_form_tham_so_view">
+                    <sheet>
+                        <group col="6">
+                            <field name="KY_TINH_GIA_THANH_ID" colspan="4" required="1" />
+                            <button name="btn_lay_du_lieu" string="Lấy dữ liệu" class="oe_highlight" colspan="2" />
+                        </group>
+                        <br />
+                        <span>Vui lòng nhấn "Lấy dữ liệu" để lấy số liệu cho "Doanh thu" và "Số chưa nghiệm thu"</span>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="GIA_THANH_CHON_KY_TINH_GIA_THANH_FORM_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                        <field name="SO_DON_HANG_ID" />
+                                        <field name="NGAY_DON_HANG" />
+                                        <field name="KHACH_HANG" />
+                                        <field name="DOANH_THU" sum="Tổng" />
+                                        <field name="SO_CHUA_NGHIEM_THU" sum="Tổng" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_gia_thanh_chon_ky_tinh_gia_thanh_hop_dong_form_tham_so_form" model="ir.ui.view">
+            <field name="name">gia.thanh.chon.ky.tinh.gia.thanh.form.form</field>
+            <field name="model">gia.thanh.chon.ky.tinh.gia.thanh.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_ky_tinh_gia_thanh_nghiem_thu_hop_dong_form_view">
+                    <sheet>
+                        <group col="6">
+                            <field name="KY_TINH_GIA_THANH" colspan="4" readonly="1" />
+                            <button name="btn_lay_du_lieu" string="Lấy dữ liệu" class="oe_highlight" colspan="2" />
+                            <field name="KY_TINH_GIA_THANH_ID" colspan="4" invisible="1" />
+                        </group>
+                        <br />
+                        <span>Vui lòng nhấn "Lấy dữ liệu" để lấy số liệu cho "Doanh thu" và "Số chưa nghiệm thu"</span>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="GIA_THANH_CHON_KY_TINH_GIA_THANH_FORM_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                        <field name="HOP_DONG_BAN_ID" />
+                                        <field name="NGAY_KY" />
+                                        <field name="TRICH_YEU" />
+                                        <field name="DOANH_THU" sum="Tổng" />
+                                        <field name="SO_CHUA_NGHIEM_THU" sum="Tổng" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_gia_thanh_chon_ky_tinh_gia_thanh_hop_dong_form_tham_so_form1" model="ir.ui.view">
+            <field name="name">gia.thanh.chon.ky.tinh.gia.thanh.form.form</field>
+            <field name="model">gia.thanh.chon.ky.tinh.gia.thanh.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_ky_tinh_gia_thanh_nghiem_thu_hop_dong_form_tham_so_view">
+                    <sheet>
+                        <group col="6">
+                            <field name="KY_TINH_GIA_THANH_ID" colspan="4" required="1" />
+                            <button name="btn_lay_du_lieu" string="Lấy dữ liệu" class="oe_highlight" colspan="2" />
+                        </group>
+                        <br />
+                        <span>Vui lòng nhấn "Lấy dữ liệu" để lấy số liệu cho "Doanh thu" và "Số chưa nghiệm thu"</span>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="GIA_THANH_CHON_KY_TINH_GIA_THANH_FORM_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                        <field name="HOP_DONG_BAN_ID" />
+                                        <field name="NGAY_KY" />
+                                        <field name="TRICH_YEU" />
+                                        <field name="DOANH_THU" sum="Tổng" />
+                                        <field name="SO_CHUA_NGHIEM_THU" sum="Tổng" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+    </data>
+    <data noupdate="1"></data>
+</odoo>
