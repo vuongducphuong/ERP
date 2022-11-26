@@ -1,0 +1,804 @@
+2022-11-25 17:36:14,256 15152 INFO ? odoo: Odoo version 16.0-20221124 
+2022-11-25 17:36:14,256 15152 INFO ? odoo: Using configuration file at C:\Program Files\Odoo16\server\odoo.conf 
+2022-11-25 17:36:14,256 15152 INFO ? odoo: addons paths: ['C:\\Program Files\\Odoo16\\server\\odoo\\addons', 'c:\\users\\vuong\\appdata\\local\\openerp s.a\\odoo\\addons\\16.0', 'c:\\program files\\odoo16\\server\\odoo\\addons'] 
+2022-11-25 17:36:14,256 15152 INFO ? odoo: database: openpg@localhost:5432 
+2022-11-25 17:36:14,748 15152 INFO ? odoo.addons.base.models.ir_actions_report: A package may be missing to print Data Matrix barcodes: pylibdmtx or libdmtx. 
+2022-11-25 17:36:14,784 15152 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo16\thirdparty\wkhtmltopdf.exe 
+2022-11-25 17:36:15,776 15152 INFO ? odoo.service.server: Initiating shutdown 
+2022-11-25 17:36:15,776 15152 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2022-11-25 17:36:16,815 23832 INFO ? odoo: Odoo version 16.0-20221124 
+2022-11-25 17:36:16,816 23832 INFO ? odoo: Using configuration file at C:\Program Files\Odoo16\server\odoo.conf 
+2022-11-25 17:36:16,816 23832 INFO ? odoo: addons paths: ['C:\\Program Files\\Odoo16\\server\\odoo\\addons', 'c:\\users\\vuong\\appdata\\local\\openerp s.a\\odoo\\addons\\16.0', 'c:\\program files\\odoo16\\server\\odoo\\addons'] 
+2022-11-25 17:36:16,816 23832 INFO ? odoo: database: openpg@localhost:5432 
+2022-11-25 17:36:16,888 23832 INFO ? odoo.addons.base.models.ir_actions_report: A package may be missing to print Data Matrix barcodes: pylibdmtx or libdmtx. 
+2022-11-25 17:36:16,893 23832 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo16\thirdparty\wkhtmltopdf.exe 
+2022-11-25 17:36:18,321 23832 INFO ? odoo.service.server: HTTP service (werkzeug) running on PC:8069 
+2022-11-25 17:36:21,134 23832 INFO ? odoo.sql_db: Connection to the database failed 
+2022-11-25 17:36:25,261 23832 INFO ? odoo.sql_db: Connection to the database failed 
+2022-11-25 17:47:38,305 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:47:38] "GET / HTTP/1.1" 303 - 1 0.002 0.034
+2022-11-25 17:47:38,358 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:47:38] "GET /web HTTP/1.1" 303 - 2 0.002 0.048
+2022-11-25 17:47:41,613 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:47:41] "GET /web/database/selector HTTP/1.1" 200 - 2 0.002 3.093
+2022-11-25 17:48:24,528 23832 INFO None odoo.service.db: Create database `ABCCompany`. 
+2022-11-25 17:48:25,537 23832 INFO ABCCompany odoo.modules.loading: loading 1 modules... 
+2022-11-25 17:48:25,537 23832 INFO ABCCompany odoo.modules.loading: Loading module base (1/1) 
+2022-11-25 17:48:25,549 23832 INFO ABCCompany odoo.modules.registry: module base: creating or updating database tables 
+2022-11-25 17:48:25,888 23832 INFO ABCCompany odoo.models: Prepare computation of ir.module.module.menus_by_module 
+2022-11-25 17:48:25,889 23832 INFO ABCCompany odoo.models: Prepare computation of ir.module.module.reports_by_module 
+2022-11-25 17:48:25,889 23832 INFO ABCCompany odoo.models: Prepare computation of ir.module.module.views_by_module 
+2022-11-25 17:48:26,015 23832 INFO ABCCompany odoo.models: Prepare computation of res.partner.user_id 
+2022-11-25 17:48:26,016 23832 INFO ABCCompany odoo.models: Prepare computation of res.partner.commercial_partner_id 
+2022-11-25 17:48:26,016 23832 INFO ABCCompany odoo.models: Prepare computation of res.partner.display_name 
+2022-11-25 17:48:26,016 23832 INFO ABCCompany odoo.models: Prepare computation of res.partner.company_registry 
+2022-11-25 17:48:26,016 23832 INFO ABCCompany odoo.models: Prepare computation of res.partner.commercial_company_name 
+2022-11-25 17:48:26,016 23832 INFO ABCCompany odoo.models: Prepare computation of res.partner.partner_share 
+2022-11-25 17:48:26,063 23832 INFO ABCCompany odoo.models: Prepare computation of res.currency.decimal_places 
+2022-11-25 17:48:26,091 23832 INFO ABCCompany odoo.models: Prepare computation of res.company.logo_web 
+2022-11-25 17:48:26,120 23832 INFO ABCCompany odoo.models: Prepare computation of res.users.signature 
+2022-11-25 17:48:26,120 23832 INFO ABCCompany odoo.models: Prepare computation of res.users.share 
+2022-11-25 17:48:27,199 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res_bank.xml 
+2022-11-25 17:48:27,207 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res.lang.csv 
+2022-11-25 17:48:27,236 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res_lang_data.xml 
+2022-11-25 17:48:27,252 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res_partner_data.xml 
+2022-11-25 17:48:27,285 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res_company_data.xml 
+2022-11-25 17:48:27,297 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res_users_data.xml 
+2022-11-25 17:48:27,722 23832 INFO ABCCompany odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2022-11-25 17:48:27,729 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res_currency_data.xml 
+2022-11-25 17:48:27,913 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res_country_data.xml 
+2022-11-25 17:48:28,112 23832 INFO ABCCompany odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2022-11-25 17:48:28,120 23832 INFO ABCCompany odoo.modules.loading: loading base/data/ir_config_parameter_data.xml 
+2022-11-25 17:48:28,126 23832 INFO ABCCompany odoo.modules.loading: loading base/security/base_groups.xml 
+2022-11-25 17:48:28,240 23832 INFO ABCCompany odoo.modules.loading: loading base/security/base_security.xml 
+2022-11-25 17:48:28,291 23832 INFO ABCCompany odoo.modules.loading: loading base/views/base_menus.xml 
+2022-11-25 17:48:28,341 23832 INFO ABCCompany odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2022-11-25 17:48:28,358 23832 INFO ABCCompany odoo.modules.loading: loading base/views/res_config_views.xml 
+2022-11-25 17:48:28,365 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res.country.state.csv 
+2022-11-25 17:48:28,649 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2022-11-25 17:48:28,704 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_asset_views.xml 
+2022-11-25 17:48:28,714 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_config_parameter_views.xml 
+2022-11-25 17:48:28,724 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_cron_views.xml 
+2022-11-25 17:48:28,746 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml 
+2022-11-25 17:48:28,757 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_filters_views.xml 
+2022-11-25 17:48:28,768 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_mail_server_views.xml 
+2022-11-25 17:48:28,780 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_model_views.xml 
+2022-11-25 17:48:28,854 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_attachment_views.xml 
+2022-11-25 17:48:28,869 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_rule_views.xml 
+2022-11-25 17:48:28,884 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_sequence_views.xml 
+2022-11-25 17:48:28,897 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_ui_menu_views.xml 
+2022-11-25 17:48:28,910 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_ui_view_views.xml 
+2022-11-25 17:48:28,940 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_default_views.xml 
+2022-11-25 17:48:28,952 23832 INFO ABCCompany odoo.modules.loading: loading base/data/ir_cron_data.xml 
+2022-11-25 17:48:28,957 23832 INFO ABCCompany odoo.modules.loading: loading base/report/ir_model_report.xml 
+2022-11-25 17:48:28,962 23832 INFO ABCCompany odoo.modules.loading: loading base/report/ir_model_templates.xml 
+2022-11-25 17:48:28,968 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_logging_views.xml 
+2022-11-25 17:48:28,979 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml 
+2022-11-25 17:48:28,990 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_module_views.xml 
+2022-11-25 17:48:29,026 23832 INFO ABCCompany odoo.modules.loading: loading base/data/ir_module_category_data.xml 
+2022-11-25 17:48:29,059 23832 INFO ABCCompany odoo.modules.loading: loading base/data/ir_module_module.xml 
+2022-11-25 17:48:29,093 23832 INFO ABCCompany odoo.modules.loading: loading base/report/ir_module_reports.xml 
+2022-11-25 17:48:29,097 23832 INFO ABCCompany odoo.modules.loading: loading base/report/ir_module_report_templates.xml 
+2022-11-25 17:48:29,102 23832 INFO ABCCompany odoo.modules.loading: loading base/wizard/base_module_update_views.xml 
+2022-11-25 17:48:29,110 23832 INFO ABCCompany odoo.modules.loading: loading base/wizard/base_language_install_views.xml 
+2022-11-25 17:48:29,120 23832 INFO ABCCompany odoo.modules.loading: loading base/wizard/base_import_language_views.xml 
+2022-11-25 17:48:29,128 23832 INFO ABCCompany odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml 
+2022-11-25 17:48:29,143 23832 INFO ABCCompany odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml 
+2022-11-25 17:48:29,150 23832 INFO ABCCompany odoo.modules.loading: loading base/wizard/base_export_language_views.xml 
+2022-11-25 17:48:29,158 23832 INFO ABCCompany odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml 
+2022-11-25 17:48:29,167 23832 INFO ABCCompany odoo.modules.loading: loading base/data/ir_actions_data.xml 
+2022-11-25 17:48:29,172 23832 INFO ABCCompany odoo.modules.loading: loading base/data/ir_demo_failure_data.xml 
+2022-11-25 17:48:29,179 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_profile_views.xml 
+2022-11-25 17:48:29,195 23832 INFO ABCCompany odoo.modules.loading: loading base/views/res_company_views.xml 
+2022-11-25 17:48:29,212 23832 INFO ABCCompany odoo.modules.loading: loading base/views/res_lang_views.xml 
+2022-11-25 17:48:29,224 23832 INFO ABCCompany odoo.modules.loading: loading base/views/res_partner_views.xml 
+2022-11-25 17:48:29,281 23832 INFO ABCCompany odoo.modules.loading: loading base/views/res_bank_views.xml 
+2022-11-25 17:48:29,300 23832 INFO ABCCompany odoo.modules.loading: loading base/views/res_country_views.xml 
+2022-11-25 17:48:29,321 23832 INFO ABCCompany odoo.modules.loading: loading base/views/res_currency_views.xml 
+2022-11-25 17:48:29,346 23832 INFO ABCCompany odoo.modules.loading: loading base/views/res_users_views.xml 
+2022-11-25 17:48:29,406 23832 INFO ABCCompany odoo.modules.loading: loading base/views/ir_property_views.xml 
+2022-11-25 17:48:29,417 23832 INFO ABCCompany odoo.modules.loading: loading base/views/res_config_settings_views.xml 
+2022-11-25 17:48:29,423 23832 INFO ABCCompany odoo.modules.loading: loading base/views/report_paperformat_views.xml 
+2022-11-25 17:48:29,436 23832 INFO ABCCompany odoo.modules.loading: loading base/views/onboarding_views.xml 
+2022-11-25 17:48:29,456 23832 INFO ABCCompany odoo.modules.loading: loading base/security/ir.model.access.csv 
+2022-11-25 17:48:29,507 23832 INFO ABCCompany odoo.modules.loading: Module base: loading demo 
+2022-11-25 17:48:29,507 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res_company_demo.xml 
+2022-11-25 17:48:29,513 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res_users_demo.xml 
+2022-11-25 17:48:30,092 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res_partner_bank_demo.xml 
+2022-11-25 17:48:30,097 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res_currency_rate_demo.xml 
+2022-11-25 17:48:30,201 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res_bank_demo.xml 
+2022-11-25 17:48:30,206 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res_partner_demo.xml 
+2022-11-25 17:48:30,340 23832 INFO ABCCompany odoo.modules.loading: loading base/data/res_partner_image_demo.xml 
+2022-11-25 17:48:30,711 23832 INFO ABCCompany odoo.modules.loading: Module base loaded in 5.17s, 8965 queries (+8965 other) 
+2022-11-25 17:48:30,711 23832 INFO ABCCompany odoo.modules.loading: 1 modules loaded in 5.17s, 8965 queries (+8965 extra) 
+2022-11-25 17:48:30,730 23832 INFO ABCCompany odoo.modules.loading: updating modules list 
+2022-11-25 17:48:30,730 23832 INFO ABCCompany odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-11-25 17:48:30,946 23832 INFO ABCCompany odoo.modules.loading: loading 8 modules... 
+2022-11-25 17:48:30,946 23832 INFO ABCCompany odoo.modules.loading: Loading module web (2/8) 
+2022-11-25 17:48:30,959 23832 INFO ABCCompany odoo.modules.registry: module web: creating or updating database tables 
+2022-11-25 17:48:31,203 23832 INFO ABCCompany odoo.modules.loading: loading web/security/ir.model.access.csv 
+2022-11-25 17:48:31,211 23832 INFO ABCCompany odoo.modules.loading: loading web/views/webclient_templates.xml 
+2022-11-25 17:48:31,251 23832 INFO ABCCompany odoo.modules.loading: loading web/views/report_templates.xml 
+2022-11-25 17:48:31,296 23832 INFO ABCCompany odoo.modules.loading: loading web/views/base_document_layout_views.xml 
+2022-11-25 17:48:31,309 23832 INFO ABCCompany odoo.modules.loading: loading web/views/speedscope_template.xml 
+2022-11-25 17:48:31,316 23832 INFO ABCCompany odoo.modules.loading: loading web/views/lazy_assets.xml 
+2022-11-25 17:48:31,321 23832 INFO ABCCompany odoo.modules.loading: loading web/views/neutralize_views.xml 
+2022-11-25 17:48:31,326 23832 INFO ABCCompany odoo.modules.loading: loading web/data/ir_attachment.xml 
+2022-11-25 17:48:31,331 23832 INFO ABCCompany odoo.modules.loading: loading web/data/report_layout.xml 
+2022-11-25 17:48:31,355 23832 INFO ABCCompany odoo.modules.loading: Module web loaded in 0.41s, 882 queries (+882 other) 
+2022-11-25 17:48:31,356 23832 INFO ABCCompany odoo.modules.loading: Loading module auth_totp (3/8) 
+2022-11-25 17:48:31,429 23832 INFO ABCCompany odoo.modules.registry: module auth_totp: creating or updating database tables 
+2022-11-25 17:48:31,486 23832 INFO ABCCompany odoo.modules.loading: loading auth_totp/security/security.xml 
+2022-11-25 17:48:31,506 23832 INFO ABCCompany odoo.modules.loading: loading auth_totp/security/ir.model.access.csv 
+2022-11-25 17:48:31,512 23832 INFO ABCCompany odoo.modules.loading: loading auth_totp/data/ir_action_data.xml 
+2022-11-25 17:48:31,518 23832 INFO ABCCompany odoo.modules.loading: loading auth_totp/views/res_users_views.xml 
+2022-11-25 17:48:31,531 23832 INFO ABCCompany odoo.modules.loading: loading auth_totp/views/templates.xml 
+2022-11-25 17:48:31,536 23832 INFO ABCCompany odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml 
+2022-11-25 17:48:31,554 23832 INFO ABCCompany odoo.modules.loading: Module auth_totp loaded in 0.20s, 180 queries (+180 other) 
+2022-11-25 17:48:31,554 23832 INFO ABCCompany odoo.modules.loading: Loading module base_import (4/8) 
+2022-11-25 17:48:31,598 23832 INFO ABCCompany odoo.modules.registry: module base_import: creating or updating database tables 
+2022-11-25 17:48:32,000 23832 INFO ABCCompany odoo.modules.loading: loading base_import/security/ir.model.access.csv 
+2022-11-25 17:48:32,021 23832 INFO ABCCompany odoo.modules.loading: Module base_import loaded in 0.47s, 890 queries (+890 other) 
+2022-11-25 17:48:32,021 23832 INFO ABCCompany odoo.modules.loading: Loading module bus (5/8) 
+2022-11-25 17:48:32,104 23832 INFO ABCCompany odoo.modules.registry: module bus: creating or updating database tables 
+2022-11-25 17:48:32,154 23832 INFO ABCCompany odoo.modules.loading: loading bus/security/ir.model.access.csv 
+2022-11-25 17:48:32,165 23832 INFO ABCCompany odoo.modules.loading: Module bus loaded in 0.14s, 105 queries (+105 other) 
+2022-11-25 17:48:32,165 23832 INFO ABCCompany odoo.modules.loading: Loading module web_kanban_gauge (6/8) 
+2022-11-25 17:48:32,189 23832 INFO ABCCompany odoo.modules.loading: Module web_kanban_gauge loaded in 0.02s, 12 queries (+12 other) 
+2022-11-25 17:48:32,189 23832 INFO ABCCompany odoo.modules.loading: Loading module web_tour (7/8) 
+2022-11-25 17:48:32,216 23832 INFO ABCCompany odoo.modules.registry: module web_tour: creating or updating database tables 
+2022-11-25 17:48:32,239 23832 INFO ABCCompany odoo.modules.loading: loading web_tour/security/ir.model.access.csv 
+2022-11-25 17:48:32,245 23832 INFO ABCCompany odoo.modules.loading: loading web_tour/security/ir.rule.csv 
+2022-11-25 17:48:32,253 23832 INFO ABCCompany odoo.modules.loading: loading web_tour/views/tour_views.xml 
+2022-11-25 17:48:32,270 23832 INFO ABCCompany odoo.modules.loading: Module web_tour loaded in 0.08s, 101 queries (+101 other) 
+2022-11-25 17:48:32,270 23832 INFO ABCCompany odoo.modules.loading: Loading module web_editor (8/8) 
+2022-11-25 17:48:32,377 23832 INFO ABCCompany odoo.modules.registry: module web_editor: creating or updating database tables 
+2022-11-25 17:48:32,670 23832 INFO ABCCompany odoo.modules.loading: loading web_editor/security/ir.model.access.csv 
+2022-11-25 17:48:32,677 23832 INFO ABCCompany odoo.modules.loading: loading web_editor/data/editor_assets.xml 
+2022-11-25 17:48:32,681 23832 INFO ABCCompany odoo.modules.loading: loading web_editor/views/editor.xml 
+2022-11-25 17:48:32,695 23832 INFO ABCCompany odoo.modules.loading: loading web_editor/views/snippets.xml 
+2022-11-25 17:48:32,721 23832 INFO ABCCompany odoo.modules.loading: Module web_editor loaded in 0.45s, 821 queries (+821 other) 
+2022-11-25 17:48:32,721 23832 INFO ABCCompany odoo.modules.loading: 8 modules loaded in 1.77s, 2991 queries (+2991 extra) 
+2022-11-25 17:48:32,806 23832 INFO ABCCompany odoo.modules.loading: Modules loaded. 
+2022-11-25 17:48:32,808 23832 INFO ABCCompany odoo.modules.registry: Registry loaded in 7.278s 
+2022-11-25 17:48:33,355 23832 INFO ABCCompany odoo.addons.base.models.res_users: Login successful for db:ABCCompany login:vuongducphuong1992@gmail.com from 127.0.0.1 
+2022-11-25 17:48:33,359 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:48:33] "POST /web/database/create HTTP/1.1" 303 - 16688 4.243 4.660
+2022-11-25 17:48:33,364 23832 INFO ABCCompany odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-11-25 17:48:33,398 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:48:33] "GET /web HTTP/1.1" 303 - 2 0.001 0.038
+2022-11-25 17:48:41,419 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:48:41] "GET /web/login HTTP/1.1" 200 - 64 0.024 7.994
+2022-11-25 17:48:41,768 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:48:41] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.002 0.021
+2022-11-25 17:48:42,004 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:48:42] "GET /web/webclient/translations/1669398521843 HTTP/1.1" 200 - 6 0.001 0.005
+2022-11-25 17:48:42,160 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:48:42] "GET /web/webclient/translations/1669398522007 HTTP/1.1" 200 - 3 0.001 0.001
+2022-11-25 17:48:42,336 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:48:42] "GET /bus/websocket_worker_bundle HTTP/1.1" 200 - 10 0.002 0.018
+2022-11-25 17:48:42,655 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:48:42] "GET /websocket HTTP/1.1" 101 - 2 0.000 0.003
+2022-11-25 17:48:42,660 23832 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-11-25 17:49:39,147 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:39] "GET /web/login?debug=assets HTTP/1.1" 200 - 32 0.021 5.070
+2022-11-25 17:49:39,166 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:39] "GET /web/assets/debug/web.assets_frontend.css HTTP/1.1" 200 - 7 0.001 0.008
+2022-11-25 17:49:39,462 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:39] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.001 0.001
+2022-11-25 17:49:39,472 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:39] "GET /web/assets/debug/web.assets_frontend_minimal.js HTTP/1.1" 200 - 6 0.000 0.011
+2022-11-25 17:49:40,014 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:40] "GET /web/assets/debug/web.assets_frontend_lazy.js HTTP/1.1" 200 - 6 0.000 0.226
+2022-11-25 17:49:40,098 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:40] "GET /web/webclient/translations/1669398580094 HTTP/1.1" 200 - 3 0.001 0.002
+2022-11-25 17:49:40,420 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:40] "GET /web/webclient/translations/1669398580101 HTTP/1.1" 200 - 3 0.001 0.002
+2022-11-25 17:49:40,693 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:40] "GET /bus/websocket_worker_bundle HTTP/1.1" 304 - 5 0.002 0.002
+2022-11-25 17:49:41,041 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:41] "GET /websocket HTTP/1.1" 101 - 2 0.000 0.037
+2022-11-25 17:49:41,281 23832 INFO ABCCompany odoo.addons.base.models.res_users: Login successful for db:ABCCompany login:vuongducphuong1992@gmail.com from 127.0.0.1 
+2022-11-25 17:49:41,285 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:41] "POST /web/login HTTP/1.1" 303 - 27 0.012 0.279
+2022-11-25 17:49:41,312 23832 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-11-25 17:49:41,313 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:41] "GET /web/become HTTP/1.1" 303 - 5 0.002 0.008
+2022-11-25 17:49:53,810 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:53] "GET /web HTTP/1.1" 200 - 130 0.048 12.131
+2022-11-25 17:49:54,280 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:54] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 200 - 5 0.002 0.154
+2022-11-25 17:49:54,281 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:54] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 5 0.002 0.154
+2022-11-25 17:49:54,289 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:54] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 200 - 5 0.001 0.162
+2022-11-25 17:49:54,379 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:54] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.001 0.559
+2022-11-25 17:49:54,471 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:54] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 200 - 5 0.001 0.344
+2022-11-25 17:49:54,994 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:54] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-25 17:49:55,038 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:55] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 200 - 7 0.002 0.016
+2022-11-25 17:49:55,049 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:55] "GET /bus/websocket_worker_bundle HTTP/1.1" 304 - 5 0.016 0.013
+2022-11-25 17:49:55,053 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:55] "POST /web/action/load HTTP/1.1" 200 - 11 0.029 0.004
+2022-11-25 17:49:55,273 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:55] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 37 0.006 0.012
+2022-11-25 17:49:55,368 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:55] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.003
+2022-11-25 17:49:55,383 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:55] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.011 0.007
+2022-11-25 17:49:55,609 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:55] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.001 0.005
+2022-11-25 17:49:55,687 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:55] "GET /sale_management/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:56,003 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:56,005 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-11-25 17:49:56,006 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /fleet/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-11-25 17:49:56,009 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /website_slides/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2022-11-25 17:49:56,010 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /maintenance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2022-11-25 17:49:56,012 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /base/static/img/icons/appointment.png HTTP/1.1" 304 - 0 0.000 0.008
+2022-11-25 17:49:56,320 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /hr_contract/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:56,320 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:56,321 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /payment_custom/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-11-25 17:49:56,321 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-11-25 17:49:56,322 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /data_recycle/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:56,322 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /payment_authorize/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:56,646 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /mrp/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-25 17:49:56,646 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /payment_mollie/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:56,647 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /hr/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:56,647 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /survey/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:56,647 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /im_livechat/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-25 17:49:56,648 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:56,973 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /mail/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-25 17:49:56,977 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /base/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2022-11-25 17:49:56,979 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /payment_mercado_pago/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2022-11-25 17:49:56,981 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /base/static/img/icons/sale_ebay.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-11-25 17:49:56,981 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /payment_razorpay/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2022-11-25 17:49:56,982 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:56] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-11-25 17:49:57,300 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-25 17:49:57,306 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /website_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2022-11-25 17:49:57,310 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /project/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.012
+2022-11-25 17:49:57,314 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /payment_asiapay/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2022-11-25 17:49:57,314 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /contacts/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-11-25 17:49:57,314 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /payment_sips/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-25 17:49:57,614 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /website_blog/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-25 17:49:57,615 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /website_event/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-25 17:49:57,620 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:57,621 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /hr_skills/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:57,622 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:57,623 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /payment_adyen/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:57,932 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:57,936 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /payment_aps/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2022-11-25 17:49:57,939 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /payment_buckaroo/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.011
+2022-11-25 17:49:57,945 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /note/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.010
+2022-11-25 17:49:57,946 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /hr_expense/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.009
+2022-11-25 17:49:57,946 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:57] "GET /calendar/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2022-11-25 17:49:58,244 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /website_forum/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:58,245 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /payment_flutterwave/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2022-11-25 17:49:58,249 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /repair/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:58,253 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /lunch/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.007
+2022-11-25 17:49:58,256 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:58,257 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:58,556 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:58,559 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /base/static/img/icons/voip.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:58,560 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /payment_stripe/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:58,562 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:58,565 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:58,566 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:58,868 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /payment_paypal/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:58,869 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:58,870 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:58,871 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /base/static/img/icons/planning.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:58,873 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /base/static/img/icons/sign.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:58,877 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:58] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:59,183 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:59] "GET /crm/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-25 17:49:59,184 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:59] "GET /account/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-11-25 17:49:59,186 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:59] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-11-25 17:49:59,186 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:59] "GET /website/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-25 17:49:59,188 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:59] "GET /stock/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-11-25 17:49:59,192 23832 INFO ? werkzeug: 127.0.0.1 - - [25/Nov/2022 17:49:59] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 304 - 0 0.000 0.007
+2022-11-25 18:00:40,597 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 18:00:40] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.002
+2022-11-25 18:10:55,701 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 18:10:55] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.003
+2022-11-25 18:21:40,908 23832 INFO ABCCompany werkzeug: 127.0.0.1 - - [25/Nov/2022 18:21:40] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.003
+2022-11-25 18:22:33,066 23832 INFO ? odoo.service.server: Initiating shutdown 
+2022-11-25 18:22:33,067 23832 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2022-11-25 18:22:33,628 23832 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2022-11-26 01:22:41,569 15184 INFO ? odoo: Odoo version 16.0 
+2022-11-26 01:22:41,569 15184 INFO ? odoo: Using configuration file at D:\Data\odoo-16.0\odoo.conf 
+2022-11-26 01:22:41,569 15184 INFO ? odoo: addons paths: ['D:\\Data\\odoo-16.0\\odoo\\addons', 'c:\\users\\vuong\\appdata\\local\\openerp s.a\\odoo\\addons\\16.0', 'd:\\data\\odoo-16.0\\addons', 'd:\\data\\odoo-16.0\\odoo\\addons'] 
+2022-11-26 01:22:41,569 15184 INFO ? odoo: database: openpg@localhost:5432 
+2022-11-26 01:22:41,910 15184 INFO ? odoo.addons.base.models.ir_actions_report: A package may be missing to print Data Matrix barcodes: pylibdmtx or libdmtx. 
+2022-11-26 01:22:41,916 15184 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo16\thirdparty\wkhtmltopdf.exe 
+2022-11-26 01:22:43,398 15184 INFO ? odoo.service.server: HTTP service (werkzeug) running on PC:8068 
+2022-11-26 01:22:55,844 15184 INFO ABCCompany odoo.modules.loading: loading 1 modules... 
+2022-11-26 01:22:55,851 15184 INFO ABCCompany odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2022-11-26 01:22:55,852 15184 INFO ABCCompany odoo.modules.loading: loading 8 modules... 
+2022-11-26 01:22:56,126 15184 INFO ABCCompany odoo.modules.loading: 8 modules loaded in 0.27s, 0 queries (+0 extra) 
+2022-11-26 01:22:56,164 15184 INFO ABCCompany odoo.modules.loading: Modules loaded. 
+2022-11-26 01:22:56,166 15184 INFO ABCCompany odoo.modules.registry: Registry loaded in 0.350s 
+2022-11-26 01:22:56,166 15184 INFO ABCCompany odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-11-26 01:23:02,273 15184 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-11-26 01:23:02,297 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:02] "GET /web/login/ HTTP/1.1" 200 - 99 0.041 7.626
+2022-11-26 01:23:02,442 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:02] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 1 0.001 0.138
+2022-11-26 01:23:02,649 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:02] "GET /web/assets/209-ff9c531/web.assets_frontend.min.css HTTP/1.1" 200 - 8 0.005 0.021
+2022-11-26 01:23:02,772 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:02] "GET /web/assets/210-d32b4db/web.assets_frontend_minimal.min.js HTTP/1.1" 200 - 6 0.001 0.023
+2022-11-26 01:23:02,992 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:02] "GET /web/binary/company_logo HTTP/1.1" 200 - 3 0.005 0.020
+2022-11-26 01:23:03,357 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:03] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 1 0.002 0.040
+2022-11-26 01:23:03,493 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:03] "GET /web/assets/211-a0c0033/web.assets_frontend_lazy.min.js HTTP/1.1" 200 - 6 0.003 0.173
+2022-11-26 01:23:03,617 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:03] "GET /web/webclient/translations/1669400583555 HTTP/1.1" 200 - 8 0.003 0.030
+2022-11-26 01:23:03,886 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:03] "GET /web/webclient/translations/1669400583619 HTTP/1.1" 200 - 4 0.002 0.019
+2022-11-26 01:23:03,970 15184 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-11-26 01:23:03,971 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:03] "GET /bus/websocket_worker_bundle HTTP/1.1" 200 - 18 0.004 0.038
+2022-11-26 01:23:04,324 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:04] "GET /websocket HTTP/1.1" 101 - 4 0.002 0.022
+2022-11-26 01:23:04,330 15184 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-11-26 01:23:27,004 15184 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-11-26 01:23:27,004 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:27] "GET /web/login HTTP/1.1" 200 - 119 0.029 3.518
+2022-11-26 01:23:27,029 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:27] "GET /web/assets/debug/web.assets_frontend.css HTTP/1.1" 200 - 7 0.004 0.007
+2022-11-26 01:23:27,036 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:27] "GET /web/assets/debug/web.assets_frontend_minimal.js HTTP/1.1" 200 - 5 0.002 0.011
+2022-11-26 01:23:27,354 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:27] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.001 0.001
+2022-11-26 01:23:27,662 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:27] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.002
+2022-11-26 01:23:27,893 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:27] "GET /web/assets/debug/web.assets_frontend_lazy.js HTTP/1.1" 200 - 5 0.000 0.229
+2022-11-26 01:23:27,982 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:27] "GET /web/webclient/translations/1669400607975 HTTP/1.1" 200 - 4 0.003 0.002
+2022-11-26 01:23:28,295 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:28] "GET /web/webclient/translations/1669400607985 HTTP/1.1" 200 - 2 0.000 0.003
+2022-11-26 01:23:28,565 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:28] "POST /web/dataset/call_kw/web_tour.tour/get_consumed_tours HTTP/1.1" 200 - 2 0.000 0.003
+2022-11-26 01:23:28,631 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:28] "GET /bus/websocket_worker_bundle HTTP/1.1" 200 - 5 0.000 0.006
+2022-11-26 01:23:28,960 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:28] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
+2022-11-26 01:23:35,510 15184 INFO ABCCompany odoo.addons.base.models.res_users: Login successful for db:ABCCompany login:vuongducphuong1992@gmail.com from 127.0.0.1 
+2022-11-26 01:23:35,519 15184 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-11-26 01:23:35,520 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:35] "POST /web/login HTTP/1.1" 303 - 48 0.022 0.192
+2022-11-26 01:23:35,625 15184 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-11-26 01:23:35,626 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:35] "GET /web/become HTTP/1.1" 303 - 6 0.000 0.009
+2022-11-26 01:23:43,575 15184 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2022-11-26 01:23:44,676 15184 INFO ABCCompany odoo.addons.base.models.ir_attachment: filestore gc 92 checked, 17 removed 
+2022-11-26 01:23:44,711 15184 INFO ABCCompany odoo.addons.base.models.res_users: GC'd 2 user log entries 
+2022-11-26 01:23:44,727 15184 INFO ABCCompany odoo.addons.auth_totp.models.auth_totp: GC'd 0 totp devices entries 
+2022-11-26 01:23:44,744 15184 INFO ABCCompany odoo.models.unlink: User #1 deleted bus.bus records with IDs: [1, 2, 3, 4, 5, 6, 7, 8] 
+2022-11-26 01:23:44,747 15184 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Base: Auto-vacuum internal data` done. 
+2022-11-26 01:23:44,943 15184 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-11-26 01:23:44,944 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:44] "GET /web HTTP/1.1" 200 - 211 0.073 8.922
+2022-11-26 01:23:44,967 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:44] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 200 - 7 0.005 0.010
+2022-11-26 01:23:45,276 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:45] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 5 0.002 0.008
+2022-11-26 01:23:45,285 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:45] "GET /web/webclient/translations/65607f58d5469d51a5b051eb66c57db2c3d405a5?lang=en_US HTTP/1.1" 200 - 3 0.005 0.005
+2022-11-26 01:23:45,319 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:45] "GET /web/webclient/load_menus/b78f9f22518b994512836b6f7663cb2b228ff06297cd5ff7b99385c654df9b3c HTTP/1.1" 200 - 18 0.012 0.036
+2022-11-26 01:23:45,332 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:45] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 200 - 5 0.002 0.016
+2022-11-26 01:23:45,507 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:45] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 200 - 5 0.015 0.197
+2022-11-26 01:23:45,876 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:45] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.016 0.564
+2022-11-26 01:23:46,398 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:46] "GET /web/webclient/locale/en_US HTTP/1.1" 200 - 1 0.000 0.005
+2022-11-26 01:23:46,402 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:46] "GET /bus/websocket_worker_bundle HTTP/1.1" 304 - 5 0.002 0.012
+2022-11-26 01:23:46,635 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:46] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:46,781 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:46] "POST /web/action/load HTTP/1.1" 200 - 11 0.012 0.017
+2022-11-26 01:23:46,782 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:46] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.010
+2022-11-26 01:23:46,786 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:46] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 200 - 7 0.012 0.021
+2022-11-26 01:23:46,845 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:46] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 40 0.023 0.037
+2022-11-26 01:23:47,190 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:47] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.014
+2022-11-26 01:23:47,210 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:47] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.022 0.017
+2022-11-26 01:23:47,436 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:47] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:47,593 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:47] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:47,594 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:47] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:47,596 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:47] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 200 - 0 0.000 0.010
+2022-11-26 01:23:47,597 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:47] "GET /mail/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.007
+2022-11-26 01:23:47,598 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:47] "GET /im_livechat/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.007
+2022-11-26 01:23:47,759 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:47] "GET /hr_expense/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:47,915 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:47] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-11-26 01:23:47,916 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:47] "GET /website_slides/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:47,918 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:47] "GET /website_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:47,927 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:47] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.007
+2022-11-26 01:23:47,927 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:47] "GET /hr_skills/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.010
+2022-11-26 01:23:48,072 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /data_recycle/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-11-26 01:23:48,233 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /purchase/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:48,233 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /base/static/img/icons/planning.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:48,234 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /project/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-11-26 01:23:48,246 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /website_blog/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.008
+2022-11-26 01:23:48,247 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:48,403 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /fleet/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:48,548 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /note/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:48,548 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 200 - 0 0.000 0.007
+2022-11-26 01:23:48,551 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /contacts/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:48,556 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:48,558 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:48,715 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-11-26 01:23:48,859 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /base/static/img/icons/appointment.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:48,861 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:48,867 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /website_forum/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:48,870 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /survey/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:48,871 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:48] "GET /hr/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:49,029 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /base/static/img/icons/sign.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-11-26 01:23:49,172 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:49,174 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-11-26 01:23:49,183 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /maintenance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:49,183 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /repair/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:49,186 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /calendar/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:49,345 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /website_event/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-11-26 01:23:49,486 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:49,488 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-11-26 01:23:49,496 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:49,497 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /mrp/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:49,497 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-11-26 01:23:49,661 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /sale_management/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:49,803 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /account/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:49,805 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /crm/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:49,807 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 200 - 0 0.000 0.007
+2022-11-26 01:23:49,811 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /stock/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:49,811 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /website/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.007
+2022-11-26 01:23:49,976 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:49] "GET /base/static/img/icons/voip.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:50,116 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /lunch/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:50,119 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /base/static/img/icons/sale_ebay.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:50,119 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:50,122 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /hr_contract/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:50,123 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /payment_adyen/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:50,302 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /payment_aps/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:50,432 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /payment_asiapay/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:50,434 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /payment_authorize/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:50,437 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /payment_buckaroo/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:50,441 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /payment_custom/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:50,444 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /payment_flutterwave/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.007
+2022-11-26 01:23:50,631 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /payment_mercado_pago/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-11-26 01:23:50,755 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /payment_mollie/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:50,758 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /payment_paypal/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-11-26 01:23:50,762 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /payment_razorpay/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.009
+2022-11-26 01:23:50,762 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /payment_sips/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.007
+2022-11-26 01:23:50,762 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /payment_stripe/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:23:50,955 15184 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:23:50] "GET /base/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-11-26 01:24:00,129 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:24:00] "POST /web/action/load HTTP/1.1" 200 - 10 0.007 0.008
+2022-11-26 01:24:00,402 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:24:00] "POST /web/dataset/call_kw/base.module.update/get_views HTTP/1.1" 200 - 9 0.006 0.007
+2022-11-26 01:24:00,449 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:24:00] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 2 0.000 0.003
+2022-11-26 01:24:01,499 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:24:01] "POST /web/dataset/call_kw/base.module.update/create HTTP/1.1" 200 - 3 0.003 0.002
+2022-11-26 01:24:01,808 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:24:01] "POST /web/dataset/call_kw/base.module.update/read HTTP/1.1" 200 - 2 0.000 0.003
+2022-11-26 01:24:02,076 15184 INFO ABCCompany odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2022-11-26 01:24:02,585 15184 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:24:02] "POST /web/dataset/call_button HTTP/1.1" 200 - 1032 0.119 0.393
+2022-11-26 01:31:35,959 2304 INFO ? odoo: Odoo version 16.0 
+2022-11-26 01:31:35,959 2304 INFO ? odoo: Using configuration file at D:\Data\odoo-16.0\odoo.conf 
+2022-11-26 01:31:35,960 2304 INFO ? odoo: addons paths: ['D:\\Data\\odoo-16.0\\odoo\\addons', 'c:\\users\\vuong\\appdata\\local\\openerp s.a\\odoo\\addons\\16.0', 'd:\\data\\odoo-16.0\\addons', 'd:\\data\\odoo-16.0\\odoo\\addons'] 
+2022-11-26 01:31:35,960 2304 INFO ? odoo: database: openpg@localhost:5432 
+2022-11-26 01:31:36,102 2304 INFO ? odoo.addons.base.models.ir_actions_report: A package may be missing to print Data Matrix barcodes: pylibdmtx or libdmtx. 
+2022-11-26 01:31:36,107 2304 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo16\thirdparty\wkhtmltopdf.exe 
+2022-11-26 01:31:37,226 2304 INFO ? odoo.service.server: HTTP service (werkzeug) running on PC:8068 
+2022-11-26 01:31:38,249 2304 INFO ABCCompany odoo.modules.loading: loading 1 modules... 
+2022-11-26 01:31:38,256 2304 INFO ABCCompany odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2022-11-26 01:31:38,261 2304 INFO ABCCompany odoo.modules.loading: loading 8 modules... 
+2022-11-26 01:31:38,454 2304 INFO ABCCompany odoo.modules.loading: 8 modules loaded in 0.19s, 0 queries (+0 extra) 
+2022-11-26 01:31:38,489 2304 INFO ABCCompany odoo.modules.loading: Modules loaded. 
+2022-11-26 01:31:38,491 2304 INFO ABCCompany odoo.modules.registry: Registry loaded in 0.267s 
+2022-11-26 01:31:38,492 2304 INFO ABCCompany odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-11-26 01:31:38,648 2304 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:31:38] "GET /websocket HTTP/1.1" 101 - 17 0.011 0.414
+2022-11-26 01:31:38,652 2304 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-11-26 01:31:43,356 2304 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:31:43] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 2 0.002 0.360
+2022-11-26 01:31:44,528 2304 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:31:44] "POST /web/dataset/call_kw/base.module.update/create HTTP/1.1" 200 - 3 0.003 0.003
+2022-11-26 01:31:44,846 2304 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:31:44] "POST /web/dataset/call_kw/base.module.update/read HTTP/1.1" 200 - 2 0.001 0.004
+2022-11-26 01:31:45,115 2304 INFO ABCCompany odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2022-11-26 01:31:45,632 2304 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:31:45] "POST /web/dataset/call_button HTTP/1.1" 200 - 1043 0.136 0.386
+2022-11-26 01:32:07,830 7204 INFO ? odoo: Odoo version 16.0 
+2022-11-26 01:32:07,831 7204 INFO ? odoo: Using configuration file at D:\Data\odoo-16.0\odoo.conf 
+2022-11-26 01:32:07,831 7204 INFO ? odoo: addons paths: ['D:\\Data\\odoo-16.0\\odoo\\addons', 'c:\\users\\vuong\\appdata\\local\\openerp s.a\\odoo\\addons\\16.0', 'd:\\data\\odoo-16.0\\addons', 'd:\\data\\odoo-16.0\\odoo\\addons'] 
+2022-11-26 01:32:07,831 7204 INFO ? odoo: database: openpg@localhost:5432 
+2022-11-26 01:32:08,012 7204 INFO ? odoo.addons.base.models.ir_actions_report: A package may be missing to print Data Matrix barcodes: pylibdmtx or libdmtx. 
+2022-11-26 01:32:08,018 7204 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo16\thirdparty\wkhtmltopdf.exe 
+2022-11-26 01:32:09,100 7204 INFO ? odoo.service.server: HTTP service (werkzeug) running on PC:8068 
+2022-11-26 01:32:09,482 7204 INFO ABCCompany odoo.modules.loading: loading 1 modules... 
+2022-11-26 01:32:09,489 7204 INFO ABCCompany odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2022-11-26 01:32:09,493 7204 INFO ABCCompany odoo.modules.loading: loading 8 modules... 
+2022-11-26 01:32:09,680 7204 INFO ABCCompany odoo.modules.loading: 8 modules loaded in 0.19s, 0 queries (+0 extra) 
+2022-11-26 01:32:09,716 7204 INFO ABCCompany odoo.modules.loading: Modules loaded. 
+2022-11-26 01:32:09,718 7204 INFO ABCCompany odoo.modules.registry: Registry loaded in 0.259s 
+2022-11-26 01:32:09,719 7204 INFO ABCCompany odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-11-26 01:32:09,977 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:09] "GET /websocket HTTP/1.1" 101 - 17 0.013 0.507
+2022-11-26 01:32:09,981 7204 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-11-26 01:32:11,134 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:11] "GET /web HTTP/1.1" 200 - 74 0.024 0.547
+2022-11-26 01:32:12,277 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:12] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 200 - 5 0.004 0.798
+2022-11-26 01:32:12,283 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:12] "GET /web/webclient/load_menus/b78f9f22518b994512836b6f7663cb2b228ff06297cd5ff7b99385c654df9b3c HTTP/1.1" 200 - 1 0.001 0.799
+2022-11-26 01:32:12,285 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:12] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.002 0.806
+2022-11-26 01:32:12,285 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:12] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 200 - 5 0.002 0.801
+2022-11-26 01:32:12,289 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:12] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 5 0.004 1.131
+2022-11-26 01:32:12,290 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:12] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 200 - 5 0.005 1.132
+2022-11-26 01:32:12,599 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:12] "GET /web/webclient/translations/65607f58d5469d51a5b051eb66c57db2c3d405a5?lang=en_US HTTP/1.1" 200 - 2 0.000 0.004
+2022-11-26 01:32:12,802 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:12] "GET /web/webclient/translations/65607f58d5469d51a5b051eb66c57db2c3d405a5?lang=en_US HTTP/1.1" 200 - 2 0.001 0.002
+2022-11-26 01:32:12,819 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:12] "GET /web/webclient/translations/65607f58d5469d51a5b051eb66c57db2c3d405a5?lang=en_US HTTP/1.1" 200 - 2 0.001 0.003
+2022-11-26 01:32:12,824 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:12] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.002
+2022-11-26 01:32:13,132 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:13] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.002
+2022-11-26 01:32:13,133 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:13] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.001
+2022-11-26 01:32:13,182 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:13] "GET /web/image/res.company/1/favicon HTTP/1.1" 200 - 5 0.005 0.013
+2022-11-26 01:32:13,184 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:13] "POST /web/action/load HTTP/1.1" 200 - 11 0.011 0.012
+2022-11-26 01:32:13,187 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:13] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 7 0.011 0.011
+2022-11-26 01:32:13,191 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:13] "GET /bus/websocket_worker_bundle HTTP/1.1" 304 - 5 0.003 0.018
+2022-11-26 01:32:13,500 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:13] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.002 0.003
+2022-11-26 01:32:13,508 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:13] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.005
+2022-11-26 01:32:13,587 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:13] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 37 0.015 0.070
+2022-11-26 01:32:13,815 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:13] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.003 0.004
+2022-11-26 01:32:13,930 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:13] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.007
+2022-11-26 01:32:13,945 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:13] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.012 0.015
+2022-11-26 01:32:14,301 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:14,303 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:14,306 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:14,310 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:14,315 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:14,318 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:14,615 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /base/static/img/icons/appointment.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:14,619 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:32:14,620 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /mail/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:14,624 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:14,626 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /im_livechat/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:32:14,627 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /hr_expense/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:14,927 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /survey/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:14,930 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /website_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:32:14,931 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:32:14,935 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /hr/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:32:14,938 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /website_slides/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-26 01:32:14,940 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:14] "GET /base/static/img/icons/sign.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:15,253 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:15,255 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /hr_skills/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:15,258 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:15,260 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /maintenance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:15,268 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:32:15,268 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /repair/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:15,568 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /base/static/img/icons/planning.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:15,570 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /calendar/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:15,572 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /data_recycle/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:15,575 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:15,580 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /project/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:32:15,581 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /website_event/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-26 01:32:15,879 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /fleet/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:15,881 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:15,883 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:15,886 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:15,888 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:15,891 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:15] "GET /mrp/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:16,193 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /contacts/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:16,196 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:16,198 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:16,202 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /note/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:32:16,203 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /base/static/img/icons/voip.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:16,207 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /crm_dashboard/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-11-26 01:32:16,508 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /sale_management/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:16,510 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /account/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:16,515 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /crm/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:16,518 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:16,522 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /website/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:16,525 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /stock/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:16,822 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /lunch/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:16,825 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:16,828 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /base/static/img/icons/sale_ebay.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:16,830 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:16] "GET /hr_contract/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:26,771 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:26] "POST /web/action/load HTTP/1.1" 200 - 10 0.009 0.008
+2022-11-26 01:32:27,002 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:27] "POST /web/dataset/call_kw/base.module.update/get_views HTTP/1.1" 200 - 9 0.007 0.004
+2022-11-26 01:32:27,082 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:27] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 2 0.003 0.003
+2022-11-26 01:32:28,307 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:28] "POST /web/dataset/call_kw/base.module.update/create HTTP/1.1" 200 - 3 0.001 0.004
+2022-11-26 01:32:28,632 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:28] "POST /web/dataset/call_kw/base.module.update/read HTTP/1.1" 200 - 2 0.003 0.003
+2022-11-26 01:32:28,882 7204 INFO ABCCompany odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2022-11-26 01:32:29,378 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:29] "POST /web/dataset/call_button HTTP/1.1" 200 - 1032 0.121 0.379
+2022-11-26 01:32:32,760 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:32] "GET /web HTTP/1.1" 200 - 20 0.007 0.109
+2022-11-26 01:32:32,963 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:32] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 5 0.002 0.003
+2022-11-26 01:32:33,096 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:33] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 304 - 5 0.001 0.010
+2022-11-26 01:32:33,104 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:33] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 304 - 5 0.004 0.010
+2022-11-26 01:32:33,107 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:33] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 304 - 5 0.004 0.009
+2022-11-26 01:32:33,107 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:33] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 304 - 5 0.003 0.008
+2022-11-26 01:32:33,571 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:33] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:33,574 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:33] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:33,592 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:33] "GET /bus/websocket_worker_bundle HTTP/1.1" 304 - 4 0.005 0.007
+2022-11-26 01:32:33,605 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:33] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 6 0.001 0.012
+2022-11-26 01:32:33,609 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:33] "POST /web/action/load HTTP/1.1" 200 - 10 0.009 0.006
+2022-11-26 01:32:33,847 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:33] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.002 0.009
+2022-11-26 01:32:33,917 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:33] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.006
+2022-11-26 01:32:33,923 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:33] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 3 0.001 0.010
+2022-11-26 01:32:33,947 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:33] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.008 0.012
+2022-11-26 01:32:34,246 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:34] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.006
+2022-11-26 01:32:34,599 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:34] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:34,601 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:34] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:34,604 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:34] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:34,608 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:34] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:34,616 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:34] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:34,618 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:34] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-26 01:32:34,914 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:34] "GET /base/static/img/icons/appointment.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:32:34,915 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:34] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:34,916 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:34] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:32:34,919 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:34] "GET /mail/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:34,923 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:34] "GET /im_livechat/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:34,925 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:34] "GET /hr_expense/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:35,226 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /website_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:35,228 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /survey/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:32:35,230 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:35,234 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /hr/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:35,239 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /base/static/img/icons/sign.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-11-26 01:32:35,241 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /website_slides/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:35,534 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:35,537 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /hr_skills/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:35,541 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:35,545 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /maintenance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:32:35,546 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:32:35,547 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /repair/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:32:35,849 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /data_recycle/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:35,852 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /calendar/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:35,855 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /base/static/img/icons/planning.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:35,859 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:32:35,860 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /website_event/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:35,862 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:35] "GET /project/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:36,162 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:36,165 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:36,167 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /crm_dashboard/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:36,170 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:36,173 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /fleet/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:36,174 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:36,471 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /mrp/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:36,474 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:36,475 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:36,479 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /contacts/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:36,481 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /note/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:36,485 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /base/static/img/icons/voip.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:32:36,786 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /base/static/img/icons/sale_ebay.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:36,788 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /lunch/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:36,794 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /sale_management/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:36,795 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-26 01:32:36,798 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /account/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:32:36,800 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:36] "GET /crm/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:37,098 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:37] "GET /hr_contract/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:32:37,102 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:37] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:32:37,104 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:37] "GET /website/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:32:37,105 7204 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:32:37] "GET /stock/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:35:14,974 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:14] "POST /web/action/load HTTP/1.1" 200 - 9 0.005 0.006
+2022-11-26 01:35:15,214 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:15] "POST /web/dataset/call_kw/base.module.update/get_views HTTP/1.1" 200 - 1 0.000 0.003
+2022-11-26 01:35:15,292 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:15] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 1 0.001 0.001
+2022-11-26 01:35:16,246 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:16] "POST /web/dataset/call_kw/base.module.update/create HTTP/1.1" 200 - 3 0.001 0.004
+2022-11-26 01:35:16,569 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:16] "POST /web/dataset/call_kw/base.module.update/read HTTP/1.1" 200 - 2 0.000 0.003
+2022-11-26 01:35:16,822 7204 INFO ABCCompany odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2022-11-26 01:35:17,337 7204 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:17] "POST /web/dataset/call_button HTTP/1.1" 200 - 1032 0.143 0.374
+2022-11-26 01:35:23,971 6200 INFO ? odoo: Odoo version 16.0 
+2022-11-26 01:35:23,971 6200 INFO ? odoo: Using configuration file at D:\Data\odoo-16.0\odoo.conf 
+2022-11-26 01:35:23,971 6200 INFO ? odoo: addons paths: ['D:\\Data\\odoo-16.0\\odoo\\addons', 'c:\\users\\vuong\\appdata\\local\\openerp s.a\\odoo\\addons\\16.0', 'd:\\data\\odoo-16.0\\addons', 'd:\\data\\odoo-16.0\\odoo\\addons'] 
+2022-11-26 01:35:23,971 6200 INFO ? odoo: database: openpg@localhost:5432 
+2022-11-26 01:35:24,151 6200 INFO ? odoo.addons.base.models.ir_actions_report: A package may be missing to print Data Matrix barcodes: pylibdmtx or libdmtx. 
+2022-11-26 01:35:24,157 6200 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo16\thirdparty\wkhtmltopdf.exe 
+2022-11-26 01:35:25,197 6200 INFO ? odoo.service.server: HTTP service (werkzeug) running on PC:8068 
+2022-11-26 01:35:25,244 6200 INFO ABCCompany odoo.modules.loading: loading 1 modules... 
+2022-11-26 01:35:25,251 6200 INFO ABCCompany odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2022-11-26 01:35:25,256 6200 INFO ABCCompany odoo.modules.loading: loading 8 modules... 
+2022-11-26 01:35:25,453 6200 INFO ABCCompany odoo.modules.loading: 8 modules loaded in 0.20s, 0 queries (+0 extra) 
+2022-11-26 01:35:25,488 6200 INFO ABCCompany odoo.modules.loading: Modules loaded. 
+2022-11-26 01:35:25,490 6200 INFO ABCCompany odoo.modules.registry: Registry loaded in 0.274s 
+2022-11-26 01:35:25,491 6200 INFO ABCCompany odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-11-26 01:35:25,654 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:25] "GET /websocket HTTP/1.1" 101 - 17 0.013 0.426
+2022-11-26 01:35:25,661 6200 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-11-26 01:35:26,439 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:26] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 2 0.002 0.361
+2022-11-26 01:35:27,373 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:27] "POST /web/dataset/call_kw/base.module.update/create HTTP/1.1" 200 - 3 0.002 0.003
+2022-11-26 01:35:27,692 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:27] "POST /web/dataset/call_kw/base.module.update/read HTTP/1.1" 200 - 2 0.001 0.003
+2022-11-26 01:35:27,972 6200 INFO ABCCompany odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2022-11-26 01:35:28,470 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:28] "POST /web/dataset/call_button HTTP/1.1" 200 - 1033 0.125 0.376
+2022-11-26 01:35:32,235 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:32] "GET /web HTTP/1.1" 200 - 74 0.029 0.551
+2022-11-26 01:35:32,258 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:32] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 200 - 5 0.001 0.005
+2022-11-26 01:35:32,619 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:32] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 5 0.003 0.046
+2022-11-26 01:35:32,619 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:32] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 200 - 5 0.003 0.045
+2022-11-26 01:35:32,624 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:32] "GET /web/webclient/load_menus/b78f9f22518b994512836b6f7663cb2b228ff06297cd5ff7b99385c654df9b3c HTTP/1.1" 200 - 1 0.001 0.044
+2022-11-26 01:35:32,625 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:32] "GET /web/webclient/translations/65607f58d5469d51a5b051eb66c57db2c3d405a5?lang=en_US HTTP/1.1" 200 - 2 0.000 0.044
+2022-11-26 01:35:32,628 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:32] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.005 0.048
+2022-11-26 01:35:32,628 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:32] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 200 - 5 0.006 0.046
+2022-11-26 01:35:33,145 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:33] "GET /web/webclient/translations/65607f58d5469d51a5b051eb66c57db2c3d405a5?lang=en_US HTTP/1.1" 200 - 2 0.000 0.004
+2022-11-26 01:35:33,158 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:33] "GET /web/webclient/translations/65607f58d5469d51a5b051eb66c57db2c3d405a5?lang=en_US HTTP/1.1" 200 - 2 0.001 0.003
+2022-11-26 01:35:33,173 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:33] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.001
+2022-11-26 01:35:33,410 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:33] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.001
+2022-11-26 01:35:33,474 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:33] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.001
+2022-11-26 01:35:33,491 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:33] "POST /web/action/load HTTP/1.1" 200 - 11 0.005 0.010
+2022-11-26 01:35:33,502 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:33] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.004 0.005
+2022-11-26 01:35:33,508 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:33] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 6 0.003 0.010
+2022-11-26 01:35:33,513 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:33] "GET /bus/websocket_worker_bundle HTTP/1.1" 304 - 5 0.002 0.008
+2022-11-26 01:35:33,827 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:33] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.002 0.005
+2022-11-26 01:35:33,839 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:33] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.009
+2022-11-26 01:35:33,871 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:33] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 37 0.016 0.038
+2022-11-26 01:35:34,137 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.001 0.003
+2022-11-26 01:35:34,208 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.009
+2022-11-26 01:35:34,223 6200 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.015 0.013
+2022-11-26 01:35:34,575 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:35:34,578 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:34,581 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:34,584 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:35:34,588 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:35:34,592 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:34,892 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "GET /base/static/img/icons/appointment.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:34,893 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:35:34,897 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "GET /mail/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:35:34,898 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:35:34,902 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "GET /im_livechat/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:34,903 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:34] "GET /hr_expense/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:35,209 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /survey/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:35:35,211 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /website_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:35:35,212 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:35,216 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /hr/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:35:35,218 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /base/static/img/icons/sign.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:35:35,221 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /website_slides/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:35:35,521 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /hr_skills/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:35:35,521 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:35,524 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:35,526 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /maintenance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:35:35,529 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:35,531 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /repair/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:35,831 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /base/static/img/icons/planning.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:35:35,834 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /calendar/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:35,836 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /data_recycle/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:35:35,839 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:35,842 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /website_event/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:35,842 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:35] "GET /project/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:36,145 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /crm_dashboard/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:35:36,146 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:35:36,149 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-26 01:35:36,152 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 304 - 0 0.000 0.007
+2022-11-26 01:35:36,156 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /fleet/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.008
+2022-11-26 01:35:36,157 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:36,454 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:36,456 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:36,458 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /mrp/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:35:36,461 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /contacts/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:35:36,463 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /note/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:35:36,468 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /base/static/img/icons/voip.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:36,769 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:36,772 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /crm/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:35:36,775 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /sale_management/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:35:36,776 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /account/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-26 01:35:36,779 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /website/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:36,783 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:36] "GET /stock/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:35:37,081 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:37] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:37,088 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:37] "GET /base/static/img/icons/sale_ebay.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-26 01:35:37,090 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:37] "GET /lunch/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.010
+2022-11-26 01:35:37,093 6200 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:35:37] "GET /hr_contract/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:35:59,084 5648 INFO ? odoo: Odoo version 16.0 
+2022-11-26 01:35:59,084 5648 INFO ? odoo: Using configuration file at D:\Data\odoo-16.0\odoo.conf 
+2022-11-26 01:35:59,084 5648 INFO ? odoo: addons paths: ['D:\\Data\\odoo-16.0\\odoo\\addons', 'c:\\users\\vuong\\appdata\\local\\openerp s.a\\odoo\\addons\\16.0', 'd:\\data\\odoo-16.0\\addons', 'd:\\data\\odoo-16.0\\addons_third', 'd:\\data\\odoo-16.0\\odoo\\addons'] 
+2022-11-26 01:35:59,084 5648 INFO ? odoo: database: openpg@localhost:5432 
+2022-11-26 01:35:59,230 5648 INFO ? odoo.addons.base.models.ir_actions_report: A package may be missing to print Data Matrix barcodes: pylibdmtx or libdmtx. 
+2022-11-26 01:35:59,236 5648 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo16\thirdparty\wkhtmltopdf.exe 
+2022-11-26 01:36:00,246 5648 INFO ? odoo.service.server: HTTP service (werkzeug) running on PC:8068 
+2022-11-26 01:36:00,480 5648 INFO ABCCompany odoo.modules.loading: loading 1 modules... 
+2022-11-26 01:36:00,486 5648 INFO ABCCompany odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2022-11-26 01:36:00,491 5648 INFO ABCCompany odoo.modules.loading: loading 8 modules... 
+2022-11-26 01:36:00,681 5648 INFO ABCCompany odoo.modules.loading: 8 modules loaded in 0.19s, 0 queries (+0 extra) 
+2022-11-26 01:36:00,719 5648 INFO ABCCompany odoo.modules.loading: Modules loaded. 
+2022-11-26 01:36:00,722 5648 INFO ABCCompany odoo.modules.registry: Registry loaded in 0.267s 
+2022-11-26 01:36:00,722 5648 INFO ABCCompany odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-11-26 01:36:00,881 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:00] "GET /websocket HTTP/1.1" 101 - 17 0.008 0.420
+2022-11-26 01:36:00,885 5648 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-11-26 01:36:01,838 5648 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'he_thong', defaulting to LGPL-3 
+2022-11-26 01:36:01,861 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:01] "POST /web/action/load HTTP/1.1" 200 - 12 0.011 0.330
+2022-11-26 01:36:01,903 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:01] "POST /web/dataset/call_kw/base.module.update/get_views HTTP/1.1" 200 - 9 0.005 0.035
+2022-11-26 01:36:02,235 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:02] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2022-11-26 01:36:03,260 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:03] "POST /web/dataset/call_kw/base.module.update/create HTTP/1.1" 200 - 3 0.001 0.005
+2022-11-26 01:36:03,579 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:03] "POST /web/dataset/call_kw/base.module.update/read HTTP/1.1" 200 - 2 0.000 0.003
+2022-11-26 01:36:03,831 5648 INFO ABCCompany odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2022-11-26 01:36:04,344 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:04] "POST /web/dataset/call_button HTTP/1.1" 200 - 1042 0.119 0.396
+2022-11-26 01:36:09,144 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:09] "GET /web HTTP/1.1" 200 - 73 0.021 0.540
+2022-11-26 01:36:09,157 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:09] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 200 - 5 0.002 0.005
+2022-11-26 01:36:09,469 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:09] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 5 0.003 0.004
+2022-11-26 01:36:09,472 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:09] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 200 - 5 0.002 0.006
+2022-11-26 01:36:09,508 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:09] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.004 0.037
+2022-11-26 01:36:09,509 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:09] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 200 - 5 0.002 0.035
+2022-11-26 01:36:09,512 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:09] "GET /web/webclient/load_menus/b78f9f22518b994512836b6f7663cb2b228ff06297cd5ff7b99385c654df9b3c HTTP/1.1" 200 - 1 0.001 0.032
+2022-11-26 01:36:09,515 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:09] "GET /web/webclient/translations/65607f58d5469d51a5b051eb66c57db2c3d405a5?lang=en_US HTTP/1.1" 200 - 2 0.002 0.039
+2022-11-26 01:36:09,998 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:09] "GET /web/webclient/translations/65607f58d5469d51a5b051eb66c57db2c3d405a5?lang=en_US HTTP/1.1" 200 - 2 0.001 0.002
+2022-11-26 01:36:10,011 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:10] "GET /web/webclient/translations/65607f58d5469d51a5b051eb66c57db2c3d405a5?lang=en_US HTTP/1.1" 200 - 2 0.001 0.001
+2022-11-26 01:36:10,016 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:10] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.001
+2022-11-26 01:36:10,261 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:10] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.002
+2022-11-26 01:36:10,322 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:10] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.002
+2022-11-26 01:36:10,333 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:10] "POST /web/action/load HTTP/1.1" 200 - 11 0.003 0.007
+2022-11-26 01:36:10,346 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:10] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.005 0.006
+2022-11-26 01:36:10,349 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:10] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 6 0.004 0.009
+2022-11-26 01:36:10,354 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:10] "GET /bus/websocket_worker_bundle HTTP/1.1" 304 - 5 0.005 0.012
+2022-11-26 01:36:10,667 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:10] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.003 0.005
+2022-11-26 01:36:10,678 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:10] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.008
+2022-11-26 01:36:10,709 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:10] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 37 0.015 0.035
+2022-11-26 01:36:10,990 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:10] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.002 0.003
+2022-11-26 01:36:11,043 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:11] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.001 0.008
+2022-11-26 01:36:11,064 5648 INFO ABCCompany werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:11] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.018 0.012
+2022-11-26 01:36:11,412 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:11] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:36:11,414 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:11] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-11-26 01:36:11,421 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:11] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-26 01:36:11,423 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:11] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:11,424 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:11] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-11-26 01:36:11,427 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:11] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:36:11,729 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:11] "GET /base/static/img/icons/appointment.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:36:11,731 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:11] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:36:11,732 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:11] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:11,735 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:11] "GET /mail/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:11,737 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:11] "GET /im_livechat/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:11,738 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:11] "GET /hr_expense/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:36:12,041 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /website_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:36:12,047 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:36:12,049 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /survey/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.009
+2022-11-26 01:36:12,053 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /hr/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:12,055 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /base/static/img/icons/sign.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:36:12,058 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /website_slides/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:36:12,357 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /hr_skills/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:12,358 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:36:12,362 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:12,365 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /maintenance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:36:12,368 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:36:12,369 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /repair/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:36:12,669 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /data_recycle/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:36:12,670 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /calendar/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:12,671 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /base/static/img/icons/planning.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:12,676 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:36:12,677 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /website_event/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:12,678 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /project/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:36:12,983 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /crm_dashboard/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:12,984 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:12,986 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:12,989 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:12,990 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /fleet/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:12,991 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:12] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:13,309 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /mrp/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:13,310 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:13,313 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:13,315 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /contacts/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:36:13,317 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /note/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:13,321 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /he_thong/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-11-26 01:36:13,620 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /sale_management/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:13,622 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /account/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:36:13,624 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /crm/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-26 01:36:13,627 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-26 01:36:13,630 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /website/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-11-26 01:36:13,632 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /stock/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:13,934 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /base/static/img/icons/voip.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-26 01:36:13,937 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /lunch/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-11-26 01:36:13,939 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-11-26 01:36:13,944 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /base/static/img/icons/sale_ebay.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-11-26 01:36:13,945 5648 INFO ? werkzeug: 127.0.0.1 - - [26/Nov/2022 01:36:13] "GET /hr_contract/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
