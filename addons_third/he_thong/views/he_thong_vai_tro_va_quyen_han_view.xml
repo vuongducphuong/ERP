@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_he_thong_vai_tro_va_quyen_han_form" model="ir.ui.view">
+            <field name="name">he.thong.vai.tro.va.quyen.han.form</field>
+            <field name="model">he.thong.vai.tro.va.quyen.han</field>
+            <field name="arch" type="xml">
+                <form string="Vai trò và quyền hạn">
+                    <header>
+                        <button name="action_phan_quyen" string="Phân quyền" type="object" class="oe_highlight" />
+                        <!-- Todof: Chưa support ở version này -->
+                        <!-- <button name="action_add_user" string="Thêm người dùng" type="object" /> -->
+                        <button name="action_reset" string="Thiết lập lại cây chức năng" type="object" groups="base.group_no_one"/>                        
+                    </header>
+                    <sheet>
+                        <group col="2" colspan="2">
+                            <field name="MA_VAI_TRO" colspan="2" attrs="{'readonly': [('THUOC_HE_THONG','=',True)]}"/>
+                            <field name="TEN_VAI_TRO" colspan="2" />
+                            <field name="MO_TA" colspan="2" />
+                            <field name="THUOC_HE_THONG" invisible="1" />
+                            <field name="user_ids" colspan="2" string="Người dùng">
+                                <tree>
+                                    <field name="login"/>
+                                    <field name="name"/>
+                                    <field name="CHUC_DANH"/>
+                                    <field name="CHI_NHANH_IDS" widget="many2many_tags"/>
+                                </tree>
+                                <form string="Users">
+                                    <sheet>
+                                        <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium"}'/>
+                                        <div class="oe_title">
+                                            <label for="name" class="oe_edit_only"/>
+                                            <h1><field name="name" readonly="1"/></h1>
+                                            <h4><field name="login" placeholder="email@yourcompany.com" readonly="1"/></h4>
+                                        </div>
+                                        <group>
+                                            <label for="VAI_TRO_VA_QUYEN_HAN" string="Vai trò"/>
+                                            <div>
+                                                <field name="VAI_TRO_VA_QUYEN_HAN" widget="many2many_tags" options="{'color_field': 'color'}" style="display: inline;"/>
+                                            </div>
+                                            <label for="CHI_NHANH_IDS" string="Làm việc với chi nhánh"/>
+                                            <div>
+                                                <field name="CHI_NHANH_IDS" widget="many2many_tags" style="display: inline;"/>
+                                            </div>
+                                        </group>
+                                    </sheet>
+                                </form>
+                            </field>
+                        </group>
+                        <!--Master/Detail form-->
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_he_thong_vai_tro_va_quyen_han_tree" model="ir.ui.view">
+            <field name="name">he.thong.vai.tro.va.quyen.han.tree</field>
+            <field name="model">he.thong.vai.tro.va.quyen.han</field>
+            <field name="arch" type="xml">
+                <tree string="Vai trò và quyền hạn">
+                    <field name="MA_VAI_TRO" string="Mã vai trò" />
+                    <field name="TEN_VAI_TRO" string="Tên vai trò" />
+                    <field name="MO_TA" string="Mô tả" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_he_thong_vai_tro_va_quyen_han" model="ir.actions.act_window">
+            <field name="name">Vai trò và quyền hạn</field>
+            <field name="res_model">he.thong.vai.tro.va.quyen.han</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_he_thong_vai_tro_va_quyen_han_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_he_thong_vai_tro_va_quyen_han_tree" />
+            <field name="act_window_id" ref="open_menu_he_thong_vai_tro_va_quyen_han" />
+        </record>
+        <record id="action_he_thong_vai_tro_va_quyen_han_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_he_thong_vai_tro_va_quyen_han_form" />
+            <field name="act_window_id" ref="open_menu_he_thong_vai_tro_va_quyen_han" />
+        </record>
+        <!-- <menuitem name="Vai trò và quyền hạn" action="he_thong.open_menu_he_thong_vai_tro_va_quyen_han" id="menu_he_thong_vai_tro_va_quyen_han" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

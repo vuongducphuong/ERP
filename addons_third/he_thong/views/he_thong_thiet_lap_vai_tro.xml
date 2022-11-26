@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_he_thong_thiet_lap_vai_tro_form" model="ir.ui.view">
+            <field name="name">he.thong.thiet.lap.vai.tro.form</field>
+            <field name="model">he.thong.thiet.lap.vai.tro</field>
+            <field name="arch" type="xml">
+                <form string="Thiết lập quyền hạn" cloudify_js="thiet_lap_vai_tro_view">
+                    <sheet>
+                        <group>
+                            <field name="VAI_TRO_ID"/>
+                        </group>
+                        <field name="CHI_TIET_IDS" string="Tất cả chức năng">
+                            <tree string="Tất cả chức năng" editable="bottom" create="false" delete="false" report="true" id="menu" hierarchy="parent" expand_all="false">
+                                <field name="menu" invisible="1"/>
+                                <field name="parent" invisible="1"/>
+                                <field name="menu_id" invisible="1"/>
+                                <field name="parent_menu_id" invisible="1"/>
+                                <field name="report_id" invisible="1"/>
+                                <field name="parent_report_id" invisible="1"/>
+                                <field name="permission_id" invisible="1"/>
+                                <field name="AUTO_SELECT" invisible="1"/>
+                                <field name="name" />
+                            </tree>
+                        </field>
+                        <footer>
+                            <button name="action_save" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_he_thong_thiet_lap_vai_tro_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Thiết lập quyền hạn</field>
+            <field name="res_model">he.thong.thiet.lap.vai.tro</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_he_thong_thiet_lap_vai_tro_form" />
+        </record>
+    </data>
+</odoo>

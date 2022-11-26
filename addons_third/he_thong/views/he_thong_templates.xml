@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="hr assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+          <script type="text/javascript" src="/he_thong/static/src/js/menu_update_database.js"></script>
+          <script type="text/javascript" src="/he_thong/static/src/js/he_thong_thiet_lap_vai_tro_view.js"></script>
+          <script type="text/javascript" src="/he_thong/static/src/js/he_thong_vai_tro_them_nguoi_dung_view.js"></script>
+        </xpath>
+    </template>
+</odoo>

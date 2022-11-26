@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_he_thong_vai_tro_them_nguoi_dung_form" model="ir.ui.view">
+            <field name="name">he.thong.vai.tro.nguoi.dung.form</field>
+            <field name="model">he.thong.vai.tro.nguoi.dung</field>
+            <field name="arch" type="xml">
+                <form string="Thêm người dùng" cloudify_js="vai_tro_them_nguoi_dung_view">
+                    <sheet>
+                        <group>
+                            <field name="VAI_TRO_ID"/>
+                        </group>
+                        <field name="CHI_TIET_IDS" string="Danh sách người dùng">
+                            <tree editable="bottom" report="true">
+                                <field name="user_id" invisible="1"/>
+                                <field name="AUTO_SELECT" invisible="1"/>
+                                <field name="TEN_DANG_NHAP" readonly="1"/>
+                                <field name="HO_VA_TEN" readonly="1"/>
+                                <field name="CHUC_DANH" readonly="1"/>
+                                <field name="CHI_NHANH_IDS" widget="many2many_tags"/>
+                                <!-- <field name="CHI_NHANH_IDS" widget="many2many_tags"/> -->
+                            </tree>
+                        </field>
+                        <footer>
+                            <button name="action_save" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_he_thong_vai_tro_them_nguoi_dung_form" model="ir.actions.act_window">
+            <field name="name">Thiết lập quyền hạn</field>
+            <field name="res_model">he.thong.vai.tro.nguoi.dung</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_he_thong_vai_tro_them_nguoi_dung_form" />
+        </record>
+    </data>
+</odoo>
