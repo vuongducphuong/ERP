@@ -29,7 +29,7 @@
         'report/report_bankbook.xml',
     ],
     'installable': True,
-    'application': True,
+    'application': False,
     'auto_install': False,
     'live_test_url': 'https://www.youtube.com/watch?v=PEh-an8iCO0',
     'images': ['static/description/banner.gif'],
