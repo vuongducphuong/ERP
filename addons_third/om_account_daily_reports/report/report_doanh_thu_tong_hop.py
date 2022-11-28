@@ -6,7 +6,7 @@ from odoo.exceptions import UserError
 
 
 class ReportDoanhThuTongHop(models.AbstractModel):
-    _name = 'report.om_account_daily_reports.rpt_bao_cao_doanh_thu_tong_hop'
+    _name = 'report.om_account_daily_reports.report_doanh_thu_tong_hop'
     _description = 'Tổng hợp doanh thu'
 
     def _get_account_move_entry(self, accounts, init_balance, sortby, display_account):

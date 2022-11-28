@@ -33,7 +33,7 @@ class ParamBaoCaoDoanhThuTongHop(models.TransientModel):
                                    default='posted')
     journal_ids = fields.Many2many('account.journal', string='Journals', required=True,
                                    default=lambda self: self.env['account.journal'].search([]))
-    account_ids = fields.Many2many('account.account', 'account_ParamBaoCaoDoanhThuTongHop', 'report_line_id',
+    account_ids = fields.Many2many('account.account', 'account_param_bao_cao_doanh_thu_tong_hop', 'report_line_id',
                                    'account_id', 'Accounts', default=_get_default_account_ids)
 
     display_account = fields.Selection(

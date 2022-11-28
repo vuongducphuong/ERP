@@ -73,11 +73,11 @@ overflow: auto !important;
   text-align: center;
   color: #00438b; }
 
-.mb-0{
+/* .mb-0{
     font-size: 20px;
     position: relative;
     text-align: center;
-}
+} */
 .mb-0 .dash-title {
     font-size: 20px;
     text-align: center;
