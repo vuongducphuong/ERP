@@ -664,7 +664,7 @@ class GeneralView(models.TransientModel):
 
             row += 1
             sheet.write(row + 1, col, rec_data['code'], txt)
-            sheet.write(row + 1, col + 1, rec_data['name'], txt)
+            sheet.write(row + 1, col + 1, rec_data['name']['en_US'], txt)
             sheet.write(row + 1, col + 2, '', txt)
             sheet.write(row + 1, col + 3, '', txt)
             sheet.write(row + 1, col + 4, '', txt)
