@@ -12,12 +12,13 @@ $o-navbar-entry-color: $o-white !default;
 $o-navbar-entry-font-size: $o-font-size-base !default;
 $o-navbar-entry-bg--hover: rgba($o-black, .08) !default;
 
-$o-navbar-brand-font-size: $o-navbar-entry-font-size * 1.3 !default;
+$o-navbar-brand-font-size: $o-navbar-entry-font-size * 1.5 !default;
 
 $o-navbar-badge-size: 11px !default;
 $o-navbar-badge-size-adjust: 1px !default;
 $o-navbar-badge-padding: 4px !default;
-$o-navbar-badge-bg: $o-success !default;
+// $o-navbar-badge-bg: $o-success !default;
+$o-navbar-badge-bg: #f07a76 !default; //phuongvd
 
 // = % PseudoClasses
 //

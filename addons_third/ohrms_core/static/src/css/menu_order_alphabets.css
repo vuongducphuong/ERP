@@ -4,7 +4,7 @@
     position: relative;
     width: 99vw;
     height: 100vh;
-    background: #fff;
+    /* background: #fff; */
     display: flex;
     justify-content: start;
     align-items: start;
@@ -44,6 +44,8 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 23px;
+    color: #fff;
+    font-size: 1.3rem;
 }
 .dropdown-menu fullscreen-menu show{
     width:1000px !important;
@@ -89,9 +91,10 @@
 .o_main_navbar .dropdown-menu.show {
     max-height: none !important;
     min-width: 100vw;
-    min-heigt: 100vh;
+    min-height: 100vh;
     overflow: auto;
     margin-top: 0;
+    background: url(/web_enterprise/static/img/home-menu-bg-overlay.svg), linear-gradient(to right bottom, #118ab2, #049fa7);
 }
 .o-menu-search-result.dropdown-item.col-12.ml-auto.mr-auto {
 
@@ -118,4 +121,5 @@
 .o_main_navbar .o_menu_brand {
   text-decoration: none !important;
   margin-left: 10px;
+  font-weight: 500;
 }

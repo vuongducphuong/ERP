@@ -140,8 +140,10 @@
 $o-btn-bg-colors: () !default;
 $o-btn-border-colors: () !default;
 @each $color, $value in $theme-colors {
-    $-bg-color: map-get($o-btn-bg-colors, $color) or $value;
-    $-border-color: map-get($o-btn-border-colors, $color) or $-bg-color;
+    // $-bg-color: map-get($o-btn-bg-colors, $color) or $value;
+    // $-border-color: map-get($o-btn-border-colors, $color) or $-bg-color;    
+    $-bg-color: #017e84 !default; //phuongvd
+    $-border-color: #017e84 !default;//phuongvd
     .btn-fill-#{$color} {
         @include button-variant($-bg-color, $-border-color);
     }

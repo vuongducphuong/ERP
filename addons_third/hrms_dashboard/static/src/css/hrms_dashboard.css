@@ -18,7 +18,7 @@ overflow: auto !important;
   margin: 2px 0; }
 
 /* Button Reset */
-.btn, .button {
+/* .btn, .button {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -26,7 +26,7 @@ overflow: auto !important;
   vertical-align: middle;
   transition: all .15s ease-in-out;
   border-radius: 0;
-  cursor: pointer; }
+  cursor: pointer; } */
 
 
 /*    Widget One
@@ -927,7 +927,7 @@ h4 .stat-count {
 
 
 .row.main-section {
-    margin-right: 0px; !important;
+    margin-right: 0px !important;
 }
 /* width */
 .hr_notification::-webkit-scrollbar {
