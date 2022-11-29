@@ -6,23 +6,25 @@
             <div class="o_form_status_indicator_buttons d-flex" t-att-class="{ invisible: !(props.model.root.isVirtual or displayButtons) }">
                 <button
                     type="button"
-                    class="o_form_button_save btn btn-light"
+                    class="btn btn-primary o_form_button_save"                    
                     t-att-disabled="props.isDisabled"
                     data-hotkey="s"
                     t-on-click.stop="save"
                     data-tooltip="Save manually"
                     aria-label="Save manually">
-                    <i class="fa fa-cloud-upload fa-fw" />
+                    <!-- <i class="fa fa-cloud-upload fa-fw" /> -->
+                    Lưu
                 </button>
                 <button
                     type="button"
-                    class="o_form_button_cancel btn btn-light"
+                    class="btn btn-secondary o_form_button_cancel"
                     t-att-disabled="props.isDisabled"
                     data-hotkey="j"
                     t-on-click.stop="discard"
                     data-tooltip="Discard changes"
                     aria-label="Discard changes">
-                    <i class="fa fa-undo fa-fw" />
+                    <!-- <i class="fa fa-undo fa-fw" /> -->
+                    Hủy bỏ
                 </button>
             </div>
             <span
@@ -30,7 +32,7 @@
                 class="text-danger ms-2"
                 data-tooltip="Correct issues to save, or discard changes">
                 <i class="fa fa-warning" />
-                Unable to save
+                Lưu không thành công
             </span>
         </div>
     </t>
