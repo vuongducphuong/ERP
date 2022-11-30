@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of ERP Server.
 # This file contains the translation of the following modules:
 # 	* website_event
 # 
@@ -8,12 +8,12 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: ERP Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-10 10:22+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
 "Last-Translator: Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2022\n"
-"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"Language-Team: Vietnamese \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -324,7 +324,7 @@ msgid ""
 msgstr ""
 "Chỉ ở tuổi 13, John DOE đã bắt đầu viết ứng dụng quản lý kinh doanh đầu tiên"
 " cho khách hàng. Sau khi học xong chương trình kỹ sư dân dụng, anh thành lập"
-" TinyERP. Đây chính là bước đầu tiên của OpenERP sau này trở thành Odoo, "
+" TinyERP. Đây chính là bước đầu tiên của OpenERP sau này trở thành ERP, "
 "phần mềm kinh doanh nguồn mở được cài đặt nhiều nhất trên thế giới.  "
 
 #. module: website_event
@@ -449,7 +449,7 @@ msgstr "Tên hiển thị"
 #. module: website_event
 #: model:ir.model.fields,field_description:website_event.field_event_type__website_menu
 msgid "Display a dedicated menu on Website"
-msgstr "Hiển thị một trình đơn riêng trên Website"
+msgstr "Hiển thị một Menu riêng trên Website"
 
 #. module: website_event
 #: model:ir.model.fields,help:website_event.field_event_event__community_menu
@@ -503,7 +503,7 @@ msgstr "Địa điểm Sự kiện"
 #. module: website_event
 #: model:ir.model.fields,field_description:website_event.field_event_event__menu_id
 msgid "Event Menu"
-msgstr "Trình đơn Sự kiện"
+msgstr "Menu Sự kiện"
 
 #. module: website_event
 #: model_terms:ir.ui.view,arch_db:website_event.event_event_view_form_add
@@ -762,7 +762,7 @@ msgstr ""
 #. module: website_event
 #: model:ir.model.fields,field_description:website_event.field_website_event_menu__menu_id
 msgid "Menu"
-msgstr "Trình đơn"
+msgstr "Menu"
 
 #. module: website_event
 #: model:ir.model.fields,field_description:website_event.field_website_event_menu__menu_type
@@ -772,7 +772,7 @@ msgstr "Loại menu"
 #. module: website_event
 #: model:ir.actions.act_window,name:website_event.website_event_menu_action
 msgid "Menus"
-msgstr "Trình đơn"
+msgstr "Menu"
 
 #. module: website_event
 #: model_terms:ir.ui.view,arch_db:website_event.registration_complete
@@ -1183,7 +1183,7 @@ msgstr "Trang chủ Website"
 #: model:ir.model,name:website_event.model_website_menu
 #: model:ir.model.fields,field_description:website_event.field_event_event__website_menu
 msgid "Website Menu"
-msgstr "Trình đơn Website"
+msgstr "Menu Website"
 
 #. module: website_event
 #: model:ir.ui.menu,name:website_event.menu_website_event_menu

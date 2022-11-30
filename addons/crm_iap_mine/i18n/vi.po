@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of ERP Server.
 # This file contains the translation of the following modules:
 # 	* crm_iap_mine
 # 
@@ -7,12 +7,12 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: ERP Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-23 08:02+0000\n"
 "PO-Revision-Date: 2022-09-22 05:45+0000\n"
 "Last-Translator: Martin Trigaux, 2022\n"
-"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"Language-Team: Vietnamese \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -284,7 +284,7 @@ msgstr "Từ"
 #: model_terms:ir.ui.view,arch_db:crm_iap_mine.crm_iap_lead_mining_request_view_form
 #, python-format
 msgid "Generate Leads"
-msgstr "Generate Leads"
+msgstr "Tự động tìm cơ hội"
 
 #. module: crm_iap_mine
 #: code:addons/crm_iap_mine/models/crm_iap_lead_mining_request.py:0
@@ -311,7 +311,7 @@ msgstr "Thiết bị & Dịch vụ chăm sóc sức khỏe"
 #. module: crm_iap_mine
 #: model:ir.model,name:crm_iap_mine.model_crm_iap_lead_helpers
 msgid "Helper methods for crm_iap_mine modules"
-msgstr "Phương thức trợ giúp cho mô-đun crm_iap_mine"
+msgstr "Phương thức trợ giúp cho ứng dụng crm_iap_mine"
 
 #. module: crm_iap_mine
 #: model:mail.template,name:crm_iap_mine.lead_generation_no_credits
@@ -578,7 +578,7 @@ msgstr "Tên vai trò đã tồn tại"
 #: model:ir.model.fields,field_description:crm_iap_mine.field_crm_iap_lead_mining_request__team_id
 #: model_terms:ir.ui.view,arch_db:crm_iap_mine.crm_iap_lead_mining_request_view_search
 msgid "Sales Team"
-msgstr "Đội ngũ bán hàng"
+msgstr "Nhóm bán hàng"
 
 #. module: crm_iap_mine
 #: model:ir.model.fields,field_description:crm_iap_mine.field_crm_iap_lead_mining_request__user_id

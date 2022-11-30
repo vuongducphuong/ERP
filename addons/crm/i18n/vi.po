@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of ERP Server.
 # This file contains the translation of the following modules:
 # 	* crm
 # 
@@ -9,12 +9,12 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: ERP Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-10 10:22+0000\n"
 "PO-Revision-Date: 2022-09-22 05:45+0000\n"
 "Last-Translator: Martin Trigaux, 2022\n"
-"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"Language-Team: Vietnamese \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -29,7 +29,7 @@ msgstr "# Tiềm năng / Cơ hội được chỉ định trong tháng này"
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__calendar_event_count
 msgid "# Meetings"
-msgstr "# SL Cuộc gặp"
+msgstr "# SL Cuộc hẹn"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_recurring_plan__number_of_months
@@ -375,7 +375,7 @@ msgstr ""
 "                        <div>\n"
 "                            Xin chào <t t-out=\"object.partner_id and object.partner_id.name or ''\">Deco Addict</t>,<br/><br/>\n"
 "                            Chào mừng tới <t t-out=\"object.company_id.name or ''\">My Company (San Francisco)</t>.\n"
-"                            Rất hân hạnh được gặp bạn! Vì bạn đã tham gia, giờ đây bạn sẽ khám phá những gì <t t-out=\"object.company_id.name or ''\">My Company (San Francisco)</t> có thể mang lại. Tên tôi là <t t-out=\"object.user_id.name or ''\">Marc Demo</t> và tôi sẽ giúp bạn sử dụng Odoo hiệu quả nhất. Bạn có vui lòng lên kế hoạch cho một buổi demo sớm không?<br/>\n"
+"                            Rất hân hạnh được gặp bạn! Vì bạn đã tham gia, giờ đây bạn sẽ khám phá những gì <t t-out=\"object.company_id.name or ''\">My Company (San Francisco)</t> có thể mang lại. Tên tôi là <t t-out=\"object.user_id.name or ''\">Marc Demo</t> và tôi sẽ giúp bạn sử dụng ERP hiệu quả nhất. Bạn có vui lòng lên kế hoạch cho một buổi demo sớm không?<br/>\n"
 "                            Hãy liên lạc với tôi bất cứ kỳ nào bạn cần!<br/><br/>\n"
 "                            Trân trọng,<br/>\n"
 "                            <t t-if=\"object.user_id\">\n"
@@ -445,7 +445,7 @@ msgstr ""
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.sales_team_form_view_in_crm
 msgid "Accept Emails From"
-msgstr "Chấp nhận email đến từ"
+msgstr "Chấp nhận email từ"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__message_needaction
@@ -1371,7 +1371,7 @@ msgstr ""
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_case_kanban_view_leads
 msgid "Dropdown menu"
-msgstr "Trình đơn thả xuống"
+msgstr "Menu thả xuống"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
@@ -1400,7 +1400,7 @@ msgstr "Email"
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.sales_team_form_view_in_crm
 msgid "Email Alias"
-msgstr "Bí danh Email"
+msgstr "Tiền tố Email"
 
 #. module: crm
 #: model:crm.lead.scoring.frequency.field,name:crm.frequency_field_email_state
@@ -1651,7 +1651,7 @@ msgstr ""
 #: code:addons/crm/models/crm_lead.py:0 code:addons/crm/models/crm_lead.py:0
 #, python-format
 msgid "Go, go, go! Congrats for your first deal."
-msgstr "Là lá la! Chúc mừng thương vụ đầu tiên của bạn."
+msgstr "Wow! Chúc mừng thương vụ đầu tiên của bạn nha. Cố lên!"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_activity_report_view_search
@@ -2352,13 +2352,13 @@ msgstr ""
 #: code:addons/crm/models/crm_lead.py:0
 #, python-format
 msgid "Meeting scheduled at '%s'<br> Subject: %s <br> Duration: %s"
-msgstr ""
+msgstr "Cuộc hẹn dự kiến lúc '%s'<br> Nội dung: %s <br> Thời lượng: %s"
 
 #. module: crm
 #: model:ir.actions.act_window,name:crm.act_crm_opportunity_calendar_event_new
 #: model:ir.model.fields,field_description:crm.field_crm_lead__calendar_event_ids
 msgid "Meetings"
-msgstr "Cuộc gặp"
+msgstr "Cuộc hẹn"
 
 #. module: crm
 #: code:addons/crm/models/crm_team_member.py:0
@@ -2433,12 +2433,12 @@ msgstr "Hàng tháng"
 msgid "Monthly average leads capacity for all salesmen belonging to the team"
 msgstr ""
 "Dung lượng lead trung bình hàng tháng cho tất cả nhân viên kinh doanh của "
-"đội"
+"đội/nhóm"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_res_config_settings__is_membership_multi
 msgid "Multi Teams"
-msgstr "Nhiều đội"
+msgstr "Nhiều đội/nhóm"
 
 #. module: crm
 #: model:ir.actions.act_window,name:crm.crm_lead_action_my_activities
@@ -2764,7 +2764,7 @@ msgstr ""
 "Bản phân tích Cơ hội cho phép bạn truy cập nhanh đến các cơ hội với thông "
 "tin như: doanh thu mong đợi, chi phí dự kiến, số lần tương tác,... Báo cáo "
 "này chủ yếu được sử dụng bởi Người quản lý bán hàng để thực hiện việc quản "
-"lý định kỳ với các đội ngũ bán hàng của một chu trình bán hàng."
+"lý định kỳ với các Nhóm của một chu trình bán hàng."
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_graph_forecast
@@ -3181,7 +3181,7 @@ msgstr "Yêu cầu"
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_case_tree_view_oppor
 msgid "Reschedule"
-msgstr "Đặt lại lịch trình"
+msgstr "Đặt lại lịch hẹn"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__activity_user_id
@@ -3229,7 +3229,7 @@ msgstr "Bán hàng"
 #: model_terms:ir.ui.view,arch_db:crm.view_crm_case_leads_filter
 #: model_terms:ir.ui.view,arch_db:crm.view_crm_case_opportunities_filter
 msgid "Sales Team"
-msgstr "Đội ngũ bán hàng"
+msgstr "Nhóm bán hàng"
 
 #. module: crm
 #: model:ir.model,name:crm.model_crm_team_member
@@ -3336,7 +3336,7 @@ msgstr "Thiết lập"
 #. module: crm
 #: model:res.groups,name:crm.group_use_lead
 msgid "Show Lead Menu"
-msgstr "Hiển thị Trình đơn Tiềm năng"
+msgstr "Hiển thị Menu Tiềm năng"
 
 #. module: crm
 #: model:res.groups,name:crm.group_use_recurring_revenues
@@ -3541,7 +3541,7 @@ msgstr ""
 #. module: crm
 #: model:ir.ui.menu,name:crm.sales_team_menu_team_pipeline
 msgid "Teams"
-msgstr "Đội"
+msgstr "Đội/nhóm"
 
 #. module: crm
 #: model:ir.ui.menu,name:crm.crm_team_member_config
@@ -3571,7 +3571,7 @@ msgid ""
 " email that does not reply to an existing record will cause the creation of "
 "a new record of this model (e.g. a Project Task)"
 msgstr ""
-"Model (kiểu tài liệu Odoo) mà bí danh này ứng với nó. Bất kỳ tin nhắn email "
+"Model mà bí danh này ứng với nó. Bất kỳ tin nhắn email "
 "nào không phản hồi lại một bản ghi có sẵn sẽ tự động tạo một bản ghi mới cho"
 " model này (vd: tạo mới một nhiệm vụ dự án nếu model là project.task)"
 
@@ -3581,8 +3581,8 @@ msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
 "<jobs@example.odoo.com>"
 msgstr ""
-"Tên của bí danh email, vd 'vieclam' nếu bạn muốn bắt tin nhắn gửi đến địa "
-"chỉ email <vieclam@vidu.odoo.com>"
+"Tên của tiền tố email, vd 'nhom1' nếu bạn muốn bắt tin nhắn gửi đến địa "
+"chỉ email <nhom1@emailcongty.vn>"
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_lead__partner_name
@@ -4029,7 +4029,7 @@ msgstr "Demo chào mừng"
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_lost_view_form
 msgid "What went wrong ?"
-msgstr ""
+msgstr "Mô tả cụ thể điều gì đã dẫn đến chuyện này?"
 
 #. module: crm
 #: code:addons/crm/models/crm_lead.py:0 model:crm.stage,name:crm.stage_lead4

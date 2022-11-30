@@ -1,24 +1,16 @@
-# Translation of Odoo Server.
+# Translation of ERP Server.
 # This file contains the translation of the following modules:
 # 	* website
 # 
-# Translators:
-# odooviet <cuong.nm@ictech.vn>, 2022
-# Thin Tran <trvathin@gmail.com>, 2022
-# Cécile Collart <cco@odoo.com>, 2022
-# Trinh Tran Thi Phuong <trinhttp@trobz.com>, 2022
-# Vo Thanh Thuy, 2022
-# Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2022
-# Martin Trigaux, 2022
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0\n"
+"Project-Id-Version: ERP Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-03 16:37+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
-"Last-Translator: Martin Trigaux, 2022\n"
-"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"Last-Translator: Nancy Momoland <thanhnguyen.icsc@gmail.com>, 2022\n"
+"Language-Team: Vietnamese \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -1362,15 +1354,6 @@ msgid "A Chart Title"
 msgstr "Tiêu đề biểu đồ"
 
 #. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/editor/snippets.options.js:0
-#, python-format
-msgid ""
-"A Google Map error occurred. Make sure to read the key configuration popup "
-"carefully."
-msgstr ""
-
-#. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_text_image
 msgid "A Section Subtitle"
 msgstr "Một phụ đề"
@@ -1696,7 +1679,7 @@ msgstr "Thêm vào giỏ hàng"
 #: code:addons/website/static/src/components/dialog/dialog.js:0
 #, python-format
 msgid "Add to menu"
-msgstr "Thêm trình đơn"
+msgstr "Thêm Menu"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_google_map_options
@@ -1715,11 +1698,8 @@ msgid "After"
 msgstr "Sau"
 
 #. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 #: model_terms:website.page,arch_db:website.bs_debug_page
-#, python-format
 msgid "Alert"
 msgstr "Cảnh báo"
 
@@ -2173,11 +2153,8 @@ msgid "Background Shape"
 msgstr "Hình dạng nền"
 
 #. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 #: model_terms:website.page,arch_db:website.bs_debug_page
-#, python-format
 msgid "Badge"
 msgstr "Huy hiệu"
 
@@ -2271,13 +2248,6 @@ msgstr "Áo khoác blazer"
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Block"
 msgstr "Khoá"
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
-#, python-format
-msgid "Blockquote"
-msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_big_icons_subtitles
@@ -2514,11 +2484,8 @@ msgid "Cannot load google map."
 msgstr "Không thể tải bản đồ google."
 
 #. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 #: model_terms:website.page,arch_db:website.bs_debug_page
-#, python-format
 msgid "Card"
 msgstr "Thẻ"
 
@@ -2600,7 +2567,7 @@ msgid ""
 "Change theme in a few clicks, and browse through Odoo's catalog of\n"
 "                            ready-to-use themes available in our app store."
 msgstr ""
-"Thay đổi chủ đề trong vài cú nhấp chuột và duyệt qua danh mục của Odoo về\n"
+"Thay đổi chủ đề trong vài cú nhấp chuột và duyệt qua danh mục của ERP về\n"
 "                            các chủ đề sẵn sàng sử dụng có sẵn trong cửa hàng ứng dụng của chúng tôi."
 
 #. module: website
@@ -2628,10 +2595,7 @@ msgstr ""
 "rằng việc thay đổi chủ đề sẽ đặt lại tất cả các tùy chỉnh màu sắc của bạn."
 
 #. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
 #: model_terms:ir.ui.view,arch_db:website.s_chart_options
-#, python-format
 msgid "Chart"
 msgstr "Biểu đồ"
 
@@ -2685,7 +2649,7 @@ msgstr "Trường con"
 #: model:ir.model.fields,field_description:website.field_website_menu__child_id
 #: model_terms:ir.ui.view,arch_db:website.website_menus_form_view
 msgid "Child Menus"
-msgstr "Trình đơn con"
+msgstr "Menu con"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_menus_logos
@@ -3953,7 +3917,7 @@ msgstr "Thả xuống"
 #: code:addons/website/static/src/components/dialog/edit_menu.xml:0
 #, python-format
 msgid "Dropdown menu"
-msgstr "Trình đơn thả xuống"
+msgstr "Menu thả xuống"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_countdown_options
@@ -4010,7 +3974,7 @@ msgid ""
 "Easily design your own Odoo templates thanks to clean HTML\n"
 "                            structure and bootstrap CSS."
 msgstr ""
-"Dễ dàng thiết kế các mẫu Odoo của riêng bạn nhờ cấu trúc HTML\n"
+"Dễ dàng thiết kế các mẫu ERP của riêng bạn nhờ cấu trúc HTML\n"
 "                            rõ ràng và bootstrap CSS."
 
 #. module: website
@@ -4045,7 +4009,7 @@ msgstr ""
 #: model:ir.ui.menu,name:website.custom_menu_edit_menu
 #, python-format
 msgid "Edit Menu"
-msgstr "Sửa Trình đơn"
+msgstr "Sửa Menu"
 
 #. module: website
 #. openerp-web
@@ -4160,13 +4124,6 @@ msgstr "Bật thanh toán trên Google Project của bạn"
 #: model:ir.model.fields,help:website.field_ir_model__website_form_access
 msgid "Enable the form builder feature for this model."
 msgstr "Bật tính năng tạo biểu mẫu cho model này."
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/xml/website.editor.xml:0
-#, python-format
-msgid "Enable the right google map APIs in your google account"
-msgstr ""
 
 #. module: website
 #. openerp-web
@@ -4825,7 +4782,7 @@ msgstr "Đi tới tab Chủ đề"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.layout
 msgid "Go to your Odoo Apps"
-msgstr "Đi tới Ứng dụng Odoo của bạn"
+msgstr "Đi tới Ứng dụng ERP của bạn"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_carousel
@@ -5020,7 +4977,7 @@ msgstr "Hamburger menu"
 #: code:addons/website/static/src/snippets/s_countdown/options.xml:0
 #, python-format
 msgid "Happy Odoo Anniversary!"
-msgstr "Chúc mừng kỷ niệm BizApps!"
+msgstr "Chúc mừng kỷ niệm ERP!"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website__has_social_default_image
@@ -5574,76 +5531,6 @@ msgid "Inputs"
 msgstr "Đầu vào"
 
 #. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
-#, python-format
-msgid "Insert a badge snippet."
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
-#, python-format
-msgid "Insert a blockquote snippet."
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
-#, python-format
-msgid "Insert a card snippet."
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
-#, python-format
-msgid "Insert a chart snippet."
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
-#, python-format
-msgid "Insert a progress bar snippet."
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
-#, python-format
-msgid "Insert a rating snippet."
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
-#, python-format
-msgid "Insert a share snippet."
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
-#, python-format
-msgid "Insert a text Highlight snippet."
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
-#, python-format
-msgid "Insert an alert snippet."
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
-#, python-format
-msgid "Insert an horizontal separator sippet."
-msgstr ""
-
-#. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_table_of_content
 msgid ""
 "Insert text styles like headers, bold, italic, lists, and fonts with\n"
@@ -5872,7 +5759,7 @@ msgid ""
 "            still customizable."
 msgstr ""
 "It appears your website is still using the old color system of\n"
-"            Odoo 13.0 in some places. We made sure it is still working but\n"
+"            ERP 13.0 in some places. We made sure it is still working but\n"
 "            we recommend you to try to use the new color system, which is\n"
 "            still customizable."
 
@@ -6406,7 +6293,7 @@ msgstr "Khóa học chính"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website__menu_id
 msgid "Main Menu"
-msgstr "Trình đơn chính"
+msgstr "Menu chính"
 
 #. module: website
 #. openerp-web
@@ -6420,43 +6307,6 @@ msgstr "Hành động chính"
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "Main page of your website served to visitors"
 msgstr "Trang chính trang web của bạn được phục vụ cho khách truy cập"
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/xml/website.editor.xml:0
-#, python-format
-msgid "Make sure billing is enabled"
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/xml/website.editor.xml:0
-#, python-format
-msgid ""
-"Make sure to wait if errors keep being shown: sometimes enabling an API "
-"allows to use it immediately but Google keeps triggering errors for a while"
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/xml/website.editor.xml:0
-#, python-format
-msgid "Make sure your settings are properly configured:"
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/xml/website.editor.xml:0
-#, python-format
-msgid "Maps JavaScript API"
-msgstr ""
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/xml/website.editor.xml:0
-#, python-format
-msgid "Maps Static API"
-msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
@@ -6540,7 +6390,7 @@ msgstr "Nam"
 #: model:ir.model.fields,field_description:website.field_website_menu__name
 #: model_terms:ir.ui.view,arch_db:website.s_product_catalog
 msgid "Menu"
-msgstr "Trình đơn"
+msgstr "Menu"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_configurator_feature__menu_company
@@ -6571,7 +6421,7 @@ msgstr "Menu sử dụng bản sao của tôi"
 #. module: website
 #: model:ir.ui.menu,name:website.menu_website_menu_list
 msgid "Menus"
-msgstr "Trình đơn"
+msgstr "Menu"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_facebook_page_options
@@ -6694,17 +6544,17 @@ msgstr "Sửa đổi cấu trúc"
 #: model:ir.model,name:website.model_ir_module_module
 #: model:ir.model.fields,field_description:website.field_website_configurator_feature__module_id
 msgid "Module"
-msgstr "Mô đun"
+msgstr "Ứng dụng"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_res_config_settings__module_marketing_automation
 msgid "Module Marketing Automation"
-msgstr "Mô-đun Tiếp thị Tự động"
+msgstr "Ứng dụng Tiếp thị Tự động"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_res_config_settings__module_website_livechat
 msgid "Module Website Livechat"
-msgstr "Mô-đun Trang web Livechat"
+msgstr "Ứng dụng Trang web Livechat"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
@@ -6720,7 +6570,7 @@ msgid ""
 "them an SMS, or call them right away while they are browsing your website."
 msgstr ""
 "Giám sát khách truy cập của bạn khi họ đang duyệt trang web của bạn bằng ứng"
-" dụng Odoo Social. Tương tác với họ chỉ bằng một cú nhấp chuột bằng cách sử "
+" dụng ERP Social. Tương tác với họ chỉ bằng một cú nhấp chuột bằng cách sử "
 "dụng yêu cầu trò chuyện trực tiếp hoặc thông báo đẩy. Nếu họ đã hoàn thành "
 "một trong các biểu mẫu của bạn, bạn có thể gửi SMS cho họ hoặc gọi cho họ "
 "ngay trong khi họ đang duyệt trang web của bạn."
@@ -7136,7 +6986,7 @@ msgstr "Thông tin hệ thống"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Odoo Menu"
-msgstr "Odoo Menu"
+msgstr "Menu hệ thống"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
@@ -7570,7 +7420,7 @@ msgstr "Cha"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_menu__parent_id
 msgid "Parent Menu"
-msgstr "Trình đơn cha"
+msgstr "Menu cha"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_menu__parent_path
@@ -7645,13 +7495,6 @@ msgstr "Pills"
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Placeholder"
 msgstr "Trình giữ chỗ"
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/xml/website.editor.xml:0
-#, python-format
-msgid "Places API"
-msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_countdown_options
@@ -7849,13 +7692,6 @@ msgid "Profile"
 msgstr "Hồ sơ"
 
 #. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
-#, python-format
-msgid "Progress Bar"
-msgstr "Thanh tiến trình"
-
-#. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_countdown_options
 msgid "Progress Bar Color"
 msgstr "Màu thanh tiến trình"
@@ -7980,13 +7816,6 @@ msgid "Radio Buttons"
 msgstr "Nút tròn"
 
 #. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
-#, python-format
-msgid "Rating"
-msgstr "Đánh giá"
-
-#. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_image_gallery_options
 msgid "Re-order"
 msgstr "Đặt hàng lại"
@@ -8047,12 +7876,12 @@ msgstr "Thông thường"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_pages_form_view
 msgid "Related Menu Items"
-msgstr "Mục trình đơn liên quan"
+msgstr "Mục Menu liên quan"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_page__menu_ids
 msgid "Related Menus"
-msgstr "Trình đơn liên quan"
+msgstr "Menu liên quan"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_menu__page_id
@@ -8410,7 +8239,7 @@ msgstr "Tìm kiếm"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.menu_search
 msgid "Search Menus"
-msgstr "Tìm trình đơn"
+msgstr "Tìm Menu"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.view_rewrite_search
@@ -8437,7 +8266,7 @@ msgid ""
 "picture, in just a few clicks."
 msgstr ""
 "Tìm kiếm trong đối thoại truyền thông khi bạn cần ảnh để minh họa trang web "
-"của mình. Sự tích hợp của Odoo với Unsplash, bao gồm hàng triệu bức ảnh chất"
+"của mình. Sự tích hợp của ERP với Unsplash, bao gồm hàng triệu bức ảnh chất"
 " lượng cao và miễn phí bản quyền, giúp bạn có thể có được bức ảnh hoàn hảo "
 "chỉ trong vài cú nhấp chuột."
 
@@ -8564,13 +8393,6 @@ msgid "Separated link"
 msgstr "Link riêng biệt"
 
 #. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
-#, python-format
-msgid "Separator"
-msgstr "Phần ngăn cách"
-
-#. module: website
 #: model:ir.model.fields,field_description:website.field_theme_ir_asset__sequence
 #: model:ir.model.fields,field_description:website.field_theme_website_menu__sequence
 #: model:ir.model.fields,field_description:website.field_website__sequence
@@ -8650,11 +8472,7 @@ msgid "Shake"
 msgstr "Lắc"
 
 #. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
 #: model_terms:ir.ui.view,arch_db:website.s_share
-#: model_terms:ir.ui.view,arch_db:website.template_footer_headline
-#, python-format
 msgid "Share"
 msgstr "Chia sẻ"
 
@@ -8731,7 +8549,7 @@ msgstr "Hiện dạng xem phân cấp"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_page_properties_view_form
 msgid "Show in Top Menu"
-msgstr "Hiển thị trong Trình đơn phía trên"
+msgstr "Hiển thị trong Menu phía trên"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.view_view_qweb
@@ -9280,10 +9098,7 @@ msgid "Text Color"
 msgstr "Màu chữ"
 
 #. module: website
-#. openerp-web
-#: code:addons/website/static/src/js/menu/edit.js:0
 #: model_terms:ir.ui.view,arch_db:website.s_text_highlight
-#, python-format
 msgid "Text Highlight"
 msgstr "Text Highlight"
 
@@ -9795,7 +9610,7 @@ msgid ""
 msgstr ""
 "Để có nhiều khách truy cập, bạn nên nhắm mục tiêu các từ khóa thường được "
 "tìm kiếm trên Google. Với công cụ SEO tích hợp sẵn, khi bạn xác định một vài"
-" từ khóa, Odoo sẽ giới thiệu cho bạn những từ khóa tốt nhất để nhắm mục "
+" từ khóa, ERP sẽ giới thiệu cho bạn những từ khóa tốt nhất để nhắm mục "
 "tiêu. Sau đó, điều chỉnh tiêu đề và mô tả của bạn cho phù hợp để tăng lưu "
 "lượng truy cập."
 
@@ -10630,16 +10445,6 @@ msgstr "Khách truy cập web"
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/components/fields/redirect_field.xml:0
-#: code:addons/website/static/src/js/menu/edit.js:0
-#: code:addons/website/static/src/js/menu/edit.js:0
-#: code:addons/website/static/src/js/menu/edit.js:0
-#: code:addons/website/static/src/js/menu/edit.js:0
-#: code:addons/website/static/src/js/menu/edit.js:0
-#: code:addons/website/static/src/js/menu/edit.js:0
-#: code:addons/website/static/src/js/menu/edit.js:0
-#: code:addons/website/static/src/js/menu/edit.js:0
-#: code:addons/website/static/src/js/menu/edit.js:0
-#: code:addons/website/static/src/js/menu/edit.js:0
 #: code:addons/website/static/src/xml/website.backend.xml:0
 #: model:ir.actions.act_url,name:website.action_website
 #: model:ir.model,name:website.model_website
@@ -10729,7 +10534,7 @@ msgstr "Website Logo"
 #: model:ir.actions.act_window,name:website.action_website_menu
 #: model:ir.model,name:website.model_website_menu
 msgid "Website Menu"
-msgstr "Trình đơn Website"
+msgstr "Menu Website"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_menus_form_view
@@ -10853,7 +10658,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.menu_tree
 msgid "Website menu"
-msgstr "Trình đơn website"
+msgstr "Menu website"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_ir_ui_view__website_meta_description
@@ -11022,7 +10827,7 @@ msgid ""
 "                            Each browser is a little different, so look at your browser's Help menu to learn the correct way to modify your cookies."
 msgstr ""
 "Bạn có thể chọn để máy tính cảnh báo mỗi khi gửi cookie hoặc bạn có thể chọn tắt tất cả cookie.\n"
-"                            Mỗi trình duyệt có một chút khác biệt, vì vậy hãy xem trình đơn Trợ giúp của trình duyệt để tìm hiểu cách sửa đổi cookie chính xác của bạn."
+"                            Mỗi trình duyệt có một chút khác biệt, vì vậy hãy xem Menu Trợ giúp của trình duyệt để tìm hiểu cách sửa đổi cookie chính xác của bạn."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_features_grid
@@ -11562,7 +11367,7 @@ msgstr "thông báo cho khách hàng"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
 msgid "instance of Odoo, the"
-msgstr "ví dụ của Odoo, the"
+msgstr "ví dụ của ERP, the"
 
 #. module: website
 #: model:ir.model.fields.selection,name:website.selection__theme_ir_ui_view__inherit_id__ir_ui_view
@@ -11584,14 +11389,6 @@ msgstr "khối, lưới"
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "menu, pricing"
 msgstr "menu, giá cả"
-
-#. module: website
-#. openerp-web
-#: code:addons/website/static/src/snippets/s_website_form/options.js:0
-#: code:addons/website/static/src/xml/website_form_editor.xml:0
-#, python-format
-msgid "no value"
-msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.color_combinations_debug_view

@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of ERP Server.
 # This file contains the translation of the following modules:
 # 	* hr_attendance
 # 
@@ -7,12 +7,12 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.5alpha1\n"
+"Project-Id-Version: ERP Server 15.5alpha1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-20 09:01+0000\n"
 "PO-Revision-Date: 2022-09-22 05:46+0000\n"
 "Last-Translator: Martin Trigaux, 2022\n"
-"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"Language-Team: Vietnamese \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -42,7 +42,7 @@ msgstr "%(empl_name)s từ %(check_in)s đến %(check_out)s"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:0
 #, python-format
 msgid ": Your user should be linked to an employee to use attendance."
-msgstr ""
+msgstr ": Tài khoản người dùng của bạn phải được liên kết với một nhân viên để thực hiện chấm công."
 
 #. module: hr_attendance
 #. openerp-web
@@ -53,7 +53,7 @@ msgid ""
 "right, please contact Human Resource staff"
 msgstr ""
 "<b>Cảnh báo! Lần kiểm tra cuối cùng đã hơn 12 giờ trước.</b><br/>Nếu điều "
-"này không đúng, xin vui lòng liên hệ với nhân viên phòng nhân sự"
+"này không đúng, xin vui lòng liên hệ với nhân viên phòng hành chính nhân sự"
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_hr_attendance_kanban
@@ -200,13 +200,13 @@ msgstr "Phân tích Điểm danh"
 #: model:ir.model.fields,field_description:hr_attendance.field_res_company__attendance_kiosk_delay
 #: model:ir.model.fields,field_description:hr_attendance.field_res_config_settings__attendance_kiosk_delay
 msgid "Attendance Kiosk Delay"
-msgstr ""
+msgstr "Trì hoãn chấm công Kiosk"
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_res_company__attendance_kiosk_mode
 #: model:ir.model.fields,field_description:hr_attendance.field_res_config_settings__attendance_kiosk_mode
 msgid "Attendance Mode"
-msgstr ""
+msgstr "Chế độ chấm cong"
 
 #. module: hr_attendance
 #: model:ir.model,name:hr_attendance.model_hr_attendance_overtime
@@ -250,7 +250,7 @@ msgstr "Khả dụng"
 #. module: hr_attendance
 #: model:ir.model.fields.selection,name:hr_attendance.selection__res_company__attendance_barcode_source__back
 msgid "Back Camera"
-msgstr ""
+msgstr "Camera sau"
 
 #. module: hr_attendance
 #. openerp-web
@@ -262,18 +262,18 @@ msgstr "Mã vạch"
 #. module: hr_attendance
 #: model:ir.model.fields.selection,name:hr_attendance.selection__res_company__attendance_kiosk_mode__barcode
 msgid "Barcode / RFID"
-msgstr ""
+msgstr "Mã vạch/Thẻ RFID"
 
 #. module: hr_attendance
 #: model:ir.model.fields.selection,name:hr_attendance.selection__res_company__attendance_kiosk_mode__barcode_manual
 msgid "Barcode / RFID and Manual Selection"
-msgstr ""
+msgstr "Mã vạch/Thẻ RFID hoặc chọn thủ công"
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_res_company__attendance_barcode_source
 #: model:ir.model.fields,field_description:hr_attendance.field_res_config_settings__attendance_barcode_source
 msgid "Barcode Source"
-msgstr ""
+msgstr "Nguồn mã vạch"
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_attendance.py:0
@@ -313,7 +313,7 @@ msgstr ""
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:0
 #, python-format
 msgid "Check IN"
-msgstr ""
+msgstr "Đăng nhập"
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance__check_in
@@ -335,7 +335,7 @@ msgstr "Đăng nhập / Đăng xuất"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:0
 #, python-format
 msgid "Check OUT"
-msgstr ""
+msgstr "Đăng xuất"
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance__check_out
@@ -348,7 +348,7 @@ msgstr "Đăng xuất"
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.res_config_settings_view_form
 msgid "Check-In/Out in Kiosk Mode"
-msgstr ""
+msgstr "Check-In/Out trong chế độ Kiosk"
 
 #. module: hr_attendance
 #: model:ir.model.fields.selection,name:hr_attendance.selection__hr_employee__attendance_state__checked_in
@@ -377,7 +377,7 @@ msgstr "Đăng xuất vào"
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.res_config_settings_view_form
 msgid "Choose how long the greeting message will be displayed."
-msgstr ""
+msgstr "Chọn khoảng thời gian tin nhắn chức mừng sẽ được hiển thị"
 
 #. module: hr_attendance
 #: model:ir.model,name:hr_attendance.model_res_company
@@ -457,12 +457,12 @@ msgstr "Ngày"
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.res_config_settings_view_form
 msgid "Define the camera used for the barcode scan."
-msgstr ""
+msgstr "Xác định camera được sử dụng để quét mã vạch."
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.res_config_settings_view_form
 msgid "Define the way the user will be identified by the application."
-msgstr ""
+msgstr "Xác định cách người dùng sẽ được xác thực bởi ứng dụng."
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance__department_id
@@ -480,7 +480,7 @@ msgstr "Tên hiển thị"
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.res_config_settings_view_form
 msgid "Display Time"
-msgstr ""
+msgstr "Thời gian hiển thị"
 
 #. module: hr_attendance
 #. openerp-web
@@ -495,7 +495,7 @@ msgstr ""
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:0
 #, python-format
 msgid "Eat breakfast as a king, lunch as a merchant and supper as a beggar"
-msgstr "Sáng ăn cho ta, trưa ăn cho bạn, tối ăn cho kẻ thù"
+msgstr "Hãy ăn bữa sáng như một vị vua, bữa trưa như một hoàng tử, và bữa tối như một người nghèo túng"
 
 #. module: hr_attendance
 #: model:ir.model,name:hr_attendance.model_hr_employee
@@ -560,7 +560,7 @@ msgstr "Ngày tính giờ làm thêm"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:0
 #, python-format
 msgid "Extra hours today:"
-msgstr ""
+msgstr "Giờ làm thêm hôm nay"
 
 #. module: hr_attendance
 #: model:ir.model.fields,help:hr_attendance.field_hr_attendance_overtime__duration_real
@@ -577,7 +577,7 @@ msgstr "Đến trước, phục vụ trước"
 #. module: hr_attendance
 #: model:ir.model.fields.selection,name:hr_attendance.selection__res_company__attendance_barcode_source__front
 msgid "Front Camera"
-msgstr ""
+msgstr "Camera trước"
 
 #. module: hr_attendance
 #. openerp-web
@@ -733,7 +733,7 @@ msgstr "Làm gì thì phải làm đến nơi đến chốn! "
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:0
 #, python-format
 msgid "Invalid request"
-msgstr ""
+msgstr "Yêu cầu không hợp lệ"
 
 #. module: hr_attendance
 #: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_kiosk_no_user_mode
@@ -768,12 +768,12 @@ msgstr "Cập nhật lần cuối vào"
 #. module: hr_attendance
 #: model:ir.model.fields.selection,name:hr_attendance.selection__res_company__attendance_kiosk_mode__manual
 msgid "Manual Selection"
-msgstr ""
+msgstr "Lựa chọn thủ công"
 
 #. module: hr_attendance
 #: model:ir.model,name:hr_attendance.model_ir_ui_menu
 msgid "Menu"
-msgstr "Trình đơn"
+msgstr "Menu"
 
 #. module: hr_attendance
 #: model:ir.actions.client,name:hr_attendance.hr_attendance_action_greeting_message
@@ -817,7 +817,7 @@ msgstr "OK"
 #. module: hr_attendance
 #: model:res.groups,name:hr_attendance.group_hr_attendance_user
 msgid "Officer : Manage all attendances"
-msgstr ""
+msgstr "Nhân viên: Quản lý toàn bộ chấm công"
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_employee__overtime_ids
@@ -829,7 +829,7 @@ msgstr "Overtime"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:0
 #, python-format
 msgid "Please contact your administrator."
-msgstr ""
+msgstr "Vui lòng liên hệ với Quản trị viên"
 
 #. module: hr_attendance
 #. openerp-web
@@ -844,7 +844,7 @@ msgstr "Vui lòng nhập mã PIN của bạn vào"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:0
 #, python-format
 msgid "Please return to the main menu."
-msgstr "Vui lòng qua về trình đơn chính."
+msgstr "Vui lòng qua về Menu chính."
 
 #. module: hr_attendance
 #: model:ir.model,name:hr_attendance.model_hr_employee_public
@@ -915,7 +915,7 @@ msgstr "Thành công sẽ đến với ai biết nắm bắt cơ hội trước 
 msgid ""
 "The user will be able to open the kiosk mode and validate the employee PIN."
 msgstr ""
-"The user will be able to open the kiosk mode and validate the employee PIN."
+"Người dùng sẽ có thể mở chế độ kiosk và xác thực mã PIN của nhân viên."
 
 #. module: hr_attendance
 #: model:res.groups,comment:hr_attendance.group_hr_attendance
@@ -923,7 +923,7 @@ msgid ""
 "The user will gain access to the human resources attendance menu, enabling "
 "him to manage his own attendance."
 msgstr ""
-"Người dùng sẽ có quyền truy cập vào trình đơn Quản lý Điểm danh, cho phép họ"
+"Người dùng sẽ có quyền truy cập vào Menu Quản lý Điểm danh, cho phép họ"
 " quản lý vào ra của chính mình."
 
 #. module: hr_attendance
@@ -932,7 +932,7 @@ msgid ""
 "The user will have to enter his PIN to check in and out manually at the "
 "company screen."
 msgstr ""
-"Người dùng sẽ phải nhập mã PIN của anh ta để check in và out một cách thủ "
+"Người dùng sẽ phải nhập mã PIN của họ để check in và check out một cách thủ "
 "công ở giao diện công ty."
 
 #. module: hr_attendance
@@ -942,6 +942,8 @@ msgid ""
 "To activate Kiosk mode without pin code, you must have access right as an "
 "Officer or above in the Attendance app. Please contact your administrator."
 msgstr ""
+"Để kích hoạt chế độ Kiosk không cần mã pin, bạn phải có quyền truy cập với tư cách là một "
+"Nhân viên văn phòng hoặc trên ứng dụng Chấm công. Vui lòng liên hệ với quản trị viên của bạn."
 
 #. module: hr_attendance
 #. openerp-web
@@ -982,7 +984,7 @@ msgstr "Tổng giờ làm thêm:"
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.res_config_settings_view_form
 msgid "Use PIN codes (defined on the Employee's profile) to check-in."
-msgstr ""
+msgstr "Sử dụng mã PIN (được xác định trong hồ sơ của Nhân viên) để đăng ký."
 
 #. module: hr_attendance
 #: model:ir.model,name:hr_attendance.model_res_users
@@ -993,7 +995,7 @@ msgstr "Người dùng"
 #. module: hr_attendance
 #: model:res.groups,name:hr_attendance.group_hr_attendance_kiosk
 msgid "User : Only kiosk mode"
-msgstr ""
+msgstr "Người dùng: Chỉ chế độ kiosk"
 
 #. module: hr_attendance
 #. openerp-web

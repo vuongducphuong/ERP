@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of ERP Server.
 # This file contains the translation of the following modules:
 # 	* mail_plugin
 # 
@@ -7,12 +7,12 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: ERP Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-23 08:02+0000\n"
 "PO-Revision-Date: 2022-09-22 05:53+0000\n"
 "Last-Translator: Martin Trigaux, 2022\n"
-"Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
+"Language-Team: Vietnamese \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -68,7 +68,7 @@ msgid ""
 "Attachments could not be logged in Odoo because their total size exceeded "
 "the allowed maximum."
 msgstr ""
-"Tệp đính kèm không thể đăng nhập vào Odoo vì tổng kích cỡ vượt quá mức tối "
+"Tệp đính kèm không thể đăng nhập vào ERP vì tổng kích cỡ vượt quá mức tối "
 "đa cho phép."
 
 #. module: mail_plugin
@@ -497,7 +497,7 @@ msgstr "Không thể tìm thêm thông tin cho công ty liên kết với liên 
 #, python-format
 msgid "No company linked to this contact could be enriched or found in Odoo"
 msgstr ""
-"Không thể tìm thấy trong Odoo hoặc tìm thêm thông tin cho công ty liên kết "
+"Không thể tìm thấy trong ERP hoặc tìm thêm thông tin cho công ty liên kết "
 "với liên hệ này"
 
 #. module: mail_plugin
@@ -547,14 +547,14 @@ msgstr "Không đủ tín dụng để tìm thông tin."
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
 msgid "Odoo Access Token"
-msgstr "Mã token truy cập Odoo"
+msgstr "Mã token truy cập ERP"
 
 #. module: mail_plugin
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
 msgid "Odoo Server URL"
-msgstr "URL miền Odoo"
+msgstr "URL miền ERP"
 
 #. module: mail_plugin
 #: model:ir.model.constraint,message:mail_plugin.constraint_res_partner_iap_unique_partner_id
@@ -643,7 +643,7 @@ msgstr "Doanh thu"
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
 msgid "Save in Odoo"
-msgstr "Lưu trong Odoo"
+msgstr "Lưu trong ERP"
 
 #. module: mail_plugin
 #. openerp-web
@@ -678,7 +678,7 @@ msgstr "Tìm kiếm trong cơ sở dữ liệu"
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
 msgid "Search In Odoo"
-msgstr "Tìm kiếm trong Odoo"
+msgstr "Tìm kiếm trong ERP"
 
 #. module: mail_plugin
 #. openerp-web
@@ -692,7 +692,7 @@ msgstr "Tìm kiếm liên hệ"
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
 msgid "Search contact in Odoo..."
-msgstr "Tìm liên hệ trong Odoo..."
+msgstr "Tìm liên hệ trong ERP..."
 
 #. module: mail_plugin
 #. openerp-web
@@ -726,7 +726,7 @@ msgstr "Công ty không có địa chỉ email và không thể thêm thông tin
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
 msgid "This contact does not exist in the Odoo database."
-msgstr "Liên hệ này không tồn tại trong cơ sở dữ liệu Odoo."
+msgstr "Liên hệ này không tồn tại trong cơ sở dữ liệu ERP."
 
 #. module: mail_plugin
 #. openerp-web
@@ -751,7 +751,7 @@ msgid ""
 "Warning: Attachments could not be logged in Odoo because their total size "
 "exceeded the allowed maximum."
 msgstr ""
-"Cảnh báo: Tệp đính kèm không thể đăng nhập vào Odoo vì tổng kích cỡ vượt quá"
+"Cảnh báo: Tệp đính kèm không thể đăng nhập vào ERP vì tổng kích cỡ vượt quá"
 " mức tối đa cho phép."
 
 #. module: mail_plugin
@@ -796,7 +796,7 @@ msgstr "Bạn cần phải chỉ định ít nhất một partner_id  hoặc t�
 #. module: mail_plugin
 #: model_terms:ir.ui.view,arch_db:mail_plugin.app_auth
 msgid "access your Odoo database?"
-msgstr "truy cập cơ sở dữ liệu Odoo?"
+msgstr "truy cập cơ sở dữ liệu ERP?"
 
 #. module: mail_plugin
 #. openerp-web
