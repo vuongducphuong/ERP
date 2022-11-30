@@ -10070,3 +10070,10 @@ om_account_daily_reports.access_param_bao_cao_doanh_thu_tong_hop,access_param_ba
 2022-11-29 01:39:48,128 5396 INFO ? werkzeug: 127.0.0.1 - - [29/Nov/2022 01:39:48] "GET /dynamic_accounts_report/static/description/assets/screenshots/daybook%20drilldown.png HTTP/1.1" 304 - 0 0.000 0.003
 2022-11-29 01:39:48,131 5396 INFO ? werkzeug: 127.0.0.1 - - [29/Nov/2022 01:39:48] "GET /dynamic_accounts_report/static/description/assets/screenshots/view%20source%20move%20from%20daybook.png HTTP/1.1" 304 - 0 0.000 0.004
 2022-11-29 01:39:48,135 5396 INFO ? werkzeug: 127.0.0.1 - - [29/Nov/2022 01:39:48] "GET /dynamic_accounts_report/static/description/assets/screenshots/17_journal-entry-from-daybook.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-11-30 02:54:18,052 22212 INFO ? odoo: Odoo version 16.0 
+2022-11-30 02:54:18,052 22212 INFO ? odoo: Using configuration file at D:\Data\ERP\odoo.conf 
+2022-11-30 02:54:18,052 22212 INFO ? odoo: addons paths: ['D:\\Data\\ERP\\odoo\\addons', 'c:\\users\\vuong\\appdata\\local\\openerp s.a\\odoo\\addons\\16.0', 'd:\\data\\erp\\addons', 'd:\\data\\erp\\addons_third', 'd:\\data\\erp\\odoo\\addons'] 
+2022-11-30 02:54:18,052 22212 INFO ? odoo: database: openpg@localhost:5432 
+2022-11-30 02:54:18,204 22212 INFO ? odoo.addons.base.models.ir_actions_report: A package may be missing to print Data Matrix barcodes: pylibdmtx or libdmtx. 
+2022-11-30 02:54:18,210 22212 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo16\thirdparty\wkhtmltopdf.exe 
+2022-11-30 02:54:19,281 22212 INFO ? odoo.service.server: HTTP service (werkzeug) running on PC:8068 

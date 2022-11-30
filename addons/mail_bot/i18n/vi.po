@@ -93,7 +93,7 @@ msgstr ""
 #: code:addons/mail_bot/models/mail_bot.py:0
 #, python-format
 msgid "I'm afraid I don't understand. Sorry!"
-msgstr "I sợ là mình không hiểu. Rất tiếc!"
+msgstr "Xin lỗi! Tôi sợ là mình đang không hiểu ý bạn."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
