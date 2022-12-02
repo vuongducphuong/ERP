@@ -2048,14 +2048,14 @@ msgstr "Miền:"
 #: code:addons/web/static/src/core/ui/block_ui.js:0
 #, python-format
 msgid "Don't leave yet,"
-msgstr ""
+msgstr "Xin đừng thoát khỏi"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/legacy/js/core/misc.js:0
 #, python-format
 msgid "Don't leave yet,<br />it's still loading..."
-msgstr "Xin đừng thoát khỏi,<br />Ứng dụng thực sự vẫn đang được nạp..."
+msgstr "Xin đừng thoát khỏi,<br />hệ thống thực sự vẫn đang chạy..."
 
 #. module: web
 #. openerp-web
@@ -5054,14 +5054,14 @@ msgstr "Quay lại"
 #: code:addons/web/static/src/legacy/js/core/misc.js:0
 #, python-format
 msgid "Still loading..."
-msgstr "Vẫn đang nạp..."
+msgstr "Vui lòng chờ trong giây lát..."
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/legacy/js/core/misc.js:0
 #, python-format
 msgid "Still loading...<br />Please be patient."
-msgstr "Vẫn đang nạp...<br />Xin hãy kiên nhẫn."
+msgstr "Vui lòng chờ trong giây lát...<br />Xin hãy kiên nhẫn."
 
 #. module: web
 #. openerp-web
