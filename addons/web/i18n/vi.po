@@ -1649,7 +1649,7 @@ msgstr "Tạo \"<strong>%s</strong>\""
 #: code:addons/web/static/src/views/fields/relational_utils.js:0
 #, python-format
 msgid "Create %s"
-msgstr ""
+msgstr "Tạo %s"
 
 #. module: web
 #. openerp-web
@@ -1663,7 +1663,7 @@ msgstr "Tạo và sửa..."
 #: code:addons/web/static/src/views/fields/relational_utils.js:0
 #, python-format
 msgid "Create and edit..."
-msgstr ""
+msgstr "Tạo và sửa..."
 
 #. module: web
 #. openerp-web
@@ -2722,7 +2722,7 @@ msgstr "Integer"
 #: code:addons/web/static/src/views/fields/properties/property_value.xml:0
 #, python-format
 msgid "Internal link"
-msgstr ""
+msgstr "Đi đến"
 
 #. module: web
 #. openerp-web

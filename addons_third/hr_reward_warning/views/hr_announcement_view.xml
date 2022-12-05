@@ -131,7 +131,7 @@
                   name="Thông báo"
                   groups="hr.group_hr_user,hr.group_hr_manager"
                   web_icon="hr_reward_warning,static/description/announcement_icon.png"
-                  sequence="20"/>
+                  sequence="540"/>
 
         <menuitem id="hr_announcement_sub_menu"
                   name="Thông báo"

@@ -1553,7 +1553,7 @@ msgstr "Thêm mục"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_media_list_options
 msgid "Add Media"
-msgstr "Thêm phương tiện"
+msgstr "Thêm Media"
 
 #. module: website
 #. openerp-web

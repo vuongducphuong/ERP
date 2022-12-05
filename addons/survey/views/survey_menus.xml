@@ -2,9 +2,9 @@
 <odoo>
   <data>
     <!-- Main menu -->
-    <menuitem name="Surveys"
+    <menuitem name="Khảo sát"
       id="menu_surveys"
-      sequence="130"
+      sequence="480"
       groups="group_survey_user"
       web_icon="survey,static/description/icon.svg"/>
 

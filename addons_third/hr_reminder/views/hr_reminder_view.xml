@@ -73,7 +73,7 @@
             </field>
         </record>
 
-         <menuitem name ="Reminders" id="hr_reminder_menu" web_icon="hr_reminder,static/description/reminder_icon.png"
-		action="action_hr_reminder" sequence="8"/>
+         <menuitem name="Lời nhắc" id="hr_reminder_menu" web_icon="hr_reminder,static/description/reminder_icon.png"
+		action="action_hr_reminder" sequence="520"/>
 </data>
 </openerp>

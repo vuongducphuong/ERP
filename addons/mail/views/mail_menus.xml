@@ -5,7 +5,7 @@
         action="action_discuss"
         web_icon="mail,static/description/icon.svg"
         groups="base.group_user"
-        sequence="50"
+        sequence="150"
     />
 
     <record id="base.menu_email" model="ir.ui.menu">

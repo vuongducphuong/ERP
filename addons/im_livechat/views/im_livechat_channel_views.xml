@@ -275,10 +275,10 @@
         <!-- Menu items -->
         <menuitem
             id="menu_livechat_root"
-            name="Live Chat"
+            name="Chat trực tuyến"
             web_icon="im_livechat,static/description/icon.svg"
             groups="im_livechat_group_user"
-            sequence="240"/>
+            sequence="786"/>
 
         <menuitem
             id="support_channels"

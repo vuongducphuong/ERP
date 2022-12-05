@@ -7,14 +7,14 @@
 
     <menuitem
         id="spreadsheet_dashboard_menu_root"
-        name="Dashboards"
+        name="Tổng quan"
         action="ir_actions_dashboard_action"
         web_icon="spreadsheet_dashboard,static/description/icon.svg"
-        sequence="37"/>
+        sequence="110"/>
 
     <menuitem
         id="spreadsheet_dashboard_menu_dashboard"
-        name="Dashboards"
+        name="Tổng quan"
         action="ir_actions_dashboard_action"
         parent="spreadsheet_dashboard_menu_root"
         sequence="1"/>
@@ -26,14 +26,14 @@
         sequence="150"/>
 
     <record id="spreadsheet_dashboard_action_configuration_dashboards" model="ir.actions.act_window">
-        <field name="name">Dashboards</field>
+        <field name="name">Tổng quan</field>
         <field name="res_model">spreadsheet.dashboard.group</field>
         <field name="view_mode">tree,form</field>
     </record>
 
     <menuitem
         id="spreadsheet_dashboard_menu_configuration_dashboards"
-        name="Dashboards"
+        name="Tổng quan"
         parent="spreadsheet_dashboard_menu_configuration"
         action="spreadsheet_dashboard_action_configuration_dashboards"
         sequence="10"/>

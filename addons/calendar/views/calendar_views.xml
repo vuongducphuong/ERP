@@ -396,7 +396,7 @@
     <menuitem
         id="mail_menu_calendar"
         name="Lịch"
-        sequence="40"
+        sequence="140"
         action="action_calendar_event"
         web_icon="calendar,static/description/icon.svg"
         groups="base.group_user"/>

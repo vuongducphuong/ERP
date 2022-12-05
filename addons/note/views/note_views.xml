@@ -230,7 +230,7 @@
     <menuitem
       id="menu_note_notes"
       name="Ghi chú"
-      sequence="2"
+      sequence="130"
       action="note.action_note_note"
       web_icon="note,static/description/icon.svg">
         <menuitem

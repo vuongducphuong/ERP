@@ -69,7 +69,7 @@
     <menuitem id="link_tracker_menu"
         name="Link Tracker"
         parent="mass_mailing_sms_menu_configuration"
-        sequence="2"
+        sequence="792"
         action="link_tracker.link_tracker_action"
         groups="mass_mailing.group_mass_mailing_user"/>
 </odoo>

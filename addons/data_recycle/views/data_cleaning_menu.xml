@@ -4,7 +4,7 @@
         id="menu_data_cleaning_root"
         name="Data Cleaning"
         web_icon="data_recycle,static/description/icon.svg"
-        sequence="250"/>
+        sequence="790"/>
 
         <menuitem
             id="menu_data_recycle_record"

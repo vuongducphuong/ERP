@@ -2,9 +2,9 @@
 <odoo><data>
 
     <!-- MAIN MENU -->
-    <menuitem name="Events"
+    <menuitem name="Sự kiện"
         id="event_main_menu"
-        sequence="125"
+        sequence="470"
         groups="event.group_event_registration_desk"
         web_icon="event,static/description/icon.svg"/>
 
