@@ -3968,7 +3968,7 @@ msgstr "Cài đặt Pivot"
 #: code:addons/web/static/src/core/ui/block_ui.js:0
 #, python-format
 msgid "Please be patient."
-msgstr ""
+msgstr "Xin hãy kiên nhẫn"
 
 #. module: web
 #. openerp-web
@@ -6150,14 +6150,14 @@ msgstr "lúc:"
 #: code:addons/web/static/src/core/ui/block_ui.js:0
 #, python-format
 msgid "because it's loading..."
-msgstr "bởi vì ứng dụng vẫn đang nạp ..."
+msgstr "bởi vì ứng dụng vẫn đang được nạp ..."
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/ui/block_ui.js:0
 #, python-format
 msgid "but the application is actually loading..."
-msgstr ""
+msgstr "nhưng thực sự úng dụng vẫn đang được nạp..."
 
 #. module: web
 #. openerp-web

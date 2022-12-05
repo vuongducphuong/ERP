@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <odoo><data>
-    <menuitem name="Discuss"
+    <menuitem name="Thảo luận"
         id="mail.menu_root_discuss"
         action="action_discuss"
         web_icon="mail,static/description/icon.svg"
         groups="base.group_user"
-        sequence="5"
+        sequence="50"
     />
 
     <record id="base.menu_email" model="ir.ui.menu">
@@ -52,7 +52,7 @@
         groups="base.group_no_one"/>
 
     <!-- Under Technical/Discuss -->
-    <menuitem name="Discuss"
+    <menuitem name="Thảo luận"
         id="mail_menu_technical"
         parent="base.menu_custom"
         sequence="1"/>

@@ -8,16 +8,16 @@
         </t>
         <t t-else="">
             <div class="alert alert-warning">
-                <p>Warning, your Odoo database manager is not protected. To secure it, we have generated the following master password for it:</p>
+                <p>Cảnh báo, trình quản lý CSDL của bạn chưa được bảo vệ. Để bảo vệ, hệ thống sẽ tự động tạo Mật khẩu cấp cao như dưới đâu:</p>
                 <p style="text-align: center;"><strong class="generated_master_pwd"></strong></p>
-                <p>You can change it below but be sure to remember it, it will be asked for future operations on databases.</p>
+                <p>Bạn có thể thay đổi lại, nhưng chắc chắn bạn phải nhớ mật khẩu cấp cao này để có thể quản lý được CSDL của mình. Hãu lưu lại mật khẩu cấp cao này nhé.</p>
             </div>
             <t t-set="input_class" t-value="'form-control generated_master_pwd_input'" />
         </t>
     </t>
     <t t-if="not insecure or not set_master_pwd">
         <div class="row mb-3">
-            <label for="master_pwd" class="col-md-4 col-form-label">Master Password</label>
+            <label for="master_pwd" class="col-md-4 col-form-label">Mật khẩu cấp cao</label>
             <div class="col-md-8">
                 <div class="input-group">
                     <input name="master_pwd"

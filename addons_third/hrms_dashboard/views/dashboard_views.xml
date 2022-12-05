@@ -1,7 +1,7 @@
 <odoo>
     <data>
         <record id="hr_action_dashboard" model="ir.actions.client">
-            <field name="name">Dashboard</field>
+            <field name="name">Trang cá nhân</field>
             <field name="tag">hr_dashboard</field>
         </record>
 
@@ -17,10 +17,10 @@
 <!--        </record>-->
 
         <menuitem id="menu_hrms_dashboard"
-                  name="Dashboard"
+                  name="Trang cá nhân"
                   action="hr_action_dashboard"
                   web_icon="hrms_dashboard,static/description/dashboard_icon.png"
-                  sequence="-100" groups="base.group_user"/>
+                  sequence="20" groups="base.group_user"/>
     </data>
 
 

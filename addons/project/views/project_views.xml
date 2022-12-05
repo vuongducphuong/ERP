@@ -2,11 +2,11 @@
 <odoo>
 
         <!-- Top menu item -->
-        <menuitem name="Project"
+        <menuitem name="Dự án"
             id="menu_main_pm"
             groups="group_project_manager,group_project_user"
             web_icon="project,static/description/icon.svg"
-            sequence="70"/>
+            sequence="500"/>
 
         <menuitem id="menu_project_config" name="Configuration" parent="menu_main_pm"
             sequence="100" groups="project.group_project_manager"/>

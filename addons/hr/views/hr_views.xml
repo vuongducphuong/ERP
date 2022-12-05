@@ -4,10 +4,10 @@
 
         <menuitem
             id="menu_hr_root"
-            name="Employees"
+            name="Nhân sự"
             groups="group_hr_manager,group_hr_user,base.group_user"
             web_icon="hr,static/description/icon.svg"
-            sequence="185"/>
+            sequence="410"/>
 
         <menuitem
             id="menu_hr_main"

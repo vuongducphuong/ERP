@@ -94,7 +94,8 @@
     min-height: 100vh;
     overflow: auto;
     margin-top: 0;
-    background: url(/web_enterprise/static/img/home-menu-bg-overlay.svg), linear-gradient(to right bottom, #118ab2, #049fa7);
+    /* background: url(/web_enterprise/static/img/home-menu-bg-overlay.svg), linear-gradient(to right bottom, #118ab2, #049fa7); */
+    background: rgba(103,102,171,0.98);
 }
 .o-menu-search-result.dropdown-item.col-12.ml-auto.mr-auto {
 

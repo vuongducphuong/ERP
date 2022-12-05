@@ -65,7 +65,7 @@ msgstr "Nhân viên"
 #. module: hr_skills_slides
 #: model:ir.model,name:hr_skills_slides.model_hr_resume_line
 msgid "Resumé line of an employee"
-msgstr "Resumé line of an employee"
+msgstr "Sơ yếu lý lịch của nhân viên"
 
 #. module: hr_skills_slides
 #: code:addons/hr_skills_slides/models/slide_channel.py:0

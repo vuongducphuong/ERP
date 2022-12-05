@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <menuitem name="Recruitment"
+        <menuitem name="Tuyển dụng"
                   id="hr_recruitment.menu_hr_recruitment_root"
                   web_icon="hr_recruitment,static/description/icon.png"
-                  sequence="4"/>
+                  sequence="420"/>
 
         <menuitem id="hr_attendance.menu_hr_attendance_root"
                   name="Attendances" sequence="7"

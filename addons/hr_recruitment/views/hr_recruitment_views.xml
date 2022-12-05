@@ -688,11 +688,11 @@
     </record>
 
     <menuitem
-        name="Recruitment"
+        name="Tuyển dụng"
         id="menu_hr_recruitment_root"
         web_icon="hr_recruitment,static/description/icon.svg"
         groups="hr_recruitment.group_hr_recruitment_user,hr_recruitment.group_hr_recruitment_interviewer"
-        sequence="210"/>
+        sequence="420"/>
 
     <menuitem id="menu_hr_recruitment_configuration" name="Configuration" parent="menu_hr_recruitment_root"
         groups="group_hr_recruitment_user" sequence="100"/>

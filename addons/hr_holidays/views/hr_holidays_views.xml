@@ -2,9 +2,9 @@
 <odoo>
 
     <menuitem
-        name="Time Off"
+        name="Nghỉ phép"
         id="menu_hr_holidays_root"
-        sequence="225"
+        sequence="430"
         web_icon="hr_holidays,static/description/icon.svg"
         groups="base.group_user"/>
 

@@ -63,7 +63,7 @@
                         <div class="container py-3">
                             <div class="row">
                                 <div class="col-sm text-center text-sm-start text-muted">
-                                    <span class="o_footer_copyright_name me-2">Copyright &amp;copy; <span t-field="res_company.name" itemprop="name">Company name</span></span>
+                                    <span class="o_footer_copyright_name me-2">Copyright &amp;copy; <span t-field="res_company.name" itemprop="name">Tên công ty</span></span>
                                 </div>
                                 <div class="col-sm text-center text-sm-end">
                                     <t t-call="web.brand_promotion"/>
@@ -87,7 +87,7 @@
                     style="width: auto; height: 1em; vertical-align: baseline;"/>
             </a>
         </t>
-        <t t-set="final_message">Powered by %s%s</t>
+        <t t-set="final_message">Phát triển bởi %s%s</t>
         <t t-out="final_message % (odoo_logo, _message and ('- ' + _message) or '')"/>
     </template>
     <template id="brand_promotion" name="Brand Promotion">
@@ -115,9 +115,9 @@
                         <t t-out="0"/>
                         <div class="text-center small mt-4 pt-3 border-top" t-if="not disable_footer">
                             <t t-if="not disable_database_manager">
-                                <a class="border-end pe-2 me-1" href="/web/database/manager">Manage Databases</a>
+                                <a class="border-end pe-2 me-1" href="/web/database/manager">Quản lý CSDL</a>
                             </t>
-                            <a href="https://www.odoo.com?utm_source=db&amp;utm_medium=auth" target="_blank">Powered by <span>Odoo</span></a>
+                            <a href="https://www.odoo.com?utm_source=db&amp;utm_medium=auth" target="_blank">Phát triển bởi <span>Softify.vn</span></a>
                         </div>
                     </div>
                 </div>
@@ -131,10 +131,10 @@
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
 
                 <div class="mb-3" t-if="databases and len(databases) &gt; 1">
-                    <label for="db" class="col-form-label">Database</label>
+                    <label for="db" class="col-form-label">CSDL</label>
                     <div t-attf-class="input-group {{'input-group-sm' if form_small else ''}}">
                         <input type="text" name="db" t-att-value="request.db" id="db" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" readonly="readonly"/>
-                        <a role="button" href="/web/database/selector" class="btn btn-secondary">Select <i class="fa fa-database" role="img" aria-label="Database" title="Database"></i></a>
+                        <a role="button" href="/web/database/selector" class="btn btn-secondary">Chọn <i class="fa fa-database" role="img" aria-label="Database" title="Database"></i></a>
                     </div>
                 </div>
 
@@ -144,7 +144,7 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
+                    <label for="password" class="form-label">Mật khẩu</label>
                     <input type="password" placeholder="Password" name="password" id="password" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autocomplete="current-password" t-att-autofocus="'autofocus' if login else None" maxlength="4096"/>
                 </div>
 
@@ -156,9 +156,9 @@
                 </p>
 
                 <div t-attf-class="clearfix oe_login_buttons text-center gap-1 d-grid mb-1 {{'pt-2' if form_small else 'pt-3'}}">
-                    <button type="submit" class="btn btn-primary">Log in</button>
+                    <button type="submit" class="btn btn-primary">Đăng nhập</button>
                     <t t-if="debug">
-                        <button type="submit" name="redirect" value="/web/become" class="btn btn-link btn-sm">Log in as superuser</button>
+                        <button type="submit" name="redirect" value="/web/become" class="btn btn-link btn-sm">Đăng nhập như superuser</button>
                     </t>
                     <div class="o_login_auth"/>
                 </div>
@@ -172,10 +172,10 @@
         <t t-call="web.login_layout">
             <div class="oe_login_form">
                 <p>
-                    You are logged in.
+                    Bạn đã đăng nhập thành công.
                 </p>
                 <div t-attf-class="clearfix oe_login_buttons text-center mb-1 pt-3">
-                    <a class="btn btn-primary btn-block" href="/web/session/logout">Log out</a>
+                    <a class="btn btn-primary btn-block" href="/web/session/logout">Đăng xuất</a>
                 </div>
             </div>
         </t>

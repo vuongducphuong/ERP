@@ -229,8 +229,8 @@
 
     <menuitem
       id="menu_note_notes"
-      name="Notes"
-      sequence="15"
+      name="Ghi chú"
+      sequence="2"
       action="note.action_note_note"
       web_icon="note,static/description/icon.svg">
         <menuitem

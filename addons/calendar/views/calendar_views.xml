@@ -395,8 +395,8 @@
     <!-- Menus -->
     <menuitem
         id="mail_menu_calendar"
-        name="Calendar"
-        sequence="10"
+        name="Lịch"
+        sequence="40"
         action="action_calendar_event"
         web_icon="calendar,static/description/icon.svg"
         groups="base.group_user"/>

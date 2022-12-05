@@ -971,7 +971,7 @@
         id="menu_maintenance_title"
         name="Maintenance"
         web_icon="maintenance,static/description/icon.svg"
-        sequence="160"/>
+        sequence="340"/>
 
     <menuitem
         id="menu_m_dashboard"

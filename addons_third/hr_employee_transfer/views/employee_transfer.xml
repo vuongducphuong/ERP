@@ -93,8 +93,8 @@
     </record>
 
     <menuitem id="menu_employee_transfer"
-              name="Transfers"
-              sequence="10"
+              name="Thuyên chuyển"
+              sequence="450"
               action="action_employee_transfer"
               web_icon="hr_employee_transfer,static/description/transfer_icon.png"
               groups="hr.group_hr_manager"/>
