@@ -6455,7 +6455,7 @@ msgstr "được thiết lập"
 #: code:addons/web/static/src/core/ui/block_ui.js:0
 #, python-format
 msgid "it's still loading..."
-msgstr ""
+msgstr "hệ thống thực sự vẫn đang chạy..."
 
 #. module: web
 #. openerp-web
