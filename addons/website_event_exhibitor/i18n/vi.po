@@ -703,7 +703,7 @@ msgstr "Kiểu hoạt động kế tiếp"
 #. module: website_event_exhibitor
 #: model:ir.model.fields.selection,name:website_event_exhibitor.selection__event_sponsor_type__display_ribbon_style__no_ribbon
 msgid "No Ribbon"
-msgstr "Không ruy-băng"
+msgstr "Không dán nhãn"
 
 #. module: website_event_exhibitor
 #: model_terms:ir.ui.view,arch_db:website_event_exhibitor.exhibitors_main

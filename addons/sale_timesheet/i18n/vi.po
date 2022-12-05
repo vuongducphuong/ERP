@@ -1703,4 +1703,4 @@ msgstr "biên lợi nhuận ("
 #. module: sale_timesheet
 #: model_terms:ir.ui.view,arch_db:sale_timesheet.view_product_timesheet_form
 msgid "of hours sold."
-msgstr ""
+msgstr "Số giờ đã bán"

@@ -779,7 +779,7 @@ msgstr ""
 #. module: survey
 #: model:survey.question,title:survey.survey_feedback_p2
 msgid "About our ecommerce"
-msgstr ""
+msgstr "Giới thiệu về TMĐT của chúng tôi"
 
 #. module: survey
 #: model:survey.question,title:survey.survey_feedback_p1
