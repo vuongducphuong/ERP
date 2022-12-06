@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien_tree" model="ir.ui.view">
+            <field name="name">bao.cao.chi.phi.du.kien.theo.don.dat.hang.tree</field>
+            <field name="model">bao.cao.chi.phi.du.kien.theo.don.dat.hang</field>
+            <field name="arch" type="xml">
+                <tree string="Chi phí dự kiến theo đơn đặt hàng" has_border="true" create="false" report="true" decoration-bf="LA_TONG_HOP == True" > 
+                    <field name="SO_DON_HANG" linked="True" width="150"/>
+                    <field name="TEN_THANH_PHAM"/>
+                    <field name="SO_LUONG_THANH_PHAM" string="Số lượng bán"/>
+                    <field name="TEN_NGUYEN_VAT_LIEU"/>
+                    <field name="DVT" string="ĐVT"/>
+                    <field name="SO_LUONG" string="Số lượng mua" sum="Tổng số lượng mua"/>
+                    <field name="DON_GIA" string="Đơn giá mua"/>
+                    <field name="THANH_TIEN" string="Thành tiền mua"/>
+                    <field name="PHAN_TRAM" string="% Chi phí"/>
+                    <field name="GIA_BAN" string="Thành tiền bán"/>
+                    <field name="ID_GOC" invisible="1"/>
+                    <field name="MODEL_GOC" invisible="1"/>
+                    <field name="LA_TONG_HOP" invisible="1"/> 
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_report_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien" model="ir.actions.act_window">
+            <field name="name">Chi phí dự kiến theo đơn đặt hàng</field>
+            <field name="res_model">bao.cao.chi.phi.du.kien.theo.don.dat.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'header_struct': [
+                            
+                                                        [
+                                                            'Nguyên vật liệu',['TEN_NGUYEN_VAT_LIEU','DVT','SO_LUONG','DON_GIA','THANH_TIEN']
+                                                        ],
+                                                    ], 'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien_tree" />
+            <field name="act_window_id" ref="open_report_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien" />
+        </record>
+        <!-- end -->
+        
+         <!-- thống kê theo nguyên vật liệu -->
+        <record id="view_bao_cao_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien_nguyen_vat_lieu_tree" model="ir.ui.view">
+            <field name="name">bao.cao.chi.phi.du.kien.theo.don.dat.hang.tree</field>
+            <field name="model">bao.cao.chi.phi.du.kien.theo.don.dat.hang</field>
+            <field name="arch" type="xml">
+                <tree string="Chi phí dự kiến theo nguyên vật liệu" has_border="true" create="false" report="true" > 
+                     <field name="RowNumber"/>
+                     <field name="LIST_TEN_NHOM_VTHH" width ='225 px'/>
+                    <field name="TEN_NGUYEN_VAT_LIEU" width ='225 px'/>                               
+                    <field name="DVT" string="ĐVT" width ='85 px'/>
+                    <field name="SO_LUONG" string="Tổng SL mua" sum="Tổng số lượng mua" width ='100 px'/>                  
+                    <field name="SO_LUONG_TON" string="SL tồn" sum="Số lượng tồn" width ='85 px'/>                  
+                    <field name="SO_LUONG_CON_THIEU" string="SL còn thiếu" sum="Số lượng còn thiếu" width ='85 px'/>                                  
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_report_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien_nguyen_vat_lieu" model="ir.actions.act_window">
+            <field name="name">Chi phí dự kiến theo nguyên vật liệu</field>
+            <field name="res_model">bao.cao.chi.phi.du.kien.theo.don.dat.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by': ['LIST_TEN_NHOM_VTHH'], 'expand_all': 'true'}</field>
+           
+        </record>
+        <record id="action_bao_cao_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien_nguyen_vat_lieu" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien_nguyen_vat_lieu_tree" />
+            <field name="act_window_id" ref="open_report_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien_nguyen_vat_lieu" />
+            
+        </record>
+        <!-- end -->
+
+          <!-- thống kê theo nguyên vật liệu và đơn hàng -->
+        <record id="view_bao_cao_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien_nguyen_vat_lieu_va_so_don_hang_tree" model="ir.ui.view">
+            <field name="name">bao.cao.chi.phi.du.kien.theo.don.dat.hang.tree</field>
+            <field name="model">bao.cao.chi.phi.du.kien.theo.don.dat.hang</field>
+            <field name="arch" type="xml">
+                <tree string="Chi phí dự kiến theo nguyên vật liệu và số đơn hàng" has_border="true" create="false" report="true" > 
+                    <field name="RowNumber"/>
+                    <field name="TEN_NGUYEN_VAT_LIEU"/>
+                    <field name="SO_DON_HANG" linked="True" width="150"/>                                
+                    <field name="DVT" string="ĐVT"/>
+                    <field name="SO_LUONG" string="Tổng số lượng mua" sum="Tổng số lượng mua"/>                  
+                    <field name="ID_GOC" invisible="1"/>
+                    <field name="MODEL_GOC" invisible="1"/>                    
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_report_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien_nguyen_vat_lieu_va_so_don_hang" model="ir.actions.act_window">
+            <field name="name">Chi phí dự kiến theo nguyên vật liệu và số đơn hàng</field>
+            <field name="res_model">bao.cao.chi.phi.du.kien.theo.don.dat.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by': ['TEN_NGUYEN_VAT_LIEU'], 'expand_all': 'true'}</field>
+           
+        </record>
+        <record id="action_bao_cao_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien_nguyen_vat_lieu_va_so_don_hang" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien_nguyen_vat_lieu_va_so_don_hang_tree" />
+            <field name="act_window_id" ref="open_report_chi_phi_du_kien_theo_don_dat_hang_chi_phi_du_kien_nguyen_vat_lieu_va_so_don_hang" />
+        </record>
+        <!-- end -->
+
+        <record id="view_bao_cao_chi_phi_du_kien_theo_don_dat_hang_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.chi.phi.du.kien.theo.don.dat.hang.form</field>
+            <field name="model">bao.cao.chi.phi.du.kien.theo.don.dat.hang</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <field name="THONG_KE_THEO" colspan="4" />
+                            <field name="CHI_NHANH_ID"/>
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC"/>
+                            <field name="TU_NGAY"/>
+                            <field name="DEN_NGAY"/>
+                        </group>
+
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="DON_DAT_HANG_IDS" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="SO_DON_HANG"/>
+                                        <field name="TINH_TRANG"/>                                        
+                                        <field name="TEN_KHACH_HANG" string="Khách hàng"/>
+                                        <field name="NGAY_DON_HANG" string="Ngày đặt hàng"/>
+                                        <field name="CHI_NHANH_ID"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                        
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_bao_cao_chi_phi_du_kien_theo_don_dat_hang_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Chi phí dự kiến theo đơn đặt hàng</field>
+            <field name="res_model">bao.cao.chi.phi.du.kien.theo.don.dat.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_chi_phi_du_kien_theo_don_dat_hang_tham_so_form"/>
+        </record>
+
+        <!-- <menuitem name="Chi phí dự kiến theo đơn đặt hàng"
+                  action="bao_cao.open_bao_cao_chi_phi_du_kien_theo_don_dat_hang_tham_so_form"
+                  id="menu_bao_cao_chi_phi_du_kien_theo_don_dat_hang"
+                  parent=""
+                  sequence="0"/>  -->
+    </data>
+</odoo>

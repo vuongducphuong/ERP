@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_thue_thiet_lap_thong_tin_co_quan_thue_form" model="ir.ui.view">
+            <field name="name">thue.thiet.lap.thong.tin.co.quan.thue.form</field>
+            <field name="model">thue.thiet.lap.thong.tin.co.quan.thue</field>
+            <field name="arch" type="xml">
+                <form string="Thiết lập thông tin cơ quan thuế, đại lý thuế, đơn vị cung cấp DV kế toán">
+                    <sheet>
+                        <notebook>
+                            <page string="Cơ quan thuế">
+                                <group col="2">
+                                    <field name="CO_QUAN_THUE_CAP_CUC" colspan="2" />
+                                    <field name="CO_QUAN_THUE_QUAN_LY" colspan="2" />
+                                </group>
+                            </page>
+                            <page string="Đại lý thuế">
+                                <group col="4">
+                                    <field name="TEN_DAI_LY_THUE" colspan="4" />
+                                    <field name="MA_SO_THUE" colspan="2" />
+                                    <field name="DIA_CHI" colspan="4" />
+                                    <field name="QUAN_HUYEN" colspan="2" />
+                                    <field name="HOP_DONG_SO" colspan="2" />
+                                    <field name="TINH_THANH_PHO" colspan="2" />
+                                    <field name="NGAY_HOP_DONG" colspan="2" />
+                                    <field name="DIEN_THOAI" colspan="2" />
+                                    <field name="NV_DAI_LY_THUE" colspan="2" />
+                                    <field name="FAX" colspan="2" />
+                                    <field name="CHUNG_CHI_HANH_NGHE_SO" colspan="2" />
+                                    <field name="EMAIL" colspan="2" />
+                                    <field name="HIEN_THI_THONG_TIN_DAI_LY_THUE_TREN_TO_KHAI" colspan="4" />
+                                </group>
+                            </page>
+                            <page string="Đơn vị cung cấp DV kế toán">
+                                <group col="4">
+                                    <field name="SO_CHUNG_CHI_HANH_NGHE" colspan="4" />
+                                    <field name="DON_VI_CUNG_CAP_DICH_VU_KE_TOAN" colspan="4" />
+                                </group>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <!-- <record id="view_thue_thiet_lap_thong_tin_co_quan_thue_tree" model="ir.ui.view">
+            <field name="name">thue.thiet.lap.thong.tin.co.quan.thue.tree</field>
+            <field name="model">thue.thiet.lap.thong.tin.co.quan.thue</field>
+            <field name="arch" type="xml">
+                <tree string="Thiết lập thông tin cơ quan thuế">
+                    <field name="CO_QUAN_THUE_CAP_CUC" />
+                    <field name="CO_QUAN_THUE_QUAN_LY" />
+                    <field name="TEN_DAI_LY_THUE" />
+                    <field name="MA_SO_THUE" />
+                    <field name="DIA_CHI" />
+                    <field name="QUAN_HUYEN" />
+                    <field name="TINH_THANH_PHO" />
+                    <field name="DIEN_THOAI" />
+                    <field name="FAX" />
+                    <field name="EMAIL" />
+                    <field name="HOP_DONG_SO" />
+                    <field name="NGAY_HOP_DONG" />
+                    <field name="NV_DAI_LY_THUE" />
+                    <field name="CHUNG_CHI_HANH_NGHE_SO" />
+                    <field name="HIEN_THI_THONG_TIN_DAI_LY_THUE_TREN_TO_KHAI" />
+                    <field name="SO_CHUNG_CHI_HANH_NGHE" />
+                    <field name="DON_VI_CUNG_CAP_DICH_VU_KE_TOAN" />
+                </tree>
+            </field>
+        </record> -->
+        <record id="open_menu_thue_thiet_lap_thong_tin_co_quan_thue" model="ir.actions.act_window">
+            <field name="name">Thiết lập thông tin cơ quan thuế; đại lý thuế; đơn vị cung cấp DV kế toán</field>
+            <field name="res_model">thue.thiet.lap.thong.tin.co.quan.thue</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <!-- <record id="action_thue_thiet_lap_thong_tin_co_quan_thue_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_thue_thiet_lap_thong_tin_co_quan_thue_tree" />
+            <field name="act_window_id" ref="open_menu_thue_thiet_lap_thong_tin_co_quan_thue" />
+        </record> -->
+        <record id="action_thue_thiet_lap_thong_tin_co_quan_thue_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_thue_thiet_lap_thong_tin_co_quan_thue_form" />
+            <field name="act_window_id" ref="open_menu_thue_thiet_lap_thong_tin_co_quan_thue" />
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

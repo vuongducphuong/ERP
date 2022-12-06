@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_lenh_san_xuat_form" model="ir.ui.view">
+            <field name="name">danh.muc.lenh.san.xuat.form</field>
+            <field name="model">danh.muc.lenh.san.xuat</field>
+            <field name="arch" type="xml">
+                <form string="Lệnh sản xuất">
+                    <sheet>
+                        <group col="4">
+                            <field name="NGAY"/>
+                            <field name="SO_LENH_SAN_XUAT"/>
+                            <field name="name"  invisible="1" />
+                        </group>
+
+                        <!--Master/Detail form-->
+                        
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_danh_muc_lenh_san_xuat_tree" model="ir.ui.view">
+            <field name="name">danh.muc.lenh.san.xuat.tree</field>
+            <field name="model">danh.muc.lenh.san.xuat</field>
+            <field name="arch" type="xml">
+                <tree string="Lệnh sản xuất">
+                    <field name="NGAY"/>
+                    <field name="SO_LENH_SAN_XUAT"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_danh_muc_lenh_san_xuat" model="ir.actions.act_window">
+            <field name="name">Lệnh sản xuất</field>
+            <field name="res_model">danh.muc.lenh.san.xuat</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_danh_muc_lenh_san_xuat_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_lenh_san_xuat_tree"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_lenh_san_xuat"/>
+        </record>
+
+        <record id="action_danh_muc_lenh_san_xuat_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_lenh_san_xuat_form"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_lenh_san_xuat"/>
+        </record>
+
+        <!-- <menuitem name="Lệnh sản xuất"
+                  action="danh_muc.open_menu_danh_muc_lenh_san_xuat"
+                  id="menu_danh_muc_lenh_san_xuat"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_danh_muc_lenh_san_xuat_1" model="ir.sequence">
+            <field name="name">danh_muc_lenh_san_xuat SO_LENH_SAN_XUAT sequence</field>
+            <field name="code">danh_muc_lenh_san_xuat_SO_LENH_SAN_XUAT</field>
+            <field name="prefix">LSX</field>
+            <field name="padding">4</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_luong_bang_luong_form_tham_so_tham_so_form" model="ir.ui.view">
+            <field name="name">tien.luong.bang.luong.form.tham.so.form</field>
+            <field name="model">tien.luong.bang.luong.form.tham.so</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="tien_luong_tao_bang_luong_form_view">
+                    <sheet>
+                        <group col="6">
+                            <group col="2" colspan="2"></group>
+                            <group col="4" colspan="4">
+                                <field name="LOAI_BANG_LUONG" colspan="4" />
+                            </group>
+                        </group>
+                        <group colspan="4" col="4" string="Kỳ tính lương">
+                            <field name="THANG" colspan="2" />
+                            <field name="NAM" colspan="2" options="{'showSpinButtons': true}" />
+                        </group>
+                        <notebook>
+                            <page string="Đơn vị">
+                                <field name="DON_VI_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false" report="true">
+                                        <field name="MA_DON_VI" string="Mã đơn vị" />
+                                        <field name="TEN_DON_VI" string="Tên đơn vị" />
+                                        <field name="CAP_TO_CHUC" string="Cấp tổ chức" />
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <group col="2" colspan="2">
+                            <field name="TEN_BANG_LUONG" colspan="2" />
+                        </group>
+                        <group col="2" colspan="2">
+                            <field name="HINH_THUC_TAO_BANG_LUONG" widget="radio" options="{'horizontal': true, 'alway_edit': True}" class="o_horizontal" colspan="2" nolabel="1" />
+                        </group>
+                        <group col="4" string="Dựa trên bảng lương">
+                            <field name="BANG_LUONG" colspan="4" options="{'showClearButton': false,'columns': ['THANG', 'NAM', 'TEN_BANG_LUONG'], 'strings': ['Tháng', 'Năm', 'Tên bảng lương'], 'displays':['TEN_BANG_LUONG']}" attrs="{'readonly': [('HINH_THUC_TAO_BANG_LUONG', '=', 'TAO_MOI_HOAN_TOAN')]}" />
+                            <field name="TU_DONG_THEM_VAO_CAC_NHAN_VIEN_MOI" colspan="2" attrs="{'readonly': [('HINH_THUC_TAO_BANG_LUONG', '=', 'TAO_MOI_HOAN_TOAN')]}" />
+                            <field name="LAY_CA_NHAN_VIEN_NGUNG_THEO_DOI" colspan="2" attrs="{'readonly': [('HINH_THUC_TAO_BANG_LUONG', '=', 'TAO_MOI_HOAN_TOAN')]}" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

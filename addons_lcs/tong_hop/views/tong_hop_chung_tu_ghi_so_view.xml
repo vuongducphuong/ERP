@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tong_hop_chung_tu_ghi_so_form" model="ir.ui.view">
+            <field name="name">tong.hop.chung.tu.ghi.so.form</field>
+            <field name="model">tong.hop.chung.tu.ghi.so</field>
+            <field name="arch" type="xml">
+                <form string="Chứng từ ghi sổ" cloudify_js="tong_hop_chung_tu_ghi_so_view">
+                    <sheet>
+                        <group col="6">
+                            <group colspan="4" col="4" string="Thông tin chung">
+                                <field name="DIEN_GIAI" colspan="4" />
+                                <field name="THAM_CHIEU" invisible="1" readonly="1" />
+                                <field name="TONG_TIEN" invisible="1" />
+                            </group>
+                            <group colspan="2" string="Chứng từ">
+                                <field name="NGAY_CHUNG_TU" required="True" />
+                                <field name="SO_CHUNG_TU" required="True" />
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1.Chứng từ gốc">
+                                <field name="TONG_HOP_CHUNG_TU_GHI_SO_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false">
+                                        <field name="NGAY_HACH_TOAN" />
+                                        <field name="NGAY_CHUNG_TU" />
+                                        <field name="SO_CHUNG_TU" />
+                                        <field name="DIEN_GIAI" />
+                                        <field name="TK_NO_ID" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="TK_CO_ID" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="SO_TIEN" sum="tong tien" />
+                                        <field name="GHI_CHU" />
+                                        <field name="LOAI_CHUNG_TU" />
+                                        <field name="ID_CHUNG_TU_GOC" invisible="1" />
+                                        <field name="MODEL_GOC" invisible="1" />
+                                        <field name="STT" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <header>
+                        <button id="btn_chon_chung_tu" string="Chọn chứng từ..." class="oe_highlight" />
+                        <button name="button_cancel" string="Loại bỏ" type="object" special="cancel" />
+                        <!-- <field name="CHON_CHUNG_TU_JSON" invisible='1'/> -->
+                    </header>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_tong_hop_chung_tu_ghi_so_tree" model="ir.ui.view">
+            <field name="name">tong.hop.chung.tu.ghi.so.tree</field>
+            <field name="model">tong.hop.chung.tu.ghi.so</field>
+            <field name="arch" type="xml">
+                <tree string="Chứng từ ghi sổ">
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="DIEN_GIAI" />
+                    <field name="TONG_TIEN" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_tong_hop_chung_tu_ghi_so" model="ir.actions.act_window">
+            <field name="name">Chứng từ ghi sổ</field>
+            <field name="res_model">tong.hop.chung.tu.ghi.so</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_tong_hop_chung_tu_ghi_so_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_tong_hop_chung_tu_ghi_so_tree" />
+            <field name="act_window_id" ref="open_menu_tong_hop_chung_tu_ghi_so" />
+        </record>
+        <record id="action_tong_hop_chung_tu_ghi_so_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_tong_hop_chung_tu_ghi_so_form" />
+            <field name="act_window_id" ref="open_menu_tong_hop_chung_tu_ghi_so" />
+        </record>
+        <!-- <menuitem name="Chứng từ ghi sổ"
+                  action="tong_hop.open_menu_tong_hop_chung_tu_ghi_so"
+                  id="menu_tong_hop_chung_tu_ghi_so"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_tong_hop_chung_tu_ghi_so_1" model="ir.sequence">
+            <field name="name">tong_hop_chung_tu_ghi_so SO_CHUNG_TU sequence</field>
+            <field name="code">tong_hop_chung_tu_ghi_so_SO_CHUNG_TU</field>
+            <field name="prefix">CTGS</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

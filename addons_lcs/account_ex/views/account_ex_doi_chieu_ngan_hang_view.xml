@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_account_ex_doi_chieu_ngan_hang_tham_so_form" model="ir.ui.view">
+            <field name="name">account.ex.doi.chieu.ngan.hang.form</field>
+            <field name="model">account.ex.doi.chieu.ngan.hang</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <group col="2" colspan="2">
+                                <field name="TK_NGAN_HANG_ID" colspan="2" options="{'columns': ['SO_TAI_KHOAN', 'NGAN_HANG_ID.TEN_DAY_DU', 'CHI_NHANH'], 'strings': ['Số tài khoản', 'Tên ngân hàng', 'Chi nhánh'],'displays': ['SO_TAI_KHOAN']}" />
+                                <field name="currency_id" colspan="2" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}" />
+                            </group>
+                            <group col="2" colspan="2">
+                                <field name="TEN_NH" colspan="2" readonly="1" />
+                                <field name="TU_NGAY" colspan="2" />
+                                <field name="DEN_NGAY" colspan="2" />
+                                <button id="btn_lay_du_lieu" string="Lấy dữ liệu" colspan="2" />
+                            </group>
+                        </group>
+                        <group col="12">
+                            <group col="6" colspan="6" string="Chứng từ thu tiền">
+                                <field name="ACCOUNT_EX_DOI_CHIEU_NGAN_HANG_CHUNG_TU_THU_TIEN_IDS" mode="tree" >
+                                    <tree editable="bottom" create="false">
+                                        <field name="NGAY" readonly="1" />
+                                        <field name="SO" readonly="1" />
+                                        <field name="SO_TIEN" readonly="1" sum="Tổng" />
+                                        <field name="DOI_TUONG" readonly="1" />
+                                    </tree>
+                                </field>
+                                <field name="SO_DU_DAU_KY_NGAY" string="I.Số dư đầu kỳ ngày" colspan="6" readonly="1" />
+                                <field name="TONG_TIEN_THU_DOI_CHIEU_TRONG_KY" string="II.Tổng tiền thu đối chiếu trong kỳ:" colspan="6" readonly="1" />
+                                <field name="TONG_TIEN_CHI_DOI_CHIEU_TRONG_KY" string="III.Tổng tiền chi đối chiếu trong kỳ:" colspan="6" readonly="1" />
+                            </group>
+                            <group col="6" colspan="6" string="Chứng từ chi tiền ">
+                                <field name="ACCOUNT_EX_DOI_CHIEU_NGAN_HANG_CHUNG_TU_CHI_TIEN_IDS" mode="tree" >
+                                    <tree editable="bottom" create="false">
+                                        <field name="NGAY" readonly="1" />
+                                        <field name="SO" readonly="1" />
+                                        <field name="SO_TIEN" readonly="1" sum="Tổng" />
+                                        <field name="DOI_TUONG" readonly="1" />
+                                    </tree>
+                                </field>
+                                <field name="SO_DU_CUOI_KY_SAU_DOI_CHIEU" string="IV.Số dư cuối kỳ sau đối chiếu (I + II - III):" colspan="6" readonly="1" />
+                                <field name="TONG_TIEN_THU_DOI_CHIEU_TRONG_KY" string="V.Số dư cuối kỳ trên sổ ngân hàng:" colspan="6" />
+                                <field name="TONG_TIEN_CHI_DOI_CHIEU_TRONG_KY" string="VI.Chênh lệch (IV - V):" colspan="6" readonly="1" />
+                            </group>
+                        </group>
+                        <!-- <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer> -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_account_ex_doi_chieu_ngan_hang_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Đối chiếu ngân hàng</field>
+            <field name="res_model">account.ex.doi.chieu.ngan.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_account_ex_doi_chieu_ngan_hang_tham_so_form" />
+        </record>
+        <record id="action_open_account_ex_doi_chieu_ngan_hang_form" model="ir.actions.act_window">
+            <field name="name">Đối chiếu ngân hàng</field>
+            <field name="res_model">account.ex.doi.chieu.ngan.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

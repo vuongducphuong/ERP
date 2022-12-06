@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_sale_ex_bao_gia_form" model="ir.ui.view">
+            <field name="name">sale.ex.bao.gia.form</field>
+            <field name="model">sale.ex.bao.gia</field>
+            <field name="arch" type="xml">
+                <form string="báo giá">
+                    <sheet>
+                        <group col="6">
+                              <group  colspan="4" col="4" string="Thông tin chung">
+                                <field name="KHACH_HANG_ID"  colspan="2" domain="[('LA_KHACH_HANG','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}"/>
+                                <field name="TEN_KHACH_HANG" colspan="2"/>
+                                <field name="DIA_CHI" colspan="4"/>
+                                <field name="MA_SO_THUE" colspan="2"/>
+                                <field name="NGUOI_LIEN_HE" colspan="2"/>
+                                <field name="GHI_CHU" colspan="4"/>
+                                <field name="NV_MUA_HANG_ID" colspan="2" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}"/>
+                                <field name="THAM_CHIEU"  invisible="1" colspan="4" readonly='True'/>
+                              </group>
+                            
+                            
+                            <group col="2" colspan="2">
+                                <group col="2" colspan="2" string="Báo giá">
+                                    <field name="SO_BAO_GIA" required="True"/>
+                                    <field name="NGAY_BAO_GIA" required="True"/>
+                                    <field name="HIEU_LUC_DEN"/>
+                                </group>
+                                <group col="2" colspan="2" string="Tỷ giá">
+                                    <field name="currency_id" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}" required="True"/>
+                                    <field name="TY_GIA" attrs="{'readonly': [('LA_TIEN_CO_SO', '=', True)]}"/>
+                                    <field name="LA_TIEN_CO_SO" invisible = '1'/>
+                                    <field name="base_currency_id" invisible = '1'/>
+                                </group>
+                            </group>
+                        </group>
+                        
+
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1.Hàng tiền">
+                                <field name="SALE_EX_BAO_GIA_CHI_TIET_IDS" mode="tree">
+                                  <tree editable="bottom">
+                                    <field name="MA_HANG_ID"  options="{'columns': ['MA', 'TEN','SO_LUONG_TON'], 'strings': ['Mã hàng', 'Tên hàng','Số lượng tồn'],'displays': ['MA']}" required="True"/>
+                                    <field name="TEN_HANG"/>
+                                    <field name="DVT_ID"/>
+                                    <field name="SO_LUONG" sum="so luong"/>
+                                    <field name="DON_GIA"/>
+                                    <field name="THANH_TIEN" sum="thanh tien"/>
+                                    <field name="THANH_TIEN_QUY_DOI" sum="thanh tien quy doi" attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=' , True)]}"/>
+                                    <field name="TY_LE_CK" string="Tỷ lệ CK"/>
+                                    <field name="TIEN_CHIET_KHAU" sum="tien chiet khau"/>
+                                    <field name="TIEN_CHIET_KHAU_QUY_DOI" sum="tien chiet khau quy doi" attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=' , True)]}"/>
+                                    <field name="PHAN_TRAM_THUE_GTGT_ID" options="{'no_create': True}" string="% thuế GTGT"/>
+                                    <field name="TIEN_THUE_GTGT" sum="tien thue gtgt"/>
+                                    <field name="TIEN_THUE_GTGT_QUY_DOI" sum="tien thue gtgt quy doi" attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=' , True)]}"/>
+                                    <field name="currency_id" invisible = '1'/>
+                                    <field name="base_currency_id" invisible = '1'/>
+                                    
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                        <group col="8">
+                            <field name="TIEN_HANG" colspan="2"/>
+                            <field name="THANH_TIEN_QUY_DOI" colspan="2" nolabel="1" attrs="{'invisible': [('LA_TIEN_CO_SO', '=', True)]}"/>
+                            <field name="TIEN_THUE_GTGT" colspan="2"/>
+                            <field name="TIEN_THUE_GTGT_QUY_DOI" colspan="2" nolabel="1" attrs="{'invisible': [('LA_TIEN_CO_SO', '=', True)]}"/>
+                            <field name="TIEN_CHIET_KHAU"/>
+                            <field name="TIEN_CHIET_KHAU_QUY_DOI" colspan="2" nolabel="1" attrs="{'invisible': [('LA_TIEN_CO_SO', '=', True)]}"/>
+                            <field name="TONG_TIEN"/>
+                            <field name="TONG_TIEN_QUY_DOI" colspan="2" nolabel="1" attrs="{'invisible': [('LA_TIEN_CO_SO', '=', True)]}"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_sale_ex_bao_gia_tree" model="ir.ui.view">
+            <field name="name">sale.ex.bao.gia.tree</field>
+            <field name="model">sale.ex.bao.gia</field>
+            <field name="arch" type="xml">
+                <tree string="Báo giá">
+                    <field name="NGAY_BAO_GIA" fixed_column="True"/>
+                    <field name="SO_BAO_GIA" fixed_column="True"/>
+                    <field name="HIEU_LUC_DEN"/>
+                    <field name="KHACH_HANG_ID"/>
+                    <field name="DIA_CHI"/>
+                    <field name="MA_SO_THUE"/>
+                    <field name="GHI_CHU"/>
+                    <field name="CHI_NHANH_ID"/>
+                    
+                   
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_sale_ex_bao_gia" model="ir.actions.act_window">
+            <field name="name">Báo giá</field>
+            <field name="res_model">sale.ex.bao.gia</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_sale_ex_bao_gia_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_sale_ex_bao_gia_tree"/>
+            <field name="act_window_id" ref="open_menu_sale_ex_bao_gia"/>
+        </record>
+
+        <record id="action_sale_ex_bao_gia_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_sale_ex_bao_gia_form"/>
+            <field name="act_window_id" ref="open_menu_sale_ex_bao_gia"/>
+        </record>
+
+        <!-- <menuitem name="báo giá"
+                  action="sale_ex.open_menu_sale_ex_bao_gia"
+                  id="menu_sale_ex_bao_gia"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_sale_ex_bao_gia_2" model="ir.sequence">
+            <field name="name">sale_ex_bao_gia SO_BAO_GIA sequence</field>
+            <field name="code">sale_ex_bao_gia_SO_BAO_GIA</field>
+            <field name="prefix">BG</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+  <data>
+    <record id="view_danh_muc_vat_tu_hang_hoa_form" model="ir.ui.view">
+      <field name="name">danh.muc.vat.tu.hang.hoa.form</field>
+      <field name="model">danh.muc.vat.tu.hang.hoa</field>
+      <field name="priority">10</field>
+      <field name="arch" type="xml">
+        <form string="Vật tư hàng hóa" cloudify_js="vat_tu_hang_hoa_dich_vu_view">
+          <sheet>
+            <group col="4" string="Thông tin chung">
+              <group colspan="4" col="4">
+                <field name="MA" string="Mã (*)" colspan="2" />
+                <field name="TEN" string="Tên (*)" colspan="2" />
+                <field name="TINH_CHAT" string="Tính chất (*)" colspan="2" />
+                <field name="NHOM_VTHH" widget="many2many_tags" colspan="2" string="Nhóm VTHH" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm VTHH, dịch vụ', 'Tên nhóm VTHH, dịch vụ']}" />
+                <field name="MO_TA" colspan="4" />
+                
+                <field name="LIST_NHOM_VTHH" invisible="1" />
+                <field name="LIST_TEN_NHOM_VTHH" invisible="1" />
+                <field name="LIST_MPC_NHOM_VTHH" invisible="1" />
+              </group>
+              <group colspan="4" col="12">
+                <field name="DVT_CHINH_ID" string="ĐVT chính" colspan="3" />
+                <button id="btn_cong_thuc_tinh_so_luong" string="Công thức tính số lượng..." class="oe_edit_only pull-right" colspan="3" attrs="{'invisible': [('TINH_CHAT', 'in' , ('2','3'))]}" />
+                <field name="THIET_LAP_CONG_THUC" colspan="6" nolabel="1"/>
+              </group>
+              <group colspan="4" col="4">
+                <field name="SO_LUONG_TON_TOI_THIEU" colspan="2" />
+                <field name="CHO_PHEP_XUAT_QUA_SL_TON" colspan="2" />
+                <field name="NGUON_GOC" colspan="2" />
+                <field name="THOI_HAN_BH" colspan="2" />
+                <field name="DIEN_GIAI_KHI_MUA" colspan="4" />
+                <field name="DIEN_GIAI_KHI_BAN" colspan="4" />
+                <field name="DUA_TREN_CACH_TINH" colspan="4" invisible="1" />
+              </group>
+            </group>
+            <!--Master/Detail form-->
+            <notebook>
+              <page string="1. Ngầm định">
+                <group col="12">
+                  <group col="6" colspan="6">
+                    <field name="KHO_NGAM_DINH_ID" colspan="6" options="{'columns': ['MA_KHO', 'TEN_KHO'], 'strings': ['Mã kho', 'Tên kho'],'displays': ['MA_KHO']}" attrs="{'required': [('TINH_CHAT', 'in' , ('0','1'))]}"/>
+                    <field name="TAI_KHOAN_KHO_ID" colspan="6" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                    <field name="TK_DOANH_THU_ID" colspan="6" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                    <field name="TK_CHIET_KHAU_ID" colspan="6" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                    <field name="TK_GIAM_GIA_ID" colspan="6" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                    <field name="TK_TRA_LAI_ID" colspan="6" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                    <field name="TK_NO_ID" colspan="6" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                    <field name="TY_LE_CKMH" colspan="6" string="Tỷ lệ CKMH (%)" />
+                  </group>
+                  <group col="6" colspan="6">
+                    <field name="DON_GIA_MUA_CO_DINH" colspan="4" />
+                    <button id="btn_nhap_don_gia_mua_co_dinh" string="..." />
+                    <field name="DON_GIA_MUA_GAN_NHAT" colspan="4" />
+                    <button id="btn_nhap_don_gia_mua_gan_nhat" string="..." />
+                    <field name="DON_GIA_BAN" colspan="4" />
+                    <button id="btn_nhap_don_gia_ban" string="..." />
+                    <field name="GIA_VON" colspan="4" attrs="{'invisible': [('TINH_CHAT', '!=' , '1')]}" />
+                    <field name="THUE_SUAT_GTGT_ID" string="Thuế xuất GTGT (%)" colspan="4" options="{'no_create': True}" />
+                    <field name="THUE_SUAT_THUE_NK" string="Thuế suất thuế NL (%)" colspan="4" />
+                    <field name="THUE_SUAT_THUE_XK" string="Thuế suất thuế XK (%)" colspan="4" />
+                    <field name="NHOM_HHDV_CHIU_THUE_TTDB_ID" string="Nhóm HHDV chịu thuế TTĐB" colspan="4" />
+                    <!-- <group col="2" colspan="2">
+                    </group> -->
+                  </group>
+                </group>
+              </page>
+              <page string="2. Chiết khấu">
+                <group col="4">
+                  <field name="CHIET_KHAU" />
+                  <field name="LOAI_CHIET_KHAU" />
+                </group>
+                <field name="DANH_MUC_VAT_TU_HANG_HOA_CHIET_KHAU_IDS" mode="tree" attrs="{'readonly': [('CHIET_KHAU', '=', False)]}">
+                  <tree editable="bottom">
+                    <field name="SO_LUONG_TU" />
+                    <field name="SO_LUONG_DEN" />
+                    <field name="CHIET_KHAU" string="% chiết khấu" />
+                  </tree>
+                </field>
+              </page>
+              <page string="3. Đơn vị chuyển đổi">
+                <field name="DANH_MUC_VAT_TU_HANG_HOA_DON_VI_CHUYEN_DOI_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="STT" string="STT" />
+                    <field name="DVT_ID" />
+                    <field name="TY_LE_CHUYEN_DOI_VA_DON_VI_CHINH" />
+                    <field name="PHEP_TINH_CHUYEN_DOI" />
+                    <field name="MO_TA" readonly="1" />
+                    <field name="DON_GIA_BAN_1" />
+                    <field name="DON_GIA_BAN_2" />
+                    <field name="DON_GIA_BAN_3" />
+                    <field name="DON_GIA_CO_DINH" />
+                  </tree>
+                </field>
+              </page>
+              <page string="4. Mã quy cách">
+                <field name="THEO_DOI_THEO_MA_QUY_CACH" string="Theo dõi vật tư, hàng hóa theo mã quy cách" nolabel="1" />
+                <button id="btn_dsct_phat_sinh_ma_quy_cach" string="Danh sách chứng từ phát sinh mã quy cách" />
+                <field name="DANH_MUC_VAT_TU_HANG_HOA_MA_QUY_CACH_IDS" mode="tree">
+                  <tree editable="bottom" create="false" report="true">
+                    <field name="CHON" invisible="1" />
+                    <field name="MA_QUY_CACH" readonly="1" />
+                    <field name="TEN_HIEN_THI" placeholder="Nhập tên mã quy cách VD: Màu sắc, kích cỡ..." />
+                    <field name="CHO_PHEP_TRUNG" />
+                  </tree>
+                </field>
+              </page>
+              <page string="5. Đặc tính, hình ảnh">
+                <group col="4">
+                  <field name="DAC_TINH" colspan="2" />
+                  <field name="image" colspan="2" string="Hình ảnh" />
+                </group>
+              </page>
+              <page string="6. Định mức nguyên vật liệu" attrs="{'invisible': [('TINH_CHAT', '!=' , '1')]}">
+                <field name="DANH_MUC_VAT_TU_HANG_HOA_CHI_TIET_DINH_MUC_NVL_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="sequence" widget="handle" />
+                    <field name="MA_NGUYEN_VAT_LIEU_ID" options="{'columns': ['MA', 'TEN','DON_GIA_MUA_CO_DINH','SO_LUONG_TON'], 'strings': ['Mã sản phẩm', 'Tên sản phẩm','Giá vốn','Số lượng tồn'],'displays': ['MA']}" />
+                    <field name="TEN_NGUYEN_VAT_LIEU" />
+                    <field name="DVT_ID" />
+                    <field name="SO_LUONG" />
+                    <field name="GIA_VON" readonly="1" />
+                    <field name="THANH_TIEN" sum="Tổng" />
+
+                  </tree>
+                </field>
+              </page>
+            </notebook>
+            <field name="active" />
+          </sheet>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+            <field name="message_ids" widget="mail_thread" />
+          </div>
+        </form>
+      </field>
+    </record>
+    <record id="view_danh_muc_vat_tu_hang_hoa_tree" model="ir.ui.view">
+      <field name="name">danh.muc.vat.tu.hang.hoa.tree</field>
+      <field name="model">danh.muc.vat.tu.hang.hoa</field>
+      <field name="arch" type="xml">
+        <tree string="Vật tư hàng hóa">
+          <field name="MA" string="Mã" />
+          <field name="TEN" string="Tên" />
+          <field name="TINH_CHAT" string="Tính chất" />
+          <field name="NHOM_VTHH" widget="many2many_tags" />
+          <field name="DVT_CHINH_ID" />
+          <field name="SO_LUONG_TON" sum="Tổng SL tồn" />
+          <field name="GIA_TRI_TON" sum="Tổng GT tồn" />
+          <field name="active" />
+          <field name="CHI_NHANH_ID" />
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_danh_muc_vat_tu_hang_hoa_search" model="ir.ui.view">
+      <field name="name">danh.muc.vat.tu.hang.hoa.search</field>
+      <field name="model">danh.muc.vat.tu.hang.hoa</field>
+      <field name="arch" type="xml">
+        <search string="Vật tư hàng hóa">
+          <!-- Tìm kiếm với input text-->
+          <field name="MA" string="Vật tư hàng hóa" filter_domain="['|', ('MA','ilike',self),('TEN','ilike',self)]" />
+          <separator />
+          <field name="TEN" string="Tên hàng" />
+          <field name="MA" string="Mã hàng" />
+        </search>
+      </field>
+    </record>
+
+    <record id="open_menu_danh_muc_vat_tu_hang_hoa" model="ir.actions.act_window">
+      <field name="name">Vật tư hàng hóa</field>
+      <field name="res_model">danh.muc.vat.tu.hang.hoa</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="context">{'import_enabled': True}</field>
+      <field name="search_view_id" ref="view_danh_muc_vat_tu_hang_hoa_search" />
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+			Nhấn vào đây để thêm mới!
+		</p>
+      </field>
+    </record>
+    <record id="action_danh_muc_vat_tu_hang_hoa_tree" model="ir.actions.act_window.view">
+      <field name="view_mode">tree</field>
+      <field name="view_id" ref="view_danh_muc_vat_tu_hang_hoa_tree" />
+      <field name="act_window_id" ref="open_menu_danh_muc_vat_tu_hang_hoa" />
+    </record>
+    <record id="action_danh_muc_vat_tu_hang_hoa_form" model="ir.actions.act_window.view">
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="view_danh_muc_vat_tu_hang_hoa_form" />
+      <field name="act_window_id" ref="open_menu_danh_muc_vat_tu_hang_hoa" />
+    </record>
+    <data noupdate="1">
+      <record id="sequence_danh_muc_vat_tu_hang_hoa" model="ir.sequence">
+        <field name="name">sequence_danh_muc_vat_tu_hang_hoa MA_VTHH sequence</field>
+        <field name="code">sequence_danh_muc_vat_tu_hang_hoa_MA_VTHH</field>
+        <field name="prefix">VT</field>
+        <field name="padding">5</field>
+      </record>
+    </data>
+  </data>
+  <data noupdate="1"></data>
+</odoo>

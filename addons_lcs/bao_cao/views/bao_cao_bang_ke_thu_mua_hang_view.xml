@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_bang_ke_thu_mua_hang_tree" model="ir.ui.view">
+            <field name="name">bao.cao.bang.ke.thu.mua.hang.tree</field>
+            <field name="model">bao.cao.bang.ke.thu.mua.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Bảng kê thu mua hàng" create="false" report="true">
+                    <field name="NGAY_THANG_NAM_MUA_HANG" />
+                    <field name="TEN_NGUOI_BAN" />
+                    <field name="DIA_CHI" />
+                    <field name="SO_CMT_NHAN_DAN" string="Số CMT nhân dân" />
+                    <field name="TEN_DAT_HANG" />
+                    <field name="SO_LUONG" />
+                    <field name="DON_GIA" />
+                    <field name="TONG_GIA_THANH_TOAN" />
+                    <field name="GHI_CHU" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__bang_ke_thu_mua_hang" model="ir.actions.act_window">
+            <field name="name">Bảng kê thu mua hàng</field>
+            <field name="res_model">bao.cao.bang.ke.thu.mua.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'header_struct': [
+	[
+		'Người bán', ['TEN_NGUOI_BAN','DIA_CHI','SO_CMT_NHAN_DAN']
+	], 
+	[
+		'Hàng hóa mua vào', ['TEN_DAT_HANG','SO_LUONG','DON_GIA','TONG_GIA_THANH_TOAN']
+	]
+]
+, 'expand_all': 'true'}</field>
+        </record>
+        <record id="view_bao_cao_bang_ke_thu_mua_hang_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.bang.ke.thu.mua.hang.form</field>
+            <field name="model">bao.cao.bang.ke.thu.mua.hang</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <field name="CHI_NHANH_ID" options="{'showClearButton': false, 'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" />
+                        </group>
+                        <group col="4">
+                            <group col="4" colspan="4">
+                                <field name="KY_BAO_CAO_SLT" colspan="4" string="Kỳ báo cáo" widget="radio" options="{'horizontal': True, 'alway_edit': True}" />
+                            </group>
+                            <group col="4" colspan="4">
+                                <field name="KHOANG_THOI_GIAN" colspan="4" attrs="{'invisible': [('KY_BAO_CAO_SLT', '=', 'THEO_THANG')]}" />
+                                <field name="TU_NGAY" attrs="{'invisible': [('KY_BAO_CAO_SLT', '=', 'THEO_THANG')]}" required="1" />
+                                <field name="DEN_NGAY" attrs="{'invisible': [('KY_BAO_CAO_SLT', '=', 'THEO_THANG')]}" required="1" />
+                                <field name="THANG" attrs="{'invisible': [('KY_BAO_CAO_SLT', '=', 'THEO_NGAY')]}" />
+                                <field name="NAM" attrs="{'invisible': [('KY_BAO_CAO_SLT', '=', 'THEO_NGAY')]}" />
+                                <field name="NGUOI_PHU_TRACH_THU_MUA_ID" colspan="4" domain="[('LA_NHAN_VIEN', '=', 'True')]" options="{'columns': ['MA', 'HO_VA_TEN', 'DON_VI_ID.TEN_DON_VI'], 'strings': ['Mã nhân viên', 'Tên nhân viên', 'Đơn vị'],'displays':['HO_VA_TEN']}" />
+                                <field name="DIA_CHI_NOI_TO_CHUC_THU_MUA" colspan="4" />
+                                <field name="HIEN_THI_SO_CHUNG_TU_TRONG_PHAN_GHI_CHU" />
+                            </group>
+                        </group>
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_bang_ke_thu_mua_hang_tham_so_form" model="ir.actions.act_window">
+            <field name="name">01/TNDN: Bảng kê thu mua hàng hóa, dịch vụ mua vào không có hóa đơn</field>
+            <field name="res_model">bao.cao.bang.ke.thu.mua.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_bang_ke_thu_mua_hang_tham_so_form" />
+        </record>
+    </data>
+</odoo>

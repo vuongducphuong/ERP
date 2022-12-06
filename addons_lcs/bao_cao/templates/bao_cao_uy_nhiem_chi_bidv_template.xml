@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="bao_cao_phieu_chi_uy_nhiem_chi_bidv">
+        <t t-call="web.external_layout">
+            <div class="page" style="margin-left: 15px; margin-right: 15px;">
+                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+                    <table style="width:100%;border: 1px solid black;margin-bottom: 0px;">
+                        <tr>
+                            <td>
+                                <div class="col-xs-12 text-center" style="padding-left: 0px; padding-right: 0px;">
+                                    <div class="col-xs-3" style="padding-left: 10px; padding-right: 0px;padding-top: 15px;padding-bottom: 2px;">
+                                        <img src="/account_ex/static/src/img/BIDV.jpg" style="width: 160px; height: 60px;" />
+                                    </div>
+                                    <div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;">
+                                        <p style="font-family: Times New Roman; font-size: 15.5pt; font-weight: bold;"> ỦY NHIỆM CHI</p>
+
+                                        <p style="font-family: Times New Roman; font-size: 12pt; font-weight: bold;margin-top: -15px;"> PAYMENT ORDER</p>
+                                    </div>
+                                    <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;padding-top: 5px;">
+                                        <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+                                            <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;width: 40%;">
+                                                <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Số/</span>
+                                                <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Seq No:</span>
+                                            </div>
+                                            <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;width: 60%;">
+                                                <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.SO_CHUNG_TU" t-field="o.SO_CHUNG_TU" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;padding-top: 10px;">
+                                            <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;width: 40%;">
+                                                <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Ngày/</span>
+                                                <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Date:</span>
+                                            </div>
+                                            <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;width: 60%;">
+                                                <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.NGAY_CHUNG_TU" t-field="o.NGAY_CHUNG_TU" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="width:100%; border: 1px solid black;border-top: none;margin-bottom: 0px;">
+                        <tr>
+                            <td style="width: 50%;border-right: 1px solid black;vertical-align: top;">
+                                <div class="col-xs-12" style="padding-left: 0px; padding-right: 10px;line-height: 1;height: 35px;">
+                                    <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Tên TK trích Nợ/</span>
+                                    <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Dr A/C Name:</span>
+                                    <span style="font-family: Times New Roman; font-size: 10pt;" t-esc="o.get_ten_cong_ty()" />
+                                </div>
+                                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+                                    <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 45%;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Số TK trích nợ/</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Drr A/C No:</span>
+                                    </div>
+                                    <div class="col-xs-8" style="padding-left: 0px; padding-right: 10px;width: 55%;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.STK_NGAN_HANG" t-field="o.STK_NGAN_HANG" />
+                                        <t t-if="not o.STK_NGAN_HANG" t-esc="'...........................................................'" />
+                                    </div>
+                                </div>
+                                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+                                    <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 28%;margin-top: -5px;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Tại NH/</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">At Bank:</span>
+                                    </div>
+                                    <div class="col-xs-8" style="padding-left: 0px; padding-right: 10px;width: 72%;line-height: 1;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.TEN_NGAN_HANG_DI" t-field="o.TEN_NGAN_HANG_DI" />
+                                        <t t-if="not o.TEN_NGAN_HANG_DI" t-esc="'...............................................................................'" />
+                                    </div>
+                                </div>
+                                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                    <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 30%;margin-top: -5px;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Chi nhánh/</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Branch:</span>
+                                    </div>
+                                    <div class="col-xs-8" style="padding-left: 0px; padding-right: 10px;width: 70%;line-height: 1;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.CHI_NHANH_CUA_NGAN_HANG" t-field="o.CHI_NHANH_CUA_NGAN_HANG" />
+                                        <t t-if="not o.CHI_NHANH_CUA_NGAN_HANG" t-esc="'............................................................................'" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 50%;border-left: none;">
+                                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;height: 35px">
+                                    <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 40%;margin-top: -5px;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Người hưởng/</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Beneficiary:</span>
+                                    </div>
+                                    <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 60%;line-height: 1;">
+                                        <t t-if="o.LOAI_CHUNG_TU == 1560">
+                                            <span style="font-size:10pt" t-esc="o.get_ten_cong_ty()" />
+                                        </t>
+                                        <t t-if="o.LOAI_CHUNG_TU != 1560">
+                                            <span style="font-size:10pt" t-if="o.TEN_DOI_TUONG" t-field="o.TEN_DOI_TUONG" />
+                                            <t t-if="not o.TEN_DOI_TUONG" t-esc="'.....................................................'" />
+                                        </t>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+                                    <div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;width: 55%;">
+
+                                        <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 62%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Số CMND/HC/</span>
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">ID/PP:</span>
+                                        </div>
+                                        <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width:38%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.SO_CMND" t-field="o.SO_CMND" />
+                                            <t t-if="not o.SO_CMND" t-esc="'..................'" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;width: 45%;">
+                                        <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 55%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Ngày cấp/</span>
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Date:</span>
+                                        </div>
+                                        <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 45%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.NGAY_CMND" t-field="o.NGAY_CMND" />
+                                            <t t-if="not o.NGAY_CMND" t-esc="'.................'" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                    <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 25%;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Nơi cấp/</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Place:</span>
+                                    </div>
+                                    <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 75%;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.NOI_CAP_CMND" t-field="o.NOI_CAP_CMND" />
+                                        <t t-if="not o.NOI_CAP_CMND" t-esc="'..................................................................'" />
+                                    </div>
+                                </div>
+                                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                    <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 25%;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Số TK/</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">A/C No:</span>
+                                    </div>
+                                    <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 75%;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.STK_NGAN_HANG_DOI_TUONG" t-field="o.STK_NGAN_HANG_DOI_TUONG" />
+                                        <t t-if="not o.STK_NGAN_HANG_DOI_TUONG" t-esc="'..................................................................'" />
+                                    </div>
+                                </div>
+                                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                    <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 27%;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Tại NH/</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">At Bank:</span>
+                                    </div>
+                                    <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 73%;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.TEN_NGAN_HANG_DOI_TUONG" t-field="o.TEN_NGAN_HANG_DOI_TUONG" />
+                                        <t t-if="not o.TEN_NGAN_HANG_DOI_TUONG" t-esc="'................................................................'" />
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="width:100%;border: 1px solid black;border-top: none; margin-bottom: 0px;">
+                        <tr>
+                            <td style=" width: 50%; padding-bottom: 25px;vertical-align: top;line-height: 1;">
+                                <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Số tiền bằng số/</span>
+                                <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;margin-right:10px ;"> Amount in figures:</span>
+                                <t t-if="o.TONG_TIEN != 0">
+                                    <span style="font-size:10pt;font-weight: bold;" t-if="o.TONG_TIEN" t-field="o.TONG_TIEN" />
+                                    <span style="font-size:10pt;font-weight: bold;" t-if="o.LOAI_TIEN" t-field="o.LOAI_TIEN" />
+                                </t>
+                            </td>
+                            <td style=" width: 50%;vertical-align: top;line-height: 1;">
+                                <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Số tiền bằng chữ/</span>
+                                <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;"> Amount in words:</span>
+                                <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;font-style: italic;" t-if="o.TONG_TIEN" t-field="o.TONG_TIEN" t-options="{'widget': 'vietbangchu'}" />
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="width:100%;border: 1px solid black;border-top: none; margin-bottom: 0px;">
+                        <tr>
+                            <td style="width : 70%;vertical-align: top;border-right: 1px solid;">
+                                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                    <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width : 70%;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Đề nghị NH quy đổi ra loại tiền/</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">  Request for changing into:.............</span>
+                                    </div>
+                                    <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width : 30%;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Tỷ giá/</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Ex rate:.....................</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                    <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 22%;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Nội dung/</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;"> Remarks:</span>
+                                    </div>
+                                    <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 78%;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.DIEN_GIAI" t-field="o.DIEN_GIAI" />
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width : 30%;vertical-align: top;">
+                                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                    <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Phí ngân hàng/</span>
+                                    <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;"> Charges:</span>
+                                </div>
+                                <div class="col-xs-12" style="padding-left: 15px; padding-right: 0px;margin-top: -5px;">
+                                    <div class="check-box-fake" />
+                                    <span style="font-size:10pt">
+                                        <strong>Phí trong</strong>
+                                    </span>
+                                    <span style="font-size:7pt;vertical-align: bottom;">Including</span>
+                                </div>
+                                <div class="col-xs-12" style="padding-left: 15px; padding-right: 0px;margin-top: -5px;">
+                                    <div class="check-box-fake" />
+                                    <span style="font-size:10pt">
+                                        <strong>Phí ngoài</strong>
+                                    </span>
+                                    <span style="font-size:7pt;vertical-align: bottom;">Excluding</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="width: 100%;border: 1px solid black;border-top:  none;margin-bottom: 0px;">
+                        <tr>
+                            <td style="-webkit-transform: rotate(-90.0deg); height: 100px;text-align: center;font-size: 8pt;line-height: 0.1cm;">
+                                <div style="margin-top: -373px;">
+                                    <p> PHẦN DÀNH CHO </p>
+                                    <p> NGÂN HÀNG</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table style="width: 100%;border: 1px solid black;border-top:none;margin-bottom: 0px;height: 125px;">
+                        <tr>
+                            <td style="width: 60%;vertical-align: top;">
+                                <div class="col-xs-12 text-center" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                    <span style="font-family: Times New Roman; font-size: 12pt; font-weight: bold;"> KHÁCH HÀNG/</span>
+                                    <span style="font-family: Times New Roman; font-size: 10pt; ">CLIENT</span>
+                                </div>
+                                <div class="col-xs-12 text-center" style="padding-left: 0px; padding-right: 0px;">
+                                    <div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;margin-top: -10px;width: 55%;">
+                                        <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> KẾ TOÁN TRƯỞNG/</span>
+                                            <span style="font-family: Times New Roman; font-size: 8pt; font-style: italic; ">Chief Accountant</span>
+                                        </div>
+                                        <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;margin-top: -10px;">
+                                            <span style="font-family: Times New Roman; font-size: 8pt; font-style: italic;">(Ký và ghi rõ họ tên/Signature full name)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;margin-top: -10px;width: 45%;">
+                                        <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> CHỦ TÀI KHOẢN/</span>
+                                            <span style="font-family: Times New Roman; font-size: 8pt;  font-style: italic;">Account Holder</span>
+                                        </div>
+                                        <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;margin-top: -10px;">
+                                            <span style="font-family: Times New Roman; font-size: 8pt; font-style: italic;">(Ký và ghi rõ họ tên/Signature full name)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 40%;vertical-align: top;">
+                                <div class="col-xs-12 text-center" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                    <span style="font-family: Times New Roman; font-size: 12pt; font-weight: bold;"> NGÂN HÀNG/</span>
+                                    <span style="font-family: Times New Roman; font-size: 10pt;">BANK SENDER (BIDV)</span>
+                                </div>
+                                <div class="col-xs-12 text-center" style="padding-left: 0px; padding-right: 0px;margin-top: -10px;">
+                                    <div class="col-xs-6 text-center" style="padding-left: 0px; padding-right: 0px;">
+                                        <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold; "> Giao dịch viên/</span>
+                                            <span style="font-family: Times New Roman; font-size: 8pt; font-style: italic; ">Received by</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xs-6 text-center" style="padding-left: 0px; padding-right: 0px;">
+                                        <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold; margin-left: 25px;"> Kiểm soát/</span>
+                                            <span style="font-family: Times New Roman; font-size: 8pt;  font-style: italic;">Verified by</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <span style="display: inline-block;">............................................................................</span>
+            <div class="page" style="margin-left: 15px; margin-right: 15px;">
+                    <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+                        <table style="width:100%;border: 1px solid black;margin-bottom: 0px;">
+                            <tr>
+                                <td>
+                                    <div class="col-xs-12 text-center" style="padding-left: 0px; padding-right: 0px;">
+                                        <div class="col-xs-3" style="padding-left: 10px; padding-right: 0px;padding-top: 15px;padding-bottom: 2px;">
+                                            <img src="/account_ex/static/src/img/BIDV.jpg" style="width: 160px; height: 60px;" />
+                                        </div>
+                                        <div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;">
+                                            <p style="font-family: Times New Roman; font-size: 15.5pt; font-weight: bold;"> ỦY NHIỆM CHI</p>
+    
+                                            <p style="font-family: Times New Roman; font-size: 12pt; font-weight: bold;margin-top: -15px;"> PAYMENT ORDER</p>
+                                        </div>
+                                        <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;padding-top: 5px;">
+                                            <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+                                                <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;width: 40%;">
+                                                    <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Số/</span>
+                                                    <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Seq No:</span>
+                                                </div>
+                                                <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;width: 60%;">
+                                                    <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.SO_CHUNG_TU" t-field="o.SO_CHUNG_TU" />
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;padding-top: 10px;">
+                                                <div class="col-xs-3" style="padding-left: 0px; padding-right: 0px;width: 40%;">
+                                                    <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Ngày/</span>
+                                                    <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Date:</span>
+                                                </div>
+                                                <div class="col-xs-9" style="padding-left: 0px; padding-right: 0px;width: 60%;">
+                                                    <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.NGAY_CHUNG_TU" t-field="o.NGAY_CHUNG_TU" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:100%; border: 1px solid black;border-top: none;margin-bottom: 0px;">
+                            <tr>
+                                <td style="width: 50%;border-right: 1px solid black;vertical-align: top;">
+                                    <div class="col-xs-12" style="padding-left: 0px; padding-right: 10px;line-height: 1;height: 35px;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Tên TK trích Nợ/</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Dr A/C Name:</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt;" t-esc="o.get_ten_cong_ty()" />
+                                    </div>
+                                    <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+                                        <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 45%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Số TK trích nợ/</span>
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Drr A/C No:</span>
+                                        </div>
+                                        <div class="col-xs-8" style="padding-left: 0px; padding-right: 10px;width: 55%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.STK_NGAN_HANG" t-field="o.STK_NGAN_HANG" />
+                                            <t t-if="not o.STK_NGAN_HANG" t-esc="'...........................................................'" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+                                        <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 28%;margin-top: -5px;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Tại NH/</span>
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">At Bank:</span>
+                                        </div>
+                                        <div class="col-xs-8" style="padding-left: 0px; padding-right: 10px;width: 72%;line-height: 1;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.TEN_NGAN_HANG_DI" t-field="o.TEN_NGAN_HANG_DI" />
+                                            <t t-if="not o.TEN_NGAN_HANG_DI" t-esc="'...............................................................................'" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                        <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 30%;margin-top: -5px;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Chi nhánh/</span>
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Branch:</span>
+                                        </div>
+                                        <div class="col-xs-8" style="padding-left: 0px; padding-right: 10px;width: 70%;line-height: 1;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.CHI_NHANH_CUA_NGAN_HANG" t-field="o.CHI_NHANH_CUA_NGAN_HANG" />
+                                            <t t-if="not o.CHI_NHANH_CUA_NGAN_HANG" t-esc="'............................................................................'" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="width: 50%;border-left: none;">
+                                    <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;height: 35px">
+                                        <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 40%;margin-top: -5px;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Người hưởng/</span>
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Beneficiary:</span>
+                                        </div>
+                                        <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 60%;line-height: 1;">
+                                            <t t-if="o.LOAI_CHUNG_TU == 1560">
+                                                <span style="font-size:10pt" t-esc="o.get_ten_cong_ty()" />
+                                            </t>
+                                            <t t-if="o.LOAI_CHUNG_TU != 1560">
+                                                <span style="font-size:10pt" t-if="o.TEN_DOI_TUONG" t-field="o.TEN_DOI_TUONG" />
+                                                <t t-if="not o.TEN_DOI_TUONG" t-esc="'.....................................................'" />
+                                            </t>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+                                        <div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;width: 55%;">
+    
+                                            <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 62%;">
+                                                <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Số CMND/HC/</span>
+                                                <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">ID/PP:</span>
+                                            </div>
+                                            <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width:38%;">
+                                                <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.SO_CMND" t-field="o.SO_CMND" />
+                                                <t t-if="not o.SO_CMND" t-esc="'..................'" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;width: 45%;">
+                                            <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 55%;">
+                                                <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Ngày cấp/</span>
+                                                <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Date:</span>
+                                            </div>
+                                            <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 45%;">
+                                                <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.NGAY_CMND" t-field="o.NGAY_CMND" />
+                                                <t t-if="not o.NGAY_CMND" t-esc="'.................'" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                        <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 25%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Nơi cấp/</span>
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Place:</span>
+                                        </div>
+                                        <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 75%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.NOI_CAP_CMND" t-field="o.NOI_CAP_CMND" />
+                                            <t t-if="not o.NOI_CAP_CMND" t-esc="'..................................................................'" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                        <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 25%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Số TK/</span>
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">A/C No:</span>
+                                        </div>
+                                        <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 75%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.STK_NGAN_HANG_DOI_TUONG" t-field="o.STK_NGAN_HANG_DOI_TUONG" />
+                                            <t t-if="not o.STK_NGAN_HANG_DOI_TUONG" t-esc="'..................................................................'" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                        <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 27%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;">Tại NH/</span>
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">At Bank:</span>
+                                        </div>
+                                        <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 73%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.TEN_NGAN_HANG_DOI_TUONG" t-field="o.TEN_NGAN_HANG_DOI_TUONG" />
+                                            <t t-if="not o.TEN_NGAN_HANG_DOI_TUONG" t-esc="'................................................................'" />
+                                        </div>
+    
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:100%;border: 1px solid black;border-top: none; margin-bottom: 0px;">
+                            <tr>
+                                <td style=" width: 50%; padding-bottom: 25px;vertical-align: top;line-height: 1;">
+                                    <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Số tiền bằng số/</span>
+                                    <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;margin-right:10px ;"> Amount in figures:</span>
+                                    <t t-if="o.TONG_TIEN != 0">
+                                        <span style="font-size:10pt;font-weight: bold;" t-if="o.TONG_TIEN" t-field="o.TONG_TIEN" />
+                                        <span style="font-size:10pt;font-weight: bold;" t-if="o.LOAI_TIEN" t-field="o.LOAI_TIEN" />
+                                    </t>
+                                </td>
+                                <td style=" width: 50%;vertical-align: top;line-height: 1;">
+                                    <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Số tiền bằng chữ/</span>
+                                    <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;"> Amount in words:</span>
+                                    <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;font-style: italic;" t-if="o.TONG_TIEN" t-field="o.TONG_TIEN" t-options="{'widget': 'vietbangchu'}" />
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:100%;border: 1px solid black;border-top: none; margin-bottom: 0px;">
+                            <tr>
+                                <td style="width : 70%;vertical-align: top;border-right: 1px solid;">
+                                    <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                        <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width : 70%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Đề nghị NH quy đổi ra loại tiền/</span>
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">  Request for changing into:.............</span>
+                                        </div>
+                                        <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width : 30%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Tỷ giá/</span>
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;">Ex rate:.....................</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                        <div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 22%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Nội dung/</span>
+                                            <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;"> Remarks:</span>
+                                        </div>
+                                        <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 78%;">
+                                            <span style="font-family: Times New Roman; font-size: 10pt;" t-if="o.DIEN_GIAI" t-field="o.DIEN_GIAI" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="width : 30%;vertical-align: top;">
+                                    <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> Phí ngân hàng/</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt; font-style: italic;"> Charges:</span>
+                                    </div>
+                                    <div class="col-xs-12" style="padding-left: 15px; padding-right: 0px;margin-top: -5px;">
+                                        <div class="check-box-fake" />
+                                        <span style="font-size:10pt">
+                                            <strong>Phí trong</strong>
+                                        </span>
+                                        <span style="font-size:7pt;vertical-align: bottom;">Including</span>
+                                    </div>
+                                    <div class="col-xs-12" style="padding-left: 15px; padding-right: 0px;margin-top: -5px;">
+                                        <div class="check-box-fake" />
+                                        <span style="font-size:10pt">
+                                            <strong>Phí ngoài</strong>
+                                        </span>
+                                        <span style="font-size:7pt;vertical-align: bottom;">Excluding</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:  none;margin-bottom: 0px;">
+                            <tr>
+                                <td style="-webkit-transform: rotate(-90.0deg); height: 100px;text-align: center;font-size: 8pt;line-height: 0.1cm;">
+                                    <div style="margin-top: -373px;">
+                                        <p> PHẦN DÀNH CHO </p>
+                                        <p> NGÂN HÀNG</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+    
+                        <table style="width: 100%;border: 1px solid black;border-top:none;margin-bottom: 0px;height: 125px;">
+                            <tr>
+                                <td style="width: 60%;vertical-align: top;">
+                                    <div class="col-xs-12 text-center" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                        <span style="font-family: Times New Roman; font-size: 12pt; font-weight: bold;"> KHÁCH HÀNG/</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt; ">CLIENT</span>
+                                    </div>
+                                    <div class="col-xs-12 text-center" style="padding-left: 0px; padding-right: 0px;">
+                                        <div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;margin-top: -10px;width: 55%;">
+                                            <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;">
+                                                <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> KẾ TOÁN TRƯỞNG/</span>
+                                                <span style="font-family: Times New Roman; font-size: 8pt; font-style: italic; ">Chief Accountant</span>
+                                            </div>
+                                            <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;margin-top: -10px;">
+                                                <span style="font-family: Times New Roman; font-size: 8pt; font-style: italic;">(Ký và ghi rõ họ tên/Signature full name)</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;margin-top: -10px;width: 45%;">
+                                            <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;">
+                                                <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold;"> CHỦ TÀI KHOẢN/</span>
+                                                <span style="font-family: Times New Roman; font-size: 8pt;  font-style: italic;">Account Holder</span>
+                                            </div>
+                                            <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;margin-top: -10px;">
+                                                <span style="font-family: Times New Roman; font-size: 8pt; font-style: italic;">(Ký và ghi rõ họ tên/Signature full name)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="width: 40%;vertical-align: top;">
+                                    <div class="col-xs-12 text-center" style="padding-left: 0px; padding-right: 0px;margin-top: -5px;">
+                                        <span style="font-family: Times New Roman; font-size: 12pt; font-weight: bold;"> NGÂN HÀNG/</span>
+                                        <span style="font-family: Times New Roman; font-size: 10pt;">BANK SENDER (BIDV)</span>
+                                    </div>
+                                    <div class="col-xs-12 text-center" style="padding-left: 0px; padding-right: 0px;margin-top: -10px;">
+                                        <div class="col-xs-6 text-center" style="padding-left: 0px; padding-right: 0px;">
+                                            <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;">
+                                                <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold; "> Giao dịch viên/</span>
+                                                <span style="font-family: Times New Roman; font-size: 8pt; font-style: italic; ">Received by</span>
+                                            </div>
+    
+                                        </div>
+                                        <div class="col-xs-6 text-center" style="padding-left: 0px; padding-right: 0px;">
+                                            <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;">
+                                                <span style="font-family: Times New Roman; font-size: 10pt; font-weight: bold; margin-left: 25px;"> Kiểm soát/</span>
+                                                <span style="font-family: Times New Roman; font-size: 8pt;  font-style: italic;">Verified by</span>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        </t>
+    </template>
+    <template id="template_bidvunc">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="bao_cao.bao_cao_phieu_chi_uy_nhiem_chi_bidv" />
+
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="Ủy nhiệm chi (BIDV)" id="action_template_bidvunc" model="bao.cao.uy.nhiem.chi.bidv" report_type="qweb-html" name="bao_cao.template_bidvunc" file="bao_cao.template_bidvunc" print_report_name="Ủy nhiệm chi (BIDV)" />
+    </data>
+</odoo>

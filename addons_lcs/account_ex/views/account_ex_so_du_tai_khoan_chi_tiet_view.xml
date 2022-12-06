@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+  <data>
+    <record id="view_account_ex_nhap_chi_tiet_cong_no_khach_hang_form" model="ir.ui.view">
+      <field name="name">account.ex.so.du.tai.khoan.chi.tiet.form</field>
+      <field name="model">account.ex.so.du.tai.khoan.chi.tiet</field>
+      <field name="arch" type="xml">
+        <form string="Nhập Số dư tài khoản">
+          <sheet>
+            <group col="4">
+              <field name="TK_ID" string="Số tài khoản" readonly="1" />
+              <field name="currency_id" readonly="1" />
+              <field name="TEN_DOI_TUONG" string="Nhà cung cấp:" readonly="1" />
+              <field name="CO_HACH_TOAN_NGOAI_TE" invisible= "1"/>
+              <field name="NGAY_HACH_TOAN" invisible= "1"/>
+            </group>
+            <!--Master/Detail form-->
+            <notebook>
+              <page string="1. Chi tiết theo nhân viên, đơn vị, công trình, đơn hàng, hợp đồng">
+                <field name="ACCOUNT_EX_SO_DU_TAI_KHOAN_CHI_TIET_THEO_DOI_TUONG_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="NHAN_VIEN_ID" width='0' domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}" />
+                    <field name="DON_VI_ID" />
+                    <field name="CONG_TRINH_ID" />
+                    <field name="DON_DAT_HANG_ID" />
+                    <field name="HOP_DONG_BAN_ID" />
+                    <field name="DU_NO_NGUYEN_TE" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="DU_NO" string="Dư nợ quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="DU_CO_NGUYEN_TE" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="DU_CO" string="DƯ có quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+
+                    <field name="DU_NO" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                    <field name="DU_CO" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                  </tree>
+                </field>
+              </page>
+              <page string="2. Chi tiết theo hóa đơn">
+                <field name="ACCOUNT_EX_SO_DU_TAI_KHOAN_CHI_TIET_THEO_HOA_DON_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="NGAY_HOA_DON" />
+                    <field name="SO_HOA_DON" />
+                    <field name="HAN_THANH_TOAN" />
+                    <field name="TY_GIA" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="GIA_TRI_HOA_DON_NGUYEN_TE" string="Giá trị hóa đơn" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="GIA_TRI_HOA_DON" string="Giá trị hóa đơn quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="SO_CON_PHAI_THU_NGUYEN_TE" string="Số còn phải thu" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="SO_CON_PHAI_THU" string="Số còn phải thu quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="SO_THU_TRUOC_NGUYEN_TE" string="Số thu trước" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="SO_THU_TRUOC" string="Số thu trước quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+
+                    <field name="GIA_TRI_HOA_DON" string="Giá trị hóa đơn" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                    <field name="SO_CON_PHAI_THU" string="Số còn phải thu" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                    <field name="SO_THU_TRUOC" string="Số thu trước" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                    <field name="NHAN_VIEN_ID" width='0' domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}"/>
+                  </tree>
+                </field>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="view_account_ex_nhap_chi_tiet_cong_no_ncc_form" model="ir.ui.view">
+      <field name="name">account.ex.so.du.tai.khoan.chi.tiet.form</field>
+      <field name="model">account.ex.so.du.tai.khoan.chi.tiet</field>
+      <field name="arch" type="xml">
+        <form string="Nhập Số dư tài khoản">
+          <sheet>
+            <group col="4">
+              <field name="TK_ID" string="Số tài khoản" readonly="1" />
+              <field name="currency_id" readonly="1" />
+              <field name="TEN_DOI_TUONG" string="Nhà cung cấp:" readonly="1" />
+              <field name="CO_HACH_TOAN_NGOAI_TE" invisible= "1"/>
+              <field name="NGAY_HACH_TOAN" invisible= "1"/>
+            </group>
+            <!--Master/Detail form-->
+            <notebook>
+              <page string="1. Chi tiết theo nhân viên, đơn vị, công trình, đơn hàng, hợp đồng">
+                <field name="ACCOUNT_EX_SO_DU_TAI_KHOAN_CHI_TIET_THEO_DOI_TUONG_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="NHAN_VIEN_ID" width='0' domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}" />
+                    <field name="DON_VI_ID" />
+                    <field name="CONG_TRINH_ID" />
+                    <field name="DON_MUA_HANG_ID" />
+                    <field name="HOP_DONG_MUA_ID" />
+                    <field name="DU_NO_NGUYEN_TE" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="DU_NO" string="Dư nợ quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="DU_CO_NGUYEN_TE" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="DU_CO" string="DƯ có quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+
+                    <field name="DU_NO" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                    <field name="DU_CO" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                  </tree>
+                </field>
+              </page>
+              <page string="2. Chi tiết theo hóa đơn">
+                <field name="ACCOUNT_EX_SO_DU_TAI_KHOAN_CHI_TIET_THEO_HOA_DON_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="NGAY_HOA_DON" />
+                    <field name="SO_HOA_DON" />
+                    <field name="HAN_THANH_TOAN" />
+                    <field name="TY_GIA" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="GIA_TRI_HOA_DON_NGUYEN_TE" string="Giá trị hóa đơn" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="GIA_TRI_HOA_DON" string="Giá trị hóa đơn quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="SO_CON_PHAI_THU_NGUYEN_TE" string="Số còn phải trả" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="SO_CON_PHAI_THU" string="Số còn phải trả quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="SO_THU_TRUOC_NGUYEN_TE" string="Số trả trước" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="SO_THU_TRUOC" string="Số trả trước quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+
+                    <field name="GIA_TRI_HOA_DON" string="Giá trị hóa đơn" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                    <field name="SO_CON_PHAI_THU" string="Số còn phải trả" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                    <field name="SO_THU_TRUOC" string="Số trả trước" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                    <field name="NHAN_VIEN_ID" width='0' domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}"/>
+                  </tree>
+                </field>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    
+    <record id="view_account_ex_nhap_so_du_tai_khoan_form_1" model="ir.ui.view">
+      <field name="name">account.ex.so.du.tai.khoan.chi.tiet.form.1</field>
+      <field name="model">account.ex.so.du.tai.khoan.chi.tiet</field>
+      <field name="arch" type="xml">
+        <form string="Nhập Số dư tài khoản">
+          <sheet>
+            <group col="4">
+              <field name="TK_ID" string="Số tài khoản" readonly="1" />
+              <field name="currency_id" readonly="1" />
+              <field name="CO_HACH_TOAN_NGOAI_TE" invisible= "1"/>
+              <field name="NGAY_HACH_TOAN" invisible= "1"/>
+            </group>
+            <!--Master/Detail form-->
+            <notebook>
+              <page string="Chi tiết">
+                <field name="ACCOUNT_EX_SO_DU_TAI_KHOAN_CHI_TIET_THEO_DOI_TUONG_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="DON_VI_ID" />
+                    <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục', 'Tên khoản mục'], 'displays': ['MA_KHOAN_MUC_CP']}" />
+                    <field name="DOI_TUONG_THCP_ID" />
+                    <field name="CONG_TRINH_ID" />
+                    <field name="DON_DAT_HANG_ID" />
+                    <field name="DON_MUA_HANG_ID" />
+                    <field name="HOP_DONG_BAN_ID" />
+                    <field name="HOP_DONG_MUA_ID" />
+                    <field name="MA_THONG_KE_ID" />
+                    <field name="DU_NO_NGUYEN_TE" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="DU_NO" string="Dư nợ quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="DU_CO_NGUYEN_TE" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="DU_CO" string="DƯ có quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+
+                    <field name="DU_NO" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                    <field name="DU_CO" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                  </tree>
+                </field>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="view_account_ex_nhap_so_du_tai_khoan_theo_nhan_vien" model="ir.ui.view">
+      <field name="name">account.ex.so.du.tai.khoan.chi.tiet.theo.nv</field>
+      <field name="model">account.ex.so.du.tai.khoan.chi.tiet</field>
+      <field name="arch" type="xml">
+        <form string="Nhập Số dư tài khoản">
+          <sheet>
+            <group col="4">
+              <field name="TK_ID" string="Số tài khoản" readonly="1" />
+              <field name="currency_id" readonly="1" />
+              <field name="CO_HACH_TOAN_NGOAI_TE" invisible= "1"/>
+              <field name="NGAY_HACH_TOAN" invisible= "1"/>
+            </group>
+            <!--Master/Detail form-->
+            <notebook>
+              <page string="Chi tiết">
+                <field name="ACCOUNT_EX_SO_DU_TAI_KHOAN_CHI_TIET_THEO_DOI_TUONG_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="DON_VI_ID" />
+                    <field name="CONG_TRINH_ID" />
+                    <field name="HOP_DONG_MUA_ID" />
+                    <field name="HOP_DONG_BAN_ID" />
+                    <field name="DU_NO_NGUYEN_TE" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="DU_NO" string="Dư nợ quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="DU_CO_NGUYEN_TE" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                    <field name="DU_CO" string="DƯ có quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+
+                    <field name="DU_NO" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                    <field name="DU_CO" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                  </tree>
+                </field>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+  </data>
+  <data noupdate="1"></data>
+</odoo>

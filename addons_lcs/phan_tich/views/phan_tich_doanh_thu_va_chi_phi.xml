@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_doanh_thu_va_chi_phi_tham_so_form" model="ir.ui.view">
+        <field name="name">phan.tich.doanh.thu.va.chi.phi.form</field>
+        <field name="model">phan.tich.doanh.thu.va.chi.phi</field>
+        <field name="arch" type="xml">
+            <form string="Phân tích doanh thu và chi phí">
+                <sheet>
+                    <field name="name" />
+                    <field name="doanh_thu" />
+                    <footer>
+                        <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                        <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_doanh_thu_va_chi_phi_pivot" model="ir.ui.view">
+        <field name="name">phan.tich.doanh.thu.va.chi.phi.pivot</field>
+        <field name="model">phan.tich.doanh.thu.va.chi.phi</field>
+        <field name="arch" type="xml">
+            <pivot string="Phân tích doanh thu và chi phí" display_quantity="true" disable_linking="True">
+                <field name="name" type="row" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_doanh_thu_va_chi_phi_graph" model="ir.ui.view">
+        <field name="name">phan.tich.doanh.thu.va.chi.phi.graph</field>
+        <field name="model">phan.tich.doanh.thu.va.chi.phi</field>
+        <field name="arch" type="xml">
+            <graph string="Phân tích doanh thu và chi phí" type="bar">
+                <field name="name" type="row" />
+                <!-- <field name="user_id" type="col"/> -->
+                <field name="doanh_thu" type="measure" />
+            </graph>
+        </field>
+    </record>
+
+    <!-- Custom reports (aka filters) -->
+    <record id="filter_doanh_thu_va_chi_phi_pipe" model="ir.filters">
+        <field name="name">Task Pipe</field>
+        <field name="model_id">phan.tich.doanh.thu.va.chi.phi</field>
+        <field name="user_id" eval="False" />
+        <field name="context">{'group_by': ['la_doanh_thu','la_chi_phi','THANG_HACH_TOAN'], 'measures': ['doanh_thu']}</field>
+    </record>
+
+    <record id="view_doanh_thu_va_chi_phi_search" model="ir.ui.view">
+        <field name="name">phan.tich.doanh.thu.va.chi.phi.search</field>
+        <field name="model">phan.tich.doanh.thu.va.chi.phi</field>
+        <field name="arch" type="xml">
+            <search string="Phân tích doanh thu và chi phí">
+                <field name="name" />
+                <field name="doanh_thu" />
+                <field name="la_doanh_thu" />
+                <field name="la_chi_phi" />
+                <field name="THANG_HACH_TOAN" />
+                <separator />
+                <group expand="1" string="Group By">
+                    <filter string="Doanh thu" name="project" context="{'group_by':['la_doanh_thu','THANG_HACH_TOAN']}" />
+                    <filter string="Chi phí" context="{'group_by':['la_chi_phi','THANG_HACH_TOAN']}" />
+                    <separator />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_doanh_thu_va_chi_phi_tree" model="ir.actions.act_window">
+        <field name="name">Phân tích doanh thu và chi phí</field>
+        <field name="res_model">phan.tich.doanh.thu.va.chi.phi</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">graph,pivot</field>
+        <field name="search_view_id" ref="view_doanh_thu_va_chi_phi_search" />
+        <field name="context">{'group_by_no_leaf':1,'group_by':['la_doanh_thu','la_chi_phi','THANG_HACH_TOAN']}</field>
+        <field name="help">This report allows you to analyse the performance of your projects and users. You can analyse the quantities of tasks, the hours spent compared to the planned hours, the average number of days to open or close a task, etc.</field>
+    </record>
+
+    <record id="action_doanh_thu_va_chi_phi_tree_filtered" model="ir.actions.act_window">
+        <field name="name">Phân tích doanh thu và chi phí</field>
+        <field name="res_model">phan.tich.doanh.thu.va.chi.phi</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">graph,pivot</field>
+        <field name="search_view_id" ref="view_doanh_thu_va_chi_phi_search" />
+        <field name="context">{
+            'group_by_no_leaf':1,
+            'group_by':[],
+            'search_default_name': [active_id],
+            'default_name': active_id,
+        }
+        </field>
+        <field name="help">This report allows you to analyse the performance of your projects and users. You can analyse the quantities of tasks, the hours spent compared to the planned hours, the average number of days to open or close a task, etc.</field>
+    </record>
+</odoo>

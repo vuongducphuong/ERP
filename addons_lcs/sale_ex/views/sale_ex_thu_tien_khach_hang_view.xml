@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_sale_ex_thu_tien_khach_hang_tham_so_form" model="ir.ui.view">
+            <field name="name">sale.ex.thu.tien.khach.hang.form</field>
+            <field name="model">sale.ex.thu.tien.khach.hang</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="6">
+                            <group colspan="4" col="12">
+                                <field name="PHUONG_THUC_THANH_TOAN" colspan="6" string="Phương thức TT" widget="radio" options="{'horizontal': True, 'alway_edit': True}" />
+                                <field name="currency_id" colspan="3" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+                                <field name="TY_GIA" colspan="3" attrs="{'readonly': [('IS_TY_GIA', '=', False)]}"/>
+                            </group>
+                           
+                        </group>
+                        <group col='12'>
+                            <field name="DOI_TUONG_ID" colspan="4" required="1" domain="[('LA_KHACH_HANG','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}"/>
+                            <field name="NGAY_THU_TIEN" colspan="2"  required="1"/>
+                            <field name="NHAN_VIEN_ID" colspan="4" string="NV bán hàng" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}"/>
+                            <button name="btn_lay_du_lieu" colspan="2"  string="Lấy dữ liệu" class="btn btn-primary"  type="object" />
+                            <field name="SO_TIEN"/>
+                            
+                            <field name="IS_TY_GIA" invisible='1'/>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chứng từ công nợ">
+                                <field name="SALE_EX_THU_TIEN_KHACH_HANG_CHI_TIET_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" report="true">
+                                    <field name="CHON"/>
+                                    <field name="NGAY_CHUNG_TU" readonly='1'/>
+                                    <field name="SO_CHUNG_TU"/>
+                                    <field name="SO_HOA_DON"/>
+                                    <field name="DIEN_GIAI" readonly='1'/>
+                                    <field name="HAN_THANH_TOAN" readonly='1'/>
+                                    <field name="SO_PHAI_THU" readonly='1' sum='Total amount'/>
+                                    <field name="SO_CHUA_THU" readonly='1' sum='Total amount'/>
+                                    <field name="SO_THU"/>
+                                    <field name="TK_PHAI_THU" string="TK phải thu" readonly='1'/>
+                                    <field name="DIEU_KHOAN_THANH_TOAN" string="Điều khoản TT" readonly='1'/>
+                                    <field name="TY_LE_CK" string="Tỷ lệ CK (%)"/>
+                                    <field name="TIEN_CHIET_KHAU"/>
+                                    <field name="TK_CHIET_KHAU_ID" string="TK chiết khấu" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                        <footer>
+                            <button name="action_view_result" string="Thu tiền" type="object" class="btn btn-primary" context="{'discard_changes': True}"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_sale_ex_thu_tien_khach_hang_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Thu tiền khách hàng</field
+            >
+            <field name="res_model">sale.ex.thu.tien.khach.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_sale_ex_thu_tien_khach_hang_tham_so_form"/>
+        </record>
+
+        <record id="action_open_sale_ex_thu_tien_khach_hang_form" model="ir.actions.act_window">
+            <field name="name">Thu tiền khách hàng</field>
+            <field name="res_model">account.ex.phieu.thu.chi</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="account_ex.view_nganhang_thu_tien_gui_tu_kh_form"/>
+
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="Thu tiền khách hàng"
+                  action="sale_ex.open_sale_ex_thu_tien_khach_hang_tham_so_form"
+                  id="menu_sale_ex_thu_tien_khach_hang"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

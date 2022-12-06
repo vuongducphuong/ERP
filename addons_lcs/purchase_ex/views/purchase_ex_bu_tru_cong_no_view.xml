@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_purchase_ex_bu_tru_cong_no_tham_so_form" model="ir.ui.view">
+            <field name="name">purchase.ex.bu.tru.cong.no.form</field>
+            <field name="model">purchase.ex.bu.tru.cong.no</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="6">
+                            <field name="DOI_TUONG_ID" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}" colspan='4' domain="[('customer', '=', True),('supplier', '=', True)]" />
+                            <field name="TK_PHAI_THU_ID" string='TK phải thu' domain="[('SO_TAI_KHOAN', '=like', '131%')]" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                            <field name="TK_PHAI_TRA_ID" string='TK phải trả' domain="[('SO_TAI_KHOAN', '=like', '331%')]" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                            <field name="NGAY_BU_TRU"/>
+                            <field name="currency_id" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chứng từ phải thu">
+                                <field name="PURCHASE_EX_BU_TRU_CONG_NO_CHUNG_TU_PHAI_THU_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="CHON"/>
+                                        <field name="NGAY_CHUNG_TU" readonly='1'/>
+                                        <field name="SO_CHUNG_TU" readonly='1'/>
+                                        <field name="SO_HOA_DON" readonly='1'/>
+                                        <field name="HAN_THANH_TOAN" readonly='1'/>
+                                        <field name="DIEN_GIAI" readonly='1'/>
+                                        <field name="SO_TIEN" readonly='1' sum="Tổng"/>
+                                        <field name="SO_CHUA_THU" readonly='1' sum="Tổng"/>
+                                        <field name="SO_TIEN_BU_TRU" sum="Tổng"/>
+                                        <field name="LOAI_CHUNG_TU" readonly='1'/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                   
+                        <notebook>
+                            <page string="Chứng từ phải trả">
+                                <field name="PURCHASE_BU_TRU_CONG_NO_CHUNG_TU_PHAI_TRA_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="CHON"/>
+                                        <field name="NGAY_CHUNG_TU" readonly='1'/>
+                                        <field name="SO_CHUNG_TU" readonly='1'/>
+                                        <field name="SO_HOA_DON" readonly='1'/>
+                                        <field name="HAN_THANH_TOAN" readonly='1'/>
+                                        <field name="DIEN_GIAI" readonly='1'/>
+                                        <field name="SO_TIEN" readonly='1' sum="Tổng"/>
+                                        <field name="SO_CON_NO" readonly='1' sum="Tổng"/>
+                                        <field name="SO_TIEN_BU_TRU" sum="Tổng"/>
+                                        <field name="LOAI_CHUNG_TU" readonly='1'/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_purchase_ex_bu_tru_cong_no_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Bù trừ công nợ</field>
+            <field name="res_model">purchase.ex.bu.tru.cong.no</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_purchase_ex_bu_tru_cong_no_tham_so_form"/>
+        </record>
+
+        <record id="action_open_purchase_ex_bu_tru_cong_no_form" model="ir.actions.act_window">
+            <field name="name">Bù trừ công nợ</field>
+            <field name="res_model">purchase.ex.chung.tu.bu.tru.cong.no.ket.qua</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="purchase_ex.view_purchase_ex_chung_tu_bu_tru_cong_no_ket_qua_form" />
+            <!--Implement SO_TAI_KHOAN here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="Bù trừ công nợ" action="purchase_ex.open_purchase_ex_bu_tru_cong_no_tham_so_form" id="menu_purchase_ex_bu_tru_cong_no" parent="" sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

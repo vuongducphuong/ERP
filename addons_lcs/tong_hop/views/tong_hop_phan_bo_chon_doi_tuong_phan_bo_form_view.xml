@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tong_hop_phan_bo_chon_doi_tuong_phan_bo_form_tham_so_form" model="ir.ui.view">
+            <field name="name">tong.hop.phan.bo.chon.doi.tuong.phan.bo.form.form</field>
+            <field name="model">tong.hop.phan.bo.chon.doi.tuong.phan.bo.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                             
+                        </group>
+                        <!--<notebook>
+                            <page string="Chi tiết">
+                                <field name="FIELD_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>-->
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="">
+                                <field name="TONG_HOP_PHAN_BO_CHON_DOI_TUONG_PHAN_BO_CHI_TIET_FORM_IDS" mode="tree">
+                                  <tree editable="bottom" create='false' report='true'>
+                                        <field name="MA_DON_VI_ID" />
+                                        <field name="TEN_DOI_TUONG" />
+                                        <field name="CAP_TO_CHUC" />
+
+                                        <!-- <field name="DOI_TUONG_PB_ID" attrs="{'column_invisible': [('parent.PHAN_BO_SELECTION_LAY_DU_LIEU', '=', 'PHAN_BO_CHO_DON_VI')]}"/>
+                                        <field name="TEN_DOI_TUONG_PB" attrs="{'column_invisible': [('parent.PHAN_BO_SELECTION_LAY_DU_LIEU', '=', 'PHAN_BO_CHO_DON_VI')]}"/>
+                                        <field name="LOAI" attrs="{'column_invisible': [('parent.PHAN_BO_SELECTION_LAY_DU_LIEU', '=', 'PHAN_BO_CHO_DON_VI')]}"/> -->
+                                    
+                                   
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                        <!-- <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer> -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_tong_hop_phan_bo_chon_doi_tuong_phan_bo_form_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Phân bổ chọn đối tượng phân bổ form</field>
+            <field name="res_model">tong.hop.phan.bo.chon.doi.tuong.phan.bo.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_tong_hop_phan_bo_chon_doi_tuong_phan_bo_form_tham_so_form"/>
+        </record>
+
+        <record id="action_open_tong_hop_phan_bo_chon_doi_tuong_phan_bo_form_form" model="ir.actions.act_window">
+            <field name="name">Phân bổ chọn đối tượng phân bổ form</field>
+            <field name="res_model">tong.hop.phan.bo.chon.doi.tuong.phan.bo.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="Phân bổ chọn đối tượng phân bổ form"
+                  action="tong_hop.open_tong_hop_phan_bo_chon_doi_tuong_phan_bo_form_tham_so_form"
+                  id="menu_tong_hop_phan_bo_chon_doi_tuong_phan_bo_form"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_ich_ghi_so_hoac_bo_ghi_so_theo_lo_form" model="ir.ui.view">
+            <field name="name">tien.ich.ghi.so.hoac.bo.ghi.so.theo.lo.form</field>
+            <field name="model">tien.ich.ghi.so.hoac.bo.ghi.so.theo.lo</field>
+            <field name="arch" type="xml">
+                <form string="Ghi sổ hoặc bỏ ghi sổ theo lô" cloudify_js="ghi_so_bo_ghi_so_theo_lo_view">
+                    <sheet>
+                        <group col="4">
+                            <group col="2" colspan="2">
+                                <field name="KY" />
+                            </group>
+                            <group col="2" colspan="2">
+                                <field name="TU_NGAY" />
+                                <field name="DEN_NGAY" />
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="TIEN_ICH_GHI_SO_HOAC_BO_GHI_SO_THEO_LO_PHAN_HE_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false" report="true">
+                                        <field name="PHAN_HE" />
+                                        <field name="AUTO_SELECT" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <group col="4">
+                            <field name="TINH_LAI_TY_GIA_XUAT_KHO" readonly="1" colspan="4" />
+                            <field name="TINH_LAI_TY_GIA_XUAT_QUY" colspan="4" />
+                        </group>
+                        <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_menu_tien_ich_ghi_so_hoac_bo_ghi_so_theo_lo" model="ir.actions.act_window">
+            <field name="name">Ghi sổ hoặc bỏ ghi sổ theo lô</field>
+            <field name="res_model">tien.ich.ghi.so.hoac.bo.ghi.so.theo.lo</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_tien_ich_ghi_so_hoac_bo_ghi_so_theo_lo_form" />
+        </record>
+        <record id="action_tien_ich_ghi_so_hoac_bo_ghi_so_theo_lo_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="res_model">tien.ich.ghi.so.hoac.bo.ghi.so.theo.lo</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

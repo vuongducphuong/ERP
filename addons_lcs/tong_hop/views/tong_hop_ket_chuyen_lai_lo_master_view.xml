@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_account_ex_ket_chuyen_lai_lo_master_form" model="ir.ui.view">
+            <field name="name">account.ex.chung.tu.nghiep.vu.khac.form</field>
+            <field name="model">account.ex.chung.tu.nghiep.vu.khac</field>
+            <field name="arch" type="xml">
+                <form string="Kết chuyển lãi lỗ master">
+                    <header>
+                        <button name="action_ghi_so" string="Ghi sổ" type="object" class="oe_highlight oe_read_only" states="chua_ghi_so"/>
+                        <button id="action_bo_ghi_so" string="Bỏ ghi" states="da_ghi_so"/>
+                        <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so"/>
+                        <field name="LOAI_CHUNG_TU" invisible="1"/>
+                    </header>
+                    <sheet>
+                        <group col='6'>
+                            <group colspan='4' col='4' string="Thông tin chung">
+                                <field name="DIEN_GIAI" colspan='4'/>
+                                <field name="THAM_CHIEU"  invisible="1" colspan='4' readonly='1'/>
+                            </group>
+                            <group colspan='2' col='2' string="Chứng từ">
+                                <field name="NGAY_HACH_TOAN"/>
+                                <field name="NGAY_CHUNG_TU"/>
+                                <field name="SO_CHUNG_TU"/>
+                                <field name="TY_GIA" invisible="1"/>
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1.Hạch toán">
+                                <field name="ACCOUNT_EX_CHUNG_TU_NGHIEP_VU_KHAC_HACH_TOAN_IDS" mode="tree" context="{'default_DIEN_GIAI':DIEN_GIAI}">
+                                  <tree editable="bottom">
+                                    <!-- <field name="DIEN_GIAI" fixed_column="True"/> -->
+									<field name="DIEN_GIAI" fixed_column="True"/>
+                                    <!-- <field name="TK_NO_ID" fixed_column="True"  options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/> -->
+                                    <!-- <field name="TK_CO_ID" fixed_column="True" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/> -->
+									<field name="TK_NO_ID" fixed_column="True" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                                    <field name="TK_CO_ID" fixed_column="True" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                                    <field name="SO_TIEN_QUY_DOI" string="Số tiền" sum='Total amount'/>
+                                    <field name="MA_THONG_KE_ID" options="{'columns': ['MA_THONG_KE', 'TEN_THONG_KE'], 'strings': ['Mã thống kê', 'Mã thống kê'],'displays': ['MA_THONG_KE']}"/>
+                                    <field name="SO_TIEN" invisible="1"/> 
+                                    <field name="currency_id" invisible = '1'/>
+                                    <field name="base_currency_id" invisible = '1'/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_account_ex_ket_chuyen_lai_lo_master_tree" model="ir.ui.view">
+            <field name="name">account.ex.chung.tu.nghiep.vu.khac.tree</field>
+            <field name="model">account.ex.chung.tu.nghiep.vu.khac</field>
+            <field name="arch" type="xml">
+                <tree string="Kết chuyển lãi lỗ master" decoration-info="state=='chua_ghi_so'">
+                    
+                    
+                    <field name="NGAY_HACH_TOAN" fixed_column="True"/>
+                    <field name="NGAY_CHUNG_TU" fixed_column="True"/>
+                    <field name="SO_CHUNG_TU" fixed_column="True"/>
+                    <field name="DIEN_GIAI"/>
+                    <field name="TONG_CHENH_LECH" string="Số tiền" sum="tổng tiền"/>
+                    <field name="CHI_NHANH_ID"/>
+					<field name="state" invisible="1"/>
+                    
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_account_ex_ket_chuyen_lai_lo_master" model="ir.actions.act_window">
+            <field name="name">Kết chuyển lãi lỗ</field>
+            <field name="res_model">account.ex.chung.tu.nghiep.vu.khac</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'default_LOAI_CHUNG_TU': 4012,'default_LOAI_CHUNG_TU_QTTU_NVK': 'KET_CHUYEN_LAI_LO'}</field>
+
+            <field name="domain">[('LOAI_CHUNG_TU', '=', 4012),('LOAI_CHUNG_TU_QTTU_NVK', '=', 'KET_CHUYEN_LAI_LO')]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_account_ex_ket_chuyen_lai_lo_master_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_account_ex_ket_chuyen_lai_lo_master_tree"/>
+            <field name="act_window_id" ref="open_menu_account_ex_ket_chuyen_lai_lo_master"/>
+        </record>
+
+        <record id="action_account_ex_ket_chuyen_lai_lo_master_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_account_ex_ket_chuyen_lai_lo_master_form"/>
+            <field name="act_window_id" ref="open_menu_account_ex_ket_chuyen_lai_lo_master"/>
+        </record>
+
+
+        <!-- <menuitem name="Kết chuyển lãi lỗ"
+                  action="account_ex.open_menu_account_ex_ket_chuyen_lai_lo_master"
+                  id="menu_account_ex_ket_chuyen_lai_lo_master"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    <record id="sequence_account_ex_kcll_" model="ir.sequence">
+      <field name="name">account_ex_chung_tu_nghiep_vu_khac_SO_CHUNG_TU_KCLL sequence</field>
+      <field name="code">account_ex_chung_tu_nghiep_vu_khac_SO_CHUNG_TU_KCLL</field>
+      <field name="prefix">NVK</field>
+      <field name="padding">5</field>
+    </record>
+  </data>
+
+</odoo>

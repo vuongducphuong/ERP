@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="fadepreciation">
+        <t t-call="web.external_layout">
+            <div class="page" style="margin-left: 15px; margin-right: 15px;">
+                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+                    <div class="col-xs-7 text-left truong-thong-tin-dat-tren-header" style="padding-left: 0px; padding-right: 0px;">
+                        <span t-esc="o.get_ten_cong_ty()" />
+                        <br />
+                        <span t-esc="o.get_dia_chi_cong_ty()" />
+                    </div>
+                    <div class="col-xs-5 text-center" style="padding-left: 0px; padding-right: 0px;"></div>
+                </div>
+                <div class="col-xs-12 text-center report-title" style="padding-left: 0px; padding-right: 0px;">
+                    <span>BẢNG TÍNH KHẤU HAO TÀI SẢN CỐ ĐỊNH</span>
+                </div>
+                <div class="col-xs-12 text-center report-sub-title-1-italic-bold" style="padding-left: 0px; padding-right: 0px;">
+                    <span t-if="o.NGAY_HACH_TOAN" t-field="o.NGAY_HACH_TOAN" t-options="{'widget': 'ngaythang'}" />
+                </div>
+
+                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+                    <table class="table-condensed table-bordereds" style="width: 100%;border-bottom: 0px;">
+                        <thead>
+                            <tr class="detail-header">
+                                <th class="text-center" style="width: 22px;height: 11px;">
+                                    <span>Mã TSCĐ</span>
+                                </th>
+                                <th class="text-center" style="width: 34px;height: 11px;">
+                                    <span>Tên TSCĐ</span>
+                                </th>
+                                <th class="text-center" style="width: 33px;height: 11px;">
+                                    <span>Đơn vị sử dụng</span>
+                                </th>
+                                <th class="text-center" style="width: 24px;height: 11px;">
+                                    <span>Giá trị tính KH</span>
+                                </th>
+                                <th class="text-center" style="width: 24px;height: 11px;">
+                                    <span>Giá trị KH tháng</span>
+                                </th>
+                                <th class="text-center" style="width: 24px;height: 11px;">
+                                    <span>Hao mòn lũy kế</span>
+                                </th>
+                                <th class="text-center" style="width: 24px;height: 11px;">
+                                    <span>Giá trị còn lại</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="o.bang_tinh_khau_hao_tscd_chi_tiet_IDS" t-as="line">
+                                <td class="text-left detail-text" style="width: 22px;height: 6px;">
+                                    <span t-field="line.MA_TAI_SAN" />
+                                </td>
+
+                                <td class="text-left detail-text" style="width: 34px;height: 6px;">
+                                    <span t-field="line.TEN_TAI_SAN" />
+                                </td>
+
+                                <td class="text-left detail-text" style="width: 33px;height: 6px;">
+                                    <span t-field="line.TEN_DON_VI" />
+                                </td>
+                                <td class="text-right detail-number" style="width: 24px;height: 6px;">
+                                    <span t-field="line.GIA_TRI_TINH_KHAU_HAO" />
+                                </td>
+                                <td class="text-right detail-number" style="width: 24px;height: 6px;">
+                                    <span t-field="line.GIA_TRI_KH_THANG" />
+                                </td>
+
+                                <td class="text-right detail-number" style="width: 24px;height: 6px;">
+                                    <span t-field="line.HAO_MON_LUY_KE" />
+                                </td>
+
+                                <td class="text-right detail-number" style="width: 24px;height: 6px;">
+                                    <span t-field="line.GIA_TRI_CON_LAI" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="text-left summary-detail-text-bold" colspan="3" style="width: 89px;height: 6px;">
+                                    <span>Tổng cộng</span>
+                                </th>
+                                <th class="text-center summary-detail-number" style="width: 24px;height: 6px;">
+                                    <span t-field="o.TONG_GIA_TRI_TINH_KHAU_HAO" />
+                                </th>
+                                <th class="text-center summary-detail-number" style="width: 24px;height: 6px;">
+                                    <span t-field="o.TONG_GIA_TRI_KH_THANG" />
+                                </th>
+                                <th class="text-center summary-detail-number" style="width: 24px;height: 6px;">
+                                    <span t-field="o.TONG_HAO_MON_LUY_KE" />
+                                </th>
+                                <th class="text-center summary-detail-number" style="width: 24px;height: 6px;">
+                                    <span t-field="o.TONG_GIA_TRI_CON_LAI" />
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
+                    <table style="width: 100%;margin-top: 10px;">
+                        <thead>
+                            <tr class="signer-title">
+                                <th class="text-center nguoi-ky" style="width: 89px;height: 6px;">
+                                    <span>Người lập</span>
+                                </th>
+
+                                <th class="text-center nguoi-ky" style="width: 69px;height: 6px;">
+                                    <span>Kế toán trưởng</span>
+                                </th>
+                            </tr>
+                            <tr class="signer-sub-title">
+                                <td class="text-center" style="width: 89px;height: 6px;">
+                                    <span>(Ký, họ tên)</span>
+                                </td>
+                                <td class="text-center" style="width: 69px;height: 6px;">
+                                    <span>(Ký, họ tên)</span>
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+
+                    <table style="width: 100%;margin-top: 95px;">
+                        <thead>
+                            <tr class="signer-name">
+                                <th class="text-center" style="width: 89px;height: 6px;">
+                                    <span t-esc="o.get_nguoi_lap_phieu()" />
+                                </th>
+                                <th class="text-center" style="width: 69px;height: 6px;">
+                                    <span t-esc="o.get_ke_toan_truong()" />
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="template_fadepreciation">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="bao_cao.fadepreciation" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="Bảng tính khấu hao tài sản cố định" id="action_template_fadepreciation" model="bao.cao.bang.tinh.khau.hao.tscd" report_type="qweb-html" name="bao_cao.template_fadepreciation" file="bao_cao.template_fadepreciation" print_report_name="Bảng tính khấu hao tài sản cố định" />
+    </data>
+</odoo>

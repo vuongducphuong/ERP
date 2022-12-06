@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="sale_ex_tra_lai_hang_ban_01_vt_a5">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-7 text-left truong-thong-tin-dat-tren-header">
+                        <span t-esc="o.get_ten_cong_ty()"/><br/>
+                        <span t-esc="o.get_dia_chi_cong_ty()"/>
+                    </div>
+                    <div class="col-xs-5 text-center">
+                        <div class="mau-so">
+                            <span><strong>Mẫu số: 01 - VT</strong></span><br/>
+                        </div>
+                        <div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '0'">
+                            <span>(Ban hành theo Thông tư số 200/2014/TT-BTC)</span><br/>
+                            <span>Ngày 22/12/2014 của Bộ Tài chính)</span>
+                        </div>
+						<div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '15'">
+                            <span>(Ban hành theo Thông tư số 133/2016/TT-BTC)</span>
+                            <span>Ngày 26/08/2016 của Bộ Tài chính)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tieu-de-cua-bao-cao text-center" style= "margin: 0px;">
+                    <span><strong>PHIẾU NHẬP KHO</strong></span>
+                </div>
+                <div class="row">  
+                        <div class="col-xs-8 text-right truong-gia-tri-kieu-text-dat-tren-header" style="margin-top: -7px;">
+                            <div style="padding-right: 35px;">
+                                <strong>
+                                    <i>
+                                        <span t-if="o.NGAY_CHUNG_TU" t-field="o.NGAY_CHUNG_TU" t-options="{'widget': 'ngaythang'}" style=" font-style: italic;" />
+                                        <t t-if="not o.NGAY_CHUNG_TU" t-call="danh_muc.empty_line" />
+                                    </i>
+                                </strong>
+                            </div>
+                            <div style="padding-right: 76px; font-style: italic;">
+                                <span>Số: </span>
+                                <span t-if="o.SO_PHIEU_NHAP" t-field="o.SO_PHIEU_NHAP" />
+                                <t t-if="not o.SO_PHIEU_NHAP" t-call="danh_muc.empty_line" />
+                                <br />
+                            </div>
+                        </div>
+                        <div class="col-xs-4 text-left" style="margin-top: -31px;line-height: 2;">
+                            <span>Nợ: </span>
+                            <!-- <span t-field="o.PURCHASE_EX_CHI_TIET_CHUNG_TU_TRA_LAI_HANG_MUA_IDS" t-options="{'widget': 'ghinohangmua'}" /> -->
+                            <br />
+                            <span>Có: </span>
+                            <!-- <span t-field="o.PURCHASE_EX_CHI_TIET_CHUNG_TU_TRA_LAI_HANG_MUA_IDS" t-options="{'widget': 'ghicohangmua'}" /> -->
+                        </div>
+                    </div>
+
+                <div class="row" style="margin-top: 7px; font-size: 16px;">
+                    <div class="col-xs-12">
+                        <span>- Họ và tên người giao:</span>
+                        <span t-if="o.NGUOI_GIAO_HANG" t-field="o.NGUOI_GIAO_HANG"/>
+                        <span t-if="o.NGUOI_GIAO_HANG" t-esc="' - '"/>
+                        <span t-field="o.TEN_KHACH_HANG" />
+                    </div>
+                    <div class="col-xs-12">
+                        <span>- Theo....................... </span>
+                        <span t-if="o.NGAY_CHUNG_TU" t-field="o.NGAY_CHUNG_TU" t-options="{'widget': 'ngaythang'}"/>
+                        <span t-if="o.NGAY_CHUNG_TU" t-esc="' của '"/>
+                        <span t-if="o.NGAY_CHUNG_TU" t-field="o.TEN_KHACH_HANG" />
+                        <span t-if="not o.NGAY_CHUNG_TU" t-esc="'..............................ngày ..............của..............................'"/>
+                    </div>
+                    <div class="col-xs-6" style="margin-top: 1px;">
+                        <span>- Nhập tại kho:</span>
+                        <!-- <span t-field="o.TK_KHO_ID" t-options="{'widget': 'khomuahang'}" /> -->
+                    </div>
+                    <div class="col-xs-6" style="margin-top: 1px;">
+                        <span>Địa điểm:.......................................................................</span>
+                    </div>
+                </div>
+                <table class="table table-condensed table-bordereds" style="margin-top: 4px; line-height: 1.3">
+                    <thead class="tieu-de-cot-cua-bang text-center" style="font-size: 11pt;">
+                        <tr>
+                            <th rowspan="2" class="text-center" style="vertical-align: middle;width: 0.8cm; border: 1px solid black;">
+                                <strong>STT</strong>
+                            </th>
+                            <th rowspan="2" class="text-center" style="vertical-align: middle; border: 1px solid black;">
+                                <strong>Tên, nhãn hiệu, quy cách, phẩm chất vật tư, dụng cụ sản phẩm, hàng hóa</strong>
+                            </th>
+                            <th rowspan="2" class="text-center" style="vertical-align: middle;width: 2.3cm; border: 1px solid black;">
+                                <strong>Mã số</strong>
+                            </th>
+                            <th rowspan="2" class="text-center" style="vertical-align: middle;width: 1.4cm; border: 1px solid black;">
+                                <strong>Đơn vị tính</strong>
+                            </th>
+                            <th colspan="2" class="text-center" style="vertical-align: middle;width: 5.5cm; border: 1px solid black;">
+                                <strong>Số lượng</strong>
+                            </th>
+                            <th rowspan="2" class="text-center" style="vertical-align: middle;width: 1.7cm; border: 1px solid black;">
+                                <strong>Đơn giá</strong>
+                            </th>
+                            <th rowspan="2" class="text-center" style="vertical-align: middle;width: 2.0cm; border: 1px solid black;">
+                                <strong>Thành tiền</strong>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="text-center" style="border: 1px solid black;width: 2.0cm;">
+                                <strong>Theo chứng từ</strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black;width: 2.0cm;">
+                                <strong>Thực nhập</strong>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="text-center" style="border: 1px solid black; padding: 0px;">
+                                <strong>A</strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black; padding: 0px;">
+                                <strong>B</strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black; padding: 0px;">
+                                <strong>C</strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black; padding: 0px;">
+                                <strong>D</strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black; padding: 0px;">
+                                <strong>1</strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black; padding: 0px;">
+                                <strong>2</strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black; padding: 0px;">
+                                <strong>3</strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black; padding: 0px;">
+                                <strong>4</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-set="so_thu_tu" t-value="0"/>
+                        <tr t-foreach="o.TRA_LAI_HANG_BAN_CHI_TIET_IDS" t-as="line">
+                            <t t-set="so_thu_tu" t-value="so_thu_tu + 1"/>
+                            <td class="text-center" style="border: 1px solid black; padding: 0px;     font-size: 10pt;">
+                                <span t-esc="so_thu_tu"/>
+                            </td>
+                            <td class="text-left" style="border: 1px solid black; padding: 0px;     font-size: 10pt;">
+                                <span t-field="line.MA_HANG_ID.TEN" />
+                            </td>
+                            <td class="text-left" style="border: 1px solid black;     padding: 0px;     font-size: 10pt;">
+                                <span t-field="line.MA_HANG_ID.MA" />
+                            </td>
+                            <td class="text-left" style="border: 1px solid black;     padding: 0px;     font-size: 10pt;">
+                                <span t-field="line.DVT_ID" />
+                            </td>
+                            <td class="text-right" style="border: 1px solid black;     padding: 0px;     font-size: 10pt;">
+                                <span t-field="line.SO_LUONG" />
+                            </td>
+                            <td class="text-right" style="border: 1px solid black;     padding: 0px;     font-size: 10pt;">
+                                <span></span>
+                            </td>
+                            <td class="text-right" style="border: 1px solid black;     padding: 0px;     font-size: 10pt;">
+                                <span t-field="line.DON_GIA" />
+                            </td>
+                            <td class="text-right" style="border: 1px solid black;     padding: 0px;     font-size: 10pt;">
+                                <span t-field="line.THANH_TIEN" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-center" style="border: 1px solid black;     padding: 0px;     font-size: 10pt;">
+                                <strong></strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black;     padding: 0px;     font-size: 10pt;">
+                                <strong>Cộng</strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black;     padding: 0px;     font-size: 10pt;">
+                                <strong></strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black;     font-size: 10pt;">
+                                <strong></strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black;     padding: 0px;     font-size: 10pt;">
+                                <strong></strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black;     padding: 0px;     font-size: 10pt;">
+                                <strong></strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black;     padding: 0px;">
+                                <strong></strong>
+                            </th>
+                            <th class="text-center" style="border: 1px solid black;     padding: 0px;">
+                                <strong></strong>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row mt32 mb32" style= "margin-bottom: 0px !important; margin-top: 25px !important;">
+                    <div class="col-xs-12" style="margin-top: -20px;">
+                        <span>- Tổng số tiền (Viết bằng chữ):  </span>
+                        <span class="text-nam-ngay-duoi-tieu-de-bao-cao-voi-font-nghieng-dam" t-field="o.TONG_TIEN_HANG" t-options="{'widget': 'vietbangchu'}" />
+                        
+                    </div>
+                    <div class="col-xs-12">
+                        <span>- Số chứng từ gốc kèm theo:...................................................................................................................................</span>
+                    </div>
+                </div>
+                <div style="text-align: right;margin-right: 35px; ">
+                    <i>Ngày ....... tháng ........ năm ...........</i>
+                </div>
+                <table style="font-size:12px;margin-left: 15px;width: 96%;margin-top: 4px;">
+                        <thead>
+                            <tr>
+                                <th class="text-center nguoi-ky" style="vertical-align: middle;width: 20%;">
+                                    <strong>Người lập phiếu</strong>
+                                </th>
+                                <th class="text-center nguoi-ky" style="vertical-align: middle;width: 20%;">
+                                    <strong>Người giao hàng</strong>
+                                </th>
+                                <th class="text-center nguoi-ky" style="vertical-align: middle;width: 20%;">
+                                    <strong>Thủ kho</strong>
+                                </th>
+                                <th class="text-center nguoi-ky" style="vertical-align: middle;width: 20%;">
+                                    <strong>Kế toán trưởng</strong>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    <i>(Ký, họ tên)</i>
+                                </td>
+                                <td class="text-center">
+                                    <i>(Ký, họ tên)</i>
+                                </td>
+                                <td class="text-center">
+                                    <i>(Ký, họ tên)</i>
+                                </td>
+                                 <td class="text-center">
+                                    <i>(Ký, họ tên)</i>
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="row" style="margin-top: -79px; font-size: 11pt;">
+                    <div class="col-xs-3 text-center" style="vertical-align: middle;width: 31%;">
+                        <strong class="cac-textbox-ghi-chuc-danh-nguoi-ky">
+                            <span t-esc="o.get_nguoi_lap_phieu()"/>
+                        </strong>
+                    </div>
+                    <div class="col-xs-3 text-center" style="vertical-align: middle;width: 19%;">
+                        <strong><span t-if="o.NGUOI_GIAO_HANG" t-field="o.NGUOI_GIAO_HANG"/>
+                        <t t-if="not o.NGUOI_GIAO_HANG" t-call="danh_muc.empty_line"/></strong>
+                    </div>
+                    <div class="col-xs-3 text-center" style="vertical-align: middle;width: 26%;">
+                        <strong><span t-esc="o.get_thu_kho()"/></strong>
+                    </div>
+                    <div class="col-xs-3 text-center" style="vertical-align: middle;width: 20%;">
+                        <strong><span t-esc="o.get_ke_toan_truong()"/></strong>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="template_sale_ex_tra_lai_hang_ban_01_vt_a5">
+        <t t-call="web.html_container">
+            <t t-set="data_paper_format" t-value="'A5-ngang'"/>
+            <t t-foreach="docs" t-as="o">
+                <t t-call="sale_ex.sale_ex_tra_lai_hang_ban_01_vt_a5" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report 
+            string="01-VT:Phiếu nhập kho (Mẫu A5)" 
+            id="action_template_sale_ex_tra_lai_hang_ban_01_vt_a5" 
+            model="sale.ex.tra.lai.hang.ban" 
+            report_type="qweb-html"
+            name="sale_ex.template_sale_ex_tra_lai_hang_ban_01_vt_a5" 
+            file="sale_ex.template_sale_ex_tra_lai_hang_ban_01_vt_a5"
+            print_report_name="Trả lại hàng bán "
+        />
+    </data>
+</odoo>

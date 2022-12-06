@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_f01dnn_bang_can_doi_tai_khoan_tree" model="ir.ui.view">
+            <field name="name">bao.cao.f01dnn.bang.can.doi.tai.khoan.tree</field>
+            <field name="model">bao.cao.f01dnn.bang.can.doi.tai.khoan</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="F01DNN bảng cân đối tài khoản" create="false" report="true" decoration-bf="BAC == 1" print="true">
+                    <field name="SO_HIEU_TAI_KHOAN" />
+                    <field name="TEN_TAI_KHOAN" />
+                    <field name="NO_SO_DU_DAU_KY"  />
+                    <field name="CO_SO_DU_DAU_KY"  />
+                    <field name="NO_SO_PHAT_SINH_TRONG_KY" />
+                    <field name="CO_SO_PHAT_SINH_TRONG_KY" />
+                    <field name="NO_SO_DU_CUOI_KY" />
+                    <field name="CO_SO_DU_CUOI_KY" />
+                    <field name="BAC" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="open_report_f01dnn_bang_can_doi_tai_khoan" model="ir.actions.act_window">
+            <field name="name">BẢNG CÂN ĐỐI TÀI KHOẢN</field>
+            <field name="res_model">bao.cao.f01dnn.bang.can.doi.tai.khoan</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'header_struct': [['Số dư đầu kỳ', ['NO_SO_DU_DAU_KY','CO_SO_DU_DAU_KY']],['Số phát sinh trong kỳ', ['NO_SO_PHAT_SINH_TRONG_KY', 'CO_SO_PHAT_SINH_TRONG_KY']],['Số dư cuối kỳ', ['NO_SO_DU_CUOI_KY', 'CO_SO_DU_CUOI_KY']]], 'expand_all': 'true'}</field>
+        </record>
+        
+        <record id="view_bao_cao_f01dnn_bang_can_doi_tai_khoan_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.f01dnn.bang.can.doi.tai.khoan.form</field>
+            <field name="model">bao.cao.f01dnn.bang.can.doi.tai.khoan</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4" colspan="4" string="Tham số">
+                            
+                            <group col="4" colspan="4">
+                                <field name="KY_BAO_CAO" colspan="4"/>
+                            </group>
+                            <group col="4" colspan="4">
+                                <field name="TU_NGAY" colspan="2" />
+                                <field name="DEN_NGAY" colspan="2" />
+                                <field name="BAC_TAI_KHOAN" colspan="2" />
+                            </group>
+                            <group col="4" colspan="4">
+                                <field name="HIEN_THI_SO_DU_HAI_BEN" colspan="4"/>
+                                <field name="LAY_DU_LIEU_TU_BAO_CAO_TAI_CHINH_DA_LAP" colspan="4" />
+                            </group>
+                        </group>
+                        
+                        <!--<notebook>
+                            <page string="Chi tiết">
+                                <field name="TAI_KHOAN_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false">
+                                        <field name="code"/>
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>-->
+                        <!--Master/Detail form-->
+                        
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="open_bao_cao_f01dnn_bang_can_doi_tai_khoan_tham_so_form" model="ir.actions.act_window">
+            <field name="name">F01-DNN: Bảng cân đối tài khoản</field>
+            <field name="res_model">bao.cao.f01dnn.bang.can.doi.tai.khoan</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_f01dnn_bang_can_doi_tai_khoan_tham_so_form" />
+        </record>
+        
+        <!-- <menuitem name="F01DNN bảng cân đối tài khoản" action="bao_cao.open_bao_cao_f01dnn_bang_can_doi_tai_khoan_tham_so_form" id="menu_bao_cao_f01dnn_bang_can_doi_tai_khoan" parent="" sequence="0" /> -->
+    </data>
+</odoo>

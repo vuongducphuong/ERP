@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <!-- Thống kê theo so sánh cùng kỳ giữa các năm -->
+        <record id="view_bao_cao_bao_cao_so_sanh_so_luong_ban_va_doanh_so_theo_ky_cacnam_tree" model="ir.ui.view">
+            <field name="name">bao.cao.bao.cao.so.sanh.so.luong.ban.va.doanh.so.theo.ky.tree</field>
+            <field name="model">bao.cao.bao.cao.so.sanh.so.luong.ban.va.doanh.so.theo.ky</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Báo cáo so sánh số lượng bán và doanh số theo kỳ" create="false" report="true">
+                    <field name="MA_HANG" />
+                    <field name="TEN_HANG" />
+                    <field name="DVT" />
+                    <field name="NAM_MOT_SL" sum="Số lượng" />
+                    <field name="NAM_HAI_SL" sum="Số lượng" />
+                    <field name="NAM_MOT_DS" sum="Số lượng" />
+                    <field name="NAM_HAI_DS" sum="Số lượng" />
+                    <field name="NAM_MOT_DTT" sum="Số lượng" />
+                    <field name="NAM_HAI_DTT" sum="Số lượng" />
+                    <field name="TEN_KHACH_HANG" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report___so_sanh_so_luong_ban_va_doanh_so_theo_ky_cacnam" model="ir.actions.act_window">
+            <field name="name">BÁO CÁO SO SÁNH SỐ LƯỢNG BÁN, DOANH SỐ THEO KỲ</field>
+            <field name="res_model">bao.cao.bao.cao.so.sanh.so.luong.ban.va.doanh.so.theo.ky</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{ 'group_by': ['TEN_KHACH_HANG'],'header_struct': [['Số lượng',['NAM_MOT_SL','NAM_HAI_SL']],['Doanh số',['NAM_MOT_DS','NAM_HAI_DS']],['Doanh thu thuần',['NAM_MOT_DTT','NAM_HAI_DTT']]],'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_bao_cao_so_sanh_so_luong_ban_va_doanh_so_theo_ky_cacnam" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_bao_cao_so_sanh_so_luong_ban_va_doanh_so_theo_ky_cacnam_tree" />
+            <field name="act_window_id" ref="open_report___so_sanh_so_luong_ban_va_doanh_so_theo_ky_cacnam" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo so sánh giữa các kỳ báo cáo khác nhau -->
+        <record id="view_bao_cao_bao_cao_so_sanh_so_luong_ban_va_doanh_so_theo_ky_khacnhau_tree" model="ir.ui.view">
+            <field name="name">bao.cao.bao.cao.so.sanh.so.luong.ban.va.doanh.so.theo.ky.tree</field>
+            <field name="model">bao.cao.bao.cao.so.sanh.so.luong.ban.va.doanh.so.theo.ky</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Báo cáo so sánh số lượng bán và doanh số theo kỳ" create="false" report="true">
+                    <field name="MA_HANG" />
+                    <field name="TEN_HANG" />
+                    <field name="DVT" />
+                    <field name="KHOANG_TG1_SL" sum="Số lượng" />
+                    <field name="KHOANG_TG2_SL" sum="Số lượng" />
+                    <field name="CHENH_LECH_SL" sum="Số lượng" />
+                    <field name="KHOANG_TG1_DS" sum="Số lượng" />
+                    <field name="KHOANG_TG2_DS" sum="Số lượng" />
+                    <field name="CHENH_LECH_DS" sum="Số lượng" />
+                    <field name="KHOANG_TG1_DTT" sum="Số lượng" />
+                    <field name="KHOANG_TG2_DTT" sum="Số lượng" />
+                    <field name="CHENH_LECH_DTT" sum="Số lượng" />
+                    <field name="TEN_KHACH_HANG" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report___so_sanh_so_luong_ban_va_doanh_so_theo_ky_khacnhau" model="ir.actions.act_window">
+            <field name="name">BÁO CÁO SO SÁNH SỐ LƯỢNG BÁN, DOANH SỐ THEO KỲ</field>
+            <field name="res_model">bao.cao.bao.cao.so.sanh.so.luong.ban.va.doanh.so.theo.ky</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{ 'group_by': ['TEN_KHACH_HANG'],'header_struct': [['Số lượng',['KHOANG_TG1_SL','KHOANG_TG2_SL','CHENH_LECH_SL']],['Doanh số',['KHOANG_TG1_DS','KHOANG_TG2_DS','CHENH_LECH_DS']],['Doanh thu thuần',['KHOANG_TG1_DTT','KHOANG_TG2_DTT','CHENH_LECH_DTT']]],'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_bao_cao_so_sanh_so_luong_ban_va_doanh_so_theo_ky_khacnhau" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_bao_cao_so_sanh_so_luong_ban_va_doanh_so_theo_ky_khacnhau_tree" />
+            <field name="act_window_id" ref="open_report___so_sanh_so_luong_ban_va_doanh_so_theo_ky_khacnhau" />
+        </record>
+        <!-- end -->
+        <record id="view_bao_cao_bao_cao_so_sanh_so_luong_ban_va_doanh_so_theo_ky_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.bao.cao.so.sanh.so.luong.ban.va.doanh.so.theo.ky.form</field>
+            <field name="model">bao.cao.bao.cao.so.sanh.so.luong.ban.va.doanh.so.theo.ky</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <field name="THONG_KE_THEO" colspan="4" />
+                            <field name="CHI_NHANH_ID" options="{'showClearButton': false, 'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" />
+                        </group>
+                        <group col="4" attrs="{'invisible':[('THONG_KE_THEO', '=', 'SO_SANH_GIUA_CAC_KY_BAO_CAO_KHAC_NHAU')]}">
+                            <group colspan="2">
+                                <field name="KY_BAO_CAO" colspan="2" />
+                                <field name="TU" />
+                                <field name="DEN" />
+                                <field name="SO_SANH_VOI" />
+                            </group>
+                            <group colspan="2">
+                                <field name="NHOM_VTHH_ID" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm']}" />
+                                <field name="NHOM_KH_ID" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm']}" />
+                                <field name="DON_VI_TINH" />
+                            </group>
+                        </group>
+                        <group col="4" attrs="{'invisible':[('THONG_KE_THEO', '=', 'SO_SANH_CUNG_KY_BAO_CAO_GIUA_CAC_NAM')]}">
+                            <group colspan="2">
+                                <field name="SO_SANH_KY" />
+                                <field name="VOI_KY" />
+                                <field name="NHOM_VTHH_ID" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm']}" />
+                                <field name="DON_VI_TINH" />
+                            </group>
+                            <group colspan="2">
+                                <field name="TU_1" />
+                                <field name="DEN_1" />
+                                <field name="TU_NGAY" />
+                                <field name="DEN_NGAY" />
+                                <field name="NHOM_KH_ID" colspan="2" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm']}" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Sản phẩm" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'SO_SANH_CUNG_KY_BAO_CAO_GIUA_CAC_NAM')]}">
+                                <field name="SAN_PHAM_IDS_cacnam" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="name" string="Tên hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Khách hàng" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'SO_SANH_CUNG_KY_BAO_CAO_GIUA_CAC_NAM')]}">
+                                <field name="KHACH_HANG_IDS_cacnam" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA_DOI_TUONG" string="Mã khách hàng" />
+                                        <field name="name" string="Tên khách hàng" />
+                                        <field name="DIA_CHI" string="Địa chỉ" />
+                                        <field name="MA_SO_THUE" string="Mã số thuế" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Sản phẩm" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'SO_SANH_GIUA_CAC_KY_BAO_CAO_KHAC_NHAU')]}">
+                                <field name="SAN_PHAM_IDS_khacnhau" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="name" string="Tên hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Khách hàng" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'SO_SANH_GIUA_CAC_KY_BAO_CAO_KHAC_NHAU')]}">
+                                <field name="KHACH_HANG_IDS_khacnhau" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA_DOI_TUONG" string="Mã khách hàng" />
+                                        <field name="name" string="Tên khách hàng" />
+                                        <field name="DIA_CHI" string="Địa chỉ" />
+                                        <field name="MA_SO_THUE" string="Mã số thuế" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <field name="HIEN_THI_THEO_DANG_MO_RONG" attrs="{'invisible': [('THONG_KE_THEO', '=', 'SO_SANH_GIUA_CAC_KY_BAO_CAO_KHAC_NHAU')]}" />
+                        <!--Master/Detail form-->
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_bao_cao_so_sanh_so_luong_ban_va_doanh_so_theo_ky_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Báo cáo so sánh số lượng bán, doanh số theo kỳ</field>
+            <field name="res_model">bao.cao.bao.cao.so.sanh.so.luong.ban.va.doanh.so.theo.ky</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_bao_cao_so_sanh_so_luong_ban_va_doanh_so_theo_ky_tham_so_form" />
+        </record>
+    </data>
+</odoo>

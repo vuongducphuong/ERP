@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_loai_tai_san_co_dinh_form" model="ir.ui.view">
+            <field name="name">danh.muc.loai.tai.san.co.dinh.form</field>
+            <field name="model">danh.muc.loai.tai.san.co.dinh</field>
+            <field name="arch" type="xml">
+                <form string="Loại tài sản cố định">
+                    <sheet>
+                        <group col="2">
+                            <field name="MA" required="True" colspan="2"/>
+                            <field name="TEN" required="True" colspan="2"/>
+                            <field name="parent_id" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã loại TSCĐ', 'Tên loại TSCĐ'],'displays': ['TEN']}" colspan="2"/>
+                        </group>
+                        <group col="4" string="Tài khoản ngầm định">
+                            <field name="TK_NGUYEN_GIA_ID" 	options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" colspan="2"/>
+                            <field name="TK_KHAU_HAO_ID" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" colspan="2"/>
+                            
+                            <field name="name" invisible="True"/>
+                        </group>
+                        <field name="active"/>
+
+
+                        <!--Master/Detail form-->
+                        
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_danh_muc_loai_tai_san_co_dinh_tree" model="ir.ui.view">
+            <field name="name">danh.muc.loai.tai.san.co.dinh.tree</field>
+            <field name="model">danh.muc.loai.tai.san.co.dinh</field>
+            <field name="arch" type="xml">
+                <tree string="Loại tài sản cố định" hierarchy="parent_id" >
+                    <field name="MA" string="Mã loại TSCĐ"/>
+                    <field name="TEN" string="Tên loại TSCĐ"/>
+                    
+                    <field name="TK_NGUYEN_GIA_ID"/>
+                    <field name="TK_KHAU_HAO_ID"/>
+                    <field name="active"/>
+                    <field name="parent_id" invisible="1"/>
+                    
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_danh_muc_loai_tai_san_co_dinh" model="ir.actions.act_window">
+            <field name="name">Loại tài sản cố định</field>
+            <field name="res_model">danh.muc.loai.tai.san.co.dinh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_danh_muc_loai_tai_san_co_dinh_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_loai_tai_san_co_dinh_tree"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_loai_tai_san_co_dinh"/>
+        </record>
+
+        <record id="action_danh_muc_loai_tai_san_co_dinh_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_loai_tai_san_co_dinh_form"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_loai_tai_san_co_dinh"/>
+        </record>
+
+        <!-- <menuitem name="Loại tài sản cố định"
+                  action="danh_muc.open_menu_danh_muc_loai_tai_san_co_dinh"
+                  id="menu_danh_muc_loai_tai_san_co_dinh"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

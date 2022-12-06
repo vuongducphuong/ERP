@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_sale_ex_hoa_don_dien_tu_tree" model="ir.ui.view">
+            <field name="name">sale.ex.hoa.don.dien.tu.tree</field>
+            <field name="model">sale.ex.hoa.don.dien.tu</field>
+            <field name="arch" type="xml">
+                <tree string="Hóa đơn điện tử" create="false">
+                    <field name="NGAY_HOA_DON" string="Ngày hóa đơn" />
+                    <field name="SO_HOA_DON" string="Số hóa đơn" />
+                    <field name="TEN_KHACH_HANG" string="Khách hàng" />
+                    <field name="TONG_TIEN_THANH_TOAN_QD" string="Giá trị hóa đơn" sum="Tổng tiền" />
+                    <field name="DA_HACH_TOAN_TEXT" string="Đã hạch toán" />
+                    <field name="LOAI_TEXT" string="Loại" />
+                    <field name="CHI_NHANH_ID" string="Chi nhánh" />
+                </tree>
+            </field>
+        </record>
+        
+        <record id="open_menu_sale_ex_hoa_don_dien_tu" model="ir.actions.act_window">
+            <field name="name">Hóa đơn điện tử</field>
+            <field name="res_model">sale.ex.hoa.don.dien.tu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        
+        <record id="action_sale_ex_hoa_don_dien_tu_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_sale_ex_hoa_don_dien_tu_tree" />
+            <field name="act_window_id" ref="open_menu_sale_ex_hoa_don_dien_tu" />
+        </record>
+
+        <!-- Phát hành hóa đơn -->
+        <record id="phat_hanh_hoa_don_view" model="ir.ui.view">
+            <field name="name">Phát hành HĐ điện tử</field>
+            <field name="model">sale.ex.phat.hanh.hoa.don.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Phát hành HĐ điện tử">
+                    <field name="HOA_DON_IDS"/>
+                    <footer>
+                        <button string="Phát hành HĐ điện tử" name="phat_hanh" type="object" class="btn-primary"/>
+                        <button string="Hủy bỏ" class="btn-default" type="object" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="phat_hanh_hoa_don_user_tree_view" model="ir.ui.view">
+            <field name="name">Phát hành HĐ điện tử</field>
+            <field name="model">sale.ex.phat.hanh.hoa.don.chi.tiet</field>
+            <field name="arch" type="xml">
+                <!-- the user list is editable, but one cannot add or delete rows -->
+                <tree string="Danh sách hóa đơn" editable="bottom" create="false" delete="false">
+                    <field name="SO_HOA_DON"/>
+                    <field name="NGAY_HOA_DON"/>
+                    <field name="TEN_DOI_TUONG"/>
+                    <field name="GUI_EMAIL_CHO_KHACH_HANG"/>
+                    <field name="EMAIL_DOI_TUONG"/>
+                </tree>
+            </field>
+        </record>
+        <act_window id="phat_hanh_hoa_don_action"
+            name="Phát hành HĐ điện tử"
+            src_model="sale.ex.hoa.don.ban.hang"
+            res_model="sale.ex.phat.hanh.hoa.don.wizard"
+            view_type="form" view_mode="form"
+            key2="client_action_multi" target="new"/>
+    </data>
+</odoo>

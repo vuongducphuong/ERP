@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+  <data>
+    <record id="view_chuyen_tien_noi_bo_form" model="ir.ui.view">
+      <field name="name">account.ex.phieu.thu.chi.ctnb.form</field>
+      <field name="model">account.ex.phieu.thu.chi</field>
+      <field name="arch" type="xml">
+        <form string="Chuyển tiền nội bộ" cloudify_js="account_ex_ngan_hang_chuyen_tien_noi_bo_form_view">
+          <header>
+            <button name="action_ghi_so" string="Ghi sổ" type="object" class="oe_highlight oe_read_only" states="chua_ghi_so"/>
+            <button id="action_bo_ghi_so" string="Bỏ ghi" states="da_ghi_so"/>
+            <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so"/>
+            <field name="LOAI_PHIEU" invisible="1"/>
+            <field name="TYPE_NH_Q" invisible="1"/>
+            <field name="LOAI_CHUNG_TU" invisible='1'/>
+          </header>
+          <sheet>
+            <group col="6">
+              <group colspan="4" col="4" string="Thông tin chung">
+                <field name="TAI_KHOAN_CHI_GUI_ID" string="Tài khoản đi" options="{'columns': ['SO_TAI_KHOAN', 'NGAN_HANG_ID.TEN_DAY_DU', 'CHI_NHANH'], 'strings': ['Số tài khoản', 'Tên ngân hàng', 'Chi nhánh'],'displays': ['SO_TAI_KHOAN']}" required="True"/>
+                <field name="TEN_TK_CHI" string='Tên TK đi' />
+                <field name="TAI_KHOAN_DEN_ID" string='Tài khoản đến' options="{'columns': ['SO_TAI_KHOAN', 'NGAN_HANG_ID.TEN_DAY_DU', 'CHI_NHANH'], 'strings': ['Số tài khoản', 'Tên ngân hàng', 'Chi nhánh'],'displays': ['SO_TAI_KHOAN']}" required="True"/>
+                <field name="TEN_TK_NHAN_CTNB" string='Tên TK đến'/>
+                <field name="DIEN_GIAI" string='Lý do chuyển'  colspan="4"/>
+                 <field name="THAM_CHIEU"   readonly="1" />
+              </group>
+              <group colspan="2" string="Chứng từ">
+                <field name="NGAY_HACH_TOAN"/>
+                <field name="NGAY_CHUNG_TU"/>
+                <field name="SO_CHUNG_TU"/>
+              </group>
+
+              <group colspan="2" string="Tỷ giá">
+                  <field name="currency_id" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+                  <field name="TY_GIA" attrs="{'readonly': [('LA_TIEN_CO_SO', '=', True)]}" />
+                  <field name="LA_TIEN_CO_SO" invisible = '1'/>
+              </group>
+
+
+            </group>
+           
+            <notebook>
+              <page string="1. Chi tiết">
+                <field name="ACCOUNT_EX_PHIEU_THU_CHI_TIET_IDS" context="{'default_DIEN_GIAI_DETAIL':DIEN_GIAI}" mode="tree">
+                  <tree editable="bottom">
+                    <field name="DIEN_GIAI_DETAIL"/>
+                    <field name="TK_NO_ID" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                    <field name="TK_CO_ID" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                    <field name="SO_TIEN" string="Số tiền" sum='Total amount'/>
+                    <field name="SO_TIEN_QUY_DOI" string="Quy đổi" sum='Total amount' attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=', True)]}"/>
+                    <field name="TY_GIA_XUAT_QUY"  readonly="1" attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=', True)]}"/>
+                    <field name="QUY_DOI_THEO_TGXQ" sum='Total amount' readonly="1" attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=', True)]}"/>
+                    <field name="CHENH_LECH" sum='Total amount' readonly="1" attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=', True)]}"/>
+                    <field name="TK_XU_LY_CHENH_LECH"  readonly="1" attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=', True)]}"/>
+                    <field name="MA_THONG_KE_ID" options="{'columns': ['MA_THONG_KE', 'TEN_THONG_KE'], 'strings': ['Mã thống kê', 'Tên thống kê']}"/>
+                     <field name="currency_id" invisible="1"/>
+                    <field name="base_currency_id" invisible="1"/>
+                  </tree>
+                </field>
+              </page>
+            </notebook>
+          </sheet>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </form>
+      </field>
+    </record>
+
+    <record id="view_chuyen_tien_noi_bo_tree" model="ir.ui.view">
+      <field name="name">account.ex.phieu.thu.chi.ctnb.tree</field>
+      <field name="model">account.ex.phieu.thu.chi</field>
+      <field name="arch" type="xml">
+        <tree decoration-info="state=='chua_ghi_so'" cloudify_js="account_ex_ngan_hang_chuyen_tien_noi_bo_list_view">
+          <field name="NGAY_HACH_TOAN" fixed_column="True"/>
+          <field name="NGAY_CHUNG_TU" fixed_column="True"/>
+          <field name="SO_CHUNG_TU" fixed_column="True"/>
+          <field name="DIEN_GIAI"/>
+          <field name="SO_TIEN_TREE" sum="tổng số tiền"/>
+          <field name="TEN_DOI_TUONG" string="Đối tượng"/>
+          <field name="LOAI_PHIEU" string="Lý do thu/chi"/>
+          
+          <field name="LOAI_PHIEU" string="Loại chứng từ" />
+          <field name="CHI_NHANH_ID"/>
+		  <field name="state" invisible="1"/>
+          <!-- <field name="LOAI_CHUNG_TU"/> -->
+          <!-- <field name="chi_nhanh_id"/> -->
+        </tree>
+      </field>
+    </record>
+
+    <record id="open_menu_chuyen_tien_noi_bo" model="ir.actions.act_window">
+      <field name="name">Chuyển tiền nội bộ</field>
+      <field name="res_model">account.ex.phieu.thu.chi</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain">[('LOAI_PHIEU', '=', 'PHIEU_CHUYEN_TIEN'),('TYPE_NH_Q', '=', 'NGAN_HANG')]</field>
+      <field name="context">{'default_LOAI_PHIEU': 'PHIEU_CHUYEN_TIEN','default_TYPE_NH_Q': 'NGAN_HANG','import_enabled': True}</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Nhấn vào đây để thêm mới!
+        </p>
+        <p>
+
+        </p>
+      </field>
+    </record>
+
+    <record id="actionchuyen_tien_noi_bo_tree" model="ir.actions.act_window.view">
+      <field name="view_mode">tree</field>
+      <field name="view_id" ref="view_chuyen_tien_noi_bo_tree"/>
+      <field name="act_window_id" ref="open_menu_chuyen_tien_noi_bo"/>
+    </record>
+
+    <record id="action_chuyen_tien_noi_bo_form" model="ir.actions.act_window.view">
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="view_chuyen_tien_noi_bo_form"/>
+      <field name="act_window_id" ref="open_menu_chuyen_tien_noi_bo"/>
+    </record>
+
+
+  </data>
+  <data noupdate="1">
+    <record id="sequence_account_ex_phieu_thu_chi_ctnb" model="ir.sequence">
+            <field name="name">account_thu_chi SO_CHUNG_TU_PHIEU_CHUYEN_TIEN sequence</field>
+            <field name="code">account_ex_phieu_thu_chi_SO_CHUNG_TU_PHIEU_CHUYEN_TIEN</field>
+            <field name="prefix">CTNB</field>
+            <field name="padding">5</field>
+    </record>
+  </data>
+</odoo>

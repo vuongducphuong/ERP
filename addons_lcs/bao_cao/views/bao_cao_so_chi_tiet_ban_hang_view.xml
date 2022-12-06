@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_so_chi_tiet_ban_hang_tree" model="ir.ui.view">
+            <field name="name">bao.cao.so.chi.tiet.ban.hang.tree</field>
+            <field name="model">bao.cao.so.chi.tiet.ban.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Sổ chi tiết bán hàng" create="false" report="true">
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" linked="true" />
+                    <field name="NGAY_HOA_DON" />
+                    <field name="SO_HOA_DON" />
+                    <field name="DIEN_GIAI_CHUNG" />
+                    <field name="DIEN_GIAI" />
+                    <field name="MA_KHACH_HANG" />
+                    <field name="TEN_KHACH_HANG" />
+                    <field name="MA_NHOM_KH" />
+                    <field name="TEN_NHOM_KH" />
+                    <field name="MA_HANG" />
+                    <field name="TEN_HANG" />
+                    <field name="DVT" />
+                    <field name="TONG_SO_LUONG_BAN" string="Tổng số lượng bán" sum="Số tiền dư nợ đầu kỳ" />
+                    <field name="DON_GIA" />
+                    <field name="DOANH_SO_BAN" sum="Số tiền dư nợ đầu kỳ" />
+                    <field name="CHIET_KHAU" sum="Số tiền dư nợ đầu kỳ" />
+                    <field name="TONG_SO_LUONG_TRA_LAI" string="Tổng số lượng trả lại" sum="Số tiền dư nợ đầu kỳ" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Số tiền dư nợ đầu kỳ" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Số tiền dư nợ đầu kỳ" />
+                    <field name="DON_GIA_VON" />
+                    <field name="GIA_VON" sum="Giá vốn" />
+                    <field name="ID_GOC" invisible="1" />
+                    <field name="MODEL_GOC" invisible="1" />
+                
+                </tree>
+            </field>
+        </record>
+        <record id="view_bao_cao_so_chi_tiet_ban_hang_theo_nhan_vien_tree" model="ir.ui.view">
+            <field name="name">bao.cao.so.chi.tiet.ban.hang.tree</field>
+            <field name="model">bao.cao.so.chi.tiet.ban.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Sổ chi tiết bán hàng" create="false" report="true">
+                    <field name="TEN_NHAN_VIEN_BAN_HANG" />
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" linked="true" />
+                    <field name="NGAY_HOA_DON" />
+                    <field name="SO_HOA_DON" />
+                    <field name="DIEN_GIAI_CHUNG" />
+                    <field name="MA_HANG" />
+                    <field name="TEN_HANG" />
+                    <field name="DVT" />
+                    <field name="TONG_SO_LUONG_BAN" sum="Số tiền dư nợ đầu kỳ" />
+                    <field name="DON_GIA" />
+                    <field name="DOANH_SO_BAN" sum="Số tiền dư nợ đầu kỳ" />
+                    <field name="CHIET_KHAU" sum="Số tiền dư nợ đầu kỳ" />
+                    <field name="TONG_SO_LUONG_TRA_LAI" sum="Số tiền dư nợ đầu kỳ" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Số tiền dư nợ đầu kỳ" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Số tiền dư nợ đầu kỳ" />
+                    <field name="DON_GIA_VON" />
+                    <field name="GIA_VON" sum="Giá vốn" />
+                    <field name="ID_GOC" invisible="1" />
+                    <field name="MODEL_GOC" invisible="1" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__so_chi_tiet_ban_hang" model="ir.actions.act_window">
+            <field name="name">SỔ CHI TIẾT BÁN HÀNG</field>
+            <field name="res_model">bao.cao.so.chi.tiet.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="size">large</field>
+            <!--Implement grouping and header organization-->
+            <!--<field name="context">{'group_by': ['kho_id'], 'header_struct': [['Đầu kỳ', ['sl_dau_ky', ['XYZ', ['gt_dau_ky', 'sl_nhap_kho']]]], ['Cuối kỳ', ['sl_cuoi_ky', 'gt_cuoi_ky','gt_nhap_kho']]], 'expand_all': 'true'}</field>-->
+        </record>
+        <record id="open_report__so_chi_tiet_ban_hang_theo_nhan_vien" model="ir.actions.act_window">
+            <field name="name">SỔ CHI TIẾT BÁN HÀNG THEO NHÂN VIÊN</field>
+            <field name="res_model">bao.cao.so.chi.tiet.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="size">large</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by':['TEN_NHAN_VIEN_BAN_HANG'],'expand_all': 'true'}</field>
+        </record>
+        <!-- actions theo Không chọn -->
+        <record id="action_bao_cao_so_chi_tiet_ban_hang" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_so_chi_tiet_ban_hang_tree" />
+            <field name="act_window_id" ref="open_report__so_chi_tiet_ban_hang" />
+        </record>
+        <!-- actions theo Nhân viên -->
+        <record id="action_bao_cao_so_chi_tiet_ban_hang_theo_nhan_vien" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_so_chi_tiet_ban_hang_theo_nhan_vien_tree" />
+            <field name="act_window_id" ref="open_report__so_chi_tiet_ban_hang_theo_nhan_vien" />
+        </record>
+        <record id="view_bao_cao_so_chi_tiet_ban_hang_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.so.chi.tiet.ban.hang.form</field>
+            <field name="model">bao.cao.so.chi.tiet.ban.hang</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js='bao_cao_so_chi_tiet_ban_hang_view'>
+                    <sheet>
+                        <group col="4">
+                            <field name="THONG_KE_THEO" colspan="4" />
+                            <field name="CHI_NHANH_ID" domain="[('CAP_TO_CHUC','in',('1','2'))]" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" colspan="2" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" />
+                            <field name="MA_PC_NHOM_VTHH" invisible="1"/>
+                            <field name="MA_PC_NHOM_KH" invisible="1"/>
+                        </group>
+                        <group col="4">
+                            <group colspan="2">
+                                <field name="KY_BAO_CAO" colspan="2" />
+                                <field name="TU_NGAY" />
+                                <field name="DEN_NGAY" />
+                                <field name="NHOM_VTHH_ID" attrs="{'invisible': [('THONG_KE_THEO', '=', 'NHAN_VIEN')]}" colspan="2" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm']}" />
+                            </group>
+                            <group colspan="2">
+                                <field name="DON_VI_ID" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị']}" />
+                                <field name="NHAN_VIEN_ID" attrs="{'invisible': [('THONG_KE_THEO', '=', 'NHAN_VIEN')]}" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}" />
+                                <field name="NHOM_KH_ID" attrs="{'invisible': [('THONG_KE_THEO', '=', 'NHAN_VIEN')]}" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'], 'displays':['MA']}" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Sản phẩm" attrs="{'invisible': [('THONG_KE_THEO', '=', 'NHAN_VIEN')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_SAN_PHAM" nolabel="1" colspan="12"/>
+                                    <field name="SAN_PHAM_MANY_IDS" widget='many2many_tags' attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}" colspan="12" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã hàng', 'Tên hàng']}"/>
+                                </group>
+                                <field name="SAN_PHAM_IDS" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="TEN" string="Tên hàng" width="0" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Khách hàng" attrs="{'invisible': [('THONG_KE_THEO', '=', 'NHAN_VIEN')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_KHACH_HANG" nolabel="1" colspan="12"/>
+                                    <field name="KHACH_HANG_MANY_IDS" widget='many2many_tags' attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI', 'MA_SO_THUE'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Địa chỉ', 'Mã số thuế']}"/>
+                                </group>
+                                <field name="KHACH_HANG_IDS" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA" string="Mã khách hàng" />
+                                        <field name="HO_VA_TEN" string="Tên khách hàng" />
+                                        <field name="DIA_CHI" string="Địa chỉ" width="0" />
+                                        <field name="MA_SO_THUE" string="Mã số thuế" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Nhân viên" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'NHAN_VIEN')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_NHAN_VIEN" nolabel="1" colspan="12"/>
+                                    <field name="NHAN_VIEN_MANY_IDS" widget='many2many_tags' attrs="{'invisible': [('CHON_TAT_CA_NHAN_VIEN', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Đơn vị']}"/>
+                                </group>
+                                <field name="NHAN_VIEN_IDS" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_NHAN_VIEN', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA" string="Mã nhân viên" />
+                                        <field name="HO_VA_TEN" string="Tên nhân viên" />
+                                        <field name="DON_VI_ID" string="Đơn vị" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_so_chi_tiet_ban_hang_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Sổ chi tiết bán hàng</field>
+            <field name="res_model">bao.cao.so.chi.tiet.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="size">large</field>
+            <field name="view_id" ref="view_bao_cao_so_chi_tiet_ban_hang_tham_so_form" />
+        </record>
+    </data>
+</odoo>

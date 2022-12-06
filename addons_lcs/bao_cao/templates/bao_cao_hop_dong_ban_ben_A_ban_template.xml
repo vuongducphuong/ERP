@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+	<template id="hopdongban4e369ad8">
+		<t t-call="web.external_layout">
+			<div class="page" style="margin-left: 15px; margin-right: 15px;">
+				<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+					<div class="col-xs-12 text-center" style="font-size: 12pt; font-weight: bold;padding-left: 0px; padding-right: 0px;">
+
+						<span>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</span>
+
+					</div>
+					<div class="col-xs-12 text-center" style="font-size: 12pt; font-weight: bold;padding-left: 0px; padding-right: 0px;">
+
+						<span>Độc lập - Tự do - Hạnh phúc</span>
+
+					</div>
+					<div class="col-xs-12 text-center" style="font-size: 12pt; font-weight: bold;padding-left: 0px; padding-right: 0px;">
+
+						<span>----------o0o-----------</span>
+
+					</div>
+					<div class="col-xs-12 text-center" style="line-height:normal;font-size: 12pt; font-weight: bold;padding-left: 0px; padding-right: 0px;">
+
+						<span>HỢP ĐỒNG MUA BÁN HÀNG HÓA</span>
+
+					</div>
+					<div class="col-xs-12 text-center" style="font-size: 12pt; font-weight: bold;padding-left: 0px; padding-right: 0px;">
+
+						<span>Số:</span>
+						<span t-if="o.SO_HOP_DONG" t-field="o.SO_HOP_DONG" />
+
+					</div>
+					<div class="col-xs-12 text-left" style="margin-top:15px;font-size: 12pt; font-style: italic;padding-left: 0px; padding-right: 0px;">
+
+						<span>
+							- Căn cứ Luật Thương mại của Quốc hội nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam số 36/2005/QH11 ngày 14/06/2005;
+							<br />
+							- Căn cứ nhu cầu và khả năng của hai bên.
+							<br />
+							Hôm nay,
+						</span>
+						<span t-if="o.NGAY_KY_BANG_CHU" t-field="o.NGAY_KY_BANG_CHU" />
+						<span>, chúng tôi gồm có:</span>
+					</div>
+				</div>
+
+				<div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;">
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt; font-weight: bold;">
+						<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 20%;">
+							<span>Bên A (BÊN BÁN):</span>
+
+						</div>
+						<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 80%;">
+							<span t-esc="o.get_ten_cong_ty()" />
+						</div>
+
+					</div>
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 20%;">
+							<span>Địa chỉ:</span>
+						</div>
+						<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 80%;">
+							<span t-esc="o.get_dia_chi_cong_ty()" />
+						</div>
+					</div>
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 20%;">
+							<span>MST:</span>
+						</div>
+						<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 80%;">
+							<span t-esc="o.get_ma_so_thue_cong_ty()" />
+						</div>
+					</div>
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;">
+							<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 40%;">
+								<span>Điện thoại:</span>
+							</div>
+							<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 60%;">
+								<span t-esc="o.get_dien_thoai_cong_ty()" />
+							</div>
+						</div>
+						<div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;">
+							<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 40%;">
+								<span>Fax:</span>
+							</div>
+							<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 60%;">
+								<span t-esc="o.get_fax_cong_ty()" />
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 20%;">
+							<span>Đại diện:</span>
+						</div>
+						<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 80%;">
+							<span t-esc="o.get_giam_doc()" />
+						</div>
+					</div>
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 20%;">
+							<span>Chức vụ:</span>
+						</div>
+						<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 28%;">
+							<span>Giám đốc</span>
+						</div>
+					</div>
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 20%;">
+							<span>Tài khoản:</span>
+						</div>
+						<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 80%;">
+							<span t-esc="o.get_tk_ngan_hang_cong_ty()" />
+						</div>
+					</div>
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 20%;">
+							<span>Ngân hàng:</span>
+						</div>
+						<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 80%;">
+							<span t-esc="o.get_chi_nhanh_tk_ngan_hang_cong_ty()" />
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;">
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt; font-weight: bold;">
+						<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 20%;">
+							<span>
+							Bên B (BÊN MUA):
+							</span>
+						</div>
+						<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 80%;">
+							<span t-if="o.TEN_KHACH_HANG" t-field="o.TEN_KHACH_HANG" />
+						</div>
+					</div>
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 20%;">
+							<span>Địa chỉ:</span>
+						</div>
+						<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 80%;">
+							<span t-if="o.DIA_CHI_KHACH_HANG" t-field="o.DIA_CHI_KHACH_HANG" />
+						</div>
+					</div>
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 20%;">
+							<span>MST:</span>
+						</div>
+						<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 80%;">
+							<span t-if="o.MA_SO_THUE" t-field="o.MA_SO_THUE" />
+						</div>
+					</div>
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;">
+							<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 40%;">
+								<span>Điện thoại:</span>
+							</div>
+							<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 60%;">
+								<span t-if="o.DIEN_THOAI_KHACH_HANG" t-field="o.DIEN_THOAI_KHACH_HANG" />
+							</div>
+						</div>
+						<div class="col-xs-6" style="padding-left: 0px; padding-right: 0px;">
+							<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 40%;">
+								<span>Fax:</span>
+							</div>
+							<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 60%;">
+								<span t-if="o.FAX_KHACH_HANG" t-field="o.FAX_KHACH_HANG" />
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 20%;">
+							<span>Đại diện:</span>
+						</div>
+						<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 80%;">
+							<span t-if="o.NGUOI_DAI_DIEN" t-field="o.NGUOI_DAI_DIEN" />
+						</div>
+					</div>
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 20%;">
+							<span>Chức vụ:</span>
+						</div>
+						<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 80%;">
+							<span t-if="o.CHUC_VU" t-field="o.CHUC_VU" />
+						</div>
+					</div>
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 20%;">
+							<span>Tài khoản:</span>
+						</div>
+						<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 80%;">
+							<span t-if="o.STK_NGANG_HANG_DOI_TUONG" t-field="o.STK_NGANG_HANG_DOI_TUONG" />
+						</div>
+					</div>
+					<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="col-xs-4" style="padding-left: 0px; padding-right: 0px;width: 20%;">
+							<span>Ngân hàng:</span>
+						</div>
+						<div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;width: 80%;">
+							<span t-if="o.TEN_NGANG_HANG_DOI_TUONG" t-field="o.TEN_NGANG_HANG_DOI_TUONG" />
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;font-weight: bold; font-style: italic;">
+					<span>
+							Bên A và bên B thống nhất thỏa thuận nội dung Hợp đồng như sau:
+					</span>
+				</div>
+
+
+				<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;font-weight: bold;">
+					<span>ĐIỀU 1: ĐỐI TƯỢNG VÀ GIÁ CẢ</span>
+				</div>
+				<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+					<span>Bên A đồng ý bán cho bên B hàng hóa như sau:</span>
+					<table class="table-condensed table-bordereds" style="width:100%;border: 1px solid;margin-bottom: 0px;font-size: 12pt;">
+						<thead>
+							<tr>
+								<th class="text-center" style="border: 1px solid;vertical-align: middle;width:5%">
+									<span>STT</span>
+								</th>
+								<th class="text-center" colspan="2" style="border: 1px solid;vertical-align: middle;width:20%">
+									<span>Tên hàng hóa</span>
+								</th>
+								<th class="text-center" style="border: 1px solid;vertical-align: middle;width:8%">
+									<span>ĐVT</span>
+								</th>
+								<th class="text-center" style="border: 1px solid;vertical-align: middle;width:9%">
+									<span>Số lượng</span>
+								</th>
+								<th class="text-center" style="border: 1px solid;vertical-align: middle;width:11%">
+									<span>Đơn giá</span>
+								</th>
+								<th class="text-center" style="border: 1px solid;vertical-align: middle;width:19%">
+									<span>Thành tiền</span>
+								</th>
+								<th class="text-center" style="border: 1px solid;vertical-align: middle;width:11%">
+
+									<span>
+										Thuế suất 
+									</span>
+									<br />
+									<span> GTGT</span>
+
+
+								</th>
+								<th class="text-center" style="border: 1px solid;vertical-align: middle;width:13%">
+
+									<span>
+									Tiền thuế
+									</span>
+									<br />
+									<span>GTGT</span>
+
+								</th>
+							</tr>
+							<tr>
+								<th class="text-center">
+									<span>A</span>
+								</th>
+								<th colspan="2" class="text-center">
+									<span>B</span>
+								</th>
+								<th class="text-center">
+									<span>C</span>
+								</th>
+								<th class="text-center">
+									<span>1</span>
+								</th>
+								<th class="text-center">
+									<span>2</span>
+								</th>
+								<th class="text-center">
+									<span>3 = 1 x 2</span>
+								</th>
+								<th class="text-center">
+									<span>4</span>
+								</th>
+								<th class="text-center">
+									<span>5</span>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<t t-set="so_thu_tu" t-value="0"></t>
+							<tr t-foreach="o.ACCOUNT_EX_PHIEU_THU_CHI_TIET_IDS" t-as="line">
+								<t t-set="so_thu_tu" t-value="so_thu_tu + 1"></t>
+								<td class="text-center" style="border: 1px solid;">
+									<span t-esc="so_thu_tu"></span>
+								</td>
+								<td class="text-left" colspan="2" style="border: 1px solid;">
+									<span t-field="line.TEN_HANG" />
+								</td>
+
+								<td class="text-left" style="border: 1px solid;">
+									<span t-field="line.DVT" />
+								</td>
+								<td class="text-right" style="border: 1px solid;">
+									<span t-field="line.SO_LUONG_YEU_CAU" />
+								</td>
+								<td class="text-right" style="border: 1px solid;">
+									<span t-field="line.DON_GIA_QUY_DOI" />
+								</td>
+								<td class="text-right" style="border: 1px solid;">
+									<span t-field="line.THANH_TIEN_QUY_DOI" />
+								</td>
+								<td class="text-right" style="border: 1px solid;">
+									<span t-field="line.PHAN_TRAM_THUE_GTGT" />
+									<span t-if="line.PHAN_TRAM_THUE_GTGT" t-esc="'%'" />
+								</td>
+								<td class="text-right" style="border: 1px solid;">
+									<span t-field="line.TIEN_THUE_GTGT_QUY_DOI" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="border: 1px solid;">
+									<span>Tỷ lệ CK:</span>
+								</td>
+								<td colspan="2" class="text-right" style="border: 1px solid;">
+
+									<span t-field="o.AVGDiscountRate" t-esc="'%'" />
+									<t t-if="not o.AVGDiscountRate" t-esc="'0%'" />
+								</td>
+								<td colspan="4" style="border: 1px solid;">
+									<span>
+												Số tiền chiết khấu:
+											</span>
+
+								</td>
+								<td class="text-right" style="border: 1px solid;">
+									<span t-if="o.TONG_TIEN_CHIET_KHAU_QUY_DOI" t-field="o.TONG_TIEN_CHIET_KHAU_QUY_DOI" />
+									<t t-if="not o.TONG_TIEN_CHIET_KHAU_QUY_DOI" t-esc="'0'" />
+
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3" style="border: 1px solid;"></td>
+								<td style="border: 1px solid;"></td>
+								<td colspan="4" style="border: 1px solid;">
+									<span>
+												Cộng tiền hàng(Đã trừ CK):
+											</span>
+
+								</td>
+								<td class="text-right" style="border: 1px solid;">
+									<span t-if="o.OffsetsAmountDiscount" t-field="o.OffsetsAmountDiscount" />
+
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="border: 1px solid;"></td>
+								<td colspan="2" style="border: 1px solid;"></td>
+								<td colspan="4" style="border: 1px solid;">
+									<span>
+												Tiền thuế GTGT:
+											</span>
+
+								</td>
+								<td class="text-right" style="border: 1px solid;">
+									<span t-if="o.TONG_TIEN_THUE_QUY_DOI" t-field="o.TONG_TIEN_THUE_QUY_DOI" />
+
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3" style="border: 1px solid;"></td>
+								<td></td>
+								<td colspan="4" style="border: 1px solid;">
+									<span>
+												Tổng cộng tiền thanh toán:
+											</span>
+								</td>
+								<td class="text-right" style="border: 1px solid;font-weight: bold;">
+
+									<span t-if="o.TONG_CONG_TIEN_THANH_TOAN" t-field="o.TONG_CONG_TIEN_THANH_TOAN" />
+
+
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3" style="border: 1px solid;">
+									<span>Số tiền bằng chữ:</span>
+								</td>
+								<td colspan="6" style="border: 1px solid;font-weight: bold;font-style: italic;">
+									<span>
+
+										<span t-if="o.TONG_CONG_TIEN_THANH_TOAN" t-field="o.TONG_CONG_TIEN_THANH_TOAN" t-options="{'widget': 'vietbangchu'}" />
+
+									</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;font-weight: bold;">
+						<span>
+						ĐIỀU 2: BAO BÌ - CHẤT LƯỢNG HÀNG HÓA
+						</span>
+					</div>
+
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<span>
+						Hàng hóa do Bên A cung cấp phải đảm bảo đúng chất lượng(Có Giấy chứng nhận hàng hóa cung cấp đạt tiêu chuẩn chất lượng của cơ quan Nhà nước có thẩm quyền), bao bì còn nguyên vẹn, không bị rách, không ẩm ướt.
+						</span>
+					</div>
+				</div>
+
+				<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;font-weight: bold;">
+						<span>
+						ĐIỀU 3: PHƯƠNG THỨC GIAO HÀNG - VẬN CHUYỂN
+						</span>
+					</div>
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="xs-col-4" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+							<span>
+								- Địa điểm giao hàng:
+							</span>
+						</div>
+
+						<div class="xs-col-8" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+							<span>
+								<span t-if="o.DIA_DIEM_GIAO_HANG_STRING" t-field="o.DIA_DIEM_GIAO_HANG_STRING" />
+							</span>
+						</div>
+
+
+					</div>
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<div class="xs-col-4" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+							<span>
+							- Thời gian giao hàng:
+							</span>
+						</div>
+
+						<div class="xs-col-8" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+
+							<span t-if="o.HAN_GIAO_HANG" t-field="o.HAN_GIAO_HANG" />
+
+						</div>
+
+
+					</div>
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<span>
+						- Phương thức giao hàng:
+						</span>
+					</div>
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<span>
+						- Bên B có trách nhiệm kiểm tra quy cách, tiêu chuẩn, chủng loại và số lượng. Nếu phát hiện hàng không đúng tiêu chuẩn đã thỏa thuận trong điều 2 của hợp đồng thì bên B có quyền từ chối nhận hàng.
+		
+						</span>
+					</div>
+				</div>
+
+				<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;font-weight: bold;">
+						<span>
+						ĐIỀU 4: PHƯƠNG THỨC THANH TOÁN
+						</span>
+					</div>
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<span>
+							1. Bên B thanh toán cho bên A bằng............. khi nhận hàng.
+							<br />
+							2. Phát hành hóa đơn  Bên A sẽ phát hành hóa đơn và gửi cho bên B phù hợp với điều kiện thực tế tại thời điểm hai bên ký kết hợp đông, việc phát hành hóa đơn sớm hay muộn không ảnh hưởng đến nghĩa vụ và thời hạn thanh toán của bên B.
+						</span>
+					</div>
+				</div>
+
+				<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+					<div class="xs-col-12  text-left " style="padding-left: 0px; padding-right: 0px;font-size: 12pt;font-weight: bold;">
+						<span>
+										ĐIỀU 5: GIẢI QUYẾT TRANH CHẤP 
+						</span>
+					</div>
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<span>
+									   Trong quá trình thực hiện hợp đồng nếu xảy ra bất kỳ sự bất đồng nào, Bên nảy sinh bất đồng sẽ thông báo cho bên kia bằng văn bản. Hai bên sẽ thương lượng để giải quyết các bất đồng đó. Trường hợp các bên không tự thương lượng được thì sự việc sẽ đưa ra giải quyết theo quy định của pháp luật.
+									</span>
+					</div>
+				</div>
+
+				<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;font-weight: bold;">
+						<span>
+										ĐIỀU 6: CÁC TRƯỜNG HỢP CHẤM DỨT HỢP ĐỒNG
+									</span>
+					</div>
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<span>
+							Hợp đồng này sẽ được chấm dứt trong các trường hợp sau:
+							<br />
+							- Khi các Bên thực hiện xong các quyền và nghĩa vụ quy định trong hợp đồng này.
+							<br />
+							- Khi một Bên vi phạm hợp đồng dẫn đến Hợp đồng không thể thực hiện được thì phía Bên kia có quyền đơn phương chấm dứt hợp đồng.
+							<br />
+							- Hợp đồng có thể được chấm dứt do sự thỏa thuận của các Bên.
+						</span>
+					</div>
+				</div>
+
+				<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;font-weight: bold;">
+						<span>
+										ĐIỀU 7: ĐIỀU KHOẢN CHUNG
+									</span>
+					</div>
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<span>
+							- Các điều khoản và điều kiện khác không nêu trong hợp đồng này được các bên thực hiện theo quy định của Pháp luật về Hợp đồng kinh tế. Mọi thay đổi, bổ sung các điều khoản của hợp đồng này phải lập thành văn bản là Phụ lục hợp đồng.
+							<br />
+							- Sau ... ngày kể từ ngày hai Bên đã thực hiện đầy đủ và nghiêm chỉnh các Điều khoản trong Hợp đồng này, mà không có vướng mắc gì thì Hợp đồng coi như được thanh lý.
+						</span>
+					</div>
+				</div>
+
+				<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;font-weight: bold;">
+						<span>
+										ĐIỀU 8: HIỆU LỰC THI HÀNH
+									</span>
+					</div>
+					<div class="xs-col-12  text-left" style="padding-left: 0px; padding-right: 0px;font-size: 12pt;">
+						<span>
+							- Hợp đồng này có hiệu lực kể từ ngày ký, và chỉ được coi là kết thúc khi các Bên đã hoàn thành các nghĩa vụ của mình trong hợp đồng. Trong trường hợp Bên muốn sửa đổi các điều khoản trong hợp đồng thì phải thông báo cho Bên kia biết trước ít nhất 03 ngày và cùng nhau thỏa thuận lại những điểm cần thay đổi với sự đồng ý
+										của hai Bên.
+							<br />
+							- Hợp đồng này được lập thành 4 bản, mỗi bên giữ 2 bản có giá trị pháp lý như nhau.
+						</span>
+					</div>
+				</div>
+				<div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;page-break-inside: avoid;">
+					<table style="width: 100%;margin-top: 10px;">
+						<thead>
+							<tr class="signer-title">
+								<th class="text-center" style="width: 78px;height: 6px;font-size: 12pt;">
+									<span>ĐẠI DIỆN BÊN A</span>
+								</th>
+								<th class="text-center" style="width: 30px;height: 6px;"></th>
+								<th class="text-center" style="width: 75px;height: 6px;font-size: 12pt;">
+									<span>ĐẠI DIỆN BÊN B</span>
+								</th>
+							</tr>
+							<tr class="signer-title">
+								<th class="text-center" style="width: 78px;height: 6px;font-size: 12pt;">
+									<span>Giám đốc</span>
+								</th>
+								<th class="text-center" style="width: 30px;height: 6px;"></th>
+								<th class="text-center" style="width: 75px;height: 6px;font-size: 12pt;">
+									<span>Giám đốc</span>
+								</th>
+							</tr>
+							<tr class="signer-sub-title">
+								<td class="text-center" style="width: 78px;height: 6px;font-size: 12pt;">
+									<span>(Ký, họ tên, đóng dấu)</span>
+								</td>
+								<td class="text-center" style="width: 30px;height: 6px;"></td>
+								<td class="text-center" style="width: 75px;height: 6px;font-size: 12pt;">
+									<span>(Ký, họ tên, đóng dấu)</span>
+								</td>
+							</tr>
+						</thead>
+					</table>
+
+					<table style="width: 100%;margin-top: 95px;">
+						<thead>
+							<tr class="signer-name">
+								<th class="text-center" style="width: 78px;height: 6px;font-size: 12pt;">
+									<span t-esc="o.get_giam_doc()" />
+								</th>
+								<th class="text-center" style="width: 30px;height: 6px;"></th>
+								<th class="text-center" style="width: 75px;height: 6px;12pt;">
+									<span t-if="o.NGUOI_DAI_DIEN" t-field="o.NGUOI_DAI_DIEN" />
+								</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+		</t>
+	</template>
+	<template id="template_hopdongban4e369ad8">
+		<t t-call="web.html_container">
+			<t t-foreach="docs" t-as="o">
+				<t t-call="bao_cao.hopdongban4e369ad8" />
+			</t>
+		</t>
+	</template>
+	<data>
+		<report string="Hợp đồng bán (Bên A bán)" id="action_template_hopdongban4e369ad8" model="bao.cao.hop.dong.ban" report_type="qweb-html" name="bao_cao.template_hopdongban4e369ad8" file="bao_cao.template_hopdongban4e369ad8" print_report_name="Hợp đồng bán (Bên A bán)" />
+	</data>
+</odoo>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_luong_tong_hop_cham_cong_tham_so_tham_so_form" model="ir.ui.view">
+            <field name="name">tien.luong.tong.hop.cham.cong.tham.so.form</field>
+            <field name="model">tien.luong.tong.hop.cham.cong.tham.so</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="6">
+                            <group col="2" colspan="2">
+                                <field name="tenLoaiChamCong" invisible="1" />
+                            </group>
+                            <group col="4" colspan="4">
+                                <field name="LOAI_CHAM_CONG" colspan="4" />
+                            </group>
+                        </group>
+                        <group col="6" string="Kỳ chấm công">
+                            <field name="THANG" colspan="3" />
+                            <field name="NAM" colspan="3" options="{'showSpinButtons': true}" />
+                        </group>
+                        <notebook>
+                            <page string="Đơn vị">
+                                <field name="DON_VI_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false" report="true">
+                                        <field name="MA_DON_VI" string="Mã đơn vị" />
+                                        <field name="TEN_DON_VI" string="Tên đơn vị" />
+                                        <field name="CAP_TO_CHUC" string="Cấp tổ chức" />
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <group col="2" colspan="2">
+                            <field name="TEN_BANG_TONG_HOP_CHAM_CONG" colspan="2" string="Tên bảng tổng hợp chấm công" options="{'label_width': '20%'}" />
+                            <field name="TONG_HOP_TU_CAC_BANG_CHAM_CONG_CHI_TIET" nolabel="1" class="o_td_label" colspan="2" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

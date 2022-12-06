@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_khoan_muc_cp_form" model="ir.ui.view">
+            <field name="name">danh.muc.khoan.muc.cp.form</field>
+            <field name="model">danh.muc.khoan.muc.cp</field>
+            <field name="arch" type="xml">
+                <form string="Khoản mục CP" create="false" edit="false">
+                    <sheet>
+                        <group col="2">
+                            <field name="MA_KHOAN_MUC_CP" colspan="2" string="Mã (*)"/>
+                            <field name="TEN_KHOAN_MUC_CP" colspan="2" string="Tên (*)"/>
+                            <field name="parent_id" colspan="2" options="{'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục CP', 'Tên khoản mục CP'], 'displays': ['TEN_KHOAN_MUC_CP']}"/>
+                            <field name="DIEN_GIAI" colspan="2"/>
+                            <field name="name"  invisible="True"/>
+                            <!-- <field name="active"/> -->
+                        </group>
+
+                        <!--Master/Detail form-->
+                            <field name="active"/>
+                        
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_danh_muc_khoan_muc_cp_tree" model="ir.ui.view">
+            <field name="name">danh.muc.khoan.muc.cp.tree</field>
+            <field name="model">danh.muc.khoan.muc.cp</field>
+            <field name="arch" type="xml">
+                <tree string="Khoản mục CP" hierarchy="parent_id" create="false">
+                    <field name="MA_KHOAN_MUC_CP" string="Mã khoản mục chi phí"/>
+                    <field name="TEN_KHOAN_MUC_CP" string="Tên khoản mục chi phí"/>
+                    <field name="DIEN_GIAI"/>
+                    <field name="active"/>
+                    <field name="parent_id" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_danh_muc_khoan_muc_cp" model="ir.actions.act_window">
+            <field name="name">Khoản mục CP</field>
+            <field name="res_model">danh.muc.khoan.muc.cp</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'import_enabled': False}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_danh_muc_khoan_muc_cp_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_khoan_muc_cp_tree"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_khoan_muc_cp"/>
+        </record>
+
+        <record id="action_danh_muc_khoan_muc_cp_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_khoan_muc_cp_form"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_khoan_muc_cp"/>
+        </record>
+
+        <!-- <menuitem name="Khoản mục CP"
+                  action="danh_muc.open_menu_danh_muc_khoan_muc_cp"
+                  id="menu_danh_muc_khoan_muc_cp"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

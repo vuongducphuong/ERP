@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_purchase_ex_doi_tru_chung_tu_nhieu_doi_tuong_tham_so_form" model="ir.ui.view">
+            <field name="name">purchase.ex.doi.tru.chung.tu.nhieu.doi.tuong.form</field>
+            <field name="model">purchase.ex.doi.tru.chung.tu.nhieu.doi.tuong</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="2">
+                            <field name="STEP" invisible="1"/>
+                            <field name="IS_TY_GIA" invisible="1" />
+                        </group>
+                        <group col="8" string="1. Chọn nhà cung cấp cần đối trừ" attrs="{'invisible': [('STEP', '=',2)]}"> 
+                                <field name="TAI_KHOAN_PHAI_TRA_ID" string="TK phải trả" domain="[('SO_TAI_KHOAN', '=like', '331%')]" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                                <field name="NGAY_DOI_TRU"/>
+                                <field name="currency_id" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+                                <button name="btn_lay_du_lieu" string="Lấy dữ liệu" class="btn btn-primary" type="object"/>
+                            </group>
+
+
+                            <group col="8" string="2. Kết quả đối trừ" attrs="{'invisible': [('STEP', '=',1)]}">
+                                <field name="TAI_KHOAN_PHAI_TRA_ID" string="TK phải trả" domain="[('SO_TAI_KHOAN', '=like', '331%')]" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                                <field name="NGAY_DOI_TRU"/>
+                                <field name="currency_id" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+                                <!-- <button name="btn_lay_du_lieu" string="Lấy dữ liệu" class="btn btn-primary" type="object"/> -->
+                            </group>
+                    
+                        <notebook>
+                            <page string="">
+                                <field name="PURCHASE_EX_DOI_TRU_CHUNG_TU_NHIEU_DOI_TUONG_CHI_TIET_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" report="true" options="{'header_struct': 
+                                                            [['Chứng từ thanh toán', ['SO_CHUA_DOI_TRU_THANH_TOAN','SO_CHUA_DOI_TRU_QUY_DOI_THANH_TOAN','SO_DOI_TRU_THANH_TOAN','SO_DOI_TRU_QUY_DOI_THANH_TOAN']],
+                                                            ['Chứng từ công nợ', ['SO_CHUA_DOI_TRU_CONG_NO','SO_CHUA_DOI_TRU_QUY_DOI_CONG_NO','SO_DOI_TRU_CONG_NO','SO_DOI_TRU_QUY_DOI_CONG_NO']]
+                                                            ]}">
+                                        <field name="AUTO_SELECT" invisible="1"/>
+                                        <field name="MA_NHA_CUNG_CAP_ID" readonly="1"/>
+                                        <field name="TEN_NHA_CUNG_CAP" readonly="1"/>
+                                        <field name="NHOM_NHA_CUNG_CAP_ID" readonly="1" attrs="{'column_invisible': [('parent.STEP', '!=' , 1)]}"/>
+                                        <field name="MA_SO_THUE" readonly="1" attrs="{'column_invisible': [('parent.STEP', '!=' , 1)]}"/>
+                                        <field name="DIA_CHI" readonly="1" attrs="{'column_invisible': [('parent.STEP', '!=' , 1)]}"/>
+                                        <field name="SO_THANH_TOAN_CHUA_DOI_TRU" readonly="1" sum="tong so thanh toan chua doi tru" attrs="{'column_invisible': [('parent.STEP', '!=' , 1)]}"/>
+                                        <field name="SO_CONG_NO_CHUA_DOI_TRU" readonly="1" sum="tong so cong no chua doi tru" attrs="{'column_invisible': [('parent.STEP', '!=' , 1)]}"/>
+
+                                        <field name="SO_CHUA_DOI_TRU_THANH_TOAN" sum="tong so chua doi tru thanh toan" attrs="{'column_invisible': [('parent.STEP', '!=' , 2)]}"/>
+                                        <field name="SO_CHUA_DOI_TRU_QUY_DOI_THANH_TOAN" sum="tong so chua doi tru quy doi thanh toan" attrs="{'column_invisible': ['|',('parent.STEP', '!=' , 2),('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="SO_DOI_TRU_THANH_TOAN" sum="tong so doi tru thanh toan" attrs="{'column_invisible': [('parent.STEP', '!=' , 2)]}"/>
+                                        <field name="SO_DOI_TRU_QUY_DOI_THANH_TOAN" sum="tong so doi tru quy doi thanh toan" attrs="{'column_invisible': ['|',('parent.STEP', '!=' , 2),('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="SO_CHUA_DOI_TRU_CONG_NO" sum="tong so chua doi tru cong no" attrs="{'column_invisible': [('parent.STEP', '!=' , 2)]}"/>
+                                        <field name="SO_CHUA_DOI_TRU_QUY_DOI_CONG_NO" sum="tong so chua doi tru quy doi cong no" attrs="{'column_invisible': ['|',('parent.STEP', '!=' , 2),('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="SO_DOI_TRU_CONG_NO" sum="tong so doi tru cong no" attrs="{'column_invisible': [('parent.STEP', '!=' , 2)]}"/>
+                                        <field name="SO_DOI_TRU_QUY_DOI_CONG_NO" sum="tong so doi tru quy doi cong no" attrs="{'column_invisible': ['|',('parent.STEP', '!=' , 2),('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="CHENH_LECH_TY_GIA" sum="tong chenh lech ty gia" attrs="{'column_invisible': [('parent.STEP', '!=' , 2)]}"/>
+                                        <field name="TK_XU_LY_CHENH_LECH_ID" string="TK xử lý chênh lệch" attrs="{'column_invisible': [('parent.STEP', '!=' , 2)]}"/>
+                                    </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                        <footer>
+                            <button name="btn_quay_lai" string="Quay lại" attrs="{'readonly': [('STEP', '!=' , 2)]}"/>
+                            <button name="btn_thuc_hien" string="Thực hiện" class="btn btn-primary" type="object"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_purchase_ex_doi_tru_chung_tu_nhieu_doi_tuong_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Đối trừ chứng từ nhiều đối tượng</field>
+            <field name="res_model">purchase.ex.doi.tru.chung.tu.nhieu.doi.tuong</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_purchase_ex_doi_tru_chung_tu_nhieu_doi_tuong_tham_so_form"/>
+        </record>
+
+        <record id="action_open_purchase_ex_doi_tru_chung_tu_nhieu_doi_tuong_form" model="ir.actions.act_window">
+            <field name="name">Đối trừ chứng từ nhiều đối tượng</field>
+            <field name="res_model">purchase.ex.doi.tru.chung.tu.nhieu.doi.tuong</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="Đôí trừ chứng từ nhiều đối tượng"
+                  action="purchase_ex.open_purchase_ex_doi_tru_chung_tu_nhieu_doi_tuong_tham_so_form"
+                  id="menu_purchase_ex_doi_tru_chung_tu_nhieu_doi_tuong"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

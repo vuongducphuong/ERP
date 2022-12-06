@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_stock_ex_tinh_gia_xuat_kho_chon_vat_tu_hang_hoa_form_tham_so_form" model="ir.ui.view">
+            <field name="name">stock.ex.tinh.gia.xuat.kho.chon.vat.tu.hang.hoa.form.form</field>
+            <field name="model">stock.ex.tinh.gia.xuat.kho.chon.vat.tu.hang.hoa.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="tinh_gia_tri_xuat_kho_chon_vat_tu_hang_hoa_form">
+                    <sheet>
+                        <group col="4">
+                        </group>
+                        <notebook>
+                            <page string="">
+                                <field name="STOCK_EX_TINH_GIA_XUAT_KHO_CHON_VAT_TU_HANG_HOA_CHI_TIET_FORM_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" report="true" delete="false">
+                                    <field name="AUTO_SELECT" invisible ="1"/>
+                                    <field name="MA_VAT_TU_HANG_HOA_ID"/>
+                                    <field name="TEN_VAT_TU_HANG_HOA" />
+                                    <field name="NHOM_VAT_TU_HANG_HOA_ID" />
+                                    
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                        <!-- <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer> -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_stock_ex_tinh_gia_xuat_kho_chon_vat_tu_hang_hoa_form_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Tính giá xuất kho chọn vật tư hàng hóa tính giá xuất form</field>
+            <field name="res_model">stock.ex.tinh.gia.xuat.kho.chon.vat.tu.hang.hoa.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_stock_ex_tinh_gia_xuat_kho_chon_vat_tu_hang_hoa_form_tham_so_form"/>
+        </record>
+
+        <record id="action_open_stock_ex_tinh_gia_xuat_kho_chon_vat_tu_hang_hoa_form_form" model="ir.actions.act_window">
+            <field name="name">Tính giá xuất kho chọn vật tư hàng hóa tính giá xuất form</field>
+            <field name="res_model">stock.ex.tinh.gia.xuat.kho.chon.vat.tu.hang.hoa.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="Tính giá xuất kho chọn vật tư hàng hóa tính giá xuất form"
+                  action="stock_ex.open_stock_ex_tinh_gia_xuat_kho_chon_vat_tu_hang_hoa_tinh_gia_xuat_form_tham_so_form"
+                  id="menu_stock_ex_tinh_gia_xuat_kho_chon_vat_tu_hang_hoa_tinh_gia_xuat_form"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

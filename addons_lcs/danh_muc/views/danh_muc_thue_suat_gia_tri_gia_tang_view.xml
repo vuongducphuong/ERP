@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_thue_suat_gia_tri_gia_tang_form" model="ir.ui.view">
+            <field name="name">danh.muc.thue.suat.gia.tri.gia.tang.form</field>
+            <field name="model">danh.muc.thue.suat.gia.tri.gia.tang</field>
+            <field name="arch" type="xml">
+                <form string="Thuế GTGT">
+                    <sheet>
+                        <group col="4">
+                            <field name="TEN_THUE" string="Tên thuế GTGT"/>
+                            <field name="DIEN_GIAI_THUE" string="Diễn giải"/>
+                            <field name="PHAN_TRAM_THUE_GTGT"/>
+                        </group>
+
+                        <!--Master/Detail form-->
+                        
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_danh_muc_thue_suat_gia_tri_gia_tang_tree" model="ir.ui.view">
+            <field name="name">danh.muc.thue.suat.gia.tri.gia.tang.tree</field>
+            <field name="model">danh.muc.thue.suat.gia.tri.gia.tang</field>
+            <field name="arch" type="xml">
+                <tree string="Thuế GTGT">
+                    <field name="TEN_THUE"/>
+                    <field name="DIEN_GIAI_THUE"/>
+                    <field name="PHAN_TRAM_THUE_GTGT"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_danh_muc_thue_suat_gia_tri_gia_tang" model="ir.actions.act_window">
+            <field name="name">Thuế GTGT</field>
+            <field name="res_model">danh.muc.thue.suat.gia.tri.gia.tang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_danh_muc_thue_suat_gia_tri_gia_tang_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_thue_suat_gia_tri_gia_tang_tree"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_thue_suat_gia_tri_gia_tang"/>
+        </record>
+
+        <record id="action_danh_muc_thue_suat_gia_tri_gia_tang_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_thue_suat_gia_tri_gia_tang_form"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_thue_suat_gia_tri_gia_tang"/>
+        </record>
+
+        <!-- <menuitem name="Thuế suất giá trị gia tăng"
+                  action="danh_muc.open_menu_danh_muc_thue_suat_gia_tri_gia_tang"
+                  id="menu_danh_muc_thue_suat_gia_tri_gia_tang"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        
+    </data>
+</odoo>

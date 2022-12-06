@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tong_hop_bctc_kiem_tra_bang_ke_toan_khong_can_form_tham_so_form" model="ir.ui.view">
+            <field name="name">tong.hop.bctc.kiem.tra.bang.ke.toan.khong.can.form.form</field>
+            <field name="model">tong.hop.bctc.kiem.tra.bang.ke.toan.khong.can.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." >
+                    <sheet>
+                        <group col="2"></group>
+                        <!--<notebook>
+                            <page string="Chi tiết">
+                                <field name="FIELD_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>-->
+                        <!--Master/Detail form-->
+                        <notebook>
+                          <page string="1.Số dư ban đầu của TK nhập chưa cân">
+                              <group col="2">
+                                  <field name="TONG_DU_NO"/>
+                                  <field name="TONG_DU_CO"/>
+                                  <field name="CHENH_LECH"/>
+                              </group>
+                          </page>
+                            <page string="2. Các TK doanh thu,CP vẫn còn số dư đầu kỳ hoặc cuối kỳ do chưa kết chuyển lãi lỗ">
+                                <field name="TONG_HOP_BCTC_KIEM_TRA_KE_TOAN_KO_CAN_CHI_TIET_LAI_LO_FORM_IDS" mode="tree">
+                                  <tree editable="bottom" create ='false'
+                                          options="{'header_struct': [['Đầu kỳ', ['DU_NO_DAU_KY','DU_CO_DAU_KY']],
+                                                                      ['Cuối kỳ', ['DU_NO_CUOI_KY','DU_CO_CUOI_KY'] ]]}">
+
+                                    <field name="TAI_KHOAN_ID"/>
+                                    <field name="DU_NO_DAU_KY" string="Dư nợ" sum="tong du no dau ky"/>
+                                    <field name="DU_CO_DAU_KY" string="Dư có" sum="tong du co dau ky"/>
+                                    <field name="DU_NO_CUOI_KY" string="Dư nợ" sum="tong du no cuoi ky"/>
+                                    <field name="DU_CO_CUOI_KY" string="Dư có" sum="tong du co cuoi ky"/>
+                                  </tree>
+                                </field>
+                              </page>
+                            <page string="3. Công thức thiết lập cho báo cáo bị trùng lập ở nhiều chỉ tiêu">
+                                <field name="TONG_HOP_BCTC_KIEM_TRA_KE_TOAN_KO_CAN_CHI_TIET_CHI_TIEU_FORM_IDS" mode="tree">
+                                  <tree editable="bottom" create ='false'>
+                                    <field name="TAI_KHOAN_ID"/>
+                                    <field name="MA_CHI_TIEU"/>
+                                    <field name="TEN_CHI_TIEU"/>
+                                    <field name="CONG_THUC"/>
+                                  </tree>
+                                </field>
+                              </page>
+                            <page string="4. Công thức thiết lập cho báo cáo chưa đúng với số dư của tài khoản">
+                                <field name="TONG_HOP_BCTC_KIEM_TRA_KE_TOAN_KO_CAN_CHI_TIET_TK_FORM_IDS" mode="tree">
+                                  <tree editable="bottom" create ='false' 
+                                          options="{'header_struct': [['Đầu kỳ', ['DU_NO_DAU_KY','DU_CO_DAU_KY']],
+                                                                      ['Cuối kỳ', ['DU_NO_CUOI_KY','DU_CO_CUOI_KY'] ]]}">
+                                    <field name="TAI_KHOAN_ID"/>
+                                    <field name="DU_NO_DAU_KY" string="Dư nợ" sum="tong du no dau ky"/>
+                                    <field name="DU_CO_DAU_KY" string="Dư có" sum="tong du co dau ky"/>
+                                    <field name="DU_NO_CUOI_KY" string="Dư nợ" sum="tong du no cuoi ky"/>
+                                    <field name="DU_CO_CUOI_KY" string="Dư có" sum="tong du co cuoi ky"/>
+                                    <field name="NGUYEN_NHAN"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                       
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_tong_hop_bctc_kiem_tra_bang_ke_toan_khong_can_form_tham_so_form" model="ir.actions.act_window">
+            <field name="name">BCTC Kiểm tra bảng kế toán không cân form</field>
+            <field name="res_model">tong.hop.bctc.kiem.tra.bang.ke.toan.khong.can.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_tong_hop_bctc_kiem_tra_bang_ke_toan_khong_can_form_tham_so_form"/>
+        </record>
+
+        <record id="action_open_tong_hop_bctc_kiem_tra_bang_ke_toan_khong_can_form_form" model="ir.actions.act_window">
+            <field name="name">BCTC Kiểm tra bảng kế toán không cân form</field>
+            <field name="res_model">tong.hop.bctc.kiem.tra.bang.ke.toan.khong.can.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="BCTC Kiểm tra bảng kế toán không cân form"
+                  action="tien_ich.open_tong_hop_bctc_kiem_tra_bang_ke_toan_khong_can_form_tham_so_form"
+                  id="menu_tong_hop_bctc_kiem_tra_bang_ke_toan_khong_can_form"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

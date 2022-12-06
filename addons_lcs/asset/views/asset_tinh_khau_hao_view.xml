@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_asset_tinh_khau_hao_form" model="ir.ui.view">
+            <field name="name">asset.tinh.khau.hao.form</field>
+            <field name="model">asset.tinh.khau.hao</field>
+            <field name="arch" type="xml">
+                <form string="Tính khấu hao" cloudify_js="tinh_khau_hao_form_view">
+                    <header>
+                        <button name="action_ghi_so" string="Ghi sổ" type="object" class="oe_highlight oe_read_only" states="chua_ghi_so" />
+                        <button id="action_bo_ghi_so" string="Bỏ ghi" states="da_ghi_so" />
+                        <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so" />
+                        <field name="LOAI_CHUNG_TU" invisible="1" />
+                    </header>
+                    <sheet>
+                        <group col="6">
+                            <group colspan="4" col="4" string="Thông tin chung">
+                                <group colspan="4" col="4">
+                                    <field name="DIEN_GIAI" colspan="4" />
+                                </group>
+                                <group colspan="2" col="4">
+                                    <field name="THANG" readonly="1" colspan="2"/>
+                                    <field name="NAM" readonly="1" colspan="2" options="{'showSpinButtons': true}"/>
+                                    <field name="THAM_CHIEU"  invisible="1" readonly="1" />
+                                </group>                                                             
+                            </group>
+                            <group colspan="2" string="Chứng từ">
+                                <field name="NGAY_HACH_TOAN" />
+                                <field name="NGAY_CHUNG_TU" />
+                                <field name="SO_CHUNG_TU" />
+                                <field name="STT_CHUNG_TU" invisible="1"/>
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1.Tính khấu hao">
+                                <field name="ASSET_TINH_KHAU_HAO_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false">
+                                        <field name="MA_TAI_SAN_ID" readonly="1"/>
+                                        <field name="TEN_TAI_SAN" readonly="1" />
+                                        <field name="LOAI_TAI_SAN_ID" readonly="1"/>
+                                        <field name="DON_VI_SU_DUNG_ID" readonly="1" />
+                                        <field name="GIA_TRI_KH_THANG" sum="Total amount" readonly="1" string="Giá trị KH tháng"/>
+                                        <field name="GIA_TRI_TINH_VAO_CP_HOP_LY" sum="Total amount" string="Giá trị tính vào CP hợp lý" />
+                                        <field name="GIA_TRI_TINH_VAO_CP_KHONG_HOP_LY" sum="Total amount" string="Giá trị tính vào CP không hợp lý" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="2.Phân bổ">
+                                <field name="ASSET_TINH_KHAU_HAO_PHAN_BO_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" options="{'group_by': ['MA_TAI_SAN_ID']}">
+                                        <field name="MA_TAI_SAN_ID" />
+                                        <field name="TEN_TAI_SAN" readonly="1" />
+                                        <field name="DON_VI_SU_DUNG_ID" readonly="1" />
+                                        <field name="GIA_TRI_KH_THANG" string="Giá trị KH tháng" readonly="1" />
+                                        <field name="DOI_TUONG_PHAN_BO_ID" />
+                                        <field name="TEN_DOI_TUONG_PHAN_BO" readonly="1" />
+                                        <field name="TY_LE" sum="Total amount" />
+                                        <field name="CHI_PHI_PHAN_BO" sum="Total amount" />
+                                        <field name="TK_NO_ID" string="TK chi phí" />
+                                        <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục', 'Tên khoản mục'], 'displays': ['MA_KHOAN_MUC_CP']}" string="Khoản mục CP" />
+                                        <field name="MA_THONG_KE_ID" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="3.Hạch toán">
+                                <field name="ASSET_TINH_KHAU_HAO_HACH_TOAN_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" >
+                                        <field name="DIEN_GIAI" />
+                                        <field name="TK_NO_ID" readonly="1" string="TK Nợ" />
+                                        <field name="TK_CO_ID" readonly="1" string="TK Có" />
+                                        <field name="SO_TIEN" readonly="1" sum="Total amount" />
+                                        <field name="DOI_TUONG_NO_ID" string="Đối tượng Nợ"/>
+                                        <field name="TEN_DOI_TUONG_NO" readonly="1" string="Tên đối tượng Nợ"/>
+                                        <field name="DOI_TUONG_CO_ID" string="Đối tượng Có" />
+                                        <field name="TEN_DOI_TUONG_CO" readonly="1" string="Tên đối tượng Có" />
+                                        <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục', 'Tên khoản mục'], 'displays': ['MA_KHOAN_MUC_CP']}" readonly="1" string="Khoản mục CP" />
+                                        <field name="DON_VI_ID" readonly="1" string="Đơn vị" />
+                                        <field name="DOI_TUONG_THCP_ID" readonly="1" string="Đối tượng THCP" />
+                                        <field name="CONG_TRINH_ID" readonly="1" string="Công trình"/>
+                                        <field name="DON_DAT_HANG_ID" readonly="1" string="Đơn đặt hàng"/>
+                                        <field name="HOP_DONG_BAN_ID" readonly="1" string="Hợp đồng bán"/>
+                                        <field name="CP_KHONG_HOP_LY" readonly="1" string="CP không hợp lý" />
+                                        <field name="MA_THONG_KE_ID" string="Mã thống kê"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_asset_tinh_khau_hao_tree" model="ir.ui.view">
+            <field name="name">asset.tinh.khau.hao.tree</field>
+            <field name="model">asset.tinh.khau.hao</field>
+            <field name="arch" type="xml">
+                <tree string="Tính khấu hao" cloudify_js="tinh_khau_hao_list_view" decoration-info="state=='chua_ghi_so'">
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="DIEN_GIAI" />
+                    <field name="SO_TIEN" sum="Total amount" />
+                    <field name="CHI_NHANH_ID" />
+					<field name="state" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_asset_tinh_khau_hao" model="ir.actions.act_window">
+            <field name="name">Tính khấu hao</field>
+            <field name="res_model">asset.tinh.khau.hao</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_asset_tinh_khau_hao_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_asset_tinh_khau_hao_tree" />
+            <field name="act_window_id" ref="open_menu_asset_tinh_khau_hao" />
+        </record>
+        <record id="action_asset_tinh_khau_hao_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_asset_tinh_khau_hao_form" />
+            <field name="act_window_id" ref="open_menu_asset_tinh_khau_hao" />
+        </record>
+        <!-- <menuitem name="Tính khấu hao"
+                  action="asset.open_menu_asset_tinh_khau_hao"
+                  id="menu_asset_tinh_khau_hao"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_asset_tinh_khau_hao_1" model="ir.sequence">
+            <field name="name">asset_tinh_khau_hao SO_CHUNG_TU sequence</field>
+            <field name="code">asset_tinh_khau_hao_SO_CHUNG_TU</field>
+            <field name="prefix">KH</field>
+            <field name="padding">5</field>
+        </record>
+        <record id="sequence_asset_tinh_khau_hao_2" model="ir.sequence">
+            <field name="name">asset STT_CHUNG_TU sequence</field> 
+            <field name="code">asset_STT_CHUNG_TU</field>
+            <field name="prefix"></field> 
+            <field name="padding">10</field>
+        </record>
+    </data>
+</odoo>

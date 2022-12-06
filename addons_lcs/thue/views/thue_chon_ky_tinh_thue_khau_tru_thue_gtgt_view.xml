@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_thue_chon_ky_tinh_thue_khau_tru_thue_gtgt_tham_so_form" model="ir.ui.view">
+            <field name="name">thue.chon.ky.tinh.thue.khau.tru.thue.gtgt.form</field>
+            <field name="model">thue.chon.ky.tinh.thue</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_ky_tinh_thue_khau_tru_thue_gtgt_form_view">
+                    <sheet>
+                        <group colspan="4">
+                            <field name="LOAI_TO_KHAI" widget="radio" options="{'horizontal': True, 'alway_edit': True}" colspan="4" string="Loại tờ khai" />
+                            <field name="THANG" col="2" attrs="{'invisible': [('LOAI_TO_KHAI', '=', 'TO_KHAI_QUY')]}" />
+                            <field name="NAM" col="2" attrs="{'invisible': [('LOAI_TO_KHAI', '=', 'TO_KHAI_QUY')]}" />
+                            <field name="QUY" col="2" attrs="{'invisible': [('LOAI_TO_KHAI', '=', 'TO_KHAI_THANG')]}" />
+                            <field name="NAM" col="2" attrs="{'invisible': [('LOAI_TO_KHAI', '=', 'TO_KHAI_THANG')]}" />
+                        </group>
+                        <footer>
+                            <button id="btn_dong_y" string="Đồng ý" class="btn btn-primary" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_thue_chon_ky_tinh_thue_khau_tru_thue_gtgt_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Chọn kỳ tính thuế </field>
+            <field name="res_model">thue.chon.ky.tinh.thue</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="size">medium</field>
+            <field name="view_id" ref="view_thue_chon_ky_tinh_thue_khau_tru_thue_gtgt_tham_so_form" />
+        </record>
+        <record id="action_open_thue_chon_ky_tinh_thue_khau_tru_thue_gtgt_form" model="ir.actions.act_window">
+            <field name="name">Chọn kỳ tính thuế </field>
+            <field name="res_model">thue.chon.ky.tinh.thue</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_asset_ghi_tang_form" model="ir.ui.view">
+            <field name="name">asset.ghi.tang.form</field>
+            <field name="model">asset.ghi.tang</field>
+            <field name="arch" type="xml">
+                <form string="Tài sản cố định Ghi tăng" cloudify_js="ghi_tang_tai_san_co_dinh_view">
+                    <header>
+                        <button name="action_ghi_so" string="Ghi sổ" type="object" class="oe_highlight oe_read_only" states="chua_ghi_so" />
+                        <button id="action_bo_ghi_so" string="Bỏ ghi" states="da_ghi_so" />
+                        <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so" />
+                        <field name="LOAI_CHUNG_TU" invisible="1" />
+                        <field name="CHON_CHUNG_TU_JSON" invisible="1" />
+                        <!-- <field name="THOI_GIAN_SU_DUNG_THANG_LIST" invisible="1" /> -->
+                    </header>
+                    <sheet>
+                        <notebook>
+                            <page string="1. TT chung">
+                                <group col="12">
+                                    <group colspan="6" col="6">
+                                        <group colspan="6" col="6">
+                                            <field name="SO_CT_GHI_TANG" colspan="6" string="Số CT GT (*)" required="True" />
+                                        </group>
+                                        <group colspan="3" col="3">
+                                            <field name="NGAY_GHI_TANG" colspan="3" string="Ngày ghi tăng(*)" required="True" />
+                                        </group>
+                                        <group colspan="6" col="6">
+                                            <field name="MA_TAI_SAN" colspan="6" string="Mã tài sản (*)" required="True" />
+                                            <field name="TEN_TAI_SAN" colspan="6" string="Tên tài sản(*)" required="True" />
+                                            <field name="LOAI_TAI_SAN_ID" colspan="6" string="Loại tài sản(*)" required="True" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã TSCĐ', 'Tên TSCĐ'],'displays': ['TEN']}" />
+                                        </group>
+                                    </group>
+                                    <group colspan="6" col="6">
+                                        <field name="DON_VI_SU_DUNG_ID" colspan="6" string="Đơn vị SD (*)" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" required="True" />
+                                        <field name="NHA_SAN_XUAT" colspan="6" />
+                                        <field name="NAM_SAN_XUAT" colspan="3" options="{'showSpinButtons': true}" />
+                                        <field name="SO_HIEU" colspan="3" />
+                                        <field name="NUOC_SAN_XUAT" colspan="6" />
+                                        <field name="CONG_SUAT" colspan="6" />
+                                    </group>
+                                    <group colspan="12" col="12">
+                                        <field name="THOI_GIAN_BAO_HANH" colspan="12" string="Thời gian BH" />
+                                        <field name="DIEU_KIEN_BAO_HANH" colspan="12" string="Điều kiện BH" />
+                                    </group>
+                                    <group colspan="12" col="12">
+                                        <field name="DOI_TUONG_ID" colspan="4" domain="[('LA_NHA_CUNG_CAP','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã NCC', 'Tên NCC','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nha_cung_cap'}" />
+                                        <field name="TEN_NCC" colspan="8" string="Tên NCC" />
+                                    </group>
+                                    <group colspan="8" col="8">
+                                        <field name="BB_GIAO_NHAN_SO" colspan="4" string="BB giao nhận số" />
+                                        <field name="NGAY" colspan="4" />
+                                    </group>
+                                    <group colspan="8" col="8">
+                                        <field name="TINH_TRANG_GHI_TANG" string="Tình trạng GT" colspan="4" />
+                                        <field name="CHAT_LUONG_HIEN_THOI" string="Chất lượng HT" colspan="4" />
+                                    </group>
+                                    <group colspan="12" col="12">
+                                        <field name="KHONG_TINH_KHAU_HAO" colspan="12" nolabel="1" />
+                                        <field name="DINH_KEM" readonly="1" />
+                                        <field name="KHAI_BAO_DAU_KY" invisible="1" />
+                                        <field name="STT_CHUNG_TU" invisible="1"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="2. TT khấu hao">
+                                <group col="6" string="Tài khoản">
+                                    <group colspan="2" col="2">
+                                        <field name="TK_NGUYEN_GIA_ID" colspan="2" string="TK nguyên giá (*)" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" required="True" />
+                                        <field name="TK_KHAU_HAO_ID" colspan="2" string="TK khấu hao (*)" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" required="True" />
+                                    </group>
+                                </group>
+                                <group col="12" string="Nguyên giá và khấu hao">
+                                    <group colspan="6" col="6">
+                                        <group colspan="6" col="6">
+                                            <field name="NGUYEN_GIA" colspan="6" />
+                                            <field name="GIA_TRI_TINH_KHAU_HAO" string="Giá trị tính KH" colspan="6" />
+                                        </group>
+                                        <group colspan="3" col="3">
+                                            <field name="NGAY_BAT_DAU_TINH_KH" colspan="3" string="Ngày bắt đầu tính KH (*)" />
+                                        </group>
+                                        <group colspan="6" col="6">
+                                            <field name="THOI_GIAN_SU_DUNG" colspan="3"  string='Thời gian SD'/>
+                                            <field name="SO_THOI_GIAN_SU_DUNG_NGUYEN_GOC" colspan="3" string='Số thời gian SD'/>
+                                        </group>
+                                        <group colspan="6" col="6" attrs="{'invisible': [('KHAI_BAO_DAU_KY', '=', False),('LOAI_CHUNG_TU', '=', 250)]}">
+                                            <field name="DVT_THOI_GIAN_SU_DUNG_CON_LAI" colspan="3" string="Thời gian SD còn lại" />
+                                            <field name="THOI_GIAN_SU_DUNG_CON_LAI_NGUYEN_GOC" colspan="3" string="Số thời gian SD còn lại" />
+                                        </group>
+                                    </group>
+                                    <group colspan="6" col="6">
+                                        <field name="TY_LE_TINH_KHAU_HAO_THANG" colspan="6" string="Tỷ lệ tính KH tháng (%)" />
+                                        <field name="TY_LE_TINH_KHAU_HAO_NAM" colspan="6" string="Tỷ lệ tính KH năm (%)" readonly="1"/>
+                                        <field name="GIA_TRI_TINH_KHAU_HAO_THANG" colspan="6" string="Giá trị KH tháng"/>
+                                        <field name="GIA_TRI_KHAU_HAO_NAM" colspan="6" string="Giá trị KH năm" readonly="1"/>
+                                        <field name="HAO_MON_LUY_KE" colspan="6" />
+                                        <field name="GIA_TRI_CON_LAI" colspan="6" readonly="1"/>
+                                        <!-- <field name="name" /> -->
+                                    </group>
+                                </group>
+                                <group col="4">
+                                    <field name="GH_GIA_TRI_TINH_KH_THEO_LUAT_THUE_TNDN" colspan="4" string="Giới hạn giá trị tính KH theo luật thuế TNDN" nolabel="1" class="o_td_label" />
+                                    <field name="GIA_TRI_TINH_KH_THEO_LUAT" string="Giá trị tính KH theo luật" attrs="{'readonly': [('GH_GIA_TRI_TINH_KH_THEO_LUAT_THUE_TNDN', '=', False)]}" />
+                                    <field name="GIA_TRI_KH_THANG_THEO_LUAT" string="Giá trị KH tháng theo luật" attrs="{'readonly': [('GH_GIA_TRI_TINH_KH_THEO_LUAT_THUE_TNDN', '=', False)]}" />
+                                </group>
+                            </page>
+                            <page string="3. Thiết lập phân bổ">
+                                <field name="ASSET_TAI_SAN_CO_DINH_THIET_LAP_PHAN_BO_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="DOI_TUONG_PHAN_BO_ID" />
+                                        <field name="TEN_DOI_TUONG_PHAN_BO" readonly="1" />
+                                        <field name="TY_LE_PB" string="Tỷ lệ PB (%)" sum="Tổng" />
+                                        <field name="TK_NO_ID" string="TK chi phí" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True, 'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục', 'Tên khoản mục'], 'displays': ['MA_KHOAN_MUC_CP']}" />
+                                        <field name="MA_THONG_KE_ID" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="4. Nguồn gốc hình thành">
+                                <group col="6">
+                                    <group colspan="4" col="6">
+                                        <field name="NGUON_GOC_HINH_THANH" colspan="4" string="Nguồn gốc HT" />
+                                        <button id="btn_chon_chung_tu" string="Chọn chứng từ..." class="btn btn-primary" colspan="2" />
+                                    </group>
+                                </group>
+                                <field name="ASSET_TAI_SAN_CO_DINH_NGUON_GOC_HINH_THANH_IDS" mode="tree">
+                                    <tree editable="bottom" create="false">
+                                        <field name="NGAY_CHUNG_TU" />
+                                        <field name="SO_CHUNG_TU" />
+                                        <field name="DIEN_GIAI" />
+                                        <field name="TK_NO_ID" string="TK Nợ" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="TK_CO_ID" string="TK Có" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="SO_TIEN" />
+                                        <field name="ID_GOC" invisible="1" />
+                                        <field name="MODEL_GOC" invisible="1" />
+                                    </tree>
+                                </field>
+                                <field name="DA_TAP_HOP_DU_CHUNG_TU" class="pull-right" />
+                            </page>
+                            <page string="5. Bộ phận cấu thành">
+                                <field name="ASSET_TAI_SAN_CO_DINH_BO_PHAN_CAU_THANH_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="BO_PHAN" />
+                                        <field name="DON_VI_TINH" />
+                                        <field name="SO_LUONG" sum="Tổng" />
+                                        <field name="THOI_HAN_BAO_HANH" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="6. Dụng cụ, phụ tùng kèm theo">
+                                <field name="ASSET_TAI_SAN_CO_DINH_DUNG_CU_PHU_TUNG_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="TEN_QUY_CACH_DUNG_CU_PHU_TUNG" />
+                                        <field name="DON_VI_TINH" />
+                                        <field name="SO_LUONG" sum="Tổng" />
+                                        <field name="GIA_TRI" sum="Tổng" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <field name="LOAI_CHUNG_TU" invisible="1" />
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_asset_ghi_tang_tree" model="ir.ui.view">
+            <field name="name">asset.ghi.tang.tree</field>
+            <field name="model">asset.ghi.tang</field>
+            <field name="arch" type="xml">
+                <tree string="Tài sản cố định Ghi tăng" decoration-info="state=='chua_ghi_so'">
+                    <field name="SO_CT_GHI_TANG" fixed_column="True" string="Số chứng từ" />
+                    <field name="NGAY_GHI_TANG" />
+                    <field name="MA_TAI_SAN" />
+                    <field name="TEN_TAI_SAN" />
+                    <field name="LOAI_TAI_SAN_ID" />
+                    <field name="DON_VI_SU_DUNG_ID" string="Tên đơn vị" />
+                    <field name="NGUYEN_GIA" sum="Tổng" />
+                    <field name="GIA_TRI_TINH_KHAU_HAO" sum="Tổng" />
+                    <field name="HAO_MON_LUY_KE" sum="Tổng" />
+                    <field name="GIA_TRI_CON_LAI" sum="Tổng" />
+                    <field name="SO_THOI_GIAN_SU_DUNG" />
+                    <field name="GIA_TRI_TINH_KHAU_HAO_THANG" string="Giá trị KH tháng" sum="Tổng" />
+                    <field name="TK_NGUYEN_GIA_ID" string="TK nguyên giá" />
+                    <field name="TK_KHAU_HAO_ID" string="TK khấu hao" />
+                    <field name="NGAY_BAT_DAU_TINH_KH" string="Ngày bắt đầu tính KH" />
+                    <field name="state" invisible="1" />
+                    <field name="CHI_NHANH_ID" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_asset_ghi_tang" model="ir.actions.act_window">
+            <field name="name">Tài sản cố định</field>
+            <field name="res_model">asset.ghi.tang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+          Nhấn vào đây để thêm mới!
+        </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_asset_ghi_tang_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_asset_ghi_tang_tree" />
+            <field name="act_window_id" ref="open_menu_asset_ghi_tang" />
+        </record>
+        <record id="action_asset_ghi_tang_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_asset_ghi_tang_form" />
+            <field name="act_window_id" ref="open_menu_asset_ghi_tang" />
+        </record>
+        <!-- <menuitem name="Tài sản cố định Ghi tăng" action="asset.open_menu_asset_ghi_tang" id="menu_asset_ghi_tang" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_asset_ghi_tang_1" model="ir.sequence">
+            <field name="name">asset_ghi_tang SO_CT_GHI_TANG sequence</field>
+            <field name="code">asset_ghi_tang_SO_CT_GHI_TANG</field>
+            <field name="prefix">GTTS</field>
+            <field name="padding">4</field>
+        </record>
+        <record id="sequence_asset_tinh_khau_hao_2" model="ir.sequence">
+            <field name="name">asset STT_CHUNG_TU sequence</field> 
+            <field name="code">asset_STT_CHUNG_TU</field>
+            <field name="prefix"></field> 
+            <field name="padding">10</field>
+        </record>
+    </data>
+</odoo>

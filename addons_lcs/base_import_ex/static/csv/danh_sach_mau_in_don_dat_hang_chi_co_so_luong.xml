@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+<MSC_ReportTemplate>
+	  <ReportID>SAOrderVoucher3520Quanity</ReportID>
+	  <ReportName>Đơn đặt hàng (chỉ có số lượng)</ReportName>
+	  <RefTypeList>/3520/</RefTypeList>
+	  <Description>Đơn đặt hàng (chỉ có số lượng)</Description>
+	  <ReportTitle>ĐƠN ĐẶT HÀNG (CHỈ CÓ SỐ LƯỢNG)</ReportTitle>
+</MSC_ReportTemplate>
+</DataSetImportExport>

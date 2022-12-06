@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="stock_ex assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/stock_ex/static/src/js/stock_ex_lenh_san_xuat_lap_pn_form_view.js"></script>
+                <script type="text/javascript" src="/stock_ex/static/src/js/stock_ex_tinh_gia_xuat_kho_view.js"></script>
+                <script type="text/javascript" src="/stock_ex/static/src/js/stock_ex_kiem_ke_vat_tu_hang_hoa_view.js"></script>
+                <script type="text/javascript" src="/stock_ex/static/src/js/stock_ex_nhap_xuat_kho_view.js"></script>
+                <script type="text/javascript" src="/stock_ex/static/src/js/stock_ex_nhap_kho_view.js"></script>
+                <script type="text/javascript" src="/stock_ex/static/src/js/stock_ex_chung_tu_luu_ma_quy_cach_view.js"></script>
+                <script type="text/javascript" src="/stock_ex/static/src/js/stock_ex_tinh_gia_tri_xuat_kho_chon_vat_tu_hang_hoa_form_view.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

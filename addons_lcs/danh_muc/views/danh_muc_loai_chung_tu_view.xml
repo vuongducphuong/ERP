@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_loai_chung_tu_form" model="ir.ui.view">
+            <field name="name">danh.muc.loai.chung.tu.form</field>
+            <field name="model">danh.muc.loai.chung.tu</field>
+            <field name="arch" type="xml">
+                <form string="Loại chứng từ">
+                    <sheet>
+                        <group col="4">
+                            <field name="PHAT_SINH_SELECTION" widget="radio" options="{'horizontal': True, 'alway_edit': True}" nolabel="1"/>
+                        </group>
+                        <group col="4">
+                            <field name="MA_LOAI" colspan="4"/>
+                            <field name="TEN_LOAI" colspan="4" />
+                            <field name="NHOM_LOAI_CHUNG_TU_ID" widget="many2many_tags" colspan="4" attrs="{'invisible': [('PHAT_SINH_SELECTION' ,'!=','PHAT_SINH_THEO_NHOM_CHUNG_TU')]}" options="{'columns': ['MA_NHOM_CHUNG_TU', 'TEN_NHOM_CHUNG_TU'], 'strings': ['Mã nhóm chứng từ', 'Tên nhóm chứng từ'],'displays': ['TEN_NHOM_CHUNG_TU']}"/>
+                            <field name="TK_NO_ID" attrs="{'invisible': [('PHAT_SINH_SELECTION' ,'!=','PHAT_SINH_THEO_TAI_KHOAN')]}" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                            <field name="TK_CO_ID" attrs="{'invisible': [('PHAT_SINH_SELECTION' ,'!=','PHAT_SINH_THEO_TAI_KHOAN')]}" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                            <field name="DIEN_GIAI" colspan="4" />
+                        </group>
+                        <field name="active" />
+                        <group col="4">
+                            
+                            <field name="name" invisible="True" />
+                        </group>
+                        <!--Master/Detail form-->
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_danh_muc_loai_chung_tu_tree" model="ir.ui.view">
+            <field name="name">danh.muc.loai.chung.tu.tree</field>
+            <field name="model">danh.muc.loai.chung.tu</field>
+            <field name="arch" type="xml">
+                <tree string="Loại chứng từ">
+                    <field name="MA_LOAI" string="Mã loại chứng từ"/>
+                    <field name="TEN_LOAI" string="Tên loại chứng từ"/>
+                    <field name="active" string="Theo dõi" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_danh_muc_loai_chung_tu" model="ir.actions.act_window">
+            <field name="name">Loại chứng từ</field>
+            <field name="res_model">danh.muc.loai.chung.tu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_danh_muc_loai_chung_tu_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_loai_chung_tu_tree" />
+            <field name="act_window_id" ref="open_menu_danh_muc_loai_chung_tu" />
+        </record>
+        <record id="action_danh_muc_loai_chung_tu_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_loai_chung_tu_form" />
+            <field name="act_window_id" ref="open_menu_danh_muc_loai_chung_tu" />
+        </record>
+        <!-- <menuitem name="Loại chứng từ" action="danh_muc.open_menu_danh_muc_loai_chung_tu" id="menu_danh_muc_loai_chung_tu" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

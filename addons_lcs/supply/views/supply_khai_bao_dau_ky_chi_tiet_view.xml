@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_supply_khai_bao_ccdc_dau_ky_chi_tiet_form" model="ir.ui.view">
+            <field name="name">supply.khai.bao.dau.ky.chi.tiet.form</field>
+            <field name="model">supply.khai.bao.dau.ky.chi.tiet</field>
+            <field name="arch" type="xml">
+                <form string="Khai báo ccdc đầu kỳ" cloudify_js="supply_khai_bao_dau_ky_chi_tiet_view">
+                    <sheet>
+                        <group col="4">
+                            <field name="MA_CCDC" string="Mã CCDC"/>
+                            <field name="TEN_CCDC" string="Tên CCDC"/>
+                            <field name="LOAI_CCDC_ID" string="Loại CCDC" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã loại CCDC', 'Tên loại CCDC'],'displays': ['TEN']}"/>
+                            <field name="NHOM_CCDC" string="Nhóm CCDC"/>
+                            <field name="LY_DO_GHI_TANG"/>
+                            <field name="DON_VI_TINH" string="ĐVT"/>
+                            <field name="SO_LUONG"/>
+                            <field name="NGAY_GHI_TANG"/>
+                            <field name="TONG_SO_KY_PB" string="Tổng kỳ PB"/>
+                            <field name="SO_KY_PB_CON_LAI" string="Số kỳ PB còn lại"/>
+                            <field name="GIA_TRI_CCDC" string="Giá trị CCDC"/>
+                            <field name="GIA_TRI_DA_PHAN_BO"/>
+                            <field name="GIA_TRI_CON_LAI"/>
+                            <field name="SO_TIEN_PHAN_BO_HANG_KY"/>
+                            <field name="TK_CHO_PHAN_BO_ID" string="TK chờ phân bổ" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                            <field name="THAM_CHIEU"  invisible="1" />
+                        </group>
+
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1. Đơn vị sử dụng">
+                                <field name="SUPPLY_KHAI_BAO_CCDC_DAU_KY_DON_VI_SD_IDS" mode="tree">
+                                  <tree editable="bottom">
+                                    <field name="MA_DON_VI_ID" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['MA_DON_VI']}"/>
+                                    <field name="TEN_DON_VI" readonly="1"/>
+                                    <field name="SO_LUONG" sum="Tổng"/>
+                                  </tree>
+                                </field>
+                            </page>
+                            <page string="2. Thiết lập phân bổ">
+                                <field name="SUPPLY_KHAI_BAO_CCDC_DAU_KY_THIET_LAP_PB_IDS" mode="tree">
+                                  <tree editable="bottom">
+                                    <field name="DOI_TUONG_PHAN_BO_ID"/>
+                                    <field name="TEN_DOI_TUONG_PHAN_BO" readonly="1"/>
+                                    <field name="TY_LE_PB" string="Tỷ lệ PB(%)" sum="Tổng"/>
+                                    <field name="TK_NO_ID" string="TK chi phí" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                                    <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục cp', 'Tên khoản mục cp'],'displays': ['MA_KHOAN_MUC_CP']}"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_supply_khai_bao_ccdc_dau_ky_chi_tiet_tree" model="ir.ui.view">
+            <field name="name">supply.khai.bao.dau.ky.chi.tiet.tree</field>
+            <field name="model">supply.khai.bao.dau.ky.chi.tiet</field>
+            <field name="arch" type="xml">
+                <tree string="Khai báo ccdc đầu kỳ">
+                    <field name="MA_CCDC"/>
+                    <field name="TEN_CCDC"/>
+                    <field name="LOAI_CCDC_ID"/>
+                    <field name="NHOM_CCDC"/>
+                    <field name="LY_DO_GHI_TANG"/>
+                    <field name="DON_VI_TINH"/>
+                    <field name="SO_LUONG"/>
+                    <field name="NGAY_GHI_TANG"/>
+                    <field name="TONG_SO_KY_PB"/>
+                    <field name="SO_KY_PB_CON_LAI"/>
+                    <field name="GIA_TRI_CCDC"/>
+                    <field name="GIA_TRI_DA_PHAN_BO"/>
+                    <field name="GIA_TRI_CON_LAI"/>
+                    <field name="SO_TIEN_PHAN_BO_HANG_KY"/>
+                    <field name="TK_CHO_PHAN_BO_ID"/>
+                    <field name="name"/>
+                    <field name="CCDC_DAU_KY_ID"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_supply_khai_bao_ccdc_dau_ky_chi_tiet" model="ir.actions.act_window">
+            <field name="name">Khai báo ccdc đầu kỳ</field>
+            <field name="res_model">supply.khai.bao.dau.ky.chi.tiet</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_supply_khai_bao_ccdc_dau_ky_chi_tiet_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_supply_khai_bao_ccdc_dau_ky_chi_tiet_tree"/>
+            <field name="act_window_id" ref="open_menu_supply_khai_bao_ccdc_dau_ky_chi_tiet"/>
+        </record>
+
+        <record id="action_supply_khai_bao_ccdc_dau_ky_chi_tiet_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_supply_khai_bao_ccdc_dau_ky_chi_tiet_form"/>
+            <field name="act_window_id" ref="open_menu_supply_khai_bao_ccdc_dau_ky_chi_tiet"/>
+        </record>
+
+        <!-- <menuitem name="khai báo ccdc đầu kỳ chi tiết"
+                  action="supply.open_menu_supply_khai_bao_ccdc_dau_ky_chi_tiet"
+                  id="menu_supply_khai_bao_ccdc_dau_ky_chi_tiet"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

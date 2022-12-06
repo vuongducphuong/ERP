@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tong_hop_danh_gia_lai_tai_khoan_ngoai_te_tham_so_form" model="ir.ui.view">
+            <field name="name">tong.hop.danh.gia.lai.tai.khoan.ngoai.te.form</field>
+            <field name="model">tong.hop.danh.gia.lai.tai.khoan.ngoai.te</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..."  cloudify_js="tong_hop_danh_gia_lai_tai_khoan_ngoai_te_view" >
+                    <sheet>
+                        <group col="4">
+                            <field name="DANH_GIA_NGOAI_TE_ID" domain="['|',('MA_LOAI_TIEN', '=', 'USD'),('MA_LOAI_TIEN', '=', 'UAH')]" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+                            <field name="DEN_NGAY"/>
+                             <field name="TY_GIA_MUA"/>
+                            <field name="TK_XU_LY_LAI_CHENH_LECH_TY_GIA_ID" domain="['|','|',('SO_TAI_KHOAN', '=', '4131'),('SO_TAI_KHOAN', '=', '4132'),('SO_TAI_KHOAN', '=', '515')]" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                           
+                            <field name="TY_GIA_BAN"/>
+                            <field name="TK_XU_LY_LO_CHENH_LECH_TY_GIA_ID" domain="['|','|',('SO_TAI_KHOAN', '=', '4131'),('SO_TAI_KHOAN', '=', '4132'),('SO_TAI_KHOAN', '=', '635')]" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                        </group>
+                        <!--<notebook>
+                            <page string="Chi tiết">
+                                <field name="FIELD_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>-->
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1.Số dư ngoại tệ">
+                                <field name="TONG_HOP_DANH_GIA_LAI_TAI_KHOAN_NGOAI_TE_SO_DU_NGOAI_TE_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" report="true" delete="false" 
+                                  options="{'header_struct': 
+                                                            [['Dư nợ', ['SO_TIEN_DU_NO','QUY_DOI_DU_NO','DANH_GIA_LAI_DU_NO','CHENH_LECH_DU_NO']],
+                                                            ['Dư có', ['SO_TIEN_DU_CO','QUY_DOI_DU_CO','DANH_GIA_LAI_DU_CO','CHENH_LECH_DU_CO']]
+                                                            ]}">
+                                    <field name="AUTO_SELECT" invisible="1"/>                                                            
+                                    <field name="TAI_KHOAN_ID"/>
+                                    <field name="TK_NGAN_HANG_ID"/>
+                                    <field name="TEN_NGAN_HANG"/>
+                                    <field name="DOI_TUONG_ID"/>
+                                    <field name="TY_GIA"/>
+                                    <field name="SO_TIEN_DU_NO" sum="tong tien du no"/>
+                                    <field name="QUY_DOI_DU_NO" sum="tong quy doi"/>
+                                    <field name="DANH_GIA_LAI_DU_NO" sum="tong danh gia lai"/>
+                                    <field name="CHENH_LECH_DU_NO" sum="tong chenh lech"/>
+                                    <field name="SO_TIEN_DU_CO" sum="tong tien du co"/>
+                                    <field name="QUY_DOI_DU_CO" sum="tong quy doi"/>
+                                    <field name="DANH_GIA_LAI_DU_CO" sum="tong danh gia lai"/>
+                                    <field name="CHENH_LECH_DU_CO" sum="tong chenh lech"/>
+
+                                    <field name="currency_id" invisible="1" />
+                                    <field name="base_currency_id" invisible="1" />
+                                  </tree>
+                                </field>
+                              </page>
+                            <page string="2.Chứng từ công nợ và thanh toán">
+                                <field name="TONG_HOP_DANH_GIA_LAI_TAI_KHOAN_NGOAI_TE_CONG_NO_THANH_TOAN_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" delete="false">
+                                    <field name="LOAI_CHUNG_TU"/>
+                                    <field name="NGAY_CHUNG_TU"/>
+                                    <field name="SO_CHUNG_TU" linked="true"/>
+                                    <field name="SO_HOA_DON"/>
+                                    <field name="DIEN_GIAI"/>
+                                    <field name="TK_CONG_NO_ID"/>
+                                    <field name="DOI_TUONG_ID"/>
+                                    <field name="TY_GIA_TREN_CT"/>
+                                    <field name="TY_GIA_DANH_GIA_LAI_GAN_NHAT"/>
+                                    <field name="SO_CHUA_DOI_TRU" sum="tong so chua doi tru"/>
+                                    <field name="SO_CHUA_DOI_TRU_QUY_DOI" sum="tong so chua doi tru quy doi"/>
+                                    <field name="DANH_GIA_LAI" sum="tong so danh gia lai"/>
+                                    <field name="CHENH_LECH" sum="tong so chenh lech"/>
+                                    <field name="ID_CHUNG_TU_GOC" invisible="1"/>
+                                    <field name="MODEL_CHUNG_TU_GOC" invisible="1"/>
+                                    <field name="ID_TK_VA_ID_DOI_TUONG" invisible="1"/>
+                                  </tree>
+                                </field>
+                              </page>
+                            
+                        </notebook>
+                        <footer>
+                            <button id="btn_thuc_hien" string="Thực hiện"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_tong_hop_danh_gia_lai_tai_khoan_ngoai_te_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Đánh giá lại tài khoản ngoại tệ</field>
+            <field name="res_model">tong.hop.danh.gia.lai.tai.khoan.ngoai.te</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_tong_hop_danh_gia_lai_tai_khoan_ngoai_te_tham_so_form"/>
+        </record>
+
+        <record id="action_open_tong_hop_danh_gia_lai_tai_khoan_ngoai_te_form" model="ir.actions.act_window">
+            <field name="name">Đánh giá lại tài khoản ngoại tệ</field>
+            <field name="res_model">tong.hop.danh.gia.lai.tai.khoan.ngoai.te</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="Đánh giá lại tài khoản ngoại tệ"
+                  action="tong_hop.open_tong_hop_danh_gia_lai_tai_khoan_ngoai_te_tham_so_form"
+                  id="menu_tong_hop_danh_gia_lai_tai_khoan_ngoai_te"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

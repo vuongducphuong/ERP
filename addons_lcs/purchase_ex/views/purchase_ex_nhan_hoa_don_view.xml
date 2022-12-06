@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_purchase_ex_nhan_hoa_don_tham_so_form" model="ir.ui.view">
+            <field name="name">purchase.ex.nhan.hoa.don.form</field>
+            <field name="model">purchase.ex.nhan.hoa.don</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="nhan_hoa_don_view">
+                    <sheet>
+
+                        <group col="12">
+                            
+                               <group colspan="6" col="6">
+                                    <field name="DOI_TUONG_ID" colspan="3" domain="[('LA_NHA_CUNG_CAP','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã NCC', 'Tên NCC','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nha_cung_cap'}" />
+                                    <field name="TEN_NHA_CUNG_CAP" string="Tên NCC" readonly="1" colspan="3" />
+                                </group>
+                                
+                     
+                             <group colspan="12" col="12">
+                                <field name="KY" colspan="3" />
+                                <field name="TU" colspan="3" />
+                                <field name="DEN" colspan="3" />
+                                <button name="btn_lay_du_lieu" string="Lấy dữ liệu" class="btn btn-primary" colspan="3"/>
+                            </group>
+                           
+                        </group>
+                        
+                        <!--<notebook>
+                            <page string="Chi tiết">
+                                <field name="FIELD_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>-->
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="PURCHASE_EX_NHAN_HOA_DON_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                        <field name="ID_ct_muahang" invisible="True" />
+                                        <field name="NGAY_HACH_TOAN" />
+                                        <field name="NGAY_CHUNG_TU" />
+                                        <field name="SO_CHUNG_TU" />
+                                        <field name="LOAI_TIEN" />
+                                        <field name="TY_GIA" />
+                                        <field name="SO_TIEN" sum="Tổng" />
+                                        <field name="DIEN_GIAI" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="btn btn-primary" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_purchase_ex_nhan_hoa_don_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Nhận hóa đơn</field>
+            <field name="res_model">purchase.ex.nhan.hoa.don</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_purchase_ex_nhan_hoa_don_tham_so_form" />
+        </record>
+        <record id="action_open_purchase_ex_nhan_hoa_don_form" model="ir.actions.act_window">
+            <field name="name">Nhận hóa đơn</field>
+            <field name="res_model">purchase.ex.hoa.don.mua.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="purchase_ex.view_purchase_ex_nhan_hoa_don_mua_hang_hoa_form" />
+            <!--Implement SO_TAI_KHOAN here-->
+            <!--<field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>-->
+        </record>
+        <!-- <menuitem name="Nhận hóa đơn" action="purchase_ex.open_purchase_ex_nhan_hoa_don_tham_so_form" id="menu_purchase_ex_nhan_hoa_don" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+<MSC_ReportTemplate>
+	  <ReportID>SAOrderVoucherCTBH</ReportID>
+	  <ReportName>Đơn đặt hàng</ReportName>
+	  <RefTypeList>/3530/3531/3532/3534/3535/3536/3537/3538/</RefTypeList>
+	  <Description>Đơn đặt hàng</Description>
+	  <ReportTitle>ĐƠN ĐẶT HÀNG</ReportTitle>
+	</MSC_ReportTemplate>
+</DataSetImportExport>

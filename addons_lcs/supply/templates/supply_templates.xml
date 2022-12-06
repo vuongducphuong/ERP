@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="supply assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/supply/static/src/js/ghi_tang_cong_cu_dung_cu_view.js"></script>
+                <script type="text/javascript" src="/supply/static/src/js/dieu_chinh_cong_cu_dung_cu_view.js"></script>
+                <script type="text/javascript" src="/supply/static/src/js/supply_kiem_ke_view.js"></script>
+                <script type="text/javascript" src="/supply/static/src/js/ghi_tang_hang_loat_view.js"></script>
+                <script type="text/javascript" src="/supply/static/src/js/chon_chung_tu_ghi_giam.js"></script>
+                <script type="text/javascript" src="/supply/static/src/js/phan_bo_chi_phi_view.js"></script>
+                <script type="text/javascript" src="/supply/static/src/js/supply_khai_bao_dau_ky_chi_tiet.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

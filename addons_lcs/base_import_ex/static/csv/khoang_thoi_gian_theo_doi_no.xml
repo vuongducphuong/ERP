@@ -1,0 +1,215 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+<PUDebtPeriod>
+  <DebtPeriodID>2A043A92-3C12-4FB4-AA87-0B62AA085290</DebtPeriodID>
+  <DebtPeriodName>31-60 ngày</DebtPeriodName>
+  <DebtPeriodType>1</DebtPeriodType>
+  <FromDay>31</FromDay>
+  <ToDay>60</ToDay>
+  <SortOrder>2</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>ReceivableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>68D18EE8-6151-41E0-8A44-0E38D8B2FACD</DebtPeriodID>
+  <DebtPeriodName>0-30 ngày</DebtPeriodName>
+  <DebtPeriodType>1</DebtPeriodType>
+  <FromDay>0</FromDay>
+  <ToDay>30</ToDay>
+  <SortOrder>1</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>PayableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>6C4F4B49-063D-42A6-ADD3-0EBF8EA5F1C2</DebtPeriodID>
+  <DebtPeriodName>1-30 ngày</DebtPeriodName>
+  <DebtPeriodType>2</DebtPeriodType>
+  <FromDay>1</FromDay>
+  <ToDay>30</ToDay>
+  <SortOrder>1</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>ReceivableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>E62AFF46-AA27-4A81-AACF-2045A1CFC1CB</DebtPeriodID>
+  <DebtPeriodName>61-90 ngày</DebtPeriodName>
+  <DebtPeriodType>1</DebtPeriodType>
+  <FromDay>61</FromDay>
+  <ToDay>90</ToDay>
+  <SortOrder>3</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>ReceivableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>2E24C233-85BF-4013-9048-2967C7EC9651</DebtPeriodID>
+  <DebtPeriodName>Trên 120 ngày</DebtPeriodName>
+  <DebtPeriodType>2</DebtPeriodType>
+  <FromDay>121</FromDay>
+  <SortOrder>5</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>ReceivableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>01597514-B91F-4BAD-BD78-39E19C9B2778</DebtPeriodID>
+  <DebtPeriodName>31-60 ngày</DebtPeriodName>
+  <DebtPeriodType>1</DebtPeriodType>
+  <FromDay>31</FromDay>
+  <ToDay>60</ToDay>
+  <SortOrder>2</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>PayableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>12F44349-5BB7-48C7-A7C7-3DEF5D7DA5DE</DebtPeriodID>
+  <DebtPeriodName>91-120 ngày</DebtPeriodName>
+  <DebtPeriodType>2</DebtPeriodType>
+  <FromDay>91</FromDay>
+  <ToDay>120</ToDay>
+  <SortOrder>4</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>ReceivableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>13E4D50F-3B52-438F-81EB-416F8195FB65</DebtPeriodID>
+  <DebtPeriodName>61-90 ngày</DebtPeriodName>
+  <DebtPeriodType>1</DebtPeriodType>
+  <FromDay>61</FromDay>
+  <ToDay>90</ToDay>
+  <SortOrder>3</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>PayableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>9298BF21-6083-459C-8794-42DAD0A0527B</DebtPeriodID>
+  <DebtPeriodName>31-60 ngày</DebtPeriodName>
+  <DebtPeriodType>2</DebtPeriodType>
+  <FromDay>31</FromDay>
+  <ToDay>60</ToDay>
+  <SortOrder>2</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>ReceivableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>F2894762-F194-4A21-A7A1-53714F1ECD5C</DebtPeriodID>
+  <DebtPeriodName>91-120 ngày</DebtPeriodName>
+  <DebtPeriodType>1</DebtPeriodType>
+  <FromDay>91</FromDay>
+  <ToDay>120</ToDay>
+  <SortOrder>4</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>ReceivableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>5961D982-B9C3-43AB-989E-567A420444B3</DebtPeriodID>
+  <DebtPeriodName>91-120 ngày</DebtPeriodName>
+  <DebtPeriodType>1</DebtPeriodType>
+  <FromDay>91</FromDay>
+  <ToDay>120</ToDay>
+  <SortOrder>4</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>PayableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>DA7BAB02-5139-4127-B227-6CA71409EFE7</DebtPeriodID>
+  <DebtPeriodName>31-60 ngày</DebtPeriodName>
+  <DebtPeriodType>2</DebtPeriodType>
+  <FromDay>31</FromDay>
+  <ToDay>60</ToDay>
+  <SortOrder>2</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>PayableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>7AF02E8D-790F-411E-8207-83C9265CF965</DebtPeriodID>
+  <DebtPeriodName>Trên 120 ngày</DebtPeriodName>
+  <DebtPeriodType>1</DebtPeriodType>
+  <FromDay>121</FromDay>
+  <SortOrder>5</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>PayableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>97D7B3F2-2030-417E-8C4D-8DA694CD5DFD</DebtPeriodID>
+  <DebtPeriodName>Trên 120 ngày</DebtPeriodName>
+  <DebtPeriodType>1</DebtPeriodType>
+  <FromDay>121</FromDay>
+  <SortOrder>5</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>ReceivableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>C1881FE5-BC66-42AE-A859-A2AF08A13FF9</DebtPeriodID>
+  <DebtPeriodName>1-30 ngày</DebtPeriodName>
+  <DebtPeriodType>2</DebtPeriodType>
+  <FromDay>1</FromDay>
+  <ToDay>30</ToDay>
+  <SortOrder>1</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>PayableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>4C48F02E-FA40-4C2F-9F8E-A5ABFF3DD696</DebtPeriodID>
+  <DebtPeriodName>Không có hạn nợ</DebtPeriodName>
+  <DebtPeriodType>0</DebtPeriodType>
+  <SortOrder>0</SortOrder>
+  <IsReadOnly>1</IsReadOnly>
+  <ReportID>ReceivableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>80833D2F-6A83-4704-83DC-A76E1E4FF48E</DebtPeriodID>
+  <DebtPeriodName>0-30 ngày</DebtPeriodName>
+  <DebtPeriodType>1</DebtPeriodType>
+  <FromDay>0</FromDay>
+  <ToDay>30</ToDay>
+  <SortOrder>1</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>ReceivableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>2DE7DCA6-36C0-466A-B9BC-AE46E2AFFF2B</DebtPeriodID>
+  <DebtPeriodName>Không có hạn nợ</DebtPeriodName>
+  <DebtPeriodType>0</DebtPeriodType>
+  <SortOrder>0</SortOrder>
+  <IsReadOnly>1</IsReadOnly>
+  <ReportID>PayableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>4B139B56-98C7-4B08-8630-C0AA5B47BE07</DebtPeriodID>
+  <DebtPeriodName>61-90 ngày</DebtPeriodName>
+  <DebtPeriodType>2</DebtPeriodType>
+  <FromDay>61</FromDay>
+  <ToDay>90</ToDay>
+  <SortOrder>3</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>PayableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>699E5EE9-3E31-495C-9FE1-D67C460C63F4</DebtPeriodID>
+  <DebtPeriodName>91-120 ngày</DebtPeriodName>
+  <DebtPeriodType>2</DebtPeriodType>
+  <FromDay>91</FromDay>
+  <ToDay>120</ToDay>
+  <SortOrder>4</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>PayableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>CF10E226-139B-4844-BD94-D753A83EC084</DebtPeriodID>
+  <DebtPeriodName>Trên 120 ngày</DebtPeriodName>
+  <DebtPeriodType>2</DebtPeriodType>
+  <FromDay>121</FromDay>
+  <SortOrder>5</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>PayableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+<PUDebtPeriod>
+  <DebtPeriodID>EB8972D9-49D9-4E90-88D2-E2252D0EE6D4</DebtPeriodID>
+  <DebtPeriodName>61-90 ngày</DebtPeriodName>
+  <DebtPeriodType>2</DebtPeriodType>
+  <FromDay>61</FromDay>
+  <ToDay>90</ToDay>
+  <SortOrder>3</SortOrder>
+  <IsReadOnly>0</IsReadOnly>
+  <ReportID>ReceivableSummaryByAgeOfDebt</ReportID>
+</PUDebtPeriod>
+</DataSetImportExport>

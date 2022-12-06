@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="thong_bao_cong_no">
+        <t t-call="web.external_layout">
+            <t t-set="o" t-value="o.with_context({'lang':o.DOI_TUONG_ID.lang})" />
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-7 text-left truong-thong-tin-dat-tren-header" style="padding-left: 0px;padding-right: 0px;">
+                        <t t-call="bao_cao.external_layout_header"/>
+                    </div>
+                    <div class="col-xs-5 text-center" style="padding-left: 0px;padding-right: 0px;">
+                        <div class="mau-so">
+                            <span><strong>Mẫu số 01 - VT</strong></span><br/>
+                        </div>
+                        <div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '0'">
+                            <span>(Ban hành theo Thông tư số 200/2014/TT-BTC)</span><br/>
+                            <span>Ngày 22/12/2014 của Bộ Tài chính)</span>
+                        </div>
+						<div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '15'">
+                            <span>(Ban hành theo Thông tư số 133/2016/TT-BTC)</span>
+							<br />
+                            <span>Ngày 26/08/2016 của Bộ Tài chính)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tieu-de-cua-bao-cao text-center">
+                    <span><strong>PHIẾU NHẬP KHO</strong></span>
+                </div>
+                <table style="width:100%">
+                    <tr>
+                        <td style="width: 30%"></td>
+                        <td class="text-left">
+                            <span>Nợ: </span>
+                            <span t-field="o.TK_NO_ID" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30%"></td>
+                        <td class="text-left">
+                            <span>Có: </span>
+                            <span t-field="o.TK_NO_ID" />
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <span>- Họ và tên người giao:</span>
+                        <span t-field="o.DOI_TUONG_ID" />
+                    </div>
+                </div>
+                <div class="row" style="margin-left: -40px;margin-right: 20px;">
+                    <div class="col-xs-3 text-center">
+                        <strong class="cac-textbox-ghi-chuc-danh-nguoi-ky">Người lập phiếu</strong>
+                        <p>
+                            <i>(Ký, họ tên)</i>
+                        </p>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <strong>Người giao hàng</strong>
+                        <p>
+                            <i>(Ký, họ tên)</i>
+                        </p>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <strong>Thủ kho</strong>
+                        <p>
+                            <i>(Ký, họ tên)</i>
+                        </p>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <strong>Kế toán trưởng</strong>
+                        <p class="cac-textbox-ghi-chuc-danh-nguoi-ky" style="margin: 0 -20px;">(Hoặc bộ phận có nhu cầu nhập)</p>
+                        <p>
+                            <i>(Ký, họ tên)</i>
+                        </p>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="row" style="margin-left: -40px;margin-right: 20px;">
+                    <div class="col-xs-3 text-center">
+                        <strong class="cac-textbox-ghi-chuc-danh-nguoi-ky">
+                            <span t-esc="o.get_nguoi_lap_phieu()"/>
+                        </strong>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <strong><span t-esc="o.get_thu_kho()"/></strong>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <strong><span t-esc="o.get_ke_toan_truong()"/></strong>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="template_thong_bao_cong_no">
+        <t t-call="web.html_container">
+            <t t-set="data_paper_format" t-value="'A4'"/>
+            <t t-foreach="docs" t-as="o">
+                <t t-call="bao_cao.thong_bao_cong_no" t-lang="o.DOI_TUONG_ID.lang" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report 
+            string="Thông báo công nợ" 
+            id="action_template_thong_bao_cong_no" 
+            model="bao.cao.thong.bao.cong.no" 
+            report_type="qweb-html"
+            name="bao_cao.template_thong_bao_cong_no" 
+            file="bao_cao.template_thong_bao_cong_no"
+            print_report_name="Thông báo công nợ"
+        />
+    </data>
+</odoo>

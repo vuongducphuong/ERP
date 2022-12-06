@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_doi_tuong_form" model="ir.ui.view">
+            <field name="name">danh.muc.doi.tuong.form</field>
+            <field name="model">res.partner</field>
+            <field name="priority">0</field>
+            <field name="arch" type="xml">
+                <form string="Đối tượng">
+                    <sheet>
+                        <group col="12">
+                            <group colspan="12" col="12">
+                                <group colspan="4" col="4">
+                                    <field name="KIEU_DOI_TUONG" colspan="4" invisible="1" />
+                                </group>
+                            </group>
+                            <group colspan="12" col="12">
+                                <field name="LOAI_KHACH_HANG" colspan="8" widget="radio" options="{'horizontal': True}" nolabel="1" attrs="{'invisible': [('KIEU_DOI_TUONG', '=', 'NHAN_VIEN')]}" string="" />
+                                <field name="LA_KHACH_HANG" colspan="2" nolabel="1" attrs="{'invisible': [('KIEU_DOI_TUONG', '=', 'KHACH_HANG')]}" string="Khách hàng" />
+                                <field name="LA_NHA_CUNG_CAP" colspan="2" nolabel="1" class="o_td_label" attrs="{'invisible': [('KIEU_DOI_TUONG', '=', 'NHA_CC')]}" string="Nhà cung cấp" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="1. Thông tin chung">
+                                <group col="4" attrs="{'invisible': ['|',('LOAI_KHACH_HANG', '=', '1'),('KIEU_DOI_TUONG', '!=', 'KHACH_HANG')]}">
+                                    <field name="MA_KHACH_HANG" string="Mã (*)" attrs="{'required':[('LOAI_KHACH_HANG', '!=', '1'),('KIEU_DOI_TUONG', '=', 'KHACH_HANG')]}" />
+                                    <field name="HO_VA_TEN" string="Tên (*)" colspan="4" attrs="{'required':[('LOAI_KHACH_HANG', '!=', '1'),('KIEU_DOI_TUONG', '=', 'KHACH_HANG')]}" />
+                                    <field name="DIA_CHI" colspan="4" />
+                                    <field name="DIEN_GIAI" colspan="4" />
+                                    <field name="NHOM_KH_NCC_ID" string="Nhóm KH, NCC" widget="many2many_tags" colspan="4" />
+                                    <field name="MA_SO_THUE" />
+                                    <field name="WEBSITE" />
+                                    <field name="DIEN_THOAI" />
+                                    <field name="DIEU_KHOAN_TT_ID" string="Điều khoản TT" options="{'columns': ['MA_DIEU_KHOAN','TEN_DIEU_KHOAN'], 'strings': ['Mã điều khoản thanh toán', 'Tên điều khoản thanh toán'],'displays': ['MA_DIEU_KHOAN']}" />
+                                    <field name="FAX" />
+                                    <field name="SO_NGAY_DUOC_NO" />
+                                    <field name="EMAIL" />
+                                    <field name="SO_NO_TOI_DA" />
+                                    <field name="NHAN_VIEN_ID" string="NV bán hàng" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}" />
+                                </group>
+                                <group col="4" attrs="{'invisible': ['|',('LOAI_KHACH_HANG', '=', '0'),('KIEU_DOI_TUONG', '!=', 'KHACH_HANG')]}">
+                                    <field name="MA_KHACH_HANG" string="Mã (*)" attrs="{'required':[('LOAI_KHACH_HANG', '!=', '0'),('KIEU_DOI_TUONG', '=', 'KHACH_HANG')]}" />
+                                    <field name="XUNG_HO" />
+                                    <field name="HO_VA_TEN" colspan="4" string="Họ và tên (*)" attrs="{'required':[('LOAI_KHACH_HANG', '!=', '0'),('KIEU_DOI_TUONG', '=', 'KHACH_HANG')]}" />
+                                    <field name="DIA_CHI" colspan="4" />
+                                    <field name="DIEN_GIAI" colspan="4" />
+                                    <field name="NHOM_KH_NCC_ID" widget="many2many_tags" colspan="4" />
+                                    <field name="MA_SO_THUE" />
+                                    <field name="NGAY_CAP" />
+                                    <field name="DT_DI_DONG" string="ĐT di động" />
+                                    <field name="NOI_CAP" />
+                                    <field name="DIEN_THOAI" string="ĐT cố định" />
+                                    <field name="DIEU_KHOAN_TT_ID" string="Điều khoản TT" />
+                                    <field name="EMAIL" />
+                                    <field name="SO_NGAY_DUOC_NO" />
+                                    <field name="SO_CMND" string="Số CMND" />
+                                    <field name="SO_NO_TOI_DA" />
+                                    <field name="NHAN_VIEN_ID" string="NV bán hàng" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}" />
+                                </group>
+                                <!--nhà cung cấp -->
+                                <group col="4" attrs="{'invisible': ['|',('LOAI_KHACH_HANG', '=', '1'),('KIEU_DOI_TUONG', '!=', 'NHA_CC')]}">
+                                    <field name="MA_NHA_CUNG_CAP" string="Mã (*)" attrs="{'required':[('LOAI_KHACH_HANG', '!=', '1'),('KIEU_DOI_TUONG', '=', 'NHA_CC')]}" />
+                                    <field name="HO_VA_TEN" string="Tên (*)" colspan="4" attrs="{'required':[('LOAI_KHACH_HANG', '!=', '1'),('KIEU_DOI_TUONG', '=', 'NHA_CC')]}" />
+                                    <field name="DIA_CHI" colspan="4" />
+                                    <field name="DIEN_GIAI" colspan="4" />
+                                    <field name="NHOM_KH_NCC_ID" string="Nhóm KH, NCC" widget="many2many_tags" colspan="4" />
+                                    <field name="MA_SO_THUE" />
+                                    <field name="WEBSITE" />
+                                    <field name="DIEN_THOAI" />
+                                    <field name="DIEU_KHOAN_TT_ID" string="Điều khoản TT" options="{'columns': ['MA_DIEU_KHOAN','TEN_DIEU_KHOAN'], 'strings': ['Mã điều khoản thanh toán', 'Tên điều khoản thanh toán'],'displays': ['MA_DIEU_KHOAN']}" />
+                                    <field name="FAX" />
+                                    <field name="SO_NGAY_DUOC_NO" />
+                                    <field name="EMAIL" />
+                                    <field name="SO_NO_TOI_DA" />
+                                    <field name="NHAN_VIEN_ID" string="NV mua hàng" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA']}" />
+                                </group>
+                                <group col="4" attrs="{'invisible': ['|',('LOAI_KHACH_HANG', '=', '0'),('KIEU_DOI_TUONG', '!=', 'NHA_CC')]}">
+                                    <field name="MA_NHA_CUNG_CAP" string="Mã (*)" attrs="{'required':[('LOAI_KHACH_HANG', '!=', '0'),('KIEU_DOI_TUONG', '=', 'NHA_CC')]}" />
+                                    <field name="XUNG_HO" />
+                                    <field name="HO_VA_TEN" colspan="4" string="Họ và tên (*)" attrs="{'required':[('LOAI_KHACH_HANG', '!=', '0'),('KIEU_DOI_TUONG', '=', 'NHA_CC')]}" />
+                                    <field name="DIA_CHI" colspan="4" />
+                                    <field name="DIEN_GIAI" colspan="4" />
+                                    <field name="NHOM_KH_NCC_ID" widget="many2many_tags" colspan="4" />
+                                    <field name="MA_SO_THUE" />
+                                    <field name="NGAY_CAP" />
+                                    <field name="DT_DI_DONG" string="ĐT di động" />
+                                    <field name="NOI_CAP" />
+                                    <field name="DIEN_THOAI" string="ĐT cố định" />
+                                    <field name="DIEU_KHOAN_TT_ID" string="Điều khoản TT" options="{'columns': ['MA_DIEU_KHOAN','TEN_DIEU_KHOAN'], 'strings': ['Mã điều khoản thanh toán', 'Tên điều khoản thanh toán'],'displays': ['MA_DIEU_KHOAN']}" />
+                                    <field name="EMAIL" />
+                                    <field name="SO_NGAY_DUOC_NO" />
+                                    <field name="SO_CMND" string="Số CMND" />
+                                    <field name="SO_NO_TOI_DA" />
+                                    <field name="NHAN_VIEN_ID" string="NV Mua hàng" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA']}" />
+                                </group>
+                                <!--Nhân viên-->
+                                <group col="4" attrs="{'invisible': [('KIEU_DOI_TUONG', '!=', 'NHAN_VIEN')]}">
+                                    <field name="MA_NHAN_VIEN" string="Mã (*)" attrs="{'required':[('KIEU_DOI_TUONG', '=', 'NHAN_VIEN')]}" />
+                                    <field name="CHUC_DANH" />
+                                    <field name="HO_VA_TEN" string="Tên (*)" attrs="{'required':[('KIEU_DOI_TUONG', '=', 'NHAN_VIEN')]}" />
+                                    <field name="DON_VI_ID" string="Đơn vị(*)" options="{'columns': ['MA_DON_VI','TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" attrs="{'required':[('KIEU_DOI_TUONG', '=', 'NHAN_VIEN')]}" />
+                                    <field name="GIOI_TINH" string="Giới tính" widget="radio" options="{'horizontal': True}" />
+                                    <field name="MA_SO_THUE" />
+                                    <field name="NGAY_SINH" />
+                                    <field name="LUONG_THOA_THUAN" />
+                                    <field name="SO_CMND" string="Số CMND" />
+                                    <field name="HE_SO_LUONG" />
+                                    <field name="NGAY_CAP" />
+                                    <field name="LUONG_DONG_GOP_BH" string="Lương đóng góp BH" />
+                                    <field name="NOI_CAP" />
+                                    <field name="SO_NGUOI_PHU_THUOC" />
+                                    <field name="NHOM_KH_NCC_ID" colspan="4" widget="many2many_tags" string="Nhóm KH, NCC" />
+                                </group>
+                                <group string="Tài khoản ngân hàng">
+                                    <field name="DANH_MUC_DOI_TUONG_CHI_TIET_IDS" mode="tree" nolabel="1" class="o_td_label">
+                                        <tree editable="bottom">
+                                            <field name="SO_TAI_KHOAN" />
+                                            <field name="TEN_NGAN_HANG" />
+                                            <field name="CHI_NHANH" />
+                                            <field name="TINH_TP_CUA_NGAN_HANG" />
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <!-- <page string="1. Thông tin chung" attrs="{'invisible': [('LOAI_KHACH_HANG', '=', '0')]}">
+                                <group col="4">
+                                    <field name="MA" string='Mã (*)'/>
+                                    <field name="XUNG_HO"/>
+                                    <field name="HO_VA_TEN" colspan="4" string='Họ và tên (*)'/>
+                                    <field name="DIA_CHI" colspan="4"/>
+                                    <field name="DIEN_GIAI" colspan="4"/>
+                                    <field name="NHOM_KH_NCC_ID" widget="many2many_tags" colspan="4"/>
+                                    <field name="MA_SO_THUE"/>
+                                    <field name="NGAY_CAP"/>
+                                    <field name="DT_DI_DONG" string='ĐT di động'/>
+                                    <field name="NOI_CAP"/>
+                                    <field name="DIEN_THOAI" string='ĐT cố định'/>
+                                    <field name="DIEU_KHOAN_TT_ID" string='Điều khoản TT'/>
+                                    <field name="EMAIL"/>
+                                    <field name="SO_NGAY_DUOC_NO"/>
+                                    <field name="SO_CMND" string='Số CMND'/>
+                                    <field name="SO_NO_TOI_DA"/>
+                                    <field name="NHAN_VIEN_ID" string='NV bán hàng'/>
+                                </group>
+                                <group string='Tài khoản ngân hàng'>
+                                    <field name="DANH_MUC_DOI_TUONG_CHI_TIET_IDS" mode="tree" string=''>
+                                        <tree editable="bottom">
+                                            <field name="SO_TAI_KHOAN"/>
+                                            <field name="TEN_NGAN_HANG"/>
+                                            <field name="CHI_NHANH"/>
+                                            <field name="TINH_TP_CUA_NGAN_HANG"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page> -->
+                            <page string="2. Khác">
+                                <group string="Vị trí địa lý" col="4" attrs="{'invisible': [('KIEU_DOI_TUONG', '=', 'NHAN_VIEN')]}">
+                                    <field name="QUOC_GIA_ID" options="{'no_create': True}"/>
+                                    <field name="QUAN_HUYEN_ID" string="Quận/Huyện" />
+                                    <field name="TINH_TP_ID" string="Tỉnh/TP" options="{'no_create': True}"/>
+                                    <field name="XA_PHUONG_ID" string="Xã/Phường" />
+                                </group>
+                                <group string="Thông tin liên hệ" col="4" attrs="{'invisible': ['|',('LOAI_KHACH_HANG', '=', '1'),('KIEU_DOI_TUONG', '=', 'NHAN_VIEN')]}">
+                                    <field name="XUNG_HO" string="Xưng hô" />
+                                    <field name="DT_CO_DINH_LIEN_HE" string="ĐT cố định" />
+                                    <field name="HO_VA_TEN_LIEN_HE" string="Họ và tên" />
+                                    <field name="EMAIL_LIEN_HE" string="Email" />
+                                    <field name="CHUC_DANH" string="Chức danh" />
+                                    <field name="DIA_CHI_LIEN_HE" rowspan="2" string="Địa chỉ" />
+                                    <field name="DT_DI_DONG_LIEN_HE" string="ĐT di động" />
+                                    <field name="DTDD_KHAC_LIEN_HE" string="ĐTDĐ khác" />
+                                    <field name="DAI_DIEN_THEO_PL" string="Đại diện theo PL" />
+                                </group>
+                                <!--Nhân viên-->
+                                <group string="Thông tin liên hệ" col="4" attrs="{'invisible': [('KIEU_DOI_TUONG', '!=', 'NHAN_VIEN')]}">
+                                    <field name="DIA_CHI_LIEN_HE" colspan="4" string="Địa chỉ" />
+                                    <field name="DT_DI_DONG_LIEN_HE" string="ĐT di động" />
+                                    <field name="EMAIL_LIEN_HE" string="Email" />
+                                    <field name="DT_CO_DINH_LIEN_HE" string="ĐT cố định" />
+                                </group>
+                                <group string="Thông tin người nhận hóa đơn" col="4" attrs="{'invisible': ['|','|',('LOAI_KHACH_HANG', '=', '1'),('KIEU_DOI_TUONG', '=', 'NHAN_VIEN'),('LA_KHACH_HANG', '=', False)]}">
+                                    <field name="TEN_NGUOI_NHAN" />
+                                    <field name="DT_NGUOI_NHAN" string="Điện thoại" />
+                                    <field name="DIA_CHI_NGUOI_NHAN" string="Địa chỉ" />
+                                    <field name="EMAIL_NGUOI_NHAN" string="Email" />
+                                </group>
+                                <group string="Địa điểm giao hàng" attrs="{'invisible': [('KIEU_DOI_TUONG', '=', 'NHAN_VIEN')]}">
+                                    <field name="DANH_MUC_DOI_TUONG_DIA_DIEM_GIAO_HANG_IDS" mode="tree" nolabel="1" class="o_td_label">
+                                        <tree editable="bottom">
+                                            <field name="DIA_DIEM" />
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                        <!-- <notebook>
+                            <page string="Tài khoản ngân hàng">                           
+                                <field name="DANH_MUC_DOI_TUONG_CHI_TIET_IDS" mode="tree" >
+                                    <tree editable="bottom">
+                                        <field name="SO_TAI_KHOAN"/>
+                                        <field name="TEN_NGAN_HANG"/>
+                                        <field name="CHI_NHANH"/>
+                                        <field name="TINH_TP_CUA_NGAN_HANG"/>
+                                    </tree>
+                                </field>                               
+                            </page>
+                        </notebook> -->
+                        <group col="6">
+                            <group colspan="4" col="4">
+                                <field name="active" nolabel="1" class="o_td_label" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_danh_muc_doi_tuong_tree" model="ir.ui.view">
+            <field name="name">danh.muc.doi.tuong.tree</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <tree string="Khách hàng">
+                    <field name="MA" string="Mã khách hàng" />
+                    <field name="HO_VA_TEN" string="Tên khách hàng" />
+                    <field name="DIA_CHI" />
+                    <field name="NHOM_KH_NCC_ID" string="Nhóm KH,NCC" widget="many2many_tags" />
+                    <field name="MA_SO_THUE" />
+                    <field name="DIEN_THOAI" string="Điện thoại" />
+                    <field name="active" />
+                    <field name="CHI_NHANH_ID" />
+                </tree>
+            </field>
+        </record>
+        <record id="view_danh_muc_nha_cung_cap_tree" model="ir.ui.view">
+            <field name="name">danh.muc.nha.cung.cap.tree</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <tree string="Nhà cung cấp">
+                    <field name="MA" string="Mã nhà cung cấp" />
+                    <field name="HO_VA_TEN" string="Tên nhà cung cấp" />
+                    <field name="DIA_CHI" />
+                    <field name="NHOM_KH_NCC_ID" string="Nhóm KH,NCC" widget="many2many_tags" />
+                    <field name="MA_SO_THUE" />
+                    <field name="DIEN_THOAI" />
+                    <field name="active" />
+                    <field name="CHI_NHANH_ID" />
+                </tree>
+            </field>
+        </record>
+        <record id="view_danh_muc_nhan_vien_tree" model="ir.ui.view">
+            <field name="name">danh.muc.nhan.vien.tree</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <tree string="Nhân viên">
+                    <field name="MA" string="Mã nhân viên" />
+                    <field name="HO_VA_TEN" string="Tên nhân viên" />
+                    <field name="MA_SO_THUE" />
+                    <field name="CHUC_DANH" />
+                    <field name="TEN_DON_VI"/>
+                    <field name="SO_TAI_KHOAN" />
+                    <field name="TEN_NGAN_HANG" />
+                    <field name="active" />
+                </tree>
+            </field>
+        </record>
+        <record id="view_danh_muc_khach_hang_search" model="ir.ui.view">
+            <field name="name">res.partner.search</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <search string="Khách hàng">
+                    <field name="name" string="Khách hàng" filter_domain="['|','|','|','|', ('name','ilike',self),('HO_VA_TEN','ilike',self), ('DIA_CHI','ilike',self),('DIEN_THOAI','ilike',self), ('MA_SO_THUE','ilike',self)]"/>
+                    <separator/>
+                    <!-- Tìm kiếm với input text-->
+                    <field name="HO_VA_TEN" string="Tên khách hàng"/>
+                    <field name="name" string="Mã khách hàng"/>
+                    <field name="DIA_CHI" string="Địa chỉ"/>
+                    <field name="DIEN_THOAI" string="Điện thoại"/>
+                    <field name="MA_SO_THUE" string="Mã số thuế"/>
+                </search>
+            </field>
+        </record>
+        <record id="view_danh_muc_nha_cung_cap_search" model="ir.ui.view">
+            <field name="name">res.partner.search</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <search string="Nhà cung cấp">
+                    <field name="name" string="Nhà cung cấp" filter_domain="['|','|','|','|', ('name','ilike',self),('HO_VA_TEN','ilike',self), ('DIA_CHI','ilike',self),('DIEN_THOAI','ilike',self), ('MA_SO_THUE','ilike',self)]"/>
+                    <separator/>
+                    <!-- Tìm kiếm với input text-->
+                    <field name="HO_VA_TEN" string="Tên nhà cung cấp"/>
+                    <field name="name" string="Mã nhà cung cấp"/>
+                    <field name="DIA_CHI" string="Địa chỉ"/>
+                    <field name="DIEN_THOAI" string="Điện thoại"/>
+                    <field name="MA_SO_THUE" string="Mã số thuế"/>
+                </search>
+            </field>
+        </record>
+        <record id="view_danh_muc_nhan_vien_search" model="ir.ui.view">
+            <field name="name">res.partner.search</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <search string="Nhân viên">
+                    <field name="name" string="Nhân viên" filter_domain="['|','|','|','|', ('name','ilike',self),('HO_VA_TEN','ilike',self), ('CHUC_DANH','ilike',self),('TEN_DON_VI','ilike',self), ('MA_SO_THUE','ilike',self)]"/>
+                    <separator/>
+                    <!-- Tìm kiếm với input text-->
+                    <field name="HO_VA_TEN" string="Tên nhân viên"/>
+                    <field name="name" string="Mã nhân viên"/>
+                    <field name="MA_SO_THUE" string="Mã số thuế"/>
+                    <field name="CHUC_DANH" string="Chức danh"/>
+                    <field name="TEN_DON_VI" string="Tên đơn vị"/>
+                    <group expand="0" string="Đơn vị">
+                        <filter string="Đơn vị" domain="[]" context="{'group_by':'TEN_DON_VI'}"/>
+                    </group>            
+                </search>
+            </field>
+        </record>
+        <record id="open_menu_danh_muc_doi_tuong" model="ir.actions.act_window">
+            <field name="name">Khách hàng</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_danh_muc_khach_hang_search"/>
+            <field name="domain">[('LA_KHACH_HANG', '=', True),('LA_NHAN_VIEN', '=', False)]</field>
+            <field name="context">{'default_LA_KHACH_HANG': True,'default_KIEU_DOI_TUONG': 'KHACH_HANG','import_enabled': True}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+            Nhấn vào đây để thêm mới! 
+          </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="open_menu_danh_muc_nha_cung_cap" model="ir.actions.act_window">
+            <field name="name">Nhà cung cấp</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_danh_muc_nha_cung_cap_search"/>
+            <field name="domain">[('LA_NHA_CUNG_CAP', '=', True),('LA_NHAN_VIEN', '=', False)]</field>
+            <field name="context">{'default_LA_NHA_CUNG_CAP': True,'default_KIEU_DOI_TUONG': 'NHA_CC','import_enabled': True}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+            Nhấn vào đây để thêm mới!
+          </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="open_menu_danh_muc_nhan_vien" model="ir.actions.act_window">
+            <field name="name">Nhân viên</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_danh_muc_nhan_vien_search"/>
+            <field name="domain">[('LA_NHAN_VIEN', '=', True)]</field>
+            <field name="context">{'default_LA_NHAN_VIEN': True,'default_KIEU_DOI_TUONG': 'NHAN_VIEN','import_enabled': True}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_danh_muc_doi_tuong_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_doi_tuong_tree" />
+            <field name="act_window_id" ref="open_menu_danh_muc_doi_tuong" />
+        </record>
+        <record id="action_danh_muc_nha_cung_cap_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_nha_cung_cap_tree" />
+            <field name="act_window_id" ref="open_menu_danh_muc_nha_cung_cap" />
+        </record>
+        <record id="action_danh_muc_nhan_vien_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_nhan_vien_tree" />
+            <field name="act_window_id" ref="open_menu_danh_muc_nhan_vien" />
+        </record>
+        <record id="action_danh_muc_doi_tuong_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_doi_tuong_form" />
+            <field name="act_window_id" ref="open_menu_danh_muc_doi_tuong" />
+        </record>
+        <record id="action_danh_muc_nha_cung_cap_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_doi_tuong_form" />
+            <field name="act_window_id" ref="open_menu_danh_muc_nha_cung_cap" />
+        </record>
+        <record id="action_danh_muc_nhan_vien_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_doi_tuong_form" />
+            <field name="act_window_id" ref="open_menu_danh_muc_nhan_vien" />
+        </record>
+        <!-- <menuitem name="Khách hàng"
+                  action="danh_muc.open_menu_danh_muc_doi_tuong"
+                  id="menu_danh_muc_doi_tuong"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_danh_muc_doi_tuong_5" model="ir.sequence">
+            <field name="name">danh_muc_doi_tuong MA_KHACH_HANG sequence</field>
+            <field name="code">danh_muc_doi_tuong_MA_KHACH_HANG</field>
+            <field name="prefix">KH</field>
+            <field name="padding">5</field>
+        </record>
+        <record id="sequence_danh_muc_doi_tuong_3" model="ir.sequence">
+            <field name="name">danh_muc_doi_tuong MA_NHA_CUNG_CAP sequence</field>
+            <field name="code">danh_muc_doi_tuong_MA_NHA_CUNG_CAP</field>
+            <field name="prefix">NCC</field>
+            <field name="padding">5</field>
+        </record>
+        <record id="sequence_danh_muc_doi_tuong_4" model="ir.sequence">
+            <field name="name">danh_muc_doi_tuong MA_NHAN_VIEN sequence</field>
+            <field name="code">danh_muc_doi_tuong_MA_NHAN_VIEN</field>
+            <field name="prefix">NV</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

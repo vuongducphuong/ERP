@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="s21_dn_so_tai_san_co_dinh">
+        <t t-call="web.external_layout">
+            <div class="page" style="margin-left: 15px;margin-right: 15px;">
+                <div class="col-xs-12 text-left" style="padding-left: 0px;padding-right: 0px;">
+                    <div class="col-xs-7 text-left truong-thong-tin-dat-tren-header" style="padding-left: 0px;padding-right: 0px;">
+                        <t t-call="bao_cao.external_layout_header" />
+                    </div>
+                    <div class="col-xs-5 text-center" style="padding-left: 0px;padding-right: 0px;">
+                        <div class="mau-so">
+                            <span>
+                                Mẫu số: S21-DN
+                            </span>
+                            <br />
+                        </div>
+                        <div class="ban-hanh-theo-quyet-dinh-so">
+                            <span>(Ban hành theo Thông tư số 200/2014/TT-BTC</span>
+                            <br />
+                            <span>Ngày 22/12/2014 của Bộ Tài chính)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 text-center report-title" style="padding-left: 0px;padding-right: 0px;">
+                    <span>SỔ TÀI SẢN CỐ ĐỊNH</span>
+                </div>
+
+                <div class="col-xs-12 text-center" style="padding-left: 0px;padding-right: 0px;">
+                    <div class="report-sub-title-1-italic-bold">
+                        <span t-esc="added_data.get('sub_title')" />
+                    </div>
+                </div>
+
+                <!--Table-->
+                <div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
+                    <table class="table-condensed table-bordereds" style="margin-bottom: 0px; width: 100%;">
+                        <thead>
+                            <tr class="detail-header">
+                                <th class="text-center" rowspan="3" style="height: 24px; width: 8px;">
+                                    <span>STT</span>
+                                </th>
+                                <th class="text-center" colspan="7" style="height: 6px; width: 148px;">
+                                    <span>Ghi tăng TSCĐ</span>
+                                </th>
+                                <th class="text-center" colspan="3" style="height: 6px; width: 62px;">
+                                    <span>Khấu hao TSCĐ</span>
+                                </th>
+                                <th class="text-center" colspan="3" style="height: 6px; width: 59px;">
+                                    <span>Ghi giảm TSCĐ</span>
+                                </th>
+                            </tr>
+                            <tr class="detail-header">
+                                <th class="text-center" colspan="2" style="height: 6px; width: 39px;">
+                                    <span>Chứng từ</span>
+                                </th>
+                                <th class="text-center" rowspan="2" style="height: 18px; width: 23px;">
+                                    <span>Nước sản xuất</span>
+                                </th>
+                                <th class="text-center" rowspan="2" style="height: 18px; width: 15px;">
+                                    <span>Tháng, năm đưa vào sử dụng</span>
+                                </th>
+                                <th class="text-center" rowspan="2" style="height: 18px; width: 19px;">
+                                    <span>Số hiệu TSCĐ</span>
+                                </th>
+                                <th class="text-center" rowspan="2" style="height: 18px; width: 26px;">
+                                    <span>Nguyên giá</span>
+                                </th>
+                                <th class="text-center" rowspan="2" style="height: 18px; width: 26px;">
+                                    <span>Giá trị tính KH</span>
+                                </th>
+                                <th class="text-center" rowspan="2" style="height: 18px; width: 11px;">
+                                    <span>Tỷ lệ (%) khấu hao</span>
+                                </th>
+                                <th class="text-center" rowspan="2" style="height: 18px; width: 25px;">
+                                    <span>Khấu hao</span>
+                                </th>
+                                <th class="text-center" rowspan="2" style="height: 18px; width: 26px;">
+                                    <span>Khấu hao lũy kế</span>
+                                </th>
+                                <th class="text-center" colspan="2" style="height: 6px; width: 39px;">
+                                    <span>Chứng từ</span>
+                                </th>
+                                <th class="text-center" rowspan="2" style="height: 18px; width: 20px;">
+                                    <span>Lý do giảm TSCĐ</span>
+                                </th>
+                            </tr>
+
+                            <tr class="detail-header"> 
+                                <th class="text-center" style="height: 12px; width: 20px;">
+                                    <span>Số hiệu</span>
+                                </th>
+                                <th class="text-center" style="height: 12px; width: 19px;">
+                                    <span>Ngày, tháng</span>
+                                </th>
+                                <th class="text-center" style="height: 12px; width: 19px;">
+                                    <span>Số hiệu</span>
+                                </th>
+                                <th class="text-center" style="height: 12px; width: 20px;">
+                                    <span>Ngày, tháng, năm</span>
+                                </th>
+                            </tr>
+
+                            <tr class="detail-header">
+                                <th class="text-center" style="height: 6px; width: 8px;">
+                                    <span>A</span>
+                                </th>
+                                <th class="text-center" style="height: 6px; width: 20px;">
+                                    <span>B</span>
+                                </th>
+                                <th class="text-center" style="height: 6px; width: 19px;">
+                                    <span>C</span>
+                                </th>
+                                <th class="text-center" style="height: 6px; width: 23px;">
+                                    <span>D</span>
+                                </th>
+                                <th class="text-center" style="height: 6px; width: 15px;">
+                                    <span>E</span>
+                                </th>
+                                <th class="text-center" style="height: 6px; width: 19px;">
+                                    <span>G</span>
+                                </th>
+                                <th class="text-center" style="height: 6px; width: 26px;">
+                                    <span>1</span>
+                                </th>
+                                <th class="text-center" style="height: 6px; width: 26px;">
+                                    <span>2</span>
+                                </th>
+                                <th class="text-center" style="height: 6px; width: 11px;">
+                                    <span>3</span>
+                                </th>
+                                <th class="text-center" style="height: 6px; width: 25px;">
+                                    <span>4</span>
+                                </th>
+                                <th class="text-center" style="height: 6px; width: 26px;">
+                                    <span>5</span>
+                                </th>
+                                <th class="text-center" tyle="height: 6px; width: 19px;">
+                                    <span>H</span>
+                                </th>
+                                <th class="text-center" style="height: 6px; width: 20px;">
+                                    <span>I</span>
+                                </th>
+                                <th class="text-center" style="height: 6px; width: 20px;">
+                                    <span>K</span>
+                                </th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <t t-foreach="grouped_data" t-as="index">
+                                <t t-set="group" t-value="grouped_data[index]"></t>
+                                <tr>
+                                    <td class="summary-footer-text" colspan="8" style="height: 6px;border-bottom: 1px solid;">
+                                        <!-- <span t-esc="'Nhóm HHDV: ' + group.NHOM_HHDV_BAN_RA"></span> -->
+                                    </td>
+                                </tr>
+                                <tr t-foreach="docs" t-as="line">
+                                    <td class="text-center value-center" style="height: 6px;">
+                                        <span t-esc="line.STT"></span>
+                                    </td>
+                                    <td class="text-left detail-text" style="height: 6px;">
+                                        <span t-field="line.SO_HIEU_CHUNG_TU" />
+                                    </td>
+                                    <td class="text-left detail-date" style="height: 6px;">
+                                        <span t-field="line.NGAY_THANG_CHUNG_TU" />
+                                    </td>
+                                    <td class="text-left detail-text" style="height: 6px;">
+                                        <span t-field="line.NUOC_SAN_XUAT" />
+                                    </td>
+                                    <td class="text-center detail-text" style="height: 6px;">
+                                        <span t-field="line.THANG_NAM_DUA_VAO_SU_DUNG" />
+                                    </td>
+                                    <td class="text-left detail-text" style="height: 6px;">
+                                        <span t-field="line.SO_HIEU_TSCD" />
+                                    </td>
+                                    <td class="text-right detail-number" style="height: 6px;">
+                                        <span t-field="line.NGUYEN_GIA" />
+                                    </td>
+                                    <td class="text-right detail-number" style="height: 6px;">
+                                        <span t-field="line.GIA_TRI_TINH_KH" />
+                                    </td>
+                                    <td class="text-right detail-number" style="height: 6px;">
+                                        <span t-field="line.TY_LE_PHAN_TRAM_KHAU_HAO" />
+                                    </td>
+                                    <td class="text-right detail-number" style="height: 6px;">
+                                        <span t-field="line.KHAU_HAO" />
+                                    </td>
+                                    <td class="text-right detail-number" style="height: 6px;">
+                                        <span t-field="line.KHAU_HAO_LUY_KE" />
+                                    </td>
+                                    <td class="text-left detail-text" style="height: 6px;">
+                                        <span t-field="line.SO_HIEU_CHUNG_TU_GHI_GIAM" />
+                                    </td>
+                                    <td class="text-left detail-date" style="height: 6px;">
+                                        <span t-field="line.NGAY_THANG_CHUNG_TU_GHI_GIAM" />
+                                    </td>
+                                    <td class="text-left detail-text" style="height: 6px;">
+                                        <span t-field="line.LY_DO_GIAM_TSCD" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left summary-footer-text" colspan="6" style="border-bottom: 1px solid;border-top: 1px solid;height: 6px;">
+                                        <span>Cộng</span>
+                                    </td>
+                                    <td class="text-right summary-detail-number" style="border-bottom: 1px solid;border-top: 1px solid;">
+                                        <!-- <span t-field="group.sum_DOANH_SO_BAN_CHUA_CO_THUE_GTGT"></span> -->
+                                    </td>
+                                    <td class="text-right summary-detail-number" style="border-bottom: 1px solid;border-top: 1px solid;">
+                                        <!-- <span t-field="group.sum_THUE_GTGT"></span> -->
+                                    </td>
+                                    <td class="text-left" style="border-bottom: 1px solid;border-top: 1px solid;"></td>
+                                    <td class="text-right summary-detail-number" style="border-bottom: 1px solid;border-top: 1px solid;">
+                                        <!-- <span t-field="group.sum_DOANH_SO_BAN_CHUA_CO_THUE_GTGT"></span> -->
+                                    </td>
+                                    <td class="text-right summary-detail-number" style="border-bottom: 1px solid;border-top: 1px solid;">
+                                        <!-- <span t-field="group.sum_THUE_GTGT"></span> -->
+                                    </td>
+                                    <td class="text-left" style="border-bottom: 1px solid;border-top: 1px solid;"></td>
+                                    <td class="text-left" style="border-bottom: 1px solid;border-top: 1px solid;"></td>
+                                    <td class="text-left" style="border-bottom: 1px solid;border-top: 1px solid;"></td>
+                                </tr>
+                            </t>
+                            <tr>
+                                <th class="text-left summary-footer-text" colspan="6" style="border-bottom: 1px solid;border-top: 1px solid;height: 6px;">
+                                    <span>Tổng cộng</span>
+                                </th>
+                                <th class="text-right summary-detail-number" style="border-bottom: 1px solid;border-top: 1px solid;">
+                                    <!-- <span t-field="group.sum_DOANH_SO_BAN_CHUA_CO_THUE_GTGT"></span> -->
+                                </th>
+                                <th class="text-right summary-detail-number" style="border-bottom: 1px solid;border-top: 1px solid;">
+                                    <!-- <span t-field="group.sum_THUE_GTGT"></span> -->
+                                </th>
+                                <th class="text-left" style="border-bottom: 1px solid;border-top: 1px solid;"></th>
+                                <th class="text-right summary-detail-number" style="border-bottom: 1px solid;border-top: 1px solid;">
+                                    <!-- <span t-field="group.sum_DOANH_SO_BAN_CHUA_CO_THUE_GTGT"></span> -->
+                                </th>
+                                <th class="text-right summary-detail-number" style="border-bottom: 1px solid;border-top: 1px solid;">
+                                    <!-- <span t-field="group.sum_THUE_GTGT"></span> -->
+                                </th>
+                                <th class="text-left" style="border-bottom: 1px solid;border-top: 1px solid;"></th>
+                                <th class="text-left" style="border-bottom: 1px solid;border-top: 1px solid;"></th>
+                                <th class="text-left" style="border-bottom: 1px solid;border-top: 1px solid;"></th>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs-12 text-right" style="margin-right: 50px;padding-left: 0px;padding-right: 0px;">
+                    <span class="signer-date">
+                        Ngày ...... tháng ...... năm .........
+                    </span>
+                </div>
+                <div class="col-xs-12 page-break-inside" style="padding-left: 0px;padding-right: 0px;">
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr class="text-center signer-title">
+                                <th t-foreach="added_data.get('tieu_de_nguoi_ky')" t-as="line">
+                                    <span t-esc="line" />
+                                </th>
+                            </tr>
+                            <tr class="text-center signer-sub-title">
+                                <td t-foreach="added_data.get('tieu_de_nguoi_ky')" t-as="line">
+                                    <span>(Ký, họ tên)</span>
+                                </td>
+                            </tr>
+                            <tr style="height: 70px;" />
+                            <tr class="text-center signer-name">
+                                <td t-foreach="added_data.get('ten_nguoi_ky')" t-as="line">
+                                    <span t-esc="line" />
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!-- Table -->
+            </div>
+        </t>
+    </template>
+    <template id="template_s21_dn_so_tai_san_co_dinh">
+        <t t-call="web.html_container">
+            <t t-set="data_paper_format" t-value="'A4-ngang'" />
+            <t t-call="bao_cao.s21_dn_so_tai_san_co_dinh" />
+        </t>
+    </template>
+    <data>
+        <report string="Sổ tài sản cố định" id="action_template_s21_dn_so_tai_san_co_dinh" model="bao.cao.s21.dn.so.tai.san.co.dinh" report_type="qweb-html" name="bao_cao.template_s21_dn_so_tai_san_co_dinh" file="bao_cao.template_s21_dn_so_tai_san_co_dinh" print_report_name="Sổ tài sản cố định" />
+    </data>
+</odoo>

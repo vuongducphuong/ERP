@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_gia_thanh_tap_hop_khoan_giam_gia_thanh_cong_trinh_tham_so_form" model="ir.ui.view">
+            <field name="name">gia.thanh.tap.hop.khoan.giam.gia.thanh.form</field>
+            <field name="model">gia.thanh.tap.hop.khoan.giam.gia.thanh</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="tinh_gia_thanh_tap_hop_khoan_giam_gia_thanh_cong_trinh_form_view">
+                    <sheet>
+                        <group col="2" colspan="2">
+                            <field name="KY_TINH_GIA_THANH" readonly="1" colspan="2" />
+                        </group>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="GIA_THANH_TAP_HOP_KHOAN_GIAM_GIA_THANH_CHI_TIET_IDS" mode="tree">
+                                    <!-- <tree editable="false" create="false" options="{'group_by': ['MA_CONG_TRINH_ID']}"> -->
+                                    <tree editable="false" create="false" >
+                                        <field name="NGAY_HACH_TOAN" fixed_column="True" />
+                                        <field name="NGAY_CHUNG_TU" fixed_column="True" />
+                                        <field name="SO_CHUNG_TU" fixed_column="True" />
+                                        <field name="LOAI_CHUNG_TU" />
+                                        <field name="DIEN_GIAI" />
+                                        <field name="TK_CHI_PHI_ID" />
+                                        <field name="SO_TIEN" sum="Tổng" />
+                                        <field name="TEN_CONG_TRINH" />
+                                        <field name="MA_CONG_TRINH_ID" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button name="btn_nap" string="Nạp" class="oe_highlight" />
+                            <button name="button_cancel" string="Đóng" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_gia_thanh_tap_hop_khoan_giam_gia_thanh_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Tập hợp khoản giảm giá thành</field>
+            <field name="res_model">gia.thanh.tap.hop.khoan.giam.gia.thanh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_gia_thanh_tap_hop_khoan_giam_gia_thanh_cong_trinh_tham_so_form" />
+        </record>
+        <record id="action_open_gia_thanh_tap_hop_khoan_giam_gia_thanh_form" model="ir.actions.act_window">
+            <field name="name">Tập hợp khoản giảm giá thành</field>
+            <field name="res_model">gia.thanh.tap.hop.khoan.giam.gia.thanh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <!-- <menuitem name="Tập hợp khoản giảm giá thành" action="gia_thanh.open_gia_thanh_tap_hop_khoan_giam_gia_thanh_tham_so_form" id="menu_gia_thanh_tap_hop_chi_phi_truc_tiep" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

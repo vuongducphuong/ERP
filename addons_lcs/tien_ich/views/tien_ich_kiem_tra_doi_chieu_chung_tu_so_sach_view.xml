@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_ich_kiem_tra_doi_chieu_chung_tu_so_sach_tham_so_form" model="ir.ui.view">
+            <field name="name">tien.ich.kiem.tra.doi.chieu.chung.tu.so.sach.form</field>
+            <field name="model">tien.ich.kiem.tra.doi.chieu.chung.tu.so.sach</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="kiem_tra_doi_chieu_chung_tu_so_sach_form_view">
+                    <sheet>
+                        <span>
+                            <strong style="font-size: 14pt;">Kiểm tra, đối chiếu chứng từ, sổ sách</strong>
+                        </span>
+                        <br />
+                        <br />
+                        <p>Chức năng ngày giúp bạn phát hiện các dấu hiệu sai sót có thể xảy ra trong các chứng từ và đối chiếu các sổ sách, báo cáo có liên quan với nhau để phát hiện chênh lệch (nếu có).</p>
+                        <br />
+                        <span style="color: red;">Lưu ý:</span>
+                        <p style="color: red;">
+                            - Kết quả kiểm tra chỉ mang tính chất tham khảo để hỗ trợ bạn kiểm tra, đối chiếu được nhanh chóng. Phần mềm không đảm bảo mọi sai sót trong chứng từ, sổ sách, báo cáo sẽ được phát hiện.
+                            <br />
+                            <br />
+                            - Thời gian thực hiện có thể kéo dài tùy thuộc vào độ lớn của dữ liệu.
+                        </p>
+                        <br />
+                        <p>
+                            Chọn các nội dung cần kiểm tra
+                        </p>
+                        <br />
+                        <group col="4">
+                            <field name="CHON_BO_TAT_CA" colspan="4" string="Chọn/bỏ tất cả" />
+                            <group col="2" colspan="2">
+                                <field name="TRANG_THAI_GHI_SO_CHUNG_TU" string="1. Trạng thái ghi sổ chứng từ" />
+                                <field name="TIEN_MAT_TIEN_GUI" string="2. Tiền mặt, tiền gửi" />
+                                <field name="KHO_MUA_HANG" string="3. Kho, mua hàng" />
+                                <field name="CONG_NO" string="4. Công nợ" />
+                                <field name="TAI_SAN_CO_DINH" string="5. Tài sản cố định" />
+                                <field name="CONG_CU_DUNG_CU" string="6. Công cụ dụng cụ, chi phí trả trước" />
+                                <field name="THUE" string="7. Thuế" />
+                            </group>
+                            <group col="2" colspan="2">
+                                <field name="KHO_BAN_HANG" string="8. Kho, bán hàng" />
+                                <field name="GIA_THANH" string="9. Giá thành" />
+                                <field name="KET_CHUYEN_LAI_LO_THEO_KY" string="10. Kết chuyển lãi lỗ theo kỳ" />
+                                <field name="BAO_CAO_TAI_CHINH" string="11. Báo cáo tài chính" />
+                                <field name="THU_QUY" string="12. Thủ quỹ" />
+                                <field name="THU_KHO" string="13. Thủ kho" />
+                            </group>
+                        </group>
+                        <group col="4">
+                            <group col="2" colspan="2">
+                                <field name="KHOANG_THOI_GIAN" />
+                                <field name="CHI_NHANH_ID" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            </group>
+                            <group col="2" colspan="2">
+                                <field name="TU_NGAY" />
+                                <field name="DEN_NGAY" />
+                                <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" />
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_tien_ich_kiem_tra_doi_chieu_chung_tu_so_sach_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Kiểm tra đối chiếu chứng từ sổ sách</field>
+            <field name="res_model">tien.ich.kiem.tra.doi.chieu.chung.tu.so.sach</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_tien_ich_kiem_tra_doi_chieu_chung_tu_so_sach_tham_so_form" />
+        </record>
+        <record id="action_open_tien_ich_kiem_tra_doi_chieu_chung_tu_so_sach_form" model="ir.actions.act_window">
+            <field name="name">Kiểm tra đối chiếu chứng từ sổ sách</field>
+            <field name="res_model">tien.ich.kiem.tra.doi.chieu.chung.tu.so.sach</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

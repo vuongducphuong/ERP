@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_tai_khoan_ngan_hang_form" model="ir.ui.view">
+            <field name="name">danh.muc.tai.khoan.ngan.hang.form</field>
+            <field name="model">danh.muc.tai.khoan.ngan.hang</field>
+            <field name="arch" type="xml">
+                <form string="Tài khoản ngân hàng">
+                    <sheet>
+                        <group col="4">
+                            <group col="2" colspan="2">
+                                <field name="SO_TAI_KHOAN" string="Số tài khoản(*)" required='True'/>
+                                <field name="NGAN_HANG_ID" string="Ngân hàng(*)" options="{'columns': ['TEN_VIET_TAT', 'TEN_DAY_DU'], 'strings': ['Tên viết tắt', 'Tên ngân hàng'],'displays': ['TEN_DAY_DU']}" required='True' /> 
+                                <field name="CHI_NHANH"/>
+                                <field name="TINH_TP" string="Tỉnh/TP"/>
+                                <field name="DIA_CHI_CN"/>
+                                <field name="CHU_TAI_KHOAN"/>
+                                <field name="DIEN_GIAI"/>
+                                
+                                <field name="name" invisible='1'/>
+                             </group>
+                             <group col="2" colspan ="2">
+                                 <field name="image" widget='image' class="oe_avatar" nolabel="1"/>
+                            </group>
+                        </group>
+                        <field name="active"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_danh_muc_tai_khoan_ngan_hang_tree" model="ir.ui.view">
+            <field name="name">danh.muc.tai.khoan.ngan.hang.tree</field>
+            <field name="model">danh.muc.tai.khoan.ngan.hang</field>
+            <field name="arch" type="xml">
+                <tree string="Tài khoản ngân hàng">
+                    <field name="SO_TAI_KHOAN" string="Số tài khoản" width="130"/>
+                    <field name="NGAN_HANG_ID" string="Tên ngân hàng" width="280"/>
+                    <field name="CHI_NHANH"/>
+                    <field name="CHU_TAI_KHOAN" width="160"/>
+                    <field name="active"/>
+                    <field name="CHI_NHANH_2"/>
+                    
+                    
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_danh_muc_tai_khoan_ngan_hang" model="ir.actions.act_window">
+            <field name="name">Tài khoản ngân hàng</field>
+            <field name="res_model">danh.muc.tai.khoan.ngan.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_danh_muc_tai_khoan_ngan_hang_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_tai_khoan_ngan_hang_tree"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_tai_khoan_ngan_hang"/>
+        </record>
+
+        <record id="action_danh_muc_tai_khoan_ngan_hang_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_tai_khoan_ngan_hang_form"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_tai_khoan_ngan_hang"/>
+        </record>
+
+        <!-- <menuitem name="Tài khoản ngân hàng"
+                  action="danh_muc.open_menu_danh_muc_tai_khoan_ngan_hang"
+                  id="menu_danh_muc_tai_khoan_ngan_hang"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

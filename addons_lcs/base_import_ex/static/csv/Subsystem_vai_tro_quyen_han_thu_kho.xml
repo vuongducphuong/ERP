@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+	<MSC_SubSystem>
+		<SubSystemCode>DE_NGHI_NHAP</SubSystemCode>
+		<SubSystemName>Đề nghị nhập</SubSystemName>
+		<ParentSubSystemCode>INBook</ParentSubSystemCode>
+		<SortOrder>2220</SortOrder>
+		<SubSystemSerial>ROOT/Business/INBook/DE_NGHI_NHAP</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+		<SubSystemCode>DE_NGHI_XUAT</SubSystemCode>
+		<SubSystemName>Đề nghị xuất</SubSystemName>
+		<ParentSubSystemCode>INBook</ParentSubSystemCode>
+		<SortOrder>2221</SortOrder>
+		<SubSystemSerial>ROOT/Business/INBook/DE_NGHI_XUAT</SubSystemSerial>
+	</MSC_SubSystem>
+</DataSetImportExport>

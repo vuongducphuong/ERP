@@ -1,0 +1,3451 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+	<MSC_SubSystem>
+	  <SubSystemCode>1</SubSystemCode>
+	  <SubSystemName>Báo cáo tài chính</SubSystemName>
+	  <Description>Báo cáo tài chính</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>256</SortOrder>
+	  <SubSystemSerial>ROOT/Report/1</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>11</SubSystemCode>
+	  <SubSystemName>Tiền lương</SubSystemName>
+	  <Description>Tiền lương</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>253</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/11</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>12</SubSystemCode>
+	  <SubSystemName>Giá thành</SubSystemName>
+	  <Description>Giá thành</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>254</SortOrder>
+	  <SubSystemSerial>ROOT/Report/12</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>13</SubSystemCode>
+	  <SubSystemName>Thuế</SubSystemName>
+	  <Description>Thuế</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>255</SortOrder>
+	  <SystemType>15</SystemType>
+	  <SubSystemSerial>ROOT/Report/13</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>14</SubSystemCode>
+	  <SubSystemName>Công cụ dụng cụ</SubSystemName>
+	  <Description>Công cụ dụng cụ</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>252</SortOrder>
+	  <SubSystemSerial>ROOT/Report/14</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>15</SubSystemCode>
+	  <SubSystemName>Hợp đồng bán</SubSystemName>
+	  <Description>Hợp đồng bán</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>255</SortOrder>
+	  <SubSystemSerial>ROOT/Report/15</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>27</SubSystemCode>
+	  <SubSystemName>Tổng hợp</SubSystemName>
+	  <Description>Tổng hợp</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>246</SortOrder>
+	  <SubSystemSerial>ROOT/Report/27</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>28</SubSystemCode>
+	  <SubSystemName>Thủ quỹ</SubSystemName>
+	  <Description>Thủ quỹ</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SubSystemSerial>ROOT/Report/28</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>29</SubSystemCode>
+	  <SubSystemName>Thủ kho</SubSystemName>
+	  <Description>Thủ kho</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>258</SortOrder>
+	  <SubSystemSerial>ROOT/Report/29</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>30</SubSystemCode>
+	  <SubSystemName>Báo cáo đối chiếu</SubSystemName>
+	  <Description>CR</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>259</SortOrder>
+	  <SubSystemSerial>ROOT/Report/30</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>39</SubSystemCode>
+	  <SubSystemName>Ngân sách</SubSystemName>
+	  <Description>Ngân sách</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>256</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/39</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>4</SubSystemCode>
+	  <SubSystemName>Quỹ</SubSystemName>
+	  <Description>Quỹ</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>247</SortOrder>
+	  <SubSystemSerial>ROOT/Report/4</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>5</SubSystemCode>
+	  <SubSystemName>Ngân hàng</SubSystemName>
+	  <Description>Ngân hàng</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>248</SortOrder>
+	  <SubSystemSerial>ROOT/Report/5</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>6</SubSystemCode>
+	  <SubSystemName>Mua hàng</SubSystemName>
+	  <Description>Mua hàng</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>249</SortOrder>
+	  <SubSystemSerial>ROOT/Report/6</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>7</SubSystemCode>
+	  <SubSystemName>Bán hàng</SubSystemName>
+	  <Description>Bán hàng</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>250</SortOrder>
+	  <SubSystemSerial>ROOT/Report/7</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>8</SubSystemCode>
+	  <SubSystemName>Kho</SubSystemName>
+	  <Description>Kho</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>251</SortOrder>
+	  <SubSystemSerial>ROOT/Report/8</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>9</SubSystemCode>
+	  <SubSystemName>Tài sản cố định</SubSystemName>
+	  <Description>Tài sản cố định</Description>
+	  <ParentSubSystemCode>Report</ParentSubSystemCode>
+	  <SortOrder>253</SortOrder>
+	  <SubSystemSerial>ROOT/Report/9</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>AccumGLF01_DN</SubSystemCode>
+	  <SubSystemName>Bảng cân đối tài khoản (Mẫu quản trị)</SubSystemName>
+	  <Description>Bảng cân đối tài khoản (Mẫu quản trị)</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>258</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/AccumGLF01_DN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>BA</SubSystemCode>
+	  <SubSystemName>Ngân hàng</SubSystemName>
+	  <Description>Ngân hàng</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>62</SortOrder>
+	  <SubSystemSerial>ROOT/Business/BA</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>BABankHub</SubSystemCode>
+	  <SubSystemName>Ngân hàng điện tử</SubSystemName>
+	  <Description>Ngân hàng điện tử</Description>
+	  <ParentSubSystemCode>BA</ParentSubSystemCode>
+	  <SortOrder>65</SortOrder>
+	  <SubSystemSerial>ROOT/Business/BA/BABankHub</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>BABankReconcile</SubSystemCode>
+	  <SubSystemName>Đối chiếu ngân hàng</SubSystemName>
+	  <Description>Đối chiếu ngân hàng</Description>
+	  <ParentSubSystemCode>BA</ParentSubSystemCode>
+	  <SortOrder>70</SortOrder>
+	  <SubSystemSerial>ROOT/Business/BA/BABankReconcile</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>BACashDetailBook</SubSystemCode>
+	  <SubSystemName>Sổ tiền gửi ngân hàng</SubSystemName>
+	  <Description>Dùng để ghi chép tất cả các nghiệp vụ kinh tế phát sinh theo trình tự thời gian, đồng thời phản ánh theo quan hệ đối ứng tài khoản để phục vụ việc ghi sổ cái.</Description>
+	  <ParentSubSystemCode>5</ParentSubSystemCode>
+	  <SortOrder>258</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/5/BACashDetailBook</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>BADeposit</SubSystemCode>
+	  <SubSystemName>Thu tiền</SubSystemName>
+	  <Description>Thu tiền</Description>
+	  <ParentSubSystemCode>BA</ParentSubSystemCode>
+	  <SortOrder>63</SortOrder>
+	  <SubSystemSerial>ROOT/Business/BA/BADeposit</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>BADeposit</SubSystemCode>
+	  <SubSystemName>Chuyển tiền nội bộ</SubSystemName>
+	  <Description>Chuyển tiền nội bộ</Description>
+	  <ParentSubSystemCode>BA</ParentSubSystemCode>
+	  <SortOrder>63</SortOrder>
+	  <SubSystemSerial>ROOT/Business/BA/BADeposit</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>BAListOfBalance</SubSystemCode>
+	  <SubSystemName>Bảng kê số dư ngân hàng</SubSystemName>
+	  <ParentSubSystemCode>5</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/5/BAListOfBalance</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>BAWithDraw</SubSystemCode>
+	  <SubSystemName>Chi tiền</SubSystemName>
+	  <Description>Chi tiền</Description>
+	  <ParentSubSystemCode>BA</ParentSubSystemCode>
+	  <SortOrder>64</SortOrder>
+	  <SubSystemSerial>ROOT/Business/BA/BAWithDraw</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>BU</SubSystemCode>
+	  <SubSystemName>Ngân sách</SubSystemName>
+	  <Description>Ngân sách</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>197</SortOrder>
+	  <SubSystemSerial>ROOT/Business/BU</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>BudgetCompareExpense</SubSystemCode>
+	  <SubSystemName>Tình hình chi phí thực tế so với dự toán</SubSystemName>
+	  <Description>Tình hình chi phí thực tế so với dự toán</Description>
+	  <ParentSubSystemCode>39</ParentSubSystemCode>
+	  <SortOrder>0</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/39/BudgetCompareExpense</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>Business</SubSystemCode>
+	  <SubSystemName>Nghiệp vụ</SubSystemName>
+	  <Description>Nghiệp vụ</Description>
+	  <ParentSubSystemCode>ROOT</ParentSubSystemCode>
+	  <SortOrder>51</SortOrder>
+	  <SubSystemSerial>ROOT/Business</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CA</SubSystemCode>
+	  <SubSystemName>Quỹ</SubSystemName>
+	  <Description>Quỹ</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>52</SortOrder>
+	  <SubSystemSerial>ROOT/Business/CA</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CAAudit</SubSystemCode>
+	  <SubSystemName>Kiểm kê quỹ</SubSystemName>
+	  <Description>Kiểm kê quỹ</Description>
+	  <ParentSubSystemCode>CA</ParentSubSystemCode>
+	  <SortOrder>54</SortOrder>
+	  <SubSystemSerial>ROOT/Business/CA/CAAudit</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CABook</SubSystemCode>
+	  <SubSystemName>Thủ quỹ</SubSystemName>
+	  <Description>Thủ quỹ</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>223</SortOrder>
+	  <SubSystemSerial>ROOT/Business/CABook</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CACashBook</SubSystemCode>
+	  <SubSystemName>Sổ quỹ tiền mặt</SubSystemName>
+	  <Description>Sổ này được dùng cho thủ quỹ để phản ánh tình hình thu, chi, tồn quỹ tiền mặt tại doanh nghiệp </Description>
+	  <ParentSubSystemCode>28</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/28/CACashBook</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CACashDetailBook</SubSystemCode>
+	  <SubSystemName>Sổ kế toán chi tiết quỹ tiền mặt</SubSystemName>
+	  <Description>Dùng để ghi chép tất cả các nghiệp vụ kinh tế phát sinh theo trình tự thời gian, đồng thời phản ánh theo quan hệ đối ứng tài khoản để phục vụ việc ghi sổ cái.</Description>
+	  <ParentSubSystemCode>4</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/4/CACashDetailBook</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CACashForecast</SubSystemCode>
+	  <SubSystemName>Dự báo dòng tiền</SubSystemName>
+	  <Description>Dùng để ghi chép tất cả các nghiệp vụ kinh tế phát sinh theo trình tự thời gian, đồng thời phản ánh theo quan hệ đối ứng tài khoản để phục vụ việc ghi sổ cái.</Description>
+	  <ParentSubSystemCode>4</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/4/CACashForecast</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CAPayment</SubSystemCode>
+	  <SubSystemName>Chi tiền</SubSystemName>
+	  <Description>Chi tiền</Description>
+	  <ParentSubSystemCode>CA</ParentSubSystemCode>
+	  <SortOrder>54</SortOrder>
+	  <SubSystemSerial>ROOT/Business/CA/CAPayment</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CAReceipt</SubSystemCode>
+	  <SubSystemName>Thu tiền</SubSystemName>
+	  <Description>Thu tiền</Description>
+	  <ParentSubSystemCode>CA</ParentSubSystemCode>
+	  <SortOrder>53</SortOrder>
+	  <SubSystemSerial>ROOT/Business/CA/CAReceipt</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>Category</SubSystemCode>
+	  <SubSystemName>Danh mục</SubSystemName>
+	  <Description>Danh mục</Description>
+	  <ParentSubSystemCode>ROOT</ParentSubSystemCode>
+	  <SortOrder>13</SortOrder>
+	  <SubSystemSerial>ROOT/Category</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>ChangeDisplayOnBook</SubSystemCode>
+	  <SubSystemName>Chuyển sổ hiển thị cho nhiều chứng từ</SubSystemName>
+	  <Description>Chuyển sổ hiển thị cho nhiều chứng từ</Description>
+	  <ParentSubSystemCode>SYS</ParentSubSystemCode>
+	  <SortOrder>226</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/ChangeDisplayOnBook</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CompareConfirmDebt</SubSystemCode>
+	  <SubSystemName>Biên bản đối chiếu và xác nhận công nợ</SubSystemName>
+	  <Description>Biên bản đối chiếu và xác nhận công nợ</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>24</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/CompareConfirmDebt</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CompareInwardOutwardForAssembleDisassembly</SubSystemCode>
+	  <SubSystemName>Đối chiếu giá trị nhập, xuất kho của lệnh lắp ráp, tháo dỡ </SubSystemName>
+	  <Description>Đối chiếu giá trị nhập, xuất kho của lệnh lắp ráp, tháo dỡ </Description>
+	  <ParentSubSystemCode>30</ParentSubSystemCode>
+	  <SortOrder>9</SortOrder>
+	  <SubSystemSerial>ROOT/Report/30/CompareInwardOutwardForAssembleDisassembly</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>ComparePUInvoiceAndPayment</SubSystemCode>
+	  <SubSystemName>Đối chiếu chứng từ công nợ phải trả và chứng từ thanh toán</SubSystemName>
+	  <Description>Đối chiếu chứng từ công nợ phải trả và chứng từ thanh toán</Description>
+	  <ParentSubSystemCode>30</ParentSubSystemCode>
+	  <SortOrder>3</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/30/ComparePUInvoiceAndPayment</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CompareSAInvoiceAndPayment</SubSystemCode>
+	  <SubSystemName>Đối chiếu chứng từ công nợ phải thu và chứng từ thanh toán</SubSystemName>
+	  <Description>Đối chiếu chứng từ công nợ phải thu và chứng từ thanh toán</Description>
+	  <ParentSubSystemCode>30</ParentSubSystemCode>
+	  <SortOrder>4</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/30/CompareSAInvoiceAndPayment</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CompareSAReturnAndInward</SubSystemCode>
+	  <SubSystemName>Đối chiếu hàng bán trả lại và nhập kho</SubSystemName>
+	  <Description>Đối chiếu hàng bán trả lại và nhập kho</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>97</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/CompareSAReturnAndInward</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>ConvertMVC</SubSystemCode>
+	  <SubSystemName>Nâng cấp dữ liệu</SubSystemName>
+	  <Description>Nâng cấp dữ liệu</Description>
+	  <ParentSubSystemCode>SYS</ParentSubSystemCode>
+	  <SortOrder>225</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/SYS/ConvertMVC</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CreateReportFinance</SubSystemCode>
+	  <SubSystemName>Lập báo cáo tài chính</SubSystemName>
+	  <Description>Lập báo cáo tài chính</Description>
+	  <ParentSubSystemCode>GL</ParentSubSystemCode>
+	  <SortOrder>203</SortOrder>
+	  <SubSystemSerial>ROOT/Business/GL/CreateReportFinance</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CTExpenseSummaryByContract</SubSystemCode>
+	  <SubSystemName>Tổng hợp tình hình chi theo hợp đồng bán</SubSystemName>
+	  <Description>JCIncomeContractSummaryByOrganization</Description>
+	  <ParentSubSystemCode>15</ParentSubSystemCode>
+	  <SortOrder>263</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/15/CTExpenseSummaryByContract</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CTIncomeContractSummaryByOrganization</SubSystemCode>
+	  <SubSystemName>Tổng hợp doanh số hợp đồng theo đơn vị</SubSystemName>
+	  <Description>CTIncomeContractSummaryByOrganization</Description>
+	  <ParentSubSystemCode>15</ParentSubSystemCode>
+	  <SortOrder>261</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/15/CTIncomeContractSummaryByOrganization</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CTIncomeDetailByContract</SubSystemCode>
+	  <SubSystemName>Báo cáo chi tiết lãi lỗ theo hợp đồng</SubSystemName>
+	  <Description>CTIncomeDetailByContract</Description>
+	  <ParentSubSystemCode>15</ParentSubSystemCode>
+	  <SortOrder>258</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/15/CTIncomeDetailByContract</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CTIncomeInventorySummaryByContract</SubSystemCode>
+	  <SubSystemName>Tổng hợp doanh số mặt hàng theo hợp đồng bán</SubSystemName>
+	  <Description>CTIncomeInventorySummaryByContract</Description>
+	  <ParentSubSystemCode>15</ParentSubSystemCode>
+	  <SortOrder>262</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/15/CTIncomeInventorySummaryByContract</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CTIncomeSummaryByContract</SubSystemCode>
+	  <SubSystemName>Báo cáo tổng hợp lãi lỗ theo hợp đồng</SubSystemName>
+	  <Description>CTIncomeSummaryByProjectWork</Description>
+	  <ParentSubSystemCode>15</ParentSubSystemCode>
+	  <SortOrder>259</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/15/CTIncomeSummaryByContract</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CTSale</SubSystemCode>
+	  <SubSystemName>Hợp đồng bán</SubSystemName>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>195</SortOrder>
+	  <SubSystemSerial>ROOT/Business/CTSale</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>CTSalesContractImplementationStatus</SubSystemCode>
+	  <SubSystemName>Tình hình thực hiện hợp đồng bán</SubSystemName>
+	  <Description>Phản ánh tình hình thực hiện các hợp đồng bán phát sinh trong kỳ: số lượng đã giao, số lượng còn lại, doanh số đã thực hiện, doanh số chưa thực hiện... của từng hợp đồng bán.</Description>
+	  <ParentSubSystemCode>15</ParentSubSystemCode>
+	  <SortOrder>264</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/15/CTSalesContractImplementationStatus</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DBBusinessProcess</SubSystemCode>
+	  <SubSystemName>Bàn làm việc</SubSystemName>
+	  <Description>Bàn làm việc</Description>
+	  <ParentSubSystemCode>ROOT</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SubSystemSerial>ROOT/DBBusinessProcess</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DebtNotify</SubSystemCode>
+	  <SubSystemName>Thông báo công nợ</SubSystemName>
+	  <Description>Thông báo công nợ</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>281</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/DebtNotify</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIAccount</SubSystemCode>
+	  <SubSystemName>Tài khoản</SubSystemName>
+	  <Description>Tài khoản</Description>
+	  <ParentSubSystemCode>Category</ParentSubSystemCode>
+	  <SortOrder>14</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIAccount</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIAccountDefault</SubSystemCode>
+	  <SubSystemName>Tài khoản ngầm định</SubSystemName>
+	  <Description>Tài khoản ngầm định</Description>
+	  <ParentSubSystemCode>DIAccount</ParentSubSystemCode>
+	  <SortOrder>17</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIAccount/DIAccountDefault</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIAccountingObject</SubSystemCode>
+	  <SubSystemName>Đối tượng</SubSystemName>
+	  <Description>Đối tượng</Description>
+	  <ParentSubSystemCode>Category</ParentSubSystemCode>
+	  <SortOrder>20</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIAccountingObject</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIAccountingObjectCategory</SubSystemCode>
+	  <SubSystemName>Nhóm KH, NCC</SubSystemName>
+	  <Description>Nhóm khách hàng, nhà cung cấp</Description>
+	  <ParentSubSystemCode>DIAccountingObject</ParentSubSystemCode>
+	  <SortOrder>21</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIAccountingObject/DIAccountingObjectCategory</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIAccountSystem</SubSystemCode>
+	  <SubSystemName>Hệ thống tài khoản</SubSystemName>
+	  <Description>Hệ thống tài khoản</Description>
+	  <ParentSubSystemCode>DIAccount</ParentSubSystemCode>
+	  <SortOrder>15</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIAccount/DIAccountSystem</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIAccountTransfer</SubSystemCode>
+	  <SubSystemName>Tài khoản kết chuyển</SubSystemName>
+	  <Description>Tài khoản kết chuyển</Description>
+	  <ParentSubSystemCode>DIAccount</ParentSubSystemCode>
+	  <SortOrder>16</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIAccount/DIAccountTransfer</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIAutoBusiness</SubSystemCode>
+	  <SubSystemName>Định khoản tự động</SubSystemName>
+	  <Description>Định khoản tự động</Description>
+	  <ParentSubSystemCode>DIAccount</ParentSubSystemCode>
+	  <SortOrder>18</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIAccount/DIAutoBusiness</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIBank</SubSystemCode>
+	  <SubSystemName>Ngân hàng</SubSystemName>
+	  <Description>Ngân hàng</Description>
+	  <ParentSubSystemCode>DIBankGroup</ParentSubSystemCode>
+	  <SortOrder>41</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIBankGroup/DIBank</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIBankAccount</SubSystemCode>
+	  <SubSystemName>Tài khoản ngân hàng</SubSystemName>
+	  <Description>Tài khoản ngân hàng</Description>
+	  <ParentSubSystemCode>DIBankGroup</ParentSubSystemCode>
+	  <SortOrder>42</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIBankGroup/DIBankAccount</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIBankGroup</SubSystemCode>
+	  <SubSystemName>Ngân hàng</SubSystemName>
+	  <Description>Ngân hàng</Description>
+	  <ParentSubSystemCode>Category</ParentSubSystemCode>
+	  <SortOrder>40</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIBankGroup</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DICCY</SubSystemCode>
+	  <SubSystemName>Loại tiền</SubSystemName>
+	  <Description>Loại tiền</Description>
+	  <ParentSubSystemCode>DIOther</ParentSubSystemCode>
+	  <SortOrder>49</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIOther/DICCY</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DICost</SubSystemCode>
+	  <SubSystemName>Công trình</SubSystemName>
+	  <Description>Chi phí</Description>
+	  <ParentSubSystemCode>Category</ParentSubSystemCode>
+	  <SortOrder>35</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DICost</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DICustomer</SubSystemCode>
+	  <SubSystemName>Khách hàng</SubSystemName>
+	  <Description>Khách hàng</Description>
+	  <ParentSubSystemCode>DIAccountingObject</ParentSubSystemCode>
+	  <SortOrder>22</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIAccountingObject/DICustomer</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIDiscountTerm</SubSystemCode>
+	  <SubSystemName>Điều khoản thanh toán</SubSystemName>
+	  <Description>Điều khoản thanh toán</Description>
+	  <ParentSubSystemCode>DIOther</ParentSubSystemCode>
+	  <SortOrder>44</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIOther/DIDiscountTerm</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIEmployee</SubSystemCode>
+	  <SubSystemName>Nhân viên</SubSystemName>
+	  <Description>Nhân viên</Description>
+	  <ParentSubSystemCode>DIAccountingObject</ParentSubSystemCode>
+	  <SortOrder>24</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIAccountingObject/DIEmployee</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIEmployeeIncomeTax</SubSystemCode>
+	  <SubSystemName>Biểu tính thuế thu nhập</SubSystemName>
+	  <Description>Biểu tính thuế thu nhập</Description>
+	  <ParentSubSystemCode>DIEmployeeSalary</ParentSubSystemCode>
+	  <SortOrder>27</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIEmployeeSalary/DIEmployeeIncomeTax</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIEmployeeSalary</SubSystemCode>
+	  <SubSystemName>Lương nhân viên</SubSystemName>
+	  <Description>Lương nhân viên</Description>
+	  <ParentSubSystemCode>Category</ParentSubSystemCode>
+	  <SortOrder>25</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIEmployeeSalary</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIFixedAssetCategory</SubSystemCode>
+	  <SubSystemName>Loại tài sản cố định</SubSystemName>
+	  <Description>Loại tài sản cố định</Description>
+	  <ParentSubSystemCode>Category</ParentSubSystemCode>
+	  <SortOrder>33</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIFixedAssetCategory</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIInventoryItem</SubSystemCode>
+	  <SubSystemName>Vật tư hàng hóa</SubSystemName>
+	  <Description>Vật tư hàng hóa</Description>
+	  <ParentSubSystemCode>popDIInventoryItem</ParentSubSystemCode>
+	  <SortOrder>31</SortOrder>
+	  <SubSystemSerial>ROOT/Category/popDIInventoryItem/DIInventoryItem</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIInventoryItemCategory</SubSystemCode>
+	  <SubSystemName>Nhóm vật tư, hàng hóa, dịch vụ</SubSystemName>
+	  <Description>Nhóm vật tư, hàng hóa, dịch vụ</Description>
+	  <ParentSubSystemCode>popDIInventoryItem</ParentSubSystemCode>
+	  <SortOrder>30</SortOrder>
+	  <SubSystemSerial>ROOT/Category/popDIInventoryItem/DIInventoryItemCategory</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIItemCost</SubSystemCode>
+	  <SubSystemName>Khoản mục chi phí</SubSystemName>
+	  <Description>Khoản mục chi phí</Description>
+	  <ParentSubSystemCode>DICost</ParentSubSystemCode>
+	  <SortOrder>39</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DICost/DIItemCost</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIJob</SubSystemCode>
+	  <SubSystemName>Đối tượng tập hợp chi phí</SubSystemName>
+	  <Description>Đối tượng tập hợp chi phí</Description>
+	  <ParentSubSystemCode>DICost</ParentSubSystemCode>
+	  <SortOrder>36</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DICost/DIJob</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIListItem</SubSystemCode>
+	  <SubSystemName>Mã thống kê</SubSystemName>
+	  <Description>Mã thống kê</Description>
+	  <ParentSubSystemCode>DIOther</ParentSubSystemCode>
+	  <SortOrder>45</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIOther/DIListItem</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIOrganizationUnit</SubSystemCode>
+	  <SubSystemName>Cơ cấu tổ chức</SubSystemName>
+	  <Description>Cơ cấu tổ chức</Description>
+	  <ParentSubSystemCode>Category</ParentSubSystemCode>
+	  <SortOrder>19</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIOrganizationUnit</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIOther</SubSystemCode>
+	  <SubSystemName>Khác</SubSystemName>
+	  <Description>Khác</Description>
+	  <ParentSubSystemCode>Category</ParentSubSystemCode>
+	  <SortOrder>43</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIOther</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIProjectWork</SubSystemCode>
+	  <SubSystemName>Công trình</SubSystemName>
+	  <Description>Công trình</Description>
+	  <ParentSubSystemCode>DICost</ParentSubSystemCode>
+	  <SortOrder>38</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DICost/DIProjectWork</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIProjectWorkCategory</SubSystemCode>
+	  <SubSystemName>Loại công trình</SubSystemName>
+	  <Description>Loại công trình</Description>
+	  <ParentSubSystemCode>DICost</ParentSubSystemCode>
+	  <SortOrder>37</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DICost/DIProjectWorkCategory</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIProvider</SubSystemCode>
+	  <SubSystemName>Nhà cung cấp</SubSystemName>
+	  <Description>Nhà cung cấp</Description>
+	  <ParentSubSystemCode>DIAccountingObject</ParentSubSystemCode>
+	  <SortOrder>23</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIAccountingObject/DIProvider</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIResourcesTaxTable</SubSystemCode>
+	  <SubSystemName>Biểu thuế tài nguyên</SubSystemName>
+	  <Description>Biểu thuế tài nguyên</Description>
+	  <ParentSubSystemCode>DIOther</ParentSubSystemCode>
+	  <SortOrder>48</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIOther/DIResourcesTaxTable</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIStock</SubSystemCode>
+	  <SubSystemName>Kho</SubSystemName>
+	  <Description>Kho</Description>
+	  <ParentSubSystemCode>popDIInventoryItem</ParentSubSystemCode>
+	  <SortOrder>29</SortOrder>
+	  <SubSystemSerial>ROOT/Category/popDIInventoryItem/DIStock</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DISupplyCategory</SubSystemCode>
+	  <SubSystemName>Loại công cụ dụng cụ</SubSystemName>
+	  <Description>Loại công cụ dụng cụ</Description>
+	  <ParentSubSystemCode>Category</ParentSubSystemCode>
+	  <SortOrder>32</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DISupplyCategory</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DITaxSpecialCategory</SubSystemCode>
+	  <SubSystemName>Biểu thuế tiêu thụ đặc biệt</SubSystemName>
+	  <Description>Biểu thuế tiêu thụ đặc biệt</Description>
+	  <ParentSubSystemCode>DIOther</ParentSubSystemCode>
+	  <SortOrder>47</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIOther/DITaxSpecialCategory</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DITimeSheetSign</SubSystemCode>
+	  <SubSystemName>Ký hiệu chấm công</SubSystemName>
+	  <Description>Ký hiệu chấm công</Description>
+	  <ParentSubSystemCode>DIEmployeeSalary</ParentSubSystemCode>
+	  <SortOrder>26</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIEmployeeSalary/DITimeSheetSign</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIUnit</SubSystemCode>
+	  <SubSystemName>Đơn vị tính</SubSystemName>
+	  <Description>Đơn vị tính</Description>
+	  <ParentSubSystemCode>popDIInventoryItem</ParentSubSystemCode>
+	  <SortOrder>32</SortOrder>
+	  <SystemType>15</SystemType>
+	  <SubSystemSerial>ROOT/Category/popDIInventoryItem/DIUnit</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>DIVoucherType</SubSystemCode>
+	  <SubSystemName>Loại chứng từ</SubSystemName>
+	  <Description>Loại chứng từ</Description>
+	  <ParentSubSystemCode>DIOther</ParentSubSystemCode>
+	  <SortOrder>50</SortOrder>
+	  <SubSystemSerial>ROOT/Category/DIOther/DIVoucherType</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>EI</SubSystemCode>
+	  <SubSystemName>Hóa đơn điện tử</SubSystemName>
+	  <Description>Hóa đơn điện tử</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>100</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Business/EI</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FA</SubSystemCode>
+	  <SubSystemName>Tài sản cố định</SubSystemName>
+	  <Description>Tài sản cố định</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>120</SortOrder>
+	  <SubSystemSerial>ROOT/Business/FA</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FAAdjustment</SubSystemCode>
+	  <SubSystemName>Đánh giá lại</SubSystemName>
+	  <Description>Đánh giá lại</Description>
+	  <ParentSubSystemCode>FA</ParentSubSystemCode>
+	  <SortOrder>123</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Business/FA/FAAdjustment</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FAAudit</SubSystemCode>
+	  <SubSystemName>Kiểm kê</SubSystemName>
+	  <Description>Kiểm kê</Description>
+	  <ParentSubSystemCode>FA</ParentSubSystemCode>
+	  <SortOrder>127</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Business/FA/FAAudit</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FAChangeFinancialLeasingToOwner</SubSystemCode>
+	  <SubSystemName>Chuyển TS thuê tài chính thành TS sở hữu</SubSystemName>
+	  <Description>Chuyển TS thuê tài chính thành TS sở hữu</Description>
+	  <ParentSubSystemCode>FA</ParentSubSystemCode>
+	  <SortOrder>129</SortOrder>
+	  <SubSystemSerial>ROOT/Business/FA/FAChangeFinancialLeasingToOwner</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FADecrement</SubSystemCode>
+	  <SubSystemName>Ghi giảm</SubSystemName>
+	  <Description>Ghi giảm</Description>
+	  <ParentSubSystemCode>FA</ParentSubSystemCode>
+	  <SortOrder>126</SortOrder>
+	  <SubSystemSerial>ROOT/Business/FA/FADecrement</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FADepreciation</SubSystemCode>
+	  <SubSystemName>Tính khấu hao</SubSystemName>
+	  <Description>Tính khấu hao</Description>
+	  <ParentSubSystemCode>FA</ParentSubSystemCode>
+	  <SortOrder>125</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Business/FA/FADepreciation</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FAFixedAssetBook</SubSystemCode>
+	  <SubSystemName>S21-DN: Sổ tài sản cố định</SubSystemName>
+	  <Description>S21-DN: Sổ tài sản cố định</Description>
+	  <ParentSubSystemCode>9</ParentSubSystemCode>
+	  <SortOrder>18</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/9/FAFixedAssetBook</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FAFixedAssetDetail</SubSystemCode>
+	  <SubSystemName>Thẻ tài sản cố định</SubSystemName>
+	  <Description>Thẻ tài sản cố định</Description>
+	  <ParentSubSystemCode>9</ParentSubSystemCode>
+	  <SortOrder>17</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/9/FAFixedAssetDetail</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FAIncrement</SubSystemCode>
+	  <SubSystemName>Ghi tăng</SubSystemName>
+	  <Description>Ghi tăng</Description>
+	  <ParentSubSystemCode>FA</ParentSubSystemCode>
+	  <SortOrder>122</SortOrder>
+	  <SubSystemSerial>ROOT/Business/FA/FAIncrement</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FAOpeningEntry</SubSystemCode>
+	  <SubSystemName>Khai báo tài sản đầu kỳ</SubSystemName>
+	  <Description>Khai báo tài sản đầu kỳ</Description>
+	  <ParentSubSystemCode>FA</ParentSubSystemCode>
+	  <SortOrder>128</SortOrder>
+	  <SubSystemSerial>ROOT/Business/FA/FAOpeningEntry</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FAS21_DN</SubSystemCode>
+	  <SubSystemName>Sổ tài sản cố định</SubSystemName>
+	  <Description>Sổ tài sản cố định</Description>
+	  <ParentSubSystemCode>9</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/9/FAS21_DN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FATransfer</SubSystemCode>
+	  <SubSystemName>Điều chuyển</SubSystemName>
+	  <Description>Điều chuyển</Description>
+	  <ParentSubSystemCode>FA</ParentSubSystemCode>
+	  <SortOrder>124</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Business/FA/FATransfer</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FI</SubSystemCode>
+	  <SubSystemName>Tệp</SubSystemName>
+	  <Description>Tệp</Description>
+	  <ParentSubSystemCode>ROOT</ParentSubSystemCode>
+	  <SortOrder>2</SortOrder>
+	  <SubSystemSerial>ROOT/FI</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FIDataInfo</SubSystemCode>
+	  <SubSystemName>Thông tin về dữ liệu</SubSystemName>
+	  <Description>Thông tin về dữ liệu</Description>
+	  <ParentSubSystemCode>FI</ParentSubSystemCode>
+	  <SortOrder>6</SortOrder>
+	  <SubSystemSerial>ROOT/FI/FIDataInfo</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FIExportData</SubSystemCode>
+	  <SubSystemName>Xuất khẩu dữ liệu</SubSystemName>
+	  <Description>Xuất khẩu dữ liệu</Description>
+	  <ParentSubSystemCode>FI</ParentSubSystemCode>
+	  <SortOrder>10</SortOrder>
+	  <SubSystemSerial>ROOT/FI/FIExportData</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FIImportData</SubSystemCode>
+	  <SubSystemName>Nhập khẩu dữ liệu</SubSystemName>
+	  <Description>Nhập khẩu dữ liệu</Description>
+	  <ParentSubSystemCode>FI</ParentSubSystemCode>
+	  <SortOrder>9</SortOrder>
+	  <SubSystemSerial>ROOT/FI/FIImportData</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FIImportFromExcel</SubSystemCode>
+	  <SubSystemName>Nhập khẩu từ Excel</SubSystemName>
+	  <Description>Nhập khẩu từ Excel</Description>
+	  <ParentSubSystemCode>FI</ParentSubSystemCode>
+	  <SortOrder>7</SortOrder>
+	  <SubSystemSerial>ROOT/FI/FIImportFromExcel</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>FixedAsset</SubSystemCode>
+	  <SubSystemName>Sổ tài sản</SubSystemName>
+	  <Description>Sổ tài sản</Description>
+	  <ParentSubSystemCode>FA</ParentSubSystemCode>
+	  <SortOrder>121</SortOrder>
+	  <SubSystemSerial>ROOT/Business/FA/FixedAsset</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GetInvNo</SubSystemCode>
+	  <SubSystemName>Cấp số hóa đơn</SubSystemName>
+	  <Description>Cấp số hóa đơn</Description>
+	  <ParentSubSystemCode>IP</ParentSubSystemCode>
+	  <SortOrder>111</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IP/GetInvNo</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GL</SubSystemCode>
+	  <SubSystemName>Tổng hợp</SubSystemName>
+	  <Description>Tổng hợp</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>200</SortOrder>
+	  <SubSystemSerial>ROOT/Business/GL</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLAccountBookDetail</SubSystemCode>
+	  <SubSystemName>Sổ chi tiết tài khoản theo đối tượng THCP, công trình, đơn hàng, hợp đồng và khoản mục chi phí</SubSystemName>
+	  <Description>Sổ chi tiết tài khoản theo đối tượng THCP, công trình, đơn hàng, hợp đồng và khoản mục chi phí</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>268</SortOrder>
+	  <SubSystemSerial>ROOT/Report/27/GLAccountBookDetail</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLAccountLedgerMaster</SubSystemCode>
+	  <SubSystemName>Sổ chi tiết các tài khoản</SubSystemName>
+	  <Description>Sổ chi tiết các tài khoản</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>289</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLAccountLedgerMaster</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB01_DN</SubSystemCode>
+	  <SubSystemName>B01-DN: Bảng cân đối kế toán</SubSystemName>
+	  <Description>B01-DN: Bảng cân đối kế toán</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>1</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB01_DN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB01_DN</SubSystemCode>
+	  <SubSystemName>B02-DN: Báo cáo kết quả hoạt động kinh doanh</SubSystemName>
+	  <Description>B02-DN: Báo cáo kết quả hoạt động kinh doanh</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>1</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB01_DN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB01_DN</SubSystemCode>
+	  <SubSystemName>B03-DN: Báo cáo lưu chuyển tiền tệ (PP trực tiếp)</SubSystemName>
+	  <Description>B03-DN: Báo cáo lưu chuyển tiền tệ (PP trực tiếp)</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>1</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB01_DN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB01_DN</SubSystemCode>
+	  <SubSystemName>B03-DN-GT: Báo cáo lưu chuyển tiền tệ (PP gián tiếp)</SubSystemName>
+	  <Description>B03-DN-GT: Báo cáo lưu chuyển tiền tệ (PP gián tiếp)</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>1</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB01_DN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB01_DN_Summary</SubSystemCode>
+	  <SubSystemName>B01-DN: Bảng cân đối kế toán tổng hợp</SubSystemName>
+	  <Description>B01-DN: Bảng cân đối kế toán tổng hợp</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>15</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB01_DN_Summary</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB01a_DN_MidYear</SubSystemCode>
+	  <SubSystemName>B01a-DN: Bảng cân đối kế toán giữa niên độ (Dạng đầy đủ)</SubSystemName>
+	  <Description>B01a-DN: Bảng cân đối kế toán giữa niên độ (Dạng đầy đủ)</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>0</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB01a_DN_MidYear</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB01a_DNN</SubSystemCode>
+	  <SubSystemName>B01a-DNN: Báo cáo tình hình tài chính</SubSystemName>
+	  <Description>B01a-DNN: Báo cáo tình hình tài chính</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>261</SortOrder>
+	  <SystemType>48</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB01a_DNN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB02_DN</SubSystemCode>
+	  <SubSystemName>Báo cáo kết quả hoạt động kinh doanh</SubSystemName>
+	  <Description>Báo cáo kết quả hoạt động kinh doanh</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB02_DN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB02_DN_Summary</SubSystemCode>
+	  <SubSystemName>B02-DN: Báo cáo kết quả hoạt động kinh doanh tổng hợp</SubSystemName>
+	  <Description>B02-DN: Báo cáo kết quả hoạt động kinh doanh tổng hợp</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>15</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB02_DN_Summary</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB02a_DN_MidYear</SubSystemCode>
+	  <SubSystemName>B02a-DN: Báo cáo kết quả hoạt động kinh doanh giữa niên độ (Dạng đầy đủ)</SubSystemName>
+	  <Description>B02a-DN: Báo cáo kết quả hoạt động kinh doanh giữa niên độ (Dạng đầy đủ)</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>0</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB02a_DN_MidYear</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB03_DN</SubSystemCode>
+	  <SubSystemName>Báo cáo lưu chuyển tiền tệ (Theo phương pháp trực tiếp)</SubSystemName>
+	  <Description>Báo cáo lưu chuyển tiền tệ (Theo phương pháp trực tiếp)</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB03_DN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB03_DN_Indirect</SubSystemCode>
+	  <SubSystemName>Báo cáo lưu chuyển tiền tệ (Theo phương pháp gián tiếp)</SubSystemName>
+	  <Description>Báo cáo lưu chuyển tiền tệ (Theo phương pháp gián tiếp)</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>260</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB03_DN_Indirect</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB03_DN_Summary</SubSystemCode>
+	  <SubSystemName>B03-DN: Báo cáo lưu chuyển tiền tệ tổng hợp (Theo phương pháp trực tiếp)</SubSystemName>
+	  <Description>B03-DN: Báo cáo lưu chuyển tiền tệ tổng hợp (Theo phương pháp trực tiếp)</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>15</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB03_DN_Summary</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB03a_DN_MidYear</SubSystemCode>
+	  <SubSystemName>B03a-DN: Báo cáo lưu chuyển tiền tệ giữa niên độ (Dạng đầy đủ - PP trực tiếp)</SubSystemName>
+	  <Description>B03a-DN: Báo cáo lưu chuyển tiền tệ giữa niên độ (Dạng đầy đủ - PP trực tiếp)</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>0</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB03a_DN_MidYear</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB09_DN</SubSystemCode>
+	  <SubSystemName>B09-DN: Thuyết minh báo cáo tài chính</SubSystemName>
+	  <Description>B09-DN: Thuyết minh báo cáo tài chính</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>15</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB09_DN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB09_DNN</SubSystemCode>
+	  <SubSystemName>B09-DNN: Thuyết minh báo cáo tài chính</SubSystemName>
+	  <Description>B09-DNN: Thuyết minh báo cáo tài chính</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>10</SortOrder>
+	  <SystemType>48</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB09_DNN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLB09-DN_Summary</SubSystemCode>
+	  <SubSystemName>B09-DN: Thuyết minh báo cáo tài chính tổng hợp</SubSystemName>
+	  <Description>B09-DN: Thuyết minh báo cáo tài chính tổng hợp</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>8</SortOrder>
+	  <SystemType>15</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLB09-DN_Summary</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLBookDetailMoneyBorrow</SubSystemCode>
+	  <SubSystemName>S34-DN: Sổ chi tiết tiền vay</SubSystemName>
+	  <Description>S34-DN: Sổ chi tiết tiền vay</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>285</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLBookDetailMoneyBorrow</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLBookDetailPaymentByAccountNumber</SubSystemCode>
+	  <SubSystemName>Sổ chi tiết tài khoản theo đối tượng</SubSystemName>
+	  <Description>Sổ này dùng cho một số tài khoản thuộc loại thanh toán nguồn vốn mà chưa có mẫu sổ riêng, sổ được mở theo từng tài khoản, theo từng đối tượng thanh toán (Ví dụ TK 311, 336...)</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>262</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLBookDetailPaymentByAccountNumber</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLBookDetailPaymentByCurrency</SubSystemCode>
+	  <SubSystemName>Sổ theo dõi thanh toán bằng ngoại tệ</SubSystemName>
+	  <Description>Sổ này dùng cho một số Tài khoản thuộc loại thanh toán (ngoài TK 131, TK 331) theo từng đối tượng và theo từng Loại tiền</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>270</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLBookDetailPaymentByCurrency</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLBookDetailPaymentWithCustomerVendor</SubSystemCode>
+	  <SubSystemName>S31-DN: Sổ chi tiết thanh toán với người mua (người bán)</SubSystemName>
+	  <Description>S31-DN: Sổ chi tiết thanh toán với người mua (người bán)</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>286</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLBookDetailPaymentWithCustomerVendor</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLCAOutputRate</SubSystemCode>
+	  <SubSystemName>Tính tỷ giá xuất quỹ</SubSystemName>
+	  <Description>Tính tỷ giá xuất quỹ</Description>
+	  <ParentSubSystemCode>GL</ParentSubSystemCode>
+	  <SortOrder>206</SortOrder>
+	  <SubSystemSerial>ROOT/Business/GL/GLCAOutputRate</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLCheckReasonDifferenceLedger</SubSystemCode>
+	  <SubSystemName>Kiểm tra nguyên nhân lệch sổ cái (Hình thức Chứng từ ghi sổ)</SubSystemName>
+	  <Description>Kiểm tra nguyên nhân lệch sổ cái (Hình thức Chứng từ ghi sổ)</Description>
+	  <ParentSubSystemCode>30</ParentSubSystemCode>
+	  <SortOrder>15</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/30/GLCheckReasonDifferenceLedger</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLCloseBook</SubSystemCode>
+	  <SubSystemName>Khóa sổ kỳ kế toán</SubSystemName>
+	  <Description>Khóa sổ/ bỏ khóa sổ kỳ kế toán</Description>
+	  <ParentSubSystemCode>GL</ParentSubSystemCode>
+	  <SortOrder>211</SortOrder>
+	  <SubSystemSerial>ROOT/Business/GL/GLCloseBook</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLDetailAccountByOUAndExpense</SubSystemCode>
+	  <SubSystemName>Chi tiết phát sinh tài khoản theo đơn vị và khoản mục chi phí</SubSystemName>
+	  <Description>Chi tiết phát sinh tài khoản theo đơn vị và khoản mục chi phí</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>270</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLDetailAccountByOUAndExpense</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLDiaryLedger</SubSystemCode>
+	  <SubSystemName>S01-DN: Nhật ký - Sổ cái</SubSystemName>
+	  <Description>S01-DN: Nhật ký - Sổ cái</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>294</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLDiaryLedger</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLF01_DN</SubSystemCode>
+	  <SubSystemName>Bảng cân đối tài khoản</SubSystemName>
+	  <Description>Bảng cân đối tài khoản</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLF01_DN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLF01_DN</SubSystemCode>
+	  <SubSystemName>F01-DNN: Bảng cân đối tài khoản</SubSystemName>
+	  <Description>Bảng cân đối tài khoản</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLF01_DN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLForeignCurrency</SubSystemCode>
+	  <SubSystemName>Đánh giá lại tài khoản ngoại tệ</SubSystemName>
+	  <Description>Đánh giá lại tài khoản ngoại tệ</Description>
+	  <ParentSubSystemCode>GL</ParentSubSystemCode>
+	  <SortOrder>207</SortOrder>
+	  <SubSystemSerial>ROOT/Business/GL/GLForeignCurrency</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLGeneralDiary</SubSystemCode>
+	  <SubSystemName>Sổ nhật ký chung</SubSystemName>
+	  <Description>Dùng để ghi chép tất cả các nghiệp vụ kinh tế phát sinh theo trình tự thời gian, đồng thời phản ánh theo quan hệ đối ứng tài khoản để phục vụ việc ghi sổ cái.</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>263</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLGeneralDiary</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLGeneralVoucher</SubSystemCode>
+	  <SubSystemName>Chứng từ nghiệp vụ khác</SubSystemName>
+	  <Description>Chứng từ nghiệp vụ khác</Description>
+	  <ParentSubSystemCode>GL</ParentSubSystemCode>
+	  <SortOrder>201</SortOrder>
+	  <SubSystemSerial>ROOT/Business/GL/GLGeneralVoucher</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLObligationToGov</SubSystemCode>
+	  <SubSystemName>Tình hình thực hiện nghĩa vụ với nhà nước</SubSystemName>
+	  <Description>Tình hình thực hiện nghĩa vụ với nhà nước</Description>
+	  <ParentSubSystemCode>1</ParentSubSystemCode>
+	  <SortOrder>259</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/1/GLObligationToGov</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLPrepaidExpenseDetail</SubSystemCode>
+	  <SubSystemName>Bảng tính phân bổ chi phí trả trước</SubSystemName>
+	  <Description>Bảng tính phân bổ chi phí trả trước</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>295</SortOrder>
+	  <SubSystemSerial>ROOT/Report/27/GLPrepaidExpenseDetail</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLPrepaidExpenses</SubSystemCode>
+	  <SubSystemName>Danh sách chi phí trả trước</SubSystemName>
+	  <Description>Danh sách chi phí trả trước</Description>
+	  <ParentSubSystemCode>popGLPrepaidExpense</ParentSubSystemCode>
+	  <SortOrder>209</SortOrder>
+	  <SubSystemSerial>ROOT/Business/GL/popGLPrepaidExpense/GLPrepaidExpenses</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLProfitAndLossTransfer</SubSystemCode>
+	  <SubSystemName>Kết chuyển lãi lỗ</SubSystemName>
+	  <Description>Chứng từ kết chuyển lãi, lỗ</Description>
+	  <ParentSubSystemCode>GL</ParentSubSystemCode>
+	  <SortOrder>202</SortOrder>
+	  <SubSystemSerial>ROOT/Business/GL/GLProfitAndLossTransfer</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLProfitLoss</SubSystemCode>
+	  <SubSystemName>Báo cáo tổng hợp lãi lỗ theo đơn vị</SubSystemName>
+	  <Description>Báo cáo tổng hợp lãi lỗ theo đơn vị</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>270</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLProfitLoss</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLProfitLossDetail</SubSystemCode>
+	  <SubSystemName>Báo cáo chi tiết lãi lỗ theo đơn vị</SubSystemName>
+	  <Description>Báo cáo chi tiết lãi lỗ theo đơn vị</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>270</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLProfitLossDetail</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLReconcileFALedgerAndGLLedger</SubSystemCode>
+	  <SubSystemName>Báo cáo đối chiếu sổ tài sản và sổ cái</SubSystemName>
+	  <Description>Báo cáo đối chiếu sổ tài sản và sổ cái</Description>
+	  <ParentSubSystemCode>30</ParentSubSystemCode>
+	  <SortOrder>11</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/30/GLReconcileFALedgerAndGLLedger</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLReconcileInventoryItemAndLedger</SubSystemCode>
+	  <SubSystemName>Báo cáo đối chiếu kho và sổ cái</SubSystemName>
+	  <Description>Tổng hợp lãi lỗ theo nhiều tiêu chí</Description>
+	  <ParentSubSystemCode>30</ParentSubSystemCode>
+	  <SortOrder>7</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/30/GLReconcileInventoryItemAndLedger</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLReconcileSULedger_PrepaidAndGLLedger</SubSystemCode>
+	  <SubSystemName>Báo cáo đối chiếu sổ theo dõi CCDC, chi phí trả trước và sổ cái</SubSystemName>
+	  <Description>Báo cáo đối chiếu sổ theo dõi CCDC, chi phí trả trước và sổ cái</Description>
+	  <ParentSubSystemCode>30</ParentSubSystemCode>
+	  <SortOrder>12</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/30/GLReconcileSULedger_PrepaidAndGLLedger</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLReconcileTaxListAndLedger</SubSystemCode>
+	  <SubSystemName>Báo cáo đối chiếu bảng kê thuế và sổ cái</SubSystemName>
+	  <Description>Tổng hợp lãi lỗ theo nhiều tiêu chí</Description>
+	  <ParentSubSystemCode>30</ParentSubSystemCode>
+	  <SortOrder>6</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/30/GLReconcileTaxListAndLedger</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLRegisterVoucher</SubSystemCode>
+	  <SubSystemName>Chứng từ ghi sổ</SubSystemName>
+	  <Description>Chứng từ ghi sổ</Description>
+	  <ParentSubSystemCode>GL</ParentSubSystemCode>
+	  <SortOrder>205</SortOrder>
+	  <SubSystemSerial>ROOT/Business/GL/GLRegisterVoucher</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLStatusAllocationPrepaidExpense</SubSystemCode>
+	  <SubSystemName>Tình hình phân bổ chi phí trả trước</SubSystemName>
+	  <Description>Tình hình phân bổ chi phí trả trước</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>293</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLStatusAllocationPrepaidExpense</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLSummaryAccount</SubSystemCode>
+	  <SubSystemName>Bảng tổng hợp phát sinh tài khoản</SubSystemName>
+	  <Description>Tổng hợp lãi lỗ theo nhiều tiêu chí</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>269</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLSummaryAccount</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLSummaryByListItem</SubSystemCode>
+	  <SubSystemName>Báo cáo tổng hợp theo mã thống kê</SubSystemName>
+	  <Description>Báo cáo tổng hợp theo mã thống kê</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>288</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLSummaryByListItem</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLSummaryCost</SubSystemCode>
+	  <SubSystemName>Tổng hợp chi phí</SubSystemName>
+	  <Description>Tổng hợp chi phí</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>11</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLSummaryCost</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLSummaryCostByOUAndExpenseItem</SubSystemCode>
+	  <SubSystemName>Tổng hợp chi phí theo đơn vị và khoản mục chi phí</SubSystemName>
+	  <Description>Tổng hợp chi phí theo đơn vị và khoản mục chi phí</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>287</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLSummaryCostByOUAndExpenseItem</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLSummaryEmployeeDebit</SubSystemCode>
+	  <SubSystemName>Tổng hợp công nợ nhân viên</SubSystemName>
+	  <Description>Dùng để ghi chép tất cả các nghiệp vụ kinh tế phát sinh theo trình tự thời gian, đồng thời phản ánh theo quan hệ đối ứng tài khoản để phục vụ việc ghi sổ cái.</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>266</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GLSummaryEmployeeDebit</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLUReconcileData</SubSystemCode>
+	  <SubSystemName>Kiểm tra, đối chiếu chứng từ, sổ sách</SubSystemName>
+	  <Description>Kiểm tra, đối chiếu chứng từ, sổ sách</Description>
+	  <ParentSubSystemCode>TU</ParentSubSystemCode>
+	  <SortOrder>245</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/TU/GLUReconcileData</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GLVoucher</SubSystemCode>
+	  <SubSystemName>Phân bổ chi phí trả trước</SubSystemName>
+	  <Description>Phân bổ chi phí trả trước</Description>
+	  <ParentSubSystemCode>popGLPrepaidExpense</ParentSubSystemCode>
+	  <SortOrder>212</SortOrder>
+	  <SubSystemSerial>ROOT/Business/GL/popGLPrepaidExpense/GLVoucher</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GroupVoucher</SubSystemCode>
+	  <SubSystemName>Bảng tổng hợp chứng từ gốc cùng loại (Ghi Có TK)</SubSystemName>
+	  <Description>Bảng tổng hợp chứng từ gốc cùng loại (Ghi Có TK)</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>258</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GroupVoucher</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>GroupVoucherDebitAccount</SubSystemCode>
+	  <SubSystemName>Bảng tổng hợp chứng từ gốc cùng loại (Ghi Nợ TK)</SubSystemName>
+	  <Description>Bảng tổng hợp chứng từ gốc cùng loại (Ghi Nợ TK)</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>258</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/GroupVoucherDebitAccount</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>Help</SubSystemCode>
+	  <SubSystemName>Trợ giúp</SubSystemName>
+	  <Description>Trợ giúp</Description>
+	  <ParentSubSystemCode>ROOT</ParentSubSystemCode>
+	  <SortOrder>240</SortOrder>
+	  <SubSystemSerial>ROOT/Help</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>IN</SubSystemCode>
+	  <SubSystemName>Kho</SubSystemName>
+	  <Description>Kho</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>112</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INAssemblyDisassembly</SubSystemCode>
+	  <SubSystemName>Lệnh lắp ráp, tháo dỡ</SubSystemName>
+	  <Description>Lệnh lắp ráp, tháo dỡ</Description>
+	  <ParentSubSystemCode>IN</ParentSubSystemCode>
+	  <SortOrder>116</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IN/INAssemblyDisassembly</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INAudit</SubSystemCode>
+	  <SubSystemName>Kiểm kê</SubSystemName>
+	  <Description>Kiểm kê kho</Description>
+	  <ParentSubSystemCode>IN</ParentSubSystemCode>
+	  <SortOrder>117</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IN/INAudit</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INBook</SubSystemCode>
+	  <SubSystemName>Thủ kho</SubSystemName>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>222</SortOrder>
+	  <SubSystemSerial>ROOT/Business/INBook</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>IncomeDetailBySAOrder</SubSystemCode>
+	  <SubSystemName>Báo cáo chi tiết lãi lỗ theo đơn hàng</SubSystemName>
+	  <Description>Theo dõi được từng khoản doanh thu, chi phí theo từng chứng từ của từng đơn hàng.</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>258</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/IncomeDetailBySAOrder</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INInventoryBalanceSummaryByInventoryItemCategory</SubSystemCode>
+	  <SubSystemName>Tổng hợp tồn kho theo nhóm VTHH</SubSystemName>
+	  <Description>Tổng hợp tồn kho theo nhóm VTHH</Description>
+	  <ParentSubSystemCode>8</ParentSubSystemCode>
+	  <SortOrder>283</SortOrder>
+	  <SubSystemSerial>ROOT/Report/8/INInventoryBalanceSummaryByInventoryItemCategory</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INInventoryBalanceSummaryOnMultiStock</SubSystemCode>
+	  <SubSystemName>Tổng hợp tồn trên nhiều kho (Dạng bảng chéo)</SubSystemName>
+	  <Description>Tổng hợp tồn trên nhiều kho (Dạng bảng chéo)</Description>
+	  <ParentSubSystemCode>8</ParentSubSystemCode>
+	  <SortOrder>281</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/8/INInventoryBalanceSummaryOnMultiStock</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INInventoryBookDetail_parent</SubSystemCode>
+	  <SubSystemName>Sổ chi tiết vật tư hàng hóa</SubSystemName>
+	  <Description>Sổ chi tiết vật tư hàng hóa</Description>
+	  <ParentSubSystemCode>8</ParentSubSystemCode>
+	  <SortOrder>0</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/8/INInventoryBookDetail_parent</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INInventoryBookDetailByInward</SubSystemCode>
+	  <SubSystemName>Sổ chi tiết vật tư, hàng hóa theo chứng từ nhập</SubSystemName>
+	  <Description>Sổ chi tiết vật tư, hàng hóa theo chứng từ nhập</Description>
+	  <ParentSubSystemCode>8</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/8/INInventoryBookDetailByInward</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INInventoryBookSummary</SubSystemCode>
+	  <SubSystemName>Tổng hợp tồn kho</SubSystemName>
+	  <Description>Tổng hợp tồn kho</Description>
+	  <ParentSubSystemCode>8</ParentSubSystemCode>
+	  <SortOrder>0</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/8/INInventoryBookSummary</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INInventoryReconcileINandCA</SubSystemCode>
+	  <SubSystemName>Đối chiếu nhập xuất giữa kế toán và thủ kho</SubSystemName>
+	  <Description>Đối chiếu nhập xuất giữa kế toán và thủ kho</Description>
+	  <ParentSubSystemCode>30</ParentSubSystemCode>
+	  <SortOrder>10</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/30/INInventoryReconcileINandCA</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INInwardOther</SubSystemCode>
+	  <SubSystemName>Nhập kho</SubSystemName>
+	  <Description>Nhập kho</Description>
+	  <ParentSubSystemCode>IN</ParentSubSystemCode>
+	  <SortOrder>113</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IN/INInwardOther</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INListOutwardNoVoucher</SubSystemCode>
+	  <SubSystemName>Danh sách phiếu xuất kho chưa lập hóa đơn bán hàng</SubSystemName>
+	  <Description>Danh sách phiếu xuất kho chưa lập hóa đơn bán hàng</Description>
+	  <ParentSubSystemCode>8</ParentSubSystemCode>
+	  <SortOrder>280</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/8/INListOutwardNoVoucher</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INOutward</SubSystemCode>
+	  <SubSystemName>Xuất kho</SubSystemName>
+	  <Description>Xuất kho</Description>
+	  <ParentSubSystemCode>IN</ParentSubSystemCode>
+	  <SortOrder>114</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IN/INOutward</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INProduceDecree</SubSystemCode>
+	  <SubSystemName>Lệnh sản xuất</SubSystemName>
+	  <Description>Lệnh sản xuất</Description>
+	  <ParentSubSystemCode>IN</ParentSubSystemCode>
+	  <SortOrder>115</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IN/INProduceDecree</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INProgressReportProduced</SubSystemCode>
+	  <SubSystemName>Báo cáo tiến độ sản xuất</SubSystemName>
+	  <Description>Báo cáo tiến độ sản xuất</Description>
+	  <ParentSubSystemCode>8</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/8/INProgressReportProduced</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INReconcileInwardAndOutward</SubSystemCode>
+	  <SubSystemName>Đối chiếu tình hình xuất kho vật tư hàng hóa theo chứng từ nhập</SubSystemName>
+	  <Description>Đối chiếu tình hình xuất kho vật tư hàng hóa theo chứng từ nhập</Description>
+	  <ParentSubSystemCode>30</ParentSubSystemCode>
+	  <SortOrder>8</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/30/INReconcileInwardAndOutward</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INStockTransferBook</SubSystemCode>
+	  <SubSystemName>Sổ chuyển kho nội bộ</SubSystemName>
+	  <Description>Sổ chuyển kho nội bộ</Description>
+	  <ParentSubSystemCode>8</ParentSubSystemCode>
+	  <SortOrder>276</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/8/INStockTransferBook</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INSummaryInventoryByInwardVoucherNTXT</SubSystemCode>
+	  <SubSystemName>Báo cáo hàng tồn kho theo chứng từ nhập (PP nhập trước xuất trước)</SubSystemName>
+	  <Description>Báo cáo hàng tồn kho theo chứng từ nhập (PP nhập trước xuất trước)</Description>
+	  <ParentSubSystemCode>8</ParentSubSystemCode>
+	  <SortOrder>277</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/8/INSummaryInventoryByInwardVoucherNTXT</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INSummaryOutwardByProductionOrder</SubSystemCode>
+	  <SubSystemName>Tổng hợp xuất kho theo lệnh sản xuất</SubSystemName>
+	  <Description>Tổng hợp xuất kho theo định mức nguyên vật liệu</Description>
+	  <ParentSubSystemCode>8</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/8/INSummaryOutwardByProductionOrder</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INTransfer</SubSystemCode>
+	  <SubSystemName>Chuyển kho</SubSystemName>
+	  <Description>Chuyển kho</Description>
+	  <ParentSubSystemCode>IN</ParentSubSystemCode>
+	  <SortOrder>114</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IN/INTransfer</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>INUpdateOutwardPrice</SubSystemCode>
+	  <SubSystemName>Tính giá xuất kho</SubSystemName>
+	  <Description>Tính giá xuất kho</Description>
+	  <ParentSubSystemCode>IN</ParentSubSystemCode>
+	  <SortOrder>118</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IN/INUpdateOutwardPrice</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>InventoryInStockAndOrderNonDelivery</SubSystemCode>
+	  <SubSystemName>Thống kê số lượng tồn kho và số lượng đặt hàng chưa giao</SubSystemName>
+	  <Description>Thống kê số lượng tồn kho và số lượng đặt hàng chưa giao</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>290</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/InventoryInStockAndOrderNonDelivery</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>IP</SubSystemCode>
+	  <SubSystemName>Quản lý hóa đơn</SubSystemName>
+	  <Description>Quản lý hóa đơn</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>102</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IP</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>IPCancel</SubSystemCode>
+	  <SubSystemName>Hủy hóa đơn</SubSystemName>
+	  <Description>Hủy hóa đơn</Description>
+	  <ParentSubSystemCode>IP</ParentSubSystemCode>
+	  <SortOrder>106</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IP/IPCancel</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>IPChangeInvoiceInfo</SubSystemCode>
+	  <SubSystemName>Thông báo điều chỉnh thông tin hóa đơn</SubSystemName>
+	  <Description>Thông báo điều chỉnh thông tin hóa đơn</Description>
+	  <ParentSubSystemCode>IP</ParentSubSystemCode>
+	  <SortOrder>109</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IP/IPChangeInvoiceInfo</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>IPDeleted</SubSystemCode>
+	  <SubSystemName>Xóa hóa đơn</SubSystemName>
+	  <Description>Xóa hóa đơn</Description>
+	  <ParentSubSystemCode>IP</ParentSubSystemCode>
+	  <SortOrder>108</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IP/IPDeleted</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>IPLostBurnDamaged</SubSystemCode>
+	  <SubSystemName>Mất, cháy, hỏng hóa đơn</SubSystemName>
+	  <Description>Mất, cháy, hỏng hóa đơn</Description>
+	  <ParentSubSystemCode>IP</ParentSubSystemCode>
+	  <SortOrder>107</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IP/IPLostBurnDamaged</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>IPPublish</SubSystemCode>
+	  <SubSystemName>Thông báo phát hành hóa đơn</SubSystemName>
+	  <Description>Thông báo phát hành hóa đơn</Description>
+	  <ParentSubSystemCode>IP</ParentSubSystemCode>
+	  <SortOrder>105</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IP/IPPublish</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>IPRegister</SubSystemCode>
+	  <SubSystemName>Đăng ký sử dụng hoá đơn</SubSystemName>
+	  <Description>Đăng ký sử dụng hoá đơn</Description>
+	  <ParentSubSystemCode>IP</ParentSubSystemCode>
+	  <SortOrder>104</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IP/IPRegister</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>IPTemplate</SubSystemCode>
+	  <SubSystemName>Mẫu hóa đơn</SubSystemName>
+	  <Description>Mẫu hóa đơn</Description>
+	  <ParentSubSystemCode>IP</ParentSubSystemCode>
+	  <SortOrder>103</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IP/IPTemplate</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>IPUsingState</SubSystemCode>
+	  <SubSystemName>Tình hình sử dụng hóa đơn</SubSystemName>
+	  <Description>Tình hình sử dụng hóa đơn</Description>
+	  <ParentSubSystemCode>IP</ParentSubSystemCode>
+	  <SortOrder>110</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IP/IPUsingState</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JC</SubSystemCode>
+	  <SubSystemName>Giá thành</SubSystemName>
+	  <Description>Giá thành</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>165</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JC_CompareJobCostAndInwardAmount</SubSystemCode>
+	  <SubSystemName>Báo cáo đối chiếu giá thành và giá trị nhập kho</SubSystemName>
+	  <Description>Báo cáo đối chiếu giá thành và giá trị nhập kho</Description>
+	  <ParentSubSystemCode>30</ParentSubSystemCode>
+	  <SortOrder>13</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/30/JC_CompareJobCostAndInwardAmount</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JC_ListVoucherGeneralAllocation</SubSystemCode>
+	  <SubSystemName>Liệt kê danh sách chứng từ chi phí chung theo kỳ tính giá thành</SubSystemName>
+	  <Description>Liệt kê danh sách chứng từ chi phí chung theo kỳ tính giá thành</Description>
+	  <ParentSubSystemCode>12</ParentSubSystemCode>
+	  <SortOrder>354</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/12/JC_ListVoucherGeneralAllocation</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JC_S37_DN</SubSystemCode>
+	  <SubSystemName>S37-DN: Thẻ tính giá thành sản phẩm, dịch vụ</SubSystemName>
+	  <Description>S37-DN: Thẻ tính giá thành sản phẩm, dịch vụ</Description>
+	  <ParentSubSystemCode>12</ParentSubSystemCode>
+	  <SortOrder>12</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/12/JC_S37_DN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCAccountDetail</SubSystemCode>
+	  <SubSystemName>Sổ chi tiết tài khoản chi phí sản xuất</SubSystemName>
+	  <Description>Sổ chi tiết tài khoản chi phí sản xuất</Description>
+	  <ParentSubSystemCode>12</ParentSubSystemCode>
+	  <SortOrder>8</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/12/JCAccountDetail</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCCostAllocationDetailByExpenseItem</SubSystemCode>
+	  <SubSystemName>Bảng tổng hợp chi phí theo đối tượng THCP, công trình, đơn hàng, hợp đồng</SubSystemName>
+	  <Description>Bảng tổng hợp chi phí theo khoản mục chi phí</Description>
+	  <ParentSubSystemCode>12</ParentSubSystemCode>
+	  <SortOrder>284</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/12/JCCostAllocationDetailByExpenseItem</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCIncomeDetailByProjectWorkCommon</SubSystemCode>
+	  <SubSystemName>Báo cáo chi tiết lãi lỗ theo công trình</SubSystemName>
+	  <Description>JCIncomeSummaryByProjectWork</Description>
+	  <ParentSubSystemCode>12</ParentSubSystemCode>
+	  <SortOrder>263</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/12/JCIncomeDetailByProjectWorkCommon</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCIncomeSummaryByProjectWork</SubSystemCode>
+	  <SubSystemName>Báo cáo tổng hợp lãi lỗ theo công trình</SubSystemName>
+	  <Description>JCIncomeSummaryByProjectWork</Description>
+	  <ParentSubSystemCode>12</ParentSubSystemCode>
+	  <SortOrder>264</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/12/JCIncomeSummaryByProjectWork</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCInwardOutwardList</SubSystemCode>
+	  <SubSystemName>Bảng kê phiếu nhập, phiếu xuất theo đối tượng THCP, công trình, đơn hàng, hợp đồng</SubSystemName>
+	  <Description>Bảng kê phiếu nhập, phiếu xuất theo đối tượng THCP, công trình, đơn hàng, hợp đồng</Description>
+	  <ParentSubSystemCode>12</ParentSubSystemCode>
+	  <SortOrder>1</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/12/JCInwardOutwardList</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCManagementCostAllocation</SubSystemCode>
+	  <SubSystemName>Phân bổ chi phí BH, QLDN, khác</SubSystemName>
+	  <Description>Phân bổ chi phí BH, QLDN, khác</Description>
+	  <ParentSubSystemCode>GL</ParentSubSystemCode>
+	  <SortOrder>208</SortOrder>
+	  <SubSystemSerial>ROOT/Business/GL/JCManagementCostAllocation</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCPaymentEmployeeByProjectWork</SubSystemCode>
+	  <SubSystemName>Chi tiết công nợ nhân viên theo công trình, hợp đồng</SubSystemName>
+	  <Description>Chi tiết công nợ nhân viên theo công trình, hợp đồng</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>284</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/JCPaymentEmployeeByProjectWork</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductCostDetail</SubSystemCode>
+	  <SubSystemName>Bảng tính giá thành</SubSystemName>
+	  <Description>Bảng tính giá thành</Description>
+	  <ParentSubSystemCode>12</ParentSubSystemCode>
+	  <SortOrder>355</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/12/JCProductCostDetail</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionContract</SubSystemCode>
+	  <SubSystemName>Hợp đồng</SubSystemName>
+	  <Description>Hợp đồng</Description>
+	  <ParentSubSystemCode>JC</ParentSubSystemCode>
+	  <SortOrder>194</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionContract</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionContract</SubSystemCode>
+	  <SubSystemName>Kỳ tính giá thành</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionContract</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionContract/KyTinhGiaThanh</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionContract</SubSystemCode>
+	  <SubSystemName>Kết chuyển chi phí</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionContract</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionContract/KetChuyenChiPhi</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionContract</SubSystemCode>
+	  <SubSystemName>Nghiệm thu hợp đồng</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionContract</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionContract/NghiemThuHopDong</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionContract</SubSystemCode>
+	  <SubSystemName>Nhập lũy kế CP phát sinh...</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionContract</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionContract/NhapLuyKeCPPS</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionNormComparationSheet</SubSystemCode>
+	  <SubSystemName>Bảng so sánh định mức dự toán vật tư</SubSystemName>
+	  <Description>Bảng so sánh định mức dự toán vật tư</Description>
+	  <ParentSubSystemCode>12</ParentSubSystemCode>
+	  <SortOrder>262</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/12/JCProductionNormComparationSheet</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionOrder</SubSystemCode>
+	  <SubSystemName>Đơn hàng</SubSystemName>
+	  <Description>Đơn hàng</Description>
+	  <ParentSubSystemCode>JC</ParentSubSystemCode>
+	  <SortOrder>188</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionOrder</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionOrder</SubSystemCode>
+	  <SubSystemName>Kỳ tính giá thành</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionOrder</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionOrder/KyTinhGiaThanh</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionOrder</SubSystemCode>
+	  <SubSystemName>Kết chuyển chi phí</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionOrder</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionOrder/KetChuyenChiPhi</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionOrder</SubSystemCode>
+	  <SubSystemName>Nghiệm thu đơn hàng</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionOrder</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionOrder/NghiemThuDonHang</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionOrder</SubSystemCode>
+	  <SubSystemName>Nhập lũy kế CP phát sinh...</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionOrder</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionOrder/NhapLuyKeCPPS</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionPhase</SubSystemCode>
+	  <SubSystemName>Sản xuất liên tục-Phân bước</SubSystemName>
+	  <Description>Sản xuất liên tục-Phân bước</Description>
+	  <ParentSubSystemCode>JC</ParentSubSystemCode>
+	  <SortOrder>176</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionPhase</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionProjectWork</SubSystemCode>
+	  <SubSystemName>Công trình</SubSystemName>
+	  <Description>Công trình</Description>
+	  <ParentSubSystemCode>JC</ParentSubSystemCode>
+	  <SortOrder>181</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionProjectWork</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionProjectWork</SubSystemCode>
+	  <SubSystemName>Kỳ tính giá thành</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionProjectWork</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionProjectWork/KyTinhGiaThanh</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionProjectWork</SubSystemCode>
+	  <SubSystemName>Kết chuyển chi phí</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionProjectWork</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionProjectWork/KetChuyenChiPhi</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionProjectWork</SubSystemCode>
+	  <SubSystemName>Nghiệm thu công trình</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionProjectWork</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionProjectWork/NghiemThuCongTrinh</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionProjectWork</SubSystemCode>
+	  <SubSystemName>Nhập CP phát sinh...</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionProjectWork</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionProjectWork/NhapCPPhatSinh</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionProjectWork</SubSystemCode>
+	  <SubSystemName>Đ.mức NVL công trình...</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionProjectWork</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionProjectWork/DinhMucNVL</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionProjectWork</SubSystemCode>
+	  <SubSystemName>Khai báo Đ.mức PBCP...</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionProjectWork</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionProjectWork/KhaiBaoDMPBCP</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionRate</SubSystemCode>
+	  <SubSystemName>SX liên tục - Hệ số, tỷ lệ</SubSystemName>
+	  <Description>Sản xuất liên tục-Hệ số, tỷ lệ</Description>
+	  <ParentSubSystemCode>JC</ParentSubSystemCode>
+	  <SortOrder>170</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionRate</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionRate</SubSystemCode>
+	  <SubSystemName>Kỳ tính giá thành</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionRate</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionRate/KyTinhGiaThanh</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionRate</SubSystemCode>
+	  <SubSystemName>Kết chuyển chi phí</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionRate</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionRate/KetChuyenChiPhi</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionRate</SubSystemCode>
+	  <SubSystemName>Khai báo CPDD đầu kỳ...</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionRate</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionRate/KhaiBaoCPDDDauKy</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionRate</SubSystemCode>
+	  <SubSystemName>Khai báo Đ.mức giá thành...</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionRate</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionRate/KhaiBaoDinhMucGiaThanh</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionRate</SubSystemCode>
+	  <SubSystemName>Khai báo Đ.mức PBCP...</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionRate</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionRate/KhaiBaoDinhMucPBCP</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionSimple</SubSystemCode>
+	  <SubSystemName>SX liên tục - Giản đơn</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JC</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionSimple</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionSimple</SubSystemCode>
+	  <SubSystemName>Kỳ tính giá thành</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionSimple</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionSimple/KyTinhGiaThanh</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionSimple</SubSystemCode>
+	  <SubSystemName>Kết chuyển chi phí</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionSimple</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionSimple/KetChuyenChiPhi</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionSimple</SubSystemCode>
+	  <SubSystemName>Khai báo CPDD đầu kỳ...</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionSimple</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionSimple/KhaiBaoCPDDDauKy</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionSimple</SubSystemCode>
+	  <SubSystemName>Khai báo Đ.mức giá thành...</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionSimple</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionSimple/KhaiBaoDinhMucGiaThanh</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCProductionSimple</SubSystemCode>
+	  <SubSystemName>Khai báo Đ.mức PBCP...</SubSystemName>
+	  <Description>Sản xuất liên tục-Giản đơn</Description>
+	  <ParentSubSystemCode>JCProductionSimple</ParentSubSystemCode>
+	  <SortOrder>166</SortOrder>
+	  <SubSystemSerial>ROOT/Business/JC/JCProductionSimple/KhaiBaoDinhMucPBCP</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCS36</SubSystemCode>
+	  <SubSystemName>S36-DN: Sổ chi phí sản xuất kinh doanh</SubSystemName>
+	  <Description>S36-DN: Sổ chi phí sản xuất kinh doanh</Description>
+	  <ParentSubSystemCode>12</ParentSubSystemCode>
+	  <SortOrder>13</SortOrder>
+	  <SystemType>15</SystemType>
+	  <SubSystemSerial>ROOT/Report/12/JCS36</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCSummariesInwardOutward</SubSystemCode>
+	  <SubSystemName>Tổng hợp nhập, xuất kho theo đối tượng THCP, công trình, đơn hàng, hợp đồng</SubSystemName>
+	  <Description>Tổng hợp nhập, xuất kho theo đối tượng THCP, công trình, đơn hàng, hợp đồng</Description>
+	  <ParentSubSystemCode>12</ParentSubSystemCode>
+	  <SortOrder>266</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/12/JCSummariesInwardOutward</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCSummaryCost</SubSystemCode>
+	  <SubSystemName>Tổng hợp chi phí sản xuất kinh doanh</SubSystemName>
+	  <Description>Tổng hợp chi phí sản xuất kinh doanh</Description>
+	  <ParentSubSystemCode>12</ParentSubSystemCode>
+	  <SortOrder>265</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/12/JCSummaryCost</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>JCSummaryCostByExpenseItem</SubSystemCode>
+	  <SubSystemName>Tổng hợp chi phí công trình, hợp đồng theo khoản mục chi phí</SubSystemName>
+	  <Description>Tổng hợp chi phí công trình, hợp đồng theo khoản mục chi phí</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>267</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/JCSummaryCostByExpenseItem</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>ManagementMisaOrder</SubSystemCode>
+	  <SubSystemName>Quản lý đơn hàng mua phần mềm MISA</SubSystemName>
+	  <Description>Quản lý đơn hàng mua phần mềm MISA</Description>
+	  <ParentSubSystemCode>Help</ParentSubSystemCode>
+	  <SortOrder>1</SortOrder>
+	  <SubSystemSerial>ROOT/Help/ManagementMisaOrder</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>MaterialToolProductGoodsBookDetail</SubSystemCode>
+	  <SubSystemName>S10-DN: Sổ chi tiết vật liệu, công cụ (sản phẩm, hàng hóa)</SubSystemName>
+	  <Description>S10-DN: Sổ chi tiết vật liệu, công cụ (sản phẩm, hàng hóa)</Description>
+	  <ParentSubSystemCode>8</ParentSubSystemCode>
+	  <SortOrder>0</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/8/MaterialToolProductGoodsBookDetail</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>OPN</SubSystemCode>
+	  <SubSystemName>Nhập số dư ban đầu</SubSystemName>
+	  <Description>Nhập số dư ban đầu</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>214</SortOrder>
+	  <SubSystemSerial>ROOT/Business/OPN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>OPNAccount</SubSystemCode>
+	  <SubSystemName>Nhập số dư</SubSystemName>
+	  <Description>Số dư tài khoản</Description>
+	  <ParentSubSystemCode>OPN</ParentSubSystemCode>
+	  <SortOrder>215</SortOrder>
+	  <SubSystemSerial>ROOT/Business/OPN/OPNAccount</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>OPNAccountCustomerDebit</SubSystemCode>
+	  <SubSystemName>Công nợ khách hàng</SubSystemName>
+	  <Description>Công nợ khách hàng</Description>
+	  <ParentSubSystemCode>OPN</ParentSubSystemCode>
+	  <SortOrder>216</SortOrder>
+	  <SubSystemSerial>ROOT/Business/OPN/OPNAccountCustomerDebit</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>OPNAccountEmployeeDebit</SubSystemCode>
+	  <SubSystemName>Công nợ nhân viên</SubSystemName>
+	  <Description>Công nợ nhân viên</Description>
+	  <ParentSubSystemCode>OPN</ParentSubSystemCode>
+	  <SortOrder>217</SortOrder>
+	  <SubSystemSerial>ROOT/Business/OPN/OPNAccountEmployeeDebit</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>OPNAccountProviderDebit</SubSystemCode>
+	  <SubSystemName>Công nợ nhà cung cấp</SubSystemName>
+	  <Description>Công nợ nhà cung cấp</Description>
+	  <ParentSubSystemCode>OPN</ParentSubSystemCode>
+	  <SortOrder>218</SortOrder>
+	  <SubSystemSerial>ROOT/Business/OPN/OPNAccountProviderDebit</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>OPNBankAccount</SubSystemCode>
+	  <SubSystemName>Số dư tài khoản ngân hàng</SubSystemName>
+	  <Description>Số dư tài khoản ngân hàng</Description>
+	  <ParentSubSystemCode>OPN</ParentSubSystemCode>
+	  <SortOrder>219</SortOrder>
+	  <SubSystemSerial>ROOT/Business/OPN/OPNBankAccount</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>OPNInventoryItemRemain</SubSystemCode>
+	  <SubSystemName>Tồn kho vật tư hàng hóa</SubSystemName>
+	  <Description>Tồn kho vật tư hàng hóa</Description>
+	  <ParentSubSystemCode>OPN</ParentSubSystemCode>
+	  <SortOrder>220</SortOrder>
+	  <SubSystemSerial>ROOT/Business/OPN/OPNInventoryItemRemain</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>OPNJCOpening</SubSystemCode>
+	  <SubSystemName>Chi phí dở dang</SubSystemName>
+	  <Description>Chi phí dở dang</Description>
+	  <ParentSubSystemCode>OPN</ParentSubSystemCode>
+	  <SortOrder>221</SortOrder>
+	  <SubSystemSerial>ROOT/Business/OPN/OPNJCOpening</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>OrderVoucherIO</SubSystemCode>
+	  <SubSystemName>Sắp xếp thứ tự chứng từ nhập, xuất</SubSystemName>
+	  <Description>Sắp xếp thứ tự chứng từ nhập, xuất</Description>
+	  <ParentSubSystemCode>IN</ParentSubSystemCode>
+	  <SortOrder>119</SortOrder>
+	  <SubSystemSerial>ROOT/Business/IN/OrderVoucherIO</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PA</SubSystemCode>
+	  <SubSystemName>Tiền lương</SubSystemName>
+	  <Description>Tiền lương</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>139</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PA</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PASalaryExpense</SubSystemCode>
+	  <SubSystemName>Hạch toán chi phí lương</SubSystemName>
+	  <Description>Hạch toán chi phí</Description>
+	  <ParentSubSystemCode>PA</ParentSubSystemCode>
+	  <SortOrder>143</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PA/PASalaryExpense</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PASalaryPayment</SubSystemCode>
+	  <SubSystemName>Trả lương</SubSystemName>
+	  <Description>Trả lương</Description>
+	  <ParentSubSystemCode>PA</ParentSubSystemCode>
+	  <SortOrder>144</SortOrder>
+	  <SystemType>15</SystemType>
+	  <SubSystemSerial>ROOT/Business/PA/PASalaryPayment</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PASalarySheet</SubSystemCode>
+	  <SubSystemName>Tính lương</SubSystemName>
+	  <Description>Tính lương</Description>
+	  <ParentSubSystemCode>PA</ParentSubSystemCode>
+	  <SortOrder>142</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Business/PA/PASalarySheet</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PASalarySheetByTimeMultiple</SubSystemCode>
+	  <SubSystemName>Bảng tổng hợp thanh toán tiền lương (Bảng lương theo thời gian) </SubSystemName>
+	  <Description>Bảng tổng hợp thanh toán tiền lương (Bảng lương theo thời gian) </Description>
+	  <ParentSubSystemCode>11</ParentSubSystemCode>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/11/PASalarySheetByTimeMultiple</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PASalarySheetFixedMultiple</SubSystemCode>
+	  <SubSystemName>Bảng tổng hợp thanh toán tiền lương (Bảng lương cố định)</SubSystemName>
+	  <Description>Bảng tổng hợp thanh toán tiền lương (Bảng lương cố định)</Description>
+	  <ParentSubSystemCode>11</ParentSubSystemCode>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/11/PASalarySheetFixedMultiple</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PASalarySummaryByEmployee</SubSystemCode>
+	  <SubSystemName>Báo cáo tổng hợp lương nhân viên</SubSystemName>
+	  <Description>Báo cáo tổng hợp lương nhân viên</Description>
+	  <ParentSubSystemCode>11</ParentSubSystemCode>
+	  <SortOrder>355</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/11/PASalarySummaryByEmployee</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PASummariesTimeSheet</SubSystemCode>
+	  <SubSystemName>Tổng hợp chấm công</SubSystemName>
+	  <Description>Tổng hợp chấm công</Description>
+	  <ParentSubSystemCode>PA</ParentSubSystemCode>
+	  <SortOrder>141</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PA/PASummariesTimeSheet</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PATimSheet</SubSystemCode>
+	  <SubSystemName>Chấm công</SubSystemName>
+	  <Description>Chấm công</Description>
+	  <ParentSubSystemCode>PA</ParentSubSystemCode>
+	  <SortOrder>140</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PA/PATimSheet</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PATimSheet</SubSystemCode>
+	  <SubSystemName>Nộp bảo hiểm</SubSystemName>
+	  <Description>Chấm công</Description>
+	  <ParentSubSystemCode>PA</ParentSubSystemCode>
+	  <SortOrder>140</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PA/PATimSheet</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PATimSheet</SubSystemCode>
+	  <SubSystemName>Quy định lương</SubSystemName>
+	  <Description>Chấm công</Description>
+	  <ParentSubSystemCode>PA</ParentSubSystemCode>
+	  <SortOrder>140</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PA/PATimSheet</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PayableSummaryByAgeOfDebt</SubSystemCode>
+	  <SubSystemName>Phân tích công nợ phải trả theo tuổi nợ</SubSystemName>
+	  <Description>Phân tích công nợ phải trả theo tuổi nợ</Description>
+	  <ParentSubSystemCode>6</ParentSubSystemCode>
+	  <SortOrder>279</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/6/PayableSummaryByAgeOfDebt</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PaymentableDetailByInventoryItem</SubSystemCode>
+	  <SubSystemName>Chi tiết công nợ phải trả theo mặt hàng</SubSystemName>
+	  <Description>Chi tiết công nợ phải trả theo mặt hàng</Description>
+	  <ParentSubSystemCode>6</ParentSubSystemCode>
+	  <SortOrder>261</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/6/PaymentableDetailByInventoryItem</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PaymentableSummary</SubSystemCode>
+	  <SubSystemName>Tổng hợp công nợ phải trả nhà cung cấp</SubSystemName>
+	  <Description>Tổng hợp công nợ phải trả nhà cung cấp</Description>
+	  <ParentSubSystemCode>6</ParentSubSystemCode>
+	  <SortOrder>9</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/6/PaymentableSummary</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PaymentDateByCustomer</SubSystemCode>
+	  <SubSystemName>Báo cáo ngày thanh toán theo khách hàng</SubSystemName>
+	  <Description>Báo cáo ngày thanh toán theo khách hàng</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>289</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/PaymentDateByCustomer</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PaymentDetail</SubSystemCode>
+	  <SubSystemName>Chi tiết công nợ phải trả nhà cung cấp</SubSystemName>
+	  <Description>Chi tiết công nợ phải trả nhà cung cấp</Description>
+	  <ParentSubSystemCode>6</ParentSubSystemCode>
+	  <SortOrder>1</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/6/PaymentDetail</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>popDIInventoryItem</SubSystemCode>
+	  <SubSystemName>Vật tư hàng hóa</SubSystemName>
+	  <Description>Vật tư hàng hóa</Description>
+	  <ParentSubSystemCode>Category</ParentSubSystemCode>
+	  <SortOrder>28</SortOrder>
+	  <SubSystemSerial>ROOT/Category/popDIInventoryItem</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>popGLPrepaidExpense</SubSystemCode>
+	  <SubSystemName>Chi phí trả trước</SubSystemName>
+	  <Description>Chi phí trả trước</Description>
+	  <ParentSubSystemCode>GL</ParentSubSystemCode>
+	  <SortOrder>209</SortOrder>
+	  <SubSystemSerial>ROOT/Business/GL/popGLPrepaidExpense</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PU</SubSystemCode>
+	  <SubSystemName>Mua hàng</SubSystemName>
+	  <Description>Mua hàng</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>71</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PU</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUCompareConfirmPayableDebt</SubSystemCode>
+	  <SubSystemName>Biên bản đối chiếu và xác nhận công nợ phải trả</SubSystemName>
+	  <Description>Biên bản đối chiếu và xác nhận công nợ phải trả</Description>
+	  <ParentSubSystemCode>6</ParentSubSystemCode>
+	  <SortOrder>278</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/6/PUCompareConfirmPayableDebt</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUContract</SubSystemCode>
+	  <SubSystemName>Hợp đồng mua hàng</SubSystemName>
+	  <Description>Hợp đồng mua hàng</Description>
+	  <ParentSubSystemCode>PU</ParentSubSystemCode>
+	  <SortOrder>73</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PU/PUContract</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUCrossEntry</SubSystemCode>
+	  <SubSystemName>Đối trừ chứng từ</SubSystemName>
+	  <Description>Đối trừ/bỏ đối trừ</Description>
+	  <ParentSubSystemCode>PU</ParentSubSystemCode>
+	  <SortOrder>80</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PU/PUCrossEntry</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUCrossEntry</SubSystemCode>
+	  <SubSystemName>Đối trừ chứng từ nhiều đối tượng</SubSystemName>
+	  <Description>Đối trừ/bỏ đối trừ</Description>
+	  <ParentSubSystemCode>PU</ParentSubSystemCode>
+	  <SortOrder>80</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PU/PUCrossEntry</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUCrossEntry</SubSystemCode>
+	  <SubSystemName>Bỏ đối trừ</SubSystemName>
+	  <Description>Đối trừ/bỏ đối trừ</Description>
+	  <ParentSubSystemCode>PU</ParentSubSystemCode>
+	  <SortOrder>80</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PU/PUCrossEntry</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUCrossEntryBalance</SubSystemCode>
+	  <SubSystemName>Bù trừ công nợ</SubSystemName>
+	  <Description>Bù trừ công nợ</Description>
+	  <ParentSubSystemCode>PU</ParentSubSystemCode>
+	  <SortOrder>82</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PU/PUCrossEntryBalance</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUDeptBalance</SubSystemCode>
+	  <SubSystemName>Công nợ</SubSystemName>
+	  <Description>Công nợ</Description>
+	  <ParentSubSystemCode>PU</ParentSubSystemCode>
+	  <SortOrder>292</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PU/PUDeptBalance</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUDetailPurchaseByInventoryItemDynamic</SubSystemCode>
+	  <SubSystemName>Sổ chi tiết mua hàng</SubSystemName>
+	  <Description>Ghi chép chi tiết các nghiệp vụ mua hàng, trả lại hàng mua, giảm giá hàng mua theo từng chứng từ phát sinh của một mặt hàng</Description>
+	  <ParentSubSystemCode>6</ParentSubSystemCode>
+	  <SortOrder>263</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/6/PUDetailPurchaseByInventoryItemDynamic</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUDiary</SubSystemCode>
+	  <SubSystemName>Sổ nhật ký mua hàng</SubSystemName>
+	  <Description>Ghi chép các nghiệp vụ mua hàng theo thời gian chi tiết theo từng chứng từ phát sinh</Description>
+	  <ParentSubSystemCode>6</ParentSubSystemCode>
+	  <SortOrder>264</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/6/PUDiary</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUDiscount</SubSystemCode>
+	  <SubSystemName>Giảm giá hàng mua</SubSystemName>
+	  <Description>Giảm giá hàng mua</Description>
+	  <ParentSubSystemCode>PU</ParentSubSystemCode>
+	  <SortOrder>77</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PU/PUDiscount</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUInvoiceVoucher</SubSystemCode>
+	  <SubSystemName>Nhận hóa đơn</SubSystemName>
+	  <Description>Nhận hóa đơn</Description>
+	  <ParentSubSystemCode>PU</ParentSubSystemCode>
+	  <SortOrder>75</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PU/PUInvoiceVoucher</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUOrder</SubSystemCode>
+	  <SubSystemName>Đơn mua hàng</SubSystemName>
+	  <Description>Đơn mua hàng</Description>
+	  <ParentSubSystemCode>PU</ParentSubSystemCode>
+	  <SortOrder>72</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PU/PUOrder</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUOrderImplementationStatusDynamic</SubSystemCode>
+	  <SubSystemName>Tình hình thực hiện đơn mua hàng</SubSystemName>
+	  <Description>Phản ánh tình hình thực hiện đơn mua hàng phát sinh trong kỳ: số lượng đã nhận, số lượng còn lại, giá trị đã thực hiện, giá trị còn lại của từng đơn mua hàng</Description>
+	  <ParentSubSystemCode>6</ParentSubSystemCode>
+	  <SortOrder>265</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/6/PUOrderImplementationStatusDynamic</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUPayableDebtDetailByInvoice</SubSystemCode>
+	  <SubSystemName>Chi tiết công nợ phải trả theo hóa đơn</SubSystemName>
+	  <Description>Phản ánh công nợ phải trả của một nhà cung cấp chi tiết theo từng hóa đơn mua hàng: giá trị hóa đơn, số đã trả, số còn phải trả </Description>
+	  <ParentSubSystemCode>6</ParentSubSystemCode>
+	  <SortOrder>260</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/6/PUPayableDebtDetailByInvoice</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUPUAllocationCostStatusDynamic</SubSystemCode>
+	  <SubSystemName>Tình hình phân bổ chi phí mua hàng</SubSystemName>
+	  <Description>Theo dõi tình hình phân bổ chi phí mua hàng</Description>
+	  <ParentSubSystemCode>30</ParentSubSystemCode>
+	  <SortOrder>1</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/30/PUPUAllocationCostStatusDynamic</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PurchaseListWithoutInvoice</SubSystemCode>
+	  <SubSystemName>01-TNDN: Bảng kê thu mua hàng hoá dịch vụ mua vào không có hoá đơn</SubSystemName>
+	  <Description>01-TNDN: Bảng kê thu mua hàng hoá dịch vụ mua vào không có hoá đơn</Description>
+	  <ParentSubSystemCode>13</ParentSubSystemCode>
+	  <SortOrder>281</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/13/PurchaseListWithoutInvoice</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUReconcilePUVoucherAndCostVoucher</SubSystemCode>
+	  <SubSystemName>Đối chiếu chi phí mua trên chứng từ mua hàng và chứng từ chi phí</SubSystemName>
+	  <Description>Đối chiếu chi phí mua trên chứng từ mua hàng và chứng từ chi phí</Description>
+	  <ParentSubSystemCode>30</ParentSubSystemCode>
+	  <SortOrder>2</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/30/PUReconcilePUVoucherAndCostVoucher</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUReturn</SubSystemCode>
+	  <SubSystemName>Trả lại hàng mua</SubSystemName>
+	  <Description>Trả lại hàng mua</Description>
+	  <ParentSubSystemCode>PU</ParentSubSystemCode>
+	  <SortOrder>76</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PU/PUReturn</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUSummaryPurchaseByProjectAndSupplier</SubSystemCode>
+	  <SubSystemName>Tổng hợp mua hàng theo nhà cung cấp và công trình</SubSystemName>
+	  <Description>Tổng hợp mua hàng theo nhà cung cấp và công trình</Description>
+	  <ParentSubSystemCode>6</ParentSubSystemCode>
+	  <SortOrder>277</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/6/PUSummaryPurchaseByProjectAndSupplier</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUVoucher</SubSystemCode>
+	  <SubSystemName>Chứng từ mua hàng hóa</SubSystemName>
+	  <Description>Mua hàng hoá, dịch vụ</Description>
+	  <ParentSubSystemCode>PU</ParentSubSystemCode>
+	  <SortOrder>74</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PU/PUVoucher</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>PUVoucher</SubSystemCode>
+	  <SubSystemName>Chứng từ mua dịch vụ</SubSystemName>
+	  <Description>Mua hàng hoá, dịch vụ</Description>
+	  <ParentSubSystemCode>PU</ParentSubSystemCode>
+	  <SortOrder>74</SortOrder>
+	  <SubSystemSerial>ROOT/Business/PU/PUVoucher</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>ReceivableDetail</SubSystemCode>
+	  <SubSystemName>Chi tiết công nợ phải thu khách hàng</SubSystemName>
+	  <Description>Chi tiết công nợ phải thu khách hàng</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>3</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/ReceivableDetail</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>ReceivableDetailByInventoryItem</SubSystemCode>
+	  <SubSystemName>Chi tiết công nợ phải thu theo mặt hàng</SubSystemName>
+	  <Description>Chi tiết công nợ phải thu theo mặt hàng</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>291</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/ReceivableDetailByInventoryItem</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>ReceivableDetailByInvoice</SubSystemCode>
+	  <SubSystemName>Chi tiết công nợ phải thu theo hóa đơn</SubSystemName>
+	  <Description>Phản ánh tình hình phát sinh và thu hồi công nợ phải thu của một khách hàng chi tiết theo từng hóa đơn công nợ.</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>262</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/ReceivableDetailByInvoice</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>ReceivableSummary</SubSystemCode>
+	  <SubSystemName>Tổng hợp công nợ phải thu khách hàng</SubSystemName>
+	  <Description>Tổng hợp công nợ phải thu khách hàng</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>19</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/ReceivableSummary</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>ReceivableSummaryByAgeOfDebt</SubSystemCode>
+	  <SubSystemName>Phân tích công nợ phải thu theo tuổi nợ</SubSystemName>
+	  <Description>Phân tích công nợ phải thu theo tuổi nợ</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>293</SortOrder>
+	  <SubSystemSerial>ROOT/Report/7/ReceivableSummaryByAgeOfDebt</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>ReceivableSummaryByAgeOfDebtEarly</SubSystemCode>
+	  <SubSystemName>Phân tích công nợ phải thu trước hạn</SubSystemName>
+	  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của từng khách hàng theo các nhóm nợ trước hạn: Trước hạn 1-30 ngày,Trước hạn 31-60 ngày, Trước hạn 61-90 ngày, Trước hạn 91-120 ngày, Trước hạn trên 120 ngày.</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>280</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/ReceivableSummaryByAgeOfDebtEarly</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>ReceivableSummaryByAgeOfDebtOverdue</SubSystemCode>
+	  <SubSystemName>Phân tích công nợ phải thu quá hạn</SubSystemName>
+	  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của từng khách hàng theo các nhóm nợ quá hạn: Quá hạn 1-30 ngày, Quá hạn 31-60 ngày, Quá hạn 61-90 ngày, Quá hạn 91-120 ngày, Quá hạn trên 120 ngày.</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>279</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/ReceivableSummaryByAgeOfDebtOverdue</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>Report</SubSystemCode>
+	  <SubSystemName>Báo cáo</SubSystemName>
+	  <Description>Báo cáo</Description>
+	  <ParentSubSystemCode>ROOT</ParentSubSystemCode>
+	  <SortOrder>245</SortOrder>
+	  <SubSystemSerial>ROOT/Report</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>ROOT</SubSystemCode>
+	  <SubSystemName>MISA SME.NET 2017</SubSystemName>
+	  <Description>MISA SME.NET 2017</Description>
+	  <SortOrder>1</SortOrder>
+	  <SubSystemSerial>ROOT</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>S02bDN</SubSystemCode>
+	  <SubSystemName>S02b-DN: Sổ đăng ký chứng từ ghi sổ</SubSystemName>
+	  <Description>S02b-DN: Sổ đăng ký chứng từ ghi sổ</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>292</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/S02bDN</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>S02c1</SubSystemCode>
+	  <SubSystemName>S02c1-DN: Sổ cái (Hình thức Chứng từ ghi sổ)</SubSystemName>
+	  <Description>S02c1-DN: Sổ cái (Hình thức Chứng từ ghi sổ)</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>4</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/S02c1</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>S03a1DN15</SubSystemCode>
+	  <SubSystemName>S03a1-DN: Sổ nhật ký thu tiền</SubSystemName>
+	  <Description>S03a1-DN: Sổ nhật ký thu tiền</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>264</SortOrder>
+	  <SystemType>15</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/S03a1DN15</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>S03a1DN48</SubSystemCode>
+	  <SubSystemName>S03a1-DNN: Sổ nhật ký thu tiền</SubSystemName>
+	  <Description>S03a1-DNN: Sổ nhật ký thu tiền</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>264</SortOrder>
+	  <SystemType>48</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/S03a1DN48</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>S03a2DN15</SubSystemCode>
+	  <SubSystemName>S03a2-DN: Sổ nhật ký chi tiền</SubSystemName>
+	  <Description>S03a2-DN: Sổ nhật ký chi tiền</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>264</SortOrder>
+	  <SystemType>15</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/S03a2DN15</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>S03a2DN48</SubSystemCode>
+	  <SubSystemName>S03a2-DNN: Sổ nhật ký chi tiền</SubSystemName>
+	  <Description>S03a2-DNN: Sổ nhật ký chi tiền</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>264</SortOrder>
+	  <SystemType>48</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/S03a2DN48</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>S03b</SubSystemCode>
+	  <SubSystemName>S03b-DN: Sổ cái (Hình thức Nhật ký chung)</SubSystemName>
+	  <Description>S03b-DN: Sổ cái (Hình thức Nhật ký chung)</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>4</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/S03b</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SA</SubSystemCode>
+	  <SubSystemName>Bán hàng</SubSystemName>
+	  <Description>Bán hàng</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>83</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SAAddDeptCollection</SubSystemCode>
+	  <SubSystemName>Thu nợ</SubSystemName>
+	  <Description>Thu nợ</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>92</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SAAddDeptCollection</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SACompareSaleResult</SubSystemCode>
+	  <SubSystemName>Báo cáo phân tích số lượng bán, doanh số theo năm</SubSystemName>
+	  <Description>Báo cáo phân tích số lượng bán, doanh số theo năm</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>286</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/SACompareSaleResult</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SACompareSaleResultByPeriod</SubSystemCode>
+	  <SubSystemName>Báo cáo so sánh số lượng bán, doanh số theo kỳ</SubSystemName>
+	  <Description>Báo cáo so sánh số lượng bán, doanh số theo kỳ</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>285</SortOrder>
+	  <SubSystemSerial>ROOT/Report/7/SACompareSaleResultByPeriod</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SADeptBalance</SubSystemCode>
+	  <SubSystemName>Đối trừ chứng từ</SubSystemName>
+	  <Description>Công nợ</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>91</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SADeptBalance</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SADeptBalance</SubSystemCode>
+	  <SubSystemName>Đối trừ chứng từ nhiều đối tượng</SubSystemName>
+	  <Description>Công nợ</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>91</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SADeptBalance</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SADeptBalance</SubSystemCode>
+	  <SubSystemName>Bỏ đối trừ</SubSystemName>
+	  <Description>Công nợ</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>91</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SADeptBalance</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SADeptBalance</SubSystemCode>
+	  <SubSystemName>Bù trừ công nợ</SubSystemName>
+	  <Description>Công nợ</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>91</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SADeptBalance</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SADiscount</SubSystemCode>
+	  <SubSystemName>Giảm giá hàng bán</SubSystemName>
+	  <Description>Giảm giá hàng bán</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>89</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SADiscount</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SAInvoice</SubSystemCode>
+	  <SubSystemName>Hóa đơn</SubSystemName>
+	  <Description>Hóa đơn</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>87</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SAInvoice</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SAInvoiceDiaryBook</SubSystemCode>
+	  <SubSystemName>Sổ nhật ký bán hàng</SubSystemName>
+	  <Description>Ghi chép các nghiệp vụ bán hàng theo trình tự thời gian.</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>267</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/SAInvoiceDiaryBook</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SalesBookDetail</SubSystemCode>
+	  <SubSystemName>Sổ chi tiết bán hàng</SubSystemName>
+	  <Description>Phản ánh tình hình bán hàng, trả lại hàng bán, giảm giá hàng bán chi tiết theo từng chứng từ phát sinh.</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>264</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/SalesBookDetail</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SalesBookDetailByRegulation</SubSystemCode>
+	  <SubSystemName>Sổ chi tiết bán hàng (Mẫu chế độ)</SubSystemName>
+	  <Description>Sổ này mở theo từng sản phẩm, hàng hóa, bất động sản đầu tư, dịch vụ đã bán hoặc đã cung cấp được khách hàng thanh toán tiền ngay hay chấp nhận thanh toán.</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>265</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/SalesBookDetailByRegulation</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SalesBookDetailBySerial</SubSystemCode>
+	  <SubSystemName>Sổ chi tiết bán hàng theo mã quy cách</SubSystemName>
+	  <Description>Phản ánh tình hình bán hàng, trả lại hàng bán chi tiết theo mã quy cách.</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>266</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/SalesBookDetailBySerial</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SalesSummary</SubSystemCode>
+	  <SubSystemName>Tổng hợp bán hàng</SubSystemName>
+	  <Description>Tổng hợp bán hàng</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>12</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/SalesSummary</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SAOrder</SubSystemCode>
+	  <SubSystemName>Đơn đặt hàng</SubSystemName>
+	  <Description>Đơn đặt hàng</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>85</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SAOrder</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SAOrderStatement</SubSystemCode>
+	  <SubSystemName>Tình hình thực hiện đơn đặt hàng</SubSystemName>
+	  <Description>Phản ánh tình hình thực hiện các đơn đặt hàng phát sinh trong kỳ: số lượng đã giao, số lượng còn lại, doanh số đã thực hiện, doanh số chưa thực hiện của từng đơn đặt hàng.</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>268</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/SAOrderStatement</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SAOrderStatementDetail</SubSystemCode>
+	  <SubSystemName>Báo cáo chi tiết tình hình thực hiện đơn đặt hàng</SubSystemName>
+	  <Description>Báo cáo chi tiết tình hình thực hiện đơn đặt hàng</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>269</SortOrder>
+	  <SubSystemSerial>ROOT/Report/7/SAOrderStatementDetail</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SAPricePolicy</SubSystemCode>
+	  <SubSystemName>Chính sách giá</SubSystemName>
+	  <Description>Chính sách giá</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>94</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SAPricePolicy</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SAPriceSaleCalculator</SubSystemCode>
+	  <SubSystemName>Tính giá bán</SubSystemName>
+	  <Description>Tính giá bán</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>93</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SAPriceSaleCalculator</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SAQuantityReconcile</SubSystemCode>
+	  <SubSystemName>Đối chiếu bán hàng và xuất kho</SubSystemName>
+	  <Description>Đối chiếu bán hàng và xuất kho</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>96</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SAQuantityReconcile</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SAQuote</SubSystemCode>
+	  <SubSystemName>Báo giá</SubSystemName>
+	  <Description>Báo giá</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>84</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SAQuote</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SAReceivableSummaryByAOGroup</SubSystemCode>
+	  <SubSystemName>Tổng hợp công nợ phải thu theo nhóm khách hàng</SubSystemName>
+	  <Description>Tổng hợp công nợ phải thu theo nhóm khách hàng</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>288</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/SAReceivableSummaryByAOGroup</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SAReturn</SubSystemCode>
+	  <SubSystemName>Trả lại hàng bán</SubSystemName>
+	  <Description>Trả lại hàng bán</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>88</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SAReturn</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SASettlement</SubSystemCode>
+	  <SubSystemName>Đối trừ/bỏ đối trừ</SubSystemName>
+	  <Description>Đối trừ/bỏ đối trừ</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>98</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SASettlement</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SASummariesOutwardSale</SubSystemCode>
+	  <SubSystemName>Tổng hợp xuất kho bán hàng</SubSystemName>
+	  <Description>Tổng hợp xuất kho bán hàng</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>292</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/SASummariesOutwardSale</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SATaxAmoutReconcile</SubSystemCode>
+	  <SubSystemName>Đối chiếu bán hàng và hóa đơn</SubSystemName>
+	  <Description>Đối chiếu bán hàng và hóa đơn</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>95</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SATaxAmoutReconcile</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SAVoucher</SubSystemCode>
+	  <SubSystemName>Chứng từ bán hàng hóa</SubSystemName>
+	  <Description>Bán hàng</Description>
+	  <ParentSubSystemCode>SA</ParentSubSystemCode>
+	  <SortOrder>86</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SA/SAVoucher</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SKInventoryBalanceSummaryByLotNo</SubSystemCode>
+	  <SubSystemName>Tổng hợp tồn kho theo lô</SubSystemName>
+	  <Description>Tổng hợp tồn kho theo số lô</Description>
+	  <ParentSubSystemCode>29</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/29/SKInventoryBalanceSummaryByLotNo</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SKInventoryBook</SubSystemCode>
+	  <SubSystemName>Thẻ kho (Sổ kho)</SubSystemName>
+	  <Description>Theo dõi số lượng nhập, xuất, tồn kho từng thứ vật liêu, dụng cụ, sản phẩm, hàng hóa ở từng kho. Làm căn cứ xác định số lượng tồn kho dự trữ vật liệu, dụng cụ, sản phẩm, hàng hóa và xác định trách nhiệm vật chất của thủ kho</Description>
+	  <ParentSubSystemCode>29</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/29/SKInventoryBook</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SKInventoryBookDetailByLotNo</SubSystemCode>
+	  <SubSystemName>Sổ chi tiết vật tư hàng hóa theo lô</SubSystemName>
+	  <Description>Sổ chi tiết vật tư hàng hóa theo số lô</Description>
+	  <ParentSubSystemCode>29</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/29/SKInventoryBookDetailByLotNo</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SKSummaryInventory</SubSystemCode>
+	  <SubSystemName>Báo cáo tổng hợp tồn kho</SubSystemName>
+	  <Description>Báo cáo tổng hợp tồn kho</Description>
+	  <ParentSubSystemCode>29</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/29/SKSummaryInventory</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>StockCardByLotNo</SubSystemCode>
+	  <SubSystemName>Thẻ kho (Số lô, hạn sử dụng)</SubSystemName>
+	  <Description>Thẻ kho (Số lô, hạn sử dụng)</Description>
+	  <ParentSubSystemCode>8</ParentSubSystemCode>
+	  <SortOrder>282</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/8/StockCardByLotNo</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SU</SubSystemCode>
+	  <SubSystemName>Công cụ dụng cụ</SubSystemName>
+	  <Description>Công cụ dụng cụ</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>130</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SU</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SUAdjustment</SubSystemCode>
+	  <SubSystemName>Điều chỉnh</SubSystemName>
+	  <Description>Điều chỉnh</Description>
+	  <ParentSubSystemCode>SU</ParentSubSystemCode>
+	  <SortOrder>134</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SU/SUAdjustment</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SUAllocateCaculateSheet</SubSystemCode>
+	  <SubSystemName>Bảng tính phân bổ công cụ dụng cụ</SubSystemName>
+	  <Description>Bảng tính phân bổ công cụ dụng cụ</Description>
+	  <ParentSubSystemCode>14</ParentSubSystemCode>
+	  <SubSystemSerial>ROOT/Report/14/SUAllocateCaculateSheet</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SUAllocation</SubSystemCode>
+	  <SubSystemName>Phân bổ chi phí</SubSystemName>
+	  <Description>Phân bổ</Description>
+	  <ParentSubSystemCode>SU</ParentSubSystemCode>
+	  <SortOrder>135</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SU/SUAllocation</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SUDecrement</SubSystemCode>
+	  <SubSystemName>Ghi giảm</SubSystemName>
+	  <Description>Ghi giảm</Description>
+	  <ParentSubSystemCode>SU</ParentSubSystemCode>
+	  <SortOrder>136</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SU/SUDecrement</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SUDecrementDetailReport</SubSystemCode>
+	  <SubSystemName>Báo cáo chi tiết giảm công cụ dụng cụ</SubSystemName>
+	  <Description>Báo cáo chi tiết giảm công cụ dụng cụ</Description>
+	  <ParentSubSystemCode>14</ParentSubSystemCode>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/10/SUDecrementDetailReport</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SUIncrement</SubSystemCode>
+	  <SubSystemName>Ghi tăng</SubSystemName>
+	  <Description>Ghi tăng</Description>
+	  <ParentSubSystemCode>SU</ParentSubSystemCode>
+	  <SortOrder>132</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SU/SUIncrement</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SUInventory</SubSystemCode>
+	  <SubSystemName>Kiểm kê</SubSystemName>
+	  <Description>Kiểm kê</Description>
+	  <ParentSubSystemCode>SU</ParentSubSystemCode>
+	  <SortOrder>137</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SU/SUInventory</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SUListToolBookWithOrganizationUnit</SubSystemCode>
+	  <SubSystemName>Thống kê nhóm công cụ dụng cụ theo đơn vị sử dụng</SubSystemName>
+	  <Description>Thống kê nhóm công cụ dụng cụ theo đơn vị sử dụng</Description>
+	  <ParentSubSystemCode>14</ParentSubSystemCode>
+	  <SortOrder>0</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/14/SUListToolBookWithOrganizationUnit</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SummaryCustomerReceivable</SubSystemCode>
+	  <SubSystemName>Tổng hợp thanh toán công nợ khách hàng</SubSystemName>
+	  <Description>Tổng hợp thanh toán công nợ khách hàng</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>285</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/SummaryCustomerReceivable</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SummaryIncomeBySAOrder</SubSystemCode>
+	  <SubSystemName>Báo cáo tổng hợp lãi lỗ theo đơn hàng</SubSystemName>
+	  <Description>Phản ánh tổng quát tình hình doanh thu chi phí, lãi lỗ theo nhiều tiêu chí: hợp đồng /dự án, công trình/vụ việc, đơn hàng, mã thống kê,...</Description>
+	  <ParentSubSystemCode>7</ParentSubSystemCode>
+	  <SortOrder>259</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/7/SummaryIncomeBySAOrder</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SummaryInventoryByInwardVoucher</SubSystemCode>
+	  <SubSystemName>Báo cáo hàng tồn kho theo chứng từ nhập</SubSystemName>
+	  <Description>Báo cáo hàng tồn kho theo chứng từ nhập</Description>
+	  <ParentSubSystemCode>8</ParentSubSystemCode>
+	  <SortOrder>272</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/8/SummaryInventoryByInwardVoucher</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SummaryPurchase</SubSystemCode>
+	  <SubSystemName>Tổng hợp mua hàng</SubSystemName>
+	  <Description>Tổng hợp mua hàng</Description>
+	  <ParentSubSystemCode>6</ParentSubSystemCode>
+	  <SortOrder>13</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/6/SummaryPurchase</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SUOpening</SubSystemCode>
+	  <SubSystemName>Khai báo CCDC đầu kỳ</SubSystemName>
+	  <Description>Khai báo công cụ dụng cụ đầu kỳ</Description>
+	  <ParentSubSystemCode>SU</ParentSubSystemCode>
+	  <SortOrder>138</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SU/SUOpening</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SUSupply</SubSystemCode>
+	  <SubSystemName>Sổ theo dõi CCDC</SubSystemName>
+	  <Description>Sổ theo dõi CCDU</Description>
+	  <ParentSubSystemCode>SU</ParentSubSystemCode>
+	  <SortOrder>131</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SU/SUSupply</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SUSupply</SubSystemCode>
+	  <SubSystemName>Ghi tăng CCDC hàng loạt</SubSystemName>
+	  <Description>Sổ theo dõi CCDU</Description>
+	  <ParentSubSystemCode>SU</ParentSubSystemCode>
+	  <SortOrder>131</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SU/SUSupply</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SUTrackingToolBook</SubSystemCode>
+	  <SubSystemName>Sổ theo dõi công cụ dụng cụ</SubSystemName>
+	  <Description>Sổ theo dõi CCDC</Description>
+	  <ParentSubSystemCode>14</ParentSubSystemCode>
+	  <SortOrder>257</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/14/SUTrackingToolBook</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SUTrackingToolBookWithOrganizationUnit</SubSystemCode>
+	  <SubSystemName>Sổ theo dõi công cụ dụng cụ theo đơn vị sử dụng</SubSystemName>
+	  <Description>Sổ theo dõi công cụ dụng cụ theo đơn vị sử dụng</Description>
+	  <ParentSubSystemCode>14</ParentSubSystemCode>
+	  <SubSystemSerial>ROOT/Report/14/SUTrackingToolBookWithOrganizationUnit</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SUTransfer</SubSystemCode>
+	  <SubSystemName>Điều chuyển</SubSystemName>
+	  <Description>Điều chuyển</Description>
+	  <ParentSubSystemCode>SU</ParentSubSystemCode>
+	  <SortOrder>133</SortOrder>
+	  <SubSystemSerial>ROOT/Business/SU/SUTransfer</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYS</SubSystemCode>
+	  <SubSystemName>Hệ thống</SubSystemName>
+	  <Description>Hệ thống</Description>
+	  <ParentSubSystemCode>ROOT</ParentSubSystemCode>
+	  <SortOrder>224</SortOrder>
+	  <SubSystemSerial>ROOT/SYS</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSLog</SubSystemCode>
+	  <SubSystemName>Nhật ký truy cập</SubSystemName>
+	  <Description>Nhật ký truy cập</Description>
+	  <ParentSubSystemCode>SYS</ParentSubSystemCode>
+	  <SortOrder>225</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSLog</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSOption</SubSystemCode>
+	  <SubSystemName>Tùy chọn</SubSystemName>
+	  <Description>Tùy chọn</Description>
+	  <ParentSubSystemCode>SYS</ParentSubSystemCode>
+	  <SortOrder>227</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSOption</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSSystemDate</SubSystemCode>
+	  <SubSystemName>Ngày hạch toán</SubSystemName>
+	  <Description>Ngày hạch toán</Description>
+	  <ParentSubSystemCode>SYS</ParentSubSystemCode>
+	  <SortOrder>226</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSSystemDate</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSSystemDate</SubSystemCode>
+	  <SubSystemName>Chọn chi nhánh làm việc</SubSystemName>
+	  <Description>Ngày hạch toán</Description>
+	  <ParentSubSystemCode>SYS</ParentSubSystemCode>
+	  <SortOrder>226</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSSystemDate</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSSystemDate</SubSystemCode>
+	  <SubSystemName>Quản lý người dùng</SubSystemName>
+	  <Description>Ngày hạch toán</Description>
+	  <ParentSubSystemCode>SYS</ParentSubSystemCode>
+	  <SortOrder>226</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSSystemDate</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSSystemDate</SubSystemCode>
+	  <SubSystemName>Vai trò và quyền hạn</SubSystemName>
+	  <Description>Ngày hạch toán</Description>
+	  <ParentSubSystemCode>SYS</ParentSubSystemCode>
+	  <SortOrder>226</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSSystemDate</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSTabSystemOptionBackup</SubSystemCode>
+	  <SubSystemName>Sao lưu</SubSystemName>
+	  <Description>Sao lưu</Description>
+	  <ParentSubSystemCode>SYSOption</ParentSubSystemCode>
+	  <SortOrder>236</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSOption/SYSTabSystemOptionBackup</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSTabSystemOptionCompanyInfo</SubSystemCode>
+	  <SubSystemName>Quy tắc đánh số chứng từ</SubSystemName>
+	  <Description>Quy tắc đánh số chứng từ</Description>
+	  <ParentSubSystemCode>SYSOption</ParentSubSystemCode>
+	  <SortOrder>234</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSOption/SYSTabSystemOptionCompanyInfo</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSTabSystemOptionGeneral</SubSystemCode>
+	  <SubSystemName>Tùy chọn chung</SubSystemName>
+	  <Description>Tùy chọn chung</Description>
+	  <ParentSubSystemCode>SYSOption</ParentSubSystemCode>
+	  <SortOrder>229</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSOption/SYSTabSystemOptionGeneral</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSTabSystemOptionHumanResource</SubSystemCode>
+	  <SubSystemName>Hiển thị các nghiệp vụ</SubSystemName>
+	  <Description>Hiển thị các nghiệp vụ</Description>
+	  <ParentSubSystemCode>SYSOption</ParentSubSystemCode>
+	  <SortOrder>235</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSOption/SYSTabSystemOptionHumanResource</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSTabSystemOptionMaterial</SubSystemCode>
+	  <SubSystemName>Vật tư hàng hóa</SubSystemName>
+	  <Description>Vật tư hàng hóa</Description>
+	  <ParentSubSystemCode>SYSOption</ParentSubSystemCode>
+	  <SortOrder>232</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSOption/SYSTabSystemOptionMaterial</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSTabSystemOptionMyOptionGeneral</SubSystemCode>
+	  <SubSystemName>Tủy chọn riêng</SubSystemName>
+	  <Description>Tủy chọn riêng</Description>
+	  <ParentSubSystemCode>SYSOption</ParentSubSystemCode>
+	  <SortOrder>228</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSOption/SYSTabSystemOptionMyOptionGeneral</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSTabSystemOptionNumberFomat</SubSystemCode>
+	  <SubSystemName>Định dạng số</SubSystemName>
+	  <Description>Định dạng số</Description>
+	  <ParentSubSystemCode>SYSOption</ParentSubSystemCode>
+	  <SortOrder>233</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSOption/SYSTabSystemOptionNumberFomat</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSTabSystemOptionPassword</SubSystemCode>
+	  <SubSystemName>Bảo mật</SubSystemName>
+	  <Description>Bảo mật</Description>
+	  <ParentSubSystemCode>SYSOption</ParentSubSystemCode>
+	  <SortOrder>238</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSOption/SYSTabSystemOptionPassword</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSTabSystemOptionReport</SubSystemCode>
+	  <SubSystemName>Báo cáo, chứng từ</SubSystemName>
+	  <Description>Báo cáo, chứng từ</Description>
+	  <ParentSubSystemCode>SYSOption</ParentSubSystemCode>
+	  <SortOrder>230</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSOption/SYSTabSystemOptionReport</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>SYSTabSystemOptionsalary</SubSystemCode>
+	  <SubSystemName>Tiền lương</SubSystemName>
+	  <Description>Tiền lương</Description>
+	  <ParentSubSystemCode>SYSOption</ParentSubSystemCode>
+	  <SortOrder>231</SortOrder>
+	  <SubSystemSerial>ROOT/SYS/SYSOption/SYSTabSystemOptionsalary</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TA</SubSystemCode>
+	  <SubSystemName>Thuế</SubSystemName>
+	  <Description>Thuế</Description>
+	  <ParentSubSystemCode>Business</ParentSubSystemCode>
+	  <SortOrder>147</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TA_HistoryChangeInvoice</SubSystemCode>
+	  <SubSystemName>Đối chiếu thông tin hóa đơn trên bảng kê mua vào và chứng từ</SubSystemName>
+	  <Description>Đối chiếu thông tin hóa đơn trên bảng kê mua vào và chứng từ</Description>
+	  <ParentSubSystemCode>30</ParentSubSystemCode>
+	  <SortOrder>5</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/30/TA_HistoryChangeInvoice</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAEnterpriseIncome01A</SubSystemCode>
+	  <SubSystemName>Tờ khai thuế TNDN tạm tính (01A/TNDN)</SubSystemName>
+	  <Description>Tờ khai thuế TNDN tạm tính (01A/TNDN)</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>152</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAEnterpriseIncome01A</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAEnterpriseIncome01B</SubSystemCode>
+	  <SubSystemName>Tờ khai thuế TNDN tạm tính (01B/TNDN)</SubSystemName>
+	  <Description>Tờ khai thuế TNDN tạm tính (01B/TNDN)</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>153</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAEnterpriseIncome01B</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAEnterpriseIncomeFinalization</SubSystemCode>
+	  <SubSystemName>Quyết toán thuế TNDN năm (03/TNDN)</SubSystemName>
+	  <Description>Quyết toán thuế TNDN năm (03/TNDN)</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>154</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAEnterpriseIncomeFinalization</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAEnvironment01</SubSystemCode>
+	  <SubSystemName>Tờ khai thuế bảo vệ môi trường (01/TBVMT)</SubSystemName>
+	  <Description>Tờ khai thuế bảo vệ môi trường (01/TBVMT)</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>160</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAEnvironment01</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAHTKK</SubSystemCode>
+	  <SubSystemName>Nộp tờ khai qua mạng với iHTKK</SubSystemName>
+	  <Description>Nộp tờ khai qua mạng với iHTKK</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>161</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAHTKK</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAMtax</SubSystemCode>
+	  <SubSystemName>Nộp tờ khai qua mạng với Mtax</SubSystemName>
+	  <Description>Nộp tờ khai qua mạng với Mtax</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>162</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAMtax</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAPIT02</SubSystemCode>
+	  <SubSystemName>Tờ khai thuế TNCN (02/KK-TNCN)</SubSystemName>
+	  <Description>Tờ khai thuế TNCN (02/KK-TNCN)</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>155</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAPIT02</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAPIT05</SubSystemCode>
+	  <SubSystemName>Tờ khai quyết toán thuế TNCN (05KK-TNCN)</SubSystemName>
+	  <Description>Tờ khai quyết toán thuế TNCN (05KK-TNCN)</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>156</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAPIT05</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAResource01</SubSystemCode>
+	  <SubSystemName>Tờ khai thuế tài nguyên (01/TAIN)</SubSystemName>
+	  <Description>Tờ khai thuế tài nguyên (01/TAIN)</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>158</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAResource01</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAResourceFinalization02</SubSystemCode>
+	  <SubSystemName>Tờ khai quyết toán thuế tài nguyên (02/TAIN)</SubSystemName>
+	  <Description>Tờ khai quyết toán thuế tài nguyên (02/TAIN)</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>159</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAResourceFinalization02</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TASpecial01</SubSystemCode>
+	  <SubSystemName>Tờ khai thuế TTĐB (01/TTĐB)</SubSystemName>
+	  <Description>Tờ khai thuế TTĐB (01/TTĐB)</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>157</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TASpecial01</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TASummaryFollowTax</SubSystemCode>
+	  <SubSystemName>Bảng tổng hợp quyết toán thuế GTGT năm</SubSystemName>
+	  <Description>Bảng tổng hợp quyết toán thuế GTGT năm</Description>
+	  <ParentSubSystemCode>13</ParentSubSystemCode>
+	  <SortOrder>284</SortOrder>
+	  <SubSystemSerial>ROOT/Report/13/TASummaryFollowTax</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TATaxAgent</SubSystemCode>
+	  <SubSystemName>Thiết lập thông tin cơ quan thuế; đại lý thuế; đơn vị cung cấp DV kế toán...</SubSystemName>
+	  <Description>Thiết lập thông tin cơ quan thuế; đại lý thuế; đơn vị cung cấp DV kế toán...</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>164</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TATaxAgent</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAVAT01</SubSystemCode>
+	  <SubSystemName>Tờ khai thuế GTGT khấu trừ</SubSystemName>
+	  <Description>Tờ khai thuế GTGT khấu trừ</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>148</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAVAT01</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAVAT02</SubSystemCode>
+	  <SubSystemName>Tờ khai thuế GTGT cho dự án đầu tư</SubSystemName>
+	  <Description>Tờ khai thuế GTGT cho dự án đầu tư</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>149</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAVAT02</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAVAT03</SubSystemCode>
+	  <SubSystemName>Tờ khai thuế GTGT trực tiếp trên GTGT</SubSystemName>
+	  <Description>Tờ khai thuế GTGT trực tiếp trên GTGT</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>150</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAVAT03</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAVAT04</SubSystemCode>
+	  <SubSystemName>Tờ khai thuế GTGT TT trên doanh thu</SubSystemName>
+	  <Description>Tờ khai thuế GTGT TT trên doanh thu</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>151</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAVAT04</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TAVATDeduction</SubSystemCode>
+	  <SubSystemName>Khấu trừ thuế</SubSystemName>
+	  <Description>Khấu trừ thuế</Description>
+	  <ParentSubSystemCode>TA</ParentSubSystemCode>
+	  <SortOrder>148</SortOrder>
+	  <SubSystemSerial>ROOT/Business/TA/TAVATDeduction</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TU</SubSystemCode>
+	  <SubSystemName>Tiện ích</SubSystemName>
+	  <Description>Tiện ích</Description>
+	  <ParentSubSystemCode>ROOT</ParentSubSystemCode>
+	  <SortOrder>238</SortOrder>
+	  <SubSystemSerial>ROOT/TU</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TUUtilityDocumentList</SubSystemCode>
+	  <SubSystemName>Quản lý tài liệu</SubSystemName>
+	  <Description>Quản lý tài liệu</Description>
+	  <ParentSubSystemCode>TU</ParentSubSystemCode>
+	  <SortOrder>244</SortOrder>
+	  <SubSystemSerial>ROOT/TU/TUUtilityDocumentList</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TUUtilityPostbatch</SubSystemCode>
+	  <SubSystemName>Ghi sổ/Bỏ ghi theo lô</SubSystemName>
+	  <Description>Ghi sổ/Bỏ ghi theo lô</Description>
+	  <ParentSubSystemCode>TU</ParentSubSystemCode>
+	  <SortOrder>240</SortOrder>
+	  <SubSystemSerial>ROOT/TU/TUUtilityPostbatch</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TUUtilityRebuildData</SubSystemCode>
+	  <SubSystemName>Bảo trì dữ liệu</SubSystemName>
+	  <Description>Bảo trì dữ liệu</Description>
+	  <ParentSubSystemCode>TU</ParentSubSystemCode>
+	  <SortOrder>243</SortOrder>
+	  <SubSystemSerial>ROOT/TU/TUUtilityRebuildData</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TUUtilityRebuildRefNo</SubSystemCode>
+	  <SubSystemName>Đánh lại số chứng từ</SubSystemName>
+	  <Description>Đánh lại số chứng từ</Description>
+	  <ParentSubSystemCode>TU</ParentSubSystemCode>
+	  <SortOrder>241</SortOrder>
+	  <SubSystemSerial>ROOT/TU/TUUtilityRebuildRefNo</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>TUUtilitySearch</SubSystemCode>
+	  <SubSystemName>Tìm kiếm</SubSystemName>
+	  <Description>Tìm kiếm chứng từ</Description>
+	  <ParentSubSystemCode>TU</ParentSubSystemCode>
+	  <SortOrder>238</SortOrder>
+	  <SubSystemSerial>ROOT/TU/TUUtilitySearch</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>UpdateProductInwardPrice</SubSystemCode>
+	  <SubSystemName>Cập nhật giá nhập kho thành phẩm</SubSystemName>
+	  <Description>Cập nhật giá nhập kho thành phẩm</Description>
+	  <ParentSubSystemCode>IN</ParentSubSystemCode>
+	  <SortOrder>32</SortOrder>
+	  <SystemType>15</SystemType>
+	  <SubSystemSerial>ROOT/Business/IN/UpdateProductInwardPrice</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>UTUtilityFinancialReport</SubSystemCode>
+	  <SubSystemName>Thiết lập báo cáo tài chính</SubSystemName>
+	  <Description>Thiết lập báo cáo tài chính</Description>
+	  <ParentSubSystemCode>TU</ParentSubSystemCode>
+	  <SortOrder>239</SortOrder>
+	  <SubSystemSerial>ROOT/TU/UTUtilityFinancialReport</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>VATTaxPurchase</SubSystemCode>
+	  <SubSystemName>Bảng kê hóa đơn, chứng từ hàng hóa, dịch vụ mua vào (Mẫu quản trị)</SubSystemName>
+	  <Description>Bảng kê hóa đơn, chứng từ hàng hóa, dịch vụ mua vào (Mẫu quản trị)</Description>
+	  <ParentSubSystemCode>13</ParentSubSystemCode>
+	  <SortOrder>282</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/13/VATTaxPurchase</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>VATTaxSale</SubSystemCode>
+	  <SubSystemName>Bảng kê hóa đơn, chứng từ hàng hóa, dịch vụ bán ra (Mẫu quản trị)</SubSystemName>
+	  <Description>Bảng kê hóa đơn, chứng từ hàng hóa, dịch vụ bán ra (Mẫu quản trị)</Description>
+	  <ParentSubSystemCode>13</ParentSubSystemCode>
+	  <SortOrder>283</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/13/VATTaxSale</SubSystemSerial>
+	</MSC_SubSystem>
+	<MSC_SubSystem>
+	  <SubSystemCode>VoucherListNotRegistered</SubSystemCode>
+	  <SubSystemName>Liệt kê chứng từ chưa lập chứng từ ghi sổ</SubSystemName>
+	  <Description>Liệt kê chứng từ chưa lập chứng từ ghi sổ</Description>
+	  <ParentSubSystemCode>27</ParentSubSystemCode>
+	  <SortOrder>290</SortOrder>
+	  <SystemType>0</SystemType>
+	  <SubSystemSerial>ROOT/Report/27/VoucherListNotRegistered</SubSystemSerial>
+	</MSC_SubSystem>
+</DataSetImportExport>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_bang_tong_hop_thanh_toan_tien_luong_bang_luong_co_dinh_tree" model="ir.ui.view">
+            <field name="name">bao.cao.bang.tong.hop.thanh.toan.tien.luong.bang.luong.co.dinh.tree</field>
+            <field name="model">bao.cao.bang.tong.hop.thanh.toan.tien.luong.bang.luong.co.dinh</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Bảng tổng hợp thanh toán tiền lương bảng lương cố định" create="false" report="true">
+                    <field name="HO_VA_TEN" string="Họ và tên" />
+                    <field name="HE_SO_LUONG" string="Hệ số lương" />
+                    <field name="LUONG_CO_BAN" string="Lương cơ bản" sum="Tổng" />
+                    <field name="PHU_CAP" string="Phụ cấp" sum="Tổng" />
+                    <field name="TONG_SO" string="Tổng số" sum="Tổng" />
+                    <field name="TAM_UNG_LUONG_TRONG_KY" string="Tạm ứng lương trong kỳ" sum="Tổng" />
+                    <field name="BHXH_KHAU_TRU" string="BHXH" sum="Tổng" />
+                    <field name="BHYT_KHAU_TRU" string="BHYT" sum="Tổng" />
+                    <field name="BHTN_KHAU_TRU" string="BHTN" sum="Tổng" />
+                    <field name="THUE_TNCN_PHAI_NOP" string="Thuế TNCN phải nộp" sum="Tổng" />
+                    <field name="CONG" string="Cộng" sum="Tổng" />
+                    <field name="SO_TIEN_DUOC_LINH" string="Số tiền" sum="Tổng" />
+                    <field name="KY_NHAN" string="Ký nhận" />
+                    <field name="DON_VI" string="Đơn vị" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report_bang_tong_hop_thanh_toan_tien_luong_bang_luong_co_dinh" model="ir.actions.act_window">
+            <field name="name">BẢNG TỔNG HỢP THANH TOÁN TIỀN LƯƠNG</field>
+            <field name="res_model">bao.cao.bang.tong.hop.thanh.toan.tien.luong.bang.luong.co.dinh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by': ['DON_VI'], 'header_struct': [['Các tài khoản khấu trừ vào lương',['BHXH_KHAU_TRU','BHYT_KHAU_TRU','BHTN_KHAU_TRU','THUE_TNCN_PHAI_NOP','CONG']],['Kỳ II được lĩnh',['SO_TIEN_DUOC_LINH','KY_NHAN']]],'expand_all': 'true'}</field>
+        </record>
+        <record id="view_bao_cao_bang_tong_hop_thanh_toan_tien_luong_bang_luong_co_dinh_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.bang.tong.hop.thanh.toan.tien.luong.bang.luong.co.dinh.form</field>
+            <field name="model">bao.cao.bang.tong.hop.thanh.toan.tien.luong.bang.luong.co.dinh</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4" colspan="4">
+                            <field name="CHI_NHANH_ID" colspan="2" options="{'showClearButton': false, 'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" colspan="2" />
+                        </group>
+                        <notebook>
+                            <page string="Tham số">
+                                <group col="4" colspan="4">
+                                    <field name="THANG" colspan="2"/>
+                                    <field name="NAM" colspan="2" options="{'showSpinButtons': true}"/>
+                                </group>
+                                <field name="DON_VI_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false" report="true">
+                                        <field name="MA_DON_VI" string="Mã đơn vị" />
+                                        <field name="TEN_DON_VI" string="Tên đơn vị" />
+                                        <field name="BAC" string="Bậc" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_bang_tong_hop_thanh_toan_tien_luong_bang_luong_co_dinh_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Bảng tổng hợp thanh toán tiền lương (Bảng lương cố định)</field>
+            <field name="res_model">bao.cao.bang.tong.hop.thanh.toan.tien.luong.bang.luong.co.dinh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_bang_tong_hop_thanh_toan_tien_luong_bang_luong_co_dinh_tham_so_form" />
+        </record>
+    </data>
+</odoo>

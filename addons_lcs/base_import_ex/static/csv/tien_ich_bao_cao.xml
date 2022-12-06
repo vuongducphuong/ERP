@@ -1,0 +1,4116 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+<SYSReportGroup>
+  <GroupID>1</GroupID>
+  <GroupName>Báo cáo tài chính</GroupName>
+  <Inactive>0</Inactive>
+  <SortOrder>1</SortOrder>
+  <GroupNameEnglish>Financial report</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>28</GroupID>
+  <GroupName>Quỹ</GroupName>
+  <Description>CA</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>2</SortOrder>
+  <GroupNameEnglish>Cash</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>29</GroupID>
+  <GroupName>Ngân hàng</GroupName>
+  <Description>BA</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>3</SortOrder>
+  <GroupNameEnglish>Bank</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>7</GroupID>
+  <GroupName>Bán hàng</GroupName>
+  <Description>SA</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>4</SortOrder>
+  <GroupNameEnglish>Sale</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>6</GroupID>
+  <GroupName>Mua hàng</GroupName>
+  <Description>PU</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>5</SortOrder>
+  <GroupNameEnglish>Purchase</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>8</GroupID>
+  <GroupName>Kho</GroupName>
+  <Description>IN</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>6</SortOrder>
+  <GroupNameEnglish>Inventory</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>10</GroupID>
+  <GroupName>Công cụ dụng cụ</GroupName>
+  <Description>SU</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>7</SortOrder>
+  <GroupNameEnglish>Tool</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>9</GroupID>
+  <GroupName>Tài sản cố định</GroupName>
+  <Description>FA</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>8</SortOrder>
+  <GroupNameEnglish>Fixed asset</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>11</GroupID>
+  <GroupName>Tiền lương</GroupName>
+  <Description>PA</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>9</SortOrder>
+  <GroupNameEnglish>Salary</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>13</GroupID>
+  <GroupName>Thuế</GroupName>
+  <Description>TA</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>9</SortOrder>
+  <GroupNameEnglish>Tax</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>12</GroupID>
+  <GroupName>Giá thành</GroupName>
+  <Inactive>0</Inactive>
+  <SortOrder>10</SortOrder>
+  <GroupNameEnglish>Job cost</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>27</GroupID>
+  <GroupName>Tổng hợp</GroupName>
+  <Description>GL</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>11</SortOrder>
+  <GroupNameEnglish>General</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>15</GroupID>
+  <GroupName>Hợp đồng</GroupName>
+  <Description>CT</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>12</SortOrder>
+  <GroupNameEnglish>Contract</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>38</GroupID>
+  <GroupName>Thủ quỹ</GroupName>
+  <Description>CA</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>13</SortOrder>
+  <GroupNameEnglish>Cashier</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>25</GroupID>
+  <GroupName>Thủ kho</GroupName>
+  <Description>SK</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>14</SortOrder>
+  <GroupNameEnglish>Storekeeper</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>39</GroupID>
+  <GroupName>Ngân sách</GroupName>
+  <Description>Budget</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>15</SortOrder>
+  <GroupNameEnglish>Budget</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportGroup>
+  <GroupID>41</GroupID>
+  <GroupName>Báo cáo đối chiếu</GroupName>
+  <Description>CR</Description>
+  <Inactive>0</Inactive>
+  <SortOrder>16</SortOrder>
+  <GroupNameEnglish>Comparison report</GroupNameEnglish>
+</SYSReportGroup>
+<SYSReportList>
+  <ReportID>AccumGLF01_DN</ReportID>
+  <ReportName>Bảng cân đối tài khoản (Mẫu quản trị)</ReportName>
+  <ReportName48>Bảng cân đối tài khoản (Mẫu quản trị)</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>9</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>F01-DN: Bảng cân đối tài khoản (Mẫu số dư 1 bên)</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Balance sheet accounts</ReportNameEnglish>
+  <ReportNameEnglish48>Balance sheet accounts</ReportNameEnglish48>
+  <ReportName133>Bảng cân đối tài khoản (Mẫu quản trị)</ReportName133>
+  <ReportNameEnglish133>Balance sheet accounts</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>BACashDetailBook</ReportID>
+  <ReportName>Sổ tiền gửi ngân hàng</ReportName>
+  <ReportName48>Sổ tiền gửi ngân hàng</ReportName48>
+  <GroupID>29</GroupID>
+  <SortOrder>35</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Dùng để ghi chép tất cả các nghiệp vụ kinh tế phát sinh theo trình tự thời gian, đồng thời phản ánh theo quan hệ đối ứng tài khoản để phục vụ việc ghi sổ cái.</Description>
+  <FormNo>Mẫu số: S08-DN</FormNo>
+  <FormNo48>Mẫu số: S06-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Cash in Bank ledger</ReportNameEnglish>
+  <ReportNameEnglish48>Cash in Bank ledger</ReportNameEnglish48>
+  <ReportName133>Sổ tiền gửi ngân hàng</ReportName133>
+  <ReportNameEnglish133>Cash in Bank ledger</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>BAListOfBalance</ReportID>
+  <ReportName>Bảng kê số dư ngân hàng</ReportName>
+  <ReportName48>Bảng kê số dư ngân hàng</ReportName48>
+  <GroupID>29</GroupID>
+  <SortOrder>212</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Bank balance sheet</ReportNameEnglish>
+  <ReportNameEnglish48>Bank balance sheet</ReportNameEnglish48>
+  <ReportName133>Bảng kê số dư ngân hàng</ReportName133>
+  <ReportNameEnglish133>Bank balance sheet</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>BudgetCompareExpense</ReportID>
+  <ReportName>Tình hình chi phí thực tế so với dự toán</ReportName>
+  <ReportName48>Tình hình chi phí thực tế so với dự toán</ReportName48>
+  <GroupID>39</GroupID>
+  <SortOrder>80</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo chi phí thực tế so với dự toán</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Cost in period expense status compare buget</ReportNameEnglish>
+  <ReportNameEnglish48>Cost in period expense status compare buget</ReportNameEnglish48>
+  <ReportName133>Tình hình chi phí thực tế so với dự toán</ReportName133>
+  <ReportNameEnglish133>Cost in period expense status compare buget</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>CACashBook</ReportID>
+  <ReportName>Sổ quỹ tiền mặt</ReportName>
+  <ReportName48>Sổ quỹ tiền mặt</ReportName48>
+  <GroupID>38</GroupID>
+  <SortOrder>208</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ này được dùng cho thủ quỹ để phản ánh tình hình thu, chi, tồn quỹ tiền mặt tại doanh nghiệp </Description>
+  <FormNo>Mẫu số: S07-DN</FormNo>
+  <FormNo48>Mẫu số: S05a-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Cash book</ReportNameEnglish>
+  <ReportNameEnglish48>Cash book</ReportNameEnglish48>
+  <ReportName133>Sổ quỹ tiền mặt</ReportName133>
+  <ReportNameEnglish133>Cash book</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>CACashDetailBook</ReportID>
+  <ReportName>Sổ kế toán chi tiết quỹ tiền mặt</ReportName>
+  <ReportName48>Sổ kế toán chi tiết quỹ tiền mặt</ReportName48>
+  <GroupID>28</GroupID>
+  <SortOrder>204</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Dùng để ghi chép tất cả các nghiệp vụ kinh tế phát sinh theo trình tự thời gian, đồng thời phản ánh theo quan hệ đối ứng tài khoản để phục vụ việc ghi sổ cái.</Description>
+  <FormNo>Mẫu số: S07a-DN</FormNo>
+  <FormNo48>Mẫu số: S05b-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Cash on hand ledger</ReportNameEnglish>
+  <ReportNameEnglish48>Cash on hand ledger</ReportNameEnglish48>
+  <ReportName133>Sổ kế toán chi tiết quỹ tiền mặt</ReportName133>
+  <ReportNameEnglish133>Cash on hand ledger</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>CompareConfirmDebt</ReportID>
+  <ReportName>Biên bản đối chiếu và xác nhận công nợ</ReportName>
+  <ReportName48>Biên bản đối chiếu và xác nhận công nợ</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>205</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Biên bản đối chiếu và xác nhận công nợ</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Compare confirm debt</ReportNameEnglish>
+  <ReportNameEnglish48>Compare confirm debt</ReportNameEnglish48>
+  <ReportName133>Biên bản đối chiếu và xác nhận công nợ</ReportName133>
+  <ReportNameEnglish133>Compare confirm debt</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>CompareInwardOutwardForAssembleDisassembly</ReportID>
+  <ReportName>Đối chiếu giá trị nhập, xuất kho của lệnh lắp ráp, tháo dỡ </ReportName>
+  <ReportName48>Đối chiếu giá trị nhập, xuất kho của lệnh lắp ráp, tháo dỡ </ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>276</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Đối chiếu giá trị nhập, xuất kho của lệnh lắp ráp, tháo dỡ </Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Compare the inward, outward amount of Assembly, Disassemply command</ReportNameEnglish>
+  <ReportNameEnglish48>Compare the inward, outward amount of Assembly, Disassemply command</ReportNameEnglish48>
+  <ReportName133>Đối chiếu giá trị nhập, xuất kho của lệnh lắp ráp, tháo dỡ </ReportName133>
+  <ReportNameEnglish133>Compare the inward, outward amount of Assembly, Disassemply command</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ComparePUInvoiceAndPayment</ReportID>
+  <ReportName>Đối chiếu chứng từ công nợ phải trả và chứng từ thanh toán</ReportName>
+  <ReportName48>Đối chiếu chứng từ công nợ phải trả và chứng từ thanh toán</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>255</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Đối chiếu chứng từ công nợ phải trả và chứng từ thanh toán</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Comparison on purchase invoices and payment vouchers</ReportNameEnglish>
+  <ReportNameEnglish48>Comparison on purchase invoices and payment vouchers</ReportNameEnglish48>
+  <ReportName133>Đối chiếu chứng từ công nợ phải trả và chứng từ thanh toán</ReportName133>
+  <ReportNameEnglish133>Comparison on purchase invoices and payment vouchers</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>CompareSAInvoiceAndPayment</ReportID>
+  <ReportName>Đối chiếu chứng từ công nợ phải thu và chứng từ thanh toán</ReportName>
+  <ReportName48>Đối chiếu chứng từ công nợ phải thu và chứng từ thanh toán</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>255</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Đối chiếu chứng từ công nợ phải thu và chứng từ thanh toán</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Comparison on sale invoices and payment vouchers</ReportNameEnglish>
+  <ReportNameEnglish48>Comparison on sale invoices and payment vouchers</ReportNameEnglish48>
+  <ReportName133>Đối chiếu chứng từ công nợ phải thu và chứng từ thanh toán</ReportName133>
+  <ReportNameEnglish133>Comparison on sale invoices and payment vouchers</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>CTDebtContractDetailBySale</ReportID>
+  <ReportName>Chi tiết công nợ phải thu theo hợp đồng bán</ReportName>
+  <ReportName48>Chi tiết công nợ phải thu theo hợp đồng bán</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>4</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>CTDebtContractDetailBySale</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Customer balance detail by sale contract</ReportNameEnglish>
+  <ReportNameEnglish48>Customer balance detail by sale contract</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ phải thu theo hợp đồng bán</ReportName133>
+  <ReportNameEnglish133>Customer balance detail by sale contract</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ReportName>Tổng hợp tình hình chi theo hợp đồng bán</ReportName>
+  <ReportName48>Tổng hợp tình hình chi theo hợp đồng bán</ReportName48>
+  <GroupID>15</GroupID>
+  <SortOrder>260</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>JCIncomeContractSummaryByOrganization</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Cost in period expense by contract</ReportNameEnglish>
+  <ReportNameEnglish48>Cost in period expense by contract</ReportNameEnglish48>
+  <ReportName133>Tổng hợp tình hình chi theo hợp đồng bán</ReportName133>
+  <ReportNameEnglish133>Cost in period expense by contract</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>CTIncomeContractSummaryByOrganization</ReportID>
+  <ReportName>Tổng hợp doanh số hợp đồng theo đơn vị</ReportName>
+  <ReportName48>Tổng hợp doanh số hợp đồng theo đơn vị</ReportName48>
+  <GroupID>15</GroupID>
+  <SortOrder>252</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>CTIncomeContractSummaryByOrganization</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summaries contract sale by department</ReportNameEnglish>
+  <ReportNameEnglish48>Summaries contract sale by department</ReportNameEnglish48>
+  <ReportName133>Tổng hợp doanh số hợp đồng theo đơn vị</ReportName133>
+  <ReportNameEnglish133>Summaries contract sale by department</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportName>Báo cáo chi tiết lãi lỗ theo hợp đồng</ReportName>
+  <ReportName48>Báo cáo chi tiết lãi lỗ theo hợp đồng</ReportName48>
+  <GroupID>15</GroupID>
+  <SortOrder>64</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>CTIncomeDetailByContract</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Profit and loss by contract detail</ReportNameEnglish>
+  <ReportNameEnglish48>Profit and loss by contract detail</ReportNameEnglish48>
+  <ReportName133>Báo cáo chi tiết lãi lỗ theo hợp đồng</ReportName133>
+  <ReportNameEnglish133>Profit and loss by contract detail</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>CTIncomeInventorySummaryByContract</ReportID>
+  <ReportName>Tổng hợp doanh số mặt hàng theo hợp đồng bán</ReportName>
+  <ReportName48>Tổng hợp doanh số mặt hàng theo hợp đồng bán</ReportName48>
+  <GroupID>15</GroupID>
+  <SortOrder>253</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>CTIncomeInventorySummaryByContract</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summaries inventory sale by contract</ReportNameEnglish>
+  <ReportNameEnglish48>Summaries inventory sale by contract</ReportNameEnglish48>
+  <ReportName133>Tổng hợp doanh số mặt hàng theo hợp đồng bán</ReportName133>
+  <ReportNameEnglish133>Summaries inventory sale by contract</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ReportName>Báo cáo tổng hợp lãi lỗ theo hợp đồng</ReportName>
+  <ReportName48>Báo cáo tổng hợp lãi lỗ theo hợp đồng</ReportName48>
+  <GroupID>15</GroupID>
+  <SortOrder>55</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>CTIncomeSummaryByProjectWork</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Profit and loss by contract summary</ReportNameEnglish>
+  <ReportNameEnglish48>Profit and loss by contract summary</ReportNameEnglish48>
+  <ReportName133>Báo cáo tổng hợp lãi lỗ theo hợp đồng</ReportName133>
+  <ReportNameEnglish133>Profit and loss by contract summary</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>CTSalesContractImplementationStatus</ReportID>
+  <ReportName>Tình hình thực hiện hợp đồng bán</ReportName>
+  <ReportName48>Tình hình thực hiện hợp đồng bán</ReportName48>
+  <GroupID>15</GroupID>
+  <SortOrder>261</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tình hình thực hiện các hợp đồng bán phát sinh trong kỳ: số lượng đã giao, số lượng còn lại, doanh số đã thực hiện, doanh số chưa thực hiện của từng hợp đồng bán.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed report on the implementation of sales contract</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed report on the implementation of sales contract</ReportNameEnglish48>
+  <ReportName133>Tình hình thực hiện hợp đồng bán</ReportName133>
+  <ReportNameEnglish133>Detailed report on the implementation of sales contract</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>DebtNotify</ReportID>
+  <ReportName>Thông báo công nợ</ReportName>
+  <ReportName48>Thông báo công nợ</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>244</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Thông báo công nợ</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Liabilities Announcement</ReportNameEnglish>
+  <ReportNameEnglish48>Liabilities Announcement</ReportNameEnglish48>
+  <ReportName133>Thông báo công nợ</ReportName133>
+  <ReportNameEnglish133>Liabilities Announcement</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>FAFixedAssetBook</ReportID>
+  <ReportName>S21-DN: Sổ tài sản cố định</ReportName>
+  <ReportName48>S10-DNN: Sổ tài sản cố định</ReportName48>
+  <GroupID>9</GroupID>
+  <SortOrder>183</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ tài sản cố định dùng để đăng ký, theo dõi và quản lý chặt chẽ tài sản trong đơn vị từ khi mua sắm, đưa vào sử dụng đến khi giảm tài sản cố định.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S21-DN: Fixed assets book</ReportNameEnglish>
+  <ReportNameEnglish48>S10-DNN: Fixed assets book</ReportNameEnglish48>
+  <ReportName133>S10-DNN: Sổ tài sản cố định</ReportName133>
+  <ReportNameEnglish133>S10-DNN: Fixed assets book</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>FAFixedAssetDetail</ReportID>
+  <ReportName>Thẻ tài sản cố định</ReportName>
+  <ReportName48>Thẻ tài sản cố định</ReportName48>
+  <GroupID>9</GroupID>
+  <SortOrder>214</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Theo dõi chi tiết từng TSCĐ của doanh nghiệp, tình hình thay đổi nguyên giá và giá trị hao mòn đã trích hàng năm của từng TSCĐ</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Fixed assets card</ReportNameEnglish>
+  <ReportNameEnglish48>Fixed assets card</ReportNameEnglish48>
+  <ReportName133>Thẻ tài sản cố định</ReportName133>
+  <ReportNameEnglish133>Fixed assets card</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>FAS21_DN</ReportID>
+  <ReportName>Sổ tài sản cố định</ReportName>
+  <ReportName48>Sổ tài sản cố định</ReportName48>
+  <GroupID>9</GroupID>
+  <SortOrder>209</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ tài sản cố định</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Fixed assets book</ReportNameEnglish>
+  <ReportNameEnglish48>Fixed assets book</ReportNameEnglish48>
+  <ReportName133>Sổ tài sản cố định</ReportName133>
+  <ReportNameEnglish133>Fixed assets book</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLAccountBookDetail</ReportID>
+  <ReportName>Sổ chi tiết tài khoản theo đối tượng THCP, công trình, đơn hàng, hợp đồng và khoản mục chi phí</ReportName>
+  <ReportName48>Sổ chi tiết tài khoản theo đối tượng THCP, công trình, đơn hàng, hợp đồng và khoản mục chi phí</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>246</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ chi tiết tài khoản theo đối tượng THCP, công trình, đơn hàng, hợp đồng và khoản mục chi phí</Description>
+  <FormNo></FormNo>
+  <FormNo48></FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed account book by object of cost, project, order, contract and expense</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed account book by object of cost, project, order, contract and expense</ReportNameEnglish48>
+  <ReportName133>Sổ chi tiết tài khoản theo đối tượng THCP, công trình, đơn hàng, hợp đồng và khoản mục chi phí</ReportName133>
+  <ReportNameEnglish133>Detailed account book by object of cost, project, order, contract and expense</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLAccountBookDetailByContract</ReportID>
+  <ReportName>Sổ chi tiết tài khoản theo hợp đồng và khoản mục chi phí</ReportName>
+  <ReportName48>Sổ chi tiết tài khoản theo hợp đồng và khoản mục chi phí</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>192</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ chi tiết tài khoản theo hợp đồng và khoản mục chi phí</Description>
+  <FormNo></FormNo>
+  <FormNo48></FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed account book by contract and expense</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed account book by contract and expense</ReportNameEnglish48>
+  <ReportName133>Sổ chi tiết tài khoản theo hợp đồng và khoản mục chi phí</ReportName133>
+  <ReportNameEnglish133>Detailed account book by contract and expense</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLAccountBookDetailByJob</ReportID>
+  <ReportName>Sổ chi tiết tài khoản theo đối tượng tập hợp chi phí và khoản mục chi phí</ReportName>
+  <ReportName48>Sổ chi tiết tài khoản theo đối tượng tập hợp chi phí và khoản mục chi phí</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>189</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ chi tiết tài khoản theo đối tượng tập hợp chi phí và khoản mục chi phí</Description>
+  <FormNo></FormNo>
+  <FormNo48></FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed account book by object of cost and expense</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed account book by object of cost and expense</ReportNameEnglish48>
+  <ReportName133>Sổ chi tiết tài khoản theo đối tượng tập hợp chi phí và khoản mục chi phí</ReportName133>
+  <ReportNameEnglish133>Detailed account book by object of cost and expense</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLAccountBookDetailByProjectWork</ReportID>
+  <ReportName>Sổ chi tiết tài khoản theo công trình và khoản mục chi phí</ReportName>
+  <ReportName48>Sổ chi tiết tài khoản theo công trình và khoản mục chi phí</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>190</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ chi tiết tài khoản theo công trình và khoản mục chi phí</Description>
+  <FormNo></FormNo>
+  <FormNo48></FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed account book by project and expense</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed account book by project and expense</ReportNameEnglish48>
+  <ReportName133>Sổ chi tiết tài khoản theo công trình và khoản mục chi phí</ReportName133>
+  <ReportNameEnglish133>Detailed account book by project and expense</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLAccountBookDetailBySAOrder</ReportID>
+  <ReportName>Sổ chi tiết tài khoản theo đơn hàng và khoản mục chi phí</ReportName>
+  <ReportName48>Sổ chi tiết tài khoản theo đơn hàng và khoản mục chi phí</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>191</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ chi tiết tài khoản theo đơn hàng và khoản mục chi phí</Description>
+  <FormNo></FormNo>
+  <FormNo48></FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed account book by order and expense</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed account book by order and expense</ReportNameEnglish48>
+  <ReportName133>Sổ chi tiết tài khoản theo đơn hàng và khoản mục chi phí</ReportName133>
+  <ReportNameEnglish133>Detailed account book by order and expense</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLAccountLedger</ReportID>
+  <ReportName>Sổ chi tiết các tài khoản</ReportName>
+  <ReportName48>Sổ chi tiết các tài khoản</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>0</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ cái là sổ kế toán tổng hợp dùng để ghi chép các nghiệp vụ kinh tế tài chính phát sinh trong niên độ kế toán theo tài khoản kế toán được quy định trong hệ thống tài khoản kế toán áp dụng cho doanh nghiệp.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>General Ledger</ReportNameEnglish>
+  <ReportNameEnglish48>General Ledger</ReportNameEnglish48>
+  <ReportName133>Sổ chi tiết các tài khoản</ReportName133>
+  <ReportNameEnglish133>General Ledger</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLAccountLedgerDetailByAccount</ReportID>
+  <ReportName>Chi tiết phát sinh tài khoản</ReportName>
+  <ReportName48>Chi tiết phát sinh tài khoản</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ cái là sổ kế toán tổng hợp dùng để ghi chép các nghiệp vụ kinh tế tài chính phát sinh trong niên độ kế toán theo tài khoản kế toán được quy định trong hệ thống tài khoản kế toán áp dụng cho doanh nghiệp.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>General Ledger detail by account</ReportNameEnglish>
+  <ReportNameEnglish48>General Ledger detail by account</ReportNameEnglish48>
+  <ReportName133>Chi tiết phát sinh tài khoản</ReportName133>
+  <ReportNameEnglish133>General Ledger detail by account</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB01_DN</ReportID>
+  <ReportName>B01-DN: Bảng cân đối kế toán</ReportName>
+  <ReportName48>B01-DNN: Bảng cân đối kế toán</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>19</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng cân đối kế toán là báo cáo tài chính tổng hợp, phản ánh tổng quát toàn bộ giá trị tài sản hiện có và nguồn hình thành tài sản đó của doanh nghiệp tại một thời điểm nhất định </Description>
+  <FormNo>Mẫu số: B01-DN</FormNo>
+  <FormNo48>Mẫu số: B01-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B01-DN: Balance Sheet</ReportNameEnglish>
+  <ReportNameEnglish48>B01-DNN: Balance Sheet</ReportNameEnglish48>
+  <ReportName133>B01b-DNN: Báo cáo tình hình tài chính</ReportName133>
+  <ReportNameEnglish133>B01b-DNN: Balance Sheet</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB01_DN_Summary</ReportID>
+  <ReportName>B01-DN: Bảng cân đối kế toán tổng hợp</ReportName>
+  <ReportName48>B01-DNN: Bảng cân đối kế toán tổng hợp</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>23</SortOrder>
+  <AccountingSystem>15</AccountingSystem>
+  <Description>Bảng cân đối kế toán là báo cáo tài chính tổng hợp, phản ánh tổng quát toàn bộ giá trị tài sản hiện có và nguồn hình thành tài sản đó của doanh nghiệp tại một thời điểm nhất định </Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B01-DN: Summary balance sheet</ReportNameEnglish>
+  <ReportNameEnglish48>B01-DNN: Summary balance sheet</ReportNameEnglish48>
+  <ReportName133>B01-DNN: Bảng cân đối kế toán tổng hợp</ReportName133>
+  <ReportNameEnglish133>B01-DNN: Summary balance sheet</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB01a_DN_MidYear</ReportID>
+  <ReportName>B01a-DN: Bảng cân đối kế toán giữa niên độ (Dạng đầy đủ)</ReportName>
+  <ReportName48>B01a-DN: Bảng cân đối kế toán giữa niên độ (Dạng đầy đủ)</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>28</SortOrder>
+  <AccountingSystem>15</AccountingSystem>
+  <Description>Bảng cân đối kế toán giữa niên độ (Dạng đầy đủ)</Description>
+  <FormNo>Mẫu số: B01a-DN</FormNo>
+  <FormNo48>Mẫu số: B01a-DN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B01a-DN: Interim Balance Sheet (Complete)</ReportNameEnglish>
+  <ReportNameEnglish48>B01a-DN: Interim Balance Sheet (Complete)</ReportNameEnglish48>
+  <ReportName133>B01a-DN: Bảng cân đối kế toán giữa niên độ (Dạng đầy đủ)</ReportName133>
+  <ReportNameEnglish133>B01a-DN: Interim Balance Sheet (Complete)</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB01a_DNN</ReportID>
+  <ReportName>B01a-DNN: Báo cáo tình hình tài chính</ReportName>
+  <ReportName48>B01a-DNN: Báo cáo tình hình tài chính</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>19</SortOrder>
+  <AccountingSystem>133</AccountingSystem>
+  <Description>Bảng cân đối kế toán là báo cáo tài chính tổng hợp, phản ánh tổng quát toàn bộ giá trị tài sản hiện có và nguồn hình thành tài sản đó của doanh nghiệp tại một thời điểm nhất định </Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B01-DN: Balance Sheet</ReportNameEnglish>
+  <ReportNameEnglish48>B01a-DNN: Balance Sheet</ReportNameEnglish48>
+  <ReportName133>B01a-DNN: Báo cáo tình hình tài chính</ReportName133>
+  <ReportNameEnglish133>B01a-DNN: Balance Sheet</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB02_DN</ReportID>
+  <ReportName>B02-DN: Báo cáo kết quả hoạt động kinh doanh</ReportName>
+  <ReportName48>B02-DNN: Báo cáo kết quả hoạt động kinh doanh</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>20</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>B02-DN: Báo cáo kết quả hoạt động kinh doanh</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B02-DN: Income statement</ReportNameEnglish>
+  <ReportNameEnglish48>B02-DNN: Income statement</ReportNameEnglish48>
+  <ReportName133>B02-DNN: Báo cáo kết quả hoạt động kinh doanh</ReportName133>
+  <ReportNameEnglish133>B02-DNN: Income statement</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB02_DN_Summary</ReportID>
+  <ReportName>B02-DN: Báo cáo kết quả hoạt động kinh doanh tổng hợp</ReportName>
+  <ReportName48>B02-DNN: Báo cáo kết quả hoạt động kinh doanh tổng hợp</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>24</SortOrder>
+  <AccountingSystem>15</AccountingSystem>
+  <Description>B02-DN: Báo cáo kết quả hoạt động kinh doanh tổng hợp</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B02-DN: Summary Income statement</ReportNameEnglish>
+  <ReportNameEnglish48>B02-DNN: Summary Income statement</ReportNameEnglish48>
+  <ReportName133>B02-DNN: Báo cáo kết quả hoạt động kinh doanh tổng hợp</ReportName133>
+  <ReportNameEnglish133>B02-DNN: Summary Income statement</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB02a_DN_MidYear</ReportID>
+  <ReportName>B02a-DN: Báo cáo kết quả hoạt động kinh doanh giữa niên độ (Dạng đầy đủ)</ReportName>
+  <ReportName48>B02a-DN: Báo cáo kết quả hoạt động kinh doanh giữa niên độ (Dạng đầy đủ)</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>29</SortOrder>
+  <AccountingSystem>15</AccountingSystem>
+  <Description>B02a-DN: Báo cáo kết quả hoạt động kinh doanh giữa niên độ (Dạng đầy đủ)</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B02a-DN: Interim Income Statement (Complete)</ReportNameEnglish>
+  <ReportNameEnglish48>B02a-DN: Interim Income Statement (Complete)</ReportNameEnglish48>
+  <ReportName133>B02a-DN: Báo cáo kết quả hoạt động kinh doanh giữa niên độ (Dạng đầy đủ)</ReportName133>
+  <ReportNameEnglish133>B02a-DN: Interim Income Statement (Complete)</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB03_DN</ReportID>
+  <ReportName>B03-DN: Báo cáo lưu chuyển tiền tệ (PP trực tiếp)</ReportName>
+  <ReportName48>B03-DNN: Báo cáo lưu chuyển tiền tệ (PP trực tiếp)</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>21</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>B03-DN: Báo cáo lưu chuyển tiền tệ tổng hợp (PP trực tiếp)</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B03-DN: Cash Flow Statement - Direct Method</ReportNameEnglish>
+  <ReportNameEnglish48>B03-DNN: Cash Flow Statement - Direct Method</ReportNameEnglish48>
+  <ReportName133>B03-DNN: Báo cáo lưu chuyển tiền tệ (PP trực tiếp)</ReportName133>
+  <ReportNameEnglish133>B03-DNN: Cash Flow Statement - Direct Method</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB03_DN_Summary</ReportID>
+  <ReportName>B03-DN: Báo cáo lưu chuyển tiền tệ tổng hợp (PP trực tiếp)</ReportName>
+  <ReportName48>B03-DNN: Báo cáo lưu chuyển tiền tệ tổng hợp (PP trực tiếp)</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>25</SortOrder>
+  <AccountingSystem>15</AccountingSystem>
+  <Description>B03-DN: Báo cáo lưu chuyển tiền tệ tổng hợp (PP trực tiếp)</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B03-DN: Summary Cash Flow Statement</ReportNameEnglish>
+  <ReportNameEnglish48>B03-DNN: Summary Cash Flow Statement</ReportNameEnglish48>
+  <ReportName133>B03-DNN: Báo cáo lưu chuyển tiền tệ tổng hợp (PP trực tiếp)</ReportName133>
+  <ReportNameEnglish133>B03-DNN: Summary Cash Flow Statement</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB03a_DN_MidYear</ReportID>
+  <ReportName>B03a-DN: Báo cáo lưu chuyển tiền tệ giữa niên độ (Dạng đầy đủ - PP trực tiếp)</ReportName>
+  <ReportName48>B03a-DN: Báo cáo lưu chuyển tiền tệ giữa niên độ (Dạng đầy đủ - PP trực tiếp)</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>30</SortOrder>
+  <AccountingSystem>15</AccountingSystem>
+  <Description>B03a-DN: Báo cáo lưu chuyển tiền tệ giữa niên độ (Dạng đầy đủ - PP trực tiếp)</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B03a-DN: Interim Cash Flow Statement (Complete - Direct method)</ReportNameEnglish>
+  <ReportNameEnglish48>B03a-DN: Interim Cash Flow Statement (Complete - Direct method)</ReportNameEnglish48>
+  <ReportName133>B03a-DN: Báo cáo lưu chuyển tiền tệ giữa niên độ (Dạng đầy đủ - PP trực tiếp)</ReportName133>
+  <ReportNameEnglish133>B03a-DN: Interim Cash Flow Statement (Complete - Direct method)</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB09-DN_Summary</ReportID>
+  <ReportName>B09-DN: Thuyết minh báo cáo tài chính tổng hợp</ReportName>
+  <ReportName48>B09-DN: Thuyết minh báo cáo tài chính tổng hợp</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>27</SortOrder>
+  <AccountingSystem>15</AccountingSystem>
+  <Description>B09-DN: Thuyết minh báo cáo tài chính</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B09-DN: Summary Intepretation of financial statement</ReportNameEnglish>
+  <ReportNameEnglish48>B09-DNN: Summary Intepretation of financial statement</ReportNameEnglish48>
+  <ReportName133>B09-DN: Thuyết minh báo cáo tài chính tổng hợp</ReportName133>
+  <ReportNameEnglish133>B09-DNN: Summary Intepretation of financial statement</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB09_DN</ReportID>
+  <ReportName>B09-DN: Thuyết minh báo cáo tài chính</ReportName>
+  <ReportName48>B09-DN: Thuyết minh báo cáo tài chính</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>22</SortOrder>
+  <AccountingSystem>15</AccountingSystem>
+  <Description>B09-DN: Thuyết minh báo cáo tài chính</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B09-DN: Intepretation of financial statement</ReportNameEnglish>
+  <ReportNameEnglish48>B09-DNN: Intepretation of financial statement</ReportNameEnglish48>
+  <ReportName133>B09-DN: Thuyết minh báo cáo tài chính</ReportName133>
+  <ReportNameEnglish133>B09-DNN: Intepretation of financial statement</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB09_DNN</ReportID>
+  <ReportName>B09-DNN: Thuyết minh báo cáo tài chính</ReportName>
+  <ReportName48>B09-DNN: Thuyết minh báo cáo tài chính</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>26</SortOrder>
+  <AccountingSystem>48133</AccountingSystem>
+  <Description>B09-DNN: Thuyết minh báo cáo tài chính</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B09-DNN: Summary Intepretation of financial statement</ReportNameEnglish>
+  <ReportNameEnglish48>B09-DNN: Summary Intepretation of financial statement</ReportNameEnglish48>
+  <ReportName133>B09-DNN: Thuyết minh báo cáo tài chính</ReportName133>
+  <ReportNameEnglish133>B09-DNN: Summary Intepretation of financial statement</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLBookDetailMoneyBorrow</ReportID>
+  <ReportName>S34-DN: Sổ chi tiết tiền vay</ReportName>
+  <ReportName48>S16-DNN: Sổ chi tiết tiền vay</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>188</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ này dùng cho các TK: 311, 315, 341</Description>
+  <FormNo>Mẫu số: S34-DN</FormNo>
+  <FormNo48>Mẫu số: S16-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S34-DN: Book detail money borrow</ReportNameEnglish>
+  <ReportNameEnglish48>S16-DNN: Book detail money borrow</ReportNameEnglish48>
+  <ReportName133>S16-DNN: Sổ chi tiết tiền vay</ReportName133>
+  <ReportNameEnglish133>S16-DNN: Book detail money borrow</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLBookDetailPaymentByAccountNumber</ReportID>
+  <ReportName>Sổ chi tiết tài khoản theo đối tượng</ReportName>
+  <ReportName48>Sổ chi tiết tài khoản theo đối tượng</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>188</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ này dùng cho một số tài khoản thuộc loại thanh toán nguồn vốn mà chưa có mẫu sổ riêng, sổ được mở theo từng tài khoản, theo từng đối tượng thanh toán (Ví dụ TK 311, 336...)</Description>
+  <FormNo>Mẫu số: S38-DN</FormNo>
+  <FormNo48>Mẫu số: S20-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detail account report by object</ReportNameEnglish>
+  <ReportNameEnglish48>Detail account report by object</ReportNameEnglish48>
+  <ReportName133>Sổ chi tiết tài khoản theo đối tượng</ReportName133>
+  <ReportNameEnglish133>Detail account report by object</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLBookDetailPaymentByCurrency</ReportID>
+  <ReportName>Sổ theo dõi thanh toán bằng ngoại tệ</ReportName>
+  <ReportName48>Sổ theo dõi thanh toán bằng ngoại tệ</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>194</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ này dùng cho một số Tài khoản thuộc loại thanh toán (ngoài TK 131, TK 331) theo từng đối tượng và theo từng Loại tiền</Description>
+  <FormNo>Mẫu số: S33-DN</FormNo>
+  <FormNo48>Mẫu số: S15-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Payable follow by foreign currency</ReportNameEnglish>
+  <ReportNameEnglish48>Payable follow by foreign currency</ReportNameEnglish48>
+  <ReportName133>Sổ theo dõi thanh toán bằng ngoại tệ</ReportName133>
+  <ReportNameEnglish133>Payable follow by foreign currency</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLBookDetailPaymentWithCustomerVendor</ReportID>
+  <ReportName>S31-DN: Sổ chi tiết thanh toán với người mua (người bán)</ReportName>
+  <ReportName48>S13-DNN: Sổ chi tiết thanh toán với người mua (người bán)</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>188</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ này dùng cho TL 131, 331</Description>
+  <FormNo>Mẫu số: S31-DN</FormNo>
+  <FormNo48>Mẫu số: S13-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S31-DN: Book detail payment with customer (vendor)</ReportNameEnglish>
+  <ReportNameEnglish48>S13-DNN: Book detail payment with customer (vendor)</ReportNameEnglish48>
+  <ReportName133>S13-DNN: Sổ chi tiết thanh toán với người mua (người bán)</ReportName133>
+  <ReportNameEnglish133>S13-DNN: Book detail payment with customer (vendor)</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLCheckReasonDifferenceLedger</ReportID>
+  <ReportName>Kiểm tra nguyên nhân lệch sổ cái (Hình thức Chứng từ ghi sổ)</ReportName>
+  <ReportName48>Kiểm tra nguyên nhân lệch sổ cái (Hình thức Chứng từ ghi sổ)</ReportName48>
+  <GroupID>41</GroupID>
+  <SortOrder>254</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Đối chiếu chi phí mua trên chứng từ mua hàng và chứng từ chi phí</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Reconcile puchase voucher cost and voucher cost</ReportNameEnglish>
+  <ReportNameEnglish48>Reconcile puchase voucher cost and voucher cost</ReportNameEnglish48>
+  <ReportName133>Kiểm tra nguyên nhân lệch sổ cái (Hình thức Chứng từ ghi sổ)</ReportName133>
+  <ReportNameEnglish133>Reconcile puchase voucher cost and voucher cost</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLDetailAccountByExpense</ReportID>
+  <ReportName>Chi tiết phát sinh tài khoản theo khoản mục chi phí</ReportName>
+  <ReportName48>Chi tiết phát sinh tài khoản theo khoản mục chi phí</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>136</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Chi tiết phát sinh tài khoản theo khoản mục chi phí</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detail movement account by expense</ReportNameEnglish>
+  <ReportNameEnglish48>Detail movement account by expense</ReportNameEnglish48>
+  <ReportName133>Chi tiết phát sinh tài khoản theo khoản mục chi phí</ReportName133>
+  <ReportNameEnglish133>Detail movement account by expense</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLDetailAccountByOU</ReportID>
+  <ReportName>Chi tiết phát sinh tài khoản theo đơn vị</ReportName>
+  <ReportName48>Chi tiết phát sinh tài khoản theo đơn vị</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>135</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Chi tiết phát sinh tài khoản theo đơn vị</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detail movement account by organization unit</ReportNameEnglish>
+  <ReportNameEnglish48>Detail movement account by organization unit</ReportNameEnglish48>
+  <ReportName133>Chi tiết phát sinh tài khoản theo đơn vị</ReportName133>
+  <ReportNameEnglish133>Detail movement account by organization unit</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLDetailAccountByOUAndExpense</ReportID>
+  <ReportName>Chi tiết phát sinh tài khoản theo đơn vị và khoản mục chi phí</ReportName>
+  <ReportName48>Chi tiết phát sinh tài khoản theo đơn vị và khoản mục chi phí</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>211</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Chi tiết phát sinh tài khoản theo đơn vị và khoản mục chi phí</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detail movement account by organizationUnit and expense</ReportNameEnglish>
+  <ReportNameEnglish48>Detail movement account by organizationUnit and expense</ReportNameEnglish48>
+  <ReportName133>Chi tiết phát sinh tài khoản theo đơn vị và khoản mục chi phí</ReportName133>
+  <ReportNameEnglish133>Detail movement account by organizationUnit and expense</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLDiaryLedger</ReportID>
+  <ReportName>S01-DN: Nhật ký - Sổ cái</ReportName>
+  <ReportName48>S01-DNN: Nhật ký - Sổ cái</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>80</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Nhật ký – Sổ cái là sổ tổng hợp dùng để phản ánh tất cả các nghiệp vụ kinh tế phát sinh theo trình tự thời gian và hệ thống hóa theo nội dung kinh tế (theo tài khoản kế toán)</Description>
+  <FormNo>Mẫu số: S01-DN</FormNo>
+  <FormNo48>Mẫu số: S01-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S01-DN: Journal - Ledger</ReportNameEnglish>
+  <ReportNameEnglish48>S01-DNN: Journal - Ledger</ReportNameEnglish48>
+  <ReportName133>S01-DNN: Nhật ký - Sổ cái</ReportName133>
+  <ReportNameEnglish133>S01-DNN: Journal - Ledger</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLF_BCDTK</ReportID>
+  <ReportName>Bảng cân đối tài khoản</ReportName>
+  <ReportName48>F01-DNN: Bảng cân đối tài khoản</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>17</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>F01-DN: Bảng cân đối tài khoản (Mẫu số dư 1 bên)</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Balance sheet accounts</ReportNameEnglish>
+  <ReportNameEnglish48>Balance sheet accounts</ReportNameEnglish48>
+  <ReportName133>F01-DNN: Bảng cân đối tài khoản</ReportName133>
+  <ReportNameEnglish133>Balance sheet accounts</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLF01_DN</ReportID>
+  <ReportName>F01-DNN: Bảng cân đối tài khoản</ReportName>
+  <ReportName48>F01-DNN: Bảng cân đối tài khoản</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>18</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>F01-DNN: Bảng cân đối tài khoản</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Balance sheet accounts</ReportNameEnglish>
+  <ReportNameEnglish48>Balance sheet accounts</ReportNameEnglish48>
+  <ReportName133>F01-DNN: Bảng cân đối tài khoản</ReportName133>
+  <ReportNameEnglish133>Balance sheet accounts</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLGeneralDiary</ReportID>
+  <ReportName>Sổ nhật ký chung</ReportName>
+  <ReportName48>Sổ nhật ký chung</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>93</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Dùng để ghi chép tất cả các nghiệp vụ kinh tế phát sinh theo trình tự thời gian, đồng thời phản ánh theo quan hệ đối ứng tài khoản để phục vụ việc ghi sổ cái.</Description>
+  <FormNo>Mẫu số: S03a-DN</FormNo>
+  <FormNo48>Mẫu số: S03a-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>General Journal</ReportNameEnglish>
+  <ReportNameEnglish48>General Journal</ReportNameEnglish48>
+  <ReportName133>Sổ nhật ký chung</ReportName133>
+  <ReportNameEnglish133>General Journal</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLObligationToGov</ReportID>
+  <ReportName>Tình hình thực hiện nghĩa vụ với nhà nước</ReportName>
+  <ReportName48>Tình hình thực hiện nghĩa vụ với nhà nước</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>20</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tình hình thực hiện nghĩa vụ với nhà nước</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Clearance of obligation to the government</ReportNameEnglish>
+  <ReportNameEnglish48>Clearance of obligation to the government</ReportNameEnglish48>
+  <ReportName133>Tình hình thực hiện nghĩa vụ với nhà nước</ReportName133>
+  <ReportNameEnglish133>Clearance of obligation to the government</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLPrepaidExpenseDetail</ReportID>
+  <ReportName>Bảng tính phân bổ chi phí trả trước</ReportName>
+  <ReportName48>Bảng tính phân bổ chi phí trả trước</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>253</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng tính phân bổ chi phí trả trước</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Bảng tính phân bổ chi phí trả trước</ReportNameEnglish>
+  <ReportNameEnglish48>Bảng tính phân bổ chi phí trả trước</ReportNameEnglish48>
+  <ReportName133>Bảng tính phân bổ chi phí trả trước</ReportName133>
+  <ReportNameEnglish133>Bảng tính phân bổ chi phí trả trước</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLProfitLoss</ReportID>
+  <ReportName>Báo cáo tổng hợp lãi lỗ theo đơn vị</ReportName>
+  <ReportName48>Báo cáo tổng hợp lãi lỗ theo đơn vị</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>4</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>BÁO CÁO TỔNG HỢP LÃI LỖ THEO ĐƠN VỊ</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Báo cáo tổng hợp lãi lỗ theo đơn vị</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLProfitLossDetail</ReportID>
+  <ReportName>Báo cáo chi tiết lãi lỗ theo đơn vị</ReportName>
+  <ReportName48>Báo cáo chi tiết lãi lỗ theo đơn vị</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>4</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>BÁO CÁO CHI TIẾT LÃI LỖ THEO ĐƠN VỊ</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Báo cáo chi tiết lãi lỗ theo đơn vị</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLReconcileFALedgerAndGLLedger</ReportID>
+  <ReportName>Báo cáo đối chiếu sổ tài sản và sổ cái</ReportName>
+  <ReportName48>Báo cáo đối chiếu sổ tài sản và sổ cái</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>250</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo đối chiếu sổ tài sản và sổ cái</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Comparison fixed asset ledger and general ledger report</ReportNameEnglish>
+  <ReportNameEnglish48>Comparison fixed asset ledger and general ledger report</ReportNameEnglish48>
+  <ReportName133>Báo cáo đối chiếu sổ tài sản và sổ cái</ReportName133>
+  <ReportNameEnglish133>Comparison fixed asset ledger and general ledger report</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLReconcileInventoryItemAndLedger</ReportID>
+  <ReportName>Báo cáo đối chiếu kho và sổ cái</ReportName>
+  <ReportName48>Báo cáo đối chiếu kho và sổ cái</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>241</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp lãi lỗ theo nhiều tiêu chí</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Comparison inventory and ledger report</ReportNameEnglish>
+  <ReportNameEnglish48>Comparison inventory and ledger report</ReportNameEnglish48>
+  <ReportName133>Báo cáo đối chiếu kho và sổ cái</ReportName133>
+  <ReportNameEnglish133>Comparison inventory and ledger report</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLReconcileSULedger_PrepaidAndGLLedger</ReportID>
+  <ReportName>Báo cáo đối chiếu sổ theo dõi CCDC, chi phí trả trước và sổ cái</ReportName>
+  <ReportName48>Báo cáo đối chiếu sổ theo dõi CCDC, chi phí trả trước và sổ cái</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>251</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo đối chiếu sổ theo dõi CCDC, chi phí trả trước và sổ cái</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Comparison supply ledger, prepaid expenses and general ledger report</ReportNameEnglish>
+  <ReportNameEnglish48>Comparison supply ledger, prepaid expenses and general ledger report</ReportNameEnglish48>
+  <ReportName133>Báo cáo đối chiếu sổ theo dõi CCDC, chi phí trả trước và sổ cái</ReportName133>
+  <ReportNameEnglish133>Comparison supply ledger, prepaid expenses and general ledger report</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLReconcileTaxListAndLedger</ReportID>
+  <ReportName>Báo cáo đối chiếu bảng kê thuế và sổ cái</ReportName>
+  <ReportName48>Báo cáo đối chiếu bảng kê thuế và sổ cái</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>238</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp lãi lỗ theo nhiều tiêu chí</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Comparision report on list of tax and ledger </ReportNameEnglish>
+  <ReportNameEnglish48>Comparision report on list of tax and ledger </ReportNameEnglish48>
+  <ReportName133>Báo cáo đối chiếu bảng kê thuế và sổ cái</ReportName133>
+  <ReportNameEnglish133>Comparision report on list of tax and ledger </ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLStatusAllocationPrepaidExpense</ReportID>
+  <ReportName>Tình hình phân bổ chi phí trả trước</ReportName>
+  <ReportName48>Tình hình phân bổ chi phí trả trước</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>252</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản tình hình ghi nhận và phân bổ chi phí trả trước: số tiền cần phân bổ, số đã phân bổ, số còn lại.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Status of allocation prepaid expense</ReportNameEnglish>
+  <ReportNameEnglish48>Status of allocation prepaid expense</ReportNameEnglish48>
+  <ReportName133>Tình hình phân bổ chi phí trả trước</ReportName133>
+  <ReportNameEnglish133>Status of allocation prepaid expense</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLSummaryAccount</ReportID>
+  <ReportName>Bảng tổng hợp phát sinh tài khoản</ReportName>
+  <ReportName48>Bảng tổng hợp phát sinh tài khoản</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>180</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp lãi lỗ theo nhiều tiêu chí</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary of account incurred</ReportNameEnglish>
+  <ReportNameEnglish48>Summary of account incurred</ReportNameEnglish48>
+  <ReportName133>Bảng tổng hợp phát sinh tài khoản</ReportName133>
+  <ReportNameEnglish133>Summary of account incurred</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLSummaryByListItem</ReportID>
+  <ReportName>Báo cáo tổng hợp theo mã thống kê</ReportName>
+  <ReportName48>Báo cáo tổng hợp theo mã thống kê</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>249</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp phát sinh của từng tài khoản chi tiết theo từng mã thống kê</Description>
+  <FormNo></FormNo>
+  <FormNo48></FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary by statistics code</ReportNameEnglish>
+  <ReportNameEnglish48>Summary by statistics code</ReportNameEnglish48>
+  <ReportName133>Báo cáo tổng hợp theo mã thống kê</ReportName133>
+  <ReportNameEnglish133>Summary by statistics code</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLSummaryCost</ReportID>
+  <ReportName>Tổng hợp chi phí</ReportName>
+  <ReportName48>Tổng hợp chi phí</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>206</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo cho biết từng đơn vị, phòng ban phát sinh chi phí kỳ này bao nhiêu, kỳ trước bao nhiêu, lũy kế phát sinh chi phí bao nhiêu, chi tiết theo những khoản mục chi phí nào </Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary of cost</ReportNameEnglish>
+  <ReportNameEnglish48>Summary of cost</ReportNameEnglish48>
+  <ReportName133>Tổng hợp chi phí</ReportName133>
+  <ReportNameEnglish133>Summary of cost</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLSummaryCostByExpenseItem</ReportID>
+  <ReportName>Tổng hợp chi phí theo khoản mục chi phí</ReportName>
+  <ReportName48>Tổng hợp chi phí theo khoản mục chi phí</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp lãi lỗ theo nhiều tiêu chí</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Tổng hợp chi phí theo khoản mục chi phí</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLSummaryCostByOrganizationUnit</ReportID>
+  <ReportName>Tổng hợp chi phí theo đơn vị</ReportName>
+  <ReportName48>Tổng hợp chi phí theo đơn vị</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo cho biết từng đơn vị, phòng ban phát sinh chi phí kỳ này bao nhiêu, kỳ trước bao nhiêu, lũy kế phát sinh chi phí bao nhiêu, chi tiết theo những khoản mục chi phí nào </Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Tổng hợp chi phí theo đơn vị</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLSummaryCostByOUAndExpenseItem</ReportID>
+  <ReportName>Tổng hợp chi phí theo đơn vị và khoản mục chi phí</ReportName>
+  <ReportName48>Tổng hợp chi phí theo đơn vị và khoản mục chi phí</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>206</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Cho biết với một hoặc nhiều tài khoản chi phí thì từng bộ phận, phòng ban đã phát sinh những khoản mục chi phí nào, số tiền bao nhiêu</Description>
+  <FormNo></FormNo>
+  <FormNo48></FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary of cost by organization unit and expense item</ReportNameEnglish>
+  <ReportNameEnglish48>Summary of cost by organization unit and expense item</ReportNameEnglish48>
+  <ReportName133>Tổng hợp chi phí theo đơn vị và khoản mục chi phí</ReportName133>
+  <ReportNameEnglish133>Summary of cost by organization unit and expense item</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLSummaryEmployeeDebit</ReportID>
+  <ReportName>Tổng hợp công nợ nhân viên</ReportName>
+  <ReportName48>Tổng hợp công nợ nhân viên</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>181</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Dùng để ghi chép tất cả các nghiệp vụ kinh tế phát sinh theo trình tự thời gian, đồng thời phản ánh theo quan hệ đối ứng tài khoản để phục vụ việc ghi sổ cái.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Employee balance summary</ReportNameEnglish>
+  <ReportNameEnglish48>Employee balance summary</ReportNameEnglish48>
+  <ReportName133>Tổng hợp công nợ nhân viên</ReportName133>
+  <ReportNameEnglish133>Employee balance summary</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLSummaryEmployeeDebitByContract</ReportID>
+  <ReportName>Tổng hợp công nợ nhân viên theo hợp đồng</ReportName>
+  <ReportName48>Tổng hợp công nợ nhân viên theo hợp đồng</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>184</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Dùng để ghi chép tất cả các nghiệp vụ kinh tế phát sinh theo trình tự thời gian, đồng thời phản ánh theo quan hệ đối ứng tài khoản để phục vụ việc ghi sổ cái.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Employee balance summary by contract</ReportNameEnglish>
+  <ReportNameEnglish48>Employee balance summary by contract</ReportNameEnglish48>
+  <ReportName133>Tổng hợp công nợ nhân viên theo hợp đồng</ReportName133>
+  <ReportNameEnglish133>Employee balance summary by contract</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLSummaryEmployeeDebitByProjectwork</ReportID>
+  <ReportName>Tổng hợp công nợ nhân viên theo công trình</ReportName>
+  <ReportName48>Tổng hợp công nợ nhân viên theo công trình</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>183</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Dùng để ghi chép tất cả các nghiệp vụ kinh tế phát sinh theo trình tự thời gian, đồng thời phản ánh theo quan hệ đối ứng tài khoản để phục vụ việc ghi sổ cái.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Employee balance summary by project work</ReportNameEnglish>
+  <ReportNameEnglish48>Employee balance summary by project work</ReportNameEnglish48>
+  <ReportName133>Tổng hợp công nợ nhân viên theo công trình</ReportName133>
+  <ReportNameEnglish133>Employee balance summary by project work</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GroupVoucher</ReportID>
+  <ReportName>Bảng tổng hợp chứng từ gốc cùng loại (Ghi Có TK)</ReportName>
+  <ReportName48>Bảng tổng hợp chứng từ gốc cùng loại (Ghi Có TK)</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp lãi lỗ theo nhiều tiêu chí</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Comparison inventory and ledger report</ReportNameEnglish>
+  <ReportNameEnglish48>Comparison inventory and ledger report</ReportNameEnglish48>
+  <ReportName133>Bảng tổng hợp chứng từ gốc cùng loại (Ghi Có TK)</ReportName133>
+  <ReportNameEnglish133>Comparison inventory and ledger report</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GroupVoucherDebitAccount</ReportID>
+  <ReportName>Bảng tổng hợp chứng từ gốc cùng loại (Ghi Nợ TK)</ReportName>
+  <ReportName48>Bảng tổng hợp chứng từ gốc cùng loại (Ghi Nợ TK)</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp lãi lỗ theo nhiều tiêu chí</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Comparison inventory and ledger report</ReportNameEnglish>
+  <ReportNameEnglish48>Comparison inventory and ledger report</ReportNameEnglish48>
+  <ReportName133>Bảng tổng hợp chứng từ gốc cùng loại (Ghi Nợ TK)</ReportName133>
+  <ReportNameEnglish133>Comparison inventory and ledger report</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportName>Báo cáo chi tiết lãi lỗ theo đơn hàng</ReportName>
+  <ReportName48>Báo cáo chi tiết lãi lỗ theo đơn hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>243</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Theo dõi được từng khoản doanh thu, chi phí theo từng chứng từ của từng đơn hàng.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Profit and loss by order detail</ReportNameEnglish>
+  <ReportNameEnglish48>Profit and loss by order detail</ReportNameEnglish48>
+  <ReportName133>Báo cáo chi tiết lãi lỗ theo đơn hàng</ReportName133>
+  <ReportNameEnglish133>Profit and loss by order detail</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INInventoryBalanceSummary</ReportID>
+  <ReportName>Tổng hợp tồn kho</ReportName>
+  <ReportName48>Tổng hợp tồn kho</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>0</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tồn kho</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inventory summary report</ReportNameEnglish>
+  <ReportNameEnglish48>Inventory summary report</ReportNameEnglish48>
+  <ReportName133>Tổng hợp tồn kho</ReportName133>
+  <ReportNameEnglish133>Inventory summary report</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INInventoryBalanceSummary_Bailment</ReportID>
+  <ReportName>Tổng hợp tồn kho hàng nhận bán hộ, nhận ký gửi, ký cược</ReportName>
+  <ReportName48>Tổng hợp tồn kho hàng nhận bán hộ, nhận ký gửi, ký cược</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>5</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tồn kho hàng nhận bán hộ, nhận ký gửi, ký cược</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inventory summary of consignment, deposit or collateral goods</ReportNameEnglish>
+  <ReportName133>Tổng hợp tồn kho hàng nhận bán hộ, nhận ký gửi, ký cược</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INInventoryBalanceSummary_Manufacturing</ReportID>
+  <ReportName>Tổng hợp tồn kho hàng nhận giữ hộ, gia công</ReportName>
+  <ReportName48>Tổng hợp tồn kho hàng nhận giữ hộ, gia công</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>6</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tồn kho hàng nhận giữ hộ, gia công</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inventory summary of held under trust or for processing goods</ReportNameEnglish>
+  <ReportName133>Tổng hợp tồn kho hàng nhận giữ hộ, gia công</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INInventoryBalanceSummaryByDueDate</ReportID>
+  <ReportName>Tổng hợp tồn kho theo hạn sử dụng</ReportName>
+  <ReportName48>Tổng hợp tồn kho theo hạn sử dụng</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tồn kho theo hạn sử dụng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inventory summary by expiry date</ReportNameEnglish>
+  <ReportName133>Tổng hợp tồn kho theo hạn sử dụng</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INInventoryBalanceSummaryByInventoryItemCategory</ReportID>
+  <ReportName>Tổng hợp tồn kho theo nhóm VTHH</ReportName>
+  <ReportName48>Tổng hợp tồn kho theo nhóm VTHH</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>61</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tồn kho theo nhóm VTHH</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inventory summary report by inventory item category</ReportNameEnglish>
+  <ReportNameEnglish48>Inventory summary report by inventory item category</ReportNameEnglish48>
+  <ReportName133>Tổng hợp tồn kho theo nhóm VTHH</ReportName133>
+  <ReportNameEnglish133>Inventory summary report by inventory item category</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INInventoryBalanceSummaryByLotNo</ReportID>
+  <ReportName>Tổng hợp tồn kho theo lô</ReportName>
+  <ReportName48>Tổng hợp tồn kho theo lô</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>3</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tồn kho theo số lô</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inventory summary by lot number</ReportNameEnglish>
+  <ReportName133>Tổng hợp tồn kho theo lô</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INInventoryBalanceSummaryOnMultiStock</ReportID>
+  <ReportName>Tổng hợp tồn trên nhiều kho (Dạng bảng chéo)</ReportName>
+  <ReportName48>Tổng hợp tồn trên nhiều kho (Dạng bảng chéo)</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>80</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Giúp người dùng theo dõi được số lượng tồn kho của từng vật từ hàng hóa trên từng kho và thể hiện dưới dạng ngang để dễ nhìn
+</Description>
+  <FormNo></FormNo>
+  <FormNo48></FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inventory balance summary in multi stocks</ReportNameEnglish>
+  <ReportNameEnglish48>Inventory balance summary in multi stocks</ReportNameEnglish48>
+  <ReportName133>Tổng hợp tồn trên nhiều kho (Dạng bảng chéo)</ReportName133>
+  <ReportNameEnglish133>Inventory balance summary in multi stocks</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INInventoryBookDetail</ReportID>
+  <ReportName>Sổ chi tiết vật tư hàng hóa</ReportName>
+  <ReportName48>Sổ chi tiết vật tư hàng hóa</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ chi tiết vật tư hàng hóa</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed inventory books</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed material, tools, product, goods books</ReportNameEnglish48>
+  <ReportName133>Sổ chi tiết vật tư hàng hóa</ReportName133>
+  <ReportNameEnglish133>Detailed material, tools, product, goods books</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INInventoryBookDetailByInward</ReportID>
+  <ReportName>Sổ chi tiết vật tư, hàng hóa theo chứng từ nhập</ReportName>
+  <ReportName48>Sổ chi tiết vật tư, hàng hóa theo chứng từ nhập</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>203</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ chi tiết vật tư, hàng hóa theo chứng từ nhập</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Sổ chi tiết vật tư, hàng hóa theo chứng từ nhập</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INInventoryBookDetailByLotNo</ReportID>
+  <ReportName>Sổ chi tiết vật tư hàng hóa theo lô</ReportName>
+  <ReportName48>Sổ chi tiết vật tư hàng hóa theo lô</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ chi tiết vật tư hàng hóa theo số lô</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed inventory books by lot no</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed inventory books by lot no</ReportNameEnglish48>
+  <ReportName133>Sổ chi tiết vật tư hàng hóa theo lô</ReportName133>
+  <ReportNameEnglish133>Detailed inventory books by lot no</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INInventoryBookDetailBySerialNumber</ReportID>
+  <ReportName>Sổ chi tiết vật tư hàng hóa theo mã quy cách</ReportName>
+  <ReportName48>Sổ chi tiết vật tư hàng hóa theo mã quy cách</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>3</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ chi tiết vật tư hàng hóa theo mã quy cách</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Sổ chi tiết vật tư hàng hóa theo mã quy cách</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INInventoryReconcileINandCA</ReportID>
+  <ReportName>Đối chiếu nhập xuất giữa kế toán và thủ kho</ReportName>
+  <ReportName48>Đối chiếu nhập xuất giữa kế toán và thủ kho</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>273</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Đối chiếu nhập xuất giữa kế toán và thủ kho</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Đối chiếu nhập xuất giữa kế toán và thủ kho</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INListOutwardNoVoucher</ReportID>
+  <ReportName>Danh sách phiếu xuất kho chưa lập hóa đơn bán hàng</ReportName>
+  <ReportName48>Danh sách phiếu xuất kho chưa lập hóa đơn bán hàng</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>274</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Cho phép kế toán  liệt kê ra các phiếu xuất chưa được xuất hóa đơn (chứng từ bán hàng) có chi tiết mặt hàng và số lượng hàng xuất để báo cáo cho ban lãnh đạo và chốt với Kinh doanh xuất hóa đơn cho KH (đồng thời lập chứng từ bán hàng).</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>List outward not include invoice</ReportNameEnglish>
+  <ReportNameEnglish48>List outward not include invoice</ReportNameEnglish48>
+  <ReportName133>Danh sách phiếu xuất kho chưa lập hóa đơn bán hàng</ReportName133>
+  <ReportNameEnglish133>List outward not include invoice</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INProgressReportProduced</ReportID>
+  <ReportName>Báo cáo tiến độ sản xuất</ReportName>
+  <ReportName48>Báo cáo tiến độ sản xuất</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>262</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo tiến độ sản xuất</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Progress produced Report</ReportNameEnglish>
+  <ReportNameEnglish48>Progress produced Report</ReportNameEnglish48>
+  <ReportName133>Báo cáo tiến độ sản xuất</ReportName133>
+  <ReportNameEnglish133>Progress produced Report</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INReconcileInwardAndOutward</ReportID>
+  <ReportName>Đối chiếu tình hình xuất kho vật tư hàng hóa theo chứng từ nhập</ReportName>
+  <ReportName48>Đối chiếu tình hình xuất kho vật tư hàng hóa theo chứng từ nhập</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>271</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Đối chiếu tình hình xuất kho vật tư hàng hóa theo chứng từ nhập</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Comparison goods outward stock by inward voucher (First in first out method)</ReportNameEnglish>
+  <ReportNameEnglish48>Comparison goods outward stock by inward voucher (First in first out method)</ReportNameEnglish48>
+  <ReportName133>Đối chiếu tình hình xuất kho vật tư hàng hóa theo chứng từ nhập</ReportName133>
+  <ReportNameEnglish133>Comparison goods outward stock by inward voucher (First in first out method)</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INStockTransferBook</ReportID>
+  <ReportName>Sổ chuyển kho nội bộ</ReportName>
+  <ReportName48>Sổ chuyển kho nội bộ</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>270</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ chuyển kho nội bộ theo dõi tình hình chuyển vật tư, hàng hóa giữa các kho trong nội bộ doanh nghiệp</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Stock transfer book</ReportNameEnglish>
+  <ReportNameEnglish48>Stock transfer book</ReportNameEnglish48>
+  <ReportName133>Sổ chuyển kho nội bộ</ReportName133>
+  <ReportNameEnglish133>Stock transfer book</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INSummaryBySerialNumber</ReportID>
+  <ReportName>Tổng hợp nhập xuất tồn theo mã quy cách</ReportName>
+  <ReportName48>Tổng hợp nhập xuất tồn theo mã quy cách</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>4</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp nhập xuất tồn theo mã quy cách</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary of inward, outward and inventory by specification code</ReportNameEnglish>
+  <ReportName133>Tổng hợp nhập xuất tồn theo mã quy cách</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INSummaryInventoryByInwardVoucher</ReportID>
+  <ReportName>Báo cáo hàng tồn kho theo chứng từ nhập</ReportName>
+  <ReportName48>Báo cáo hàng tồn kho theo chứng từ nhập</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>269</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo hàng tồn kho theo chứng từ nhập</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inventory summary by inward voucher</ReportNameEnglish>
+  <ReportNameEnglish48>Inventory summary by inward voucher</ReportNameEnglish48>
+  <ReportName133>Báo cáo hàng tồn kho theo chứng từ nhập</ReportName133>
+  <ReportNameEnglish133>Inventory summary by inward voucher</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INSummaryInventoryByInwardVoucherNTXT</ReportID>
+  <ReportName>Báo cáo hàng tồn kho theo chứng từ nhập (PP nhập trước xuất trước)</ReportName>
+  <ReportName48>Báo cáo hàng tồn kho theo chứng từ nhập (PP nhập trước xuất trước)</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>272</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo hàng tồn kho theo chứng từ nhập</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inventory summary by inward voucher</ReportNameEnglish>
+  <ReportNameEnglish48>Inventory summary by inward voucher</ReportNameEnglish48>
+  <ReportName133>Báo cáo hàng tồn kho theo chứng từ nhập (PP nhập trước xuất trước)</ReportName133>
+  <ReportNameEnglish133>Inventory summary by inward voucher</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INSummaryInventoryDetailBySerialNumber</ReportID>
+  <ReportName>Báo cáo tồn kho theo chứng từ nhập chi tiết mã quy cách</ReportName>
+  <ReportName48>Báo cáo tồn kho theo chứng từ nhập chi tiết mã quy cách</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>270</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo tồn kho theo chứng từ nhập chi tiết mã quy cách</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inventory summary by inward voucher Detail by Serial Number</ReportNameEnglish>
+  <ReportNameEnglish48>Inventory summary by inward voucher Detail by Serial Number</ReportNameEnglish48>
+  <ReportName133>Báo cáo tồn kho theo chứng từ nhập chi tiết mã quy cách</ReportName133>
+  <ReportNameEnglish133>Inventory summary by inward voucher detail by Serial Number</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INSummaryInwardOutwardOnMultiStocks</ReportID>
+  <ReportName>Tổng hợp nhập xuất tồn trên nhiều kho</ReportName>
+  <ReportName48>Tổng hợp nhập xuất tồn trên nhiều kho</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp nhập xuất tồn trên nhiều kho</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary of inward, outward and inventory in multi stocks</ReportNameEnglish>
+  <ReportName133>Tổng hợp nhập xuất tồn trên nhiều kho</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>INSummaryOutwardByProductionOrder</ReportID>
+  <ReportName>Tổng hợp xuất kho theo lệnh sản xuất</ReportName>
+  <ReportName48>Tổng hợp xuất kho theo lệnh sản xuất</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>268</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp xuất kho theo định mức nguyên vật liệu</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summaries outward by production order</ReportNameEnglish>
+  <ReportNameEnglish48>Summaries outward by production order</ReportNameEnglish48>
+  <ReportName133>Tổng hợp xuất kho theo lệnh sản xuất</ReportName133>
+  <ReportNameEnglish133>Summaries outward by production order</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>InventoryInStockAndOrderNonDelivery</ReportID>
+  <ReportName>Thống kê số lượng tồn kho và số lượng đặt hàng chưa giao</ReportName>
+  <ReportName48>Thống kê số lượng tồn kho và số lượng đặt hàng chưa giao</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>262</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Thống kê số lượng tồn kho và số lượng đặt hàng chưa giao</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Quantity of inventory in stock and non-delivery</ReportNameEnglish>
+  <ReportNameEnglish48>Quantity of inventory in stock and non-delivery</ReportNameEnglish48>
+  <ReportName133>Thống kê số lượng tồn kho và số lượng đặt hàng chưa giao</ReportName133>
+  <ReportNameEnglish133>Quantity of inventory in stock and non-delivery</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JC_CompareJobCostAndInwardAmount</ReportID>
+  <ReportName>Báo cáo đối chiếu giá thành và giá trị nhập kho</ReportName>
+  <ReportName48>Báo cáo đối chiếu giá thành và giá trị nhập kho</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>50</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo đối chiếu giá thành và giá trị nhập kho</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Báo cáo đối chiếu giá thành và giá trị nhập kho</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JC_ListVoucherGeneralAllocation</ReportID>
+  <ReportName>Liệt kê danh sách chứng từ chi phí chung theo kỳ tính giá thành</ReportName>
+  <ReportName48>Liệt kê danh sách chứng từ chi phí chung theo kỳ tính giá thành</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>51</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Liệt kê danh sách chứng từ chi phí chung theo kỳ tính giá thành</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Liệt kê danh sách chứng từ chi phí chung theo kỳ tính giá thành</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JC_S37_DN</ReportID>
+  <ReportName>S37-DN: Thẻ tính giá thành sản phẩm, dịch vụ</ReportName>
+  <ReportName48>S19-DNN: Thẻ tính giá thành sản phẩm, dịch vụ</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>5</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Thẻ tính giá thành sản phẩm, dịch vụ</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S37-DN: Card calculate production cost, service</ReportNameEnglish>
+  <ReportNameEnglish48>S19-DNN: Card calculate production cost, service</ReportNameEnglish48>
+  <ReportName133>S19-DNN: Thẻ tính giá thành sản phẩm, dịch vụ</ReportName133>
+  <ReportNameEnglish133>S19-DNN: Card calculate production cost, service</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCAccountDetail</ReportID>
+  <ReportName>Sổ chi tiết tài khoản chi phí sản xuất</ReportName>
+  <ReportName48>Sổ chi tiết tài khoản chi phí sản xuất</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>15</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Chi tiết phát sinh tài khoản theo công trình, đơn hàng, hợp đồng, đối tượng tập hợp chi phí</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Sổ chi tiết tài khoản chi phí sản xuất</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCAccountDetailByContract</ReportID>
+  <ReportName>Sổ chi tiết tài khoản theo hợp đồng</ReportName>
+  <ReportName48>Sổ chi tiết tài khoản theo hợp đồng</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>4</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Chi tiết phát sinh tài khoản theo hợp đồng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Sổ chi tiết tài khoản theo hợp đồng</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCAccountDetailByJob</ReportID>
+  <ReportName>Sổ chi tiết tài khoản theo đối tượng tập hợp chi phí</ReportName>
+  <ReportName48>Sổ chi tiết tài khoản theo đối tượng tập hợp chi phí</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Chi tiết phát sinh chi phí của từng tài khoản cho từng đối tượng THCP/công trình/đơn hàng/hợp đồng, dùng để đối chiếu với chi phí đã tập hợp cho từng công trình, đơn hàng, hợp đồng, đối tượng tập hợp chi phí ở phân hệ giá thành</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Sổ chi tiết tài khoản theo đối tượng tập hợp chi phí</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCAccountDetailByProjectWork</ReportID>
+  <ReportName>Sổ chi tiết tài khoản theo công trình</ReportName>
+  <ReportName48>Sổ chi tiết tài khoản theo công trình</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Chi tiết phát sinh tài khoản theo công trình</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Sổ chi tiết tài khoản theo công trình</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCAccountDetailBySAOrder</ReportID>
+  <ReportName>Sổ chi tiết tài khoản theo đơn hàng</ReportName>
+  <ReportName48>Sổ chi tiết tài khoản theo đơn hàng</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>3</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Chi tiết phát sinh tài khoản theo đơn hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Sổ chi tiết tài khoản theo đơn hàng</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCCostAllocationDetailByExpenseItem</ReportID>
+  <ReportName>Bảng tổng hợp chi phí theo đối tượng THCP, công trình, đơn hàng, hợp đồng</ReportName>
+  <ReportName48>Bảng tổng hợp chi phí theo đối tượng THCP, công trình, đơn hàng, hợp đồng</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>25</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng tổng hợp chi phí theo đối tượng THCP, công trình, đơn hàng, hợp đồng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Cost Allocation Detail By ExpenseItem</ReportNameEnglish>
+  <ReportNameEnglish48>Cost Allocation Detail By ExpenseItem</ReportNameEnglish48>
+  <ReportName133>Bảng tổng hợp chi phí theo đối tượng THCP, công trình, đơn hàng, hợp đồng</ReportName133>
+  <ReportNameEnglish133>Cost Allocation Detail By ExpenseItem</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCCostAllocationDetailByExpenseItemByContract</ReportID>
+  <ReportName>Bảng tổng hợp chi phí theo hợp đồng</ReportName>
+  <ReportName48>Bảng tổng hợp chi phí theo hợp đồng</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>29</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng tổng hợp chi phí theo hợp đồng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Cost Allocation Detail By ExpenseItem</ReportNameEnglish>
+  <ReportNameEnglish48>Cost Allocation Detail By ExpenseItem</ReportNameEnglish48>
+  <ReportName133>Bảng tổng hợp chi phí theo hợp đồng</ReportName133>
+  <ReportNameEnglish133>Cost Allocation Detail By ExpenseItem</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCCostAllocationDetailByExpenseItemByJob</ReportID>
+  <ReportName>Bảng tổng hợp chi phí theo đối tượng tập hợp chi phí</ReportName>
+  <ReportName48>Bảng tổng hợp chi phí theo đối tượng tập hợp chi phí</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>26</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng tổng hợp chi phí theo đối tượng tập hợp chi phí</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Cost Allocation Detail By ExpenseItem</ReportNameEnglish>
+  <ReportNameEnglish48>Cost Allocation Detail By ExpenseItem</ReportNameEnglish48>
+  <ReportName133>Bảng tổng hợp chi phí theo đối tượng tập hợp chi phí</ReportName133>
+  <ReportNameEnglish133>Cost Allocation Detail By ExpenseItem</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCCostAllocationDetailByExpenseItemByOrder</ReportID>
+  <ReportName>Bảng tổng hợp chi phí theo đơn hàng</ReportName>
+  <ReportName48>Bảng tổng hợp chi phí theo đơn hàng</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>28</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng tổng hợp chi phí theo đơn hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Cost Allocation Detail By ExpenseItem</ReportNameEnglish>
+  <ReportNameEnglish48>Cost Allocation Detail By ExpenseItem</ReportNameEnglish48>
+  <ReportName133>Bảng tổng hợp chi phí theo đơn hàng</ReportName133>
+  <ReportNameEnglish133>Cost Allocation Detail By ExpenseItem</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCCostAllocationDetailByExpenseItemByProjectWork</ReportID>
+  <ReportName>Bảng tổng hợp chi phí theo công trình</ReportName>
+  <ReportName48>Bảng tổng hợp chi phí theo công trình</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>27</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng tổng hợp chi phí theo công trình</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Cost Allocation Detail By ExpenseItem</ReportNameEnglish>
+  <ReportNameEnglish48>Cost Allocation Detail By ExpenseItem</ReportNameEnglish48>
+  <ReportName133>Bảng tổng hợp chi phí theo công trình</ReportName133>
+  <ReportNameEnglish133>Cost Allocation Detail By ExpenseItem</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportName>Báo cáo chi tiết lãi lỗ theo công trình</ReportName>
+  <ReportName48>Báo cáo chi tiết lãi lỗ theo công trình</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>35</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>JCIncomeSummaryByProjectWork</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Profit and loss by project work detail</ReportNameEnglish>
+  <ReportNameEnglish48>Profit and loss by project work detail</ReportNameEnglish48>
+  <ReportName133>Báo cáo chi tiết lãi lỗ theo công trình</ReportName133>
+  <ReportNameEnglish133>Profit and loss by project work detail</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ReportName>Báo cáo tổng hợp lãi lỗ theo công trình</ReportName>
+  <ReportName48>Báo cáo tổng hợp lãi lỗ theo công trình</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>30</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>JCIncomeSummaryByProjectWork</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Profit and loss by project work summary</ReportNameEnglish>
+  <ReportNameEnglish48>Profit and loss by project work summary</ReportNameEnglish48>
+  <ReportName133>Báo cáo tổng hợp lãi lỗ theo công trình</ReportName133>
+  <ReportNameEnglish133>Profit and loss by project work summary</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCInwardOutwardList</ReportID>
+  <ReportName>Bảng kê phiếu nhập, phiếu xuất theo đối tượng THCP, công trình, đơn hàng, hợp đồng</ReportName>
+  <ReportName48>Bảng kê phiếu nhập, phiếu xuất theo đối tượng THCP, công trình, đơn hàng, hợp đồng</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>25</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>JCInwardOutwardListByProjectWork</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inward list by job, project work, order, contract</ReportNameEnglish>
+  <ReportNameEnglish48>Inward list by job, project work, order, contract</ReportNameEnglish48>
+  <ReportName133>Bảng kê phiếu nhập, phiếu xuất theo đối tượng THCP, công trình, đơn hàng, hợp đồng</ReportName133>
+  <ReportNameEnglish133>Inward list by job, project work, order, contract</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCInwardOutwardListByContract</ReportID>
+  <ReportName>Bảng kê phiếu nhập, phiếu xuất theo hợp đồng</ReportName>
+  <ReportName48>Bảng kê phiếu nhập, phiếu xuất theo hợp đồng</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>4</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>JCInwardOutwardListBySAOrder</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inward list by contract</ReportNameEnglish>
+  <ReportNameEnglish48>Inward list by Contract</ReportNameEnglish48>
+  <ReportName133>Bảng kê phiếu nhập, phiếu xuất theo hợp đồng</ReportName133>
+  <ReportNameEnglish133>Inward list by Contract</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCInwardOutwardListByJob</ReportID>
+  <ReportName>Bảng kê phiếu nhập, phiếu xuất theo đối tượng THCP</ReportName>
+  <ReportName48>Bảng kê phiếu nhập, phiếu xuất theo đối tượng THCP</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>JCInwardOutwardListByJob</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inward list by job</ReportNameEnglish>
+  <ReportNameEnglish48>Inward list by job</ReportNameEnglish48>
+  <ReportName133>Bảng kê phiếu nhập, phiếu xuất theo đối tượng THCP</ReportName133>
+  <ReportNameEnglish133>Inward list by job</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCInwardOutwardListByProjectWork</ReportID>
+  <ReportName>Bảng kê phiếu nhập, phiếu xuất theo công trình</ReportName>
+  <ReportName48>Bảng kê phiếu nhập, phiếu xuất theo công trình</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>JCInwardOutwardListByProjectWork</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inward list by project work</ReportNameEnglish>
+  <ReportNameEnglish48>Inward list by project work</ReportNameEnglish48>
+  <ReportName133>Bảng kê phiếu nhập, phiếu xuất theo công trình</ReportName133>
+  <ReportNameEnglish133>Inward list by project work</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCInwardOutwardListBySAOrder</ReportID>
+  <ReportName>Bảng kê phiếu nhập, phiếu xuất theo đơn hàng</ReportName>
+  <ReportName48>Bảng kê phiếu nhập, phiếu xuất theo đơn hàng</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>3</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>JCInwardOutwardListBySAOrder</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inward list by order</ReportNameEnglish>
+  <ReportNameEnglish48>Inward list by order</ReportNameEnglish48>
+  <ReportName133>Bảng kê phiếu nhập, phiếu xuất theo đơn hàng</ReportName133>
+  <ReportNameEnglish133>Inward list by order</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCPaymentEmployeeByContract</ReportID>
+  <ReportName>Chi tiết công nợ nhân viên theo hợp đồng</ReportName>
+  <ReportName48>Chi tiết công nợ nhân viên theo hợp đồng</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>40</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Theo dõi chi tiết công nợ theo từng nhân viên theo hợp đồng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detail payment employee report by contract</ReportNameEnglish>
+  <ReportNameEnglish48>Detail payment employee report by contract</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ nhân viên theo hợp đồng</ReportName133>
+  <ReportNameEnglish133>Detail payment employee report by contract</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCPaymentEmployeeByProjectWork</ReportID>
+  <ReportName>Chi tiết công nợ nhân viên theo công trình, hợp đồng</ReportName>
+  <ReportName48>Chi tiết công nợ nhân viên theo công trình, hợp đồng</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>40</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng so sánh định mức dự toán vật tư</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detail payment employee report by project work, contract</ReportNameEnglish>
+  <ReportNameEnglish48>Detail payment employee report by project work</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ nhân viên theo công trình, hợp đồng</ReportName133>
+  <ReportNameEnglish133>Detail payment employee report by project work</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCPaymentEmployeeByProjectWorkDefault</ReportID>
+  <ReportName>Chi tiết công nợ nhân viên theo công trình</ReportName>
+  <ReportName48>Chi tiết công nợ nhân viên theo công trình</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>40</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Theo dõi chi tiết công nợ theo từng nhân viên theo công trình</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detail payment employee report by project work</ReportNameEnglish>
+  <ReportNameEnglish48>Detail payment employee report by project work</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ nhân viên theo công trình</ReportName133>
+  <ReportNameEnglish133>Detail payment employee report by project work</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCProductCostDetail</ReportID>
+  <ReportName>Bảng tính giá thành</ReportName>
+  <ReportName48>Bảng tính giá thành</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>52</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>JCProductCostDetail</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish></ReportNameEnglish>
+  <ReportNameEnglish48></ReportNameEnglish48>
+  <ReportName133>Bảng tính giá thành</ReportName133>
+  <ReportNameEnglish133></ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCProductionNormComparationSheet</ReportID>
+  <ReportName>Bảng so sánh định mức dự toán vật tư</ReportName>
+  <ReportName48>Bảng so sánh định mức dự toán vật tư</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>40</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng so sánh định mức dự toán vật tư</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Sheet of norm estimate of materials</ReportNameEnglish>
+  <ReportNameEnglish48>Sheet of norm estimate of materials</ReportNameEnglish48>
+  <ReportName133>Bảng so sánh định mức dự toán vật tư</ReportName133>
+  <ReportNameEnglish133>Sheet of norm estimate of materials</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCS18</ReportID>
+  <ReportName>S18-DNN: Sổ chi phí sản xuất, kinh doanh</ReportName>
+  <ReportName48>S18-DNN: Sổ chi phí sản xuất, kinh doanh</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>48133</AccountingSystem>
+  <Description>Sổ chi phí sản xuất kinh doanh</Description>
+  <FormNo>Mẫu số: S18-DNN</FormNo>
+  <FormNo48>Mẫu số: S18-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S18-DN: Production and business costs books</ReportNameEnglish>
+  <ReportNameEnglish48>S18-DNN: Production and business costs books</ReportNameEnglish48>
+  <ReportName133>S18-DNN: Sổ chi phí sản xuất, kinh doanh</ReportName133>
+  <ReportNameEnglish133>S18-DNN: Production and business costs books</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCS36</ReportID>
+  <ReportName>S36-DN: Sổ chi phí sản xuất, kinh doanh</ReportName>
+  <ReportName48>S36-DN: Sổ chi phí sản xuất, kinh doanh</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>15</AccountingSystem>
+  <Description>Sổ chi phí sản xuất kinh doanh</Description>
+  <FormNo>Mẫu số: S36-DN</FormNo>
+  <FormNo48>Mẫu số: S18-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S36-DN: Production and business costs books</ReportNameEnglish>
+  <ReportNameEnglish48>S36-DNN: Production and business costs books</ReportNameEnglish48>
+  <ReportName133>S36-DN: Sổ chi phí sản xuất, kinh doanh</ReportName133>
+  <ReportNameEnglish133>S36-DNN: Production and business costs books</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCSummariesInwardOutward</ReportID>
+  <ReportName>Tổng hợp nhập xuất kho theo đối tượng THCP, công trình, đơn hàng, hợp đồng</ReportName>
+  <ReportName48>Tổng hợp nhập, xuất kho theo đối tượng THCP, công trình, đơn hàng, hợp đồng</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>20</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp nhập, xuất kho theo đối tượng THCP, công trình, đơn hàng, hợp đồng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary of stock inward and outward by object of cost, project, order, contract</ReportNameEnglish>
+  <ReportNameEnglish48>Summary of stock inward and outward by object of cost, project, order, contract</ReportNameEnglish48>
+  <ReportName133>Tổng hợp nhập, xuất kho theo đối tượng THCP, công trình, đơn hàng, hợp đồng</ReportName133>
+  <ReportNameEnglish133>Summary of stock inward and outward by object of cost, project, order, contract</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCSummariesInwardOutwardByContract</ReportID>
+  <ReportName>Tổng hợp nhập xuất kho theo hợp đồng</ReportName>
+  <ReportName48>Tổng hợp nhập, xuất kho theo hợp đồng</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>4</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp nhập, xuất kho theo hợp đồng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Tổng hợp nhập, xuất kho theo hợp đồng</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCSummariesInwardOutwardByJob</ReportID>
+  <ReportName>Tổng hợp nhập xuất kho theo Đối tượng Tập hợp chi phí</ReportName>
+  <ReportName48>Tổng hợp nhập, xuất kho theo Đối tượng Tập hợp chi phí</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp nhập, xuất kho theo Đối tượng Tập hợp chi phí</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Tổng hợp nhập, xuất kho theo Đối tượng Tập hợp chi phí</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCSummariesInwardOutwardByProjectWork</ReportID>
+  <ReportName>Tổng hợp nhập xuất kho theo công trình</ReportName>
+  <ReportName48>Tổng hợp nhập, xuất kho theo công trình</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp nhập, xuất kho theo công trình</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Tổng hợp nhập, xuất kho theo công trình</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCSummariesInwardOutwardBySAOrder</ReportID>
+  <ReportName>Tổng hợp nhập xuất kho theo đơn hàng</ReportName>
+  <ReportName48>Tổng hợp nhập, xuất kho theo đơn hàng</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>3</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp nhập, xuất kho theo đơn hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Tổng hợp nhập, xuất kho theo đơn hàng</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCSummaryCost</ReportID>
+  <ReportName>Tổng hợp chi phí sản xuất kinh doanh</ReportName>
+  <ReportName48>Tổng hợp chi phí sản xuất kinh doanh</ReportName48>
+  <GroupID>12</GroupID>
+  <SortOrder>10</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Theo dõi số dư đầu kỳ, số phát sinh trong kỳ và số dư cuối kỳ của từng đối tượng tập hợp chi phí/công trình/đơn hàng/hợp đồng theo từng tài khoản.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary of business and production cost</ReportNameEnglish>
+  <ReportNameEnglish48>Summary of business and production cost</ReportNameEnglish48>
+  <ReportName133>Tổng hợp chi phí sản xuất kinh doanh</ReportName133>
+  <ReportNameEnglish133>Summary of business and production cost</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCSummaryCostByExpenseItem</ReportID>
+  <ReportName>Tổng hợp chi phí công trình, hợp đồng theo khoản mục chi phí</ReportName>
+  <ReportName48>Tổng hợp chi phí công trình, hợp đồng theo khoản mục chi phí</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>245</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp chi phí phát sinh cho công trình chi tiết theo từng khoản mục chi phí để đơn vị biết được công trình phát sinh những khoản mục chi phí nào, chi phí bao nhiêu</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summaries costs by expense item for sale contract or project work</ReportNameEnglish>
+  <ReportNameEnglish48>Summaries costs by expense item for sale contract or project work</ReportNameEnglish48>
+  <ReportName133>Tổng hợp chi phí công trình, hợp đồng theo khoản mục chi phí</ReportName133>
+  <ReportNameEnglish133>Summaries costs by expense item for sale contract or project work</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCSummaryCostByExpenseItemForContract</ReportID>
+  <ReportName>Tổng hợp chi phí hợp đồng bán theo khoản mục chi phí</ReportName>
+  <ReportName48>Tổng hợp chi phí hợp đồng bán theo khoản mục chi phí</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>247</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>TỔNG HỢP CHI PHÍ HỢP ĐỒNG BÁN THEO KHOẢN MỤC CHI PHÍ</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summaries costs by expense item for sale contract</ReportNameEnglish>
+  <ReportNameEnglish48>Summaries costs by expense item for sale contract</ReportNameEnglish48>
+  <ReportName133>Tổng hợp chi phí hợp đồng bán theo khoản mục chi phí</ReportName133>
+  <ReportNameEnglish133>Summaries costs by expense item for sale contract</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>JCSummaryCostByExpenseItemForProjectwork</ReportID>
+  <ReportName>Tổng hợp chi phí công trình theo khoản mục chi phí</ReportName>
+  <ReportName48>Tổng hợp chi phí công trình theo khoản mục chi phí</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>246</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp chi phí phát sinh cho công trình chi tiết theo từng khoản mục chi phí để đơn vị biết được công trình phát sinh những khoản mục chi phí nào, chi phí bao nhiêu</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summaries costs by expense item for project work</ReportNameEnglish>
+  <ReportNameEnglish48>Summaries costs by expense item for project work</ReportNameEnglish48>
+  <ReportName133>Tổng hợp chi phí công trình theo khoản mục chi phí</ReportName133>
+  <ReportNameEnglish133>Summaries costs by expense item for project work</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>MaterialToolProductGoodsBookDetail</ReportID>
+  <ReportName>S10-DN: Sổ chi tiết vật liệu, công cụ (sản phẩm, hàng hóa)</ReportName>
+  <ReportName48>S07-DNN: Sổ chi tiết vật liệu, công cụ (sản phẩm, hàng hóa)</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>182</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ chi tiết vật liệu, công cụ, sản phẩm, hàng hóa</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S10-DN: Detailed material, tools, product, goods books</ReportNameEnglish>
+  <ReportNameEnglish48>S07-DNN: Detailed material, tools, product, goods books</ReportNameEnglish48>
+  <ReportName133>S07-DNN: Sổ chi tiết vật liệu, công cụ (sản phẩm, hàng hóa)</ReportName133>
+  <ReportNameEnglish133>S07-DNN: Detailed material, tools, product, goods books</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PASalarySheetByTimeMultiple</ReportID>
+  <ReportName>Bảng tổng hợp thanh toán tiền lương (Bảng lương thời gian)</ReportName>
+  <ReportName48>Bảng tổng hợp thanh toán tiền lương (Bảng lương thời gian)</ReportName48>
+  <GroupID>11</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng tổng hợp thanh toán tiền lương (Bảng lương thời gian)</Description>
+  <FormNo>Mẫu số: 02-LĐTL</FormNo>
+  <FormNo48>Mẫu số: 02-LĐTL</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Time salary sheet</ReportNameEnglish>
+  <ReportNameEnglish48>Time salary sheet</ReportNameEnglish48>
+  <ReportName133>Bảng tổng hợp thanh toán tiền lương (Bảng lương thời gian)</ReportName133>
+  <ReportNameEnglish133>Time salary sheet</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PASalarySheetFixedMultiple</ReportID>
+  <ReportName>Bảng tổng hợp thanh toán tiền lương (Bảng lương cố định)</ReportName>
+  <ReportName48>Bảng tổng hợp thanh toán tiền lương (Bảng lương cố định)</ReportName48>
+  <GroupID>11</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng tổng hợp thanh toán tiền lương (Bảng lương cố định)</Description>
+  <FormNo>Mẫu số: 02-LĐTL</FormNo>
+  <FormNo48>Mẫu số: 02-LĐTL</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Fixed salary sheet</ReportNameEnglish>
+  <ReportNameEnglish48>Fixed salary sheet</ReportNameEnglish48>
+  <ReportName133>Bảng tổng hợp thanh toán tiền lương (Bảng lương cố định)</ReportName133>
+  <ReportNameEnglish133>Fixed salary sheet</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PASalarySummaryByEmployee</ReportID>
+  <ReportName>Báo cáo tổng hợp lương nhân viên</ReportName>
+  <ReportName48>Báo cáo tổng hợp lương nhân viên</ReportName48>
+  <GroupID>11</GroupID>
+  <SortOrder>3</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo tổng hợp lương nhân viên</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary of salary by employee</ReportNameEnglish>
+  <ReportNameEnglish48>Summary of salary by employee</ReportNameEnglish48>
+  <ReportName133>Báo cáo tổng hợp lương nhân viên</ReportName133>
+  <ReportNameEnglish133>Summary of salary by employee</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PayableSummaryByAgeOfDebt</ReportID>
+  <ReportName>Phân tích công nợ phải trả theo tuổi nợ</ReportName>
+  <ReportName48>Phân tích công nợ phải trả theo tuổi nợ</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>222</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo phân tích tuổi nợ quá hạn, nợ trước hạn và tổng công nợ theo nhà cung cấp để phục vu nhu cầu quản lý công nợ</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Payable summary analysis by age of debt</ReportNameEnglish>
+  <ReportNameEnglish48>Payable summary analysis by age of debt</ReportNameEnglish48>
+  <ReportName133>Phân tích công nợ phải trả theo tuổi nợ</ReportName133>
+  <ReportNameEnglish133>Payable summary analysis by age of debt</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PaymentableDetailByEmployee</ReportID>
+  <ReportName>Chi tiết công nợ phải trả theo nhân viên</ReportName>
+  <ReportName48>Chi tiết công nợ phải trả theo nhân viên</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của tất cả các khách hàng theo từng tài khoản công nợ và loại tiền.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Chi tiết công nợ phải trả theo nhân viên</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PaymentableDetailByInventoryItem</ReportID>
+  <ReportName>Chi tiết công nợ phải trả theo mặt hàng</ReportName>
+  <ReportName48>Chi tiết công nợ phải trả theo mặt hàng</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>222</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Chi tiết công nợ phải trả theo mặt hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed payable debt by InventoryItem</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed payable debt by InventoryItem</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ phải trả theo mặt hàng </ReportName133>
+  <ReportNameEnglish133>Detailed payable debt by InventoryItem</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PaymentableDetailByProjectWork</ReportID>
+  <ReportName>Chi tiết công nợ phải trả theo công trình</ReportName>
+  <ReportName48>Chi tiết công nợ phải trả theo công trình</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>4</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tình hình công nợ phải thu của khách hàng theo từng công trình.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Chi tiết công nợ phải trả theo công trình</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PaymentableSummary</ReportID>
+  <ReportName>Tổng hợp công nợ phải trả nhà cung cấp</ReportName>
+  <ReportName48>Tổng hợp công nợ phải trả</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>191</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tổng hợp công nợ phải trả của tất cả các nhà cung cấp theo từng tài khoản công nợ và loại tiền</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary payable debt for supplier</ReportNameEnglish>
+  <ReportName133>Tổng hợp công nợ phải trả</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PaymentableSummaryByEmployee</ReportID>
+  <ReportName>Tổng hợp công nợ phải trả theo nhân viên</ReportName>
+  <ReportName48>Tổng hợp công nợ phải trả theo nhân viên</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của tất cả các khách hàng theo từng tài khoản công nợ và loại tiền.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary payable debt by employee</ReportNameEnglish>
+  <ReportName133>Tổng hợp công nợ phải trả theo nhân viên</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PaymentableSummaryByProjectWork</ReportID>
+  <ReportName>Tổng hợp công nợ phải trả theo công trình</ReportName>
+  <ReportName48>Tổng hợp công nợ phải trả theo công trình</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>3</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của tất cả các khách hàng theo từng tài khoản công nợ và loại tiền.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary payable debt by project</ReportNameEnglish>
+  <ReportName133>Tổng hợp công nợ phải trả theo công trình</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PaymentableSummaryByPUOrder</ReportID>
+  <ReportName>Tổng hợp công nợ phải trả theo đơn mua hàng</ReportName>
+  <ReportName48>Tổng hợp công nợ phải trả theo đơn mua hàng</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>5</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tổng hợp công nợ phải trả của tất cả các nhà cung cấp theo từng đơn mua hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary payable debt by purchase order</ReportNameEnglish>
+  <ReportName133>Tổng hợp công nợ phải trả theo đơn mua hàng</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PaymentDateByCustomer</ReportID>
+  <ReportName>Báo cáo ngày thanh toán theo khách hàng</ReportName>
+  <ReportName48>Báo cáo ngày thanh toán theo khách hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>261</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo ngày thanh toán theo khách hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Payment date by customer</ReportNameEnglish>
+  <ReportNameEnglish48>Payment date by customer</ReportNameEnglish48>
+  <ReportName133>Báo cáo ngày thanh toán theo khách hàng</ReportName133>
+  <ReportNameEnglish133>Payment date by customer</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PaymentDetail</ReportID>
+  <ReportName>Chi tiết công nợ phải trả nhà cung cấp</ReportName>
+  <ReportName48>Chi tiết công nợ phải trả nhà cung cấp</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>207</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tình hình công nợ phải trả của một nhà cung cấp theo từng tài khoản công nợ, chi tiết theo từng chứng từ phát sinh</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed payable debt</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed payable debt</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ phải trả nhà cung cấp</ReportName133>
+  <ReportNameEnglish133>Detailed payable debt</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUCompareConfirmPayableDebt</ReportID>
+  <ReportName>Biên bản đối chiếu và xác nhận công nợ phải trả</ReportName>
+  <ReportName48>Biên bản đối chiếu và xác nhận công nợ phải trả</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>256</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp công nợ phát sinh trong kỳ và tồn cuối kỳ của từng nhà cung cấp để làm căn cứ đối chiếu xác nhận nợ với nhà cung cấp</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Report on comparison and payable validation debt</ReportNameEnglish>
+  <ReportNameEnglish48>Report on comparison and payable validation debt </ReportNameEnglish48>
+  <ReportName133>Biên bản đối chiếu và xác nhận công nợ phải trả</ReportName133>
+  <ReportNameEnglish133>Report on comparison and payable validation debt </ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUDetailPurchaseByInventoryItemDynamic</ReportID>
+  <ReportName>Sổ chi tiết mua hàng</ReportName>
+  <ReportName48>Sổ chi tiết mua hàng</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>90</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Ghi chép chi tiết các nghiệp vụ mua hàng, trả lại hàng mua, giảm giá hàng mua theo từng chứng từ phát sinh của một mặt hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed goods purchases book</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed goods purchases book</ReportNameEnglish48>
+  <ReportName133>Sổ chi tiết mua hàng</ReportName133>
+  <ReportNameEnglish133>Detailed goods purchases book</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUDiary</ReportID>
+  <ReportName>Sổ nhật ký mua hàng</ReportName>
+  <ReportName48>Sổ nhật ký mua hàng</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>124</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Ghi chép các nghiệp vụ mua hàng theo thời gian chi tiết theo từng chứng từ phát sinh</Description>
+  <FormNo>Mẫu số: S03a3-DN</FormNo>
+  <FormNo48>Mẫu số: S03a3-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Purchase journal</ReportNameEnglish>
+  <ReportNameEnglish48>Purchase journal</ReportNameEnglish48>
+  <ReportName133>Sổ nhật ký mua hàng</ReportName133>
+  <ReportNameEnglish133>Purchase journal</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUOrderImplementationStatusDynamic</ReportID>
+  <ReportName>Tình hình thực hiện đơn mua hàng</ReportName>
+  <ReportName48>Tình hình thực hiện đơn mua hàng</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>223</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tình hình thực hiện đơn mua hàng phát sinh trong kỳ: số lượng đã nhận, số lượng còn lại, giá trị đã thực hiện, giá trị còn lại của từng đơn mua hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>The detailed status report on the implementation of orders</ReportNameEnglish>
+  <ReportNameEnglish48>The detailed status report on the implementation of orders</ReportNameEnglish48>
+  <ReportName133>Tình hình thực hiện đơn mua hàng</ReportName133>
+  <ReportNameEnglish133>The detailed status report on the implementation of orders</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUPayableDebtDetailByInvoice</ReportID>
+  <ReportName>Chi tiết công nợ phải trả theo hóa đơn</ReportName>
+  <ReportName48>Chi tiết công nợ phải trả theo hóa đơn</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>221</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh công nợ phải trả của một nhà cung cấp chi tiết theo từng hóa đơn mua hàng: giá trị hóa đơn, số đã trả, số còn phải trả </Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed payable debt by invoice</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed payable debt by invoice</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ phải trả theo hóa đơn</ReportName133>
+  <ReportNameEnglish133>Detailed payable debt by invoice</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUPaymentDetailByPUOrder</ReportID>
+  <ReportName>Chi tiết công nợ phải trả theo đơn mua hàng</ReportName>
+  <ReportName48>Chi tiết công nợ phải trả theo đơn mua hàng</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>5</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh công nợ của từng đơn mua hàng theo theo từng chứng từ phát sinh liên quan đến đơn mua hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Chi tiết công nợ phải trả theo đơn mua hàng</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUPaymentDetailByPurchaseContract</ReportID>
+  <ReportName>Chi tiết công nợ phải trả theo hợp đồng mua</ReportName>
+  <ReportName48>Chi tiết công nợ phải trả theo hợp đồng mua</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>3</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh công nợ của từng hợp đồng mua theo theo từng chứng từ phát sinh liên quan đến hợp đồng mua</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Chi tiết công nợ phải trả theo hợp đồng mua</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUPaymentDetailBySuppliersDynamic</ReportID>
+  <ReportName>Chi tiết công nợ phải trả</ReportName>
+  <ReportName48>Chi tiết công nợ phải trả</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tình hình công nợ phải trả của một nhà cung cấp theo từng tài khoản công nợ, chi tiết theo từng chứng từ phát sinh</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed payable debt</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed payable debt</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ phải trả</ReportName133>
+  <ReportNameEnglish133>Detailed payable debt</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUPUAllocationCostStatusDynamic</ReportID>
+  <ReportName>Tình hình phân bổ chi phí mua hàng</ReportName>
+  <ReportName48>Tình hình phân bổ chi phí mua hàng</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>248</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Theo dõi tình hình phân bổ chi phí mua hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Purchase allocation costs status</ReportNameEnglish>
+  <ReportNameEnglish48>Purchase Allocation costs status</ReportNameEnglish48>
+  <ReportName133>Tình hình phân bổ chi phí mua hàng</ReportName133>
+  <ReportNameEnglish133>Purchase Allocation costs status</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PurchaseListWithoutInvoice</ReportID>
+  <ReportName>01/TNDN: Bảng kê thu mua hàng hóa, dịch vụ mua vào không có hóa đơn</ReportName>
+  <ReportName48>01/TNDN: Bảng kê thu mua hàng hóa, dịch vụ mua vào không có hóa đơn</ReportName48>
+  <GroupID>13</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng kê thu mua hàng hoá dịch vụ mua vào không có hoá đơn</Description>
+  <FormNo>Mẫu số: 01/TNDT</FormNo>
+  <FormNo48>Mẫu số: 01/TNDT</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>01/TNDN: Bảng kê thu mua hàng hóa, dịch vụ mua vào không có hóa đơn</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUReconcilePUVoucherAndCostVoucher</ReportID>
+  <ReportName>Đối chiếu chi phí mua trên chứng từ mua hàng và chứng từ chi phí</ReportName>
+  <ReportName48>Đối chiếu chi phí mua trên chứng từ mua hàng và chứng từ chi phí</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>254</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Đối chiếu chi phí mua trên chứng từ mua hàng và chứng từ chi phí</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Reconcile puchase voucher cost and voucher cost</ReportNameEnglish>
+  <ReportNameEnglish48>Reconcile puchase voucher cost and voucher cost</ReportNameEnglish48>
+  <ReportName133>Đối chiếu chi phí mua trên chứng từ mua hàng và chứng từ chi phí</ReportName133>
+  <ReportNameEnglish133>Reconcile puchase voucher cost and voucher cost</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUSummaryDebitBySuppliersDynamic</ReportID>
+  <ReportName>Tổng hợp công nợ phải trả</ReportName>
+  <ReportName48>Tổng hợp công nợ phải trả</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tổng hợp công nợ phải trả của tất cả các nhà cung cấp theo từng tài khoản công nợ và loại tiền</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Vendor Balance Summary</ReportNameEnglish>
+  <ReportNameEnglish48>Vendor Balance Summary</ReportNameEnglish48>
+  <ReportName133>Tổng hợp công nợ phải trả</ReportName133>
+  <ReportNameEnglish133>Vendor Balance Summary</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUSummaryPaymentByPurchaseContract</ReportID>
+  <ReportName>Tổng hợp công nợ phải trả theo hợp đồng mua</ReportName>
+  <ReportName48>Tổng hợp công nợ phải trả theo hợp đồng mua</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>4</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh công nợ của từng hợp đồng mua theo theo từng chứng từ phát sinh liên quan đến hợp đồng mua</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary payable debt by purchase contract</ReportNameEnglish>
+  <ReportName133>Tổng hợp công nợ phải trả theo hợp đồng mua</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUSummaryPurchaseByEmployeeAndInventory</ReportID>
+  <ReportName>Tổng hợp mua hàng theo mặt hàng và nhân viên</ReportName>
+  <ReportName48>Tổng hợp mua hàng theo mặt hàng và nhân viên</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>4</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình mua hàng, trả lại hàng mua, giảm giá hàng mua của tất cả các mặt hàng mua của một nhà cung cấp</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary purchases by goods and employee</ReportNameEnglish>
+  <ReportName133>Tổng hợp mua hàng theo mặt hàng và nhân viên</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUSummaryPurchaseByInventoryItemDynamic</ReportID>
+  <ReportName>Tổng hợp mua hàng theo mặt hàng</ReportName>
+  <ReportName48>Tổng hợp mua hàng theo mặt hàng</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình mua hàng, trả lại hàng mua, giảm giá hàng mua của tất cả các mặt hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary purchases by goods</ReportNameEnglish>
+  <ReportName133>Tổng hợp mua hàng theo mặt hàng</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUSummaryPurchaseByProjectAndSupplier</ReportID>
+  <ReportName>Tổng hợp mua hàng theo nhà cung cấp và công trình</ReportName>
+  <ReportName48>Tổng hợp mua hàng theo nhà cung cấp và công trình</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>5</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình nhập mua vật tư hàng hóa trong kỳ của từng nhà cung cấp theo từng công trình</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary report on purchases by supplier and project</ReportNameEnglish>
+  <ReportNameEnglish48>Summary report on purchases by supplier and project</ReportNameEnglish48>
+  <ReportName133>Tổng hợp mua hàng theo nhà cung cấp và công trình</ReportName133>
+  <ReportNameEnglish133>Summary report on purchases by supplier and project</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUSummaryPurchaseBySupplierAndInventory</ReportID>
+  <ReportName>Tổng hợp mua hàng theo mặt hàng và nhà cung cấp</ReportName>
+  <ReportName48>Tổng hợp mua hàng theo mặt hàng và nhà cung cấp</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>3</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình mua hàng, trả lại hàng mua, giảm giá hàng mua của tất cả các mặt hàng mua của một nhà cung cấp</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary purchases by goods and supplier</ReportNameEnglish>
+  <ReportName133>Tổng hợp mua hàng theo mặt hàng và nhà cung cấp</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>PUSummaryPurchaseBySupplierDynamic</ReportID>
+  <ReportName>Tổng hợp mua hàng theo nhà cung cấp</ReportName>
+  <ReportName48>Tổng hợp mua hàng theo nhà cung cấp</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình mua hàng, trả lại hàng mua, giảm giá hàng mua của tất cả các mặt hàng mua của một nhà cung cấp</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary purchases by supplier</ReportNameEnglish>
+  <ReportName133>Tổng hợp mua hàng theo nhà cung cấp</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableDeptDetail</ReportID>
+  <ReportName>Chi tiết công nợ phải thu</ReportName>
+  <ReportName48>Chi tiết công nợ phải thu</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của tất cả các khách hàng theo từng tài khoản công nợ và loại tiền</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Customer balance Detail</ReportNameEnglish>
+  <ReportNameEnglish48>Customer balance Detail</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ phải thu</ReportName133>
+  <ReportNameEnglish133>Customer balance Detail</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableDeptSummary</ReportID>
+  <ReportName>Tổng hợp công nợ phải thu</ReportName>
+  <ReportName48>Tổng hợp công nợ phải thu</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của tất cả các khách hàng theo từng tài khoản công nợ và loại tiền</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Customer balance summary</ReportNameEnglish>
+  <ReportNameEnglish48>Customer balance summary</ReportNameEnglish48>
+  <ReportName133>Tổng hợp công nợ phải thu</ReportName133>
+  <ReportNameEnglish133>Customer balance summary</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableDetail</ReportID>
+  <ReportName>Chi tiết công nợ phải thu khách hàng</ReportName>
+  <ReportName48>Chi tiết công nợ phải thu khách hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>157</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của tất cả các khách hàng theo từng tài khoản công nợ và loại tiền</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Customer balance detail</ReportNameEnglish>
+  <ReportNameEnglish48>Customer balance detail</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ phải thu khách hàng</ReportName133>
+  <ReportNameEnglish133>Customer balance detail</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableDetailByEmployee</ReportID>
+  <ReportName>Chi tiết công nợ phải thu theo nhân viên</ReportName>
+  <ReportName48>Chi tiết công nợ phải thu theo nhân viên</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tình hình công nợ phải thu của nhân viên theo tài khoản công nợ, khách hàng, loại tiền, chi tiết theo từng chứng từ phát sinh.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Customer balance detail by employee</ReportNameEnglish>
+  <ReportNameEnglish48>Customer Balance Detail by employee</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ phải thu theo nhân viên</ReportName133>
+  <ReportNameEnglish133>Customer Balance Detail by employee</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableDetailByInventoryItem</ReportID>
+  <ReportName>Chi tiết công nợ phải thu theo mặt hàng</ReportName>
+  <ReportName48>Chi tiết công nợ phải thu theo mặt hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>186</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Cho biết từng nhóm khách hàng có những khách hàng khách hàng nào, cộng nợ đầu kỳ, công nợ phát sinh trong kỳ, công nợ đã thu, còn phải thu của mỗi khách hàng và nhóm khách hàng là bao nhiêu</Description>
+  <FormNo></FormNo>
+  <FormNo48></FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Customer balance detail by goods</ReportNameEnglish>
+  <ReportNameEnglish48>Customer balance detail by goods</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ phải thu theo mặt hàng</ReportName133>
+  <ReportNameEnglish133>Customer balance detail by goods</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableDetailByInvoice</ReportID>
+  <ReportName>Chi tiết công nợ phải thu theo hóa đơn</ReportName>
+  <ReportName48>Chi tiết công nợ phải thu theo hóa đơn</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>184</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tình hình phát sinh và thu hồi công nợ phải thu của một khách hàng chi tiết theo từng hóa đơn công nợ.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Customer balance detail by invoice</ReportNameEnglish>
+  <ReportNameEnglish48>Customer balance detail by invoice</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ phải thu theo hóa đơn</ReportName133>
+  <ReportNameEnglish133>Customer balance detail by invoice</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableDetailByInvoiceDiscoutReturn</ReportID>
+  <ReportName>Chi tiết công nợ phải thu (Chi tiết theo các khoản giảm trừ)</ReportName>
+  <ReportName48>Chi tiết công nợ phải thu (Chi tiết theo các khoản giảm trừ)</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>184</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tình hình phát sinh và thu hồi công nợ phải thu của một khách hàng chi tiết theo từng hóa đơn công nợ.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Customer balance detail by invoice</ReportNameEnglish>
+  <ReportNameEnglish48>Customer balance detail by invoice</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ phải thu (Chi tiết theo các khoản giảm trừ)</ReportName133>
+  <ReportNameEnglish133>Customer balance detail by invoice</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableDetailByOU</ReportID>
+  <ReportName>Chi tiết công nợ phải thu khách hàng theo đơn vị kinh doanh</ReportName>
+  <ReportName48>Chi tiết công nợ phải thu khách hàng theo đơn vị kinh doanh</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>6</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tình hình công nợ phải thu của khách hàng theo từng đơn vị kinh doanh.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Customer balance detail by organization</ReportNameEnglish>
+  <ReportNameEnglish48>Customer balance detail by organization</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ phải thu khách hàng theo đơn vị kinh doanh</ReportName133>
+  <ReportNameEnglish133>Customer balance detail by organization</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableDetailByProjectWork</ReportID>
+  <ReportName>Chi tiết công nợ phải thu theo công trình</ReportName>
+  <ReportName48>Chi tiết công nợ phải thu theo công trình</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>3</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tình hình công nợ phải thu của khách hàng theo từng công trình.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Customer balance detail by project</ReportNameEnglish>
+  <ReportNameEnglish48>Customer balance detail by project</ReportNameEnglish48>
+  <ReportName133>Chi tiết công nợ phải thu theo công trình</ReportName133>
+  <ReportNameEnglish133>Customer balance detail by project</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableDetailBySAOrder</ReportID>
+  <ReportName>Chi tiết công nợ phải thu theo đơn đặt hàng</ReportName>
+  <ReportName48>Chi tiết công nợ phải thu theo đơn đặt hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>5</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh công nợ của từng đơn đặt hàng theo theo từng chứng từ phát sinh liên quan đến đơn đặt hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportName133>Chi tiết công nợ phải thu theo đơn đặt hàng</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableSummary</ReportID>
+  <ReportName>Tổng hợp công nợ phải thu khách hàng</ReportName>
+  <ReportName48>Tổng hợp công nợ phải thu khách hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>156</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của tất cả các khách hàng theo từng tài khoản công nợ và loại tiền</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Receivable summary from customer</ReportNameEnglish>
+  <ReportName133>Tổng hợp công nợ phải thu khách hàng</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableSummaryByAgeOfDebt</ReportID>
+  <ReportName>Phân tích công nợ phải thu theo tuổi nợ</ReportName>
+  <ReportName48>Phân tích công nợ phải thu theo tuổi nợ</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>192</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Để kế toán thống kê được số còn phải thu khách hàng theo từng nhóm tuổi nợ, đốc thúc khách hàng thanh toán</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Receivable summary analysis by age of debt</ReportNameEnglish>
+  <ReportNameEnglish48>Receivable summary analysis by age of debt</ReportNameEnglish48>
+  <ReportName133>Phân tích công nợ phải thu theo tuổi nợ</ReportName133>
+  <ReportNameEnglish133>Receivable summary analysis by age of debt</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableSummaryByAgeOfDebtEarly</ReportID>
+  <ReportName>Phân tích công nợ phải thu trước hạn</ReportName>
+  <ReportName48>Phân tích công nợ phải thu trước hạn</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>190</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của từng khách hàng theo các nhóm nợ trước hạn: Trước hạn 1-30 ngày,Trước hạn 31-60 ngày, Trước hạn 61-90 ngày, Trước hạn 91-120 ngày, Trước hạn trên 120 ngày.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Receivable summary analysis by age of debt early due</ReportNameEnglish>
+  <ReportNameEnglish48>Receivable summary analysis by age of debt early due</ReportNameEnglish48>
+  <ReportName133>Phân tích công nợ phải thu trước hạn</ReportName133>
+  <ReportNameEnglish133>Receivable summary analysis by age of debt early due</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableSummaryByAgeOfDebtOverdue</ReportID>
+  <ReportName>Phân tích công nợ phải thu quá hạn</ReportName>
+  <ReportName48>Phân tích công nợ phải thu quá hạn</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>189</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của từng khách hàng theo các nhóm nợ quá hạn: Quá hạn 1-30 ngày, Quá hạn 31-60 ngày, Quá hạn 61-90 ngày, Quá hạn 91-120 ngày, Quá hạn trên 120 ngày.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Receivable summary analysis by age of debt over due</ReportNameEnglish>
+  <ReportNameEnglish48>Receivable summary analysis by age of debt over due</ReportNameEnglish48>
+  <ReportName133>Phân tích công nợ phải thu quá hạn</ReportName133>
+  <ReportNameEnglish133>Receivable summary analysis by age of debt over due</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableSummaryByContract</ReportID>
+  <ReportName>Tổng hợp công nợ phải thu theo hợp đồng bán</ReportName>
+  <ReportName48>Tổng hợp công nợ phải thu theo hợp đồng bán</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>4</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp công nợ phải thu theo hợp đồng bán</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Receivable summary by sale contract</ReportNameEnglish>
+  <ReportName133>Tổng hợp công nợ phải thu theo hợp đồng bán</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableSummaryByEmployee</ReportID>
+  <ReportName>Tổng hợp công nợ phải thu theo nhân viên và khách hàng</ReportName>
+  <ReportName48>Tổng hợp công nợ phải thu theo nhân viên</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của tất cả các khách hàng theo từng tài khoản công nợ và loại tiền</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Receivable summary by employee and customer</ReportNameEnglish>
+  <ReportName133>Tổng hợp công nợ phải thu theo nhân viên</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableSummaryByEmployeeOnly</ReportID>
+  <ReportName>Tổng hợp công nợ phải thu theo nhân viên</ReportName>
+  <ReportName48>Tổng hợp công nợ phải thu theo nhân viên</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của tất cả các khách hàng theo từng tài khoản công nợ và loại tiền</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Receivable summary by employee</ReportNameEnglish>
+  <ReportName133>Tổng hợp công nợ phải thu theo nhân viên</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableSummaryByInvoiceDiscout</ReportID>
+  <ReportName>Tổng hợp công nợ phải thu (chi tiết theo các khoản giảm trừ)</ReportName>
+  <ReportName48>Tổng hợp công nợ phải thu (chi tiết theo các khoản giảm trừ)</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>7</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp công nợ phải thu (chi tiết theo các khoản giảm trừ)</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Customer balance summary by deductions</ReportNameEnglish>
+  <ReportNameEnglish48>Customer balance summary by deductions</ReportNameEnglish48>
+  <ReportName133>Tổng hợp công nợ phải thu (chi tiết theo các khoản giảm trừ)</ReportName133>
+  <ReportNameEnglish133>Customer balance summary by deductions</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableSummaryByOU</ReportID>
+  <ReportName>Tổng hợp công nợ phải thu khách hàng theo đơn vị kinh doanh</ReportName>
+  <ReportName48>Tổng hợp công nợ phải thu khách hàng theo đơn vị kinh doanh</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>6</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của tất cả các khách hàng theo đơn vị kinh doanh, theo từng tài khoản công nợ và loại tiền</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Receivable summary by organization unit</ReportNameEnglish>
+  <ReportName133>Tổng hợp công nợ phải thu khách hàng theo đơn vị kinh doanh</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableSummaryByProjectWork</ReportID>
+  <ReportName>Tổng hợp công nợ phải thu theo công trình</ReportName>
+  <ReportName48>Tổng hợp công nợ phải thu theo công trình</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>3</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình phát sinh và thu hồi công nợ phải thu của tất cả các khách hàng theo từng tài khoản công nợ và loại tiền.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Receivable summary by project</ReportNameEnglish>
+  <ReportName133>Tổng hợp công nợ phải thu theo công trình</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>ReceivableSummaryBySAOrder</ReportID>
+  <ReportName>Tổng hợp công nợ phải thu theo đơn đặt hàng</ReportName>
+  <ReportName48>Tổng hợp công nợ phải thu theo đơn đặt hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>5</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp công nợ phải thu theo đơn đặt hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Receivable summary by sale order</ReportNameEnglish>
+  <ReportNameEnglish48>Receivable summary by sale order</ReportNameEnglish48>
+  <ReportName133>Tổng hợp công nợ phải thu theo đơn đặt hàng</ReportName133>
+  <ReportNameEnglish133>Receivable summary by sale order</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>S02bDN</ReportID>
+  <ReportName>S02b-DN: Sổ đăng ký chứng từ ghi sổ</ReportName>
+  <ReportName48>S02b-DNN: Sổ đăng ký chứng từ ghi sổ</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>60</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ đăng ký chứng từ ghi sổ</Description>
+  <FormNo>Mẫu số: S02b-DN</FormNo>
+  <FormNo48>Mẫu số: S02b-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S02b-DN: Journal voucher register</ReportNameEnglish>
+  <ReportNameEnglish48>S02b-DNN: Journal voucher register</ReportNameEnglish48>
+  <ReportName133>S02b-DNN: Sổ đăng ký chứng từ ghi sổ</ReportName133>
+  <ReportNameEnglish133>S02b-DNN: Journal voucher register</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>S02c1</ReportID>
+  <ReportName>S02c1-DN: Sổ cái (Hình thức Chứng từ ghi sổ)</ReportName>
+  <ReportName48>S02c1-DNN: Sổ cái (Hình thức Chứng từ ghi sổ)</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>57</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ cái dùng cho hình thức kế toán Chứng từ ghi sổ</Description>
+  <FormNo>Mẫu số: S03b-DN</FormNo>
+  <FormNo48>Mẫu số: S03b-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S02c1-DN: General Ledger (Form of journal voucher)</ReportNameEnglish>
+  <ReportNameEnglish48>S02c1-DNN: General Ledger (Form of journal voucher)</ReportNameEnglish48>
+  <ReportName133>S02c1-DNN: Sổ cái (Hình thức Chứng từ ghi sổ)</ReportName133>
+  <ReportNameEnglish133>S02c1-DNN: General Ledger (Form of journal voucher)</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>S03a1DN15</ReportID>
+  <ReportName>S03a1-DN: Sổ nhật ký thu tiền</ReportName>
+  <ReportName48>S03a1-DN: Sổ nhật ký thu tiền</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>94</SortOrder>
+  <AccountingSystem>15</AccountingSystem>
+  <Description>S03a1-DN: Sổ nhật ký thu tiền (TT200)</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S03a1-DN: Received journal books</ReportNameEnglish>
+  <ReportNameEnglish48></ReportNameEnglish48>
+  <ReportName133>S03a1-DN: Sổ nhật ký thu tiền</ReportName133>
+  <ReportNameEnglish133></ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>S03a1DN48</ReportID>
+  <ReportName>S03a1-DNN: Sổ nhật ký thu tiền</ReportName>
+  <ReportName48>S03a1-DNN: Sổ nhật ký thu tiền</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>94</SortOrder>
+  <AccountingSystem>48133</AccountingSystem>
+  <Description>S03a1-DN: Sổ nhật ký thu tiền (TT200)</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S03a1-DNN: Received journal books</ReportNameEnglish>
+  <ReportNameEnglish48></ReportNameEnglish48>
+  <ReportName133>S03a1-DNN: Sổ nhật ký thu tiền</ReportName133>
+  <ReportNameEnglish133></ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>S03a2DN15</ReportID>
+  <ReportName>S03a2-DN: Sổ nhật ký chi tiền</ReportName>
+  <ReportName48>S03a2-DN: Sổ nhật ký chi tiền</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>94</SortOrder>
+  <AccountingSystem>15</AccountingSystem>
+  <Description>S03a2-DN: Sổ nhật ký chi tiền (TT200)</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S03a2-DN: Payment journal books</ReportNameEnglish>
+  <ReportNameEnglish48></ReportNameEnglish48>
+  <ReportName133>S03a2-DN: Sổ nhật ký chi tiền </ReportName133>
+  <ReportNameEnglish133></ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>S03a2DN48</ReportID>
+  <ReportName>S03a2-DNN: Sổ nhật ký chi tiền</ReportName>
+  <ReportName48>S03a2-DNN: Sổ nhật ký chi tiền</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>94</SortOrder>
+  <AccountingSystem>48133</AccountingSystem>
+  <Description>S03a2-DN: Sổ nhật ký chi tiền (TT200)</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S03a2-DNN: Payment journal books</ReportNameEnglish>
+  <ReportNameEnglish48></ReportNameEnglish48>
+  <ReportName133>S03a2-DNN: Sổ nhật ký chi tiền</ReportName133>
+  <ReportNameEnglish133></ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>S03b</ReportID>
+  <ReportName>S03b-DN: Sổ cái (Hình thức Nhật ký chung)</ReportName>
+  <ReportName48>S03b-DNN: Sổ cái (Hình thức Nhật ký chung)</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>56</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ cái dùng cho hình thức kế toán Nhật ký chung</Description>
+  <FormNo>Mẫu số: S03b-DN</FormNo>
+  <FormNo48>Mẫu số: S03b-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S03b-DN: General Ledger (Form of general journal)</ReportNameEnglish>
+  <ReportNameEnglish48>S03b-DNN: General Ledger (Form of general journal)</ReportNameEnglish48>
+  <ReportName133>S03b-DNN: Sổ cái (Hình thức Nhật ký chung)</ReportName133>
+  <ReportNameEnglish133>S03b-DNN: General Ledger (Form of general journal)</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SACompareSaleResult</ReportID>
+  <ReportName>Báo cáo phân tích số lượng bán, doanh số theo năm</ReportName>
+  <ReportName48>Báo cáo phân tích số lượng bán, doanh số theo năm</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>250</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Để so sánh về số lượng bán, doanh số bán hàng và doanh thu thuần giữa các tháng, quý chi tiết theo từng khách hàng và từng mã hàng làm căn cứ đưa ra chính sách giá, chính sách chiết khấu, giảm giá cho KH</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Annual analysis report of sales quantity and total revenue</ReportNameEnglish>
+  <ReportNameEnglish48>Annual analysis report of sales quantity and total revenue</ReportNameEnglish48>
+  <ReportName133>Báo cáo phân tích số lượng bán, doanh số theo năm</ReportName133>
+  <ReportNameEnglish133>Annual analysis report of sales quantity and total revenue</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SACompareSaleResultByNotSamePeriod</ReportID>
+  <ReportName>Báo cáo so sánh số lượng bán, doanh số theo kỳ</ReportName>
+  <ReportName48>Báo cáo so sánh số lượng bán, doanh số theo kỳ</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>254</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Để so sánh về số lượng bán, doanh số bán hàng và doanh thu thuần giữa các tháng, quý chi tiết theo từng khách hàng và từng mã hàng làm căn cứ đưa ra chính sách giá, chính sách chiết khấu, giảm giá cho KH</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Comparison of sales quantity and total revenue by period</ReportNameEnglish>
+  <ReportNameEnglish48>Comparison of sales quantity and total revenue by period</ReportNameEnglish48>
+  <ReportName133>Báo cáo so sánh số lượng bán, doanh số theo kỳ</ReportName133>
+  <ReportNameEnglish133>Comparison of sales quantity and total revenue by period</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SAInvoiceDiaryBook</ReportID>
+  <ReportName>Sổ nhật ký bán hàng</ReportName>
+  <ReportName48>Sổ nhật ký bán hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>84</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Ghi chép các nghiệp vụ bán hàng theo trình tự thời gian.</Description>
+  <FormNo>Mẫu số: S03a4-DN</FormNo>
+  <FormNo48>Mẫu số: S03a4-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Sale journal</ReportNameEnglish>
+  <ReportNameEnglish48>Sale journal</ReportNameEnglish48>
+  <ReportName133>Sổ nhật ký bán hàng</ReportName133>
+  <ReportNameEnglish133>Sale journal</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesBookDetail</ReportID>
+  <ReportName>Sổ chi tiết bán hàng</ReportName>
+  <ReportName48>Sổ chi tiết bán hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>71</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tình hình bán hàng, trả lại hàng bán, giảm giá hàng bán chi tiết theo từng chứng từ phát sinh.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed goods sales books</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed goods sales books</ReportNameEnglish48>
+  <ReportName133>Sổ chi tiết bán hàng</ReportName133>
+  <ReportNameEnglish133>Detailed goods sales books</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesBookDetailByEmployee</ReportID>
+  <ReportName>Sổ chi tiết bán hàng theo nhân viên</ReportName>
+  <ReportName48>Sổ chi tiết bán hàng theo nhân viên</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>8</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tình hình bán hàng, trả lại hàng bán, giảm giá hàng bán chi tiết theo từng chứng từ phát sinh.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed goods sales books by employee</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed goods sales books by employee</ReportNameEnglish48>
+  <ReportName133>Sổ chi tiết bán hàng theo nhân viên</ReportName133>
+  <ReportNameEnglish133>Detailed goods sales books by employee</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesBookDetailByRegulation</ReportID>
+  <ReportName>S35-DN: Sổ chi tiết bán hàng</ReportName>
+  <ReportName48>S17-DNN: Sổ chi tiết bán hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>63</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ này mở theo từng sản phẩm, hàng hóa, bất động sản đầu tư, dịch vụ đã bán hoặc đã cung cấp được khách hàng thanh toán tiền ngay hay chấp nhận thanh toán.</Description>
+  <FormNo>Mẫu số S35-DN</FormNo>
+  <FormNo48>Mẫu số: S17-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>S35-DN: Detailed goods sales books</ReportNameEnglish>
+  <ReportNameEnglish48>S17-DNN: Detailed goods sales books</ReportNameEnglish48>
+  <ReportName133>S17-DNN: Sổ chi tiết bán hàng</ReportName133>
+  <ReportNameEnglish133>S17-DNN: Detailed goods sales books</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesBookDetailBySerial</ReportID>
+  <ReportName>Sổ chi tiết bán hàng theo mã quy cách</ReportName>
+  <ReportName48>Sổ chi tiết bán hàng theo mã quy cách</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>82</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tình hình bán hàng, trả lại hàng bán chi tiết theo mã quy cách.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed goods sales books by serial</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed goods sales books by serial</ReportNameEnglish48>
+  <ReportName133>Sổ chi tiết bán hàng theo mã quy cách</ReportName133>
+  <ReportNameEnglish133>Detailed goods sales books by serial</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesSummary</ReportID>
+  <ReportName>Tổng hợp bán hàng</ReportName>
+  <ReportName48>Tổng hợp bán hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>54</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp doanh số bán hàng, hàng bán trả lại, giảm giá của từng địa phương mua hàng.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary report on sales</ReportNameEnglish>
+  <ReportNameEnglish48>Summary report on sales</ReportNameEnglish48>
+  <ReportName133>Tổng hợp bán hàng</ReportName133>
+  <ReportNameEnglish133>Summary report on sales</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesSummaryByCustomer</ReportID>
+  <ReportName>Tổng hợp bán hàng theo khách hàng</ReportName>
+  <ReportName48>Tổng hợp bán hàng theo khách hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>4</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp doanh số bán hàng, hàng bán trả lại, giảm giá của từng khách hàng.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary sales by customer</ReportNameEnglish>
+  <ReportName133>Tổng hợp bán hàng theo khách hàng</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesSummaryByCustomerAndInventory</ReportID>
+  <ReportName>Tổng hợp bán hàng theo mặt hàng và khách hàng</ReportName>
+  <ReportName48>Tổng hợp bán hàng theo mặt hàng và khách hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp doanh số bán hàng, hàng bán trả lại, giảm giá của từng khách hàng.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary sales by goods and customer</ReportNameEnglish>
+  <ReportName133>Tổng hợp bán hàng theo mặt hàng và khách hàng</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesSummaryByEmployee</ReportID>
+  <ReportName>Tổng hợp bán hàng theo nhân viên</ReportName>
+  <ReportName48>Tổng hợp bán hàng theo nhân viên</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>5</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp doanh số bán hàng, hàng bán trả lại, giảm giá của từng nhân viên.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary report on sales by employee</ReportNameEnglish>
+  <ReportNameEnglish48>Summary report on sales by employee</ReportNameEnglish48>
+  <ReportName133>Tổng hợp bán hàng theo nhân viên</ReportName133>
+  <ReportNameEnglish133>Summary report on sales by employee</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesSummaryByEmployeeAndCustomer</ReportID>
+  <ReportName>Tổng hợp bán hàng theo nhân viên và khách hàng</ReportName>
+  <ReportName48>Tổng hợp bán hàng theo nhân viên và khách hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>6</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp doanh số bán hàng, hàng bán trả lại, giảm giá của từng khách hàng.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary report on sales by employee and customer</ReportNameEnglish>
+  <ReportNameEnglish48>Summary report on sales by employee and customer</ReportNameEnglish48>
+  <ReportName133>Tổng hợp bán hàng theo nhân viên và khách hàng</ReportName133>
+  <ReportNameEnglish133>Summary report on sales by employee and customer</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesSummaryByEmployeeAndCustomerAndInventoryItem</ReportID>
+  <ReportName>Tổng hợp bán hàng theo nhân viên, khách hàng và mặt hàng</ReportName>
+  <ReportName48>Tổng hợp bán hàng theo nhân viên, khách hàng và mặt hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>7</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp bán hàng theo nhân viên, khách hàng và mặt hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary report on sales by employee, customer and InventoryItem</ReportNameEnglish>
+  <ReportNameEnglish48>Summary report on sales by employee and customer</ReportNameEnglish48>
+  <ReportName133>Tổng hợp bán hàng theo nhân viên, khách hàng và mặt hàng</ReportName133>
+  <ReportNameEnglish133>Summary report on sales by employee, customer and InventoryItem</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesSummaryByEmployeeAndInventory</ReportID>
+  <ReportName>Tổng hợp bán hàng theo mặt hàng và nhân viên</ReportName>
+  <ReportName48>Tổng hợp bán hàng theo mặt hàng và nhân viên</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>3</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp doanh số bán hàng, hàng bán trả lại, giảm giá của từng khách hàng.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary sales by goods and employee</ReportNameEnglish>
+  <ReportName133>Tổng hợp bán hàng theo mặt hàng và nhân viên</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesSummaryByInventory</ReportID>
+  <ReportName>Tổng hợp bán hàng theo mặt hàng</ReportName>
+  <ReportName48>Tổng hợp bán hàng theo mặt hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp doanh số bán hàng, hàng bán trả lại, giảm giá theo từng mặt hàng.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary sales by goods</ReportNameEnglish>
+  <ReportName133>Tổng hợp bán hàng theo mặt hàng</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesSummaryByOperation</ReportID>
+  <ReportName>Tổng hợp bán hàng theo đơn vị kinh doanh</ReportName>
+  <ReportName48>Tổng hợp bán hàng theo đơn vị kinh doanh</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>11</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp doanh số bán hàng, hàng bán trả lại, giảm giá của từng đơn vị kinh doanh.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary sales by business units</ReportNameEnglish>
+  <ReportName133>Tổng hợp bán hàng theo đơn vị kinh doanh</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesSummaryByOrganizationUnitAndInventoryItem</ReportID>
+  <ReportName>Tổng hợp bán hàng theo đơn vị kinh doanh và mặt hàng</ReportName>
+  <ReportName48>Tổng hợp bán hàng theo đơn vị kinh doanh và mặt hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>12</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp doanh số bán hàng, hàng bán trả lại, giảm giá của từng đơn vị kinh doanh và từng mặt hàng để đánh giá xem đơn vị nào có doanh thu, lãi gộp cao, đơn vị nào doanh thu, lãi gộp thấp phục vụ cho lãnh đạo ra quyết định kinh doanh</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary sales by business units</ReportNameEnglish>
+  <ReportName133>Tổng hợp bán hàng theo đơn vị kinh doanh và mặt hàng</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SalesSummaryByRegional</ReportID>
+  <ReportName>Tổng hợp bán hàng theo địa phương</ReportName>
+  <ReportName48>Tổng hợp bán hàng theo địa phương</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>10</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp doanh số bán hàng, hàng bán trả lại, giảm giá của từng địa phương mua hàng.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary sales by region</ReportNameEnglish>
+  <ReportName133>Tổng hợp bán hàng theo địa phương</ReportName133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SAOrderStatement</ReportID>
+  <ReportName>Tình hình thực hiện đơn đặt hàng</ReportName>
+  <ReportName48>Tình hình thực hiện đơn đặt hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>222</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tình hình thực hiện các đơn đặt hàng phát sinh trong kỳ: số lượng đã giao, số lượng còn lại, doanh số đã thực hiện, doanh số chưa thực hiện của từng đơn đặt hàng.</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed report on the implementation of orders</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed report on the implementation of orders</ReportNameEnglish48>
+  <ReportName133>Tình hình thực hiện đơn đặt hàng</ReportName133>
+  <ReportNameEnglish133>Detailed report on the implementation of orders</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SAOrderStatementDetail</ReportID>
+  <ReportName>Báo cáo chi tiết tình hình thực hiện đơn đặt hàng</ReportName>
+  <ReportName48>Báo cáo chi tiết tình hình thực hiện đơn đặt hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>223</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo chi tiết tình hình thực hiện đơn đặt hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed report on the implementation of orders</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed report on the implementation of orders</ReportNameEnglish48>
+  <ReportName133>Báo cáo chi tiết tình hình thực hiện đơn đặt hàng</ReportName133>
+  <ReportNameEnglish133>Detailed report on the implementation of orders</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SAReceivableSummaryByAOGroup</ReportID>
+  <ReportName>Tổng hợp công nợ phải thu theo nhóm khách hàng</ReportName>
+  <ReportName48>Tổng hợp công nợ phải thu theo nhóm khách hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>260</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Cho biết từng nhóm khách hàng có những khách hàng khách hàng nào, cộng nợ đầu kỳ, công nợ phát sinh trong kỳ, công nợ đã thu, còn phải thu của mỗi khách hàng và nhóm khách hàng là bao nhiêu</Description>
+  <FormNo></FormNo>
+  <FormNo48></FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Receivable summary by customer group</ReportNameEnglish>
+  <ReportNameEnglish48>Receivable summary by customer group</ReportNameEnglish48>
+  <ReportName133>Tổng hợp công nợ phải thu theo nhóm khách hàng</ReportName133>
+  <ReportNameEnglish133>Receivable summary by customer group</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SASaleSummaryByAOGroup</ReportID>
+  <ReportName>Tổng hợp bán hàng theo nhóm khách hàng</ReportName>
+  <ReportName48>Tổng hợp bán hàng theo nhóm khách hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>13</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp doanh số bán hàng, hàng bán trả lại, giảm giá của từng nhóm khách hàng</Description>
+  <FormNo></FormNo>
+  <FormNo48></FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Sale summary by customer group</ReportNameEnglish>
+  <ReportNameEnglish48>Sale summary by customer group</ReportNameEnglish48>
+  <ReportName133>Tổng hợp bán hàng theo nhóm khách hàng</ReportName133>
+  <ReportNameEnglish133>Sale summary by customer group</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SASummariesOutwardSale</ReportID>
+  <ReportName>Tổng hợp xuất kho bán hàng</ReportName>
+  <ReportName48>Tổng hợp xuất kho bán hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>263</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Mẫu này áp dụng cho những công ty cần in phiếu xuất bán hàng tổng hợp cho nhiều chứng từ bán hàng.</Description>
+  <FormNo></FormNo>
+  <FormNo48></FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summaries outward sale</ReportNameEnglish>
+  <ReportNameEnglish48>Summaries outward sale</ReportNameEnglish48>
+  <ReportName133>Tổng hợp xuất kho bán hàng</ReportName133>
+  <ReportNameEnglish133>Summaries outward sale</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SKInventoryBook</ReportID>
+  <ReportName>Thẻ kho (Sổ kho)</ReportName>
+  <ReportName48>Thẻ kho (Sổ kho)</ReportName48>
+  <GroupID>25</GroupID>
+  <SortOrder>213</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Theo dõi số lượng nhập, xuất, tồn kho từng thứ vật liêu, dụng cụ, sản phẩm, hàng hóa ở từng kho. Làm căn cứ xác định số lượng tồn kho dự trữ vật liệu, dụng cụ, sản phẩm, hàng hóa và xác định trách nhiệm vật chất của thủ kho</Description>
+  <FormNo>Mẫu số: S12-DN</FormNo>
+  <FormNo48>Mẫu số: S09-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Stock card (Stock book)</ReportNameEnglish>
+  <ReportNameEnglish48>Stock card (Stock book)</ReportNameEnglish48>
+  <ReportName133>Thẻ kho (Sổ kho)</ReportName133>
+  <ReportNameEnglish133>Stock card (Stock book)</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SKInventoryBookDetailByLotNo</ReportID>
+  <ReportName>Sổ chi tiết vật tư hàng hóa theo lô</ReportName>
+  <ReportName48>Sổ chi tiết vật tư hàng hóa theo lô</ReportName48>
+  <GroupID>25</GroupID>
+  <SortOrder>267</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ chi tiết vật tư hàng hóa theo số lô</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Detailed inventory books by lot no</ReportNameEnglish>
+  <ReportNameEnglish48>Detailed inventory books by lot no</ReportNameEnglish48>
+  <ReportName133>Sổ chi tiết vật tư hàng hóa theo lô</ReportName133>
+  <ReportNameEnglish133>Detailed inventory books by lot no</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SKSummaryInventory</ReportID>
+  <ReportName>Báo cáo tổng hợp tồn kho</ReportName>
+  <ReportName48>Báo cáo tổng hợp tồn kho</ReportName48>
+  <GroupID>25</GroupID>
+  <SortOrder>65</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo tổng hợp tồn kho</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Inventory summary report</ReportNameEnglish>
+  <ReportNameEnglish48>Inventory summary report</ReportNameEnglish48>
+  <ReportName133>Báo cáo tổng hợp tồn kho</ReportName133>
+  <ReportNameEnglish133>Inventory summary report</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>StockCardByLotNo</ReportID>
+  <ReportName>Thẻ kho (Số lô, hạn sử dụng)</ReportName>
+  <ReportName48>Thẻ kho (Số lô, hạn sử dụng)</ReportName48>
+  <GroupID>8</GroupID>
+  <SortOrder>275</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Thẻ kho (Số lô, hạn sử dụng)</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Stock card (Plot no expiry date form)</ReportNameEnglish>
+  <ReportNameEnglish48>Stock card (Plot no expiry date form)</ReportNameEnglish48>
+  <ReportName133>Thẻ kho (Số lô, hạn sử dụng)</ReportName133>
+  <ReportNameEnglish133>Stock card (Plot no expiry date form)</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SUAllocateCaculateSheet</ReportID>
+  <ReportName>Bảng tính phân bổ công cụ dụng cụ</ReportName>
+  <ReportName48>Bảng tính phân bổ công cụ dụng cụ</ReportName48>
+  <GroupID>10</GroupID>
+  <SortOrder>0</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng tính phân bổ công cụ dụng cụ</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Tools Allocate Caculate Sheet</ReportNameEnglish>
+  <ReportNameEnglish48>Tools Allocate Caculate Sheet</ReportNameEnglish48>
+  <ReportName133>Bảng tính phân bổ công cụ dụng cụ</ReportName133>
+  <ReportNameEnglish133>Tools Allocate Caculate Sheet</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SUDecrementDetailReport</ReportID>
+  <ReportName>Báo cáo chi tiết giảm công cụ dụng cụ</ReportName>
+  <ReportName48>Báo cáo chi tiết giảm công cụ dụng cụ</ReportName48>
+  <GroupID>10</GroupID>
+  <SortOrder>220</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Báo cáo chi tiết giảm công cụ dụng cụ</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Tools decrease detail</ReportNameEnglish>
+  <ReportNameEnglish48>Tools decrease detail</ReportNameEnglish48>
+  <ReportName133>Báo cáo chi tiết giảm công cụ dụng cụ</ReportName133>
+  <ReportNameEnglish133>Tools decrease detail</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SUListToolBookWithOrganizationUnit</ReportID>
+  <ReportName>Thống kê nhóm công cụ theo đơn vị sử dụng</ReportName>
+  <ReportName48>Thống kê nhóm công cụ theo đơn vị sử dụng</ReportName48>
+  <GroupID>10</GroupID>
+  <SortOrder>253</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Thống kê nhóm công cụ theo đơn vị sử dụng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>List of tools book with organization unit</ReportNameEnglish>
+  <ReportNameEnglish48>List of tools book with organization unit</ReportNameEnglish48>
+  <ReportName133>Thống kê nhóm công cụ theo đơn vị sử dụng</ReportName133>
+  <ReportNameEnglish133>List of tools book with organization unit</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SummaryCustomerReceivable</ReportID>
+  <ReportName>Tổng hợp thanh toán công nợ khách hàng</ReportName>
+  <ReportName48>Tổng hợp thanh toán công nợ khách hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>245</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp thanh toán công nợ khách hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary on customer's debt payment</ReportNameEnglish>
+  <ReportNameEnglish48>Summary on customer's debt payment</ReportNameEnglish48>
+  <ReportName133>Tổng hợp thanh toán công nợ khách hàng</ReportName133>
+  <ReportNameEnglish133>Summary on customer's debt payment</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SummaryCustomerReceivableByEmployee</ReportID>
+  <ReportName>Tổng hợp thanh toán công nợ khách hàng theo nhân viên</ReportName>
+  <ReportName48>Tổng hợp thanh toán công nợ khách hàng theo nhân viên</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>247</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp thanh toán công nợ khách hàng theo nhân viên</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary on customer's debt payment by employees</ReportNameEnglish>
+  <ReportNameEnglish48>Summary on customer's debt payment by employees</ReportNameEnglish48>
+  <ReportName133>Tổng hợp thanh toán công nợ khách hàng theo nhân viên</ReportName133>
+  <ReportNameEnglish133>Summary on customer's debt payment by employees</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ReportName>Báo cáo tổng hợp lãi lỗ theo đơn hàng</ReportName>
+  <ReportName48>Báo cáo tổng hợp lãi lỗ theo đơn hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>230</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Phản ánh tổng quát tình hình doanh thu chi phí, lãi lỗ theo nhiều tiêu chí: hợp đồng /dự án, công trình/vụ việc, đơn hàng, mã thống kê,...</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Profit and loss by order summary</ReportNameEnglish>
+  <ReportNameEnglish48>Profit and loss by order summary</ReportNameEnglish48>
+  <ReportName133>Báo cáo tổng hợp lãi lỗ theo đơn hàng</ReportName133>
+  <ReportNameEnglish133>Profit and loss by order summary</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SummaryPurchase</ReportID>
+  <ReportName>Tổng hợp mua hàng</ReportName>
+  <ReportName48>Tổng hợp mua hàng</ReportName48>
+  <GroupID>6</GroupID>
+  <SortOrder>88</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Tổng hợp tình hình mua hàng, trả lại hàng mua, giảm giá hàng mua của tất cả các mặt hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>0</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Summary Purchase</ReportNameEnglish>
+  <ReportNameEnglish48>Summary Purchase</ReportNameEnglish48>
+  <ReportName133>Tổng hợp mua hàng</ReportName133>
+  <ReportNameEnglish133>Summary Purchase</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SUTrackingToolBook</ReportID>
+  <ReportName>Sổ theo dõi công cụ dụng cụ</ReportName>
+  <ReportName48>Sổ theo dõi công cụ dụng cụ</ReportName48>
+  <GroupID>10</GroupID>
+  <SortOrder>210</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ theo dõi CCDC</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Tracking of tools book</ReportNameEnglish>
+  <ReportNameEnglish48>Tracking of tools book</ReportNameEnglish48>
+  <ReportName133>Sổ theo dõi công cụ dụng cụ</ReportName133>
+  <ReportNameEnglish133>Tracking of tools book</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>SUTrackingToolBookWithOrganizationUnit</ReportID>
+  <ReportName>Sổ theo dõi công cụ dụng cụ theo đơn vị sử dụng</ReportName>
+  <ReportName48>Sổ theo dõi công cụ dụng cụ theo đơn vị sử dụng</ReportName48>
+  <GroupID>10</GroupID>
+  <SortOrder>252</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Sổ theo dõi CCDC theo đơn vị sử dụng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Tracking of tools book with organization unit</ReportNameEnglish>
+  <ReportNameEnglish48>Tracking of tools book with organization unit</ReportNameEnglish48>
+  <ReportName133>Sổ theo dõi công cụ dụng cụ theo đơn vị sử dụng</ReportName133>
+  <ReportNameEnglish133>Tracking of tools book with organization unit</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>TA_HistoryChangeInvoice</ReportID>
+  <ReportName>Đối chiếu thông tin hóa đơn trên bảng kê mua vào và chứng từ</ReportName>
+  <ReportName48>Đối chiếu thông tin hóa đơn trên bảng kê mua vào và chứng từ</ReportName48>
+  <GroupID>13</GroupID>
+  <SortOrder>4</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Đối chiếu thông tin hóa đơn trên bảng kê mua vào và chứng từ</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Đối chiếu thông tin hóa đơn trên bảng kê mua vào và chứng từ</ReportNameEnglish>
+  <ReportNameEnglish48>Đối chiếu thông tin hóa đơn trên bảng kê mua vào và chứng từ</ReportNameEnglish48>
+  <ReportName133>Đối chiếu thông tin hóa đơn trên bảng kê mua vào và chứng từ</ReportName133>
+  <ReportNameEnglish133>Đối chiếu thông tin hóa đơn trên bảng kê mua vào và chứng từ</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>TASummaryFollowTax</ReportID>
+  <ReportName>Bảng tổng hợp quyết toán thuế GTGT năm</ReportName>
+  <ReportName48>Bảng tổng hợp quyết toán thuế GTGT năm</ReportName48>
+  <GroupID>13</GroupID>
+  <SortOrder>3</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng tổng hợp quyết toán thuế GTGT năm</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Bảng tổng hợp quyết toán thuế GTGT năm</ReportNameEnglish>
+  <ReportNameEnglish48>Bảng tổng hợp quyết toán thuế GTGT năm</ReportNameEnglish48>
+  <ReportName133>Bảng tổng hợp quyết toán thuế GTGT năm</ReportName133>
+  <ReportNameEnglish133>Bảng tổng hợp quyết toán thuế GTGT năm</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>VATTaxPurchase</ReportID>
+  <ReportName>Bảng kê hóa đơn, chứng từ hàng hóa, dịch vụ mua vào (Mẫu quản trị)</ReportName>
+  <ReportName48>Bảng kê hóa đơn, chứng từ hàng hóa, dịch vụ mua vào (Mẫu quản trị)</ReportName48>
+  <GroupID>13</GroupID>
+  <SortOrder>1</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>VATTaxPurchase</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>List of invoices and vouchers of purchased goods, services (administrative template)</ReportNameEnglish>
+  <ReportNameEnglish48>List of invoices and vouchers of purchased goods, services (administrative template)</ReportNameEnglish48>
+  <ReportName133>Bảng kê hóa đơn, chứng từ hàng hóa, dịch vụ mua vào (Mẫu quản trị)</ReportName133>
+  <ReportNameEnglish133>List of invoices and vouchers of purchased goods, services (administrative template)</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>VATTaxSale</ReportID>
+  <ReportName>Bảng kê hóa đơn, chứng từ hàng hóa, dịch vụ bán ra (Mẫu quản trị)</ReportName>
+  <ReportName48>Bảng kê hóa đơn, chứng từ hàng hóa, dịch vụ bán ra (Mẫu quản trị)</ReportName48>
+  <GroupID>13</GroupID>
+  <SortOrder>2</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>VATTaxSale</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>List of invoices and vouchers of sold goods, services (administrative template)</ReportNameEnglish>
+  <ReportNameEnglish48>List of invoices and vouchers of sold goods, services (administrative template)</ReportNameEnglish48>
+  <ReportName133>Bảng kê hóa đơn, chứng từ hàng hóa, dịch vụ bán ra (Mẫu quản trị)</ReportName133>
+  <ReportNameEnglish133>List of invoices and vouchers of sold goods, services (administrative template)</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>VoucherListNotRegistered</ReportID>
+  <ReportName>Liệt kê chứng từ chưa lập chứng từ ghi sổ</ReportName>
+  <ReportName48>Liệt kê chứng từ chưa lập chứng từ ghi sổ</ReportName48>
+  <GroupID>27</GroupID>
+  <SortOrder>251</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Liệt kê chứng từ chưa lập chứng từ ghi sổ</Description>
+  <FormNo></FormNo>
+  <FormNo48></FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Voucher List Have Not Register Voucher</ReportNameEnglish>
+  <ReportNameEnglish48>Voucher List Have Not Register Voucher</ReportNameEnglish48>
+  <ReportName133>Liệt kê chứng từ chưa lập chứng từ ghi sổ</ReportName133>
+  <ReportNameEnglish133>Voucher List Have Not Register Voucher</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB02_DN</ReportID>
+  <ReportName>B02-DN: Báo cáo kết quả hoạt động kinh doanh</ReportName>
+  <ReportName48>B02-DN: Báo cáo kết quả hoạt động kinh doanh</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>19</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng cân đối kế toán là báo cáo tài chính tổng hợp, phản ánh tổng quát toàn bộ giá trị tài sản hiện có và nguồn hình thành tài sản đó của doanh nghiệp tại một thời điểm nhất định </Description>
+  <FormNo>Mẫu số: B02-DN</FormNo>
+  <FormNo48>Mẫu số: B02-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B01-DN: Balance Sheet</ReportNameEnglish>
+  <ReportNameEnglish48>B01-DNN: Balance Sheet</ReportNameEnglish48>
+  <ReportName133>B01b-DNN: Báo cáo tình hình tài chính</ReportName133>
+  <ReportNameEnglish133>B01b-DNN: Balance Sheet</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB03_DN</ReportID>
+  <ReportName>B03-DN: Báo cáo lưu chuyển tiền tệ (PP trực tiếp)</ReportName>
+  <ReportName48>B03-DN: Báo cáo lưu chuyển tiền tệ (PP trực tiếp)</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>19</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng cân đối kế toán là báo cáo tài chính tổng hợp, phản ánh tổng quát toàn bộ giá trị tài sản hiện có và nguồn hình thành tài sản đó của doanh nghiệp tại một thời điểm nhất định </Description>
+  <FormNo>Mẫu số: B03-DN</FormNo>
+  <FormNo48>Mẫu số: B03-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>B01-DN: Balance Sheet</ReportNameEnglish>
+  <ReportNameEnglish48>B01-DNN: Balance Sheet</ReportNameEnglish48>
+  <ReportName133>B01b-DNN: Báo cáo tình hình tài chính</ReportName133>
+  <ReportNameEnglish133>B01b-DNN: Balance Sheet</ReportNameEnglish133>
+</SYSReportList>
+<SYSReportList>
+  <ReportID>GLB03_DN_GT</ReportID>
+  <ReportName>B03-DN-GT: Báo cáo lưu chuyển tiền tệ (PP gián tiếp)</ReportName>
+  <ReportName48>B03-DN-GT: Báo cáo lưu chuyển tiền tệ (PP gián tiếp)</ReportName48>
+  <GroupID>1</GroupID>
+  <SortOrder>19</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Bảng cân đối kế toán là báo cáo tài chính tổng hợp, phản ánh tổng quát toàn bộ giá trị tài sản hiện có và nguồn hình thành tài sản đó của doanh nghiệp tại một thời điểm nhất định </Description>
+  <FormNo>Mẫu số: B03-DN-GT</FormNo>
+  <FormNo48>Mẫu số: B03-DNN</FormNo48>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow> 
+  <ReportNameEnglish>B01-DN: Balance Sheet</ReportNameEnglish>
+  <ReportNameEnglish48>B01-DNN: Balance Sheet</ReportNameEnglish48>
+  <ReportName133>B01b-DNN: Báo cáo tình hình tài chính</ReportName133>
+  <ReportNameEnglish133>B01b-DNN: Balance Sheet</ReportNameEnglish133>
+</SYSReportList>
+</DataSetImportExport>

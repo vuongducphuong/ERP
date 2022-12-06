@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_account_ex_don_dat_hang_xem_sl_ton_chua_dat_hang_form_form" model="ir.ui.view">
+            <field name="name">account.ex.don.dat.hang.xem.sl.ton.chua.dat.hang.form.form</field>
+            <field name="model">account.ex.don.dat.hang.xem.sl.ton.chua.dat.hang.form</field>
+            <field name="arch" type="xml">
+                <form string="Đơn đặt hàng xem SL tồn chưa đặt hàng form">
+                    <sheet>
+                        <group col="4">
+                            <field name="MH"  invisible="1"/>  
+                        </group>
+
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="">
+                                <field name="ACCOUNT_EX_DON_DAT_HANG_XEM_SL_TON_CHUA_DAT_HANG_CHI_TIET_FORM_IDS" mode="tree">
+                                  <tree >
+                                    <field name="MA_HANG_ID" options="{'columns': ['MA', 'TEN','SO_LUONG_TON','GIA_BAN_1','GIA_BAN_2','GIA_BAN_3','GIA_CO_DINH'], 'strings': ['Mã hàng', 'Tên hàng','Số lượng tồn','Giá bán 1','Giá bán 2','Giá bán 3','Giá bán cố định'],'displays': ['MA']}"/>
+                                    <field name="TEN_HANG"/>
+                                    <field name="DVT_CHINH_ID"/>
+                                    <field name="SO_LUONG_TON" sum="tong sl ton"/>
+                                    <field name="SO_LUONG_TON_CHUA_DAT_HANG" sum="tong sl ton chua dat hang"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_account_ex_don_dat_hang_xem_sl_ton_chua_dat_hang_form_tree" model="ir.ui.view">
+            <field name="name">account.ex.don.dat.hang.xem.sl.ton.chua.dat.hang.form.tree</field>
+            <field name="model">account.ex.don.dat.hang.xem.sl.ton.chua.dat.hang.form</field>
+            <field name="arch" type="xml">
+                <tree string="Đơn đặt hàng xem SL tồn chưa đặt hàng form">
+                    
+                    
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_account_ex_don_dat_hang_xem_sl_ton_chua_dat_hang_form" model="ir.actions.act_window">
+            <field name="name">Đơn đặt hàng xem SL tồn chưa đặt hàng form</field>
+            <field name="res_model">account.ex.don.dat.hang.xem.sl.ton.chua.dat.hang.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_account_ex_don_dat_hang_xem_sl_ton_chua_dat_hang_form_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_account_ex_don_dat_hang_xem_sl_ton_chua_dat_hang_form_tree"/>
+            <field name="act_window_id" ref="open_menu_account_ex_don_dat_hang_xem_sl_ton_chua_dat_hang_form"/>
+        </record>
+
+        <record id="action_account_ex_don_dat_hang_xem_sl_ton_chua_dat_hang_form_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_account_ex_don_dat_hang_xem_sl_ton_chua_dat_hang_form_form"/>
+            <field name="act_window_id" ref="open_menu_account_ex_don_dat_hang_xem_sl_ton_chua_dat_hang_form"/>
+        </record>
+
+        <!-- <menuitem name="Đơn đặt hàng xem SL tồn chưa đặt hàng form"
+                  action="account_ex.open_menu_account_ex_don_dat_hang_xem_sl_ton_chua_dat_hang_form"
+                  id="menu_account_ex_don_dat_hang_xem_sl_ton_chua_dat_hang_form"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

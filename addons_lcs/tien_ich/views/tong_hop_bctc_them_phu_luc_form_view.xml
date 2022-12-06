@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tong_hop_bctc_them_phu_luc_form_tham_so_form" model="ir.ui.view">
+            <field name="name">tong.hop.bao.cao.tai.chinh.them.phu.luc.form</field>
+            <field name="model">tong.hop.bao.cao.tai.chinh</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                        </group>
+                        <notebook>
+                            <page string="">
+                                <field name="TONG_HOP_BCTC_THEM_PHU_LUC_CHI_TIET_FORM_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" report="true">
+                                    <field name="AUTO_SELECT" invisible="1"/>
+                                    <field name="MA_PHU_LUC_ID"/>
+                                    <field name="TEN_PHU_LUC"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                        
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        
+
+        <!-- <menuitem name="BCTC thêm phụ lục form"
+                  action="tien_ich.open_tong_hop_bctc_them_phu_luc_form_tham_so_form"
+                  id="menu_tong_hop_bctc_them_phu_luc_form"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

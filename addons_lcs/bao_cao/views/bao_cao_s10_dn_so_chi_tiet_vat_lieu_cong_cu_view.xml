@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_s10_dn_so_chi_tiet_vat_lieu_cong_cu_tree" model="ir.ui.view">
+            <field name="name">bao.cao.s10.dn.so.chi.tiet.vat.lieu.cong.cu.tree</field>
+            <field name="model">bao.cao.s10.dn.so.chi.tiet.vat.lieu.cong.cu</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="S10 DN Sổ chi tiết vật liệu công cụ" create="false" report="true" print="true">
+                    <field name="MA_KHO_TEN_KHO" />
+                    <field name="MA_HANG_TEN_HANG" />
+                    <field name="CHUNG_TU_SO_HIEU" linked="true" />
+                    <field name="CHUNG_TU_NGAY_THANG" />
+                    <field name="DIEN_GIAI" />
+                    <field name="TAI_KHOAN_DOI_UNG" />
+                    <field name="DVT" />
+                    <field name="DON_GIA" />
+                    <field name="SO_LUONG_NHAP" />
+                    <field name="SO_TIEN_NHAP" />
+                    <field name="SO_LUONG_XUAT" />
+                    <field name="SO_TIEN_XUAT" />
+                    <field name="SO_LUONG_TON" />
+                    <field name="SO_TIEN_TON" />
+                    <field name="ID_GOC" invisible="1" />
+                    <field name="MODEL_GOC" invisible="1" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__s10_dn_so_chi_tiet_vat_lieu_cong_cu" model="ir.actions.act_window">
+            <field name="name">S10 DN Sổ chi tiết vật liệu công cụ</field>
+            <field name="res_model">bao.cao.s10.dn.so.chi.tiet.vat.lieu.cong.cu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by': ['MA_KHO_TEN_KHO','MA_HANG_TEN_HANG'],'header_struct':
+                                [
+                        [
+                            'Chứng từ',['CHUNG_TU_SO_HIEU','CHUNG_TU_NGAY_THANG']
+                        ],
+                        [
+                            'Nhập',['SO_LUONG_NHAP','SO_TIEN_NHAP']
+                        ],
+                        [
+                            'Xuất',['SO_LUONG_XUAT','SO_TIEN_XUAT']
+                        ],
+                        [	'Tồn', ['SO_LUONG_TON','SO_TIEN_TON']
+                        ],
+                    ], 'expand_all': 'true'}
+            </field>
+        </record>
+        <record id="view_bao_cao_s10_dn_so_chi_tiet_vat_lieu_cong_cu_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.s10.dn.so.chi.tiet.vat.lieu.cong.cu.form</field>
+            <field name="model">bao.cao.s10.dn.so.chi.tiet.vat.lieu.cong.cu</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="bao_cao_s10_so_chi_tiet_vlccdc_view">
+                    <sheet>
+                        <group col="4">
+                            <field name="CHI_NHANH_ID" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHUC_VU" />
+                            <field name="MA_PC_NHOM_VTHH" invisible="1" />
+                        </group>
+                        <group col="4">
+                            <field name="KY_BAO_CAO" />
+                            <field name="KHO_ID" options="{'select_all': True , 'columns': ['MA_KHO', 'TEN_KHO'], 'strings': ['Mã kho', 'Tên kho'],'displays': ['MA_KHO']}" />
+                            <field name="TU" />
+                            <field name="DEN" />
+                            <field name="DON_VI_TINH" />
+                            <field name="NHOM_VTHH_ID" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'],'displays': ['MA']}" />
+                        </group>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_SAN_PHAM" nolabel="1" colspan="12" />
+                                    <field name="SAN_PHAM_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}" colspan="12" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã hàng', 'Tên hàng']}" />
+                                </group>
+                                <field name="HANG_ID" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="TEN" string="Tên hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_s10_dn_so_chi_tiet_vat_lieu_cong_cu_tham_so_form" model="ir.actions.act_window">
+            <field name="name">S10-DN: Sổ chi tiết vật liệu, công cụ (sản phẩm, hàng hóa)</field>
+            <field name="res_model">bao.cao.s10.dn.so.chi.tiet.vat.lieu.cong.cu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="size">large</field>
+            <field name="view_id" ref="view_bao_cao_s10_dn_so_chi_tiet_vat_lieu_cong_cu_tham_so_form" />
+        </record>
+        <!-- <menuitem name="S10 DN Sổ chi tiết vật liệu công cụ"
+                  action="bao_cao.open_bao_cao_s10_dn_so_chi_tiet_vat_lieu_cong_cu_tham_so_form"
+                  id="menu_bao_cao_s10_dn_so_chi_tiet_vat_lieu_cong_cu"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+</odoo>

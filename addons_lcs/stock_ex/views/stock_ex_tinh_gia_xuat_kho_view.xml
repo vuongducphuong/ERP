@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_stock_ex_tinh_gia_xuat_kho_tham_so_form" model="ir.ui.view">
+            <field name="name">stock.ex.tinh.gia.xuat.kho.form</field>
+            <field name="model">stock.ex.tinh.gia.xuat.kho</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="stock_ex_tinh_gia_xuat_kho_view">
+
+                    <header>
+                        <field name="CHON_CHI_PHI_JSON" invisible="1" />
+                    </header>
+                    <sheet>
+                        <group col="6" string="Vật tư hàng hóa">
+                            <group colspan="6" col="12">
+                                <field name="VAT_TU_HANG_HOA_SELECTION" colspan="10" widget="radio" options="{'horizontal': True}" nolabel="1"/>
+                                <button id="btn_chon" string="..." attrs="{'readonly': [('VAT_TU_HANG_HOA_SELECTION','=', 'TINH_TAT_CA_CAC_VAT_TU_HANG_HOA')]}"/>
+                            </group>
+                        </group>
+                            <group col="6" string="Tham số">   
+                                <group colspan="6" col="4">
+                                    <field name="KHOANG_THOI_GIAN" colspan="4"/>
+                                    <field name="TU_NGAY" colspan="2"/>
+                                    <field name="DEN_NGAY" colspan="2"/>
+                                    <field name="KY_TINH_GIA" colspan="2"/>
+                                    <field name="TINH_GIA_SELECTION" widget="radio" options="{'horizontal': True}" nolabel="1" colspan="4"/>
+                                    <field name="LIST_VTHH" invisible="1"/>
+                                </group>                         
+                                
+                        </group>
+                        <!--<notebook>
+                            <page string="Chi tiết">
+                                <field name="FIELD_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>-->
+                        <!--Master/Detail form-->
+                        
+                        
+                    </sheet>
+                    <footer>
+                        <button id="btn_thuc_hien" string="Thực hiện" class="btn btn-primary" ></button>
+                        <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_stock_ex_tinh_gia_xuat_kho_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Tính giá xuất kho</field>
+            <field name="res_model">stock.ex.tinh.gia.xuat.kho</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="size">medium</field>
+            <field name="view_id" ref="view_stock_ex_tinh_gia_xuat_kho_tham_so_form"/>
+        </record>
+
+        <!-- <menuitem name="Tính giá xuất kho"
+                  action="stock_ex.open_stock_ex_tinh_gia_xuat_kho_tham_so_form"
+                  id="menu_stock_ex_tinh_gia_xuat_kho"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

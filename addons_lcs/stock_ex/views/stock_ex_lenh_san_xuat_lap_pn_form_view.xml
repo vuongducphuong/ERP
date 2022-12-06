@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_stock_ex_lenh_san_xuat_lap_pn_form_tham_so_form" model="ir.ui.view">
+            <field name="name">stock.ex.lenh.san.xuat.lap.pn.form.form</field>
+            <field name="model">stock.ex.lenh.san.xuat.lap.pn.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="stock_ex_lenh_san_xuat_lap_pn_form_view">
+                    <sheet>
+                        <group col="4">
+                            <field name="LENH_SX_PN_PX" invisible="1" />
+                            <field name="LSX_ID" invisible="1" />
+                        </group>
+                        <!--<notebook>
+                            <page string="Chi tiết">
+                                <field name="FIELD_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>-->
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="">
+                                <field name="STOCK_EX_LENH_SAN_XUAT_LAP_PN_CHI_TIET_FORM_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" report="true">
+                                    <field name="AUTO_SELECT" invisible="1" />
+                                    <field name="MA_THANH_PHAM_ID" readonly="True"/>
+                                    <field name="TEN_THANH_PHAM" readonly="True"/>
+                                    <field name="SO_LUONG" readonly="True"/>
+                                    <field name="SO_LUONG_SAN_XUAT" readonly="True"/>
+
+                                    <field name="KHO_ID" invisible="1"/>
+                                    <field name="LENH_SAN_XUAT_ID" invisible="1"/>
+                                    <field name="DVT_ID"/>
+                                    <field name="DON_DAT_HANG_ID" invisible="1" options="{'columns': ['SO_DON_HANG', 'TEN_KHACH_HANG','NGAY_DON_HANG'], 'strings': ['Số đơn hàng', 'Tên khách hàng','Ngày đơn hàng'],'displays': ['SO_DON_HANG']}"/>
+                                    <field name="HOP_DONG_BAN_ID" invisible="1" options="{'columns': ['SO_HOP_DONG', 'NGAY_KY','DOI_TUONG_ID.HO_VA_TEN','TRICH_YEU'], 'strings': ['Số hợp đồng', 'Ngày ký','Khách hàng','Trích yếu']}"/>
+                                    <field name="DOI_TUONG_THCP_ID" invisible="1" options="{'columns': ['MA_DOI_TUONG_THCP', 'TEN_DOI_TUONG_THCP'], 'strings': ['Mã đối tượng THCP', 'Tên đối tượng THCP'],'displays': ['MA_DOI_TUONG_THCP']}"/>
+                                    <field name="MA_THONG_KE_ID" invisible="1" options="{'columns': ['MA_THONG_KE', 'TEN_THONG_KE'], 'strings': ['Mã thống kê', 'Mã thống kê'],'displays': ['MA_THONG_KE']}"/>
+                                    <field name="LENH_SAN_XUAT_THANH_PHAM_ID" invisible="1"/> 
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                        <footer>
+                            <button class="btn_phieu_nhap_xuat_kho" string="Đồng ý"  context="{'discard_changes': True}"/>
+                            
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_stock_ex_lenh_san_xuat_lap_pn_form_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Chọn thành phẩm nhập kho</field>
+            <field name="res_model">stock.ex.lenh.san.xuat.lap.pn.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_stock_ex_lenh_san_xuat_lap_pn_form_tham_so_form"/>
+        </record>
+
+        <record id="open_stock_ex_lenh_san_xuat_lap_px_form_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Chọn thành phẩm muốn xuất NVL</field>
+            <field name="res_model">stock.ex.lenh.san.xuat.lap.pn.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_stock_ex_lenh_san_xuat_lap_pn_form_tham_so_form"/>
+        </record>
+
+        <!-- <record id="action_open_stock_ex_lenh_san_xuat_lap_pn_form_form" model="ir.actions.act_window">
+            <field name="name">Lệnh sản xuất lập PN form</field>
+            <field name="res_model">stock.ex.lenh.san.xuat.lap.pn.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field> -->
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        <!-- </record> -->
+
+        <!-- <menuitem name="Lệnh sản xuất lập PN form"
+                  action="stock_ex.open_stock_ex_lenh_san_xuat_lap_pn_form_tham_so_form"
+                  id="menu_stock_ex_lenh_san_xuat_lap_pn_form"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

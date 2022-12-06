@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="vsutransfer">
+        <t t-call="web.external_layout">
+            <div class="page" style="margin-left: 15px; margin-right: 15px;">
+
+                <div class="col-xs-12 truong-thong-tin-dat-tren-header" style="padding-left: 0px; padding-right: 0px;">
+                    <span t-esc="o.get_ten_cong_ty()" />
+                    <br />
+                    <span t-esc="o.get_dia_chi_cong_ty()" />
+                </div>
+
+                <div class="col-xs-12 text-center report-title" style="padding-left: 0px; padding-right: 0px;padding-top: 10px;margin-bottom: -5px;">
+                    <span>ĐIỀU CHUYỂN CÔNG CỤ DỤNG CỤ</span>
+                </div>
+
+                <div class="col-xs-12 text-center report-sub-title-1-italic-bold" style="padding-left: 0px; padding-right: 0px;">
+                    <span t-if="o.NGAY" t-field="o.NGAY" t-options="{'widget': 'ngaythang'}" />
+                </div>
+                <div class="col-xs-12 text-center report-sub-title-1" style="padding-left: 0px; padding-right: 0px;">
+                    <span>Số:</span>
+                    <span t-if="o.BIEN_BAN_GIAO_NHAN_SO" t-field="o.BIEN_BAN_GIAO_NHAN_SO" />
+                </div>
+
+                <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;">
+                    <div class="col-xs-4 text-left header-label" style="padding-left: 0px; padding-right: 0px;width:16%;">
+                        <span>Người bàn giao:</span>
+                    </div>
+                    <div class="col-xs-8 text-left header-value-text" style="padding-left: 0px; padding-right: 0px;width:84%;">
+                        <span t-if="o.NGUOI_BAN_GIAO" t-field="o.NGUOI_BAN_GIAO" />
+                        <t t-if="not o.NGUOI_BAN_GIAO" t-esc="'......................................................................................................................................................'" />
+                    </div>
+                </div>
+                <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;">
+                    <div class="col-xs-4 text-left header-label" style="padding-left: 0px; padding-right: 0px;width:17%;">
+                        <span>Người tiếp nhận:</span>
+                    </div>
+                    <div class="col-xs-8 text-left header-value-text" style="padding-left: 0px; padding-right: 0px;width:83%;">
+                        <span t-if="o.NGUOI_TIEP_NHAN" t-field="o.NGUOI_TIEP_NHAN" />
+                        <t t-if="not o.NGUOI_TIEP_NHAN" t-esc="'....................................................................................................................................................'" />
+                    </div>
+                </div>
+                <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;padding-bottom: 10px;">
+                    <div class="col-xs-4 text-left header-label" style="padding-left: 0px; padding-right: 0px;width:19%;">
+                        <span>Lý do điều chuyển:</span>
+                    </div>
+                    <div class="col-xs-8 text-left header-value-text" style="padding-left: 0px; padding-right: 0px;width:81%;">
+                        <span t-if="o.LY_DO_DIEU_CHUYEN" t-field="o.LY_DO_DIEU_CHUYEN" />
+                        <t t-if="not o.LY_DO_DIEU_CHUYEN" t-esc="'................................................................................................................................................'" />
+                    </div>
+                </div>
+
+                <!--Table-->
+                <div class="col-xs-12 text-left" style="padding-left: 0px; padding-right: 0px;">
+                    <table class="table-condensed table-bordereds" style="width: 100%;margin-bottom: 0px;">
+                        <thead>
+                            <tr class="detail-header">
+                                <th class="text-center" style="width: 10px; height: 10px;">
+                                    <span>STT</span>
+                                </th>
+                                <th class="text-center" style="width: 28px; height: 10px;">
+                                    <span>Mã CCDC</span>
+                                </th>
+                                <th class="text-center" style="width: 41px; height: 10px;">
+                                    <span>Tên CCDC</span>
+                                </th>
+                                <th class="text-center" style="width: 35px; height: 10px;">
+                                    <span>Từ đơn vị</span>
+                                </th>
+                                <th class="text-center" style="width: 35px; height: 10px;">
+                                    <span>Đến đơn vị</span>
+                                </th>
+                                <th class="text-center" style="width: 18px; height: 10px;">
+                                    <span>SL đang dùng</span>
+                                </th>
+                                <th class="text-center" style="width: 18px; height: 10px;">
+                                    <span>SL điều chuyển</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="so_thu_tu" t-value="0"></t>
+                            <tr t-foreach="o.BAO_CAO_DIEU_CHUYEN_CCDC_CHI_TIET_IDS" t-as="line">
+                                <t t-set="so_thu_tu" t-value="so_thu_tu + 1"></t>
+                                <td class="text-center value-center" style="width: 10px; height: 6px;">
+                                    <span t-esc="so_thu_tu"></span>
+                                </td>
+
+                                <td class="text-left detail-text" style="width: 28px; height: 6px;">
+                                    <span t-field="line.MA_CCDC" />
+                                </td>
+                                <td class="text-left detail-text" style="width: 41px; height: 6px;">
+                                    <span t-field="line.TEN_CCDC" />
+                                </td>
+
+                                <td class="text-left detail-text" style="width: 35px; height: 6px;">
+                                    <span t-field="line.TU_DON_VI" />
+                                </td>
+                                <td class="text-left detail-text" style="width: 35px; height: 6px;">
+                                    <span t-field="line.DEN_DON_VI" />
+                                </td>
+
+                                <td class="text-right detail-number" style="width: 18px; height: 6px;">
+                                    <span t-field="line.SO_LUONG_DANG_DUNG" />
+                                </td>
+                                <td class="text-right detail-number" style="width: 18px; height: 6px;">
+                                    <span t-field="line.SO_LUONG_DIEU_CHUYEN" />
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs-12 page-break-inside" style="padding-left: 0px;padding-right: 0px;">
+                    <table style="width: 100%;margin-top: 10px;">
+                        <thead>
+                            <tr class="signer-title">
+                                <th class="text-center nguoi-ky" style="width: 70px;height: 6px;">
+                                    <span>Người lập</span>
+                                </th>
+                                <th class="text-center nguoi-ky" style="width: 40px;height: 6px;"></th>
+                                <th class="text-center nguoi-ky" style="width: 70px;height: 6px;">
+                                    <span>Kế toán trưởng</span>
+                                </th>
+                            </tr>
+                            <tr class="signer-sub-title">
+                                <td class="text-center" style="width: 70px;height: 6px;">
+                                    <span>(Ký, họ tên)</span>
+                                </td>
+                                <td class="text-center" style="width: 40px;height: 6px;"></td>
+                                <td class="text-center" style="width: 70px;height: 6px;">
+                                    <span>(Ký, họ tên)</span>
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+
+                    <table style="width: 100%;margin-top: 95px;">
+                        <thead>
+                            <tr class="signer-name">
+                                <th class="text-center" style="width: 70px;height: 6px;">
+                                    <span t-esc="o.get_nguoi_lap_phieu()" />
+
+                                </th>
+                                <th class="text-center" style="width: 40px;height: 6px;"></th>
+                                <th class="text-center" style="width: 70px;height: 6px;">
+                                    <span t-esc="o.get_ke_toan_truong()" />
+
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
+        </t>
+    </template>
+    <template id="template_vsutransfer">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="bao_cao.vsutransfer" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="Điều chuyển công cụ dụng cụ" id="action_template_vsutransfer" model="bao.cao.dieu.chuyen.ccdc" report_type="qweb-html" name="bao_cao.template_vsutransfer" file="bao_cao.template_vsutransfer" print_report_name="Điều chuyển công cụ dụng cụ" />
+    </data>
+</odoo>

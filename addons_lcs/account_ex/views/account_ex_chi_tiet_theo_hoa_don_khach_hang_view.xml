@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_account_ex_chi_tiet_theo_hoa_don_khach_hang_form" model="ir.ui.view">
+            <field name="name">account.ex.chi.tiet.theo.hoa.don.khach.hang.form</field>
+            <field name="model">account.ex.chi.tiet.theo.hoa.don.khach.hang</field>
+            <field name="arch" type="xml">
+                <form string="Chi tiết theo hóa đơn khách hàng">
+                    <sheet>
+                        <group col="4">
+                            <field name="NGAY_HOA_DON_CHUNG_TU"/>
+                            <field name="SO_HOA_DON_CHUNG_TU"/>
+                            <field name="HAN_HACH_TOAN"/>
+                            <field name="GIA_TRI_HOA_DON"/>
+                            <field name="SO_CON_PHAI_TRA"/>
+                            <field name="SO_TRA_TRUOC"/>
+                            <field name="NHAN_VIEN_ID" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}"/>
+                            <field name="name"/>
+                            <field name="CONG_NO_THEO_KHACH_HANG_ID"/>
+                        </group>
+
+                        <!--Master/Detail form-->
+                        
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_account_ex_chi_tiet_theo_hoa_don_khach_hang_tree" model="ir.ui.view">
+            <field name="name">account.ex.chi.tiet.theo.hoa.don.khach.hang.tree</field>
+            <field name="model">account.ex.chi.tiet.theo.hoa.don.khach.hang</field>
+            <field name="arch" type="xml">
+                <tree string="Chi tiết theo hóa đơn khách hàng">
+                    <field name="NGAY_HOA_DON_CHUNG_TU"/>
+                    <field name="SO_HOA_DON_CHUNG_TU"/>
+                    <field name="HAN_HACH_TOAN"/>
+                    <field name="GIA_TRI_HOA_DON"/>
+                    <field name="SO_CON_PHAI_TRA"/>
+                    <field name="SO_TRA_TRUOC"/>
+                    <field name="NHAN_VIEN_ID" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}"/>
+                    <field name="name"/>
+                    <field name="CONG_NO_THEO_KHACH_HANG_ID"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_account_ex_chi_tiet_theo_hoa_don_khach_hang" model="ir.actions.act_window">
+            <field name="name">Chi tiết theo hóa đơn khách hàng</field>
+            <field name="res_model">account.ex.chi.tiet.theo.hoa.don.khach.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_account_ex_chi_tiet_theo_hoa_don_khach_hang_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_account_ex_chi_tiet_theo_hoa_don_khach_hang_tree"/>
+            <field name="act_window_id" ref="open_menu_account_ex_chi_tiet_theo_hoa_don_khach_hang"/>
+        </record>
+
+        <record id="action_account_ex_chi_tiet_theo_hoa_don_khach_hang_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_account_ex_chi_tiet_theo_hoa_don_khach_hang_form"/>
+            <field name="act_window_id" ref="open_menu_account_ex_chi_tiet_theo_hoa_don_khach_hang"/>
+        </record>
+
+        <!-- <menuitem name="Chi tiết theo hóa đơn khách hàng"
+                  action="account_ex.open_menu_account_ex_chi_tiet_theo_hoa_don_khach_hang"
+                  id="menu_account_ex_chi_tiet_theo_hoa_don_khach_hang"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

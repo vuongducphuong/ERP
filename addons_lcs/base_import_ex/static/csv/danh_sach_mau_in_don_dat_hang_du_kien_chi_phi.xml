@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+<MSC_ReportTemplate>
+	  <ReportID>SAOrderVoucher3520DKCP</ReportID>
+	  <ReportName>Đơn đặt hàng (dự kiến chi phí)</ReportName>
+	  <RefTypeList>/3520/</RefTypeList>
+	  <Description>Đơn đặt hàng (dự kiến chi phí)</Description>
+	  <ReportTitle>ĐƠN ĐẶT HÀNG (DỰ KIẾN CHI PHÍ)</ReportTitle>
+</MSC_ReportTemplate>
+</DataSetImportExport>

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <!-- Thống kê theo khách hàng và mặt hàng theo tháng  -->
+        <record id="view_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_khmhtheothang_tree" model="ir.ui.view">
+            <field name="name">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam.tree</field>
+            <field name="model">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Phân tích số lượng bán và doanh số theo năm" create="false" report="true">
+                    <field name="MA_HANG" />
+                    <field name="TEN_HANG" />
+                    <field name="DVT" />
+                    <field name="THANG_1_SL" sum="Tháng 1" />
+                    <field name="THANG_2_SL" sum="Tháng 1" />
+                    <field name="THANG_3_SL" sum="Tháng 1" />
+                    <field name="THANG_4_SL" sum="Tháng 1" />
+                    <field name="THANG_5_SL" sum="Tháng 1" />
+                    <field name="THANG_6_SL" sum="Tháng 1" />
+                    <field name="THANG_7_SL" sum="Tháng 1" />
+                    <field name="THANG_8_SL" sum="Tháng 1" />
+                    <field name="THANG_9_SL" sum="Tháng 1" />
+                    <field name="THANG_10_SL" sum="Tháng 1" />
+                    <field name="THANG_11_SL" sum="Tháng 1" />
+                    <field name="THANG_12_SL" sum="Tháng 1" />
+                    <field name="TONG_CONG_SL" sum="Tháng 1" />
+                    <field name="THANG_1_DS" sum="Tháng 1" />
+                    <field name="THANG_2_DS" sum="Tháng 1" />
+                    <field name="THANG_3_DS" sum="Tháng 1" />
+                    <field name="THANG_4_DS" sum="Tháng 1" />
+                    <field name="THANG_5_DS" sum="Tháng 1" />
+                    <field name="THANG_6_DS" sum="Tháng 1" />
+                    <field name="THANG_7_DS" sum="Tháng 1" />
+                    <field name="THANG_8_DS" sum="Tháng 1" />
+                    <field name="THANG_9_DS" sum="Tháng 1" />
+                    <field name="THANG_10_DS" sum="Tháng 1" />
+                    <field name="THANG_11_DS" sum="Tháng 1" />
+                    <field name="THANG_12_DS" sum="Tháng 1" />
+                    <field name="TONG_CONG_DS" sum="Tháng 1" />
+                    <field name="THANG_1_DTT" sum="Tháng 1" />
+                    <field name="THANG_2_DTT" sum="Tháng 1" />
+                    <field name="THANG_3_DTT" sum="Tháng 1" />
+                    <field name="THANG_4_DTT" sum="Tháng 1" />
+                    <field name="THANG_5_DTT" sum="Tháng 1" />
+                    <field name="THANG_6_DTT" sum="Tháng 1" />
+                    <field name="THANG_7_DTT" sum="Tháng 1" />
+                    <field name="THANG_8_DTT" sum="Tháng 1" />
+                    <field name="THANG_9_DTT" sum="Tháng 1" />
+                    <field name="THANG_10_DTT" sum="Tháng 1" />
+                    <field name="THANG_11_DTT" sum="Tháng 1" />
+                    <field name="THANG_12_DTT" sum="Tháng 1" />
+                    <field name="TONG_CONG_DTT" sum="Tháng 1" />
+                    <field name="TEN_KHACH_HANG" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__phan_tich_so_luong_ban_va_doanh_so_theo_nam_khmhtheothang" model="ir.actions.act_window">
+            <field name="name">BÁO CÁO PHÂN TÍCH SỐ LƯỢNG BÁN, DOANH SỐ THEO NĂM</field>
+            <field name="res_model">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{ 'group_by': ['TEN_KHACH_HANG'], 'header_struct': [['Số lượng',['THANG_1_SL','THANG_2_SL','THANG_3_SL','THANG_4_SL','THANG_5_SL','THANG_6_SL','THANG_7_SL','THANG_8_SL','THANG_9_SL','THANG_10_SL','THANG_11_SL','THANG_12_SL','TONG_CONG_SL']],['Doanh số',['THANG_1_DS','THANG_2_DS','THANG_3_DS','THANG_4_DS','THANG_5_DS','THANG_6_DS','THANG_7_DS','THANG_8_DS','THANG_9_DS','THANG_10_DS','THANG_11_DS','THANG_12_DS','TONG_CONG_DS']],['Doanh thu thuần',['THANG_1_DTT','THANG_2_DTT','THANG_3_DTT','THANG_4_DTT','THANG_5_DTT','THANG_6_DTT','THANG_7_DTT','THANG_8_DTT','THANG_9_DTT','THANG_10_DTT','THANG_11_DTT','THANG_12_DTT','TONG_CONG_DTT']]],'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_khmhtheothang" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_khmhtheothang_tree" />
+            <field name="act_window_id" ref="open_report__phan_tich_so_luong_ban_va_doanh_so_theo_nam_khmhtheothang" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo khách hàng và mặt hàng theo quý -->
+        <record id="view_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_khmhtheoquy_tree" model="ir.ui.view">
+            <field name="name">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam.tree</field>
+            <field name="model">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Phân tích số lượng bán và doanh số theo năm" create="false" report="true">
+                    <field name="MA_HANG" />
+                    <field name="TEN_HANG" />
+                    <field name="DVT" />
+                    <field name="QUI_1_SL" sum="Tháng 1" />
+                    <field name="QUI_2_SL" sum="Tháng 1" />
+                    <field name="QUI_3_SL" sum="Tháng 1" />
+                    <field name="QUI_4_SL" sum="Tháng 1" />
+                    <field name="TONG_CONG_SL" sum="Tháng 1" />
+                    <field name="QUI_1_DS" sum="Tháng 1" />
+                    <field name="QUI_2_DS" sum="Tháng 1" />
+                    <field name="QUI_3_DS" sum="Tháng 1" />
+                    <field name="QUI_4_DS" sum="Tháng 1" />
+                    <field name="TONG_CONG_DS" sum="Tháng 1" />
+                    <field name="QUI_1_DTT" sum="Tháng 1" />
+                    <field name="QUI_2_DTT" sum="Tháng 1" />
+                    <field name="QUI_3_DTT" sum="Tháng 1" />
+                    <field name="QUI_4_DTT" sum="Tháng 1" />
+                    <field name="TONG_CONG_DTT" sum="Tháng 1" />
+                    <field name="TEN_KHACH_HANG" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__phan_tich_so_luong_ban_va_doanh_so_theo_nam_khmhtheoquy" model="ir.actions.act_window">
+            <field name="name">BÁO CÁO PHÂN TÍCH SỐ LƯỢNG BÁN, DOANH SỐ THEO NĂM</field>
+            <field name="res_model">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{ 'group_by': ['TEN_KHACH_HANG'], 'header_struct': [['Số lượng',['QUI_1_SL','QUI_2_SL','QUI_3_SL','QUI_4_SL','TONG_CONG_SL']],['Doanh số',['QUI_1_DS','QUI_2_DS','QUI_3_DS','QUI_4_DS','TONG_CONG_DS']],['Doanh thu thuần',['QUI_1_DTT','QUI_2_DTT','QUI_3_DTT','QUI_4_DTT','TONG_CONG_DTT']]],'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_khmhtheoquy" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_khmhtheoquy_tree" />
+            <field name="act_window_id" ref="open_report__phan_tich_so_luong_ban_va_doanh_so_theo_nam_khmhtheoquy" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo mặt hàng theo tháng  -->
+        <record id="view_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_mhtheothang_tree" model="ir.ui.view">
+            <field name="name">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam.tree</field>
+            <field name="model">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Phân tích số lượng bán và doanh số theo năm" create="false" report="true">
+                    <field name="MA_HANG" />
+                    <field name="TEN_HANG" />
+                    <field name="DVT" />
+                    <field name="THANG_1_SL" sum="Tháng 1" />
+                    <field name="THANG_2_SL" sum="Tháng 1" />
+                    <field name="THANG_3_SL" sum="Tháng 1" />
+                    <field name="THANG_4_SL" sum="Tháng 1" />
+                    <field name="THANG_5_SL" sum="Tháng 1" />
+                    <field name="THANG_6_SL" sum="Tháng 1" />
+                    <field name="THANG_7_SL" sum="Tháng 1" />
+                    <field name="THANG_8_SL" sum="Tháng 1" />
+                    <field name="THANG_9_SL" sum="Tháng 1" />
+                    <field name="THANG_10_SL" sum="Tháng 1" />
+                    <field name="THANG_11_SL" sum="Tháng 1" />
+                    <field name="THANG_12_SL" sum="Tháng 1" />
+                    <field name="TONG_CONG_SL" sum="Tháng 1" />
+                    <field name="THANG_1_DS" sum="Tháng 1" />
+                    <field name="THANG_2_DS" sum="Tháng 1" />
+                    <field name="THANG_3_DS" sum="Tháng 1" />
+                    <field name="THANG_4_DS" sum="Tháng 1" />
+                    <field name="THANG_5_DS" sum="Tháng 1" />
+                    <field name="THANG_6_DS" sum="Tháng 1" />
+                    <field name="THANG_7_DS" sum="Tháng 1" />
+                    <field name="THANG_8_DS" sum="Tháng 1" />
+                    <field name="THANG_9_DS" sum="Tháng 1" />
+                    <field name="THANG_10_DS" sum="Tháng 1" />
+                    <field name="THANG_11_DS" sum="Tháng 1" />
+                    <field name="THANG_12_DS" sum="Tháng 1" />
+                    <field name="TONG_CONG_DS" sum="Tháng 1" />
+                    <field name="THANG_1_DTT" sum="Tháng 1" />
+                    <field name="THANG_2_DTT" sum="Tháng 1" />
+                    <field name="THANG_3_DTT" sum="Tháng 1" />
+                    <field name="THANG_4_DTT" sum="Tháng 1" />
+                    <field name="THANG_5_DTT" sum="Tháng 1" />
+                    <field name="THANG_6_DTT" sum="Tháng 1" />
+                    <field name="THANG_7_DTT" sum="Tháng 1" />
+                    <field name="THANG_8_DTT" sum="Tháng 1" />
+                    <field name="THANG_9_DTT" sum="Tháng 1" />
+                    <field name="THANG_10_DTT" sum="Tháng 1" />
+                    <field name="THANG_11_DTT" sum="Tháng 1" />
+                    <field name="THANG_12_DTT" sum="Tháng 1" />
+                    <field name="TONG_CONG_DTT" sum="Tháng 1" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__phan_tich_so_luong_ban_va_doanh_so_theo_nam_mhtheothang" model="ir.actions.act_window">
+            <field name="name">BÁO CÁO PHÂN TÍCH SỐ LƯỢNG BÁN, DOANH SỐ THEO NĂM</field>
+            <field name="res_model">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{ 'header_struct': [['Số lượng',['THANG_1_SL','THANG_2_SL','THANG_3_SL','THANG_4_SL','THANG_5_SL','THANG_6_SL','THANG_7_SL','THANG_8_SL','THANG_9_SL','THANG_10_SL','THANG_11_SL','THANG_12_SL','TONG_CONG_SL']],['Doanh số',['THANG_1_DS','THANG_2_DS','THANG_3_DS','THANG_4_DS','THANG_5_DS','THANG_6_DS','THANG_7_DS','THANG_8_DS','THANG_9_DS','THANG_10_DS','THANG_11_DS','THANG_12_DS','TONG_CONG_DS']],['Doanh thu thuần',['THANG_1_DTT','THANG_2_DTT','THANG_3_DTT','THANG_4_DTT','THANG_5_DTT','THANG_6_DTT','THANG_7_DTT','THANG_8_DTT','THANG_9_DTT','THANG_10_DTT','THANG_11_DTT','THANG_12_DTT','TONG_CONG_DTT']]],'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_mhtheothang" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_mhtheothang_tree" />
+            <field name="act_window_id" ref="open_report__phan_tich_so_luong_ban_va_doanh_so_theo_nam_mhtheothang" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo  mặt hàng theo quý -->
+        <record id="view_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_mhtheoquy_tree" model="ir.ui.view">
+            <field name="name">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam.tree</field>
+            <field name="model">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Phân tích số lượng bán và doanh số theo năm" create="false" report="true">
+                    <field name="MA_HANG" />
+                    <field name="TEN_HANG" />
+                    <field name="DVT" />
+                    <field name="QUI_1_SL" sum="Tháng 1" />
+                    <field name="QUI_2_SL" sum="Tháng 1" />
+                    <field name="QUI_3_SL" sum="Tháng 1" />
+                    <field name="QUI_4_SL" sum="Tháng 1" />
+                    <field name="TONG_CONG_SL" sum="Tháng 1" />
+                    <field name="QUI_1_DS" sum="Tháng 1" />
+                    <field name="QUI_2_DS" sum="Tháng 1" />
+                    <field name="QUI_3_DS" sum="Tháng 1" />
+                    <field name="QUI_4_DS" sum="Tháng 1" />
+                    <field name="TONG_CONG_DS" sum="Tháng 1" />
+                    <field name="QUI_1_DTT" sum="Tháng 1" />
+                    <field name="QUI_2_DTT" sum="Tháng 1" />
+                    <field name="QUI_3_DTT" sum="Tháng 1" />
+                    <field name="QUI_4_DTT" sum="Tháng 1" />
+                    <field name="TONG_CONG_DTT" sum="Tháng 1" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__phan_tich_so_luong_ban_va_doanh_so_theo_nam_mhtheoquy" model="ir.actions.act_window">
+            <field name="name">BÁO CÁO PHÂN TÍCH SỐ LƯỢNG BÁN, DOANH SỐ THEO NĂM</field>
+            <field name="res_model">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'header_struct': [['Số lượng',['QUI_1_SL','QUI_2_SL','QUI_3_SL','QUI_4_SL','TONG_CONG_SL']],['Doanh số',['QUI_1_DS','QUI_2_DS','QUI_3_DS','QUI_4_DS','TONG_CONG_DS']],['Doanh thu thuần',['QUI_1_DTT','QUI_2_DTT','QUI_3_DTT','QUI_4_DTT','TONG_CONG_DTT']]],'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_mhtheoquy" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_mhtheoquy_tree" />
+            <field name="act_window_id" ref="open_report__phan_tich_so_luong_ban_va_doanh_so_theo_nam_mhtheoquy" />
+        </record>
+        <!-- end -->
+        <record id="view_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam.form</field>
+            <field name="model">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <field name="THONG_KE_THEO" colspan="4" />
+                            <field name="CHI_NHANH_ID" colspan="2" options="{'showClearButton': false, 'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" colspan="2" />
+                        </group>
+                        <group col="4">
+                            <group colspan="2">
+                                <field name="NAM" options="{'showSpinButtons': true}"/>
+                                <field name="NHOM_KH_ID" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'],'displays':['MA']}" attrs="{'invisible': [('THONG_KE_THEO', 'in', ('MAT_HANG_THEO_THANG','MAT_HANG_THEO_QUY'))]}" />
+                            </group>
+                            <group colspan="2">
+                                <field name="NHOM_VTHH_ID" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'],'displays':['MA']}" />
+                                <field name="DON_VI_TINH" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Sản phẩm" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'KHACH_HANG_VA_MAT_HANG_THEO_THANG')]}">
+                                <field name="SAN_PHAM_IDS_KHvaMHtheothang" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="TEN" string="Tên hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Khách hàng" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'KHACH_HANG_VA_MAT_HANG_THEO_THANG')]}">
+                                <field name="KHACH_HANG_IDS_KHvaMHtheothang" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA_DOI_TUONG" string="Mã khách hàng" />
+                                        <field name="name" string="Tên khách hàng" />
+                                        <field name="DIA_CHI" string="Địa chỉ" />
+                                        <field name="MA_SO_THUE" string="Mã số thuế" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Sản phẩm" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'KHACH_HANG_VA_MAT_HANG_THEO_QUY')]}">
+                                <field name="SAN_PHAM_IDS_KHvaMHtheoquy" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="TEN" string="Tên hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Khách hàng" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'KHACH_HANG_VA_MAT_HANG_THEO_QUY')]}">
+                                <field name="KHACH_HANG_IDS_KHvaMHtheoquy" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA_DOI_TUONG" string="Mã khách hàng" />
+                                        <field name="name" string="Tên khách hàng" />
+                                        <field name="DIA_CHI" string="Địa chỉ" />
+                                        <field name="MA_SO_THUE" string="Mã số thuế" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Sản phẩm" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG_THEO_THANG')]}">
+                                <field name="SAN_PHAM_IDS_MHtheothang" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="TEN" string="Tên hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Sản phẩm" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG_THEO_QUY')]}">
+                                <field name="SAN_PHAM_IDS_MHtheoquy" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="TEN" string="Tên hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Báo cáo phân tích số lượng bán, doanh số theo năm</field>
+            <field name="res_model">bao.cao.phan.tich.so.luong.ban.va.doanh.so.theo.nam</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_tham_so_form" />
+        </record>
+    </data>
+</odoo>

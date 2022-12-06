@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="tien_luong assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/tien_luong/static/src/js/tien_luong_bang_cham_cong_view.js"></script>
+                <script type="text/javascript" src="/tien_luong/static/src/js/tien_luong_tong_hop_bang_cham_cong_view.js"></script>
+                <script type="text/javascript" src="/tien_luong/static/src/js/tien_luong_tinh_luong_view.js"></script>
+                <script type="text/javascript" src="/tien_luong/static/src/js/tien_luong_hach_toan_chi_phi_luong_view.js"></script>
+                <script type="text/javascript" src="/tien_luong/static/src/js/tien_luong_tao_bang_cham_cong_view.js"></script>
+                <script type="text/javascript" src="/tien_luong/static/src/js/tien_luong_tao_bang_luong_view.js"></script>
+                <script type="text/javascript" src="/tien_luong/static/src/js/tien_luong_hach_toan_chi_phi_luong_tham_so_form_view.js"></script>
+                <!-- <script type="text/javascript" src="/tien_luong/static/src/js/tien_luong_tra_luong_form_tham_so_view.js"></script> -->
+                <script type="text/javascript" src="/tien_luong/static/src/js/tien_luong_lich_su_tra_luong_view.js"></script>
+                <script type="text/javascript" src="/tien_luong/static/src/js/tien_luong_tra_luong_view.js"></script>
+                <script type="text/javascript" src="/tien_luong/static/src/js/tien_luong_nop_bao_hiem_view.js"></script>
+                
+            </xpath>
+        </template>
+    </data>
+</odoo>

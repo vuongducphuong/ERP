@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_account_ex_chon_chung_tu_form_form" model="ir.ui.view">
+            <field name="name">account.ex.chon.chung.tu.form.form</field>
+            <field name="model">account.ex.chon.chung.tu.form</field>
+            <field name="arch" type="xml">
+                <form string="chọn chứng từ tscd form" cloudify_js="chon_chung_tu_form_view">
+                    <sheet>
+                        <group col="6">
+                            <group colspan="2" col="2">
+                                <field name="LOAI_CHUNG_TU" colspan="2"/>
+                            </group>
+                            <group colspan="6" col="12">
+                                <field name="KHOANG_THOI_GIAN" string="Khoảng TG" colspan="4"/>
+                                <field name="TU_NGAY" colspan="3"/>
+                                <field name="DEN_NGAY" colspan="3"/>
+                                <button name="btn_lay_du_lieu" string="Lấy dữ liệu" colspan="2" class="btn btn-primary"/>
+                                <field name="NGUON_GOC_HT_JSON" invisible="1"/>
+                                <field name="LAY_DU_LIEU_JSON" invisible="1"/>
+                                <field name="CHUNG_TU_CHON" invisible="1" colspan="4"/>
+                                
+                            </group>
+                            
+                           
+                        </group>
+
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="ACCOUNT_EX_CHON_CHUNG_TU_CHI_TIET_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" report="true">
+                                    <!-- <field name="CHON"/> -->
+                                    <field name="AUTO_SELECT" invisible="1"/>
+                                    <field name="NGAY_HACH_TOAN"/>
+                                    <field name="NGAY_CHUNG_TU"/>
+                                    <field name="SO_CHUNG_TU"/>
+                                    <field name="DIEN_GIAI"/>
+                                    <field name="TK_NO_ID" string="TK Nợ" attrs="{'column_invisible': [('parent.CHUNG_TU_CHON', '=', 'DIEU_CHINH')]}"/>
+                                    <field name="TK_CO_ID" string="TK Có" attrs="{'column_invisible': [('parent.CHUNG_TU_CHON', '=', 'DIEU_CHINH')]}"/>
+                                    <field name="SO_TIEN" sum="Tổng"/>  
+                                    <field name="LOAI_CHUNG_TU" attrs="{'column_invisible': [('parent.CHUNG_TU_CHON', '=', 'GHI_TANG')]}"/>
+                                    <field name="ID_GOC" invisible="1"/>
+                                    <field name="MODEL_GOC" invisible="1"/>  
+                                    <!-- <field name="ID_GOC"/>
+                                    <field name="MODEL_GOC"/>        -->
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                    </sheet>
+                     
+                </form>
+            </field>
+        </record>
+
+        <!-- <record id="view_asset_chon_chung_tu_tscd_form_tree" model="ir.ui.view">
+            <field name="name">account.ex.chon.chung.tu.form.tree</field>
+            <field name="model">account.ex.chon.chung.tu.form</field>
+            <field name="arch" type="xml">
+                <tree string="chọn chứng từ tscd form">
+                    <field name="LOAI_CHUNG_TU"/>
+                    <field name="KHOANG_THOI_GIAN"/>
+                    <field name="TU_NGAY"/>
+                    <field name="DEN_NGAY"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_asset_chon_chung_tu_tscd_form" model="ir.actions.act_window">
+            <field name="name">chọn chứng từ tscd form</field>
+            <field name="res_model">account.ex.chon.chung.tu.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_asset_chon_chung_tu_tscd_form_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_asset_chon_chung_tu_tscd_form_tree"/>
+            <field name="act_window_id" ref="open_menu_asset_chon_chung_tu_tscd_form"/>
+        </record>
+
+        <record id="action_asset_chon_chung_tu_tscd_form_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_asset_chon_chung_tu_tscd_form_form"/>
+            <field name="act_window_id" ref="open_menu_asset_chon_chung_tu_tscd_form"/>
+        </record>
+
+        <menuitem name="chọn chứng từ tscd form"
+                  action="asset.open_menu_asset_chon_chung_tu_tscd_form"
+                  id="menu_asset_chon_chung_tu_tscd_form"
+                  parent=""
+                  sequence="0"/>
+    </data>
+    <data noupdate="1"> -->
+    </data>
+</odoo>

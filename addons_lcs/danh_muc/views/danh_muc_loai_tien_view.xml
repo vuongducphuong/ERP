@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_loai_tien_form" model="ir.ui.view">
+            <field name="name">res.currency.form</field>
+            <field name="model">res.currency</field>
+            <field name="arch" type="xml">
+                <form string="Loại tiền" cloudify_js="danh_muc_loai_tien_view">
+                    <sheet>
+                        <notebook>
+                            <page string="1.Thông tin chung">
+                                <group col="6">
+                                    <group col="4" colspan="4">
+                                        <field name="MA_LOAI_TIEN" colspan="4" />
+                                        <field name="TEN_LOAI_TIEN" colspan="4" />
+                                        <field name="PHEP_TINH_QUY_DOI" colspan="4" />
+                                        <field name="TY_GIA_QUY_DOI" colspan="4" />
+                                    </group>
+                                    <group col="2" colspan="2">
+                                        <field name="TK_TIEN_MAT_ID" colspan="2" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="TK_TIEN_GUI_ID" colspan="2" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                    </group>
+                                </group>
+                                <group col="4">
+                                    <group col="2" colspan="2" string="Cách đọc số tiền bằng chữ tiếng Việt">
+                                        <field name="KY_HIEU_BAT_DAU" colspan="2" />
+                                        <field name="DOC_TEN_LOAI_TIEN" colspan="2" />
+                                        <field name="DOC_PHAN_CACH_THAP_PHAN" colspan="2" />
+                                        <field name="DOC_SO_TIEN_SAU_THAP_PHAN" colspan="2" />
+                                        <field name="TY_LE_CHUYEN_DOI" colspan="2" />
+                                        <field name="KY_HIEU_KET_THUC" colspan="2" />
+                                        <button id="btn_lay_ngam_dinh_tieng_viet" string="Lấy ngầm định" colspan="2" />
+                                        <field name="KY_HIEU_BAT_DAU_MAC_DINH" colspan="2" invisible="1" />
+                                        <field name="DOC_TEN_LOAI_TIEN_MAC_DINH" colspan="2" invisible="1" />
+                                        <field name="DOC_PHAN_CACH_THAP_PHAN_MAC_DINH" colspan="2" invisible="1" />
+                                        <field name="DOC_SO_TIEN_SAU_THAP_PHAN_MAC_DINH" colspan="2" invisible="1" />
+                                        <field name="TY_LE_CHUYEN_DOI_MAC_DINH" colspan="2" invisible="1" />
+                                        <field name="KY_HIEU_KET_THUC_MAC_DINH" colspan="2" invisible="1" />
+                                    </group>
+                                    <group col="2" colspan="2" string="Cách đọc số tiền bằng chữ tiếng Anh">
+                                        <field name="KY_HIEU_BAT_DAU_TIENG_ANH" colspan="2" string="Ký hiệu bắt đầu" />
+                                        <field name="DOC_TEN_LOAI_TIEN_TIENG_ANH" colspan="2" string="Đọc tên loại tiền" />
+                                        <field name="DOC_PHAN_CACH_THAP_PHAN_TIENG_ANH" colspan="2" string="Đọc phân cách thập phân" />
+                                        <field name="DOC_SO_TIEN_SAU_THAP_PHAN_TIENG_ANH" colspan="2" string="Đọc số tiền sau thập phân" />
+                                        <field name="TY_LE_CHUYEN_DOI_TIENG_ANH" colspan="2" string="Tỷ lệ chuyển đổi" />
+                                        <field name="KY_HIEU_KET_THUC_TIENG_ANH" colspan="2" string="Ký hiệu kết thúc" />
+                                        <button id="btn_lay_ngam_dinh_tieng_anh" string="Lấy ngầm định" colspan="2" />
+                                        <field name="KY_HIEU_BAT_DAU_TIENG_ANH_MAC_DINH" colspan="2" invisible="1" />
+                                        <field name="DOC_TEN_LOAI_TIEN_TIENG_ANH_MAC_DINH" colspan="2" invisible="1" />
+                                        <field name="DOC_PHAN_CACH_THAP_PHAN_TIENG_ANH_MAC_DINH" colspan="2" invisible="1" />
+                                        <field name="DOC_SO_TIEN_SAU_THAP_PHAN_TIENG_ANH_MAC_DINH" colspan="2" invisible="1" />
+                                        <field name="TY_LE_CHUYEN_DOI_TIENG_ANH_MAC_DINH" colspan="2" invisible="1" />
+                                        <field name="KY_HIEU_KET_THUC_TIENG_ANH_MAC_DINH" colspan="2" invisible="1" />
+                                    </group>
+                                </group>
+                                <group col="4" >
+                                    <group col="2" colspan="2" string="Ví dụ">
+                                        <field name="NHAP_SO_TIEN" colspan="2" />
+                                        <field name="DOC_SO_TIEN_BANG_CHU_TIENG_VIET" readonly="1" colspan="2" string="Bằng chữ tiếng Việt" />
+                                        <field name="DOC_SO_TIEN_BANG_CHU_TIENG_ANH" readonly="1" colspan="2" string="Bằng chữ tiếng Anh" />
+                                    </group>
+                                </group>
+                                <field name="active"/>
+                            </page>
+                            <page string="2.Mệnh giá">
+                                <field name="DANH_MUC_MENH_GIA_LOAI_TIEN_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="STT" />
+                                        <field name="MENH_GIA" />
+                                        <field name="DIEN_GIAI" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_danh_muc_loai_tien_tree" model="ir.ui.view">
+            <field name="name">res.currency.tree</field>
+            <field name="model">res.currency</field>
+            <field name="arch" type="xml">
+                <tree string="Loại tiền">
+                    <field name="MA_LOAI_TIEN" />
+                    <field name="TEN_LOAI_TIEN" />
+                    <field name="TY_GIA_QUY_DOI" />
+                    <field name="active" string="Theo dõi"/>
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_danh_muc_loai_tien" model="ir.actions.act_window">
+            <field name="name">Loại tiền</field>
+            <field name="res_model">res.currency</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_danh_muc_loai_tien_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_loai_tien_tree" />
+            <field name="act_window_id" ref="open_menu_danh_muc_loai_tien" />
+        </record>
+        <record id="action_danh_muc_loai_tien_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_loai_tien_form" />
+            <field name="act_window_id" ref="open_menu_danh_muc_loai_tien" />
+        </record>
+        <!-- <menuitem name="Loại tiền" action="danh_muc.open_menu_danh_muc_loai_tien" id="menu_danh_muc_loai_tien" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

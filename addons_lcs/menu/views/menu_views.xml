@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<data>
+		<!-- Region TIN NHẮN -->
+		<!-- <menuitem name="Tin nhắn" id="menu_tin_nhan" action="mail.mail_channel_action_client_chat" web_icon="fa-envelope" groups="base.group_user" sequence="5" /> -->
+		<!-- EndRegion -->
+		<!-- Region LỊCH -->
+		<!-- <menuitem name="Lịch" id="menu_lich" action="calendar.action_calendar_event" web_icon="fa-calendar" groups="base.group_user" sequence="10" /> -->
+		<!-- EndRegion -->
+		<!-- Region KẾ TOÁN -->
+		<menuitem name="Kế toán" id="menu_ke_toan" web_icon="fa-money" sequence="40" />
+		<menuitem name="Quỹ" id="menu_ke_toan_quy" web_icon="fa-money" sequence="50" />
+		<menuitem name="Ngân hàng" id="menu_ke_toan_ngan_hang" web_icon="fa-university" sequence="55" />
+		<menuitem name="Mua hàng" id="menu_ke_toan_mua_hang" web_icon="fa-truck" sequence="60" />
+		<menuitem name="Bán hàng" id="menu_ke_toan_ban_hang" web_icon="fa-shopping-cart" sequence="65" />
+		<menuitem name="Kho" id="menu_ke_toan_kho" web_icon="fa-cubes" sequence="70" />
+		<menuitem name="Công cụ dụng cụ" id="menu_ke_toan_cong_cu_dung_cu" web_icon="fa-wrench" sequence="75" />
+		<menuitem name="Tài sản cố định" id="menu_ke_toan_tai_san_co_dinh" web_icon="fa-car" sequence="80" />
+		<!-- Tiền lương -->
+		<menuitem name="Tiền lương" id="menu_ke_toan_tien_luong1" web_icon="fa-calculator" sequence="82" groups="" />
+		<!-- Tiền lương / Chấm công  -->
+		<menuitem name="Chấm công" action="tien_luong.open_menu_tien_luong_bang_cham_cong_chi_tiet_master" id="menu_tien_luong_bang_cham_cong_chi_tiet_master" parent="menu_ke_toan_tien_luong1" sequence="0" />
+		<!-- Tiền lương / Tổng hợp chấm công -->
+		<menuitem name="Tổng hợp chấm công" action="tien_luong.open_menu_tien_luong_bang_tong_hop_cham_cong" id="menu_tien_luong_bang_tong_hop_cham_cong" parent="menu_ke_toan_tien_luong1" sequence="5" />
+		<!-- Tiền lương / Tính lương -->
+		<menuitem name="Tính lương" action="tien_luong.open_menu_tien_luong_bang_luong" id="menu_tien_luong_bang_luong" parent="menu_ke_toan_tien_luong1" sequence="10" />
+		<!-- Tiền lương/ Hạch toán chi phí trả lương -->
+		<menuitem name="Hạch toán chi phí lương" action="tien_luong.open_menu_tien_luong_hach_toan_chi_phi_luong" id="menu_tien_luong_hach_toan_chi_phi_luong" parent="menu_ke_toan_tien_luong1" sequence="15" />
+		<!-- Tiền lương / Trả lương -->
+		<menuitem name="Trả lương" action="tien_luong.open_menu_tien_luong_phieu_chi" id="menu_tien_luong_tra_luong_form_tham_so" parent="menu_ke_toan_tien_luong1" sequence="20" />
+		<!-- Tiền lương/ Nộp bảo hiểm -->
+		<menuitem name="Nộp bảo hiểm" action="tien_luong.open_menu_tien_luong_nop_bao_hiem" id="menu_tien_luong_nop_bao_hiem_form_tham_so" parent="menu_ke_toan_tien_luong1" sequence="25" />
+		<!-- Tiền lương/ Quy định lương -->
+		<menuitem name="Quy định lương" action="tien_luong.open_tien_luong_quy_dinh_luong_bao_hiem_thue_tncn_tham_so_form" id="menu_tien_luong_quy_dinh_luong_bao_hiem_thue_tncn" parent="menu_ke_toan_tien_luong1" sequence="30" />
+		<!-- end Tiền lương -->
+		<!-- Thuế -->
+		<menuitem name="Thuế" id="menu_ke_toan_thue" web_icon="fa-fax" sequence="83" groups="base.group_no_one" />
+		<menuitem name="Thuế" action="thue.open_menu_thue_thue" id="menu_thue_thue" parent="menu_ke_toan_thue" sequence="0" />
+		<menuitem name="Khấu trừ thuế GTGT" action="thue.open_thue_chon_ky_tinh_thue_khau_tru_thue_gtgt_tham_so_form" id="menu_thue_chon_ky_tinh_thue" parent="menu_ke_toan_thue" sequence="5" />
+		<menuitem name="Nộp thuế" action="thue.open_thue_nop_thue_form_tham_so_form" id="menu_thue_nop_thue_form" parent="menu_ke_toan_thue" sequence="10" />
+		<menuitem name="Thiết lập thông tin cơ quan thuế; đại lý thuế; đơn vị cung cấp DV kế toán" action="thue.open_menu_thue_thiet_lap_thong_tin_co_quan_thue" id="menu_thue_thiet_lap_thong_tin_co_quan_thue" parent="menu_ke_toan_thue" sequence="15" />
+		<!-- end Thuế -->
+		<!-- Giá thành -->
+		<menuitem name="Giá thành" id="menu_ke_toan_gia_thanh1" web_icon="fa-industry" sequence="84"  groups=""/>
+		<!-- Sản xuất liên tục - Giản đơn -->
+		<menuitem id="menu_ke_toan_gia_thanh_san_xuat_lien_tuc_gian_don" name="SX liên tục - Giản đơn" parent="menu_ke_toan_gia_thanh1" sequence="0" />
+		<!-- Sản xuất liên tục - Giản đơn/ Xác định kỳ tính giá thành-->
+		<menuitem name="Kỳ tính giá thành" action="gia_thanh.open_menu_gia_thanh_ky_tinh_gia_thanh_san_xuat_lien_tuc_gian_don" id="menu_gia_thanh_ky_tinh_gia_thanh_san_xuat_lien_tuc_gian_don" parent="menu_ke_toan_gia_thanh_san_xuat_lien_tuc_gian_don" sequence="5" />
+		<!-- Sản xuất liên tục - Giản đơn/ Kết chuyển chi phí-->
+		<menuitem name="Kết chuyển chi phí" action="gia_thanh.open_menu_gia_thanh_ket_chuyen_chi_phi_san_xuat_lien_tuc_gian_don" id="menu_gia_thanh_ket_chuyen_chi_phi_sxltdg" parent="menu_ke_toan_gia_thanh_san_xuat_lien_tuc_gian_don" sequence="10" />
+		<!-- Sản xuất liên tục - Giản đơn/ Khai báo chi phí dở dang đầu kỳ cho đối tượng THCP-->
+		<menuitem name="Khai báo CPDD đầu kỳ" action="account_ex.open_menu_account_ex_chi_phi_do_dang_master" id="menu_account_ex_chi_phi_do_dang_master_sxltgd" parent="menu_ke_toan_gia_thanh_san_xuat_lien_tuc_gian_don" sequence="15" />
+		<!-- Sản xuất liên tục - Giản đơn/ Khai báo định mức giá thành thành phẩm-->
+		<menuitem name="Khai báo Đ.mức giá thành" action="gia_thanh.open_menu_gia_thanh_khai_bao_dinh_muc_gia_thanh_thanh_pham_form" id="menu_gia_thanh_khai_bao_dinh_muc_gia_thanh_thanh_pham_form_sxltgd" parent="menu_ke_toan_gia_thanh_san_xuat_lien_tuc_gian_don" sequence="20" />
+		<!-- Sản xuất liên tục - Giản đơn/ Khai báo định mức phân bổ chi phí theo đối tượng THCP-->
+		<menuitem name="Khai báo Đ.mức PBCP" action="gia_thanh.open_menu_gia_thanh_khai_bao_dinh_muc_phan_bo_chi_phi_theo_doi_tuong_thcp_form" id="menu_gia_thanh_khai_bao_dinh_muc_phan_bo_chi_phi_theo_doi_tuong_thcp_form_sxltgd" parent="menu_ke_toan_gia_thanh_san_xuat_lien_tuc_gian_don" sequence="25" />
+		<!-- end Sản xuất liên tục - Giản đơn  -->
+		<!-- Sản xuất liên tục - Hệ số, tỷ lệ -->
+		<menuitem id="menu_ke_toan_gia_thanh_san_xuat_lien_tuc_he_so_ty_le" name="SX liên tục - Hệ số, tỷ lệ" parent="menu_ke_toan_gia_thanh1" sequence="5" />
+		<!-- Sản xuất liên tục - Hệ số, tỷ lệ/ Xác định kỳ tính giá thành-->
+		<menuitem name="Kỳ tính giá thành" action="gia_thanh.open_menu_gia_thanh_ky_tinh_gia_thanh_san_xuat_lien_tuc_he_so_ty_le" id="menu_gia_thanh_ky_tinh_gia_thanh" parent="menu_ke_toan_gia_thanh_san_xuat_lien_tuc_he_so_ty_le" sequence="5" />
+		<!-- Sản xuất liên tục - Hệ số, tỷ lệ/ Kết chuyển chi phí-->
+		<menuitem name="Kết chuyển chi phí" action="gia_thanh.open_menu_gia_thanh_ket_chuyen_chi_phi_san_xuat_lien_tuc_he_so_ty_le" id="menu_gia_thanh_ket_chuyen_chi_phi_sxlthstl" parent="menu_ke_toan_gia_thanh_san_xuat_lien_tuc_he_so_ty_le" sequence="10" />
+		<!-- Sản xuất liên tục - Hệ số, tỷ lệ/ Khai báo chi phí dở dang đầu kỳ cho đối tượng THCP-->
+		<menuitem name="Khai báo CPDD đầu kỳ" action="account_ex.open_menu_account_ex_chi_phi_do_dang_master" id="menu_account_ex_chi_phi_do_dang_master" parent="menu_ke_toan_gia_thanh_san_xuat_lien_tuc_he_so_ty_le" sequence="15" />
+		<!-- Sản xuất liên tục - Hệ số, tỷ lệ/ Khai báo định mức giá thành thành phẩm-->
+		<menuitem name="Khai báo Đ.mức giá thành" action="gia_thanh.open_menu_gia_thanh_khai_bao_dinh_muc_gia_thanh_thanh_pham_form" id="menu_gia_thanh_khai_bao_dinh_muc_gia_thanh_thanh_pham_form" parent="menu_ke_toan_gia_thanh_san_xuat_lien_tuc_he_so_ty_le" sequence="20" />
+		<!-- Sản xuất liên tục - Hệ số, tỷ lệ/ Khai báo định mức phân bổ chi phí theo đối tượng THCP-->
+		<menuitem name="Khai báo Đ.mức PBCP" action="gia_thanh.open_menu_gia_thanh_khai_bao_dinh_muc_phan_bo_chi_phi_theo_doi_tuong_thcp_form" id="menu_gia_thanh_khai_bao_dinh_muc_phan_bo_chi_phi_theo_doi_tuong_thcp_form" parent="menu_ke_toan_gia_thanh_san_xuat_lien_tuc_he_so_ty_le" sequence="25" />
+		<!--end Sản xuất liên tục - Hệ số, tỷ lệ -->
+		<!-- Công trình -->
+		<menuitem id="menu_ke_toan_gia_thanh_cong_trinh" name="Công trình" parent="menu_ke_toan_gia_thanh1" sequence="10" />
+		<!-- Công trình/ Xác định kỳ tính giá thành-->
+		<menuitem name="Kỳ tính giá thành" action="gia_thanh.open_menu_gia_thanh_ky_tinh_gia_thanh_cong_trinh" id="menu_gia_thanh_ky_tinh_gia_thanh_cong_trinh" parent="menu_ke_toan_gia_thanh_cong_trinh" sequence="5" />
+		<!-- Công trình/ Kết chuyển chi phí-->
+		<menuitem name="Kết chuyển chi phí" action="gia_thanh.open_menu_gia_thanh_ket_chuyen_chi_phi_cong_trinh1" id="menu_gia_thanh_ket_chuyen_chi_phi_cong_trinh" parent="menu_ke_toan_gia_thanh_cong_trinh" sequence="10" />
+		<!-- Công trình/ Nghiệm thu công trình-->
+		<menuitem name="Nghiệm thu công trình" action="gia_thanh.open_menu_gia_thanh_nghiem_thu_cong_trinh2" id="menu_gia_thanh_nghiem_thu_cong_trinh" parent="menu_ke_toan_gia_thanh_cong_trinh" sequence="15" />
+		<!-- Công trình/ Nhập chi phí phát sinh cho công trình kỳ trước-->
+		<menuitem name="Nhập CP phát sinh" action="account_ex.open_menu_account_ex_chi_phi_do_dang_cong_trinh_master" id="menu_account_ex_chi_phi_do_dang_cong_trinh_master" parent="menu_ke_toan_gia_thanh_cong_trinh" sequence="20" />
+		<!-- Công trình/ Định mức nguyên vật liệu công trình-->
+		<menuitem name="Đ.mức NVL công trình" action="gia_thanh.open_menu_gia_thanh_dinh_muc_nguyen_vat_lieu_cong_trinh" id="menu_gia_thanh_dinh_muc_nguyen_vat_lieu_cong_trinh" parent="menu_ke_toan_gia_thanh_cong_trinh" sequence="25" />
+		<!-- Công trình/ Khai báo định mức phân bổ chi phí theo công trình-->
+		<menuitem name="Khai báo Đ.mức PBCP" action="gia_thanh.open_menu_gia_thanh_khai_bao_dinh_muc_phan_bo_chi_phi_theo_cong_trinh_form" id="menu_gia_thanh_khai_bao_dinh_muc_phan_bo_chi_phi_theo_cong_trinh_form" parent="menu_ke_toan_gia_thanh_cong_trinh" sequence="30" />
+		<!-- end Công trình -->
+		<!-- Đơn hàng -->
+		<menuitem id="menu_ke_toan_gia_thanh_don_hang" name="Đơn hàng" parent="menu_ke_toan_gia_thanh1" sequence="15" />
+		<!-- Đơn hàng/ Xác định kỳ tính giá thành-->
+		<menuitem name="Kỳ tính giá thành" action="gia_thanh.open_menu_gia_thanh_ky_tinh_gia_thanh_don_hang" id="menu_gia_thanh_ky_tinh_gia_thanh_don_hang" parent="menu_ke_toan_gia_thanh_don_hang" sequence="5" />
+		<!-- Đơn hàng/ Kết chuyển chi phí-->
+		<menuitem name="Kết chuyển chi phí" action="gia_thanh.open_menu_gia_thanh_ket_chuyen_chi_phi_don_hang1" id="menu_gia_thanh_ket_chuyen_chi_phi_don_hang" parent="menu_ke_toan_gia_thanh_don_hang" sequence="10" />
+		<!-- Đơn hàng/ Nghiệm thu đơn hàng-->
+		<menuitem name="Nghiệm thu đơn hàng" action="gia_thanh.open_menu_gia_thanh_nghiem_thu_don_hang1" id="menu_gia_thanh_nghiem_thu_don_hang" parent="menu_ke_toan_gia_thanh_don_hang" sequence="15" />
+		<!-- Đơn hàng/ Nhập lũy kế chi phí phát sinh cho đơn hàng kỳ trước-->
+		<menuitem name="Nhập lũy kế CP phát sinh" action="account_ex.open_menu_account_ex_chi_phi_do_dang_don_hang_master" id="menu_account_ex_chi_phi_do_dang_don_hang_master" parent="menu_ke_toan_gia_thanh_don_hang" sequence="20" />
+		<!-- end Đơn hàng -->
+		<!-- Hợp đồng -->
+		<menuitem id="menu_ke_toan_gia_thanh_hop_dong" name="Hợp đồng" parent="menu_ke_toan_gia_thanh1" sequence="20" />
+		<!-- Hợp đồng/ Xác định kỳ tính giá thành-->
+		<menuitem name="Kỳ tính giá thành" action="gia_thanh.open_menu_gia_thanh_ky_tinh_gia_thanh_hop_dong" id="menu_gia_thanh_ky_tinh_gia_thanh_hop_dong" parent="menu_ke_toan_gia_thanh_hop_dong" sequence="5" />
+		<!-- Hợp đồng/ Kết chuyển chi phí-->
+		<menuitem name="Kết chuyển chi phí" action="gia_thanh.open_menu_gia_thanh_ket_chuyen_chi_phi_hop_dong1" id="menu_gia_thanh_ket_chuyen_chi_phi_hop_dong" parent="menu_ke_toan_gia_thanh_hop_dong" sequence="10" />
+		<!-- Hợp đồng/ Nghiệm thu hợp đồng-->
+		<menuitem name="Nghiệm thu hợp đồng" action="gia_thanh.open_menu_gia_thanh_nghiem_thu_hop_dong1" id="menu_gia_thanh_nghiem_thu_hop_dong" parent="menu_ke_toan_gia_thanh_hop_dong" sequence="15" />
+		<!-- Hợp đồng/ Nhập lũy kế chi phí phát sinh cho hợp đồng kỳ trước-->
+		<menuitem name="Nhập lũy kế CP phát sinh" action="account_ex.open_menu_account_ex_chi_phi_do_dang_hop_dong_master" id="menu_account_ex_chi_phi_do_dang_hop_dong_master" parent="menu_ke_toan_gia_thanh_hop_dong" sequence="20" />
+		<!-- end hợp đồng -->
+		<!-- end Giá thành -->
+		<menuitem name="Tổng hợp" id="menu_ke_toan_tong_hop" web_icon="fa-book" sequence="85" />
+		<!-- nhập số dư ban đầu -->
+		<menuitem name="Nhập số dư ban đầu" web_icon="fa-clone" id="menu_account_ex_nhap_so_du_ban_dau" sequence="88" action="" />
+		<menuitem name="Nhập số dư" action="account_ex.open_menu_account_ex_nhap_so_du_ban_dau" web_icon="fa-clone" id="menu_account_ex_nhap_so_du" parent="menu_account_ex_nhap_so_du_ban_dau" sequence="5" />
+		<menuitem name="Nhập khẩu từ Excel" action="base_import_ex.action_nhap_khau_du_lieu_ban_dau_tu_excel" id="menu_tien_ich_nhap_khau_du_lieu_ban_dau_tu_excel" parent="menu_account_ex_nhap_so_du_ban_dau" sequence="10" />
+		<!-- Tiện ích -->
+		<menuitem name="Tiện ích" id="menu_ke_toan_tien_ich" web_icon="fa-magic" sequence="90" />
+		<!-- Tiện ích / Nhập khẩu dữ liệu -->
+		<menuitem name="Nhập khẩu dữ liệu" action="base_import_ex.action_nhap_khau_du_lieu" id="menu_tien_ich_nhap_khau_du_lieu" parent="menu_ke_toan_tien_ich" sequence="10" groups="base.group_no_one" /> <!--Thay groups="danh_muc.group_admin khi enable chức năng này"-->
+		<menuitem name="Tìm kiếm" action="tien_ich.open_menu_tien_ich_tim_kiem_chung_tu" id="menu_tien_ich_tim_kiem_chung_tu" parent="menu_ke_toan_tien_ich" sequence="15" />
+		<!-- <menuitem name="Báo cáo" action="tien_ich.open_menu_tien_ich_bao_cao" id="menu_tien_ich_bao_cao" parent="menu_ke_toan_tien_ich" sequence="20" groups="base.group_no_one"  /> -->
+		<!-- <menuitem name="Thiết lập báo cáo tài chính" action="tien_ich.open_menu_tien_ich_thiet_lap_bao_cao_tai_chinh" id="menu_tien_ich_thiet_lap_bao_cao_tai_chinh" parent="menu_ke_toan_tien_ich" sequence="21" /> -->
+		<!-- <menuitem name="Kiểm tra, đối chiếu chứng từ, sổ sách" action="tien_ich.open_tien_ich_kiem_tra_doi_chieu_chung_tu_so_sach_tham_so_form" id="menu_tien_ich_kiem_tra_doi_chieu_chung_tu_so_sach" parent="menu_ke_toan_tien_ich" sequence="25" /> -->
+		<!-- <menuitem name="Ghi sổ/Bỏ ghi sổ theo lô" action="tien_ich.open_menu_tien_ich_ghi_so_hoac_bo_ghi_so_theo_lo" id="menu_tien_ich_ghi_so_hoac_bo_ghi_so_theo_lo" parent="menu_ke_toan_tien_ich" sequence="26" /> -->
+		<menuitem name="Bảo trì dữ liệu" action="tien_ich.open_tien_ich_bao_tri_du_lieu_tham_so_form" id="menu_tien_ich_bao_tri_du_lieu" parent="menu_ke_toan_tien_ich" sequence="30" />
+		<!-- <menuitem name="Đánh lại số chứng từ" action="tien_ich.open_menu_tien_ich_danh_lai_so_chung_tu" id="menu_tien_ich_danh_lai_so_chung_tu" parent="menu_ke_toan_tien_ich" sequence="35" /> -->
+		<!-- Mua hàng -->
+		<menuitem name="Chứng từ mua hàng hóa" action="purchase_ex.purchase_document_form_action11" id="menu_mua_hang_chung_tu_hang_hoa_ex" parent="menu_ke_toan_mua_hang" sequence="10" />
+		<menuitem name="Chứng từ mua dịch vụ" action="purchase_ex.purchase_ex_chung_tu_mua_dich_vu_form_action" id="menu_purchase_ex_chung_tu_mua_dich_vu" parent="menu_ke_toan_mua_hang" sequence="15" />
+		<!-- <menuitem name="Trả tiền Nhà cung cấp" action="purchase_ex.open_menu_account_tra_tien_nha_cung_cap" id="menu_account_tra_tien_nha_cung_cap" parent="menu_ke_toan_mua_hang" sequence="60" /> -->
+		<menuitem name="Trả lại hàng mua" action="purchase_ex.open_menu_purchase_ex_tra_lai_mua_hang" id="menu_purchase_ex_tra_lai_mua_hang" parent="menu_ke_toan_mua_hang" sequence="25" />
+		<menuitem name="Nhận hóa đơn" action="purchase_ex.open_menu_purchase_ex_nhan_hoa_don_mua_hang_hoa" id="menu_purchase_ex_nhan_hoa_don" parent="menu_ke_toan_mua_hang" sequence="20" />
+		<menuitem name="Giảm giá hàng mua" action="purchase_ex.open_menu_purchase_ex_giam_gia_hang_mua" id="menu_purchase_ex_giam_gia_hang_mua" parent="menu_ke_toan_mua_hang" sequence="30" />
+		<menuitem name="Đơn mua hàng" action="account_ex.open_menu_purchase_ex_don_mua_hang" id="menu_purchase_ex_don_mua_hang" parent="menu_ke_toan_mua_hang" sequence="0" />
+		<menuitem name="Hợp đồng mua hàng" action="purchase_ex.open_menu_purchase_ex_hop_dong_mua_hang" id="menu_purchase_ex_hop_dong_mua_hang" parent="menu_ke_toan_mua_hang" sequence="5" />
+		<menuitem name="Đối trừ chứng từ" action="sale_ex.open_menu_sale_ex_doi_tru_chung_tu_mua_hang" id="menu_purchase_ex_doi_tru_chung_tu" parent="menu_ke_toan_mua_hang" sequence="44" />
+		<menuitem name="Đối trừ chứng từ nhiều đối tượng" action="purchase_ex.open_purchase_ex_doi_tru_chung_tu_nhieu_doi_tuong_tham_so_form" id="menu_purchase_ex_doi_tru_chung_tu_nhieu_doi_tuong" parent="menu_ke_toan_mua_hang" sequence="45" />
+		<!-- <menuitem name="Bỏ đối trừ" action="purchase_ex.open_purchase_ex_bo_doi_tru_tham_so_form" id="menu_purchase_ex_bo_doi_tru" parent="menu_ke_toan_mua_hang" sequence="50" /> -->
+		<menuitem name="Bỏ đối trừ" action="sale_ex.open_menu_sale_ex_bo_doi_tru_mua_hang" id="menu_sale_ex_bo_doi_tru_mua_hang" parent="menu_ke_toan_mua_hang" sequence="51" />
+		<menuitem name="Bù trừ công nợ" action="sale_ex.open_sale_ex_bu_tru_cong_no_tham_so_form" id="menu_sale_ex_bu_tru_cong_no_mua_hang" parent="menu_ke_toan_mua_hang" sequence="55" />
+		<!-- <menuitem name="Lập từ đơn mua hàng" action="purchase_ex.open_purchase_ex_lap_tu_don_mua_hang_form_tham_so_form" id="menu_purchase_ex_lap_tu_don_mua_hang_form" parent="menu_ke_toan_mua_hang" sequence="60" /> -->
+		<!-- Bán hàng -->
+		<menuitem name="Hóa đơn" action="sale_ex.open_menu_sale_ex_hoa_don_ban_hang" id="menu_sale_ex_hoa_don_ban_hang" parent="menu_ke_toan_ban_hang" sequence="15" />
+		<menuitem name="Chứng từ bán hàng hóa" action="sale_ex.open_menu_sale_document" id="menu_sale_document_ex" parent="menu_ke_toan_ban_hang" sequence="10" />
+		<!-- <menuitem name="Thu tiền khách hàng" action="sale_ex.open_sale_ex_thu_tien_khach_hang_tham_so_form" id="menu_sale_ex_thu_tien_khach_hang" parent="menu_ke_toan_ban_hang" sequence="30" /> -->
+		<menuitem name="Bù trừ công nợ" action="sale_ex.open_sale_ex_bu_tru_cong_no_tham_so_form" id="menu_sale_ex_bu_tru_cong_no_ban_hang" parent="menu_ke_toan_ban_hang" sequence="55" />
+		<menuitem name="Trả lại hàng bán" action="sale_ex.open_menu_purchase_ex_tra_lai_hang_ban" id="menu_purchase_ex_tra_lai_hang_ban" parent="menu_ke_toan_ban_hang" sequence="20" />
+		<menuitem name="Giảm giá hàng bán" action="sale_ex.open_menu_sale_ex_giam_gia_hang_ban" id="menu_sale_ex_giam_gia_hang_ban" parent="menu_ke_toan_ban_hang" sequence="25" />
+		<menuitem name="Báo giá" action="sale_ex.open_menu_sale_ex_bao_gia" id="menu_sale_ex_bao_gia" parent="menu_ke_toan_ban_hang" sequence="0" />
+		<menuitem name="Đơn đặt hàng" action="account_ex.open_menu_account_ex_don_dat_hang" id="menu_account_ex_don_dat_hang" parent="menu_ke_toan_ban_hang" sequence="5" />
+		<menuitem name="Tính giá bán" action="sale_ex.open_menu_sale_ex_tinh_gia_ban" id="menu_sale_ex_tinh_gia_ban" parent="menu_ke_toan_ban_hang" sequence="70" />
+		<menuitem name="Đối trừ chứng từ" action="sale_ex.open_sale_ex_doi_tru_chung_tu_tham_so_form" id="menu_sale_ex_doi_tru_chung_tu" parent="menu_ke_toan_ban_hang" sequence="40" />
+		<menuitem name="Đối trừ chứng từ nhiều đối tượng" action="sale_ex.open_menu_sale_ex_doi_tru_chung_tu_nhieu_doi_tuong" id="menu_sale_ex_doi_tru_chung_tu_nhieu_doi_tuong" parent="menu_ke_toan_ban_hang" sequence="45" />
+		<menuitem name="Bỏ đối trừ" action="sale_ex.open_menu_sale_ex_bo_doi_tru" id="menu_sale_ex_bo_doi_tru" parent="menu_ke_toan_ban_hang" sequence="50" />
+		<!-- Công cụ dụng cụ -->
+		<menuitem name="Ghi tăng" action="supply.open_menu_supply_ghi_tang" id="menu_supply_ghi_tang" parent="menu_ke_toan_cong_cu_dung_cu" sequence="0" />
+		<menuitem name="Ghi tăng CCDC hàng loạt" action="supply.open_menu_supply_ghi_tang_cong_cu_dung_cu_hang_loat" id="menu_supply_ghi_tang_cong_cu_dung_cu_hang_loat" parent="menu_ke_toan_cong_cu_dung_cu" sequence="5" />
+		<menuitem name="Phân bổ chi phí" action="supply.open_menu_supply_phan_bo_chi_phi" id="menu_supply_phan_bo_chi_phi" parent="menu_ke_toan_cong_cu_dung_cu" sequence="10" />
+		<menuitem name="Điều chuyển" action="supply.open_menu_supply_dieu_chuyen" id="menu_supply_dieu_chuyen_cong_cu_dung_cu" parent="menu_ke_toan_cong_cu_dung_cu" sequence="15" />
+		<menuitem name="Điều chỉnh" action="supply.open_menu_supply_dieu_chinh" id="menu_supply_dieu_chinh_cong_cu_dung_cu" parent="menu_ke_toan_cong_cu_dung_cu" sequence="20" />
+		<menuitem name="Ghi giảm" action="supply.open_menu_supply_ghi_giam" id="menu_supply_cong_cu_dung_cu_ghi_giam" parent="menu_ke_toan_cong_cu_dung_cu" sequence="25" />
+		<menuitem name="Kiểm kê" action="supply.open_menu_supply_kiem_ke" id="menu_supply_kiem_ke_" parent="menu_ke_toan_cong_cu_dung_cu" sequence="30" />
+		<menuitem name="Khai báo CCDC đầu kỳ" action="supply.open_menu_supply_khai_bao_ccdc_dau_ky" id="menu_supply_khai_bao_ccdc_dau_ky" parent="menu_ke_toan_cong_cu_dung_cu" sequence="35" />
+		<!-- Tài sản cố định -->
+		<menuitem name="Ghi tăng" action="asset.open_menu_asset_ghi_tang" id="menu_asset_tai_san_co_dinh_ghi_tang" parent="menu_ke_toan_tai_san_co_dinh" sequence="0" />
+		<menuitem name="Tính khấu hao" action="asset.open_menu_asset_tinh_khau_hao" id="menu_asset_tinh_khau_hao" parent="menu_ke_toan_tai_san_co_dinh" sequence="5" />
+		<menuitem name="Đánh giá lại" action="asset.open_menu_asset_danh_gia_lai" id="menu_asset_danh_gia_lai_tai_san_co_dinh" parent="menu_ke_toan_tai_san_co_dinh" sequence="10" />
+		<menuitem name="Điều chuyển" action="asset.open_menu_asset_dieu_chuyen" id="menu_asset_dieu_chuyen_tai_san_co_dinh" parent="menu_ke_toan_tai_san_co_dinh" sequence="15" />
+		<menuitem name="Ghi giảm" action="asset.open_menu_asset_ghi_giam" id="menu_asset_tai_san_co_dinh_ghi_giam" parent="menu_ke_toan_tai_san_co_dinh" sequence="20" />
+		<menuitem name="Kiểm kê" action="asset.open_menu_asset_kiem_ke" id="menu_asset_kiem_ke" parent="menu_ke_toan_tai_san_co_dinh" sequence="30" />
+		<menuitem name="Khai báo tài sản đầu kỳ" action="asset.open_menu_asset_khai_bao_dau_ky" id="menu_asset_khai_bao_tai_san_co_dinh_dau_ky" parent="menu_ke_toan_tai_san_co_dinh" sequence="35" />
+		<!-- Quỹ -->
+		<menuitem name="Thu tiền" action="account_ex.open_menu_account_ex_phieu_thu_chi" id="menu_account_ex_phieu_thu_chi" parent="menu_ke_toan_quy" sequence="0" />
+		<menuitem name="Chi tiền" action="account_ex.open_menu_account_ex_phieu_chi_chi" id="menu_account_ex_phieu_chi_chi" parent="menu_ke_toan_quy" sequence="0" />
+		<!-- Ngân hàng -->
+		<menuitem name="Chi tiền" action="account_ex.open_menu_account_ex_phieu_chi" id="menu_account_chi_tien" parent="menu_ke_toan_ngan_hang" sequence="5" />
+		<menuitem name="Thu tiền" action="account_ex.open_menu_account_ex_phieu_thu" id="menu_account_thu_tien" parent="menu_ke_toan_ngan_hang" sequence="10" />
+		<menuitem name="Chuyển tiền nội bộ" action="account_ex.open_menu_chuyen_tien_noi_bo" id="menu_account_chuyen_tien_noi_bo" parent="menu_ke_toan_ngan_hang" sequence="15" />
+		<!-- <menuitem name="Đối chiếu ngân hàng" action="account_ex.open_account_ex_doi_chieu_ngan_hang_tham_so_form" id="menu_account_ex_doi_chieu_ngan_hang" parent="menu_ke_toan_ngan_hang" sequence="20" /> -->
+		<!-- Kho -->
+		<menuitem name="Nhập kho" action="stock_ex.open_menu_nhap_kho" id="menu_nhap_kho" parent="menu_ke_toan_kho" sequence="0" />
+		<menuitem name="Xuất kho" action="stock_ex.open_menu_xuat_kho" id="menu_xuat_kho" parent="menu_ke_toan_kho" sequence="5" />
+		<menuitem name="Chuyển kho" action="stock_ex.open_menu_chuyen_kho" id="menu_chuyen_kho" parent="menu_ke_toan_kho" sequence="10" />
+		<menuitem name="Kiểm kê" action="stock_ex.open_menu_stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form" id="menu_stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form" parent="menu_ke_toan_kho" sequence="30" />
+		<menuitem name="Lệnh sản xuất" action="stock_ex.open_menu_stock_ex_lenh_san_xuat" id="menu_stock_ex_lenh_san_xuat" parent="menu_ke_toan_kho" sequence="15" />
+		<menuitem name="Lệnh lắp ráp, tháo dỡ" action="stock_ex.open_menu_stock_ex_lap_rap_thao_do" id="menu_stock_ex_lap_rap_thao_do" parent="menu_ke_toan_kho" sequence="20" />
+		<menuitem name="Tính giá xuất kho" action="stock_ex.open_stock_ex_tinh_gia_xuat_kho_tham_so_form" id="menu_stock_ex_tinh_gia_xuat_kho" parent="menu_ke_toan_kho" sequence="25" />
+		<!-- <menuitem name="Cập nhật giá nhập kho thành phẩm" action="stock_ex.open_stock_ex_cap_nhat_gia_nhap_kho_thanh_pham_tham_so_form" id="menu_stock_ex_cap_nhat_gia_nhap_kho_thanh_pham" parent="menu_ke_toan_kho" sequence="40" /> -->
+		<!-- Tổng hợp-->
+		<!-- Tổng hợp/ Chứng từ -->
+		<menuitem id="menu_ke_toan_tong_hop_chung_tu" name="Chứng từ" parent="menu_ke_toan_tong_hop" sequence="5" />
+		<menuitem name="Chứng từ nghiệp vụ khác" action="tong_hop.open_menu_account_ex_chung_tu_nghiep_vu_khac" id="menu_account_ex_chung_tu_nghiep_vu_khac" parent="menu_ke_toan_tong_hop" sequence="0" />
+		<menuitem name="Kết chuyển lãi lỗ" action="tong_hop.open_menu_account_ex_ket_chuyen_lai_lo_master" id="menu_account_ex_ket_chuyen_lai_lo_master" parent="menu_ke_toan_tong_hop" sequence="10" />
+		<!--Tổng hợp/Chi phí trả trước-->
+		<menuitem id="menu_ke_toan_tong_hop_chi_phi_tra_truoc" name="Chi phí trả trước" parent="menu_ke_toan_tong_hop" sequence="45" />
+		<menuitem name="Danh sách chi phí trả trước" action="tong_hop.open_menu_tong_hop_chi_phi_tra_truoc" id="menu_tong_hop_chi_phi_tra_truoc" parent="menu_ke_toan_tong_hop_chi_phi_tra_truoc" sequence="0" />
+		<menuitem name="Phân bổ chi phí trả trước" action="tong_hop.open_menu_tong_hop_phan_bo_chi_phi_tra_truoc" id="menu_tong_hop_phan_bo_chi_phi_tra_truoc" parent="menu_ke_toan_tong_hop_chi_phi_tra_truoc" sequence="5" />
+		<menuitem name="Chứng từ ghi sổ" action="tong_hop.open_menu_tong_hop_chung_tu_ghi_so" id="menu_tong_hop_chung_tu_ghi_so" parent="menu_ke_toan_tong_hop" sequence="15" />
+		<menuitem name="Tính tỷ giá xuất quỹ" action="tong_hop.open_tong_hop_tinh_ty_gia_xuat_quy_tham_so_form" id="menu_tong_hop_tinh_ty_gia_xuat_quy" parent="menu_ke_toan_tong_hop" sequence="20" />
+		<menuitem name="Đánh giá lại tài khoản ngoại tệ" action="tong_hop.open_tong_hop_danh_gia_lai_tai_khoan_ngoai_te_tham_so_form" id="menu_tong_hop_danh_gia_lai_tai_khoan_ngoai_te" parent="menu_ke_toan_tong_hop" sequence="25" />
+		<menuitem name="Khóa sổ kỳ kế toán" action="tong_hop.open_tong_hop_khoa_so_ky_ke_toan_tham_so_form" id="menu_tong_hop_khoa_so_ky_ke_toan" parent="menu_ke_toan_tong_hop" sequence="30" />
+		<!-- <menuitem name="Bỏ khóa sổ kỳ kế toán" action="tong_hop.open_tong_hop_bo_khoa_so_ky_ke_toan_tham_so_form" id="menu_tong_hop_bo_khoa_so_ky_ke_toan" parent="menu_ke_toan_tong_hop" sequence="31" /> -->
+		<menuitem name="Phân bổ chi phí BH, QLDN, khác" action="tong_hop.open_menu_tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi" id="menu_tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi" parent="menu_ke_toan_tong_hop" sequence="40" />
+		<menuitem name="Lập báo cáo tài chính" action="tien_ich.open_menu_tong_hop_bao_cao_tai_chinh" id="menu_tong_hop_bao_cao_tai_chinh" parent="menu_ke_toan_tong_hop" sequence="50" groups="base.group_no_one" />
+		<!-- Region BÁO CÁO -->
+		<!-- <menuitem name="Báo cáo" id="menu_bao_cao" web_icon="fa-signal" sequence="95" /> -->
+		<menuitem name="Báo cáo" action="tien_ich.open_menu_tien_ich_bao_cao" id="menu_bao_cao" web_icon="fa-signal" sequence="95" />
+		<menuitem name="Phân tích" id="menu_phan_tich_main" web_icon="fa-line-chart" sequence="95" action="phan_tich.open_menu_he_thong_phan_tich" groups="base.group_no_one"/>
+		<!-- <menuitem name="Phân tích" id="menu_phan_tich" web_icon="fa-signal" sequence="96"/>
+		<menuitem name="Doanh thu theo sản phẩm" id="menu_phan_tich_doanh_thu_theo_san_pham" sequence="1" parent='menu_phan_tich' action="phan_tich.action_doanh_thu_theo_san_pham_tree"/>
+		<menuitem name="Doanh thu và chi phí" id="menu_phan_tich_doanh_thu_va_chi_phi" sequence="2" parent='menu_phan_tich' action="phan_tich.action_doanh_thu_va_chi_phi_tree"/> -->
+
+		<!-- Region BÁO CÁO/BÁO CÁO TÀI CHÍNH -->
+		<!-- <menuitem id="menu_bao_cao_tai_chinh" name="Báo cáo tài chính" parent="menu_bao_cao" sequence="4" />
+		<menuitem name="Bảng cân đối tài khoản" action="bao_cao.open_bao_cao_bang_can_doi_tai_khoan_tham_so_form" id="menu_bao_cao_bang_can_doi_tai_khoan" parent="menu_bao_cao_tai_chinh" sequence="5" />
+		<menuitem name="F01-DNN: Bảng cân đối tài khoản" action="bao_cao.open_bao_cao_f01dnn_bang_can_doi_tai_khoan_tham_so_form" id="menu_bao_cao_f01dnn_bang_can_doi_tai_khoan" parent="menu_bao_cao_tai_chinh" sequence="6" />
+		<menuitem name="B01-DN: Bảng cân đối kế toán" action="bao_cao.open_bao_cao_b01dn_bang_can_doi_ke_toan_tham_so_form" id="menu_bao_cao_b01dn_bang_can_doi_ke_toan" parent="menu_bao_cao_tai_chinh" sequence="10" /> -->
+		<!-- Region BÁO CÁO/QUỸ -->
+		<!-- <menuitem id="menu_bao_cao_quy" name="Quỹ" parent="menu_bao_cao" sequence="5" />
+		<menuitem name="Sổ kế toán chi tiết quỹ tiền mặt" action="bao_cao.open_bao_cao_so_ke_toan_chi_tiet_quy_tien_mat_tham_so_form" id="menu_bao_cao_so_ke_toan_chi_tiet_quy_tien_mat" parent="menu_bao_cao_quy" sequence="0" /> -->
+		<!-- Region BÁO CÁO/NGÂN HÀNG -->
+		<!-- <menuitem id="menu_bao_cao_ngan_hang" name="Ngân hàng" parent="menu_bao_cao" sequence="10" />
+		<menuitem name="Sổ tiền gửi ngân hàng" action="bao_cao.open_bao_cao_so_tien_gui_ngan_hang_tham_so_form" id="menu_bao_cao_so_tien_gui_ngan_hang" parent="menu_bao_cao_ngan_hang" sequence="0" /> -->
+		<!-- Region BÁO CÁO/KẾ TOÁN -->
+		<!-- Region BÁO CÁO/MUA HÀNG -->
+		<!-- <menuitem id="menu_bao_cao_mua_hang" name="Mua hàng" parent="menu_bao_cao" sequence="20" />
+		<menuitem name="Sổ chi tiết mua hàng" action="bao_cao.open_bao_cao_so_chi_tiet_mua_hang_tham_so_form" id="menu_bao_cao_so_chi_tiet_mua_hang" parent="menu_bao_cao_mua_hang" sequence="5" />
+		<menuitem name="Tổng hợp công nợ phải trả nhà cung cấp" action="bao_cao.open_bao_cao_tong_hop_cong_no_phai_tra_tham_so_form" id="menu_bao_cao_tong_hop_cong_no_phai_tra" parent="menu_bao_cao_mua_hang" sequence="15" />
+		<menuitem name="Chi tiết công nợ phải trả nhà cung cấp" action="bao_cao.open_bao_cao_chi_tiet_cong_no_phai_tra_nha_cung_cap_tham_so_form" id="menu_bao_cao_chi_tiet_cong_no_phai_tra_nha_cung_cap" parent="menu_bao_cao_mua_hang" sequence="20" />
+		<menuitem name="Phân tích công nợ phải trả theo tuổi nợ" action="bao_cao.open_bao_cao_phan_tich_cong_no_phai_tra_theo_tuoi_no_tham_so_form" id="menu_bao_cao_phan_tich_cong_no_phai_tra_theo_tuoi_no" parent="menu_bao_cao_mua_hang" sequence="35" />
+		<menuitem name="Biên bản đối chiếu và xác nhận công nợ phải trả" action="bao_cao.open_bao_cao_bien_ban_doi_chieu_va_xac_nhan_cong_no_phai_tra_tham_so_form" id="menu_bao_cao_bien_ban_doi_chieu_va_xac_nhan_cong_no_phai_tra" parent="menu_bao_cao_mua_hang" sequence="45" />
+		<menuitem name="Tổng hợp mua hàng" action="bao_cao.open_bao_cao_tong_hop_mua_hang_tham_so_form" id="menu_bao_cao_tong_hop_mua_hang" parent="menu_bao_cao_mua_hang" sequence="0" /> -->
+		<!-- EndRegion -->
+		<!-- Region BÁO CÁO/BÁN HÀNG -->
+		<!-- <menuitem id="menu_bao_cao_ban_hang" name="Bán hàng" parent="menu_bao_cao" sequence="15" />
+		<menuitem name="Sổ chi tiết bán hàng" action="bao_cao.open_bao_cao_so_chi_tiet_ban_hang_tham_so_form" id="menu_bao_cao_so_chi_tiet_ban_hang" parent="menu_bao_cao_ban_hang" sequence="10" />
+		<menuitem name="S35-DN:Sổ chi tiết bán hàng" action="bao_cao.open_bao_cao_s35_dn_so_chi_tiet_ban_hang_tham_so_form" id="menu_bao_cao_s35_dn_so_chi_tiet_ban_hang" parent="menu_bao_cao_ban_hang" sequence="5" />
+		<menuitem name="Tổng hợp công nợ phải thu khách hàng" action="bao_cao.open_bao_cao_tong_hop_cong_no_phai_thu_khach_hang_tham_so_form" id="menu_bao_cao_tong_hop_cong_no_phai_thu_khach_hang" parent="menu_bao_cao_ban_hang" sequence="25" />
+		<menuitem name="Chi tiết công nợ phải thu khách hàng" action="bao_cao.open_bao_cao_chi_tiet_cong_no_phai_thu_khach_hang_tham_so_form" id="menu_bao_cao_chi_tiet_cong_no_phai_thu_khach_hang" parent="menu_bao_cao_ban_hang" sequence="30" />
+		<menuitem name="Phân tích công nợ phải thu theo tuổi nợ" action="bao_cao.open_bao_cao_phan_tich_cong_no_phai_thu_theo_tuoi_no_tham_so_form" id="menu_bao_cao_phan_tich_cong_no_phai_thu_theo_tuoi_no" parent="menu_bao_cao_ban_hang" sequence="55" />
+		<menuitem name="Tình hình thực hiện đơn đặt hàng" action="bao_cao.open_bao_cao_tinh_hinh_thuc_hien_don_dat_hang_tham_so_form" id="menu_bao_cao_tinh_hinh_thuc_hien_don_dat_hang" parent="menu_bao_cao_ban_hang" sequence="60" />
+		<menuitem name=" Báo cáo tổng hợp lãi lỗ theo đơn hàng" action="bao_cao.open_bao_cao_tong_hop_lai_lo_theo_don_hang_tham_so_form" id="menu_bao_cao_tong_hop_lai_lo_theo_don_hang" parent="menu_bao_cao_ban_hang" sequence="75" />
+		<menuitem name=" Báo cáo phân tích số lượng bán và doanh số theo năm" action="bao_cao.open_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam_tham_so_form" id="menu_bao_cao_phan_tich_so_luong_ban_va_doanh_so_theo_nam" parent="menu_bao_cao_ban_hang" sequence="95" />
+		<menuitem name="Báo cáo so sánh số lượng bán và doanh số theo kỳ" action="bao_cao.open_bao_cao_bao_cao_so_sanh_so_luong_ban_va_doanh_so_theo_ky_tham_so_form" id="menu_bao_cao_bao_cao_so_sanh_so_luong_ban_va_doanh_so_theo_ky" parent="menu_bao_cao_ban_hang" sequence="100" />
+		<menuitem name="Tổng hợp bán hàng" action="bao_cao.open_bao_cao_tong_hop_ban_hang_tham_so_form" id="menu_bao_cao_tong_hop_ban_hang" parent="menu_bao_cao_ban_hang" sequence="0" /> -->
+		<!-- <menuitem name="Thông báo công nợ" action="bao_cao.open_bao_cao_thong_bao_cong_no_tham_so_form" id="menu_bao_cao_thong_bao_cong_no" parent="menu_bao_cao_ban_hang" sequence="20" /> -->
+		<!--Mạnh-->
+		<!-- EndRegion -->
+		<!-- Region BÁO CÁO/Giá thành -->
+		<!-- <menuitem id="menu_bao_cao_giathanh" name="Giá thành" sequence="50" parent="menu_bao_cao" />
+		<menuitem name="S36-DN:Sổ chi phí sản xuất và kinh doanh" action="bao_cao.open_bao_cao_s36_dn_so_chi_phi_san_xuat_va_kinh_doanh_tham_so_form" id="menu_bao_cao_s36_dn_so_chi_phi_san_xuat_va_kinh_doanh" parent="menu_bao_cao_giathanh" sequence="0" />
+		<menuitem name="S37-DN:Thẻ tính giá thành sản phẩm dịch vụ" action="bao_cao.open_bao_cao_s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_tham_so_form" id="menu_bao_cao_s37_dn_the_tinh_gia_thanh_san_pham_dich_vu" parent="menu_bao_cao_giathanh" sequence="0" />
+		<menuitem name="Bảng tính giá thành" action="bao_cao.open_bao_cao_bang_tinh_gia_thanh_tham_so_form" id="menu_bao_cao_bang_tinh_gia_thanh" parent="menu_bao_cao_giathanh" sequence="0" /> -->
+		<!-- EndRegion -->
+		<!-- Region BÁO CÁO/Tổng hợp -->
+		<!-- <menuitem id="menu_bao_cao_tonghop" name="Tổng hợp" sequence="55" parent="menu_bao_cao" />
+		<menuitem name="S02b-DN: Sổ đăng ký chứng từ ghi sổ" action="bao_cao.open_bao_cao_s02b_dn_so_dang_ky_chung_tu_ghi_so_tham_so_form" id="menu_bao_cao_s02b_dn_so_dang_ky_chung_tu_ghi_so" parent="menu_bao_cao_tonghop" sequence="40" />
+		<menuitem name="S01-DN: Nhật ký-Sổ cái" action="bao_cao.open_bao_cao_s01_dn_nhat_ky_so_cai_tham_so_form" id="menu_bao_cao_s01_dn_nhat_ky_so_cai" parent="menu_bao_cao_tonghop" sequence="45" />
+		<menuitem name="Sổ chi tiết các tài khoản" action="bao_cao.open_bao_cao_so_chi_tiet_cac_tai_khoan_tham_so_form" id="menu_bao_cao_so_chi_tiet_cac_tai_khoan" parent="menu_bao_cao_tonghop" sequence="0" />
+		<menuitem name="S03a1-DN:Sổ nhật ký thu tiền" action="bao_cao.open_bao_cao_s03a1_dn_so_nhat_ky_thu_tien_tham_so_form" id="menu_bao_cao_s03a1_dn_so_nhat_ky_thu_tien" parent="menu_bao_cao_tonghop" sequence="55" />
+		<menuitem name="S03a2-DN:Sổ nhật ký chi tiền" action="bao_cao.open_bao_cao_s03_a2_dn_so_nhat_ky_chi_tien_tham_so_form" id="menu_bao_cao_s03_a2_dn_so_nhat_ky_chi_tien" parent="menu_bao_cao_tonghop" sequence="60" />
+		<menuitem name="Sổ nhật ký chung" action="bao_cao.open_bao_cao_so_nhat_ky_chung_tham_so_form" id="menu_bao_cao_so_nhat_ky_chung" parent="menu_bao_cao_tonghop" sequence="50" />
+		<menuitem name="Tổng hợp công nợ nhân viên" action="bao_cao.open_bao_cao_tong_hop_cong_no_nhan_vien_tham_so_form" id="menu_bao_cao_tong_hop_cong_no_nhan_vien" parent="menu_bao_cao_tonghop" sequence="55" />
+		<menuitem name="Sổ 31-DN: Sổ chi tiết thanh toán với người mua(người bán)" action="bao_cao.open_bao_cao_so_31_dn_tham_so_form" id="menu_bao_cao_so_31_dn" parent="menu_bao_cao_tonghop" sequence="75" />
+		<menuitem name="S34-DN: Sổ chi tiết tiền vay" action="bao_cao.open_bao_cao_s34_dn_tham_so_form" id="menu_bao_cao_s34_dn" parent="menu_bao_cao_tonghop" sequence="80" />
+		<menuitem name="Sổ chi tiết tài khoản theo đối tượng" action="bao_cao.open_bao_cao_so_chi_tiet_tai_khoan_theo_doi_tuong_tham_so_form" id="menu_bao_cao_so_chi_tiet_tai_khoan_theo_doi_tuong" parent="menu_bao_cao_tonghop" sequence="85" />
+		<menuitem name="Sổ chi tiết tài khoản theo đối tượng tập hợp chi phí và khoản mục chi phí" action="bao_cao.open_bao_cao_so_chi_tiet_tk_theo_doi_tuong_va_chi_phi_tham_so_form" id="menu_bao_cao_so_chi_tiet_tk_theo_doi_tuong_va_chi_phi" parent="menu_bao_cao_tonghop" sequence="115" /> -->
+		<!-- EndRegion -->
+		<!-- Region BÁO CÁO/Tồn kho -->
+		<!-- <menuitem id="menu_bao_cao_kho" name="Kho" sequence="25" parent="menu_bao_cao" />
+		<menuitem name="Thẻ kho (Số lô, hạn sử dụng)" action="bao_cao.open_bao_cao_the_kho_tham_so_form" id="menu_bao_cao_the_kho" parent="menu_bao_cao_kho" sequence="45" />
+		<menuitem name="Báo cáo tiến độ sản xuất" action="bao_cao.open_bao_cao_bao_cao_tien_do_san_xuat_tham_so_form" id="menu_bao_cao_bao_cao_tien_do_san_xuat" parent="menu_bao_cao_kho" sequence="25" />
+		<menuitem name="S10 DN Sổ chi tiết vật liệu công cụ" action="bao_cao.open_bao_cao_s10_dn_so_chi_tiet_vat_lieu_cong_cu_tham_so_form" id="menu_bao_cao_s10_dn_so_chi_tiet_vat_lieu_cong_cu" parent="menu_bao_cao_kho" sequence="15" />
+		<menuitem name="Tổng hợp tồn kho" action="bao_cao.open_bao_cao_tong_hop_ton_kho_tham_so_form" id="menu_bao_cao_tong_hop_ton_kho" parent="menu_bao_cao_kho" sequence="0" />
+		<menuitem name="Sổ chi tiết vật tư hàng hóa" action="bao_cao.open_bao_cao_so_chi_tiet_vat_tu_hang_hoa_tham_so_form" id="menu_bao_cao_so_chi_tiet_vat_tu_hang_hoa" parent="menu_bao_cao_kho" sequence="20" /> -->
+		<!-- Region BÁO CÁO/Công cụ dụng cụ -->
+		<!-- <menuitem id="menu_bao_cao_cong_cu_dung_cu" name="Công cụ dụng cụ" sequence="30" parent="menu_bao_cao" />
+		<menuitem name="Sổ theo dõi công cụ dụng cụ" action="bao_cao.open_bao_cao_so_theo_doi_cong_cu_dung_cu_tham_so_form" id="menu_bao_cao_so_theo_doi_cong_cu_dung_cu" parent="menu_bao_cao_cong_cu_dung_cu" sequence="0" /> -->
+		<!-- Region BÁO CÁO/Tài sản cố định -->
+		<!-- <menuitem id="menu_bao_cao_tai_san_co_dinh_chinh" name="Tài sản cố định" sequence="35" parent="menu_bao_cao" />
+		<menuitem name="Sổ tài sản cố định" action="bao_cao.open_bao_cao_so_tai_san_co_dinh_tham_so_form" id="menu_bao_cao_so_tai_san_co_dinh" parent="menu_bao_cao_tai_san_co_dinh_chinh" sequence="5" />
+		<menuitem name="S21 DN Sổ tài sản cố định" action="bao_cao.open_bao_cao_s21_dn_so_tai_san_co_dinh_tham_so_form" id="menu_bao_cao_s21_dn_so_tai_san_co_dinh" parent="menu_bao_cao_tai_san_co_dinh_chinh" sequence="0" /> -->
+		<!-- Báo cáo / Tiền lương -->
+		<!-- <menuitem id="menu_bao_cao_tien_luong" name="Tiền lương" sequence="36" parent="menu_bao_cao" /> -->
+		<!-- Báo cáo/ Tiền lương / Bảng tổng hợp thanh toán tiền lương (Bảng lương cố định) -->
+		<!-- <menuitem name="Bảng tổng hợp thanh toán tiền lương (Bảng lương cố định)" action="bao_cao.open_bao_cao_bang_tong_hop_thanh_toan_tien_luong_bang_luong_co_dinh_tham_so_form" id="menu_bao_cao_bang_tong_hop_thanh_toan_tien_luong_bang_luong_co_dinh" parent="menu_bao_cao_tien_luong" sequence="0" /> -->
+		<!-- Báo cáo/ Tiền lương / Bảng tổng hợp thanh toán tiền lương (Bảng lương thời gian) -->
+		<!-- <menuitem name="Bảng tổng hợp thanh toán tiền lương (Bảng lương thời gian)" action="bao_cao.open_bao_cao_bang_tong_hop_thanh_toan_tien_luong_bang_luong_thoi_gian_tham_so_form" id="menu_bao_cao_bang_tong_hop_thanh_toan_tien_luong_bang_luong_thoi_gian" parent="menu_bao_cao_tien_luong" sequence="5" /> -->
+		<!-- Báo cáo/ Tiền lương/ Báo cáo tổng hợp lương nhân viên -->
+		<!-- <menuitem name="Báo cáo tổng hợp lương nhân viên" action="bao_cao.open_bao_cao_tong_hop_luong_nhan_vien_tham_so_form" id="menu_bao_cao_tong_hop_luong_nhan_vien" parent="menu_bao_cao_tien_luong" sequence="10" /> -->
+		<!-- end báo cáo / Tiền lương -->
+		<!-- Region BÁO CÁO/Thuế -->
+		<!-- <menuitem id="menu_bao_cao_thue" name="Thuế" sequence="45" parent="menu_bao_cao" />
+		<menuitem name="01/TNDN: Bảng kê thu mua hàng hóa, dịch vụ mua vào không có hóa đơn" action="bao_cao.open_bao_cao_bang_ke_thu_mua_hang_tham_so_form" id="menu_bao_cao_bang_ke_thu_mua_hang" parent="menu_bao_cao_thue" sequence="5" />
+		<menuitem name="Bảng tổng hợp quyết toán thuế GTGT năm" action="bao_cao.open_bao_cao_bang_tong_hop_quyet_toan_thue_gtgt_nam_tham_so_form" id="menu_bao_cao_bang_tong_hop_quyet_toan_thue_gtgt_nam" parent="menu_bao_cao_thue" sequence="10" />
+		<menuitem name="Bảng kê hóa đơn, chứng từ hàng hóa, dịch vụ mua vào(Mẫu quản trị)" action="bao_cao.open_bao_cao_bang_ke_hoa_don_chung_tu_tham_so_form" id="menu_bao_cao_bang_ke_hoa_don_chung_tu_hang_hoa_dich_vu_mua_vao_mau_quan_tri" parent="menu_bao_cao_thue" sequence="15" />
+		<menuitem name="Bảng kê hóa đơn, chứng từ hàng hóa, dịch vụ bán ra(Mẫu quản trị)" action="bao_cao.open_bao_cao_bang_ke_hoa_don_chung_tu_ban_ra_tham_so_form" id="menu_bao_cao_bang_ke_hoa_don_chung_tu_hang_hoa_dich_vu_ban_ra_mau_quan_tri" parent="menu_bao_cao_thue" sequence="20" /> -->
+		<!-- EndRegion -->
+		<!-- Báo cáo / Thủ quỹ -->
+		<!-- <menuitem id="menu_bao_cao_thu_quy" name="Thủ quỹ" sequence="65" parent="menu_bao_cao" />
+		<menuitem name="Sổ quỹ tiền mặt" action="bao_cao.open_bao_cao_so_quy_tien_mat_tham_so_form" id="menu_bao_cao_so_quy_tien_mat" parent="menu_bao_cao_thu_quy" sequence="0" /> -->
+		<!-- EndRegion -->
+		<!-- Báo cáo / Thủ kho-->
+		<!-- <menuitem id="menu_bao_cao_thu_kho" name="Thủ kho" sequence="70" parent="menu_bao_cao" />
+		<menuitem name="Tổng hợp tồn kho theo lô" action="bao_cao.open_bao_cao_tong_hop_ton_kho_theo_lo_tham_so_form" id="menu_bao_cao_tong_hop_ton_kho_theo_lo" parent="menu_bao_cao_thu_kho" sequence="0" /> -->
+		<!-- EndRegion -->
+		<!-- Region DANH MỤC -->
+		<menuitem name="Danh mục" id="menu_danh_muc" web_icon="fa-list-ul" sequence="93" />
+		<!--vũ -->
+		<!-- Danh mục / Tài khoản -->
+		<menuitem id="menu_danh_muc_tai_khoan" name="Tài khoản" sequence="0" parent="menu_danh_muc" />
+		<!--  Danh mục / Tài khoản / Hệ thống tài khoản-->
+		<menuitem name="Hệ thống tài khoản" action="danh_muc.open_menu_danh_muc_he_thong_tai_khoan" id="menu_danh_muc_he_thong_tai_khoan" parent="menu_danh_muc_tai_khoan" sequence="0" />
+		<!--  Danh mục / Tài khoản / Định khoản tự động-->
+		<menuitem name="Định khoản tự động" action="danh_muc.open_menu_danh_muc_dinh_khoan_tu_dong" id="menu_danh_muc_dinh_khoan_tu_dong" parent="menu_danh_muc_tai_khoan" sequence="15" />
+		<!--  Danh mục / Tài khoản / Tài khoản ngầm định-->
+		<menuitem name="Tài khoản ngầm định" action="danh_muc.open_menu_danh_muc_tai_khoan_ngam_dinh" id="menu_danh_muc_tai_khoan_ngam_dinh" parent="menu_danh_muc_tai_khoan" sequence="10" />
+		<!--vu Danh mục/ Tài khoản kết chuyển/-->
+		<menuitem name="Tài khoản kết chuyển" action="danh_muc.open_menu_danh_muc_tai_khoan_ket_chuyen" id="menu_danh_muc_tai_khoan_ket_chuyen" parent="menu_danh_muc_tai_khoan" sequence="5" />
+		<menuitem name="Cơ cấu tổ chức" action="danh_muc.open_menu_danh_muc_to_chuc" id="menu_danh_muc_to_chuc" parent="menu_danh_muc" sequence="5" />
+		<menuitem name="Loại tài sản cố định" action="danh_muc.open_menu_danh_muc_loai_tai_san_co_dinh" id="menu_danh_muc_loai_tai_san_co_dinh" parent="menu_danh_muc" sequence="25" />
+		<menuitem name="Loại công cụ dụng cụ" action="danh_muc.open_menu_danh_muc_loai_cong_cu_dung_cu" id="menu_danh_muc_loai_cong_cu_dung_cu" parent="menu_danh_muc" sequence="20" />
+		<!--Danh mục/ngân hàng -->
+		<menuitem id="menu_danh_muc_ngan_hang_tong" name="Ngân hàng" parent="menu_danh_muc" sequence="50" />
+		<menuitem name="Ngân hàng" action="danh_muc.open_menu_danh_muc_ngan_hang" id="menu_danh_muc_ngan_hang" parent="menu_danh_muc_ngan_hang_tong" sequence="0" />
+		<menuitem name="Tài khoản ngân hàng" action="danh_muc.open_menu_danh_muc_tai_khoan_ngan_hang" id="menu_danh_muc_tai_khoan_ngan_hang" parent="menu_danh_muc_ngan_hang_tong" sequence="5" />
+		<!-- end-->
+		<!--danh mục/công trình-->
+		<menuitem id="menu_danh_muc_cong_trinh_tong" name="Công trình" parent="menu_danh_muc" sequence="45" />
+		<menuitem name="Công trình" action="danh_muc.open_menu_danh_muc_cong_trinh" id="menu_danh_muc_cong_trinh" parent="menu_danh_muc_cong_trinh_tong" sequence="0" />
+		<menuitem name="Loại công trình" action="danh_muc.open_menu_danh_muc_loai_cong_trinh" id="menu_danh_muc_loai_cong_trinh" parent="menu_danh_muc_cong_trinh_tong" sequence="5" />
+		<!--end-->
+		<!--vu-end-->
+		<menuitem id="menu_danh_muc_vat_tu_hang_hoa" name="Vật tư hàng hóa" parent="menu_danh_muc" sequence="30" />
+		<menuitem name="Vật tư hàng hóa" action="danh_muc.open_menu_danh_muc_vat_tu_hang_hoa" id="menu_danh_muc_vat_tu_hang_hoa_vthh" parent="menu_danh_muc_vat_tu_hang_hoa" sequence="0" />
+		<menuitem name="Kho" action="danh_muc.open_menu_danh_muc_kho" id="menu_danh_muc_kho" parent="menu_danh_muc_vat_tu_hang_hoa" sequence="5" />
+		<menuitem name="Nhóm vật tư, hàng hóa, dịch vụ" action="danh_muc.open_menu_danh_muc_nhom_vat_tu_hang_hoa_dich_vu" id="menu_danh_muc_nhom_vat_tu_hang_hoa_dich_vu" parent="menu_danh_muc_vat_tu_hang_hoa" sequence="10" />
+		<menuitem name="Đơn vị tính" action="danh_muc.open_menu_danh_muc_don_vi_tinh" id="menu_danh_muc_don_vi_tinh" parent="menu_danh_muc_vat_tu_hang_hoa" sequence="15" />
+		<!-- Region DANH MỤC/Sản phẩm -->
+		<menuitem id="menu_danh_muc_doi_tuong" name="Đối tượng" parent="menu_danh_muc" sequence="10" />
+		<menuitem name="Nhà cung cấp" action="danh_muc.open_menu_danh_muc_nha_cung_cap" id="menu_danh_muc_nha_cung_cap" parent="menu_danh_muc_doi_tuong" sequence="5" />
+		<menuitem name="Nhân viên" action="danh_muc.open_menu_danh_muc_nhan_vien" id="menu_danh_muc_nhan_vien" parent="menu_danh_muc_doi_tuong" sequence="10" />
+		<!--vũ đối tượng-->
+		<menuitem name="Khách hàng" action="danh_muc.open_menu_danh_muc_doi_tuong" id="menu_danh_muc_khach_hang" parent="menu_danh_muc_doi_tuong" sequence="0" />
+		<menuitem name="Nhóm KH, NCC" action="danh_muc.open_menu_danh_muc_nhom_khach_hang_nha_cung_cap" id="menu_danh_muc_nhom_khach_hang_nha_cung_cap" parent="menu_danh_muc_doi_tuong" sequence="15" />
+		<!-- Danh mục / Lương nhân viên -->
+		<menuitem id="menu_danh_muc_luong_nhan_vien" name="Lương nhân viên" parent="menu_danh_muc" sequence="11" groups="base.group_no_one" />
+		<menuitem name="Ký hiệu chấm công" action="danh_muc.open_menu_danh_muc_ky_hieu_cham_cong_tien_luong" id="menu_danh_muc_ky_hieu_cham_cong_tien_luong" parent="menu_danh_muc_luong_nhan_vien" sequence="5" />
+		<menuitem name="Biểu tính thuế thu nhập" action="danh_muc.open_menu_danh_muc_bieu_tinh_thue_thu_nhap_tien_luong" id="menu_danh_muc_bieu_tinh_thue_thu_nhap_tien_luong" parent="menu_danh_muc_luong_nhan_vien" sequence="10" />
+		<menuitem name="Đối tượng tập hợp chi phí" action="danh_muc.open_menu_danh_muc_doi_tuong_tong_hop_chi_phi" id="menu_danh_muc_doi_tuong_tong_hop_chi_phi" parent="menu_danh_muc" sequence="35" />
+		<menuitem name="Khoản mục chi phí" action="danh_muc.open_menu_danh_muc_khoan_muc_cp" id="menu_danh_muc_khoan_muc_cp" parent="menu_danh_muc" sequence="40" />
+		<!-- Danh mục / khác -->
+		<menuitem name="Khác" id="menu_danh_muc_khac" parent="menu_danh_muc" sequence="55" />
+		<!-- Danh mục / khác / điều khoản thanh toán -->
+		<menuitem name="Điều khoản thanh toán" action="danh_muc.open_menu_danh_muc_dieu_khoan_thanh_toan" id="menu_danh_muc_dieu_khoan_thanh_toan" parent="menu_danh_muc_khac" sequence="0" />
+		<!-- Danh mục / khác / mã thống kê-->
+		<menuitem name="Mã thống kê" action="danh_muc.open_menu_danh_muc_ma_thong_ke" id="menu_danh_muc_ma_thong_ke" parent="menu_danh_muc_khac" sequence="1" />
+		<!-- Danh mục / khác / Loại chứng từ -->
+		<menuitem name="Loại chứng từ" action="danh_muc.open_menu_danh_muc_loai_chung_tu" id="menu_danh_muc_loai_chung_tu" parent="menu_danh_muc_khac" sequence="5" />
+		<!-- Danh mục / khác / Loại tiền-->
+		<menuitem name="Loại tiền" action="danh_muc.open_menu_danh_muc_loai_tien" id="menu_danh_muc_loai_tien" parent="menu_danh_muc_khac" sequence="4" />
+		<!-- Danh mục / khác / Biểu thuế tiêu thụ đặc biệt-->
+		<menuitem name="Biểu thuế tiêu thụ đặc biệt" action="danh_muc.open_menu_danh_muc_bieu_thue_tieu_thu_dac_biet" id="menu_danh_muc_bieu_thue_tieu_thu_dac_biet" parent="menu_danh_muc_khac" sequence="2" />
+		<!-- Danh mục / khác / Biểu thuế tài nguyên-->
+		<menuitem name="Biểu thuế tài nguyên" action="danh_muc.open_menu_danh_muc_bieu_thue_tai_nguyen" id="menu_danh_muc_bieu_thue_tai_nguyen" parent="menu_danh_muc_khac" sequence="3" />
+		<!-- EndRegion -->
+		<!-- Region HỆ THỐNG -->
+		<menuitem name="Hệ thống" id="menu_he_thong" web_icon="fa-cogs" sequence="99" />
+		<!-- <menuitem name="Vai trò" action="he_thong.open_menu_phan_quyen" id="menu_he_thong_vai_tro" parent="menu_he_thong" sequence="5" /> -->
+		<menuitem name="Chọn chi nhánh làm việc" action="he_thong.open_he_thong_chon_chi_nhanh_lam_viec_tham_so_form" id="menu_he_thong_chon_chi_nhanh_lam_viec" parent="menu_he_thong" sequence="15" />
+		<menuitem name="Ngày hạch toán" action="he_thong.open_he_thong_ngay_hach_toan_tham_so_form" id="menu_he_thong_ngay_hach_toan" parent="menu_he_thong" sequence="20" />
+		<menuitem name="Quản lý người dùng" action="he_thong.open_menu_he_thong_quan_ly_nguoi_dung" id="menu_he_thong_quan_ly_nguoi_dung" parent="menu_he_thong" sequence="25" />
+		<menuitem name="Vai trò và quyền hạn" action="he_thong.open_menu_he_thong_vai_tro_va_quyen_han" id="menu_he_thong_vai_tro_va_quyen_han" parent="menu_he_thong" sequence="30" />
+		<menuitem name="Quản lý mẫu in" action="bao_cao.open_menu_bao_cao_quan_ly_mau_in" id="menu_qlmi" parent="menu_he_thong" sequence="40" groups="base.group_no_one" />
+		<menuitem name="Tùy chọn" action="he_thong.open_menu_he_thong_tuy_chon" id="menu_he_thong_tuy_chon" parent="menu_he_thong" sequence="99" />
+		<!-- EndRegion -->
+		<!-- Hợp đồng -->
+		<menuitem name="Hợp đồng" id="menu_hop_dong" web_icon="fa-pencil" sequence="86" />
+		<menuitem name="Hợp đồng bán" action="sale_ex.open_menu_sale_ex_hop_dong_ban" id="menu_sale_ex_hop_dong_ban" parent="menu_hop_dong" sequence="0" />
+	</data>
+</odoo>

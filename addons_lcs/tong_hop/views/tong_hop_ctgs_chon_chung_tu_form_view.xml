@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tong_hop_ctgs_chon_chung_tu_form_tham_so_form" model="ir.ui.view">
+            <field name="name">tong.hop.ctgs.chon.chung.tu.form.form</field>
+            <field name="model">tong.hop.ctgs.chon.chung.tu.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn chứng từ" cloudify_js="ctgs_chon_chung_tu_form_view">
+                    <sheet>
+                        <group col="6">
+                             <group colspan="2" col="2">
+                                <field name="LOAI_CHUNG_TU_ID" colspan="2"/>
+                            </group>
+                            <group colspan="6" col="12">
+                                <field name="KHOANG_THOI_GIAN" string="Khoảng TG" colspan="4"/>           
+                                <field name="TU_NGAY" colspan="3"/>
+                                <field name="DEN_NGAY" colspan="3"/>
+                                <button name="btn_lay_du_lieu" string="Lấy dữ liệu" class="btn btn-primary" colspan="2"/>
+                                 <field name="LAY_DU_LIEU_JSON" invisible="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Chứng từ gốc">
+                                <field name="TONG_HOP_CTGS_CHON_CHUNG_TU_CHI_TIET_FORM_IDS" mode="tree">
+                                  <tree editable="bottom" report="true" create="false">
+                                    <field name="NGAY_HACH_TOAN"/>
+                                    <field name="NGAY_CHUNG_TU"/>
+                                    <field name="SO_CHUNG_TU"/>
+                                    <field name="DIEN_GIAI"/>
+                                    <field name="TK_NO_ID" string="TK Nợ"/>
+                                    <field name="TK_CO_ID" string="TK Có"/>
+                                    <field name="SO_TIEN"/>
+                                    <field name="LOAI_CHUNG_TU"/>
+                                    <field name="ID_GOC" invisible="1"/>
+                                    <field name="MODEL_GOC" invisible="1"/>
+                                    <field name="AUTO_SELECT" invisible="1"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                        <!-- <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="btn btn-primary" context="{'discard_changes': True}"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer> -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_tong_hop_ctgs_chon_chung_tu_form_tham_so_form" model="ir.actions.act_window">
+            <field name="name">CTGS chọn chứng từ form</field>
+            <field name="res_model">tong.hop.ctgs.chon.chung.tu.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_tong_hop_ctgs_chon_chung_tu_form_tham_so_form"/>
+        </record>
+
+        <record id="action_open_tong_hop_ctgs_chon_chung_tu_form_form" model="ir.actions.act_window">
+            <field name="name">CTGS chọn chứng từ form</field>
+            <field name="res_model">tong.hop.ctgs.chon.chung.tu.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

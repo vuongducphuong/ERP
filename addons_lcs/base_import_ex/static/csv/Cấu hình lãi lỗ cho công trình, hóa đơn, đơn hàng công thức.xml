@@ -1,0 +1,1772 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+<SYSReportFormula>
+  <ItemDetailID>03CEEDA8-E049-4895-AAE9-00DBDA510046</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>11</AccountNumber>
+  <CorrespondingAccountNumber>627</CorrespondingAccountNumber>
+  <SortOrder>37</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>756B9ED9-4790-4367-9E7B-011FF4419E18</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>OtherReceipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>711</AccountNumber>
+  <CorrespondingAccountNumber>911</CorrespondingAccountNumber>
+  <SortOrder>8</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>7C5C7AE2-1ECD-47C7-A7A7-02BC5A65C2A0</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>FAC58707-317B-41C4-8346-1511918AE361</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>635</AccountNumber>
+  <SortOrder>25</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>9279BEAB-0CBE-4585-B763-068D0F79CB03</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>SaleReceipt</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <SortOrder>3</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>2A1A69F6-F1B8-47DC-9B43-0851D883D0A1</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>CB7229FE-8FF6-4777-9D1F-958A1F613AEB</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>911</AccountNumber>
+  <CorrespondingAccountNumber>511</CorrespondingAccountNumber>
+  <SortOrder>2</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>6502F572-D9AF-4368-AEF6-08BE1AE0A04B</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>FAC58707-317B-41C4-8346-1511918AE361</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>635</AccountNumber>
+  <SortOrder>21</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>995E9164-298C-4529-9887-08C9B99EA602</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>Receipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <SortOrder>1</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>181EE55A-98AF-48A3-A96B-09126A6ABDDA</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>11</AccountNumber>
+  <CorrespondingAccountNumber>141</CorrespondingAccountNumber>
+  <SortOrder>32</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>78864432-4C37-4E66-BC73-092EB6D473E7</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>OtherExpenditure</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>635</AccountNumber>
+  <SortOrder>27</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>5DCD5130-4AC5-4879-ABE3-0C47F77A4E97</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>FECDF735-877F-43C1-83E0-B4E6169EF848</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>632</AccountNumber>
+  <SortOrder>16</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>AD2E3C9E-1103-4FB5-8AB3-0CCE62DA1504</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>EBBDBEEC-CDB3-4106-9930-F67D7FE84BEC</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>632</AccountNumber>
+  <SortOrder>17</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>E1EB1149-459C-4083-B716-0EE7627B74D7</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>OtherExpenditure</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>811</AccountNumber>
+  <SortOrder>26</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>BAA165A6-7887-42D5-85FB-104A4C62A66E</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>622</AccountNumber>
+  <CorrespondingAccountNumber>3388</CorrespondingAccountNumber>
+  <SortOrder>24</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>E0330B77-2F64-4A9C-8600-12BA8BE547F4</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>OtherExpenditure</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>811</AccountNumber>
+  <SortOrder>28</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>E4DD7A0E-9D0B-4E2A-B795-13FAB70284E7</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>11</AccountNumber>
+  <CorrespondingAccountNumber>622</CorrespondingAccountNumber>
+  <SortOrder>35</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>31C64317-3FFB-473E-A284-14DF1005980D</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>OtherExpenditure</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>635</AccountNumber>
+  <SortOrder>29</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>304A7FC9-8028-4E93-8E78-14FC82A5C08F</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>641</AccountNumber>
+  <CorrespondingAccountNumber>3388</CorrespondingAccountNumber>
+  <SortOrder>27</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>D77864A2-A318-4589-9CA0-150CE1D909D8</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>642</AccountNumber>
+  <CorrespondingAccountNumber>331</CorrespondingAccountNumber>
+  <SortOrder>13</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>72108EC4-AF0F-4C93-B761-160D12C11748</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>CB7229FE-8FF6-4777-9D1F-958A1F613AEB</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <CorrespondingAccountNumber>521</CorrespondingAccountNumber>
+  <SortOrder>5</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>1A8AB04C-5385-412C-A66B-16F50F87517D</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>SaleFund</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>632</AccountNumber>
+  <SortOrder>17</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>DAC9D096-597D-4E7F-8565-16FB0BE9825B</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>501D6139-3ABB-422B-8AB4-1BFF60B8EA8F</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>911</AccountNumber>
+  <CorrespondingAccountNumber>515</CorrespondingAccountNumber>
+  <SortOrder>3</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>007199DA-2FA3-4FB4-B5F9-1D8B15E83715</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>501D6139-3ABB-422B-8AB4-1BFF60B8EA8F</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>711</AccountNumber>
+  <SortOrder>2</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>2135CE4A-BA92-4B03-BD19-1E996572D9C5</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>OtherReceipt</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>711</AccountNumber>
+  <SortOrder>6</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>16373680-4E01-4113-A3D8-1EA4BDE82ACC</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>861F2086-DEA8-4086-B9F6-C6EA0176CBAE</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>811</AccountNumber>
+  <SortOrder>24</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>4D83978C-FCDD-48F9-9A5A-1FC2EAE77A48</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>SaleFund</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>632</AccountNumber>
+  <SortOrder>16</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>517AD560-A7B5-45F1-98F6-21CA7FD4436A</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>FAC58707-317B-41C4-8346-1511918AE361</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>811</AccountNumber>
+  <SortOrder>20</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>03A1EF95-3F0D-40CC-9281-237233EDAC1A</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>OtherReceipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>515</AccountNumber>
+  <CorrespondingAccountNumber>911</CorrespondingAccountNumber>
+  <SortOrder>7</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>1BE5FA12-6C9A-4DD0-A89D-259AE71448F5</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>501D6139-3ABB-422B-8AB4-1BFF60B8EA8F</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>711</AccountNumber>
+  <CorrespondingAccountNumber>911</CorrespondingAccountNumber>
+  <SortOrder>8</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>32F5FCE7-C3B8-4760-9723-26280885D775</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>ReduceReceipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>521</AccountNumber>
+  <SortOrder>11</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>86CB173A-4F99-41DD-A068-2632DFE857FC</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>501D6139-3ABB-422B-8AB4-1BFF60B8EA8F</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>515</AccountNumber>
+  <SortOrder>5</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>79B594F2-965C-44BA-B320-29B20C55A956</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>11</AccountNumber>
+  <CorrespondingAccountNumber>141</CorrespondingAccountNumber>
+  <SortOrder>33</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>0DE17A81-E3A8-4176-BA71-2C7A0BFD7B23</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>521</AccountNumber>
+  <SortOrder>14</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>7A227D70-EE38-46CC-863D-2D7AE152998B</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>OtherExpenditure</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>811</AccountNumber>
+  <SortOrder>28</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>646B59FC-41E5-4168-B39E-3023FA5F7D31</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>SaleReceipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <CorrespondingAccountNumber>521</CorrespondingAccountNumber>
+  <SortOrder>5</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>D559A66F-B068-4048-9AAE-324E298F1A75</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>621</AccountNumber>
+  <CorrespondingAccountNumber>3388</CorrespondingAccountNumber>
+  <SortOrder>17</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>BA089D87-31E4-4BD0-A99A-328104D274A6</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>711</AccountNumber>
+  <SortOrder>10</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>7738F4FF-7074-4B4E-B4D2-33B63D252D2E</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>962DF8FD-DE52-46E5-AB5C-F3D4F423742E</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>641</AccountNumber>
+  <SortOrder>22</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>BFA2EFA2-14EC-463D-8D46-34E9CCE0006F</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>515</AccountNumber>
+  <SortOrder>3</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>F1E59AD6-CA42-4FC4-ADC6-36A5FDAEF46A</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>11F40C3F-879A-4138-8CFB-CF3224D175F5</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>632</AccountNumber>
+  <SortOrder>17</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>611B55CB-3DA0-44DE-B6A3-36EF5201160F</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>632</AccountNumber>
+  <CorrespondingAccountNumber>331</CorrespondingAccountNumber>
+  <SortOrder>14</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>6FE074A1-9B9D-4C5F-BA4A-3823171E08FD</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>141</AccountNumber>
+  <CorrespondingAccountNumber>621</CorrespondingAccountNumber>
+  <SortOrder>44</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>A0E5D122-F5CE-420D-B494-390B4EEFC793</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>861F2086-DEA8-4086-B9F6-C6EA0176CBAE</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>642</AccountNumber>
+  <SortOrder>23</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>411E8452-B615-41B9-9A9F-3A63CC6BF217</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>11F40C3F-879A-4138-8CFB-CF3224D175F5</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>632</AccountNumber>
+  <SortOrder>16</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>FECAE9FA-E7AC-4534-B80A-3AF45E68DB4F</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>SaleExpenditure</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>641</AccountNumber>
+  <SortOrder>19</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>3DDF2332-8AEA-4C0D-A558-3B14F35C618D</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>Receipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <SortOrder>1</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>E580894E-275E-4F53-BBFF-3C85552457F0</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>811</AccountNumber>
+  <CorrespondingAccountNumber>331</CorrespondingAccountNumber>
+  <SortOrder>16</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>8390134B-0990-4514-8C43-3D6E44CBDD1B</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>141</AccountNumber>
+  <CorrespondingAccountNumber>627</CorrespondingAccountNumber>
+  <SortOrder>47</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>40F1C31A-A10D-4FD8-80ED-3DEA8EA8FF52</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>515</AccountNumber>
+  <CorrespondingAccountNumber>911</CorrespondingAccountNumber>
+  <SortOrder>13</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>DDF0F521-21C9-4C71-BA1A-3E0E27C7451B</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>Receipt</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <CorrespondingAccountNumber>333</CorrespondingAccountNumber>
+  <SortOrder>4</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>88DABC36-571C-42E0-B345-3E8D68B57D5F</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>SaleExpenditure</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>641</AccountNumber>
+  <SortOrder>18</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>42F651B6-A0C4-4545-8064-3F6D704E6756</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>641</AccountNumber>
+  <CorrespondingAccountNumber>331</CorrespondingAccountNumber>
+  <SortOrder>8</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>9F4CC61C-7036-4AA0-80F5-3FE1F7435AC3</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>623</AccountNumber>
+  <CorrespondingAccountNumber>331</CorrespondingAccountNumber>
+  <SortOrder>6</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>587430A0-262B-45ED-8E71-45492E155F8D</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>861F2086-DEA8-4086-B9F6-C6EA0176CBAE</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>635</AccountNumber>
+  <SortOrder>21</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>638FC2D0-F661-45CD-BBD3-4598B55D8869</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>635</AccountNumber>
+  <CorrespondingAccountNumber>3388</CorrespondingAccountNumber>
+  <SortOrder>30</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>E8895AAB-CF38-4768-AF74-470DA7350B9A</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>OtherExpenditure</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>811</AccountNumber>
+  <SortOrder>26</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>716EBBF7-114D-44C9-BDC5-477AE9493236</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>FAC58707-317B-41C4-8346-1511918AE361</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>641</AccountNumber>
+  <SortOrder>18</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>F79AAB10-410D-44F6-9F89-4789C8A23DE6</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>11</AccountNumber>
+  <CorrespondingAccountNumber>635</CorrespondingAccountNumber>
+  <SortOrder>39</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>AEEC98FF-0B49-438C-A778-47CE67DBF4C3</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>ReduceReceipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>521</AccountNumber>
+  <SortOrder>11</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>04A153CF-7066-4B38-9A6B-4826A5D91FCC</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>SaleExpenditure</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>641</AccountNumber>
+  <SortOrder>19</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>A45EDA52-1601-4A03-AD38-49EBA6FD1258</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>SaleReceipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <CorrespondingAccountNumber>911</CorrespondingAccountNumber>
+  <SortOrder>4</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>284FDAAE-6DB9-444D-A7A4-4BB7970DFBCC</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>711</AccountNumber>
+  <CorrespondingAccountNumber>911</CorrespondingAccountNumber>
+  <SortOrder>12</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>156475A2-C9D3-4F6F-8FAD-4C2947BA1AD5</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>OtherExpenditure</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>635</AccountNumber>
+  <SortOrder>27</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>2487462E-1A57-423C-8B8B-4E5F11A7FC82</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>SaleFund</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>632</AccountNumber>
+  <SortOrder>17</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>D30DE86B-C6F9-4D3F-8F65-512F5332B689</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>11</AccountNumber>
+  <CorrespondingAccountNumber>621</CorrespondingAccountNumber>
+  <SortOrder>34</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>8E9FFF3C-921A-47E0-BA1D-5357C1C086B7</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>5211</AccountNumber>
+  <SortOrder>15</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>C8186EC3-D64A-47F3-AC14-54D89BE24CAD</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>FF38DE4F-797C-4BE9-96FD-2939067C3DCE</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>5211</AccountNumber>
+  <SortOrder>2</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>444AC9CE-15B2-41EF-9965-559ED235C952</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>OtherReceipt</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>911</AccountNumber>
+  <CorrespondingAccountNumber>711</CorrespondingAccountNumber>
+  <SortOrder>4</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>59102879-2CE2-4578-B4E8-56399A656B9D</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>501D6139-3ABB-422B-8AB4-1BFF60B8EA8F</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>515</AccountNumber>
+  <CorrespondingAccountNumber>911</CorrespondingAccountNumber>
+  <SortOrder>8</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>774A8D5B-ADD7-4E34-BE42-58AED3CD94FA</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>SaleReceipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <SortOrder>1</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>DFB4CAA7-7BAD-49B5-87E2-5A549E133B65</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>627</AccountNumber>
+  <CorrespondingAccountNumber>331</CorrespondingAccountNumber>
+  <SortOrder>7</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>390E91D7-CD5C-40EC-9B97-5B3F5D83CDE8</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>FAC58707-317B-41C4-8346-1511918AE361</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>641</AccountNumber>
+  <SortOrder>22</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>D8317816-5111-4C75-AEB2-5BABED911F1B</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>SaleExpenditure</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>641</AccountNumber>
+  <SortOrder>18</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>ED21D4AC-E471-48F8-96FA-5E889C83CAF7</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>SaleFund</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>632</AccountNumber>
+  <SortOrder>16</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>DA087EBC-FA82-49FB-BD2E-5ED35EF8CCBA</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>55B5E4AC-44DE-480C-BBDF-0AAB726E5C1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <SortOrder>1</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>F74FB6E3-5953-4B65-A162-60597F4A7143</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>OtherReceipt</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>515</AccountNumber>
+  <SortOrder>5</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>0B1A5C82-65BF-4A53-9F17-60A44C97762D</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>911</AccountNumber>
+  <CorrespondingAccountNumber>515</CorrespondingAccountNumber>
+  <SortOrder>6</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>052F943C-A432-491C-91FD-61EB4CF26873</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>962DF8FD-DE52-46E5-AB5C-F3D4F423742E</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>642</AccountNumber>
+  <SortOrder>23</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>19EC79B0-0661-480E-BA69-62CFD17C723A</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>OtherReceipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>711</AccountNumber>
+  <SortOrder>2</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>54A996A4-CFA8-40EC-B70B-660A82DB601D</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>EBBDBEEC-CDB3-4106-9930-F67D7FE84BEC</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>632</AccountNumber>
+  <SortOrder>16</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>B0D28047-3374-445B-84E1-6AA7115FFDFA</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>ReduceReceipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>521</AccountNumber>
+  <SortOrder>11</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>14EDED40-1C9C-404B-AEB0-6B617CDA6086</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>ManagementExpenditure</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>642</AccountNumber>
+  <SortOrder>22</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>837FF0F1-A01B-4607-9471-6CCE8D3B6DA5</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <SortOrder>1</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>837C354C-43E0-40E6-8086-6D392D2C4C31</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>Receipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>515</AccountNumber>
+  <SortOrder>3</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>1FB53215-205A-4810-8197-7078842CA875</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>Receipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>711</AccountNumber>
+  <SortOrder>2</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>F12D54CD-A16D-4137-A23D-7140651DEEDF</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>911</AccountNumber>
+  <CorrespondingAccountNumber>511</CorrespondingAccountNumber>
+  <SortOrder>4</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>D0C4DD25-2EA9-4F60-A4CE-730F3F782091</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>ManagementExpenditure</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>642</AccountNumber>
+  <SortOrder>22</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>7BAFEC73-8FEF-4DC2-97D2-7317971A7F07</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>861F2086-DEA8-4086-B9F6-C6EA0176CBAE</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>641</AccountNumber>
+  <SortOrder>18</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>04495841-EFB7-41C3-A8F8-73D65C52FAFA</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>Receipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>515</AccountNumber>
+  <SortOrder>3</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>D6E6F1B9-7C83-42B4-9BE1-7689F08A7328</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>ManagementExpenditure</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>642</AccountNumber>
+  <SortOrder>23</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>5BF46266-4B15-4EC3-A5E7-76A8326CBC77</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>141</AccountNumber>
+  <CorrespondingAccountNumber>811</CorrespondingAccountNumber>
+  <SortOrder>52</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>F899E319-1ED7-487D-BD70-7717A380795F</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>ManagementExpenditure</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>642</AccountNumber>
+  <SortOrder>23</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>45CC9094-1926-4DD2-8316-776B46C3A277</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>811</AccountNumber>
+  <CorrespondingAccountNumber>3388</CorrespondingAccountNumber>
+  <SortOrder>31</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>393FFB62-75D7-4595-BC4F-78341144F5EA</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>962DF8FD-DE52-46E5-AB5C-F3D4F423742E</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>811</AccountNumber>
+  <SortOrder>20</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>B4A8D38F-AADD-4A16-8CCB-7882C4D15CEF</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>141</AccountNumber>
+  <CorrespondingAccountNumber>642</CorrespondingAccountNumber>
+  <SortOrder>51</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>CE2BD75D-2530-4E1D-8867-7B48CDDA6C5D</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>FAC58707-317B-41C4-8346-1511918AE361</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>642</AccountNumber>
+  <SortOrder>23</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>0CCC4B64-9517-4C37-9C97-7D6462AE2B41</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>OtherExpenditure</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>811</AccountNumber>
+  <SortOrder>28</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>321E3100-F981-4722-A23F-7D6E86070CE6</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>SaleFund</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>632</AccountNumber>
+  <SortOrder>17</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>B17EA665-B10E-41D7-B377-7DD50A87C885</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>623</AccountNumber>
+  <CorrespondingAccountNumber>3388</CorrespondingAccountNumber>
+  <SortOrder>25</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>6CC6627B-84F4-4ECC-BC22-840C704A62FD</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>ManagementExpenditure</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>642</AccountNumber>
+  <SortOrder>23</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>D6E504B9-6808-4D53-9755-877BF25AACD1</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>141</AccountNumber>
+  <CorrespondingAccountNumber>641</CorrespondingAccountNumber>
+  <SortOrder>50</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>E69D1938-D60C-4EA8-A46E-89CED2BF0371</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>501D6139-3ABB-422B-8AB4-1BFF60B8EA8F</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>711</AccountNumber>
+  <SortOrder>6</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>CBEC5053-4430-4F4F-B341-8A4F3352870A</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>621</AccountNumber>
+  <CorrespondingAccountNumber>331</CorrespondingAccountNumber>
+  <SortOrder>4</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>94404F36-2303-4381-8E1C-9123617579C8</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <CorrespondingAccountNumber>911</CorrespondingAccountNumber>
+  <SortOrder>8</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>1661D7C9-CA92-4485-ADEC-91A5F1DD691B</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <SortOrder>7</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>A4FF70CE-35E9-4FC7-AB57-92D1B45251E3</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>SaleExpenditure</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>641</AccountNumber>
+  <SortOrder>18</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>A4B0EAFA-1F35-4012-86BD-9390FA478602</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>11</AccountNumber>
+  <CorrespondingAccountNumber>632</CorrespondingAccountNumber>
+  <SortOrder>38</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>96E29DA8-F23E-4F4F-A54D-942105C78DF4</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>CB7229FE-8FF6-4777-9D1F-958A1F613AEB</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <SortOrder>1</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>B092E5E0-B623-46A1-9035-9648B1FBF4EA</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>711</AccountNumber>
+  <SortOrder>2</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>7F14AD11-4245-4000-9953-9D21A9B829AE</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>642</AccountNumber>
+  <CorrespondingAccountNumber>3388</CorrespondingAccountNumber>
+  <SortOrder>28</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>723E22FC-406E-4089-8330-9DDB109C55C2</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>962DF8FD-DE52-46E5-AB5C-F3D4F423742E</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>811</AccountNumber>
+  <SortOrder>24</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>C19D8BB5-3009-4DF6-826F-9F13AA0CC19E</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>Receipt</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <CorrespondingAccountNumber>333</CorrespondingAccountNumber>
+  <SortOrder>4</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>A91C65DA-FFBB-46C9-9EAD-A0D257843549</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>635</AccountNumber>
+  <CorrespondingAccountNumber>331</CorrespondingAccountNumber>
+  <SortOrder>15</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>039C9610-99D6-468C-93AC-A10A4D179605</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>515</AccountNumber>
+  <SortOrder>11</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>A21F687B-EE6D-4D0E-A2DC-A2A8D8791D04</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>11</AccountNumber>
+  <CorrespondingAccountNumber>811</CorrespondingAccountNumber>
+  <SortOrder>42</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>892F58B9-AE37-4ACB-A955-A2BB71647717</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>ReduceReceipt</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>5211</AccountNumber>
+  <SortOrder>15</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>EEA9A544-6CD6-4E7D-864C-A4AD3EB71D1D</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>962DF8FD-DE52-46E5-AB5C-F3D4F423742E</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>641</AccountNumber>
+  <SortOrder>18</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>DD8A4269-6686-4FFF-B9EF-A64720F75483</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>11</AccountNumber>
+  <CorrespondingAccountNumber>641</CorrespondingAccountNumber>
+  <SortOrder>40</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>BF8433BF-88B8-4389-B14F-A8638B75CDAD</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>ReduceReceipt</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>5211</AccountNumber>
+  <SortOrder>15</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>71EC7022-736B-42F5-AEAB-AC38A5EE77FE</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>632</AccountNumber>
+  <CorrespondingAccountNumber>3388</CorrespondingAccountNumber>
+  <SortOrder>29</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>6498D805-CEB0-444B-BA26-AFF6B08CCB14</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>CB7229FE-8FF6-4777-9D1F-958A1F613AEB</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <CorrespondingAccountNumber>911</CorrespondingAccountNumber>
+  <SortOrder>4</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>A4527B85-1FE8-4DED-94E3-B08BEE00FBC7</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>141</AccountNumber>
+  <CorrespondingAccountNumber>635</CorrespondingAccountNumber>
+  <SortOrder>49</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>785678D6-D0E4-46F4-B955-B1438C975A6D</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>SaleReceipt</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>911</AccountNumber>
+  <CorrespondingAccountNumber>511</CorrespondingAccountNumber>
+  <SortOrder>2</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>84EAE7AB-1A04-46FB-89BF-B19190B12BAF</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>141</AccountNumber>
+  <CorrespondingAccountNumber>622</CorrespondingAccountNumber>
+  <SortOrder>45</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>395C6CB9-F519-45D7-91A2-B7B79EC1152F</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>141</AccountNumber>
+  <CorrespondingAccountNumber>632</CorrespondingAccountNumber>
+  <SortOrder>48</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>24B76542-53DA-45CA-AF71-B8798F4EA0F8</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>OtherExpenditure</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>635</AccountNumber>
+  <SortOrder>27</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>A4181D69-8D13-448D-B432-B8BBB8221922</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>55B5E4AC-44DE-480C-BBDF-0AAB726E5C1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>521</AccountNumber>
+  <SortOrder>11</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>A8DF56C4-C1EC-43CA-9EDB-BA7991C26266</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>622</AccountNumber>
+  <CorrespondingAccountNumber>331</CorrespondingAccountNumber>
+  <SortOrder>5</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>85329927-34FE-4FFF-A8AE-BD48DDB1707D</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>962DF8FD-DE52-46E5-AB5C-F3D4F423742E</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>635</AccountNumber>
+  <SortOrder>21</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>8237AE06-F6C2-4C78-A624-BFF13591598C</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>CB7229FE-8FF6-4777-9D1F-958A1F613AEB</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <SortOrder>3</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>17065920-5F01-4A2A-84D1-C0B7795CF645</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>Receipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>711</AccountNumber>
+  <SortOrder>2</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>498E6204-B830-4FA8-9763-C23B06BE5A05</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>FF38DE4F-797C-4BE9-96FD-2939067C3DCE</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>521</AccountNumber>
+  <SortOrder>1</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>B93663AD-ABA7-4AA1-A9A5-C290A7AAC08D</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>55B5E4AC-44DE-480C-BBDF-0AAB726E5C1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>515</AccountNumber>
+  <SortOrder>3</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>9AABF51B-5D1E-496B-BD2A-C305EBF1A337</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>ReduceReceipt</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>5211</AccountNumber>
+  <SortOrder>15</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>E5F6DFAA-4CCA-4B05-8BFC-C37F214B06A7</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>SaleFund</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>632</AccountNumber>
+  <SortOrder>16</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>7D7922D4-94ED-4C97-9761-C4CBDADC2F4C</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>11</AccountNumber>
+  <CorrespondingAccountNumber>642</CorrespondingAccountNumber>
+  <SortOrder>41</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>BC69CC0F-E9E7-4C06-9BDD-C7CB4E467A6B</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>911</AccountNumber>
+  <CorrespondingAccountNumber>711</CorrespondingAccountNumber>
+  <SortOrder>5</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>A3BC4383-E833-46E2-A285-CAEFD00253E2</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>861F2086-DEA8-4086-B9F6-C6EA0176CBAE</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>635</AccountNumber>
+  <SortOrder>25</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>866205EE-65DD-4049-8140-CE239D9F2AB8</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>OtherReceipt</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>515</AccountNumber>
+  <SortOrder>1</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>70F8B640-C858-4870-B0DA-CE425E382CD8</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>FAC58707-317B-41C4-8346-1511918AE361</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>811</AccountNumber>
+  <SortOrder>24</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>F2E61102-B33B-489D-9334-D0498322BC41</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>861F2086-DEA8-4086-B9F6-C6EA0176CBAE</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>811</AccountNumber>
+  <SortOrder>20</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>61FB3D2D-D2DB-41B7-B61E-D0D2A2B2B024</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>55B5E4AC-44DE-480C-BBDF-0AAB726E5C1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <CorrespondingAccountNumber>333</CorrespondingAccountNumber>
+  <SortOrder>4</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>B9F9362A-56BB-4821-8C26-D49F4D2924D3</ItemDetailID>
+  <ReportID>JCIncomeSummaryByProjectWork</ReportID>
+  <ColumnName>OtherExpenditure</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>635</AccountNumber>
+  <SortOrder>29</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>695AE189-D778-45E8-BBA7-D69AF12271DF</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>OtherReceipt</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>911</AccountNumber>
+  <CorrespondingAccountNumber>515</CorrespondingAccountNumber>
+  <SortOrder>3</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>54BD00EC-7C39-4ED7-8C55-D75325DE27DA</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>FECDF735-877F-43C1-83E0-B4E6169EF848</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>632</AccountNumber>
+  <SortOrder>17</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>56332B9F-C7C8-4DE5-97F0-D758C714E002</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>962DF8FD-DE52-46E5-AB5C-F3D4F423742E</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>642</AccountNumber>
+  <SortOrder>19</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>2B9955B9-BD95-4C60-83BD-D892884F1556</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>141</AccountNumber>
+  <CorrespondingAccountNumber>141</CorrespondingAccountNumber>
+  <SortOrder>43</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>89F45BA2-F156-4270-97E9-DCAF6762D6DA</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>SaleExpenditure</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>641</AccountNumber>
+  <SortOrder>19</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>BB96FC37-C77F-4867-A447-DD5AB1BDFE24</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>501D6139-3ABB-422B-8AB4-1BFF60B8EA8F</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>911</AccountNumber>
+  <CorrespondingAccountNumber>711</CorrespondingAccountNumber>
+  <SortOrder>4</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>CD95ED3E-8914-4C32-BB78-E13B807E7E93</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>55B5E4AC-44DE-480C-BBDF-0AAB726E5C1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>711</AccountNumber>
+  <SortOrder>2</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>A7E271DF-B012-4E7E-8236-E2C27646941B</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>141</AccountNumber>
+  <CorrespondingAccountNumber>623</CorrespondingAccountNumber>
+  <SortOrder>46</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>DA3C10B5-B930-4987-B62D-E2C964254E04</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>OtherExpenditure</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>635</AccountNumber>
+  <SortOrder>29</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>BBFE4ADC-CDF9-4FA7-BB00-E39EAD7B43A0</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>511</AccountNumber>
+  <CorrespondingAccountNumber>521</CorrespondingAccountNumber>
+  <SortOrder>9</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>4F8F14A3-63E1-4225-A4FE-E4C887A127D6</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>11</AccountNumber>
+  <CorrespondingAccountNumber>623</CorrespondingAccountNumber>
+  <SortOrder>36</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>F7968AB4-E9D5-4335-AD29-E64B559139DE</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>FAC58707-317B-41C4-8346-1511918AE361</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>642</AccountNumber>
+  <SortOrder>19</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>3E7E221B-0018-42BB-A51D-EB1BDDA0F8D2</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>962DF8FD-DE52-46E5-AB5C-F3D4F423742E</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>635</AccountNumber>
+  <SortOrder>25</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>FAE847B2-9568-4677-A77F-EDD716D8608E</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>11</AccountNumber>
+  <SortOrder>1</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>98A3D818-09C4-4F1E-ACB8-F03AEDF5C536</ItemDetailID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemID>501D6139-3ABB-422B-8AB4-1BFF60B8EA8F</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>515</AccountNumber>
+  <SortOrder>1</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>1A8BE3CA-825B-4662-A620-F0448771686C</ItemDetailID>
+  <ReportID>CTIncomeSummaryByContract</ReportID>
+  <ColumnName>OtherExpenditure</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>811</AccountNumber>
+  <SortOrder>26</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>39AC76EA-13F6-4920-919C-F171908636F2</ItemDetailID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemID>55B5E4AC-44DE-480C-BBDF-0AAB726E5C1A</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>5211</AccountNumber>
+  <SortOrder>15</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>8FBB52C5-7417-4AA5-A399-FA8CA86186C2</ItemDetailID>
+  <ReportID>SummaryIncomeBySAOrder</ReportID>
+  <ColumnName>ManagementExpenditure</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>642</AccountNumber>
+  <SortOrder>22</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>AA768605-2CDF-4733-912B-FCBEC71868DC</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>861F2086-DEA8-4086-B9F6-C6EA0176CBAE</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSNO</FunctionCode>
+  <AccountNumber>642</AccountNumber>
+  <SortOrder>19</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>985BE942-4CC6-4222-9352-FD4BBFD1D44B</ItemDetailID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemID>861F2086-DEA8-4086-B9F6-C6EA0176CBAE</ReportItemID>
+  <ColumnName>Amount</ColumnName>
+  <FormulaSign>-1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>641</AccountNumber>
+  <SortOrder>22</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>FA932DD8-F45D-4250-8E1D-FEAF033A8E7B</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSCO</FunctionCode>
+  <AccountNumber>141</AccountNumber>
+  <SortOrder>2</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+<SYSReportFormula>
+  <ItemDetailID>991253EB-6652-48DE-AF4A-FF928EB91F25</ItemDetailID>
+  <ReportID>CTExpenseSummaryByContract</ReportID>
+  <ColumnName>PayedAmount</ColumnName>
+  <FormulaSign>1</FormulaSign>
+  <FunctionCode>PSDU</FunctionCode>
+  <AccountNumber>627</AccountNumber>
+  <CorrespondingAccountNumber>3388</CorrespondingAccountNumber>
+  <SortOrder>26</SortOrder>
+  <Period>11</Period>
+</SYSReportFormula>
+</DataSetImportExport>

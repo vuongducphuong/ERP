@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+	<data>
+		<record id="view_sale_document_form_inherit" model="ir.ui.view">
+			<field name="name">sale.document.form.inherit</field>
+			<field name="model">sale.document</field>
+			<field name="inherit_id" ref="sale_ex.view_sale_document_form"/>
+			<field name="arch" type="xml">
+				<data>
+					<xpath expr="//field[@name='CHON_LAP_TU_ID']" position="replace">
+						<field name="LAP_TU_DON_DAT_HANG_IDS" widget='many2many_tags'  colspan="6" options="{'columns': ['NGAY_DON_HANG','name', 'DOI_TUONG_ID.HO_VA_TEN'], 'strings': ['Ngày đơn hàng','Số chứng từ', 'Khách hàng']}" domain="[('CHUNG_TU_BAN_HANG_ID', '=', None)]"/>
+					</xpath>
+					<xpath expr="//field[@name='SALE_DOCUMENT_LINE_IDS']//tree//field[@name='BAN_KINH']" position="replace">
+					</xpath>
+					<xpath expr="//field[@name='SALE_DOCUMENT_LINE_IDS']//tree//field[@name='CHIEU_CAO']" position="replace">
+					</xpath>
+					<xpath expr="//field[@name='SALE_DOCUMENT_LINE_IDS']//tree//field[@name='LUONG']" position="attributes">
+						<attribute name="string">Tấm</attribute>
+					</xpath>
+				</data>
+			</field>
+		</record>
+	</data>
+</odoo>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="supplyincrementvouchergeneral">
+        <t t-call="web.external_layout">
+            <div class="page" style="margin-left: 15px; margin-right: 15px;">
+                <div class="col-xs-12 text-left truong-gia-tri-kieu-text-dat-tren-header" style="padding-left: 0px; padding-right: 0px;">
+                    <span t-esc="o.get_ten_cong_ty()" />
+                    <br />
+                    <span t-esc="o.get_dia_chi_cong_ty()" />
+                </div>
+                <div class="col-xs-12 text-center report-title" style="padding-left: 0px; padding-right: 0px;margin-top: 5px;">
+                    <span>CHỨNG TỪ GHI TĂNG CÔNG CỤ DỤNG CỤ</span>
+                </div>
+                <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;margin-top: 5px;">
+                    <table class="table-condensed table-bordereds" style="width: 100%;margin-bottom: 0px;">
+                        <thead>
+                            <tr class="detail-header">
+                                <th class="text-center" style="width: 10px; height: 6px;">
+                                    <span>STT</span>
+                                </th>
+                                <th class="text-center" style="width: 24px; height: 6px;">
+                                    <span>Số chứng từ</span>
+                                </th>
+                                <th class="text-center" style="width: 21px; height: 6px;">
+                                    <span>Ngày</span>
+                                </th>
+                                <th class="text-center" style="width: 24px; height: 6px;">
+                                    <span>Mã CCDC</span>
+                                </th>
+                                <th class="text-center" style="width: 34px; height: 6px;">
+                                    <span>Tên CCDC</span>
+                                </th>
+                                <th class="text-center" style="width: 46px; height: 6px;">
+                                    <span>Lý do tăng</span>
+                                </th>
+                                <th class="text-center" style="width: 45px; height: 6px;">
+                                    <span>Tên đơn vị</span>
+                                </th>
+                                <th class="text-center" style="width: 19px; height: 6px;">
+                                    <span>Số lượng</span>
+                                </th>
+                                <th class="text-center" style="width: 22px; height: 6px;">
+                                    <span>Đơn giá</span>
+                                </th>
+                                <th class="text-center" style="width: 27px; height: 6px;">
+                                    <span>Thành tiền</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="so_thu_tu" t-value="0"></t>
+                            <tr t-foreach="o.bang_tinh_khau_hao_ccdc_chi_tiet_IDS" t-as="line">
+                                <t t-set="so_thu_tu" t-value="so_thu_tu + 1"></t>
+                                <td class="text-center detail-text" style="width: 10px; height: 6px;">
+                                    <span t-esc="so_thu_tu"></span>
+                                </td>
+                                <td class="text-left detail-text" style="width: 24px; height: 6px;">
+                                    <span t-field="line.SO_CHUNG_TU" />
+                                </td>
+                                <td class="text-center detail-text" style="width: 21px; height: 6px;">
+                                    <span t-field="line.NGAY_CHUNG_TU" />
+                                </td>
+                                <td class="text-left detail-text" style="width: 24px; height: 6px;">
+                                    <span t-field="line.MA_CCDC" />
+                                </td>
+                                <td class="text-left detail-text" style="width: 34px; height: 6px;">
+                                    <span t-field="line.TEN_CCDC" />
+                                </td>
+                                <td class="text-left detail-text" style="width: 46px; height: 6px;">
+                                    <span t-field="line.LY_DO_GHI_TANG" />
+                                </td>
+                                <td class="text-left detail-text" style="width: 45px; height: 6px;">
+                                    <span t-field="line.TEN_DON_VI" />
+                                </td>
+                                <td class="text-right detail-number" style="width: 19px; height: 6px;">
+                                    <span t-field="line.SO_LUONG" />
+                                </td>
+                                <td class="text-right detail-number" style="width: 22px; height: 6px;">
+                                    <span t-field="line.DON_GIA" />
+                                </td>
+                                <td class="text-right detail-number" style="width: 27px; height: 6px;">
+                                    <span t-field="line.THANH_TIEN" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="text-left summary-detail-text-bold" colspan="7" style="width: 204px; height: 6px;">
+                                    <span>Cộng</span>
+                                </th>
+                                <th class="text-right summary-footer-number" style="width: 19px; height: 6px;">
+                                    <span t-field="o.TONG_SO_LUONG" />
+                                </th>
+                                <th class="text-left" style="width: 22px; height: 6px;">
+                                    <span></span>
+                                </th>
+                                <th class="text-right summary-footer-number" style="width: 27px; height: 6px;">
+                                    <span t-field="o.TONG_THANH_TIEN" />
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs-12 page-break-inside" style="padding-left: 0px;padding-right: 0px;">
+                    <table style="width: 100%;margin-top: 10px;">
+                        <thead>
+                            <tr class="signer-title">
+                                <th class="text-center" style="width: 80px;height: 6px;">
+                                    <span>Giám đốc</span>
+                                </th>
+                                <th class="text-center" style="width: 96px;height: 6px;">
+                                    <span>Kế toán trưởng</span>
+                                </th>
+                                <th class="text-center" style="width: 96px;height: 6px;">
+                                    <span>Người lập</span>
+                                </th>
+                            </tr>
+                            <tr class="signer-sub-title">
+                                <td class="text-center" style="width: 80px;height: 6px;">
+                                    <span>(Ký, họ tên, đóng dấu)</span>
+                                </td>
+                                <td class="text-center" style="width: 96px;height: 6px;">
+                                    <span>(Ký, họ tên)</span>
+                                </td>
+                                <td class="text-center" style="width: 96px;height: 6px;">
+                                    <span>(Ký, họ tên)</span>
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table style="width: 100%;margin-top: 95px;">
+                        <thead>
+                            <tr class="signer-name">
+                                <th class="text-center" style="width: 80px;height: 6px;">
+                                    <span t-esc="o.get_giam_doc()" />
+                                </th>
+                                <th class="text-center" style="width: 96px;height: 6px;">
+                                    <span t-esc="o.get_ke_toan_truong()" />
+                                </th>
+                                <th class="text-center" style="width: 96px;height: 6px;">
+                                    <span t-esc="o.get_nguoi_lap_phieu()" />
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+            </div>
+        </t>
+    </template>
+    <template id="template_supplyincrementvouchergeneral">
+        <t t-call="web.html_container">
+            <t t-set="data_paper_format" t-value="'A4-ngang'" />
+            <t t-foreach="docs" t-as="o">
+                <t t-call="bao_cao.supplyincrementvouchergeneral" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="CT ghi tăng CCDC" id="action_template_supplyincrementvouchergeneral" model="bao.cao.chung.tu.ghi.tang.ccdc" report_type="qweb-html" name="bao_cao.template_supplyincrementvouchergeneral" file="bao_cao.template_supplyincrementvouchergeneral" print_report_name="CT ghi tăng CCDC" />
+    </data>
+</odoo>

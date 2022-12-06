@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="template_purchase_ex_uy_nhiem_chi_pvcombank">
+        <t t-call="web.html_container">
+            <t t-set="data_paper_format" t-value="'A4'" />
+            <t t-foreach="docs" t-as="o">
+                <t t-call="account_ex.account_ex_phieu_chi_uy_nhiem_chi_pvcombank" />
+                <br />
+                <span>..............................................................................................................................................................................................</span>
+                <br />
+                <t t-call="account_ex.account_ex_phieu_chi_uy_nhiem_chi_pvcombank" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="Uỷ nhiệm chi (PVC)" id="action_template_purchase_ex_uy_nhiem_chi_pvcombank" model="purchase.document" report_type="qweb-html" name="purchase_ex.template_purchase_ex_uy_nhiem_chi_pvcombank" file="purchase_ex.template_purchase_ex_uy_nhiem_chi_pvcombank" print_report_name="Uỷ nhiệm chi (PVC)" />
+    </data>
+</odoo>

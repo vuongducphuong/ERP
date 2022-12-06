@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_sale_ex_ban_hang_phan_bo_chiet_khau_theo_tong_gia_tri_hoa_don_form_form" model="ir.ui.view">
+            <field name="name">sale.ex.ban.hang.phan.bo.chiet.khau.theo.tong.gia.tri.hoa.don.form.form</field>
+            <field name="model">sale.ex.phan.bo.chiet.khau.theo.tong.gia.tri.hd.form</field>
+            <field name="arch" type="xml">
+                <form string="bán hàng phân bổ chiết khấu theo tổng giá trị hóa đơn form">
+                    <sheet>
+                        <group col="4">
+                            <field name="SO_TIEN" />
+                            <field name="PHUONG_PHAP_PHAN_BO" />
+                            <field name="IS_PHUONG_PHAP_PHAN_BO" invisible = '1'/>
+                            <field name="currency_id" invisible = '1'/>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="SALE_EX_PHAN_BO_CHIET_KHAU_THEO_TONG_GIA_TRI_HOA_DON_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false" >
+                                        <field name="MA_HANG_ID" readonly="1" />
+                                        <field name="TEN_HANG" readonly="1"/>
+                                        <field name="HANG_KHUYEN_MAI" readonly="1"/>
+                                        <field name="SO_LUONG" sum="Tổng" readonly="1"/>
+                                        <field name="THANH_TIEN" sum="Tổng" readonly="1"/>
+                                        <field name="TY_LE_PHAN_BO" string="Tỷ lệ phân bổ (%)" attrs="{'readonly': [('parent.IS_PHUONG_PHAP_PHAN_BO', '=', True)]}"/>
+                                        <field name="TIEN_CHIET_KHAU" sum="Tổng" attrs="{'readonly': [('parent.IS_PHUONG_PHAP_PHAN_BO', '=', False)]}"/>
+                                        <field name="sequence" invisible="1" />
+                                        <field name="INDEX" invisible="1" />
+                                        <field name="currency_id" invisible = '1'/> 
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <field name="HINH_THUC_CHIET_KHAU" widget="radio" options="{'horizontal': True, 'alway_edit': True}" />
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- <record id="view_sale_ex_ban_hang_phan_bo_chiet_khau_theo_tong_gia_tri_hoa_don_form_tree" model="ir.ui.view">
+            <field name="name">sale.ex.ban.hang.phan.bo.chiet.khau.theo.tong.gia.tri.hoa.don.form.tree</field>
+            <field name="model">sale.ex.ban.hang.phan.bo.chiet.khau.theo.tong.gia.tri.hoa.don.form</field>
+            <field name="arch" type="xml">
+                <tree string="bán hàng phân bổ chiết khấu theo tổng giá trị hóa đơn form">
+                    <field name="SO_TIEN"/>
+                    <field name="PHUONG_PHAP_PHAN_BO"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_sale_ex_ban_hang_phan_bo_chiet_khau_theo_tong_gia_tri_hoa_don_form" model="ir.actions.act_window">
+            <field name="name">bán hàng phân bổ chiết khấu theo tổng giá trị hóa đơn form</field>
+            <field name="res_model">sale.ex.ban.hang.phan.bo.chiet.khau.theo.tong.gia.tri.hoa.don.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_sale_ex_ban_hang_phan_bo_chiet_khau_theo_tong_gia_tri_hoa_don_form_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_sale_ex_ban_hang_phan_bo_chiet_khau_theo_tong_gia_tri_hoa_don_form_tree"/>
+            <field name="act_window_id" ref="open_menu_sale_ex_ban_hang_phan_bo_chiet_khau_theo_tong_gia_tri_hoa_don_form"/>
+        </record>
+
+        <record id="action_sale_ex_ban_hang_phan_bo_chiet_khau_theo_tong_gia_tri_hoa_don_form_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_sale_ex_ban_hang_phan_bo_chiet_khau_theo_tong_gia_tri_hoa_don_form_form"/>
+            <field name="act_window_id" ref="open_menu_sale_ex_ban_hang_phan_bo_chiet_khau_theo_tong_gia_tri_hoa_don_form"/>
+        </record>
+
+        <menuitem name="bán hàng phân bổ chiết khấu theo tổng giá trị hóa đơn form"
+                  action="sale_ex.open_menu_sale_ex_ban_hang_phan_bo_chiet_khau_theo_tong_gia_tri_hoa_don_form"
+                  id="menu_sale_ex_ban_hang_phan_bo_chiet_khau_theo_tong_gia_tri_hoa_don_form"
+                  parent=""
+                  sequence="0"/>
+    </data>
+    <data noupdate="1"> -->
+    </data>
+</odoo>

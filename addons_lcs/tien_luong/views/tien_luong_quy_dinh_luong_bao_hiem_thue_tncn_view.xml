@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_luong_quy_dinh_luong_bao_hiem_thue_tncn_tham_so_form" model="ir.ui.view">
+            <field name="name">tien.luong.quy.dinh.luong.bao.hiem.thue.tncn.form</field>
+            <field name="model">tien.luong.quy.dinh.luong.bao.hiem.thue.tncn</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="6">
+                            <group col="4" colspan="4">
+                                <field name="MUC_LUONG_TOI_THIEU" string="Mức lương tối thiểu" colspan="4" />
+                                <field name="MUC_LUONG_TOI_DA_DONG_BHXH" string="Mức lương tối đa đóng BHXH,BHYT,KPCĐ" colspan="4" />
+                                <field name="MUC_LUONG_TOI_DA_DONG_BHTN" string="Mức lương đóng BHTN" colspan="4" />
+                            </group>
+                            <group colspan="2">
+                                <field name="SO_NGAY_TINH_CONG_TRONG_THANG" string="Số ngày tính công trong tháng" />
+                                <field name="SO_GIO_TINH_CONG_TRONG_NGAY" string="Số giờ tính công trong ngày" />
+                            </group>
+                        </group>
+                        <group col="4">
+                            <group colspan="2" string="Tỷ lệ hưởng lương làm thêm ban ngày">
+                                <field name="LAM_THEM_NGAY_THUONG_BAN_NGAY" string="Làm thêm ngày thường (%)" />
+                                <field name="THU_7_CHU_NHAT_BAN_NGAY" string="Thứ 7, chủ nhật(%)" />
+                                <field name="NGAY_LE_TET_BAN_NGAY" string="Ngày lễ, tết(%)" />
+                            </group>
+                            <group colspan="2" string="Tỷ lệ hưởng lương làm thêm ban đêm">
+                                <field name="LAM_THEM_NGAY_THUONG_BAN_DEM" string="Làm thêm ngày thường(%)" />
+                                <field name="THU_7_CHU_NHAT_BAN_DEM" string="Thứ 7, chủ nhật(%)" />
+                                <field name="NGAY_LE_TET_BAN_DEM" string="Ngày lễ, tết(%)" />
+                            </group>
+                        </group>
+                        <group col="4" string="Bảo hiểm">
+                            <group colspan="2">
+                                <span>Tỷ lệ công ty phải đóng</span>
+                                <field name="BAO_HIEM_XA_HOI_CONG_TY_DONG" string="Bảo hiểm xã hội (%)" />
+                                <field name="BAO_HIEM_Y_TE_CONG_TY_DONG" string="Bảo hiểm y tế (%)" />
+                                <field name="BAO_HIEM_THAT_NGHIEP_CONG_TY_DONG" string="Bảo hiểm thất nghiệp (%)" />
+                                <field name="KINH_PHI_CONG_DOAN_CONG_TY_DONG" string="Kinh phí công đoàn (%)" />
+                            </group>
+                            <group colspan="2">
+                                <span>Tỷ lệ nhân viên phải đóng</span>
+                                <field name="BAO_HIEM_XA_HOI_NV_DONG" string="Bảo hiểm xã hội (%)" />
+                                <field name="BAO_HIEM_Y_TE_NV_DONG" string="Bảo hiểm y tế (%)" />
+                                <field name="BAO_HIEM_THAT_NGHIEP_NV_DONG" string="Bảo hiểm thất nghiệp (%)" />
+                                <field name="KINH_PHI_CONG_DOAN_NV_DONG" string="Kinh phí công đoàn (%)" />
+                            </group>
+                        </group>
+                        <group col="4" string="Thuế TNCN">
+                            <field name="THUE_GIAM_TRU_BAN_THAN" string="Giảm trừ bản thân" />
+                            <field name="THUE_GIAM_TRU_NGUOI_PHU_THUOC" string="Giảm trừ người phụ thuộc" />
+                        </group>
+                        <!-- <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer> -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_tien_luong_quy_dinh_luong_bao_hiem_thue_tncn_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Quy định lương, bảo hiểm, thuế TNCN</field>
+            <field name="res_model">tien.luong.quy.dinh.luong.bao.hiem.thue.tncn</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_tien_luong_quy_dinh_luong_bao_hiem_thue_tncn_tham_so_form" />
+        </record>
+        
+        <record id="action_open_tien_luong_quy_dinh_luong_bao_hiem_thue_tncn_form" model="ir.actions.act_window">
+            <field name="name">Quy định lương, bảo hiểm, thuế TNCN</field>
+            <field name="res_model">tien.luong.quy.dinh.luong.bao.hiem.thue.tncn</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+        
+    </data>
+    <data noupdate="1"></data>
+</odoo>

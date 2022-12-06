@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_purchase_ex_lap_tu_don_mua_hang_form_tham_so_form" model="ir.ui.view">
+            <field name="name">purchase.ex.lap.tu.don.mua.hang.form.form</field>
+            <field name="model">purchase.ex.lap.tu.don.mua.hang.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="lap_tu_don_mua_hang_form_view">
+                    <sheet>
+                        <group col="12">
+                            <group col="3" colspan="3" string="Tìm kiếm theo">
+                                <field name="SO_DON_HANG_ID" options="{'columns': ['SO_DON_HANG', 'DIEN_GIAI'], 'strings': ['Số đơn hàng', 'Diễn giải'],'displays':['SO_DON_HANG']}" colspan="3" />
+                            </group>
+                            <group col="9" colspan="9" string="Hoặc">
+                                <group col="3" colspan="3">
+                                    <field name="NHA_CUNG_CAP_ID" colspan="3" domain="[('LA_NHA_CUNG_CAP','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã NCC', 'Tên NCC','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nha_cung_cap'}" />
+                                    <field name="KHOANG_THOI_GIAN" colspan="3" />
+                                    
+                                </group>
+                                <group col="3" colspan="3">
+                                    <field name="TU_NGAY" colspan="3" />
+                                    <field name="DEN_NGAY" colspan="3" />
+                                </group>
+                                <group col="3" colspan="3">
+                                    <button id="btn_lay_du_lieu" class="btn btn-primary" colspan="3" string="Lấy dữ liệu" />
+                                </group>
+                            </group>
+                            
+                        </group>
+                        <notebook>
+                            <page string="Chi tiết ">
+                                <field name="PURCHASE_EX_LAP_TU_DON_MUA_HANG_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                        <field name="NGAY_DON_HANG" readonly="1" />
+                                        <field name="SO_DON_HANG" />
+                                        <field name="MA_HANG" readonly="1" />
+                                        <field name="TEN_HANG" readonly="1" />
+                                        <field name="SO_LUONG_CHUA_NHAN" readonly="1" sum="Tổng" />
+                                        <field name="DON_GIA" readonly="1" />
+                                        <field name="THANH_TIEN" readonly="1" sum="Tổng" />
+                                        <field name="SO_LUONG_NHAN" sum="Tổng" />
+                                        <field name="DOI_TUONG_ID" invisible="1" />
+                                        <field name="DON_MUA_HANG_ID" invisible="1" />
+                                        <field name="DVT_ID" invisible="1" />
+                                        <!-- <field name="TK_KHO_ID" invisible="1" /> -->
+                                        <!-- <field name="TK_CO_ID" invisible="1" /> 
+                                        <field name="TK_NO_ID" invisible="1" />
+                                        <field name="TK_THUE_GTGT_ID" invisible="1" /> -->
+                                        <!-- <field name="KHO_ID" invisible="1" />   -->
+                                        <!-- <field name="CHI_TIET_DON_MUA_HANG_ID" invisible="1"/>   -->
+                                        <field name="ID_DON_MUA_HANG_CT" invisible="1"/> 
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!-- <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer> -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_purchase_ex_lap_tu_don_mua_hang_form_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Lập từ đơn mua hàng form</field>
+            <field name="res_model">purchase.ex.lap.tu.don.mua.hang.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_purchase_ex_lap_tu_don_mua_hang_form_tham_so_form" />
+        </record>
+        <record id="action_open_purchase_ex_lap_tu_don_mua_hang_form_form" model="ir.actions.act_window">
+            <field name="name">Lập từ đơn mua hàng form</field>
+            <field name="res_model">purchase.ex.lap.tu.don.mua.hang.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

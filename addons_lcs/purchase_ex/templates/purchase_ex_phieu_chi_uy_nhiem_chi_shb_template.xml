@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="template_purchase_ex_uy_nhiem_chi_shb">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="account_ex.account_ex_phieu_chi_uy_nhiem_chi_shb" />
+                
+                
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="Uỷ nhiệm chi (SHB)" id="action_template_purchase_ex_uy_nhiem_chi_shb" model="purchase.document" report_type="qweb-html" name="purchase_ex.template_purchase_ex_uy_nhiem_chi_shb" file="purchase_ex.template_purchase_ex_uy_nhiem_chi_shb" print_report_name="Uỷ nhiệm chi (SHB)" />
+    </data>
+</odoo>

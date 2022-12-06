@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+<InvoiceTypeAutoID>
+  <InvTemplateNo>01GTKT0/001</InvTemplateNo>
+  <InvTemplateName>Hóa đơn giá trị gia tăng (HĐ điện tử)</InvTemplateName>
+</InvoiceTypeAutoID>
+<InvoiceTypeAutoID>
+  <InvTemplateNo>01GTKT3/001</InvTemplateNo>
+  <InvTemplateName>Hóa đơn giá trị gia tăng</InvTemplateName>
+</InvoiceTypeAutoID>
+<InvoiceTypeAutoID>
+  <InvTemplateNo>02GTTT0/001</InvTemplateNo>
+  <InvTemplateName>Hóa đơn bán hàng (HĐ điện tử)</InvTemplateName>
+</InvoiceTypeAutoID>
+<InvoiceTypeAutoID>
+  <InvTemplateNo>02GTTT3/001</InvTemplateNo>
+  <InvTemplateName>Hóa đơn bán hàng</InvTemplateName>
+</InvoiceTypeAutoID>
+<InvoiceTypeAutoID>
+  <InvTemplateNo>03XKNB3/001</InvTemplateNo>
+  <InvTemplateName>Phiếu xuất kho kiêm vận chuyển hàng hóa nội bộ</InvTemplateName>
+</InvoiceTypeAutoID>
+<InvoiceTypeAutoID>
+  <InvTemplateNo>04HGDL3/001</InvTemplateNo>
+  <InvTemplateName>Phiếu xuất kho gửi bán hàng đại lý</InvTemplateName>
+</InvoiceTypeAutoID>
+<InvoiceTypeAutoID>
+  <InvTemplateNo>07KPTQ3/001</InvTemplateNo>
+  <InvTemplateName>Hóa đơn bán hàng (dành cho tổ chức, cá nhân trong khu phi thuế quan)</InvTemplateName>
+</InvoiceTypeAutoID>
+
+</DataSetImportExport>

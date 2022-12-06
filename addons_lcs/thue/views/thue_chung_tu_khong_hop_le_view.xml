@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_thue_chung_tu_khong_hop_le_tham_so_form" model="ir.ui.view">
+            <field name="name">thue.chung.tu.khong.hop.le.form</field>
+            <field name="model">thue.chung.tu.khong.hop.le</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <span>Chứng từ không lên bảng kê hàng hóa, dịch vụ bán ra do thiếu một trong các thông tin sau: Số hóa đơn, ngày hóa đơn, % thuế GTGT.</span>
+                        </group>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="THUE_CHUNG_TU_KHONG_HOP_LE_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="false" create="false" delete="false">
+                                        <field name="NGAY_CHUNG_TU" />
+                                        <field name="SO_CHUNG_TU" />
+                                        <field name="NGAY_HOA_DON" />
+                                        <field name="SO_HOA_DON" />
+                                        <field name="KY_HIEU_HOA_DON" />
+                                        <field name="MAU_SO_HOA_DON" />
+                                        <field name="TEN_NGUOI_MUA" />
+                                        <field name="MA_SO_THUE" />
+                                        <field name="PHAN_TRAM_THUE_GTGT_ID" options="{'no_create': True}"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button name="btn_nap" string="Nạp" class="oe_highlight" />
+                            <button name="button_cancel" string="Đóng" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_thue_chung_tu_khong_hop_le_tham_so_pl012_gtgt_form" model="ir.ui.view">
+            <field name="name">thue.chung.tu.khong.hop.le.pl012.gtgt.form</field>
+            <field name="model">thue.chung.tu.khong.hop.le</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <span>Chứng từ không lên bảng kê hàng hóa, dịch vụ mua vào do thiếu một trong các thông tin sau: Số hóa đơn, ngày hóa đơn, nhóm HHDV mua vào.</span>
+                        </group>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="THUE_CHUNG_TU_KHONG_HOP_LE_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="false" create="false" delete="false">
+                                        <field name="NGAY_CHUNG_TU" />
+                                        <field name="SO_CHUNG_TU" />
+                                        <field name="NGAY_HOA_DON" />
+                                        <field name="SO_HOA_DON" />
+                                        <field name="KY_HIEU_HOA_DON" />
+                                        <field name="MAU_SO_HOA_DON" />
+                                        <field name="TEN_NGUOI_BAN" />
+                                        <field name="MA_SO_THUE" />
+                                        <field name="PHAN_TRAM_THUE_GTGT_ID" options="{'no_create': True}"/>
+                                        <field name="NHOM_HHDV_MUA_VAO"  />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button name="btn_nap" string="Nạp" class="oe_highlight" />
+                            <button name="button_cancel" string="Đóng" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_thue_chung_tu_khong_hop_le_tham_so_plbkbr_ttdb_form" model="ir.ui.view">
+            <field name="name">thue.chung.tu.khong.hop.le.plbkbr.ttdb.form</field>
+            <field name="model">thue.chung.tu.khong.hop.le</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <span>Chứng từ không lên bảng kê hàng hóa, dịch vụ bán ra do thiếu một trong các thông tin sau: Số hóa đơn, ngày hóa đơn.</span>
+                        </group>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="THUE_CHUNG_TU_KHONG_HOP_LE_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="false" create="false" delete="false">
+                                        <field name="NGAY_CHUNG_TU" />
+                                        <field name="SO_CHUNG_TU" />
+                                        <field name="NGAY_HOA_DON" />
+                                        <field name="SO_HOA_DON" />
+                                        <field name="KY_HIEU_HOA_DON" />
+                                        <field name="MAU_SO_HOA_DON" />
+                                        <field name="TEN_KHACH_HANG" />
+                                        <field name="MA_SO_THUE" />
+                                        <field name="TEN_HANG_HOA_DICH_VU" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button name="btn_nap" string="Nạp" class="oe_highlight" />
+                            <button name="button_cancel" string="Đóng" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_thue_chung_tu_khong_hop_le_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Chứng từ không hợp lệ</field>
+            <field name="res_model">thue.chung.tu.khong.hop.le</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_thue_chung_tu_khong_hop_le_tham_so_form" />
+        </record>
+        <record id="action_open_thue_chung_tu_khong_hop_le_form" model="ir.actions.act_window">
+            <field name="name">Chứng từ không hợp lệ</field>
+            <field name="res_model">thue.chung.tu.khong.hop.le</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

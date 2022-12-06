@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_menh_gia_loai_tien_form" model="ir.ui.view">
+            <field name="name">danh.muc.menh.gia.loai.tien.form</field>
+            <field name="model">danh.muc.menh.gia.loai.tien</field>
+            <field name="arch" type="xml">
+                <form string="Mệnh giá loại tiền">
+                    <sheet>
+                        <group col="4">
+                            <field name="STT"/>
+                            <field name="MENH_GIA"/>
+                            <field name="DIEN_GIAI"/>
+                            <field name="currency_id"/>
+                            <field name="name"/>
+                        </group>
+
+                        <!--Master/Detail form-->
+                        
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_danh_muc_menh_gia_loai_tien_tree" model="ir.ui.view">
+            <field name="name">danh.muc.menh.gia.loai.tien.tree</field>
+            <field name="model">danh.muc.menh.gia.loai.tien</field>
+            <field name="arch" type="xml">
+                <tree string="Mệnh giá loại tiền">
+                    <field name="STT"/>
+                    <field name="MENH_GIA"/>
+                    <field name="DIEN_GIAI"/>
+                    <field name="currency_id"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_danh_muc_menh_gia_loai_tien" model="ir.actions.act_window">
+            <field name="name">Mệnh giá loại tiền</field>
+            <field name="res_model">danh.muc.menh.gia.loai.tien</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_danh_muc_menh_gia_loai_tien_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_menh_gia_loai_tien_tree"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_menh_gia_loai_tien"/>
+        </record>
+
+        <record id="action_danh_muc_menh_gia_loai_tien_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_menh_gia_loai_tien_form"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_menh_gia_loai_tien"/>
+        </record>
+
+        <menuitem name="Mệnh giá loại tiền"
+                  action="danh_muc.open_menu_danh_muc_menh_gia_loai_tien"
+                  id="menu_danh_muc_menh_gia_loai_tien"
+                  parent=""
+                  sequence="0"/>
+    </data>
+    <data noupdate="1">
+        <record id="sequence_danh_muc_menh_gia_loai_tien_1" model="ir.sequence">
+            <field name="name">danh_muc_menh_gia_loai_tien STT sequence</field>
+            <field name="code">danh_muc_menh_gia_loai_tien_STT</field>
+            <field name="prefix">STT</field>
+            <field name="padding">3</field>
+        </record>
+    </data>
+</odoo>

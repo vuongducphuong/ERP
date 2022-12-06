@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <template id="account_ex_planner">
+        <t t-call="web_planner.pages">
+            <t t-call="web_planner.page">
+                <t t-set="page_title">Xin chào</t>
+                <t t-set="hide_mark_as_done" t-value="True"/>
+                <div class="o_planner_intro">
+                    <p>
+                        Cảm ơn bạn đã tin tưởng và sử dụng sản phẩm của Cloudify
+                    </p>
+                    <p>
+                        Hướng dẫn sau đây sẽ giúp bạn bắt đầu làm việc với phân hệ kế toán.
+                    </p>
+                    <br/>
+                    <!-- <p>
+                        Sau khi hoàn thành, bạn sẽ:
+                    </p>
+                    <ul>
+                        <li><strong>Reduced data entry:</strong> no need to manually create invoices, register bank statements, and send payment follow-ups.</li>
+                        <li><strong>Clean customer invoices:</strong> easy to create, beautiful and full featured invoices.</li>
+                        <li><strong>Automated documents sending:</strong> automatically send your invoices by email or snail mail.</li>
+                        <li><strong>On-the-fly payment reconciliation:</strong> automatic suggestions of outstanding payments when creating invoices.</li>
+                        <li><strong>Banking interface:</strong> with live bank feed synchronization and bank statement import.</li>
+                    </ul> -->
+                    <p>Trước khi bắt đầu, bạn nên nhập toàn bộ dữ liệu ban đầu cần thiết như:</p>
+                    <ul>
+                        <li>1. Nhập số dư tài khoản.</li>
+                        <li>2. Nhập số dư Công nợ Khách hàng</li>
+                        <li>3. Nhập số dư công nợ nhà cung cấp</li>
+                        <li>4. Nhập số dư công nợ nhân viên</li>
+                        <li>5. Nhập số tồn kho Vật tư hàng hóa</li>
+                        <li>6. Nhập danh sách TSCĐ đầu kỳ</li>
+                        <li>7. Nhập danh sách CCDC đầu kỳ</li>
+                    </ul>
+                    <p>Vui lòng xem hướng dẫn chi tiết tại đây</p>
+                    <p>Để khai báo thông tin ban đầu, bạn cần phải chuẩn bị dữ liệu theo các tệp mẫu Excel. Vui lòng tải về các tệp mẫu <a href="/base_import/static/csv/customers.xls">Tại đây</a></p>
+                    <br/>
+                    <p>Chúc bạn có những trải nghiệm thú vị với Cloudify,</p>
+                    <div class="mt32">
+                        <img class="signature mb8" src="/web_planner/static/src/img/fabien_signature.png"/>
+                        <address>
+                            Cloudify Team,<br/>
+                        </address>
+                    </div>
+                </div>
+            </t>
+            <t t-call="web_planner.category">
+                <t t-set="menu_categorytitle">Bắt đầu</t>
+                <t t-set="menu_categoryclasses" t-value="'fa fa-flag'"/>
+                <t t-call="web_planner.page">
+                    <t t-set="page_title">Nhập dữ liệu</t>
+                    <p class="text-muted">
+                        Vui lòng chọn tệp dữ liệu.
+                    </p>
+                    <table class="table">
+                    </table>
+                    <br/>
+                    <div class="alert alert-info info_icon" role="alert">
+                        <span class="fa fa-lightbulb-o fa-lg"/>
+                        <p> Chú ý: Hệ thống chỉ nhập khẩu các tệp hợp lệ. </p>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <!--Planner Data-->
+    <record id="planner_account_ex" model="web.planner">
+        <field name="name">Thiết lập ban đầu</field>
+        <field name="view_id" ref="account_ex_planner"/>
+        <field name="menu_id" ref="menu_ke_toan"/>
+        <field name="planner_application">planner_account_ex</field>
+        <field name="tooltip_planner"><![CDATA[
+            Hướng dẫn Cấu hình hệ thống kế toán.]]>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form_form" model="ir.ui.view">
+            <field name="name">stock.ex.kiem.ke.bang.kiem.ke.vat.tu.hang.hoa.form.form</field>
+            <field name="model">stock.ex.kiem.ke.bang.kiem.ke.vat.tu.hang.hoa.form</field>
+            <field name="arch" type="xml">
+                <form string="Bảng kiểm kê vật tư, hàng hóa" cloudify_js="stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form_view">
+                    <header>
+                        <button name="btn_Kiem_Ke_PN" string="Lập PN" type="object" class="oe_highlight oe_read_only"/>
+                        <button name="btn_Kiem_Ke_PX" string="Lập PX" type="object" class="oe_highlight oe_read_only"/>
+                    </header>
+                    <sheet>
+                        <notebook>
+                            <page string="Kiểm kê">
+                                <group col="6">
+                                    <group col="4" colspan="4">
+                                        <field name="MUC_DICH" colspan="4" />
+                                        <field name="KIEM_KE_KHO_ID" colspan="4" readonly="True" attrs="{'invisible': [('KIEM_KE_KHO_ID', 'in', (-1,None,False))]}"/>
+                                        <field name="TEN_KHO" colspan="4" readonly="True" attrs="{'invisible': [('KIEM_KE_KHO_ID', 'not in', (-1,None,False))]}"/>
+                                        <field name="DEN_NGAY" readonly="True" />
+                                        <field name="THAM_CHIEU"  invisible="1" readonly="True" />
+                                    </group>
+                                    <group col="2" colspan="2" string="Chứng từ">
+                                        <field name="SO" />
+                                        <field name="NGAY" />
+                                        <field name="GIO" widget="float_time" />
+                                        <field name="CHI_TIET_THEO_SELECTION" invisible="1" />
+                                        <field name="KIEM_KE_KHO_BL" invisible="1" />
+                                        <!-- <field name="TEN_KHO" invisible="1" /> -->
+                                        <field name="TONG_SO_LUONG_SO_KE_TOAN" invisible="1" />
+                                        <field name="TONG_SO_LUONG_KIEM_KE" invisible="1" />
+                                        <field name="TONG_SO_LUONG_CHENH_LECH" invisible="1" />
+                                        <field name="TONG_GIA_TRI_SO_KE_TOAN" invisible="1" />
+                                        <field name="TONG_GIA_TRI_KIEM_KE" invisible="1" />
+                                        <field name="TONG_GIA_TRI_CHENH_LECH" invisible="1" />
+                                        <field name="TONG_PHAM_CHAT_CON_TOT" invisible="1" />
+                                        <field name="TONG_KEM_PHAM_CHAT" invisible="1" />
+                                        <field name="TONG_MAT_PHAM_CHAT" invisible="1" />
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Thành viên tham gia">
+                                <field name="STOCK_EX_BANG_KIEM_KE_VTHH_THANH_VIEN_THAM_GIA_CHI_TIET_FORM_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="HO_VA_TEN" />
+                                        <field name="CHUC_DANH" />
+                                        <field name="DAI_DIEN" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Kết quả xử lý">
+                                <group col="2">
+                                    <group colspan="2" col="2">
+                                        <field name="KET_LUAN" colspan="2"/>
+                                        <field name="DA_XU_LY_CHENH_LECH" colspan="2" nolabel="1" class="o_td_label"/>
+                                    </group>
+                                    
+                                </group>
+                            </page>
+                        </notebook>
+                        <group col="12">
+                            <group colspan="8" col="8">
+                                <field name="KIEM_KE_GIA_TRI" colspan="8" attrs="{'invisible': [('CHI_TIET_THEO_SELECTION', '=', '2')]}" nolabel="1" class="o_td_label"/>
+                            </group>
+                            <group colspan="4" col="6">
+                               
+                                    <button name="btn_lay_lai_slt" colspan="2"  string="Lấy lại số tồn" class="oe_highlight oe_edit_only"/>
+                                    <button name="btn_xk_vthh" colspan="2" string="Xuất khẩu VTHH" class="oe_highlight"/>
+                                    <button name="btn_nhap_khau" colspan="2" string="Nhập khẩu kết quả" class="oe_highlight oe_edit_only"/>
+                                
+                            </group>
+                           
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1.Vật tư, hàng hóa cần điều chỉnh">
+                                <field name="STOCK_EX_BANG_KIEM_KE_VTHH_CAN_DIEU_CHINH_CHI_TIET_FORM_IDS" mode="tree">
+                                    <tree editable="bottom" options="{'header_struct':
+                                                        [['Số lượng', ['SO_LUONG_SO_KE_TOAN','SO_LUONG_KIEM_KE','SO_LUONG_CHENH_LECH']]
+                                                        ,['Giá trị', ['GIA_TRI_SO_KE_TOAN','GIA_TRI_KIEM_KE','GIA_TRI_CHENH_LECH']]
+                                                        ,['Phẩm chất', ['PHAM_CHAT_CON_TOT','KEM_PHAM_CHAT','MAT_PHAM_CHAT']]]}" menu='[{"xem_ma_quy_cach": "Xem mã quy cách"}]'>
+                                        <field name="MA_HANG_ID" required="True" options="{'columns': ['MA', 'TEN','SO_LUONG_TON'], 'strings': ['Mã hàng', 'Tên hàng','Số lượng tồn'],'displays': ['MA']}" />
+                                        <field name="TEN_HANG" readonly="True" />
+                                        <field name="MA_KHO_ID" options="{'columns': ['MA_KHO', 'TEN_KHO'], 'strings': ['Mã kho', 'Tên kho'],'displays': ['MA_KHO']}" attrs="{'column_invisible': [('parent.KIEM_KE_KHO_BL', '=', True)]}" />
+                                        <field name="DVT_ID" />
+                                        <field name="SO_LO" attrs="{'column_invisible': [('parent.CHI_TIET_THEO_SELECTION', '!=', '1')]}" />
+                                        <field name="HAN_SU_DUNG" attrs="{'column_invisible': [('parent.CHI_TIET_THEO_SELECTION', '!=', '1')]}" />
+                                        <field name="MA_QUY_CACH_1" attrs="{'column_invisible': [('parent.CHI_TIET_THEO_SELECTION', '!=', '2')]}" />
+                                        <field name="MA_QUY_CACH_2" attrs="{'column_invisible': [('parent.CHI_TIET_THEO_SELECTION', '!=', '2')]}" />
+                                        <field name="MA_QUY_CACH_3" attrs="{'column_invisible': [('parent.CHI_TIET_THEO_SELECTION', '!=', '2')]}" />
+                                        <field name="MA_QUY_CACH_4" attrs="{'column_invisible': [('parent.CHI_TIET_THEO_SELECTION', '!=', '2')]}" />
+                                        <field name="MA_QUY_CACH_5" attrs="{'column_invisible': [('parent.CHI_TIET_THEO_SELECTION', '!=', '2')]}" />
+                                        <field name="SO_LUONG_SO_KE_TOAN" readonly="True" sum="tong sl" string="Theo sổ kế toán" />
+                                        <field name="SO_LUONG_KIEM_KE" sum="tong sl" string="Theo kiểm kê" />
+                                        <field name="SO_LUONG_CHENH_LECH" readonly="True" sum="tong sl" string="Chênh lệch" />
+                                        <field name="GIA_TRI_SO_KE_TOAN" readonly="True" sum="tong sl" attrs="{'column_invisible': [('parent.KIEM_KE_GIA_TRI', '!=', True)]}" string="Theo sổ kế toán" />
+                                        <field name="GIA_TRI_KIEM_KE" sum="tong sl" attrs="{'column_invisible': [('parent.KIEM_KE_GIA_TRI', '!=', True)]}" string="Theo kiểm kê" />
+                                        <field name="GIA_TRI_CHENH_LECH" readonly="True" sum="tong sl" attrs="{'column_invisible': [('parent.KIEM_KE_GIA_TRI', '!=', True)]}" string="Chênh lệch" />
+                                        <field name="PHAM_CHAT_CON_TOT" sum="tong sl" attrs="{'column_invisible': ['|',('parent.CHI_TIET_THEO_SELECTION', '=', '1'),('parent.CHI_TIET_THEO_SELECTION', '=', '2')]}" string="Còn tốt 100%" />
+                                        <field name="KEM_PHAM_CHAT" sum="tong sl" attrs="{'column_invisible': ['|',('parent.CHI_TIET_THEO_SELECTION', '=', '1'),('parent.CHI_TIET_THEO_SELECTION', '=', '2')]}" string="Kém phẩm chất" />
+                                        <field name="MAT_PHAM_CHAT" sum="tong sl" attrs="{'column_invisible': ['|',('parent.CHI_TIET_THEO_SELECTION', '=', '1'),('parent.CHI_TIET_THEO_SELECTION', '=', '2')]}" string="Mất phẩm chất" />
+                                        <field name="XU_LY" readonly="True" />
+                                        <field name="CO_MA_QUY_CACH" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button name="btn_nhap_ma_quy_cach" string="Nhập mã quy cách" class="oe_highlight oe_edit_only"/>
+                        </footer>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form_tree" model="ir.ui.view">
+            <field name="name">stock.ex.kiem.ke.bang.kiem.ke.vat.tu.hang.hoa.form.tree</field>
+            <field name="model">stock.ex.kiem.ke.bang.kiem.ke.vat.tu.hang.hoa.form</field>
+            <field name="arch" type="xml">
+                <tree string="Kiểm kê" cloudify_js="stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_list_view">
+                    <field name="NGAY" />
+                    <field name="GIO" widget="float_time" />
+                    <field name="SO" />
+                    <field name="TEN_KHO" />
+                    <field name="DEN_NGAY" />
+                    <field name="MUC_DICH" />
+                    <field name="KET_LUAN" />
+                    <field name="DA_XU_LY_CHENH_LECH" string="Đã xử lý" />
+                    <field name="CHI_NHANH_ID" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form" model="ir.actions.act_window">
+            <field name="name">Bảng kiểm kê vật tư hàng hóa </field>
+            <field name="res_model">stock.ex.kiem.ke.bang.kiem.ke.vat.tu.hang.hoa.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form_tree" />
+            <field name="act_window_id" ref="open_menu_stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form" />
+        </record>
+        <record id="action_stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form_form" />
+            <field name="act_window_id" ref="open_menu_stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form" />
+        </record>
+        <!-- <menuitem name="Kiểm kê bảng kiểm kê vật tư hàng hóa form"
+                  action="stock_ex.open_menu_stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form"
+                  id="menu_stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form_1" model="ir.sequence">
+            <field name="name">stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form SO sequence</field>
+            <field name="code">stock_ex_kiem_ke_bang_kiem_ke_vat_tu_hang_hoa_form_SO</field>
+            <field name="prefix">KKK</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

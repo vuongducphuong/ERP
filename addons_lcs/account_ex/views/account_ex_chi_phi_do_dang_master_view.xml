@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_account_ex_chi_phi_do_dang_dtthcp_form" model="ir.ui.view">
+            <field name="name">account.ex.chi.phi.do.dang.master.form</field>
+            <field name="model">account.ex.chi.phi.do.dang.master</field>
+            <field name="arch" type="xml">
+                <form string="Chi phí dở dang master" cloudify_js="account_ex_chi_phi_do_dang_dtthcp_form_view">
+                    <sheet>
+                        <group col="6">
+                            <group colspan="2">
+                                <field name="NHAP_CHI_TIET_LOAI_CPDD_DTTHCP" nolabel="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Chi phí dở dang">
+                                <field name="ACCOUNT_EX_CHI_PHI_DO_DANG_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false" decoration-bf="isparent == True"  >
+                                        <field name="MA_DOI_TUONG_THCP_ID" readonly="1" />
+                                        <field name="TEN_DOI_TUONG_THCP" readonly="1" />
+                                        <field name="LOAI_DOI_TUONG_THCP" readonly="1" />
+
+                                        <field name="CHI_PHI_NVL_TRUC_TIEP" string="NVL trực tiếp" sum="Tổng" />
+                                        <field name="CHI_PHI_NHAN_CONG_TRUC_TIEP" />
+                                        <field name="CHI_PHI_NVL_GIAN_TIEP" string="NVL gián tiếp"/>
+                                        <field name="CHI_PHI_NHAN_CONG_GIAN_TIEP" string="Nhân công gián tiếp" />
+                                        <field name="CHI_PHI_KHAU_HAO" />
+                                        <field name="CHI_PHI_MUA_NGOAI" />
+                                        <field name="CHI_PHI_KHAC_CHUNG" string="Chi phí khác" attrs="{'column_invisible': [('parent.NHAP_CHI_TIET_LOAI_CPDD_DTTHCP', '!=', True)]}"/>
+                                        <field name="CHI_PHI_KHAC_CHUNG" string="Chi phí chung" attrs="{'column_invisible': [('parent.NHAP_CHI_TIET_LOAI_CPDD_DTTHCP', '=', True)]}"/>
+                                        <field name="TONG_CHI_PHI" invisible="1" />
+                                        <field name="TONG" string="Tổng chi phí"  readonly="1" />
+                                        <field name="TAI_KHOAN_CPSXKD_DO_DANG_ID" string="Tài khoản CPSXKD dở dang" />
+                                        <field name="LOAI_CHI_PHI_DO_DANG"  invisible="1"/>
+                                        <field name="BAC" invisible="1" />
+                                        <field name="isparent" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_menu_account_ex_chi_phi_do_dang_master" model="ir.actions.act_window">
+            <field name="name">Khai báo chi phí dở dang đầu kỳ cho đối tượng THCP</field>
+            <field name="res_model">account.ex.chi.phi.do.dang.master</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <record id="action_account_ex_chi_phi_do_dang_master_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_account_ex_chi_phi_do_dang_dtthcp_form" />
+            <field name="act_window_id" ref="open_menu_account_ex_chi_phi_do_dang_master" />
+        </record>
+        
+        <record id="view_account_ex_chi_phi_do_dang_cong_trinh_form" model="ir.ui.view">
+            <field name="name">account.ex.chi.phi.do.dang.master.form</field>
+            <field name="model">account.ex.chi.phi.do.dang.master</field>
+            <field name="arch" type="xml">
+                <form string="Chi phí dở dang master" cloudify_js="account_ex_chi_phi_do_dang_cong_trinh_form_view">
+                    <sheet>
+                        <group col="6">
+                            <group colspan="2">
+                                <field name="NHAP_CHI_TIET_LOAI_CPDD_CONG_TRINH" nolabel="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Chi phí dở dang">
+                                <field name="ACCOUNT_EX_CHI_PHI_DO_DANG_IDS" mode="tree">
+                                    <tree has_border="true" editable="bottom" create="false" delete="false" decoration-bf="isparent == True"
+                                                            options="{'header_struct': 
+                                                            [
+                                                                [
+                                                                    'Máy thi công', ['MTC_CHI_PHI_NVL_GIAN_TIEP','MTC_CHI_PHI_NHAN_CONG','MTC_CHI_PHI_KHAU_HAO_DAU_KY','MTC_CHI_PHI_MUA_NGOAI_DAU_KY','MTC_CHI_PHI_KHAC_CHUNG','MTC_TONG']
+                                                                ],
+                                                                [
+                                                                    'Chi phí chung', ['CHI_PHI_NVL_GIAN_TIEP','CHI_PHI_NHAN_CONG_GIAN_TIEP','CHI_PHI_KHAU_HAO','CHI_PHI_MUA_NGOAI','CHI_PHI_KHAC_CHUNG']
+                                                                ]
+                                                            ]}"
+                                                            >
+                                        <!-- <tree editable="bottom" create="false" delete="false" > -->
+                                        <field name="MA_CONG_TRINH_ID" readonly="1" />
+                                        <field name="TEN_CONG_TRINH" readonly="1" />
+                                        <field name="LOAI_CONG_TRINH" readonly="1" />
+
+                                        <field name="CHI_PHI_NVL_TRUC_TIEP" string="NVL trực tiếp" sum="Tổng" />
+                                        <field name="CHI_PHI_NHAN_CONG_TRUC_TIEP" string="Nhân công trực tiếp" />
+                                        <!-- <field name="MTC_TONG" /> -->
+                                        <!-- <field name="CHI_PHI_KHAC_CHUNG" sum="'Total amount'" /> -->
+                                        <!-- Máy thi công -->
+                                        <field name="MTC_CHI_PHI_NVL_GIAN_TIEP" string="NVL gián tiếp" />
+                                        <field name="MTC_CHI_PHI_NHAN_CONG" string="Nhân công" />
+                                        <field name="MTC_CHI_PHI_KHAU_HAO_DAU_KY" string="Khấu hao" />
+                                        <field name="MTC_CHI_PHI_MUA_NGOAI_DAU_KY" string="Chi phí mua ngoài" />
+                                        <field name="MTC_CHI_PHI_KHAC_CHUNG" string="Chi phí khác" />
+                                        <field name="MTC_TONG" string="Tổng" attrs="{'column_invisible': [('parent.NHAP_CHI_TIET_LOAI_CPDD_CONG_TRINH', '!=', True)]}"/>
+                                        <field name="MAY_THI_CONG" string="Máy thi công" attrs="{'column_invisible': [('parent.NHAP_CHI_TIET_LOAI_CPDD_CONG_TRINH', '=', True)]}"/>
+                                        <!-- Chi phí chung -->
+                                        <field name="CHI_PHI_NVL_GIAN_TIEP" string="NVL gián tiếp" />
+                                        <field name="CHI_PHI_NHAN_CONG_GIAN_TIEP" string="Nhân công gián tiếp" />
+                                        <field name="CHI_PHI_KHAU_HAO" string="Khấu hao" />
+                                        <field name="CHI_PHI_MUA_NGOAI" string="Chi phí mua ngoài" /> 
+                                        <field name="CHI_PHI_KHAC_CHUNG" string="Chi phí khác" sum="Tổng" attrs="{'column_invisible': [('parent.NHAP_CHI_TIET_LOAI_CPDD_CONG_TRINH', '!=', True)]}"/>
+                                        <field name="CHI_PHI_CHUNG" string="Chi phí chung" attrs="{'column_invisible': [('parent.NHAP_CHI_TIET_LOAI_CPDD_CONG_TRINH', '=', True)]}"/>
+                                        <!-- <field name="CHI_PHI_KHAC_CHUNG" string="Chi phí khác" sum="Tổng" />
+                                        <field name="CHI_PHI_KHAC_CHUNG" string="Chi phí chung" /> -->
+                                        <field name="TONG_CHI_PHI" string="Tổng"/>
+                                        <field name="TONG"  string="Tổng chi phí"/>
+                                        <field name="SO_DA_NGHIEM_THU" string="Số đã nghiệm thu" />
+                                        <field name="SO_CHUA_NGHIEM_THU" string="Số chưa nghiệm thu" />
+                                        <field name="TAI_KHOAN_CPSXKD_DO_DANG_ID" string="Tài khoản CPSXKD dở dang" />
+                                        <field name="LOAI_CHI_PHI_DO_DANG" invisible="1" />
+                                        <field name="BAC" invisible="1" />
+                                        <field name="isparent" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page> 
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_menu_account_ex_chi_phi_do_dang_cong_trinh_master" model="ir.actions.act_window">
+            <field name="name">Nhập chi phí phát sinh cho công trình kỳ trước</field>
+            <field name="res_model">account.ex.chi.phi.do.dang.master</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <record id="action_account_ex_chi_phi_do_dang_cong_trinh_master_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_account_ex_chi_phi_do_dang_cong_trinh_form" />
+            <field name="act_window_id" ref="open_menu_account_ex_chi_phi_do_dang_cong_trinh_master" />
+        </record>
+
+        <record id="view_account_ex_chi_phi_do_dang_don_hang_form" model="ir.ui.view">
+            <field name="name">account.ex.chi.phi.do.dang.master.form</field>
+            <field name="model">account.ex.chi.phi.do.dang.master</field>
+            <field name="arch" type="xml">
+                <form string="Chi phí dở dang master" cloudify_js="account_ex_chi_phi_do_dang_don_hang_form_view">
+                    <sheet>
+                        <group col="6">
+                            <group colspan="2">
+                                <field name="NHAP_CHI_TIET_LOAI_CPDD_DON_HANG" nolabel="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Chi phí dở dang">
+                                <field name="ACCOUNT_EX_CHI_PHI_DO_DANG_IDS" mode="tree">
+                                    <tree has_border="true" editable="bottom" create="false" delete="false">
+                                        <field name="DON_HANG_ID" string="Số đơn hàng" readonly="1" />
+                                        <field name="NGAY_DON_HANG" string="Ngày đơn hàng" readonly="1" />
+                                        <field name="DIEN_GIAI" string="Diễn giải" readonly="1" />
+                                        <field name="KHACH_HANG_ID" string="Khách hàng" readonly="1" />
+
+                                        <field name="CHI_PHI_NVL_TRUC_TIEP" string="NVL trực tiếp" sum="Tổng" />
+                                        <field name="CHI_PHI_NHAN_CONG_TRUC_TIEP" string="Nhân công trực tiếp" sum="Tổng" />
+                                        <field name="CHI_PHI_NVL_GIAN_TIEP" string="NVL gián tiếp" sum="Tổng" />
+                                        <field name="CHI_PHI_NHAN_CONG_GIAN_TIEP" string="Nhân công gián tiếp" sum="Tổng" />
+                                        <field name="CHI_PHI_KHAU_HAO" string="Khấu hao" sum="Tổng" />
+                                        <field name="CHI_PHI_MUA_NGOAI" string="Chi phí mua ngoài" sum="Tổng" />
+                                        <field name="CHI_PHI_KHAC_CHUNG" string="Chi phí khác" sum="Tổng" attrs="{'column_invisible': [('parent.NHAP_CHI_TIET_LOAI_CPDD_DON_HANG', '!=', True)]}"/>
+                                        <field name="CHI_PHI_KHAC_CHUNG" string="Chi phí chung" attrs="{'column_invisible': [('parent.NHAP_CHI_TIET_LOAI_CPDD_DON_HANG', '=', True)]}"/>
+                                        <!-- <field name="CHI_PHI_KHAC_CHUNG" string="Chi phí khác" sum="Tổng" />
+                                        <field name="CHI_PHI_KHAC_CHUNG" string="Chi phí chung"/> -->
+                                        <field name="TONG_CHI_PHI" invisible="1" />
+                                        <field name="TONG" string="Tổng chi phí"   />
+                                        <field name="SO_DA_NGHIEM_THU" string="Số đã nghiệm thu" sum="Tổng" />
+                                        <field name="SO_CHUA_NGHIEM_THU" string="Số chưa nghiệm thu" readonly="1" sum="Tổng" />
+                                        <field name="TAI_KHOAN_CPSXKD_DO_DANG_ID" string="Tài khoản CPSXKD dở dang" />
+                                        <field name="LOAI_CHI_PHI_DO_DANG" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_menu_account_ex_chi_phi_do_dang_don_hang_master" model="ir.actions.act_window">
+            <field name="name">Nhập lũy kế chi phí phát sinh cho đơn hàng kỳ trước</field>
+            <field name="res_model">account.ex.chi.phi.do.dang.master</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <record id="action_account_ex_chi_phi_do_dang_don_hang_master_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_account_ex_chi_phi_do_dang_don_hang_form" />
+            <field name="act_window_id" ref="open_menu_account_ex_chi_phi_do_dang_don_hang_master" />
+        </record>
+
+        <record id="view_account_ex_chi_phi_do_dang_hop_dong_form" model="ir.ui.view">
+            <field name="name">account.ex.chi.phi.do.dang.master.form</field>
+            <field name="model">account.ex.chi.phi.do.dang.master</field>
+            <field name="arch" type="xml">
+                <form string="Chi phí dở dang master" cloudify_js="account_ex_chi_phi_do_dang_hop_dong_form_view">
+                    <sheet>
+                        <group col="6">
+                            <group colspan="2">
+                                <field name="NHAP_CHI_TIET_LOAI_CPDD_HOP_DONG" nolabel="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Chi phí dở dang">
+                                <field name="ACCOUNT_EX_CHI_PHI_DO_DANG_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false">
+                                        <field name="HOP_DONG_ID" string="Số hợp đồng" readonly="1" />
+                                        <field name="NGAY_KY" string="Ngày ký" readonly="1" />
+                                        <field name="TRICH_YEU" string="Trích yếu" readonly="1" />
+                                        <field name="KHACH_HANG_ID" string="Khách hàng" readonly="1" />
+
+                                        <field name="CHI_PHI_NVL_TRUC_TIEP" string="NVL trực tiếp" sum="Tổng" />
+                                        <field name="CHI_PHI_NHAN_CONG_TRUC_TIEP" string="Nhân công trực tiếp" sum="Tổng" />
+                                        <field name="CHI_PHI_NVL_GIAN_TIEP" string="NVL gián tiếp" sum="Tổng" />
+                                        <field name="CHI_PHI_NHAN_CONG_GIAN_TIEP" string="Nhân công gián tiếp" sum="Tổng" />
+                                        <field name="CHI_PHI_KHAU_HAO" string="Khấu hao" sum="Tổng" />
+                                        <field name="CHI_PHI_MUA_NGOAI" string="Chi phí mua ngoài" sum="Tổng" />
+                                        <field name="CHI_PHI_KHAC_CHUNG" string="Chi phí khác" sum="Tổng" attrs="{'column_invisible': [('parent.NHAP_CHI_TIET_LOAI_CPDD_HOP_DONG', '!=', True)]}"/>
+                                        <field name="CHI_PHI_KHAC_CHUNG" string="Chi phí chung" attrs="{'column_invisible': [('parent.NHAP_CHI_TIET_LOAI_CPDD_HOP_DONG', '=', True)]}"/>
+                                        <field name="TONG_CHI_PHI" invisible="1" />
+                                        <field name="TONG" string="Tổng chi phí"  readonly="1" />
+                                        <field name="SO_DA_NGHIEM_THU" string="Số đã nghiệm thu" sum="Tổng" />
+                                        <field name="SO_CHUA_NGHIEM_THU" string="Số chưa nghiệm thu" readonly="1" sum="Tổng" />
+                                        <field name="TAI_KHOAN_CPSXKD_DO_DANG_ID" string="Tài khoản CPSXKD dở dang" />
+                                        <field name="LOAI_CHI_PHI_DO_DANG" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_menu_account_ex_chi_phi_do_dang_hop_dong_master" model="ir.actions.act_window">
+            <field name="name">Nhập lũy kế chi phí phát sinh cho hợp đồng kỳ trước</field>
+            <field name="res_model">account.ex.chi.phi.do.dang.master</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <record id="action_account_ex_chi_phi_do_dang_hop_dong_master_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_account_ex_chi_phi_do_dang_hop_dong_form" />
+            <field name="act_window_id" ref="open_menu_account_ex_chi_phi_do_dang_hop_dong_master" />
+        </record>
+
+
+
+        <record id="view_account_ex_chi_phi_chung_can_phan_bo_form" model="ir.ui.view">
+            <field name="name">account.ex.chi.phi.do.dang.master.form</field>
+            <field name="model">account.ex.chi.phi.do.dang.master</field>
+            <field name="arch" type="xml">
+                <form string="Chi phí dở dang master" cloudify_js="account_ex_chi_phi_chung_can_phan_bo_form_view">
+                    <sheet>
+                        <notebook>
+                            <page string="Chi phí chung">
+                                <field name="ACCOUNT_EX_KHAI_BAO_CHI_PHI_CHUNG_CAN_PHAN_BO_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false" decoration-bf="LA_TONG_HOP == True">
+                                        <field name="KHOAN_MUC_CP_ID" options="{'no_create': True}" readonly="1"/>
+                                        <field name="TEN_KHOAN_MUC_CP" readonly="1"/> 
+                                        <field name="SO_TIEN" attrs="{'readonly': [('LA_TONG_HOP', '=', True)]}"/> 
+                                        <field name="LA_TONG_HOP" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_menu_account_ex_chi_phi_chung_master" model="ir.actions.act_window">
+            <field name="name">Khai báo chi phí chung cần phân bổ</field>
+            <field name="res_model">account.ex.chi.phi.do.dang.master</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <record id="action_account_ex_chi_phi_chung_master_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_account_ex_chi_phi_chung_can_phan_bo_form" />
+            <field name="act_window_id" ref="open_menu_account_ex_chi_phi_chung_master" />
+        </record>
+    </data>
+</odoo>

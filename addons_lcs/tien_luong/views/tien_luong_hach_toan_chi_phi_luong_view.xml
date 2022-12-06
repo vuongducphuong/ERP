@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_luong_hach_toan_chi_phi_luong_form" model="ir.ui.view">
+            <field name="name">tien.luong.hach.toan.chi.phi.luong.form</field>
+            <field name="model">tien.luong.hach.toan.chi.phi.luong</field>
+            <field name="arch" type="xml">
+                <form string="Hạch toán chi phí lương" cloudify_js="tien_luong_hach_toan_chi_phi_luong_form_view">
+                    <header>
+                        <button name="action_ghi_so" string="Ghi sổ" type="object" class="oe_highlight oe_read_only" states="chua_ghi_so" />
+                        <button id="action_bo_ghi_so" string="Bỏ ghi" states="da_ghi_so" />
+                        <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so" />
+                    </header>
+                    <sheet>
+                        <group col="6">
+                            <group col="4" colspan="4" string="Thông tin chung">
+                                <field name="BANG_LUONG" colspan="4" readonly="1" />
+                                <field name="DIEN_GIAI" colspan="4" />
+                            </group>
+                            <group col="2" colspan="2" string="Chứng từ">
+                                <field name="NGAY_HACH_TOAN" />
+                                <field name="NGAY_CHUNG_TU" />
+                                <field name="SO_CHUNG_TU" />
+                                <field name="LOAI_CHUNG_TU" invisible="1" />
+                                <field name="SO_TIEN" invisible="1" />
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1.Hạch toán ">
+                                <field name="TIEN_LUONG_HACH_TOAN_CHI_PHI_LUONG_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false">
+                                        <field name="DIEN_GIAI" fixed_column="True" />
+                                        <field name="TK_NO_ID" fixed_column="True" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="TK_CO_ID" fixed_column="True" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="SO_TIEN" sum="Tổng" />
+                                        <field name="DOI_TUONG_NO_ID" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}" />
+                                        <field name="TEN_DOI_TUONG_NO" readonly="1" />
+                                        <field name="DOI_TUONG_CO_ID" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}" />
+                                        <field name="TEN_DOI_TUONG_CO" readonly="1" />
+                                        <field name="DON_VI_ID" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['MA_DON_VI']}" />
+                                        <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục chi phí', 'Tên khoản mục chi phí'],'displays': ['MA_KHOAN_MUC_CP']}" />
+                                        <field name="DOI_TUONG_THCP_ID" options="{'columns': ['MA_DOI_TUONG_THCP', 'TEN_DOI_TUONG_THCP'], 'strings': ['Mã đối tượng THCP', 'Tên đối tượng THCP'],'displays': ['MA_DOI_TUONG_THCP']}" />
+                                        <field name="CONG_TRINH_ID" options="{'columns': ['MA_CONG_TRINH', 'TEN_CONG_TRINH'], 'strings': ['Mã công trình', 'Tên công trình'] ,'displays': ['MA_CONG_TRINH']}" />
+                                        <field name="DON_DAT_HANG_ID" options="{'columns': ['SO_DON_HANG', 'KHACH_HANG_ID.HO_VA_TEN', 'NGAY_DON_HANG'], 'strings': ['Số đơn hàng', 'Khách hàng', 'Ngày đơn hàng'],'displays': ['SO_DON_HANG']}" />
+                                        <field name="HOP_DONG_BAN_ID" />
+                                        <field name="CP_KHONG_HOP_LY" />
+                                        <field name="MA_THONG_KE_ID" options="{'columns': ['MA_THONG_KE', 'TEN_THONG_KE'], 'strings': ['Mã thống kê', 'Tên thống kê'],'displays': ['MA_THONG_KE']}" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_tien_luong_hach_toan_chi_phi_luong_tree" model="ir.ui.view">
+            <field name="name">tien.luong.hach.toan.chi.phi.luong.tree</field>
+            <field name="model">tien.luong.hach.toan.chi.phi.luong</field>
+            <field name="arch" type="xml">
+                <tree string="Hạch toán chi phí lương" cloudify_js="tien_luong_hach_toan_chi_phi_luong_list_view" decoration-info="state=='chua_ghi_so'">
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="BANG_LUONG" />
+                    <field name="DIEN_GIAI" />
+                    <field name="SO_TIEN" sum="Tổng" />
+                    <field name="state" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_tien_luong_hach_toan_chi_phi_luong" model="ir.actions.act_window">
+            <field name="name">Hạch toán chi phí lương</field>
+            <field name="res_model">tien.luong.hach.toan.chi.phi.luong</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_tien_luong_hach_toan_chi_phi_luong_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_tien_luong_hach_toan_chi_phi_luong_tree" />
+            <field name="act_window_id" ref="open_menu_tien_luong_hach_toan_chi_phi_luong" />
+        </record>
+        <record id="action_tien_luong_hach_toan_chi_phi_luong_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_tien_luong_hach_toan_chi_phi_luong_form" />
+            <field name="act_window_id" ref="open_menu_tien_luong_hach_toan_chi_phi_luong" />
+        </record>
+    </data>
+    <data noupdate="1">
+        <record id="sequence_tien_luong_hach_toan_chi_phi_luong_1" model="ir.sequence">
+            <field name="name">tien_luong_hach_toan_chi_phi_luong SO_CHUNG_TU sequence</field>
+            <field name="code">tien_luong_hach_toan_chi_phi_luong_SO_CHUNG_TU</field>
+            <field name="prefix">HTCPL</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

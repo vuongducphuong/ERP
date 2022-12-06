@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_dinh_khoan_tu_dong_form" model="ir.ui.view">
+            <field name="name">danh.muc.dinh.khoan.tu.dong.form</field>
+            <field name="model">danh.muc.dinh.khoan.tu.dong</field>
+            <field name="arch" type="xml">
+                <form string="Định khoản tự động">
+                    <sheet>
+                        <group col="4">
+                            <field name="LOAI_CHUNG_TU" colspan="4" />
+                            <field name="TEN_DINH_KHOAN" colspan="4" />
+                            <field name="TK_NO_ID" string="TK Nợ" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản ', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                            <field name="TK_CO_ID" string="TK Có" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản ', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                            <field name="name" invisible='1' />
+                        </group>
+                        <!--Master/Detail form-->
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_danh_muc_dinh_khoan_tu_dong_tree" model="ir.ui.view">
+            <field name="name">danh.muc.dinh.khoan.tu.dong.tree</field>
+            <field name="model">danh.muc.dinh.khoan.tu.dong</field>
+            <field name="arch" type="xml">
+                <tree string="Định khoản tự động">
+                    <field name="LOAI_CHUNG_TU" string="Loại chứng từ"/>
+                    <field name="TEN_DINH_KHOAN" string="Tên định khoản"/>
+                    <field name="TK_NO_ID" string="TK Nợ"/>
+                    <field name="TK_CO_ID" string="TK Có"/>
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_danh_muc_dinh_khoan_tu_dong" model="ir.actions.act_window">
+            <field name="name">Định khoản tự động</field>
+            <field name="res_model">danh.muc.dinh.khoan.tu.dong</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'import_enabled': False}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_danh_muc_dinh_khoan_tu_dong_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_dinh_khoan_tu_dong_tree" />
+            <field name="act_window_id" ref="open_menu_danh_muc_dinh_khoan_tu_dong" />
+        </record>
+        <record id="action_danh_muc_dinh_khoan_tu_dong_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_dinh_khoan_tu_dong_form" />
+            <field name="act_window_id" ref="open_menu_danh_muc_dinh_khoan_tu_dong" />
+        </record>
+        <!-- <menuitem name="Định khoản tự động" action="danh_muc.open_menu_danh_muc_dinh_khoan_tu_dong" id="menu_danh_muc_dinh_khoan_tu_dong" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_tuy_chinh_tieu_de_form" model="ir.ui.view">
+            <field name="name">bao.cao.tuy.chinh.tieu.de.form</field>
+            <field name="model">bao.cao.tuy.chinh.tieu.de</field>
+            <field name="arch" type="xml">
+                <form string="Tùy chỉnh tiêu đề">
+                    <sheet>
+                        <notebook>
+                            <page string="Sửa mẫu">
+                                <!-- <field name="header" widget="html"/> -->
+                                <field name="header" nolabel="1" colspan="12"/>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_ma_thong_ke_form" model="ir.ui.view">
+            <field name="name">danh.muc.ma.thong.ke.form</field>
+            <field name="model">danh.muc.ma.thong.ke</field>
+            <field name="arch" type="xml">
+                <form string="Mã thống kê">
+                    <sheet>
+                        <group col="2">
+                            <field name="MA_THONG_KE" colspan="2" required="True"/>
+                            <field name="TEN_THONG_KE" colspan="3" required="True"/>
+                            <field name="parent_id" colspan="2" options="{'columns': ['MA_THONG_KE', 'TEN_THONG_KE'], 'strings': ['Mã thống kê', 'Tên thống kê'],'diplays':['MA_THONG_KE']}"/>
+                            <field name="DIEN_GIAI" colspan="2" />
+                        </group>
+                        <field name="active" />
+                        <group col="4" >
+                            
+                            <field name="name" invisible="True" />
+                        </group>
+                        <!--Master/Detail form-->
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_danh_muc_ma_thong_ke_tree" model="ir.ui.view">
+            <field name="name">danh.muc.ma.thong.ke.tree</field>
+            <field name="model">danh.muc.ma.thong.ke</field>
+            <field name="arch" type="xml">
+                <tree string="Mã thống kê" hierarchy="parent_id">
+                    <field name="MA_THONG_KE" string="Mã thống kê" />
+                    <field name="TEN_THONG_KE" string="Tên thống kê" />
+                    <field name="DIEN_GIAI" />
+                    <field name="active" />
+                    <field name="parent_id" invisible="1" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_danh_muc_ma_thong_ke" model="ir.actions.act_window">
+            <field name="name">Mã thống kê</field>
+            <field name="res_model">danh.muc.ma.thong.ke</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'import_enabled': False}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_danh_muc_ma_thong_ke_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_ma_thong_ke_tree" />
+            <field name="act_window_id" ref="open_menu_danh_muc_ma_thong_ke" />
+        </record>
+        <record id="action_danh_muc_ma_thong_ke_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_ma_thong_ke_form" />
+            <field name="act_window_id" ref="open_menu_danh_muc_ma_thong_ke" />
+        </record>
+        <!-- <menuitem name="Mã thống kê" action="danh_muc.open_menu_danh_muc_ma_thong_ke" id="menu_danh_muc_ma_thong_ke" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_bieu_thue_tieu_thu_dac_biet_form" model="ir.ui.view">
+            <field name="name">danh.muc.bieu.thue.tieu.thu.dac.biet.form</field>
+            <field name="model">danh.muc.bieu.thue.tieu.thu.dac.biet</field>
+            <field name="arch" type="xml">
+                <form string="Biểu thuế tiêu thụ đặc biệt">
+                    <sheet>
+                        <group col="4" colspan="4">
+                            <field name="MA" colspan="4" />
+                            <field name="TEN" colspan="4" />
+                            <field name="THUOC" colspan="4" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm HHDV chịu thuế', 'Tên nhóm HHDV chịu thuế TTĐB'],'displays':['TEN']}" />
+                            <field name="DVT" colspan="2"/>
+                            <field name="THUE_SUAT" colspan="2"/>
+                            <field name="DIEN_GIAI" colspan="4" />
+                        </group>
+                         <field name="active" />
+                        <group col="4" colspan="4">
+                           
+                            <field name="name" invisible="True" />
+                        </group>
+                        <!--Master/Detail form-->
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_danh_muc_bieu_thue_tieu_thu_dac_biet_tree" model="ir.ui.view">
+            <field name="name">danh.muc.bieu.thue.tieu.thu.dac.biet.tree</field>
+            <field name="model">danh.muc.bieu.thue.tieu.thu.dac.biet</field>
+            <field name="arch" type="xml">
+                <tree string="Biểu thuế tiêu thụ đặc biệt" hierarchy="THUOC">
+                    <field name="MA" string="Mã" />
+                    <field name="TEN" string="Tên nhóm HHDV chịu thuế TTĐB" />
+                    <field name="DVT" string="Đơn vị tính" />
+                    <field name="THUE_SUAT" string="Thuế suất (%)" />
+                    <field name="active" string="Theo dõi" />
+                    <field name="THUOC" invisible="1" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_danh_muc_bieu_thue_tieu_thu_dac_biet" model="ir.actions.act_window">
+            <field name="name">Biểu thuế tiêu thụ đặc biệt</field>
+            <field name="res_model">danh.muc.bieu.thue.tieu.thu.dac.biet</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_danh_muc_bieu_thue_tieu_thu_dac_biet_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_bieu_thue_tieu_thu_dac_biet_tree" />
+            <field name="act_window_id" ref="open_menu_danh_muc_bieu_thue_tieu_thu_dac_biet" />
+        </record>
+        <record id="action_danh_muc_bieu_thue_tieu_thu_dac_biet_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_bieu_thue_tieu_thu_dac_biet_form" />
+            <field name="act_window_id" ref="open_menu_danh_muc_bieu_thue_tieu_thu_dac_biet" />
+        </record>
+        <!-- <menuitem name="Biểu thuế tiêu thụ đặc biệt" action="danh_muc.open_menu_danh_muc_bieu_thue_tieu_thu_dac_biet" id="menu_danh_muc_bieu_thue_tieu_thu_dac_biet" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

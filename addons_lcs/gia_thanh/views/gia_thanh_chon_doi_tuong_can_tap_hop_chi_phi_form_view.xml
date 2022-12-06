@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_gia_thanh_chon_doi_tuong_can_tap_hop_chi_phi_san_xuat_lien_tuc_gian_don_form" model="ir.ui.view">
+            <field name="name">gia.thanh.chon.doi.tuong.can.tap.hop.chi.phi.form.form</field>
+            <field name="model">gia.thanh.chon.doi.tuong.can.tap.hop.chi.phi.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_doi_tuong_can_tap_hop_chi_phi_san_xuat_lien_tuc_gian_don_form_view">
+                    <sheet>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="GIA_THANH_CHON_DOI_TUONG_CAN_TAP_HOP_CHI_PHI_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="false" create="false" delete="false" report="true">
+                                        <field name="MA_SAN_PHAM_ID" string="Mã" />
+                                        <field name="TEN_SAN_PHAM" string="Tên" />
+                                        <field name="LOAI" string="Loại"/>
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_gia_thanh_chon_doi_tuong_can_tap_hop_chi_phi_san_xuat_lien_tuc_he_so_ty_le_form" model="ir.ui.view">
+            <field name="name">gia.thanh.chon.doi.tuong.can.tap.hop.chi.phi.form.form</field>
+            <field name="model">gia.thanh.chon.doi.tuong.can.tap.hop.chi.phi.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_doi_tuong_can_tap_hop_chi_phi_san_xuat_lien_tuc_he_so_ty_le_form_view">
+                    <sheet>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="GIA_THANH_CHON_DOI_TUONG_CAN_TAP_HOP_CHI_PHI_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="false" create="false" delete="false" report="true">
+                                        <field name="MA_SAN_PHAM_ID" string="Mã" />
+                                        <field name="TEN_SAN_PHAM" string="Tên" />
+                                        <field name="LOAI" string="Loại"/>
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_gia_thanh_chon_doi_tuong_can_tap_hop_chi_phi_cong_trinh_form" model="ir.ui.view">
+            <field name="name">gia.thanh.chon.doi.tuong.can.tap.hop.chi.phi.form.form</field>
+            <field name="model">gia.thanh.chon.doi.tuong.can.tap.hop.chi.phi.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_doi_tuong_can_tap_hop_chi_phi_cong_trinh_form_view">
+                    <sheet>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="GIA_THANH_CHON_DOI_TUONG_CAN_TAP_HOP_CHI_PHI_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="false" create="false" delete="false" report="true">
+                                        <field name="MA_CONG_TRINH_ID" />
+                                        <field name="TEN_CONG_TRINH" />
+                                        <field name="LOAI_CONG_TRINH" />
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_gia_thanh_chon_doi_tuong_can_tap_hop_chi_phi_don_hang_form" model="ir.ui.view">
+            <field name="name">gia.thanh.chon.doi.tuong.can.tap.hop.chi.phi.form.form</field>
+            <field name="model">gia.thanh.chon.doi.tuong.can.tap.hop.chi.phi.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_doi_tuong_can_tap_hop_chi_phi_don_hang_form_view">
+                    <sheet>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="GIA_THANH_CHON_DOI_TUONG_CAN_TAP_HOP_CHI_PHI_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="false" create="false" delete="false" report="true">
+                                        <field name="SO_DON_HANG_ID" />
+                                        <field name="NGAY_DON_HANG" />
+                                        <field name="KHACH_HANG" />
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_gia_thanh_chon_doi_tuong_can_tap_hop_chi_phi_hop_dong_form" model="ir.ui.view">
+            <field name="name">gia.thanh.chon.doi.tuong.can.tap.hop.chi.phi.form.form</field>
+            <field name="model">gia.thanh.chon.doi.tuong.can.tap.hop.chi.phi.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_doi_tuong_can_tap_hop_chi_phi_hop_dong_form_view">
+                    <sheet>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="GIA_THANH_CHON_DOI_TUONG_CAN_TAP_HOP_CHI_PHI_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="false" create="false" delete="false" report="true">
+                                        <field name="SO_HOP_DONG_ID" />
+                                        <field name="NGAY_HOP_DONG" />
+                                        <field name="TRICH_YEU" />
+                                        <field name="KHACH_HANG" />
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="asset assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/asset/static/src/js/ghi_tang_tai_san_co_dinh_view.js"></script>
+                <script type="text/javascript" src="/asset/static/src/js/tinh_khau_hao_view.js"></script>
+                <script type="text/javascript" src="/asset/static/src/js/kiem_ke_view.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

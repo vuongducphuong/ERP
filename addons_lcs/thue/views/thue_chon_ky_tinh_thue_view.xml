@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_thue_chon_ky_tinh_thue_tham_so_form" model="ir.ui.view">
+            <field name="name">thue.chon.ky.tinh.thue.form</field>
+            <field name="model">thue.chon.ky.tinh.thue</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_ky_tinh_thue_form_view">
+                    <sheet>
+                        <group col="6" attrs="{'invisible': [('KHOAN_MUC_THUE','!=','QUYET_TOAN_THUE_TNDN')]}">
+                            <field name="NAM" colspan="2" options="{'showSpinButtons': true}"/>
+                            <field name="TU_NGAY" colspan="2" />
+                            <field name="DEN_NGAY" colspan="2" />
+                        </group>
+                        <group colspan="4" attrs="{'invisible': [('KHOAN_MUC_THUE','=','QUYET_TOAN_THUE_TNDN')]}">
+                            <field name="LOAI_TO_KHAI" widget="radio" options="{'horizontal': True, 'alway_edit': True}" colspan="4" string="Loại tờ khai" />
+                        </group>
+                        <group col="4" attrs="{'invisible': [('LOAI_TO_KHAI','=','TO_KHAI_LAN_PHAT_SINH')]}">
+                            <field name="THANG" col="2" attrs="{'invisible': [('LOAI_TO_KHAI', '=', 'TO_KHAI_QUY')]}" />
+                            <field name="NAM" col="2" attrs="{'invisible': [('LOAI_TO_KHAI', '=', 'TO_KHAI_QUY')]}" options="{'showSpinButtons': true}"/>
+                            <field name="QUY" col="2" attrs="{'invisible': [('LOAI_TO_KHAI', '=', 'TO_KHAI_THANG')]}" />
+                            <field name="NAM" col="2" attrs="{'invisible': [('LOAI_TO_KHAI', '=', 'TO_KHAI_THANG')]}" options="{'showSpinButtons': true}"/>
+                            <field name="HANG_MUC_KHAI" widget="radio" options="{'horizontal': True, 'alway_edit': True}" colspan="4" string="Hạng mục khai" />
+                            <field name="DOANH_NGHIEP_THUOC_THUE_SUAT" widget="radio" options="{'horizontal': True, 'alway_edit': True}" colspan="4" attrs="{'invisible': ['|',('KHOAN_MUC_THUE','!=','QUYET_TOAN_THUE_TNDN'),('HANG_MUC_KHAI', '=', 'TO_KHAI_BO_SUNG')]}" />
+                            <field name="LAN_KHAI" col="2" attrs="{'readonly': [('HANG_MUC_KHAI', '=', 'TO_KHAI_LAN_DAU')]}" />
+                            <field name="NGAY_LAP_KHBS" col="2" attrs="{'readonly': [('HANG_MUC_KHAI', '=', 'TO_KHAI_LAN_DAU')]}" />
+                            <field name="DANH_MUC_NGHANH_NGHE" colspan="4" />
+                            <field name="KHOAN_MUC_THUE" colspan="4" invisible="1" />
+                        </group>
+                        <group col="6" attrs="{'invisible': [('LOAI_TO_KHAI','!=','TO_KHAI_LAN_PHAT_SINH')]}">
+                            <field name="NGAY" col="2" />
+                            <field name="THANG" col="2" />
+                            <field name="NAM" col="2" options="{'showSpinButtons': true}"/>
+                            <field name="HANG_MUC_KHAI" widget="radio" options="{'horizontal': True, 'alway_edit': True}" colspan="4" string="Hạng mục khai" />
+                            <field name="LAN_KHAI" col="2" attrs="{'readonly': [('HANG_MUC_KHAI', '=', 'TO_KHAI_LAN_DAU')]}" />
+                            <field name="NGAY_LAP_KHBS" col="2" attrs="{'readonly': [('HANG_MUC_KHAI', '=', 'TO_KHAI_LAN_DAU')]}" />
+                            <field name="DANH_MUC_NGHANH_NGHE" colspan="4" />
+                            <field name="KHOAN_MUC_THUE" colspan="4" invisible="1" />
+                        </group>
+                        <notebook attrs="{'invisible': ['|',('HANG_MUC_KHAI', '=', 'TO_KHAI_BO_SUNG'),('KHOAN_MUC_THUE','in',('THUE_GTGT_TRUC_TIEP_TREN_GTGT','THUE_TAI_NGUYEN'))]}">
+                            <page string="Chọn phụ lục kê khai">
+                                <field name="THUE_PHU_LUC_KE_KHAI_IDS" mode="tree">
+                                    <tree editable="false" create="false" delete="false" report="true">
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                        <field name="MA_PHU_LUC" />
+                                        <field name="TEN_PHU_LUC" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!-- <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer> -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_thue_chon_ky_tinh_thue_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Chọn kỳ tính thuế </field>
+            <field name="res_model">thue.chon.ky.tinh.thue</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_thue_chon_ky_tinh_thue_tham_so_form" />
+        </record>
+        <record id="action_open_thue_chon_ky_tinh_thue_form" model="ir.actions.act_window">
+            <field name="name">Chọn kỳ tính thuế </field>
+            <field name="res_model">thue.chon.ky.tinh.thue</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+        <!-- <menuitem name="Chọn kỳ tính thuế " action="thue.open_thue_chon_ky_tinh_thue_tham_so_form" id="menu_thue_chon_ky_tinh_thue" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+	<template id="saordervoucher3520quanity">
+		<t t-call="web.external_layout">
+			<div class="page" style="margin-left: 15px; margin-right: 15px;">
+				<div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;border-bottom: 2px solid !important;">
+					<div class="col-xs-3" style="padding-left: 0px;padding-right: 0px;"></div>
+					<div class="col-xs-6  text-center" style="padding-left: 0px;padding-right: 0px;">
+						<div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;font-size: 15.75pt;font-weight: bold;">
+							<span t-esc="o.get_ten_cong_ty()" />
+						</div>
+						<div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;font-size: 12pt;">
+							<span>Địa chỉ: </span>
+							<span t-esc="o.get_dia_chi_cong_ty()" />
+						</div>
+						<div class="col-xs-12 truong-thong-tin-dat-tren-header" style="padding-left: 0px;padding-right: 0px;font-size: 12pt;">
+							<span>Điện thoại:</span>
+							<span t-esc="o.get_dien_thoai_cong_ty()" />
+						</div>
+					</div>
+					<div class="col-xs-3" style="padding-left: 0px;padding-right: 0px;"></div>
+				</div>
+				<div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
+					<div class="col-xs-4" style="padding-left: 0px;padding-right: 0px;"></div>
+					<div class="col-xs-4" style="padding-left: 0px;padding-right: 0px;">
+						<div class="col-xs-12 text-center report-title" style="padding-left: 0px; padding-right: 0px;margin-bottom: -5px;">
+							<span>PHIẾU ĐẶT HÀNG</span>
+						</div>
+						<div class="col-xs-12 text-center header-label" style="padding-left: 0px; padding-right: 0px;">
+							<span>Số:</span>
+							<span t-if="o.SO_DON_HANG" t-field="o.SO_DON_HANG" />
+						</div>
+					</div>
+					<div class="col-xs-4" style="padding-left: 0px;padding-right: 0px;">
+						<div class="col-xs-12" style="padding-left: 50px;padding-right: 0px;padding-top: 20px;">
+							<div class="col-xs-3" style="padding-left: 0px;padding-right: 0px;width: 25%;">
+								<span>Ngày:</span>
+							</div>
+							<div class="col-xs-9" style="padding-left: 0px;padding-right: 0px;width: 75%;">
+								<span t-if="o.NGAY_DON_HANG" t-field="o.NGAY_DON_HANG" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
+					<div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;margin-bottom: 10px;">
+						<div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
+							<div class="col-xs-4 header-label" style="padding-left: 0px;padding-right: 0px;width: 17%;">
+								<span>Tên khách hàng: </span>
+							</div>
+							<div class="col-xs-8 header-label" style="padding-left: 0px;padding-right: 0px;width: 83%;">
+								<span t-if="o.TEN_KHACH_HANG" t-field="o.TEN_KHACH_HANG" />
+							</div>
+						</div>
+						<div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
+							<div class="col-xs-4 header-label" style="padding-left: 0px;padding-right: 0px;width: 10%;">
+								<span>Ghi chú: </span>
+							</div>
+							<div class="col-xs-8 header-label" style="padding-left: 0px;padding-right: 0px;width: 90%;">
+								<span t-if="o.DIEN_GIAI" t-field="o.DIEN_GIAI" />
+							</div>
+						</div>
+						<div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
+							<div class="col-xs-4 header-label" style="padding-left: 0px;padding-right: 0px;width: 10%;">
+								<span>Địa chỉ: </span>
+							</div>
+							<div class="col-xs-8 header-label" style="padding-left: 0px;padding-right: 0px;width: 90%;">
+								<span t-if="o.DIA_CHI" t-field="o.DIA_CHI" />
+							</div>
+						</div>
+						<div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
+							<div class="col-xs-4 header-label" style="padding-left: 0px;padding-right: 0px;width: 12%;">
+								<span>Điện thoại:</span>
+							</div>
+							<div class="col-xs-8 header-label" style="padding-left: 0px;padding-right: 0px;width: 88%;">
+								<span t-if="o.SO_DIEN_THOAI" t-field="o.SO_DIEN_THOAI" />
+							</div>
+						</div>
+					</div>
+					<!--Table-->
+					<table class="table-condensed table-bordereds" style="width: 100%;margin-bottom: 0px;">
+						<thead>
+							<tr class="detail-header">
+								<th class="text-center" style="width: 10px; height: 6px;">
+									<span>STT</span>
+								</th>
+								<th class="text-center" style="width: 70px; height: 6px; ">
+									<span>Tên hàng hóa</span>
+								</th>
+								<th class="text-center" style="width: 20px; height: 6px;">
+									<span>S.Lượng</span>
+								</th>
+								<th class="text-center" style="width: 40px; height: 6px;">
+									<span>Ghi chú</span>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<t t-set="so_thu_tu" t-value="0"></t>
+							<tr t-foreach="o.ACCOUNT_EX_PHIEU_THU_CHI_TIET_IDS" t-as="line">
+								<t t-set="so_thu_tu" t-value="so_thu_tu + 1"></t>
+								<td class="text-center  value-center" style="width: 10px; height: 6px;">
+									<span t-esc="so_thu_tu"></span>
+								</td>
+								<td class="text-left detail-text" style="width: 70px; height: 6px; ">
+									<span t-field="line.DIEN_GIAI_DETAIL" />
+								</td>
+
+								<td class="text-center detail-number" style="width: 20px; height: 6px;">
+									<span t-field="line.SO_LUONG" />
+								</td>
+
+								<td class="text-left detail-number" style="width: 40px; height: 6px;"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</t>
+	</template>
+	<template id="template_saordervoucher3520quanity">
+		<t t-call="web.html_container">
+			<t t-foreach="docs" t-as="o">
+				<t t-call="bao_cao.saordervoucher3520quanity" />
+			</t>
+		</t>
+	</template>
+	<data>
+		<report string="Đơn đặt hàng (chỉ có số lượng)" id="action_template_saordervoucher3520quanity" model="bao.cao.don.dat.hang.chi.co.so.luong" report_type="qweb-html" name="bao_cao.template_saordervoucher3520quanity" file="bao_cao.template_saordervoucher3520quanity" print_report_name="Đơn đặt hàng (chỉ có số lượng)" />
+	</data>
+</odoo>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_nhom_vthh_form" model="ir.ui.view">
+            <field name="name">bao.cao.nhom.vthh.form</field>
+            <field name="model">bao.cao.nhom.vthh</field>
+            <field name="arch" type="xml">
+                <form string="Nhóm VTHH">
+                    <sheet>
+                        <group col="4">
+                            <field name="MA_NHOM"/>
+                            <field name="TEN_NHOM"/>
+                            <field name="name"/>
+                        </group>
+
+                        <!--Master/Detail form-->
+                        
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_bao_cao_nhom_vthh_tree" model="ir.ui.view">
+            <field name="name">bao.cao.nhom.vthh.tree</field>
+            <field name="model">bao.cao.nhom.vthh</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Nhóm VTHH">
+                    <field name="MA_NHOM"/>
+                    <field name="TEN_NHOM"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_bao_cao_nhom_vthh" model="ir.actions.act_window">
+            <field name="name">Nhóm VTHH</field>
+            <field name="res_model">bao.cao.nhom.vthh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_bao_cao_nhom_vthh_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_nhom_vthh_tree"/>
+            <field name="act_window_id" ref="open_menu_bao_cao_nhom_vthh"/>
+        </record>
+
+        <record id="action_bao_cao_nhom_vthh_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_bao_cao_nhom_vthh_form"/>
+            <field name="act_window_id" ref="open_menu_bao_cao_nhom_vthh"/>
+        </record>
+
+    </data>
+    <!-- <data noupdate="1"> -->
+        <!-- <record id="sequence_bao_cao_nhom_vthh_1" model="ir.sequence"> -->
+            <!-- <field name="name">bao_cao_nhom_vthh MA_NHOM sequence</field> -->
+            <!-- <field name="code">bao_cao_nhom_vthh_MA_NHOM</field> -->
+            <!-- <field name="prefix">MA_NHOM</field> -->
+            <!-- <field name="padding">3</field> -->
+        <!-- </record> -->
+    <!-- </data> -->
+</odoo>

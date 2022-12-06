@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_sale_ex_hop_dong_ban_chon_chung_tu_thu_form_tham_so_form" model="ir.ui.view">
+            <field name="name">sale.ex.hop.dong.ban.chon.chung.tu.thu.form.form</field>
+            <field name="model">sale.ex.hop.dong.ban.chon.chung.tu.thu.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="6">
+                            <field name="DOI_TUONG_ID" domain="['|','|',('LA_KHACH_HANG','=','True'),('LA_NHA_CUNG_CAP','=','True'),('LA_NHAN_VIEN','=','True')]" colspan="2" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}"/>
+                            <field name="KHOANG_THOI_GIAN" colspan="4"/>
+                            <field name="TU" colspan="2"/>
+                            <field name="DEN" colspan="2"/>
+                            <button id="lay_du_lieu" string="Lấy dữ liệu"></button>
+                        </group>
+                        <!--<notebook>
+                            <page string="Chi tiết">
+                                <field name="FIELD_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>-->
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="">
+                                <field name="SALE_EX_HOP_DONG_BAN_CHON_CHUNG_TU_THU_CHI_TIET_FORM_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" report="true">
+                                    <field name="AUTO_SELECT" invisible="1"/>
+                                    <field name="NGAY_HACH_TOAN"/>
+                                    <field name="NGAY_CHUNG_TU"/>
+                                    <field name="SO_CHUNG_TU"/>
+                                    <field name="DIEN_GIAI"/>
+                                    <field name="SO_TIEN"/>
+                                    <field name="MA_DOI_TUONG_ID"/>
+                                    <field name="TEN_DOI_TUONG"/>
+                                    
+                                   
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                        
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_sale_ex_hop_dong_ban_chon_chung_tu_thu_form_tham_so_form" model="ir.actions.act_window">
+            <field name="name">hợp đồng bán chọn chứng từ thu form</field>
+            <field name="res_model">sale.ex.hop.dong.ban.chon.chung.tu.thu.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_sale_ex_hop_dong_ban_chon_chung_tu_thu_form_tham_so_form"/>
+        </record>
+
+        <record id="action_open_sale_ex_hop_dong_ban_chon_chung_tu_thu_form_form" model="ir.actions.act_window">
+            <field name="name">hợp đồng bán chọn chứng từ thu form</field>
+            <field name="res_model">sale.ex.hop.dong.ban.chon.chung.tu.thu.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="hợp đồng bán chọn chứng từ thu form"
+                  action="sale_ex.open_sale_ex_hop_dong_ban_chon_chung_tu_thu_form_tham_so_form"
+                  id="menu_sale_ex_hop_dong_ban_chon_chung_tu_thu_form"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

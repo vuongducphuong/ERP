@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="sale_ex_tra_lai_hang_ban_02_tt">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-7 text-left truong-thong-tin-dat-tren-header">
+                        <span t-esc="o.get_ten_cong_ty()"/><br/>
+                        <span t-esc="o.get_dia_chi_cong_ty()"/>
+                    </div>
+                    <div class="col-xs-5 text-center">
+                        <div class="mau-so">
+                            <span><strong>Mẫu số 02 - TT</strong></span><br/>
+                        </div>
+                        <div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '0'">
+                            <span>(Ban hành theo Thông tư số 200/2014/TT-BTC)</span><br/>
+                            <span>Ngày 22/12/2014 của Bộ Tài chính)</span>
+                        </div>
+						<div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '15'">
+                            <span>(Ban hành theo Thông tư số 133/2016/TT-BTC)</span>
+                            <span>Ngày 26/08/2016 của Bộ Tài chính)</span>
+                        </div>
+                    </div>
+                </div>
+                <table style="width:100%">
+                    <tr>
+                        <td style="width: 30%"></td>
+                        <td class="text-center tieu-de-cua-bao-cao" style="width: 40%">
+                            <span><strong>PHIẾU CHI</strong></span>
+                        </td>
+                        <td class="text-left">
+                            <span>Quyển số: ....................................</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30%"></td>
+                        <td class="text-center truong-gia-tri-kieu-text-dat-tren-header" style="width: 40%">
+                            <strong><i><span t-if="o.NGAY_CHUNG_TU" t-field="o.NGAY_CHUNG_TU" t-options="{'widget': 'ngaythang'}"/></i></strong>
+                        </td>
+                        <td class="text-left">
+                            <span>Số: </span>
+                            <span t-if="o.SO_CHUNG_TU_PHIEU_CHI" t-field="o.SO_CHUNG_TU_PHIEU_CHI"/>
+                            <t t-if="not o.SO_CHUNG_TU_PHIEU_CHI" t-call="danh_muc.empty_line"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30%"></td>
+                        <td class="text-center" style="width: 40%"></td>
+                        <td class="text-left">
+                            <span>Nợ: </span>
+                            <span t-field="o.TRA_LAI_HANG_BAN_CHI_TIET_IDS" t-options="{'widget': 'ghino'}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30%"></td>
+                        <td class="text-center" style="width: 40%"></td>
+                        <td class="text-left">
+                            <span>Có: </span>
+                            <span t-field="o.TRA_LAI_HANG_BAN_CHI_TIET_IDS" t-options="{'widget': 'ghico'}" />
+                        </td>
+                    </tr>
+                </table>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <span>Họ và tên người giao:   </span>
+                        <span t-if="o.NGUOI_NHAN" t-field="o.NGUOI_NHAN" style="margin-left: 15px;"/>
+                        <span t-if="o.NGUOI_NHAN" t-esc="' - '"/>
+                        <span t-field="o.DOI_TUONG_ID" />
+                    </div>
+                    <br/>
+                    <div class="col-xs-12">
+                        <span>Địa chỉ: </span>
+                        <span t-if="o.DIA_CHI" t-field="o.DIA_CHI" style="margin-left: 15px;"/>
+                        <t t-if="not o.DIA_CHI" t-call="danh_muc.empty_line"/>
+                    </div>
+                    <br/>
+                    <div class="col-xs-12">
+                        <span>Lý do nộp: </span>
+                        <span t-if="o.LY_DO_CHI" t-field="o.LY_DO_CHI" style="margin-left: 15px;"/>
+                        <t t-if="not o.LY_DO_CHI" t-call="danh_muc.empty_line"/>
+                    </div>
+                    <div class="col-xs-12">
+                        <span>Số tiền: </span>
+                        <strong><span t-if="o.TONG_TIEN_THANH_TOAN" t-field="o.TONG_TIEN_THANH_TOAN" style="margin-left: 15px;" /></strong>
+                        <t t-if="not o.TONG_TIEN_THANH_TOAN" t-call="danh_muc.empty_line" />
+                    </div>
+                    <div class="col-xs-12">
+                        <span>Viết bằng chữ: </span>
+                        <strong><i><span t-if="o.TONG_TIEN_THANH_TOAN" t-field="o.TONG_TIEN_THANH_TOAN" t-options="{'widget': 'vietbangchu'}" style="margin-left: 15px;"/></i></strong>
+                        <t t-if="not o.TONG_TIEN_THANH_TOAN" t-call="danh_muc.empty_line" />
+                        
+                    </div>
+                    <div class="col-xs-12">
+                        <span>Kèm theo:.............  </span>
+                        <span t-if="o.KEM_THEO" t-field="o.KEM_THEO" />
+                        <t t-if="not o.KEM_THEO" t-esc="'-'" />
+                        <span>  chứng từ gốc</span>
+                    </div>
+                    <br/><br/>
+                    <div class="col-xs-12 text-right" style="padding-right: 5%;">
+                        <span><i>Ngày ........ Tháng ........ năm ................</i></span>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-xs-3">
+                            <div class="nguoi-ky">
+                                <strong>Giám đốc</strong>
+                            </div>
+                            <p>
+                                <i>(Ký, họ tên, đóng dấu)</i>
+                            </p>
+                        </div>
+                        <div class="col-xs-2">
+                            <div class="nguoi-ky">
+                                <strong>Kế toán trưởng</strong>
+                            </div>
+                            <p>
+                                <i>(Ký, họ tên)</i>
+                            </p>
+                        </div>
+                        <div class="col-xs-2">
+                            <div class="nguoi-ky">
+                                <strong>Thủ quỹ</strong>
+                            </div>
+                            <p>
+                                <i>(Ký, họ tên)</i>
+                            </p>
+                        </div>
+                        <div class="col-xs-2">
+                            <div class="nguoi-ky">
+                                <strong>Người lập phiếu</strong>
+                            </div>
+                            <p>
+                                <i>(Ký, họ tên)</i>
+                            </p>
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="nguoi-ky">
+                                <strong>Người nhận tiền</strong>
+                            </div>
+                            <p>
+                                <i>(Ký, họ tên)</i>
+                            </p>
+                        </div>
+                    </div>
+                    <br/><br/><br/>
+                    <div class="row text-center">
+                        <div class="col-xs-3">
+                            <strong><span t-esc="o.get_giam_doc()"/></strong>
+                        </div>
+                        <div class="col-xs-2">
+                            <strong><span t-esc="o.get_ke_toan_truong()"/></strong>
+                        </div>
+                        <div class="col-xs-2">
+                            <strong><span t-esc="o.get_thu_quy()"/></strong>
+                        </div>
+                        <div class="col-xs-2">
+                            <strong><span t-esc="o.get_nguoi_lap_phieu()"/></strong>
+                        </div>
+                        <div class="col-xs-3">
+                            <strong><span t-if="o.NGUOI_NHAN" t-field="o.NGUOI_NHAN"/></strong>
+                        </div>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <div class="col-xs-12">
+                        <span>Đã nhận đủ số tiền (Viết bằng chữ)</span>
+                        <span t-if="o.TONG_TIEN_THANH_TOAN" t-field="o.TONG_TIEN_THANH_TOAN" t-options="{'widget': 'vietbangchu'}" style="margin-left:15px;"/>
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="template_sale_ex_tra_lai_hang_ban_02_tt">
+        <t t-call="web.html_container">
+            <t t-set="data_paper_format" t-value="'A4'"/>
+            <t t-foreach="docs" t-as="o">
+                <t t-call="sale_ex.sale_ex_tra_lai_hang_ban_02_tt" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report 
+            string="02-TT:Phiếu chi" 
+            id="action_template_sale_ex_tra_lai_hang_ban_02_tt" 
+            model="sale.ex.tra.lai.hang.ban" 
+            report_type="qweb-html"
+            name="sale_ex.template_sale_ex_tra_lai_hang_ban_02_tt" 
+            file="sale_ex.template_sale_ex_tra_lai_hang_ban_02_tt"
+            print_report_name="Trả lại hàng bán"
+        />
+    </data>
+</odoo>

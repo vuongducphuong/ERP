@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_supply_chon_chung_tu_ghi_giam_tscd_tham_so_form" model="ir.ui.view">
+            <field name="name">supply.chon.chung.tu.ghi.giam.tscd.form</field>
+            <field name="model">supply.chon.chung.tu.ghi.giam.tscd</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_chung_tu_ghi_giam_form_view">
+                    <sheet>
+                        <group col="6">
+                            <field name="KY"/>
+                            <field name="TU_NGAY"/>
+                            <field name="DEN_NGAY"/>
+                            <button name="btn_lay_du_lieu" string="Lấy dữ liệu"/>
+                            <field name="CHUNG_TU_DA_CHON_JSON" invisible="1"/>
+                            <field name="LAY_DU_LIEU_JSON" invisible="1"/>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chọn chứng từ ghi giảm TSCĐ chi tiết">
+                                <field name="SUPPLY_CHON_CHUNG_TU_GHI_GIAM_TSCD_CHI_TIET_IDS" mode="tree">
+                                  <tree editable="bottom" report="True">
+                                    <!-- <field name="CHON" readonly="1"/> -->
+                                    <field name="AUTO_SELECT" invisible="1"/>
+                                    <!-- <field name="MA_TAI_SAN_ID" readonly="1" fixed_column="True"/> -->
+                                    <!-- <field name="TEN_TAI_SAN" readonly="1" fixed_column="True"/> -->
+									<field name="MA_TAI_SAN_ID" fixed_column="True" readonly="1" />
+                                    <field name="TEN_TAI_SAN" fixed_column="True" readonly="1" />
+                                    <field name="NGAY_HACH_TOAN" readonly="1"/>
+                                    <field name="NGAY_CHUNG_TU" readonly="1"/>
+                                    <field name="SO_CHUNG_TU" readonly="1"/>
+                                    <field name="GIA_TRI_CON_LAI" readonly="1" sum="Tổng"/>
+                                    <field name="TK_XU_LY_GIA_TRI_CON_LAI_ID" string="TK xử lý giá trị còn lại" readonly="1"/>
+                                    <field name="ID_GOC" invisible="1"/>
+                                    <field name="MODEL_GOC" invisible="1"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                        <!-- <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer> -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_supply_chon_chung_tu_ghi_giam_tscd_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Chọn chứng từ ghi giảm tscd</field>
+            <field name="res_model">supply.chon.chung.tu.ghi.giam.tscd</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_supply_chon_chung_tu_ghi_giam_tscd_tham_so_form"/>
+        </record>
+
+        <record id="action_open_supply_chon_chung_tu_ghi_giam_tscd_form" model="ir.actions.act_window">
+            <field name="name">Chọn chứng từ ghi giảm tscd</field>
+            <field name="res_model">supply.chon.chung.tu.ghi.giam.tscd</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="Chọn chứng từ ghi giảm tscd"
+                  action="supply.open_supply_chon_chung_tu_ghi_giam_tscd_tham_so_form"
+                  id="menu_supply_chon_chung_tu_ghi_giam_tscd"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

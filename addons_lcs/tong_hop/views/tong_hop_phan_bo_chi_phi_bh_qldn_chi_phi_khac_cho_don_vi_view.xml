@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi_form" model="ir.ui.view">
+            <field name="name">tong.hop.phan.bo.chi.phi.bh.qldn.chi.phi.khac.cho.don.vi.form</field>
+            <field name="model">tong.hop.phan.bo.chi.phi.bh.qldn.chi.phi.khac.cho.don.vi</field>
+            <field name="arch" type="xml">
+                <form string="Phân bổ chi phí BH QLDN chi phí khác cho đơn vị" cloudify_js="tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi_view">
+                    <sheet>
+                        <group col="6">
+                            <group col="4" colspan="4" string="Thông tin chung">
+                                <field name="KY_PHAN_BO" colspan="3" />
+                                <button name="btn_lay_du_lieu" colspan="1" string="Lấy lại dữ liệu" class="btn btn-primary oe_edit_only" type="object" />
+                                <field name="DIEN_GIAI" colspan="4" />
+                                <field name="THAM_CHIEU"  invisible="1" readonly="1" />
+                            </group>
+                            <group colspan="2" col="2" string="Chứng từ">
+                                <field name="NGAY_CHUNG_TU" />
+                                <field name="SO_CHUNG_TU" />
+                                <field name="PHAN_BO_SELECTION_LAY_DU_LIEU" invisible="1" />
+                                <field name="CHON_CHUNG_TU_JSON" invisible="1" />
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1.Chi phí">
+                                <field name="TONG_HOP_PHAN_BO_CHI_PHI_BH_QLDN_CHI_TIET_CHI_PHI_IDS" mode="tree">
+                                    <tree editable="bottom" report="true">
+                                        <field name="TAI_KHOAN_ID" readonly="1" />
+                                        <field name="TEN_TAI_KHOAN" readonly="1" />
+                                        <field name="KHOAN_MUC_CP_ID" options="{'no_create': True}" readonly="1" />
+                                        <field name="TEN_KHOAN_MUC_CHI_PHI" readonly="1" />
+                                        <field name="TONG_CHI_PHI" readonly="1" sum="tong chi phi" />
+                                        <field name="TY_LE_PHAN_BO" />
+                                        <field name="SO_TIEN_PHAN_BO" sum="tong so tien phan bo" />
+
+                                        
+                                        <field name="base_currency_id" invisible = '1'/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="2.Phân bổ">
+                                <group col="6">
+                                    <button id="btn_chon_doi_tuong_phan_bo" colspan="2" string="Chọn đối tượng phân bổ"  class="btn btn-primary oe_edit_only"/>
+                                    <field name="TIEU_THUC_PHAN_BO_ALL" string="Tiêu thức PB"  colspan="2" required='True'/>
+                                    <button name="btn_phan_bo" colspan="2" string="Phân bổ" class="btn btn-primary oe_edit_only"/>
+                                </group>
+                                <field name="TONG_HOP_PHAN_BO_CHI_PHI_BH_QLDN_CHI_TIET_PHAN_BO_IDS" mode="tree">
+                                    <tree editable="bottom" report="true">
+                                        <field name="MA_DON_VI_ID" readonly="1"  attrs="{'column_invisible': [('parent.PHAN_BO_SELECTION_LAY_DU_LIEU', '!=', 'PHAN_BO_CHO_DON_VI')]}"/>
+                                        <field name="TEN_DON_VI" readonly="1" attrs="{'column_invisible': [('parent.PHAN_BO_SELECTION_LAY_DU_LIEU', '!=', 'PHAN_BO_CHO_DON_VI')]}"/>
+                                        <field name="CAP_TO_CHUC" readonly="1" attrs="{'column_invisible': [('parent.PHAN_BO_SELECTION_LAY_DU_LIEU', '!=', 'PHAN_BO_CHO_DON_VI')]}"/>
+                                        
+
+                                        <field name="DOI_TUONG_PB_ID" readonly="1" attrs="{'column_invisible': [('parent.PHAN_BO_SELECTION_LAY_DU_LIEU', '=', 'PHAN_BO_CHO_DON_VI')]}"/>
+                                        <field name="TEN_DOI_TUONG_PB" readonly="1" attrs="{'column_invisible': [('parent.PHAN_BO_SELECTION_LAY_DU_LIEU', '=', 'PHAN_BO_CHO_DON_VI')]}"/>
+                                        <field name="LOAI" readonly="1" attrs="{'column_invisible': [('parent.PHAN_BO_SELECTION_LAY_DU_LIEU', '=', 'PHAN_BO_CHO_DON_VI')]}"/>
+                                       <!-- <field name="TONG_TIEN" sum="tong tien" /> -->
+                                       
+                                       <field name="TAI_KHOAN_ID"/>
+                                        <field name="TY_LE" sum="tong ty le"/>
+                                        <field name="SO_TIEN" sum="tong tien"/>
+                                        <field name="base_currency_id" invisible = '1'/>
+                                        
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi_tree" model="ir.ui.view">
+            <field name="name">tong.hop.phan.bo.chi.phi.bh.qldn.chi.phi.khac.cho.don.vi.tree</field>
+            <field name="model">tong.hop.phan.bo.chi.phi.bh.qldn.chi.phi.khac.cho.don.vi</field>
+            <field name="arch" type="xml">
+                <tree string="Phân bổ chi phí BH QLDN chi phí khác cho đơn vị" cloudify_js="tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi_list_view">
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="KY_PHAN_BO" />
+                    <field name="DIEN_GIAI" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi" model="ir.actions.act_window">
+            <field name="name">Phân bổ chi phí BH QLDN chi phí khác cho đơn vị</field>
+            <field name="res_model">tong.hop.phan.bo.chi.phi.bh.qldn.chi.phi.khac.cho.don.vi</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi_tree" />
+            <field name="act_window_id" ref="open_menu_tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi" />
+        </record>
+        <record id="action_tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi_form" />
+            <field name="act_window_id" ref="open_menu_tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi" />
+        </record>
+        <!-- <menuitem name="Phân bổ chi phí BH, QLDN chi phí khác cho đơn vị"
+                  action="tong_hop.open_menu_tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi"
+                  id="menu_tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi_1" model="ir.sequence">
+            <field name="name">tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi SO_CHUNG_TU sequence</field>
+            <field name="code">tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi_SO_CHUNG_TU</field>
+            <field name="prefix">PB</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_account_ex_tam_ung_phieu_chi_form" model="ir.ui.view">
+            <field name="name">account.ex.tam.ung.phieu.chi.form</field>
+            <field name="model">account.ex.tam.ung.phieu.chi</field>
+            <field name="arch" type="xml">
+                <form string="Tạm ứng phiếu chi">
+                    <sheet>
+                        <group col="4">
+                            <field name="NGAY_HACH_TOAN"/>
+                            <field name="NGAY_CHUNG_TU"/>
+                            <field name="SO_CHUNG_TU"/>
+                            <field name="DIEN_GIAI"/>
+                            <field name="TK_NO_ID" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                            <field name="TK_CO_ID" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                            <field name="SO_TIEN"/>
+                            <field name="QUYET_TOAN_LAN_NAY"/>
+                            <field name="CHUNG_TU_TAM_UNG_ID"/>
+                        </group>
+
+                        <!--Master/Detail form-->
+                        
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_account_ex_tam_ung_phieu_chi_tree" model="ir.ui.view">
+            <field name="name">account.ex.tam.ung.phieu.chi.tree</field>
+            <field name="model">account.ex.tam.ung.phieu.chi</field>
+            <field name="arch" type="xml">
+                <tree string="Tạm ứng phiếu chi">
+                    <field name="NGAY_HACH_TOAN"/>
+                    <field name="NGAY_CHUNG_TU"/>
+                    <field name="SO_CHUNG_TU"/>
+                    <field name="DIEN_GIAI"/>
+                    <field name="TK_NO_ID"/>
+                    <field name="TK_CO_ID"/>
+                    <field name="SO_TIEN"/>
+                    <field name="QUYET_TOAN_LAN_NAY"/>
+                    <field name="CHUNG_TU_TAM_UNG_ID"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_account_ex_tam_ung_phieu_chi" model="ir.actions.act_window">
+            <field name="name">Tạm ứng phiếu chi</field>
+            <field name="res_model">account.ex.tam.ung.phieu.chi</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_account_ex_tam_ung_phieu_chi_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_account_ex_tam_ung_phieu_chi_tree"/>
+            <field name="act_window_id" ref="open_menu_account_ex_tam_ung_phieu_chi"/>
+        </record>
+
+        <record id="action_account_ex_tam_ung_phieu_chi_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_account_ex_tam_ung_phieu_chi_form"/>
+            <field name="act_window_id" ref="open_menu_account_ex_tam_ung_phieu_chi"/>
+        </record>
+
+        <!-- <menuitem name="Tạm ứng phiếu chi"
+                  action="account_ex.open_menu_account_ex_tam_ung_phieu_chi"
+                  id="menu_account_ex_tam_ung_phieu_chi"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

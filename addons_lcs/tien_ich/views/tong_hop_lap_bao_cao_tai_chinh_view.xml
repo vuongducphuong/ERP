@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tong_hop_lap_bao_cao_tai_chinh_tham_so_form" model="ir.ui.view">
+            <field name="name">tong.hop.lap.bao.cao.tai.chinh.form</field>
+            <field name="model">tong.hop.lap.bao.cao.tai.chinh</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số báo cáo:Báo cáo tài chính">
+                    <sheet>
+                        <group col="6" string="Kỳ báo cáo">
+                            <group col="6" colspan="6">
+                                <field name="KY" colspan="4"/>
+                                <field name="NAM" colspan="2" options="{'showSpinButtons': true}"/>
+                            </group>
+                            <group col="4" colspan="4">
+                                <field name="TU"  readonly='True' colspan="2"/>
+                                <field name="DEN" readonly='True' colspan="2"/>
+                            </group>
+                            <group col="4" colspan="4">
+                                <field name="DOANH_NGHIEP_SELECTION" widget="radio" options="{'vertical': True}" nolabel="1" colspan="4"/>
+                                <field name="BU_TRU_CONG_NO_CUA_CUNG_DOI_TUONG_GIUA_CAC_CHI_NHANH" colspan="4" nolabel="1" class="o_td_label" />   
+                            </group>
+                               
+                                
+                        </group>
+                          
+
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chọn báo cáo tài chính">
+                                <field name="TONG_HOP_LAP_BAO_CAO_TAI_CHINH_CHI_TIET_IDS" mode="tree">
+                                  <tree editable="bottom"  report='true' create="false">
+                                   <field name="AUTO_SELECT" invisible="1"/>
+                                    <field name="MA_BAO_CAO_ID" readonly='True'/>
+                                    <field name="TEN_BAO_CAO" readonly='True'/>
+                                    
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                    </sheet>
+                    
+                    
+                </form>
+            </field>
+        </record>
+
+         <record id="open_tong_hop_lap_bao_cao_tai_chinh_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Lập báo cáo tài chính</field>
+            <field name="res_model">tong.hop.lap.bao.cao.tai.chinh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_tong_hop_lap_bao_cao_tai_chinh_tham_so_form"/>
+        </record>
+
+        <record id="action_open_tong_hop_lap_bao_cao_tai_chinh_form" model="ir.actions.act_window">
+            <field name="name">Lập báo cáo tài chính</field>
+            <field name="res_model">tong.hop.lap.bao.cao.tai.chinh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="Lập báo cáo tài chính"
+                  action="tien_ich.open_tong_hop_lap_bao_cao_tai_chinh_tham_so_form"
+                  id="menu_tong_hop_lap_bao_cao_tai_chinh"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

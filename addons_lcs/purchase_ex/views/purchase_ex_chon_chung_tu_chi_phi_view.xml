@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_purchase_ex_chon_chung_tu_chi_phi_form" model="ir.ui.view">
+            <field name="name">purchase.ex.chon.chung.tu.chi.phi.form</field>
+            <field name="model">purchase.ex.chon.chung.tu.chi.phi</field>
+            <field name="arch" type="xml">
+                <form string="Chọn chứng từ chi phí" cloudify_js="chon_chung_tu_chi_phi_view">
+                    <sheet>
+                        <group col="12">
+
+                            <group colspan="6" col="6">
+                                <field name="DOI_TUONG_ID" domain="['|','|',('LA_KHACH_HANG','=','True'),('LA_NHA_CUNG_CAP','=','True'),('LA_NHAN_VIEN','=','True')]" colspan="3" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}"/>
+                                <field name="TEN_NCC" colspan="3" readonly="1"/>
+                            </group>
+                            <group colspan="12" col="12">
+                                <field name="KHOANG_THOI_GIAN" colspan="3" string="Khoảng TG"/>
+                                <field name="TU_NGAY" colspan="3"/>
+                                <field name="DEN_NGAY" colspan="3"/>
+                                <button id="btn_lay_du_lieu" string="Lấy dữ liệu" class="btn btn-primary" colspan="3"/>
+                            </group>
+                            
+                        </group>
+
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chọn chứng từ chi phí chi tiết">
+                                <field name="PURCHASE_EX_CHON_CHUNG_TU_CHI_PHI_CHI_TIET_IDS" mode="tree">
+                                  <tree editable="bottom" create='false' report='true'>
+                                    <field name="AUTO_SELECT" invisible="1"/>
+                                    <field name="NGAY_HACH_TOAN" readonly="1"/>
+                                    <field name="NGAY_CHUNG_TU" readonly="1"/>
+                                    <field name="SO_CHUNG_TU" readonly="1"/>
+                                    <field name="SO_HOA_DON" readonly="1"/>
+                                    <field name="NGAY_HOA_DON" readonly="1"/>
+                                    <field name="DIEN_GIAI" readonly="1"/>
+                                    <field name="DOI_TUONG_ID" readonly="1"/>
+                                    <field name="TONG_CHI_PHI" readonly="1"/>
+                                    <field name="SO_PHAN_BO_LAN_NAY"/>
+                                    <field name="LUY_KE_SO_DA_PHAN_BO" readonly="1"/>
+                                    <field name="ID_CHUNG_TU_GOC" invisible="1"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- <record id="view_purchase_ex_chon_chung_tu_chi_phi_tree" model="ir.ui.view">
+            <field name="name">purchase.ex.chon.chung.tu.chi.phi.tree</field>
+            <field name="model">purchase.ex.chon.chung.tu.chi.phi</field>
+            <field name="arch" type="xml">
+                <tree string="Chọn chứng từ chi phí">
+                    <field name="DOI_TUONG"/>
+                    <field name="KHOANG_THOI_GIAN"/>
+                    <field name="TU_NGAY"/>
+                    <field name="DEN_NGAY"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_purchase_ex_chon_chung_tu_chi_phi" model="ir.actions.act_window">
+            <field name="name">Chọn chứng từ chi phí</field>
+            <field name="res_model">purchase.ex.chon.chung.tu.chi.phi</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record> -->
+    </data>
+</odoo>

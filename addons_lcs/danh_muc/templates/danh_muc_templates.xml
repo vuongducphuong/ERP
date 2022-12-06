@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_common" name="danh_muc assets_common" inherit_id="web.assets_common">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/web/static/src/js/libs/jszip.min.js"></script>
+                <script type="text/javascript" src="/web/static/src/js/libs/tawk_to.js"></script>
+            </xpath>
+        </template>
+        <template id="assets_backend" name="danh_muc assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/danh_muc/static/src/js/vat_tu_hang_hoa_dich_vu_view.js"></script>
+                <script type="text/javascript" src="/danh_muc/static/src/js/danh_muc_loai_tien_view.js"></script>
+                <script type="text/javascript" src="/danh_muc/static/src/js/danh_muc_he_thong_tai_khoan_view.js"></script>
+                <script type="text/javascript" src="/danh_muc/static/src/js/danh_sach_chung_tu_phat_sinh_ma_quy_cach_view.js"></script>
+            </xpath>
+        </template>
+        <template id="empty_line">
+            <span>............................................................</span>
+        </template>
+    </data>
+</odoo>

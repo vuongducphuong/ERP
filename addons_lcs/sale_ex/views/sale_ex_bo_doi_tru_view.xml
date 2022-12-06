@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_sale_ex_bo_doi_tru_tham_so_form" model="ir.ui.view">
+            <field name="name">sale.ex.bo.doi.tru.form</field>
+            <field name="model">sale.ex.bo.doi.tru</field>
+            <field name="arch" type="xml">
+                <form string="Bỏ đối trừ" cloudify_js="bo_doi_tru_chung_tu_form_view">
+                    <!-- <header>
+                        <button name="btn_bo_doi_tru" class="btn btn-sm oe_highlight" string="Bỏ đối trừ" />
+                        <button name="button_cancel" class="btn btn-sm oe_highlight" string="Hủy bỏ" special="cancel" />
+                    </header> -->
+                    <sheet>
+                         <group  col="4">
+                            <field name="IS_TY_GIA" invisible="1" />
+                            <field name="ID_DOI_TRU" invisible="1" />
+                            <field name="LOAI_BO_DOI_TRU" invisible="1" />
+                            <field name="BO_DOI_TRU_JSON" invisible="1" />
+                        </group>
+                        <group col="8" string="Thông tin chung" attrs="{'invisible': [('LOAI_BO_DOI_TRU', '!=', 'MUA_HANG')]}">
+                            <field name="TAI_KHOAN_TRA_ID" colspan="2" domain="[('SO_TAI_KHOAN', '=like', '331%')]" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"  />
+                            <field name="NHA_CUNG_CAP_ID" colspan="2" domain="[('LA_NHA_CUNG_CAP','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã NCC', 'Tên NCC','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nha_cung_cap'}"  />
+                            <field name="currency_id" colspan="2" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}" />
+                            <button id="btn_lay_du_lieu" string="Lấy dữ liệu" class="btn btn-primary"  />
+                        </group>
+                       
+                        <group col="8" string="Thông tin chung" attrs="{'invisible': [('LOAI_BO_DOI_TRU', '!=', 'BAN_HANG')]}">
+                            <field name="TAI_KHOAN_THU_ID" string="TK phải thu" colspan="2" domain="[('SO_TAI_KHOAN', '=like', '131%')]" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"  />
+                            <field name="KHACH_HANG_ID" colspan="2" domain="[('LA_KHACH_HANG','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}"  />
+                            <field name="currency_id" colspan="2" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}" />
+                            <button id="btn_lay_du_lieu" string="Lấy dữ liệu" class="btn btn-primary"  />
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Thông tin đối trừ">
+                                <field name="SALE_EX_BO_DOI_TRU_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true" options="{'header_struct': [['Chứng từ thanh toán', ['LOAI_CHUNG_TU_THANH_TOAN','NGAY_CHUNG_TU_THANH_TOAN','SO_CHUNG_TU_THANH_TOAN','SO_DOI_TRU_THANH_TOAN','SO_DOI_TRU_QUY_DOI_THANH_TOAN']],['Chứng từ công nợ', ['LOAI_CHUNG_TU_CONG_NO','NGAY_CHUNG_TU_CONG_NO','SO_CHUNG_TU_CONG_NO','SO_HOA_DON','SO_DOI_TRU_CONG_NO','SO_DOI_TRU_QUY_DOI_CONG_NO']]]}">
+                                        <!-- <field name="CHON"/> -->
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                        <field name="LOAI_CHUNG_TU_THANH_TOAN" readonly="1" />
+                                        <field name="NGAY_CHUNG_TU_THANH_TOAN" readonly="1" />
+                                        <field name="SO_CHUNG_TU_THANH_TOAN" readonly="1" />
+                                        <field name="SO_DOI_TRU_THANH_TOAN" readonly="1" sum="tong so doi tru thanh toan" />
+                                        <field name="SO_DOI_TRU_QUY_DOI_THANH_TOAN" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}" readonly="1" sum="tong so doi tru quy doi thanh toan" />
+                                        <field name="LOAI_CHUNG_TU_CONG_NO" readonly="1" />
+                                        <field name="NGAY_CHUNG_TU_CONG_NO" readonly="1" />
+                                        <field name="SO_CHUNG_TU_CONG_NO" readonly="1" />
+                                        <field name="SO_HOA_DON" readonly="1" />
+                                        <field name="SO_DOI_TRU_CONG_NO" readonly="1" sum="tong so doi tru cong no" />
+                                        <field name="SO_DOI_TRU_QUY_DOI_CONG_NO" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}" readonly="1" sum="tong so doi tru quy doi cong no" />
+                                        <!-- <field name="CHENH_LECH_TY_GIA" readonly="1" sum="tong chenh lech ty gia"/> -->
+                                        <field name="SO_CT_XU_LY_CHENH_LECH_TY_GIA" readonly="1" />
+                                        <field name="ID_DOI_TRU" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button id="btn_bo_doi_tru" string="Bỏ đối trừ" class="btn btn-primary" type="object"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_menu_sale_ex_bo_doi_tru" model="ir.actions.act_window">
+            <field name="name">Bỏ đối trừ</field>
+            <field name="res_model">sale.ex.bo.doi.tru</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_sale_ex_bo_doi_tru_tham_so_form"/>
+            <field name="domain">[('LOAI_BO_DOI_TRU', '=', 'BAN_HANG')]</field>
+            <field name="context">{'default_LOAI_BO_DOI_TRU': 'BAN_HANG','LOAI_BO_DOI_TRU': 'BAN_HANG'}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="open_menu_sale_ex_bo_doi_tru_mua_hang" model="ir.actions.act_window">
+            <field name="name">Bỏ đối trừ</field>
+            <field name="res_model">sale.ex.bo.doi.tru</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_sale_ex_bo_doi_tru_tham_so_form"/>
+            <field name="domain">[('LOAI_BO_DOI_TRU', '=', 'MUA_HANG')]</field>
+            <field name="context">{'default_LOAI_BO_DOI_TRU': 'MUA_HANG','LOAI_BO_DOI_TRU': 'MUA_HANG'}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <!-- <record id="open_sale_ex_bo_doi_tru_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Bỏ đối trừ</field>
+            <field name="res_model">sale.ex.bo.doi.tru</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_sale_ex_bo_doi_tru_tham_so_form"/>
+        </record>
+
+        <record id="action_open_sale_ex_bo_doi_tru_form" model="ir.actions.act_window">
+            <field name="name">Bỏ đối trừ</field>
+            <field name="res_model">sale.ex.bo.doi.tru</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record> -->
+        <!-- <menuitem name="Bỏ đối trừ"
+                  action="sale_ex.open_sale_ex_bo_doi_tru_tham_so_form"
+                  id="menu_sale_ex_bo_doi_tru"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

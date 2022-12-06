@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="sale_ex_giam_gia_hang_ban">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-12 text-left truong-gia-tri-kieu-text-dat-tren-header" >
+                       <span t-esc="o.get_ten_cong_ty()"/> <br/>
+                        <span t-esc="o.get_dia_chi_cong_ty()"/>
+                    </div>
+                </div>
+                 <div class="row" style="margin: 0px;">
+                    <div class="col-xs-12 text-center">
+                        <div class="tieu-de-cua-bao-cao" style="margin-bottom: 15px;">
+                            <span>
+                                <strong>BẢNG KÊ HÀNG HÓA, DỊCH VỤ</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 text-center" style="margin-top: -15px;">
+                            <span style="font-style: italic;">Ngày .... tháng .... năm ..........</span>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                            <span style="font-style: italic;">Số:</span>
+                    </div>
+                </div>
+                <div style="margin-top: 25px;">
+                    <!--Table-->
+                    <table class="table table-condensed table-bordereds" style="font-size:12px;table-layout: auto">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="vertical-align: middle;width: 0.8cm;border: 1px solid black;" rowspan="2">
+                                    <strong>STT</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 4.5cm;border: 1px solid black;" rowspan="2">
+                                    <strong>Mã hàng</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 6.0cm;border: 1px solid black;" rowspan="2">
+                                    <strong>Tên hàng hóa, dịch vụ</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 2.5cm;border: 1px solid black;" rowspan="2">
+                                    <strong>Đơn vị tính</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 2.5cm;border: 1px solid black;" rowspan="2">
+                                    <strong>Số lượng</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 2.5cm;border: 1px solid black;" rowspan="2">
+                                    <strong>Đơn giá</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 2.5cm;border: 1px solid black;" rowspan="2">
+                                    <strong>Thành tiền</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 2.5cm;border: 1px solid black;" rowspan="2">
+                                    <strong>Thuế suất GTGT</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 2.5cm;border: 1px solid black;" rowspan="2">
+                                    <strong>Tiền thuế GTGT</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;border: 1px solid black;" rowspan="2">
+                                    <strong>Ghi chú</strong>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="so_thu_tu" t-value="0"></t>
+                            <tr t-foreach="o.GIAM_GIA_HANG_BAN_CHI_TIET_IDS" t-as="line">
+                                    <t t-set="so_thu_tu" t-value="so_thu_tu + 1"></t>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="so_thu_tu"></span>
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;">
+                                        <span t-field="line.MA_HANG_ID.MA" />
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;">
+                                        <span t-field="line.TEN_HANG" />
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;">
+                                        <span t-field="line.DVT_ID" />
+                                    </td>
+                                    <td class="text-right" style="border: 1px solid black;">
+                                        <span t-field="line.SO_LUONG" />
+                                    </td>
+                                    <td class="text-right" style="border: 1px solid black;">
+                                        <span t-field="line.DON_GIA" />
+                                    </td>
+                                    <td class="text-right" style="border: 1px solid black;">
+                                        <span t-field="line.THANH_TIEN" />
+                                    </td>
+                                    <td class="text-right" style="border: 1px solid black;">
+                                        <span t-field="line.PHAN_TRAM_THUE_GTGT_ID" />
+                                    </td>
+                                    <td class="text-right" style="border: 1px solid black;">
+                                        <span t-field="line.TIEN_THUE_GTGT" />
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;">
+                                        <span t-field="line.GHI_CHU" />
+                                    </td>
+                            </tr>
+                            <tr style="border: 1px solid black;">
+                                <th class="text-center" style="border: 1px solid black;" >
+                                    <strong></strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong></strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>Cộng</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong></strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong></strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong></strong>
+                                </th>
+                                <th class="text-right" style="border: 1px solid black;">
+                                    <strong>
+                                        <span t-field="o.TONG_TIEN_HANG"  />
+                                    </strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong></strong>
+                                </th>
+                                <th class="text-right" style="border: 1px solid black;">
+                                    <strong>
+                                        <span t-field="o.TIEN_THUE_GTGT" />
+                                    </strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong></strong>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs-12 text-left" style="font-style: italic; margin-top: -15px; margin-left: -8px;">
+                    <span>Kèm theo hóa đơn số: </span>
+                    <span t-if="o.SO_HOA_DON" t-field="o.SO_HOA_DON" style="margin-left: 2px;"/>
+                    <t t-if="not o.SO_HOA_DON" t-call="danh_muc.empty_line" />
+                    <span t-if="o.NGAY_HOA_DON" t-field="o.NGAY_HOA_DON" t-options="{'widget': 'ngaythangthuong'}" style="margin-left: 2px;"/>
+                </div>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-xs-6 text-center">
+                        <strong style=" margin-right: 60px;">Người mua hàng</strong>
+                        <p style="margin-right: 60px;">
+                            <i>(Ký, họ tên)</i>
+                        </p>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <strong style="margin-right: 120px;">Người bán hàng</strong>
+                        <p style="margin-right: 120px;">
+                            <i>(Ký, họ tên)</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="template_sale_ex_giam_gia_hang_ban">
+        <t t-call="web.html_container">
+            <t t-set="data_paper_format" t-value="'A4-ngang'"/>
+            <t t-foreach="docs" t-as="o">
+                <t t-call="sale_ex.sale_ex_giam_gia_hang_ban" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report 
+            string="Bảng kê hàng hóa, dịch vụ" 
+            id="action_template_sale_ex_giam_gia_hang_ban" 
+            model="sale.ex.giam.gia.hang.ban" 
+            report_type="qweb-html"
+            name="sale_ex.template_sale_ex_giam_gia_hang_ban" 
+            file="sale_ex.template_sale_ex_giam_gia_hang_ban"
+            print_report_name="Giảm giá hàng bán"
+        />
+    </data>
+</odoo>

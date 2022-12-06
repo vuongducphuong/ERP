@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_sale_ex_tinh_gia_ban_form" model="ir.ui.view">
+            <field name="name">sale.ex.tinh.gia.ban.form</field>
+            <field name="model">sale.ex.tinh.gia.ban</field>
+            <field name="arch" type="xml">
+                <form string="Tính giá bán" cloudify_js="tinh_gia_ban_form_view">
+                    <sheet>
+                        <group col="6">
+                            <group colspan="4" col="4">
+                                <field name="currency_id" colspan="2" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+                                <field name="DON_VI_TINH" colspan="2"/>
+                            </group>
+                            
+                        </group>
+
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Tính giá bán chi tiết">
+                                <field name="SALE_EX_TINH_GIA_BAN_CHI_TIET_IDS" mode="tree">
+                                  <tree editable="bottom" report="True">
+                                    <field name="MA_HANG_ID" options="{'columns': ['MA', 'TEN','SO_LUONG_TON'], 'strings': ['Mã sản phẩm', 'Tên sản phẩm','Số lượng tồn'],'displays': ['MA']}"/>
+                                    <field name="TEN_HANG"/>
+                                    <field name="LIST_NHOM_VTHH"/>
+                                    <field name="DON_VI_TINH_ID"/>
+                                    <field name="GIA_NHAP_GAN_NHAT"/>
+                                    <field name="GIA_MUA_CO_DINH"/>
+                                    <field name="GIA_BAN_CO_DINH"/>
+                                    <field name="GIA_BAN_1"/>
+                                    <field name="GIA_BAN_2"/>
+                                    <field name="GIA_BAN_3"/>
+                                    <field name="AUTO_SELECT" invisible="1"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                        <group col="12">
+                            <group col="4" colspan="4" string="Thay đổi giá bán dựa trên">
+                                <field name="thay_doi_gia_ban_dua_tren" widget="radio" options="{'vertical': True, 'alway_edit': True}" nolabel="1"/>
+                            </group>
+                            
+                            <group col="4" colspan="4" string="Thay đổi giá bán theo">
+                                <group col="2" colspan="2" >
+                                    <field name="thay_doi_gia_ban_theo" widget="radio" options="{'vertical': True, 'alway_edit': True}" nolabel="1"/> 
+                                </group>
+                                <group col="2" colspan="2">
+                                    <field name="TY_LE_PHAN_TRAM" colspan="2" nolabel="1" attrs="{'readonly': [('thay_doi_gia_ban_theo', '!=', 'ty_le_bt')]}"/>
+                                    <field name="SO_TIEN" colspan="2" nolabel="1" attrs="{'readonly': [('thay_doi_gia_ban_theo', '!=', 'so_tien_bt')]}"/>
+                                </group>
+                           </group>
+                            <group col="4" colspan="4" string="Áp dụng cho giá bán">
+                                <field name="GIA_BAN_1" colspan="4" nolabel="1"/>
+                                <field name="GIA_BAN_2" colspan="4" nolabel="1"/>
+                                <field name="GIA_BAN_3" colspan="4" nolabel="1"/>
+                            </group>
+                        </group>
+                        <footer>
+                            <button id="btn_tinh_gia_ban" class="btn btn-primary" string="Tính giá bán"/>
+                            <button id="btn_hoan" class="oe_highlight" string="Hoãn"/>
+                        </footer>
+      
+                        
+                    </sheet>
+                   
+                </form>
+            </field>
+        </record>
+
+        <!-- <record id="view_sale_ex_tinh_gia_ban_tree" model="ir.ui.view">
+            <field name="name">sale.ex.tinh.gia.ban.tree</field>
+            <field name="model">sale.ex.tinh.gia.ban</field>
+            <field name="arch" type="xml">
+                <tree string="Tính giá bán">
+                    <field name="currency_id"/>
+                    <field name="DON_VI_TINH"/>
+                    <field name="gia_ban_trong_danh_muc"/>
+                    <field name="gia_ban_co_dinh"/>
+                    <field name="gia_mua_gan_nhat_trong_danh_muc"/>
+                    <field name="gia_mua_co_dinh"/>
+                    <field name="TY_LE_PHAN_TRAM"/>
+                    <field name="SO_TIEN"/>
+                    <field name="GIA_BAN_1"/>
+                    <field name="GIA_BAN_2"/>
+                    <field name="GIA_BAN_3"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record> -->
+
+        <record id="open_menu_sale_ex_tinh_gia_ban" model="ir.actions.act_window">
+            <field name="name">Tính giá bán</field>
+            <field name="res_model">sale.ex.tinh.gia.ban</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_sale_ex_tinh_gia_ban_form"/>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <!-- <record id="action_sale_ex_tinh_gia_ban_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_sale_ex_tinh_gia_ban_tree"/>
+            <field name="act_window_id" ref="open_menu_sale_ex_tinh_gia_ban"/>
+        </record> -->
+
+        <record id="action_sale_ex_tinh_gia_ban_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_sale_ex_tinh_gia_ban_form"/>
+            <field name="act_window_id" ref="open_menu_sale_ex_tinh_gia_ban"/>
+        </record>
+
+        <!-- <menuitem name="Tính giá bán"
+                  action="sale_ex.open_menu_sale_ex_tinh_gia_ban"
+                  id="menu_sale_ex_tinh_gia_ban"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_phan_tich_cong_no_phai_thu_theo_tuoi_no_tree" model="ir.ui.view">
+            <field name="name">bao.cao.phan.tich.cong.no.phai.thu.theo.tuoi.no.tree</field>
+            <field name="model">bao.cao.phan.tich.cong.no.phai.thu.theo.tuoi.no</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Phân tích công nợ phải thu theo tuổi nợ" create="false" report="true">
+                    <field name="MA_NHOM_KH" string="Mã nhóm khách hàng" />
+                    <field name="TEN_NHOM_KHACH_HANG" string="Tên nhóm khách hàng" />
+                    <field name="MA_KHACH_HANG" />
+                    <field name="TEN_KHACH_HANG" />
+                    <field name="DIA_CHI" />
+                    <field name="TONG_NO" sum="Tổng nợ" />
+                    <field name="KHONG_CO_HAN_NO" sum="Không có hạn nợ" />
+                    <field name="KHONG_DEN_30_NGAY_TRUOC_HAN" />
+                    <field name="BAMOT_DEN_60_NGAY_TRUOC_HAN" />
+                    <field name="SAUMOT_DEN_90_NGAY_TRUOC_HAN" />
+                    <field name="CHINMOT_DEN_120_NGAY_TRUOC_HAN" />
+                    <field name="TREN_120_NGAY_TRUOC_HAN" />
+                    <field name="TONG_TRUOC_HAN" />
+                    <field name="MOT_DEN30_NGAY_QUA_HAN" />
+                    <field name="BAMOT_DEN_60_NGAY_QUA_HAN" />
+                    <field name="SAUMOT_DEN_90_NGAY_QUA_HAN" />
+                    <field name="CHINMOT_DEN_120_NGAY_QUA_HAN" />
+                    <field name="TREN_120_NGAY_QUA_HAN" sum="Không có hạn nợ" />
+                    <field name="TONG_QUA_HAN" sum="Không có hạn nợ" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__phan_tich_cong_no_phai_thu_theo_tuoi_no" model="ir.actions.act_window">
+            <field name="name">PHÂN TÍCH CÔNG NỢ PHẢI THU THEO TUỔI NỢ</field>
+            <field name="res_model">bao.cao.phan.tich.cong.no.phai.thu.theo.tuoi.no</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by': ['MA_NHOM_KH','TEN_NHOM_KHACH_HANG'], 'header_struct': [['Nợ trước hạn',['KHONG_DEN_30_NGAY_TRUOC_HAN','BAMOT_DEN_60_NGAY_TRUOC_HAN','SAUMOT_DEN_90_NGAY_TRUOC_HAN','CHINMOT_DEN_120_NGAY_TRUOC_HAN','TREN_120_NGAY_TRUOC_HAN','TONG_TRUOC_HAN']],['Nợ quá hạn',['MOT_DEN30_NGAY_QUA_HAN','BAMOT_DEN_60_NGAY_QUA_HAN','SAUMOT_DEN_90_NGAY_QUA_HAN','CHINMOT_DEN_120_NGAY_QUA_HAN','TREN_120_NGAY_QUA_HAN','TONG_QUA_HAN']]], 'expand_all': 'true'}</field>
+        </record>
+        <record id="view_bao_cao_phan_tich_cong_no_phai_thu_theo_tuoi_no_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.phan.tich.cong.no.phai.thu.theo.tuoi.no.form</field>
+            <field name="model">bao.cao.phan.tich.cong.no.phai.thu.theo.tuoi.no</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="bao_cao_phan_tich_cong_no_phai_thu_theo_tuoi_no_view">
+                    <sheet>
+                        <group col="4">
+                            <field name="CHI_NHANH_ID" colspan="2" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" colspan="2" />
+                            <field name="MA_PC_NHOM_KH" invisible="1" />
+                        </group>
+                        <group col="4">
+                            <field name="DEN_NGAY" colspan="2" />
+                            <field name="TAI_KHOAN_ID" colspan="2" options="{'select_all': True ,'showClearButton': false,'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                            <field name="NHOM_KH_ID" colspan="2" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'],'displays': ['MA']}" />
+                        </group>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_KHACH_HANG" nolabel="1" colspan="12"/>
+                                    <field name="KHACH_HANG_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI', 'MA_SO_THUE'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Địa chỉ', 'Mã số thuế']}" />
+                                </group>
+                                <field name="KHACH_HANG_IDS" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA_KHACH_HANG" string="Mã khách hàng" />
+                                        <field name="HO_VA_TEN" string="Tên khách hàng" />
+                                        <field name="DIA_CHI" string="Địa chỉ" />
+                                        <field name="MA_SO_THUE" string="Mã số thuế" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_phan_tich_cong_no_phai_thu_theo_tuoi_no_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Phân tích công nợ phải thu theo tuổi nợ</field>
+            <field name="res_model">bao.cao.phan.tich.cong.no.phai.thu.theo.tuoi.no</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_phan_tich_cong_no_phai_thu_theo_tuoi_no_tham_so_form" />
+        </record>
+    </data>
+</odoo>

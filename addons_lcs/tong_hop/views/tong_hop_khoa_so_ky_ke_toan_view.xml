@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tong_hop_khoa_so_ky_ke_toan_tham_so_form" model="ir.ui.view">
+            <field name="name">tong.hop.khoa.so.ky.ke.toan.form</field>
+            <field name="model">tong.hop.khoa.so.ky.ke.toan</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="8" string="Thông tin khóa sổ kỳ kế toán">
+                            <field name="NGAY_KHOA_SO_HIEN_THOI" colspan="4" readonly="1" />
+                            <field name="KHOA_SO_THU_KHO" colspan="4" nolabel="1" class="o_td_label" />
+                            <field name="CHON_NGAY_KHOA_SO_MOI" colspan="4" />
+                            <field name="KHOA_SO_THU_QUY" colspan="4" nolabel="1" class="o_td_label" />
+                        </group>
+                        <notebook>
+                            <page string="">
+                                <field name="TONG_HOP_KHOA_SO_KY_KE_TOAN_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="CHI_NHANH_ID" />
+                                        <field name="NGAY_KHOA_SO" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button name="btn_thuc_hien" string="Thực hiện" type="object" class="btn btn-primary" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="open_tong_hop_khoa_so_ky_ke_toan_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Khóa sổ kỳ kế toán</field>
+            <field name="res_model">tong.hop.khoa.so.ky.ke.toan</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="size">large</field>
+            <field name="view_id" ref="view_tong_hop_khoa_so_ky_ke_toan_tham_so_form" />
+        </record>
+        
+        <record id="action_open_tong_hop_khoa_so_ky_ke_toan_form" model="ir.actions.act_window">
+            <field name="name">Khóa sổ kỳ kế toán</field>
+            <field name="res_model">tong.hop.khoa.so.ky.ke.toan</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+        
+        <!-- <menuitem name="Khóa sổ kỳ kế toán"
+                  action="tong_hop.open_tong_hop_khoa_so_ky_ke_toan_tham_so_form"
+                  id="menu_tong_hop_khoa_so_ky_ke_toan"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

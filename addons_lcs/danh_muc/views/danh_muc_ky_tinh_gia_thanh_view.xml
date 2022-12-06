@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_ky_tinh_gia_thanh_form" model="ir.ui.view">
+            <field name="name">danh.muc.ky.tinh.gia.thanh.form</field>
+            <field name="model">danh.muc.ky.tinh.gia.thanh</field>
+            <field name="arch" type="xml">
+                <form string="Kỳ tính giá thành">
+                    <sheet>
+                        <group col="4">
+                            <field name="LOAI"/>
+                            <field name="name"/>
+                        </group>
+
+                        <!--Master/Detail form-->
+                        
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_danh_muc_ky_tinh_gia_thanh_tree" model="ir.ui.view">
+            <field name="name">danh.muc.ky.tinh.gia.thanh.tree</field>
+            <field name="model">danh.muc.ky.tinh.gia.thanh</field>
+            <field name="arch" type="xml">
+                <tree string="Kỳ tính giá thành">
+                    <field name="LOAI"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_danh_muc_ky_tinh_gia_thanh" model="ir.actions.act_window">
+            <field name="name">Kỳ tính giá thành</field>
+            <field name="res_model">danh.muc.ky.tinh.gia.thanh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_danh_muc_ky_tinh_gia_thanh_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_ky_tinh_gia_thanh_tree"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_ky_tinh_gia_thanh"/>
+        </record>
+
+        <record id="action_danh_muc_ky_tinh_gia_thanh_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_ky_tinh_gia_thanh_form"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_ky_tinh_gia_thanh"/>
+        </record>
+
+        <!-- <menuitem name="Kỳ tính giá thành"
+                  action="danh_muc.open_menu_danh_muc_ky_tinh_gia_thanh"
+                  id="menu_danh_muc_ky_tinh_gia_thanh"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

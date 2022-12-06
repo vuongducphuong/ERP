@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_supply_ghi_tang_hang_loat_chi_tiet_form" model="ir.ui.view">
+            <field name="name">supply.ghi.tang.hang.loat.chi.tiet.form</field>
+            <field name="model">supply.ghi.tang.hang.loat.chi.tiet</field>
+            <field name="arch" type="xml">
+                <form string="Ghi tăng hàng loạt chi tiết">
+                    <sheet>
+                        <group col="4">
+                            <field name="MA_CCDC" string="Mã CCDC"/>
+                            <field name="TEN_CCDC" string="Tên CCDC"/>
+                            <field name="LOAI_CCDC_ID" string="Loại CCDC" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã loại CCDC', 'Tên loại CCDC'],'displays': ['TEN']}"/>
+                            <field name="NHOM_CCDC" string="Nhóm CCDC"/>
+                            <field name="LY_DO_GHI_TANG"/>
+                            <field name="DVT" string="ĐVT"/>
+                            <field name="SO_LUONG"/>
+                            <field name="DON_GIA"/>
+                            <field name="THANH_TIEN"/>
+                            <field name="NGAY_GHI_TANG"/>
+                            <field name="SO_CHUNG_TU_GHI_TANG"/>
+                            <field name="SO_KY_PHAN_BO"/>
+                            <field name="SO_TIEN_PHAN_BO_HANG_KY"/>
+                            <field name="TK_CHO_PHAN_BO_ID" string="TK chờ phân bổ" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                            <field name="THAM_CHIEU"  invisible="1" />
+                        </group>
+
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1. Đơn vị sử dụng">
+                                <field name="SUPPLY_GHI_TANG_DON_VI_SU_DUNG_IDS" mode="tree">
+                                  <tree editable="bottom">
+                                    <field name="MA_DON_VI_ID" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['MA_DON_VI']}"/>
+                                    <field name="TEN_DON_VI" readonly="1"/>
+                                    <field name="SO_LUONG" sum="Tổng"/>
+                                  </tree>
+                                </field>
+                              </page>
+                            <page string="2. Thiết lập phân bổ">
+                                <field name="SUPPLY_GHI_TANG_THIET_LAP_PHAN_BO_IDS" mode="tree">
+                                  <tree editable="bottom">
+                                    <field name="DOI_TUONG_PHAN_BO_ID" />
+                                    <field name="TEN_DOI_TUONG_PHAN_BO" readonly="1"/>
+                                    <field name="TY_LE_PB" string="Tỷ lệ PB(%)" sum='Total amount'/>
+                                    <field name="TK_NO_ID" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                                    <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục cp', 'Tên khoản mục cp'],'displays': ['MA_KHOAN_MUC_CP']}"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_supply_ghi_tang_hang_loat_chi_tiet_tree" model="ir.ui.view">
+            <field name="name">supply.ghi.tang.hang.loat.chi.tiet.tree</field>
+            <field name="model">supply.ghi.tang.hang.loat.chi.tiet</field>
+            <field name="arch" type="xml">
+                <tree string="Ghi tăng hàng loạt chi tiết">
+                    <field name="MA_CCDC"/>
+                    <field name="TEN_CCDC"/>
+                    <field name="LOAI_CCDC_ID"/>
+                    <field name="NHOM_CCDC"/>
+                    <field name="LY_DO_GHI_TANG"/>
+                    <field name="DVT"/>
+                    <field name="SO_LUONG"/>
+                    <field name="DON_GIA"/>
+                    <field name="THANH_TIEN"/>
+                    <field name="NGAY_GHI_TANG"/>
+                    <field name="SO_CHUNG_TU_GHI_TANG"/>
+                    <field name="SO_KY_PHAN_BO"/>
+                    <field name="SO_TIEN_PHAN_BO_HANG_KY"/>
+                    <field name="TK_CHO_PHAN_BO_ID"/>
+                    <field name="name"/>
+                    <field name="GHI_TANG_HANG_LOAT_ID"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_supply_ghi_tang_hang_loat_chi_tiet" model="ir.actions.act_window">
+            <field name="name">Ghi tăng hàng loạt chi tiết</field>
+            <field name="res_model">supply.ghi.tang.hang.loat.chi.tiet</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_supply_ghi_tang_hang_loat_chi_tiet_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_supply_ghi_tang_hang_loat_chi_tiet_tree"/>
+            <field name="act_window_id" ref="open_menu_supply_ghi_tang_hang_loat_chi_tiet"/>
+        </record>
+
+        <record id="action_supply_ghi_tang_hang_loat_chi_tiet_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_supply_ghi_tang_hang_loat_chi_tiet_form"/>
+            <field name="act_window_id" ref="open_menu_supply_ghi_tang_hang_loat_chi_tiet"/>
+        </record>
+
+        <!-- <menuitem name="Ghi tăng hàng loạt chi tiết"
+                  action="supply.open_menu_supply_ghi_tang_hang_loat_chi_tiet"
+                  id="menu_supply_ghi_tang_hang_loat_chi_tiet"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_supply_ghi_tang_hang_loat_chi_tiet_1" model="ir.sequence">
+            <field name="name">supply_ghi_tang_hang_loat_chi_tiet SO_CHUNG_TU_GHI_TANG sequence</field>
+            <field name="code">supply_ghi_tang_hang_loat_chi_tiet_SO_CHUNG_TU_GHI_TANG</field>
+            <field name="prefix">GTCC</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

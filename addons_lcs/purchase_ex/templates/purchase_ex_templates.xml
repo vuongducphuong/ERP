@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="purchase_ex assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/purchase_ex/static/src/js/purchase_document_view.js"></script>
+                <script type="text/javascript" src="/purchase_ex/static/src/js/chung_tu_mua_dich_vu_view.js"></script>
+                <script type="text/javascript" src="/purchase_ex/static/src/js/purchase_ex_doi_tru_chung_tu_mua_hang.js"></script>
+                <script type="text/javascript" src="/purchase_ex/static/src/js/purchase_ex_lap_tu_don_mua_hang_form_view.js"></script>
+                <script type="text/javascript" src="/purchase_ex/static/src/js/purchase_ex_chon_tu_lenh_san_xuat_form_view.js"></script>
+                <script type="text/javascript" src="/purchase_ex/static/src/js/purchase_ex_lap_tu_chung_tu_ban_hang_form_view.js"></script>
+                <script type="text/javascript" src="/purchase_ex/static/src/js/purchase_ex_chon_chung_tu_chi_phi_view.js"></script>
+                <script type="text/javascript" src="/purchase_ex/static/src/js/purchase_ex_phan_bo_chi_phi_mua_hang_view.js"></script>
+                <script type="text/javascript" src="/purchase_ex/static/src/js/purchase_ex_hoa_don_mua_hang_view.js"></script>
+                <script type="text/javascript" src="/purchase_ex/static/src/js/tra_lai_hang_mua_view.js"></script>
+                <script type="text/javascript" src="/purchase_ex/static/src/js/giam_gia_hang_mua_view.js"></script>
+                <script type="text/javascript" src="/purchase_ex/static/src/js/nhan_hoa_don_view.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="danh_muc_import_dau_ky_view" model="ir.ui.view">
+        <field name="name">import.dau.ky.form</field>
+        <field name="model">import.dau.ky</field>
+        <field name="arch" type="xml">
+            <form string="Import">
+                <header>
+                    <button name="action_back" states="chon_tep,kiem_tra,nhap_khau" type="object" string="Quay lại"/>
+                    <button name="action_next" states="bat_dau,chon_tep,kiem_tra" type="object" string="Tiếp theo"/>
+                    <field name="state" widget="statusbar" statusbar_visible="bat_dau,chon_tep,kiem_tra,nhap_khau"/>
+                </header>
+                <sheet>
+                <group states="bat_dau">
+                    <p><label string="Trước khi bắt đầu, bạn nên nhập toàn bộ dữ liệu ban đầu cần thiết như:"/></p>
+                    <ul class="oe_grey">
+                        <li>1. Nhập số dư tài khoản.</li>
+                        <li>2. Nhập số dư Công nợ Khách hàng</li>
+                        <li>3. Nhập số dư công nợ nhà cung cấp</li>
+                        <li>4. Nhập số dư công nợ nhân viên</li>
+                        <li>5. Nhập số tồn kho Vật tư hàng hóa</li>
+                        <li>6. Nhập danh sách TSCĐ đầu kỳ</li>
+                        <li>7. Nhập danh sách CCDC đầu kỳ</li>
+                    </ul>
+                    <br/>
+                    <p>Vui lòng xem hướng dẫn chi tiết tại đây</p>
+                    <p>Để khai báo thông tin ban đầu, bạn cần phải chuẩn bị dữ liệu theo các tệp mẫu Excel. Vui lòng tải về các tệp mẫu <a href="/base_import/static/csv/customers.xls">Tại đây</a></p>
+                </group>
+                <group states="chon_tep">
+                    <field name="CHI_NHANH_ID"/>
+                    <label string="Trước khi bắt đầu"/>
+                </group>
+                <group states="kiem_tra">
+                    <label string="bạn nên nhập toàn bộ dữ liệu"/>
+                </group>
+                <group states="nhap_khau">
+                    <label string="ban đầu cần thiết như:"/>
+                </group>
+                <!-- <footer>
+                    <button name="action_back" states="chon_tep,kiem_tra,nhap_khau" type="object" string="Quay lại"/>
+                    <button name="action_next" states="bat_dau,chon_tep,kiem_tra" type="object" string="Tiếp theo"/>
+                    <button name="action_cancel" states="bat_dau,chon_tep,kiem_tra,nhap_khau" type="object" string="Đóng" special="cancel"/>
+                </footer> -->
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_import_dau_ky" model="ir.actions.act_window">
+        <field name="name">Nhập số dư ban đầu</field>
+        <field name="res_model">import.dau.ky</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="danh_muc_import_dau_ky_view"/>
+        <field name="target">current</field>
+    </record>
+
+    <!--<menuitem name="Số dư ban đầu"
+            action="danh_muc.action_import_dau_ky"
+            id="danh_muc_import_dau_ky"
+            parent=""
+            sequence="0"/>-->
+</odoo>

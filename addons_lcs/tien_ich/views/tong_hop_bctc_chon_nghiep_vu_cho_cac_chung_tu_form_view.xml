@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tong_hop_bctc_chon_nghiep_vu_cho_cac_chung_tu_form_tham_so_form" model="ir.ui.view">
+            <field name="name">tong.hop.bctc.chon.nghiep.vu.cho.cac.chung.tu.form.form</field>
+            <field name="model">tong.hop.bctc.chon.nghiep.vu.cho.cac.chung.tu.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." >
+                    <sheet>
+                        <group col="4">
+                        </group>
+                        <!--<notebook>
+                            <page string="Chi tiết">
+                                <field name="FIELD_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>-->
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1. XÁC ĐỊNH LOẠI NGHIỆP VỤ PHÁT SINH CHỨNG TỪ CHO CÁC KHOẢN ĐIỀU CHỈNH">
+                                <field name="TONG_HOP_BCTC_CHON_NGHIEP_VU_CHO_CAC_CHUNG_TU_CHI_TIET_FORM_IDS" mode="tree">
+                                  <tree editable="bottom" create='false'>
+                                    <field name="NGAY_HACH_TOAN"/>
+                                    <field name="NGAY_CHUNG_TU"/>
+                                    <field name="SO_CHUNG_TU"/>
+                                    <field name="DIEN_GIAI"/>
+                                    <field name="TK_NO_ID"/>
+                                    <field name="TK_CO_ID"/>
+                                    <field name="SO_TIEN"/>
+                                    <field name="NGHIEP_VU"/>
+                                  </tree>
+                                </field>
+                              </page>
+                              
+                        </notebook>
+                        <group col="6">
+                            <group col="6" colspan="4">
+                                    <field name="CHON_NGHIEP_VU_CHO_CAC_CHUNG_TU" colspan="4"/>
+                                    <button id="btn_ap_dung" string="Áp dụng" class="btn btn-primary" colspan="2"/>
+                            </group>
+                               
+                        </group>
+                        
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_tong_hop_bctc_chon_nghiep_vu_cho_cac_chung_tu_form_tham_so_form" model="ir.actions.act_window">
+            <field name="name">BCTC chọn nghiệp vụ cho các chứng từ form</field>
+            <field name="res_model">tong.hop.bctc.chon.nghiep.vu.cho.cac.chung.tu.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_tong_hop_bctc_chon_nghiep_vu_cho_cac_chung_tu_form_tham_so_form"/>
+        </record>
+
+        <record id="action_open_tong_hop_bctc_chon_nghiep_vu_cho_cac_chung_tu_form_form" model="ir.actions.act_window">
+            <field name="name">BCTC chọn nghiệp vụ cho các chứng từ form</field>
+            <field name="res_model">tong.hop.bctc.chon.nghiep.vu.cho.cac.chung.tu.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="BCTC chọn nghiệp vụ cho các chứng từ form"
+                  action="tien_ich.open_tong_hop_bctc_chon_nghiep_vu_cho_cac_chung_tu_form_tham_so_form"
+                  id="menu_tong_hop_bctc_chon_nghiep_vu_cho_cac_chung_tu_form"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

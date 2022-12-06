@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_asset_phan_bo_chi_phi_form" model="ir.ui.view">
+            <field name="name">asset.phan.bo.chi.phi.form</field>
+            <field name="model">asset.phan.bo.chi.phi</field>
+            <field name="arch" type="xml">
+                <form string="Phân bổ chi phí">
+                    <header>
+                        <button name="action_ghi_so" string="Ghi sổ" type="object" class="oe_highlight oe_read_only" states="chua_ghi_so"/>
+                        <button id="action_bo_ghi_so" string="Bỏ ghi" states="da_ghi_so"/>
+                        <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so"/>
+                        <field name="LOAI_CHUNG_TU" invisible='1'/>
+                    </header>
+                    <sheet>
+                        <group col="6">
+                            <group colspan="4" col="4">
+                                <field name="DIEN_GIAI" colspan="4"/>
+                                <field name="THANG" readonly="1"/>
+                                <field name="NAM" readonly="1"/>
+                                <field name="THAM_CHIEU"  invisible="1" readonly="1"/>
+                            </group>
+                            <group colspan="2">
+                                <field name="NGAY_HACH_TOAN"/>
+                                <field name="NGAY_CHUNG_TU"/>
+                                <field name="SO_CHUNG_TU"/>
+                            </group>
+                        </group>
+                        
+
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1. Xác định mức chi phí">
+                                <field name="ASSET_PHAN_BO_CHI_PHI_MUC_CHI_PHI_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" report="true">
+                                    <field name="MA_CCDC" string="Mã CCDC" />
+                                    <field name="TEN_CCDC" string="Tên CCDC" />
+                                    <field name="LOAI_CCDC_ID" string="Loại CCDC" />
+                                    <field name="TONG_SO_TIEN_PHAN_BO"  sum='Total amount'/>
+                                    <field name="SO_TIEN_PB_CCDC_DAG_DUNG" string="Số tiền PB CCDC đang dùng" sum='Total amount'/>
+                                    <field name="GIA_TRI_CON_LAI_CUA_CCDC_GIAM" string="Giá trị còn lại của CCDC giảm" sum='Total amount'/>
+                                  </tree>
+                                </field>
+                              </page>
+                            <page string="2. Phân bổ">
+                                <field name="ASSET_PHAN_BO_CHI_PHI_PHAN_BO_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" report="true">
+                                    <field name="MA_CCDC" string="Mã CCDC" />
+                                    <field name="TEN_CCDC" string="Tên CCDC" />
+                                    <field name="CHI_PHI_PHAN_BO" />
+                                    <field name="DOI_TUONG_PHAN_BO_ID"/>
+                                    <field name="TEN_DOI_TUONG_PHAN_BO"/>
+                                    <field name="TY_LE" sum='Total amount'/>
+                                    <field name="SO_TIEN" sum='Total amount'/>
+                                    <field name="TK_NO_ID" string="TK chi phí"/>
+                                    <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục', 'Tên khoản mục'], 'displays': ['MA_KHOAN_MUC_CP']}" string="Khoản mục CP"/>
+                                  </tree>
+                                </field>
+                              </page>
+                            
+                            <page string="3. Hạch toán">
+                                <field name="ASSET_PHAN_BO_CHI_PHI_HACH_TOAN_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" report="true">
+                                    <field name="DIEN_GIAI"/>
+                                    <field name="TK_NO_ID" string="TK nợ" />
+                                    <field name="TK_CO_ID" string="TK có" />
+                                    <field name="SO_TIEN"  sum='Total amount'/>
+                                    <field name="DOI_TUONG_NO_ID"/>
+                                    <field name="TEN_DOI_TUONG_NO" />
+                                    <field name="DOI_TUONG_CO_ID"/>
+                                    <field name="TEN_DOI_TUONG_CO" />
+                                    <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục', 'Tên khoản mục'], 'displays': ['MA_KHOAN_MUC_CP']}" string="Khoản mục CP" />
+                                    <field name="DON_VI_ID" string="Đơn vị" />
+                                    <field name="DOI_TUONG_THCP_ID" string="Đối tượng THCP" />
+                                    <field name="CONG_TRINH_ID" string="Công trình" />
+                                    <field name="DON_DAT_HANG_ID" />
+                                    <field name="HOP_DONG_BAN_ID"/>
+                                    <field name="CB_KHONG_HOP_LY" string="CB không hợp lý"/>
+                                    <field name="MA_THONG_KE_ID"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_asset_phan_bo_chi_phi_tree" model="ir.ui.view">
+            <field name="name">asset.phan.bo.chi.phi.tree</field>
+            <field name="model">asset.phan.bo.chi.phi</field>
+            <field name="arch" type="xml">
+                <tree string="Phân bổ chi phí" decoration-info="state=='chua_ghi_so'">
+                    <field name="NGAY_HACH_TOAN"/>
+                    <field name="NGAY_CHUNG_TU"/>
+                    <field name="SO_CHUNG_TU"/>
+                    <field name="DIEN_GIAI"/>
+					<field name="state" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_asset_phan_bo_chi_phi" model="ir.actions.act_window">
+            <field name="name">Phân bổ chi phí</field>
+            <field name="res_model">asset.phan.bo.chi.phi</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_asset_phan_bo_chi_phi_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_asset_phan_bo_chi_phi_tree"/>
+            <field name="act_window_id" ref="open_menu_asset_phan_bo_chi_phi"/>
+        </record>
+
+        <record id="action_asset_phan_bo_chi_phi_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_asset_phan_bo_chi_phi_form"/>
+            <field name="act_window_id" ref="open_menu_asset_phan_bo_chi_phi"/>
+        </record>
+
+        <!-- <menuitem name="Phân bổ chi phí"
+                  action="asset.open_menu_asset_phan_bo_chi_phi"
+                  id="menu_asset_phan_bo_chi_phi"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_asset_phan_bo_chi_phi_1" model="ir.sequence">
+            <field name="name">asset_phan_bo_chi_phi SO_CHUNG_TU sequence</field>
+            <field name="code">asset_phan_bo_chi_phi_SO_CHUNG_TU</field>
+            <field name="prefix">PBCC</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="bao_cao assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_bang_tinh_gia_thanh_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_so_chi_tiet_ban_hang_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_so_chi_tiet_vat_tu_hang_hoa.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_tong_hop_ban_hang_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_s35_dn_so_chi_tiet_ban_hang_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_tong_hop_cong_no_phai_thu_khach_hang_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_chi_tiet_cong_no_phai_thu_khach_hang_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_phan_tich_cong_no_phai_thu_theo_tuoi_no_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_tinh_hinh_thuc_hien_don_dat_hang_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_tong_hop_mua_hang_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_so_chi_tiet_mua_hang_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_tong_hop_cong_no_phai_tra_nha_cung_cap_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_chi_tiet_cong_no_phai_tra_nha_cung_cap_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_s10dn_so_chi_tiet_vl_ccdc_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_so_chi_tiet_tai_khoan_theo_doi_tuong_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_gia_thanh_tong_hop_nhap_xuat_kho_theo_doi_tuong_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_gia_thanh_bang_ke_phieu_nhap_xuat_theo_doi_tuong_view.js"></script>
+                <script type="text/javascript" src="/bao_cao/static/src/js/bao_cao_gia_thanh_bang_tong_hop_chi_phi_view.js"></script>
+            </xpath>
+        </template>
+
+        <template id="assets_common" name="bao_cao assets common" inherit_id="web.report_assets_common">
+            <xpath expr="." position="inside">
+                <link href="/bao_cao/static/src/less/report.less" rel="stylesheet"/>
+            </xpath>
+        </template>
+        
+        <template id="external_layout_header" name="bao_cao header">
+            <div class="report_header">
+                <t t-if="o.get_kieu_hien_thi_tieu_de() == 'CHUAN'" t-call="bao_cao.external_layout_standard_header"/>
+                <t t-if="o.get_kieu_hien_thi_tieu_de() == 'TUY_CHINH'" t-call="bao_cao.external_layout_customized_header"/>
+            </div>
+        </template>
+
+        <template id="external_layout_standard_header" name="bao_cao header">
+            <div>
+                <span t-esc="o.get_ten_cong_ty()" />
+                <br />
+                <span t-esc="o.get_dia_chi_cong_ty()" />
+            </div>
+        </template>
+
+        <!-- Replace all external_layout_standard -->
+        <template id="web.external_layout_standard" name="bao_cao external_layout_standard">
+            <div class="article o_report_layout_standard">
+                <t t-raw="0" />
+            </div>
+        </template>
+    </data>
+
+    <data noupdate="1">
+        <!-- Customized header -->
+        <template id="external_layout_customized_header" name="bao_cao customized_header">
+            <div style="display: flex;">
+                <div t-if="o.get_logo_cong_ty()" class="mb4 company_logo">
+                    <img t-att-src="'data:image/png;base64,%s' % to_text(o.get_logo_cong_ty())" style="max-height: 60px;padding-right: 5px"/>
+                </div>
+                <div>
+                    <span t-esc="o.get_ten_cong_ty()" />
+                    <br />
+                    <span>ĐC: </span> <span t-esc="o.get_dia_chi_cong_ty()" />
+                    <br />
+                    <span>ĐT: </span> <span t-esc="o.get_dien_thoai_cong_ty()" />
+                </div>
+            </div>
+        </template>
+    </data>
+</odoo>

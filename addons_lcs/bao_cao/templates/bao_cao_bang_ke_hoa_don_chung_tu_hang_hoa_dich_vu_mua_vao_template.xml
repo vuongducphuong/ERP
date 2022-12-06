@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="bang_ke_hoa_don_chung_tu">
+        <t t-call="web.external_layout">
+            <div class="page" style="margin-left: 15px;margin-right: 15px;">
+                <div class="col-xs-12 text-left" style="padding-left: 0px;padding-right: 0px;">
+                    <div class="col-xs-7 text-left truong-thong-tin-dat-tren-header" style="padding-left: 0px;padding-right: 0px;">
+                        <t t-call="bao_cao.external_layout_header" />
+                    </div>
+                </div>
+
+                <div class="col-xs-12 text-center report-title" style="padding-left: 0px;padding-right: 0px;">
+                    <span>BẢNG KÊ HÓA ĐƠN, CHỨNG TỪ HÀNG HÓA, DỊCH VỤ MUA VÀO (MẪU QUẢN TRỊ)</span>
+                </div>
+
+                <div class="col-xs-12 text-center" style="padding-left: 0px;padding-right: 0px;">
+                    <div class="report-sub-title-1-italic-bold">
+                        <span t-esc="added_data.get('sub_title')" />
+                    </div>
+                </div>
+
+                <!--Table-->
+                <div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
+                    <table class="table-condensed table-bordereds" style="margin-bottom: 0px; width: 100%;">
+                        <thead>
+                            <tr class="detail-header">
+                                <th class="text-center" style="height: 9.5px; width: 23.1px;">
+                                    <span>Số hóa đơn</span>
+                                </th>
+                                <th class="text-center" style="height: 9.5px; width: 23.1px;">
+                                    <span>Ngày hóa đơn</span>
+                                </th>
+                                <th class="text-center" style="height: 9.5px; width: 41.5px;">
+                                    <span>Tên người bán</span>
+                                </th>
+                                <th class="text-center" style="height: 9.5px; width: 34.6px;">
+                                    <span>Mã số thuế người bán</span>
+                                </th>
+                                <th class="text-center" style="height: 9.5px; width: 46.1px;">
+                                    <span>Mặt hàng</span>
+                                </th>
+                                <th class="text-center" style="height: 9.5px; width: 34.6px;">
+                                    <span>Giá trị HHDV mua vào chưa có thuế</span>
+                                </th>
+                                <th class="text-center" style="height: 9.5px; width: 23.1px;">
+                                    <span>Thuế suất</span>
+                                </th>
+                                <th class="text-center" style="height: 9.5px; width: 23.1px;">
+                                    <span>Thuế GTGT</span>
+                                </th>
+                                <th class="text-center" style="height: 9.5px; width: 22.8px;">
+                                    <span>TK thuế</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="grouped_data" t-as="index">
+                                <t t-set="group" t-value="grouped_data[index]"></t>
+                                <tr>
+                                    <td class="summary-footer-text" colspan="9" style="height: auto;border-bottom: 1px solid;">
+                                        <span t-esc="'Nhóm HHDV mua vào: ' + group.NHOM_HHDV_MUA_VAO"></span>
+                                    </td>
+                                </tr>
+                                <tr t-foreach="group.data" t-as="line">
+                                    <td class="text-left detail-hyper-link" style="height: auto; width: 23.1px;">
+                                        <span t-esc="line.SO_HOA_DON"></span>
+                                    </td>
+                                    <td class="text-center detail-text" style="height: auto; width: 23.1px;">
+                                        <span t-field="line.NGAY_HOA_DON" />
+                                    </td>
+                                    <td class="text-left detail-text" style="height: auto; width: 41.5px;">
+                                        <span t-field="line.TEN_NGUOI_BAN" />
+                                    </td>
+                                    <td class="text-left detail-text" style="height: auto;  width: 34.6px;">
+                                        <span t-field="line.MA_SO_THUE_NGUOI_BAN" />
+                                    </td>
+                                    <td class="text-left detail-text" style="height: auto; width: 46.1px;">
+                                        <span t-field="line.MAT_HANG" />
+                                    </td>
+                                    <td class="text-right detail-number" style="height: auto; width: 34.6px;">
+                                        <span t-field="line.GIA_TRI_HHDV_MUA_VAO_CHUA_CO_THUE" />
+                                    </td>
+                                    <td class="text-left detail-text" style="height: auto; width: 23.1px;">
+                                        <span t-field="line.THUE_SUAT" />
+                                    </td>
+                                    <td class="text-right detail-number" style="height: auto; width: 23.1px;">
+                                        <span t-field="line.THUE_GTGT" />
+                                    </td>
+                                    <td class="text-left detail-text" style="height: auto; width: 22.8px;">
+                                        <span t-field="line.TK_THUE" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left summary-footer-text" colspan="5" style="border-top: 1px solid;height: auto;">
+                                        <span t-esc="'Cộng nhóm: ' + group.NHOM_HHDV_MUA_VAO"></span>
+                                    </td>
+                                    <td class="text-right summary-detail-number" style="border-top: 1px solid;width: 34.6px;height: auto;">
+                                        <span t-field="group.sum_GIA_TRI_HHDV_MUA_VAO_CHUA_CO_THUE"></span>
+                                    </td>
+                                    <td class="text-right" style="border-top: 1px solid;width: 23.1px;height: 6px;"></td>
+                                    <td class="text-right summary-detail-number" style="border-top: 1px solid;width: 23.1px;height: auto;">
+                                        <span t-field="group.sum_THUE_GTGT"></span>
+                                    </td>
+                                    <td class="text-right" style="border-top: 1px solid;width: 22.8px;height: auto;"></td>
+                                </tr>
+                            </t>
+                            <tr>
+                                <th class="text-left summary-footer-text" colspan="5" style="height: 6px;">
+                                    <span>Tổng cộng</span>
+                                </th>
+                                <th class="text-right summary-detail-number" style="width: 34.6px;height: 6px;">
+                                    <span t-field="o.TONG_GIA_TRI_HHDV_MUA_VAO_CHUA_CO_THUE"></span>
+                                </th>
+                                <th class="text-center" style="width: 23.1px;height: 6px;"></th>
+                                <th class="text-right summary-detail-number" style="width: 23.1px;height: 6px;">
+                                    <span t-field="o.TONG_THUE_GTGT"></span>
+                                </th>
+                                <th class="text-center" style="width: 22.8px;height: 6px;"></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs-12 text-right" style="margin-right: 50px;padding-left: 0px;padding-right: 0px;">
+                    <span class="signer-date">
+                        Ngày ...... tháng ...... năm .........
+                    </span>
+                </div>
+                <div class="col-xs-12 page-break-inside" style="padding-left: 0px;padding-right: 0px;">
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr class="text-center signer-title">
+                                <th t-foreach="added_data.get('tieu_de_nguoi_ky')" t-as="line">
+                                    <span t-esc="line" />
+                                </th>
+                            </tr>
+                            <tr class="text-center signer-sub-title">
+                                <td t-foreach="added_data.get('tieu_de_nguoi_ky')" t-as="line">
+                                    <span>(Ký, họ tên)</span>
+                                </td>
+                            </tr>
+                            <tr style="height: 70px;" />
+                            <tr class="text-center signer-name">
+                                <td t-foreach="added_data.get('ten_nguoi_ky')" t-as="line">
+                                    <span t-esc="line" />
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!-- Table -->
+            </div>
+        </t>
+    </template>
+    <template id="template_bang_ke_hoa_don_chung_tu">
+        <t t-call="web.html_container">
+            <t t-set="data_paper_format" t-value="'A4-ngang'" />
+            <t t-call="bao_cao.bang_ke_hoa_don_chung_tu" />
+        </t>
+    </template>
+    <data>
+        <report string="Bảng kê hóa đơn, chứng từ, dịch vụ mua vào (Mẫu quản trị)" id="action_template_bang_ke_hoa_don_chung_tu" model="bao.cao.bang.ke.hoa.don.chung.tu" report_type="qweb-html" name="bao_cao.template_bang_ke_hoa_don_chung_tu" file="bao_cao.template_bang_ke_hoa_don_chung_tu" print_report_name="Bảng kê hóa đơn, chứng từ, dịch vụ mua vào (Mẫu quản trị)" />
+    </data>
+</odoo>

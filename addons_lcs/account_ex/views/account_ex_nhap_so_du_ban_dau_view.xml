@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+	<data>
+		<record id="view_account_ex_nhap_so_du_ban_dau_form" model="ir.ui.view">
+			<field name="name">account.ex.nhap.so.du.ban.dau.form</field>
+			<field name="model">account.ex.nhap.so.du.ban.dau</field>
+			<field name="arch" type="xml">
+				<form string="Nhập số dư ban đầu" delete="false" cloudify_js="account_ex_so_du_ban_dau_form_view">
+					<sheet>
+						<notebook>
+							<page string="Số dư tài khoản">
+								<field name="LOAI_TIEN_ID_SO_DU_TAI_KHOAN" options="{'select_all': True, 'showClearButton': false, 'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+								<field name="CO_HACH_TOAN_NGOAI_TE_SO_DU_TAI_KHOAN" invisible="1"/>
+								<button name="action_nhap_khau_tu_excel" string="Nhập khẩu từ excel" class="oe_highlight ml16" type="object"/>
+								<field name="ACCOUNT_EX_NHAP_SO_DU_BAN_DAU_CHI_TIET_IDS" mode="tree">
+									<tree create="false" id="child_id">
+										<field name="SO_TAI_KHOAN_ID" invisible="1"/>
+										<field name="SO_TAI_KHOAN" width="150"/>
+										<field name="TEN_TAI_KHOAN" />
+										<field name="DU_NO_NGUYEN_TE" string="Dư Nợ" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_DU_TAI_KHOAN', '=', False)]}" width="200"/>
+										<field name="DU_NO" string="Dư Nợ quy đổi" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_DU_TAI_KHOAN', '=', False)]}" width="200"/>
+										<field name="DU_CO_NGUYEN_TE" string="Dư Có" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_DU_TAI_KHOAN', '=', False)]}" width="200"/>
+										<field name="DU_CO" string="Dư Có quy đổi" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_DU_TAI_KHOAN', '=', False)]}" width="200"/>
+
+										<field name="DU_NO" sum="'Total amount'" string="Dư nợ" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_DU_TAI_KHOAN', '=', True)]}" width="200"/>
+										<field name="DU_CO" sum="'Total amount'" string="Dư có" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_DU_TAI_KHOAN', '=', True)]}" width="200"/>
+										
+										<field name="parent_id" invisible="1" />
+										<field name="child_id" invisible="1" />
+										<field name="CHI_TIET_THEO_DOI_TUONG" invisible="1" />
+										<field name="CHI_TIET_THEO_TK_NGAN_HANG" invisible="1" />
+										<field name="LOAI_DOI_TUONG" invisible="1" />
+										<field name="LA_TK_TONG_HOP" invisible="1" />
+									</tree>
+								</field>
+							</page>
+							<page string="Số dư TK ngân hàng">
+								<field name="LOAI_TIEN_ID_SO_DU_TK_NGAN_HANG" options="{'select_all': True,'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+								<field name="CO_HACH_TOAN_NGOAI_TE_SO_DU_TK_NGAN_HANG" invisible="1"/>
+								<button name="btn_nhap_so_du_tknh" string="Nhập số dư" class="oe_highlight ml16" />
+								<button name="action_nhap_khau_tu_excel" string="Nhập khẩu từ excel" class="oe_highlight ml16" type="object"/>
+								<field name="ACCOUNT_EX_SO_DU_TK_NGAN_HANG_IDS" mode="tree">
+									<tree create="false" delete="false">
+										<field name="SO_TK_NGAN_HANG_ID" options="{'columns': ['SO_TAI_KHOAN', 'NGAN_HANG_ID.CHI_NHANH', 'CHI_NHANH'], 'strings': ['Số tài khoản', 'Tên ngân hàng', 'Chi nhánh'],'displays': ['SO_TAI_KHOAN']}" />
+										<field name="TEN_NGAN_HANG" />
+										<field name="SO_TAI_KHOAN_ID" />
+										<field name="DU_NO_NGUYEN_TE" string="Dư Nợ" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_DU_TK_NGAN_HANG', '=', False)]}" />
+										<field name="DU_NO" string="Dư Nợ quy đổi" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_DU_TK_NGAN_HANG', '=', False)]}" />
+										<field name="DU_CO_NGUYEN_TE" string="Dư Có" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_DU_TK_NGAN_HANG', '=', False)]}" />
+										<field name="DU_CO" string="Dư Có quy đổi" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_DU_TK_NGAN_HANG', '=', False)]}" />
+
+										<field name="DU_NO" sum="'Total amount'" string="Dư nợ" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_DU_TK_NGAN_HANG', '=', True)]}"/>
+										<field name="DU_CO" sum="'Total amount'" string="Dư có" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_DU_TK_NGAN_HANG', '=', True)]}"/>
+										<field name="CHI_TIET_THEO_TK_NGAN_HANG" invisible="1" />
+									</tree>
+								</field>
+							</page>
+							<page string="Công nợ khách hàng">
+								<field name="LOAI_TIEN_ID_SO_CONG_NO_KHACH_HANG" options="{'select_all': True,'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+								<field name="CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_KHACH_HANG" invisible="1"/>
+								<button name="btn_nhap_so_du_kh" string="Nhập số dư" class="oe_highlight ml16" />
+								<button name="action_nhap_khau_tu_excel" string="Nhập khẩu từ excel" class="oe_highlight ml16" type="object"/>
+								<!-- <field name="IS_LOAI_TIEN" invisible="1" /> -->
+								<field name="ACCOUNT_EX_CONG_NO_KHACH_HANG_IDS" mode="tree">
+									<tree create="false" delete="false">
+										<field name="SO_TAI_KHOAN_ID" />
+										<field name="DOI_TUONG_ID" domain="[('LA_KHACH_HANG','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}"/>
+										<field name="TEN_KHACH_HANG" />
+										<field name="DU_NO_NGUYEN_TE" string="Dư Nợ" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_KHACH_HANG', '=', False)]}" />
+										<field name="DU_NO" string="Dư Nợ quy đổi" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_KHACH_HANG', '=', False)]}" />
+										<field name="DU_CO_NGUYEN_TE" string="Dư Có" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_KHACH_HANG', '=', False)]}" />
+										<field name="DU_CO" string="Dư Có quy đổi" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_KHACH_HANG', '=', False)]}" />
+
+										<field name="DU_NO" sum="'Total amount'" string="Dư nợ" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_KHACH_HANG', '=', True)]}"/>
+										<field name="DU_CO" sum="'Total amount'" string="Dư có" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_KHACH_HANG', '=', True)]}"/>
+										<field name="CHI_TIET_THEO_DOI_TUONG" invisible="1" />
+										<field name="LOAI_DOI_TUONG" invisible="1" />
+									</tree>
+								</field>
+							</page>
+							<page string="Công nợ nhà cung cấp">
+								<field name="LOAI_TIEN_ID_SO_CONG_NO_NHA_CUNG_CAP" options="{'select_all': True,'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+								<field name="CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_NHA_CUNG_CAP" invisible="1"/>
+								<button name="btn_nhap_so_du_ncc" string="Nhập số dư" class="oe_highlight ml16" />
+								<button name="action_nhap_khau_tu_excel" string="Nhập khẩu từ excel" class="oe_highlight ml16" type="object"/>
+								<field name="ACCOUNT_EX_CONG_NO_NHA_CUNG_CAP_IDS" mode="tree">
+									<tree create="false" delete="false">
+										<field name="SO_TAI_KHOAN_ID" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+										<field name="DOI_TUONG_ID" domain="[('LA_NHA_CUNG_CAP','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã NCC', 'Tên NCC','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nha_cung_cap'}"/>
+										<field name="TEN_NHA_CUNG_CAP" />
+										<field name="DU_NO_NGUYEN_TE" string="Dư Nợ" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_NHA_CUNG_CAP', '=', False)]}" />
+										<field name="DU_NO" string="Dư Nợ quy đổi" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_NHA_CUNG_CAP', '=', False)]}" />
+										<field name="DU_CO_NGUYEN_TE" string="Dư Có" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_NHA_CUNG_CAP', '=', False)]}" />
+										<field name="DU_CO" string="Dư Có quy đổi" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_NHA_CUNG_CAP', '=', False)]}" />
+
+										<field name="DU_NO" sum="'Total amount'" string="Dư nợ" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_NHA_CUNG_CAP', '=', True)]}"/>
+										<field name="DU_CO" sum="'Total amount'" string="Dư có" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_NHA_CUNG_CAP', '=', True)]}"/>
+										<field name="CHI_TIET_THEO_DOI_TUONG" invisible="1" />
+										<field name="LOAI_DOI_TUONG" invisible="1" />
+									</tree>
+								</field>
+							</page>
+							<page string="Công nợ nhân viên">
+								<field name="LOAI_TIEN_ID_SO_CONG_NO_NHAN_VIEN" options="{'select_all': True,'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+								<field name="CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_NHAN_VIEN" invisible="1"/>
+								<button name="btn_nhap_so_du_nv" string="Nhập số dư" class="oe_highlight ml16" />
+								<button name="action_nhap_khau_tu_excel" string="Nhập khẩu từ excel" class="oe_highlight ml16" type="object"/>
+								<field name="ACCOUNT_EX_CONG_NO_NHAN_VIEN_IDS" mode="tree">
+									<tree create="false" delete="false">
+										<field name="SO_TAI_KHOAN_ID" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+										<field name="DOI_TUONG_ID" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}"/>
+										<field name="TEN_NHAN_VIEN" />
+										<field name="DU_NO_NGUYEN_TE" string="Dư Nợ" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_NHAN_VIEN', '=', False)]}" />
+										<field name="DU_NO" string="Dư Nợ quy đổi" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_NHAN_VIEN', '=', False)]}" />
+										<field name="DU_CO_NGUYEN_TE" string="Dư Có" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_NHAN_VIEN', '=', False)]}" />
+										<field name="DU_CO" string="Dư Có quy đổi" sum="'Total amount'" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_NHAN_VIEN', '=', False)]}" />
+
+										<field name="DU_NO" sum="'Total amount'" string="Dư nợ" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_NHAN_VIEN', '=', True)]}"/>
+										<field name="DU_CO" sum="'Total amount'" string="Dư có" attrs="{'column_invisible':  [('parent.CO_HACH_TOAN_NGOAI_TE_SO_CONG_NO_NHAN_VIEN', '=', True)]}"/>
+										<field name="CHI_TIET_THEO_DOI_TUONG" invisible="1" />
+										<field name="LOAI_DOI_TUONG" invisible="1" />
+									</tree>
+								</field>
+							</page>
+							<page string="Tồn kho vật tư hàng hóa">
+								<field name="KHO_ID" options="{'select_all': True,'columns': ['MA_KHO', 'TEN_KHO'], 'strings': ['Mã kho', 'Tên kho'],'displays': ['MA_KHO']}" />
+								<button name="btn_nhap_so_du_vthh" string="Nhập số dư" class="oe_highlight ml16" />
+								<button name="action_nhap_khau_tu_excel" string="Nhập khẩu từ excel" class="oe_highlight ml16" type="object"/>
+								<field name="ACCOUNT_EX_TON_KHO_VAT_TU_HANG_HOA_IDS" mode="tree">
+									<tree create="false" delete="false">
+										<field name="MA_HANG_ID" string="Mã hàng" options="{'columns': ['MA', 'TEN','SO_LUONG_TON','GIA_BAN_1','GIA_BAN_2','GIA_BAN_3','GIA_CO_DINH'], 'strings': ['Mã hàng', 'Tên hàng','Số lượng tồn','Giá bán 1','Giá bán 2','Giá bán 3','Giá bán cố định'],'displays': ['MA']}" />
+										<field name="TEN_HANG" />
+										<field name="LIST_NHOM_VTHH" />
+										<field name="DVT_ID" />
+										<field name="KHO_ID" string="Mã kho"/>
+										<field name="SO_LUONG" sum="'Total amount'" />
+										<field name="GIA_TRI_TON" sum="'Total amount'" />
+										<field name="SO_LO" />
+										<field name="HAN_SU_DUNG" />
+										<field name="SO_LUONG_THEO_DVT_CHINH" string="Số lượng theo(ĐVC)" sum="'Total amount'" />
+										<field name="CHI_TIET_VTHH" invisible="1" />
+									</tree>
+								</field>
+							</page>
+							<page string="Chi phí dở dang" >
+								<button name="btn_nhap_chi_phi_cpdd" string="Nhập chi phí" class="oe_highlight" />
+								<field name="chi_phi_do_dang" widget="radio" options="{'horizontal': True, 'alway_edit': True}" />
+								<button name="action_nhap_khau_tu_excel" string="Nhập khẩu từ excel" class="oe_highlight ml16" type="object"/> 
+								<field name="IS_CHI_TIET" invisible="1"/> 
+								<field name="ACCOUNT_EX_CHI_PHI_DO_DANG_IDS" mode="tree" attrs="{'invisible': [('chi_phi_do_dang', '=', 'CHI_PHI_PB')]}">
+									<tree create="false" delete="false" decoration-bf="isparent == True">
+										<field name="MA_DOI_TUONG_THCP_ID" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '!=', 'DT_THCP')]}" />
+										<field name="TEN_DOI_TUONG_THCP" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '!=', 'DT_THCP')]}" />
+										<field name="LOAI_DOI_TUONG_THCP" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '!=', 'DT_THCP')]}" />
+
+										<field name="MA_CONG_TRINH_ID" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '!=', 'CONG_TRINH')]}" />
+										<field name="TEN_CONG_TRINH" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '!=', 'CONG_TRINH')]}" />
+										<field name="LOAI_CONG_TRINH" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '!=', 'CONG_TRINH')]}" />
+
+										<field name="DON_HANG_ID" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '!=', 'DON_HANG')]}" />
+										<field name="NGAY_DON_HANG" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '!=', 'DON_HANG')]}" />
+										<field name="DIEN_GIAI" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '!=', 'DON_HANG')]}" />
+										<!-- <field name="KHACH_HANG_ID" readonly="1" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '!=', 'DON_HANG')]}" /> -->
+ 
+										<field name="HOP_DONG_ID" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '!=', 'HOP_DONG')]}" />
+										<field name="NGAY_KY" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '!=', 'HOP_DONG')]}" />
+										<field name="TRICH_YEU" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '!=', 'HOP_DONG')]}" />
+										<field name="KHACH_HANG_ID" attrs="{'column_invisible': [('parent.chi_phi_do_dang', 'not in', ('HOP_DONG','DON_HANG'))]}" />
+
+										<field name="CHI_PHI_NVL_TRUC_TIEP" string="NVL trực tiếp" sum="'Total amount'" />
+										<field name="CHI_PHI_NHAN_CONG_TRUC_TIEP" string="Nhân công trực tiếp" sum="'Total amount'" />
+										<field name="MTC_TONG" string="Máy thi công" sum="'Total amount'" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '!=', 'CONG_TRINH')]}"/>
+
+										<field name="CHI_PHI_NVL_GIAN_TIEP" sum="'Total amount'" attrs="{'column_invisible': [('parent.IS_CHI_TIET', '=', False)]}"/>
+										<field name="CHI_PHI_NHAN_CONG_GIAN_TIEP" sum="'Total amount'" attrs="{'column_invisible': [('parent.IS_CHI_TIET', '=', False)]}"/>
+										<field name="CHI_PHI_KHAU_HAO" sum="'Total amount'" attrs="{'column_invisible': [('parent.IS_CHI_TIET', '=', False)]}"/>
+										<field name="CHI_PHI_MUA_NGOAI" sum="'Total amount'" attrs="{'column_invisible': [('parent.IS_CHI_TIET', '=', False)]}"/>
+
+										<field name="CHI_PHI_KHAC_CHUNG" string="Chi phí khác" sum="'Total amount'" attrs="{'column_invisible': [('parent.IS_CHI_TIET', '!=', True)]}"/>
+										<field name="CHI_PHI_KHAC_CHUNG" string="Chi phí chung" sum="'Total amount'" attrs="{'column_invisible': [('parent.IS_CHI_TIET', '=', True)]}"/> 
+										<field name="TONG" string="Tổng chi phí"  readonly="1" sum="'Total amount'" />
+										<field name="SO_DA_NGHIEM_THU" sum="'Total amount'" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '=', 'DT_THCP')]}"/>
+										<field name="SO_CHUA_NGHIEM_THU" sum="'Total amount'" attrs="{'column_invisible': [('parent.chi_phi_do_dang', '=', 'DT_THCP')]}"/>
+										<field name="TAI_KHOAN_CPSXKD_DO_DANG_ID" string="Tài khoản CPSXKD dở dang" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+										<field name="LOAI_CHI_PHI_DO_DANG" invisible="1" />
+										<field name="BAC" invisible="1" />
+										<field name="isparent" invisible="1" />
+									</tree>
+								</field>
+								<field name="ACCOUNT_EX_KHAI_BAO_CHI_PHI_CHUNG_CAN_PHAN_BO_IDS" mode="tree" attrs="{'invisible': [('chi_phi_do_dang', '!=', 'CHI_PHI_PB')]}"> 
+									<tree create="false" delete="false" decoration-bf="LA_TONG_HOP == True">
+										<field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục', 'Tên khoản mục'], 'displays': ['MA_KHOAN_MUC_CP']}" />
+										<field name="TEN_KHOAN_MUC_CP" />
+										<field name="SO_TIEN" />
+										<field name="LA_TONG_HOP" invisible="1"/>
+									</tree>
+								</field>
+							</page>
+						</notebook>
+						<!-- <group col="4">
+                          <field name="IS_DT_THCP" invisible = '1'/>
+                          <field name="IS_CONG_TRINH" invisible = '1'/>
+                          <field name="IS_DON_HANG" invisible = '1'/>
+                          <field name="IS_HOP_DONG" invisible = '1'/>
+                        </group> -->
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record id="open_menu_account_ex_nhap_so_du_ban_dau" model="ir.actions.act_window">
+			<field name="name">Nhập số dư ban đầu</field>
+			<field name="res_model">account.ex.nhap.so.du.ban.dau</field>
+			<!-- <field name="type">ir.actions.act_window</field> -->
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="target">inline</field>
+			<field name="limit">500</field>
+		</record>
+
+		<record id="action_account_ex_nhap_so_du_ban_dau_form" model="ir.actions.act_window.view">
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="view_account_ex_nhap_so_du_ban_dau_form" />
+			<field name="act_window_id" ref="open_menu_account_ex_nhap_so_du_ban_dau" />
+		</record>
+
+	</data>
+</odoo>

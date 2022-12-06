@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_tong_hop_lai_lo_theo_hop_dong_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.lai.lo.theo.hop.dong.tree</field>
+            <field name="model">bao.cao.tong.hop.lai.lo.theo.hop.dong</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Báo cáo tổng hợp lãi lỗ theo hợp đồng" create="false" report="true">
+                    <field name="SO_HOP_DONG" string="Hợp đồng/Dự án" />
+                    <field name="TEN_KHACH_HANG" string="Tên khách hàng" />
+                    <field name="DOANH_THU" string="Doanh thu" sum="Tổng" />
+                    <field name="GIAM_TRU_DOANH_THU" string="Giảm trừ doanh thu" sum="Tổng" />
+                    <field name="DOANH_THU_THUAN" string="Doanh thu thuần" sum="Tổng" />
+                    <field name="GIA_VON_HANG_BAN" string="Giá vốn hàng bán" sum="Tổng" />
+                    <field name="CHI_PHI_BAN_HANG" string="Chi phí bán hàng" sum="Tổng" />
+                    <field name="CHI_PHI_QUAN_LY" string="Chi phí quản lý" sum="Tổng" />
+                    <field name="CHI_PHI_KHAC" string="Chi phí khác" sum="Tổng" />
+                    <field name="LAI_LO" string="Lãi/Lỗ" sum="Tổng" />
+                    <field name="TY_SUAT_LOI_NHUAN_DOANH_THU_PHAN_TRAM" string="Tỷ suất lợi nhuận/Doanh thu (%)"/>
+                </tree>
+            </field>
+        </record>
+        <record id="open_report_tong_hop_lai_lo_theo_hop_dong" model="ir.actions.act_window">
+            <field name="name">BÁO CÁO TỔNG HỢP LÃI LỖ THEO HỢP ĐỒNG</field>
+            <field name="res_model">bao.cao.tong.hop.lai.lo.theo.hop.dong</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!-- <field name="context">{'group_by': ['SO_HOP_DONG'],'expand_all': 'true'}</field> -->
+        </record>
+        <record id="view_bao_cao_tong_hop_lai_lo_theo_hop_dong_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.lai.lo.theo.hop.dong.form</field>
+            <field name="model">bao.cao.tong.hop.lai.lo.theo.hop.dong</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="6">
+                            <field name="CHI_NHANH_ID" colspan="3" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" colspan="3" />
+                        </group>
+                        <group string="Tham số" col="9" colspan="9">
+                            <field name="KY_BAO_CAO" colspan="3" />
+                            <field name="TU" colspan="3" />
+                            <field name="DEN" colspan="3" />
+                        </group>
+                        <notebook>
+                            <page string="Hợp đồng">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_HOP_DONG" nolabel="1" colspan="12" />
+                                    <field name="HOP_DONG_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_HOP_DONG', '=', True)]}" colspan="12" options="{'columns': ['SO_HOP_DONG', 'NGAY_KY','TRICH_YEU','TEN_KHACH_HANG'], 'strings': ['Số hợp đồng/Mã dự án', 'Ngày ký','Trích yếu','Khách hàng']}" />
+                                </group>
+                                <field name="HOP_DONG_IDS" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_HOP_DONG', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="SO_HOP_DONG" string="Mã hợp đồng" />
+                                        <field name="NGAY_KY" string="Ngày ký" />
+                                        <field name="TRICH_YEU" string="Trích yếu" />
+                                        <field name="TEN_KHACH_HANG" string="Khách hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_tong_hop_lai_lo_theo_hop_dong_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Báo cáo tổng hợp lãi lỗ theo hợp đồng</field>
+            <field name="res_model">bao.cao.tong.hop.lai.lo.theo.hop.dong</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_lai_lo_theo_hop_dong_tham_so_form" />
+        </record>
+
+        <!-- <menuitem name="" action="bao_cao.open_bao_cao_tong_hop_lai_lo_theo_hop_dong_tham_so_form" id="menu_bao_cao_tong_hop_lai_lo_theo_hop_dong" parent="" sequence="0" /> -->
+    </data>
+</odoo>

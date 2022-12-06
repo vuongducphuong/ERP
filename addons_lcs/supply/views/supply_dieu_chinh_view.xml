@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_supply_dieu_chinh_form" model="ir.ui.view">
+            <field name="name">supply.dieu.chinh.form</field>
+            <field name="model">supply.dieu.chinh</field>
+            <field name="arch" type="xml">
+                <form string="Điều chỉnh công cụ dụng cụ" cloudify_js="dieu_chinh_cong_cu_dung_cu_view">
+                    <header>
+                        <button name="action_ghi_so" string="Ghi sổ" type="object" class="oe_highlight oe_read_only" states="chua_ghi_so" />
+                        <button id="action_bo_ghi_so" string="Bỏ ghi" states="da_ghi_so" />
+                        <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so" />
+                        <field name="CHON_CHUNG_TU_JSON" invisible="1" />
+                    </header>
+                    <sheet>
+                        <group col="6">
+                            <group col="4" colspan="4" string="Thông tin chung">
+                                <field name="LY_DO_DIEU_CHINH" colspan="4" />
+                                <field name="THAM_CHIEU"  invisible="1" readonly="1" colspan="4" />
+                            </group>
+                            <group col="2" colspan="2" string="Chứng từ">
+                                <field name="NGAY_CHUNG_TU" />
+                                <field name="SO_CHUNG_TU" />
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1.Chi tiết điều chỉnh ">
+                                <field name="SUPPLY_CHI_TIET_DIEU_CHINH_CCDC_IDS" mode="tree">
+                                    <tree editable="bottom" options="{'header_struct': [['Giá trị còn lại', ['GIA_TRI_CON_LAI_TRUOC_DIEU_CHINH','GIA_TRI_CON_LAI_SAU_DIEU_CHINH','CHENH_LECH_GIA_TRI']],['Số kỳ phân bổ còn lại (tháng)', ['SO_KY_PHAN_BO_CON_LAI_TRUOC_DIEU_CHINH','SO_KY_CON_LAI_SAU_DIEU_CHINH','CHENH_LENH_KY']]]}">
+                                        <field name="MA_CCDC" options="{'columns': ['MA_CCDC', 'TEN_CCDC'], 'strings': ['Mã CCDC', 'Tên CCDC'],'displays': ['MA_CCDC']}" />
+                                        <field name="TEN_CCDC" readonly="1" />
+                                        <field name="SO_LUONG" sum="Tổng" readonly="1" />
+                                        <field name="TAI_KHOAN_CHO_PHAN_BO" readonly="1" />
+                                        <field name="GIA_TRI_CON_LAI_TRUOC_DIEU_CHINH" sum="Tổng" readonly="1" />
+                                        <field name="GIA_TRI_CON_LAI_SAU_DIEU_CHINH" sum="Tổng" />
+                                        <field name="CHENH_LECH_GIA_TRI" sum="Tổng" />
+                                        <field name="SO_KY_PHAN_BO_CON_LAI_TRUOC_DIEU_CHINH" readonly="1" />
+                                        <field name="SO_KY_CON_LAI_SAU_DIEU_CHINH" />
+                                        <field name="CHENH_LENH_KY" />
+                                        <field name="SO_TIEN_PHAN_BO_HANG_KY" sum="Tổng" />
+                                        <field name="GHI_CHU" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="2.Tập hợp chứng từ ">
+                                <field name="SUPPLY_TAP_HOP_CHUNG_TU_CCDC_IDS" mode="tree">
+                                    <tree editable="bottom" create="false">
+                                        <field name="NGAY_CHUNG_TU" />
+                                        <field name="SO_CHUNG_TU" />
+                                        <field name="LOAI_CHUNG_TU" />
+                                        <field name="SO_TIEN" sum="Tổng" />
+                                        <field name="DIEN_GIAI" />
+                                        <field name="ID_GOC" invisible="1" />
+                                        <field name="MODEL_GOC" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button id="btn_chon_chung_tu" string="Chọn chứng từ" class="btn btn-primary"/>
+                            <button id="btn_loai_bo" string="Loại bỏ" />
+                        </footer>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_supply_dieu_chinh_tree" model="ir.ui.view">
+            <field name="name">supply.dieu.chinh.tree</field>
+            <field name="model">supply.dieu.chinh</field>
+            <field name="arch" type="xml">
+                <tree string="Điều chỉnh công cụ dụng cụ" decoration-info="state=='chua_ghi_so'">
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="LY_DO_DIEU_CHINH" string="Lý do" />
+                    <field name="CHI_NHANH_ID" />
+					<field name="state" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_supply_dieu_chinh" model="ir.actions.act_window">
+            <field name="name">Điều chỉnh công cụ dụng cụ</field>
+            <field name="res_model">supply.dieu.chinh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_supply_dieu_chinh_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_supply_dieu_chinh_tree" />
+            <field name="act_window_id" ref="open_menu_supply_dieu_chinh" />
+        </record>
+        <record id="action_supply_dieu_chinh_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_supply_dieu_chinh_form" />
+            <field name="act_window_id" ref="open_menu_supply_dieu_chinh" />
+        </record>
+    </data>
+    <data noupdate="1">
+        <record id="sequence_supply_dieu_chinh_1" model="ir.sequence">
+            <field name="name">supply_dieu_chinh SO_CHUNG_TU sequence</field>
+            <field name="code">supply_dieu_chinh_SO_CHUNG_TU</field>
+            <field name="prefix">ĐCH</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

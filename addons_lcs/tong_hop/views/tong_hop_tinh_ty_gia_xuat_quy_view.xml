@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tong_hop_tinh_ty_gia_xuat_quy_tham_so_form" model="ir.ui.view">
+            <field name="name">tong.hop.tinh.ty.gia.xuat.quy.form</field>
+            <field name="model">tong.hop.tinh.ty.gia.xuat.quy</field>
+            <field name="arch" type="xml">
+                <!-- <form string="Chọn tham số..."> -->
+                <form string="Chọn tham số..." cloudify_js="tinh_ty_gia_xuat_quy_form_view">
+                    <sheet>
+                        <group col="8">
+                            <group col="4" colspan="6" string="Kỳ tính giá xuất quỹ">
+                                <field name="THANG" colspan="2"/>
+                                <field name="NAM" colspan="2" options="{'showSpinButtons': true}"/>
+                            </group>
+                        </group>
+                       
+                        <!--<notebook>
+                            <page string="Chi tiết">
+                                <field name="FIELD_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>-->
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Ngoại tệ">
+                                <field name="TONG_HOP_TINH_TY_GIA_XUAT_QUY_CHI_TIET_NGOAI_TE_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" report="true" delete="false">
+                                    <field name="AUTO_SELECT" invisible ="1"/>
+                                    <field name="MA_LOAI_TIEN_ID" readonly='True'/>
+                                    <field name="TEN_LOAI_TIEN" readonly='True'/>
+                                   
+                                    
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                        <footer>
+                            <button id="btn_thuc_hien" string="Thực hiện"  class="btn btn-primary" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_tong_hop_tinh_ty_gia_xuat_quy_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Tính tỷ giá xuất quỹ</field>
+            <field name="res_model">tong.hop.tinh.ty.gia.xuat.quy</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="size">medium</field>
+            <field name="view_id" ref="view_tong_hop_tinh_ty_gia_xuat_quy_tham_so_form"/>
+        </record>
+
+        <record id="action_open_tong_hop_tinh_ty_gia_xuat_quy_form" model="ir.actions.act_window">
+            <field name="name">Tính tỷ giá xuất quỹ</field>
+            <field name="res_model">tong.hop.tinh.ty.gia.xuat.quy</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+
+
+        <!--vu-->
+        
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="Tính tỷ giá xuất quỹ"
+                  action="tong_hop.open_tong_hop_tinh_ty_gia_xuat_quy_tham_so_form"
+                  id="menu_tong_hop_tinh_ty_gia_xuat_quy"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_purchase_ex_giam_gia_hang_mua_form" model="ir.ui.view">
+            <field name="name">purchase.ex.giam.gia.hang.mua.form</field>
+            <field name="model">purchase.ex.giam.gia.hang.mua</field>
+            <field name="arch" type="xml">
+                <form string="Giảm giá hàng mua" cloudify_js="giam_gia_hang_mua_form_view">
+                    <header>
+                        <button name="action_ghi_so" string="Ghi sổ" type="object" class="oe_highlight oe_read_only" states="chua_ghi_so" />
+                        <button id="action_bo_ghi_so" string="Bỏ ghi" states="da_ghi_so" />
+                        <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so" />
+                        <field name="LOAI_CHUNG_TU" invisible="1" />
+                        <field name="base_currency_id" invisible="1" />
+                        
+                    </header>
+                    <sheet>
+                        <group col="12">
+                            <field name="CHUNG_TU_MUA_HANG" colspan="4" options="{'columns': ['SO_CHUNG_TU', 'NGAY_CHUNG_TU', 'TEN_DOI_TUONG'], 'strings': ['Số chứng từ', 'Ngày chứng từ', 'Nhà cung cấp'],'displays':['SO_CHUNG_TU']}" />
+                            <field name="selection_chung_tu_giam_gia_hang_mua" colspan="4" widget="radio" options="{'horizontal': True}" nolabel="1" />
+                            <field name="GIAM_GIA_TRI_HANG_NHAP_KHO" colspan="4" nolabel="1" />
+                        </group>
+                        <notebook>
+                            <page string="Giảm trừ công nợ" attrs="{'invisible': [('selection_chung_tu_giam_gia_hang_mua', '=', 'tra_lai_tien_mat')]}">
+                                <group col="6">
+                                    <group col="4" colspan="4">
+                                        <field name="DOI_TUONG_ID" domain="[('LA_NHA_CUNG_CAP','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã NCC', 'Tên NCC','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nha_cung_cap'}" />
+                                        <field name="TEN_NHA_CUNG_CAP" string="Tên NCC" />
+                                        <field name="DIEN_GIAI" colspan="4" />
+                                        <field name="NHAN_VIEN_ID" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}" />
+                                        <field name="THAM_CHIEU" invisible="1" readonly="1" />
+                                    </group>
+                                    
+                                    <group col="2" colspan="2" string="Chứng từ">
+                                        <field name="NGAY_HACH_TOAN" colspan="2" />
+                                        <field name="NGAY_CHUNG_TU" colspan="2" />
+                                        <field name="SO_CHUNG_TU_GIAM_TRU_CONG_NO" colspan="2" />
+                                    </group>
+                                    <!-- <group col ="2" colspan="2" string="Tỷ giá">
+                                            <field name="currency_id" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}" />
+                                            <field name="TY_GIA" attrs="{'readonly': [('LA_TIEN_CO_SO', '=', True)]}"/>
+                                            <field name="LA_TIEN_CO_SO" invisible = '1'/>
+                                        </group> -->
+                                    
+                                </group>
+                            </page>
+                            <page string="Phiếu thu" attrs="{'invisible': [('selection_chung_tu_giam_gia_hang_mua', '=', 'giam_tru_cong_no')]}">
+                                <group col="6">
+                                    <group col="4" colspan="4">
+                                        <field name="DOI_TUONG_ID" domain="[('LA_NHA_CUNG_CAP','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã NCC', 'Tên NCC','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nha_cung_cap'}" />
+                                        <field name="TEN_NHA_CUNG_CAP" string="Tên NCC" />
+                                        <field name="NGUOI_NOP" colspan="4" />
+                                        <field name="DIA_CHI" colspan="4" />
+                                        <field name="LY_DO_NOP" colspan="4" />
+                                        <field name="NHAN_VIEN_ID" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}" />
+                                        <field name="KEM_THEO_CT_GOC" />
+                                        <field name="THAM_CHIEU" invisible="1" readonly="1" />
+                                    </group>
+                                    
+                                    <group col="2" colspan="2" string="Chứng từ">
+                                        <field name="NGAY_HACH_TOAN" colspan="2" />
+                                        <field name="NGAY_CHUNG_TU" colspan="2" />
+                                        <field name="SO_PHIEU_THU" colspan="2" />
+                                    </group>
+                                    <!-- <group col="2" colspan="2"  string="Tỷ giá">
+                                            <field name="currency_id" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}" />
+                                            <field name="TY_GIA" attrs="{'readonly': [('LA_TIEN_CO_SO', '=', True)]}"/>
+                                            <field name="LA_TIEN_CO_SO" invisible = '1'/>
+                                        </group> -->
+                                    
+                                </group>
+                            </page>
+                            <page string="Hóa đơn">
+                                <group col="6">
+                                    <group col="4" colspan="4">
+                                        <field name="DOI_TUONG_ID" domain="[('LA_NHA_CUNG_CAP','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã NCC', 'Tên NCC','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nha_cung_cap'}" />
+                                        <field name="TEN_NHA_CUNG_CAP" string="Tên NCC" />
+                                        <field name="DIA_CHI" colspan="4" />
+                                        <field name="MA_SO_THUE" />
+                                        <field name="THAM_CHIEU" invisible="1" readonly="1" />
+                                    </group>
+                                    
+                                    <group col="2" colspan="2" string="Hóa đơn">
+                                        <field name="MAU_SO_HD_ID" colspan="2" />
+                                        <field name="KY_HIEU_HD" colspan="2" />
+                                        <field name="SO_HOA_DON" colspan="2" />
+                                        <field name="NGAY_HOA_DON" colspan="2" />
+                                    </group>
+                                    <!-- <group col="2" colspan="2" string="Tỷ giá">
+                                            <field name="currency_id" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}" />
+                                            <field name="TY_GIA" attrs="{'readonly': [('LA_TIEN_CO_SO', '=', True)]}"/>
+                                            <field name="LA_TIEN_CO_SO" invisible = '1'/>
+                                        </group> -->
+                                    
+                                </group>
+                            </page>
+                        </notebook>
+                        <group col="6">
+                            <group colspan="4" col="4" string="Tỷ giá">
+                                <field name="currency_id" colspan="2" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}" />
+                                <field name="TY_GIA" colspan="2" attrs="{'readonly': [('LA_TIEN_CO_SO', '=', True)]}" />
+                                <field name="LA_TIEN_CO_SO" colspan="2" invisible="1" />
+                            </group>
+                        </group>
+                        
+                        
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="CHI_TIET_HANG_HOA" widget="radio" options="{'horizontal': True, 'alway_edit': True}" />
+                                <field name="GIAM_GIA_HANG_MUA_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="MA_HANG_ID" options="{'columns': ['MA', 'TEN','SO_LUONG_TON'], 'strings': ['Mã hàng', 'Tên hàng','Số lượng tồn'],'displays': ['MA']}" />
+                                        <field name="TEN_HANG" />
+                                        <field name="KHOAN_MUC_CP_ID"  attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'hang_tien')]}" options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục cp', 'Tên khoản mục cp'],'displays': ['MA_KHOAN_MUC_CP']}" />
+                                        <field name="DON_VI_ID" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'hang_tien')]}" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['MA_DON_VI']}" />
+                                        <field name="DOI_TUONG_THCP_ID" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'hang_tien')]}" options="{'columns': ['MA_DOI_TUONG_THCP', 'TEN_DOI_TUONG_THCP'], 'strings': ['Mã đối tượng THCP', 'Tên đối tượng THCP'],'displays': ['MA_DOI_TUONG_THCP']}" />
+                                        <field name="CONG_TRINH_ID" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'hang_tien')]}" options="{'columns': ['MA_CONG_TRINH', 'TEN_CONG_TRINH'], 'strings': ['Mã công trình', 'Tên công trình'] ,'displays': ['MA_CONG_TRINH']}" />
+                                        <field name="DON_DAT_HANG_ID" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'hang_tien')]}" options="{'columns': ['SO_DON_HANG', 'TEN_KHACH_HANG','NGAY_DON_HANG'], 'strings': ['Số đơn hàng', 'Khách hàng','Ngày đơn hàng'], 'displays': ['SO_DON_HANG']}" />
+                                        <field name="KHO_ID" attrs="{'column_invisible': ['|',('parent.GIAM_GIA_TRI_HANG_NHAP_KHO', '=', False),('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" options="{'columns': ['MA_KHO', 'TEN_KHO'], 'strings': ['Mã kho', 'Tên kho'],'displays': ['MA_KHO']}" />
+                                        <field name="TK_NO_ID" string="TK tiền" attrs="{'column_invisible': ['|',('parent.CHI_TIET_HANG_HOA', '!=', 'hang_tien'),('parent.selection_chung_tu_giam_gia_hang_mua', '!=', 'tra_lai_tien_mat')]}" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="TK_NO_ID" string="TK công nợ" attrs="{'column_invisible': ['|',('parent.selection_chung_tu_giam_gia_hang_mua', '=', 'tra_lai_tien_mat'),('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="TK_CO_ID" string="TK kho" attrs="{'column_invisible': [('parent.GIAM_GIA_TRI_HANG_NHAP_KHO', '=', False)]}" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên kho'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="TK_CO_ID" string="TK chi phí" attrs="{'column_invisible': ['|',('parent.GIAM_GIA_TRI_HANG_NHAP_KHO', '=', True),('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="DVT_ID" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" />
+                                        <field name="SO_LUONG" sum="Ten.truong" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" />
+                                        <field name="DON_GIA" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" />
+                                        <field name="THANH_TIEN" sum="Ten.truong" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" />
+                                        <field name="THANH_TIEN_QUY_DOI" attrs="{'column_invisible': ['|',('parent.CHI_TIET_HANG_HOA', '!=', 'hang_tien'),('parent.LA_TIEN_CO_SO', '=' , True)]}" />
+                                        <field name="DIEN_GIAI_THUE" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" />
+                                        <field name="PHAN_TRAM_THUE_GTGT_ID" options="{'no_create': True}" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" />
+                                        <field name="TIEN_THUE_GTGT" sum="Ten.truong" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" />
+                                        <field name="TIEN_THUE_GTGT_QUY_DOI" attrs="{'column_invisible': ['|',('parent.CHI_TIET_HANG_HOA', '!=', 'hang_tien'),('parent.LA_TIEN_CO_SO', '=' , True)]}" />
+                                        <field name="TK_THUE_GTGT_ID" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" domain="[('SO_TAI_KHOAN','=like','133%')]" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="NHOM_HHDV_MUA_VAO_ID" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" options="{'no_create': True,'columns': ['MA_NHOM_HHDV', 'TEN_NHOM_HHDV'], 'strings': ['Mã nhóm HHDV', 'Tên nhóm HHDV'],'displays': ['MA_NHOM_HHDV']}" />
+                                        <field name="SO_LO" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" />
+                                        <field name="HAN_SU_DUNG" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" />
+                                        <field name="SO_CHUNG_TU" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" readonly="1" />
+                                        <field name="SO_HD_MUA_HANG" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" readonly="1" />
+                                        <field name="NGAY_HD_MUA_HANG" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'thong_ke')]}" readonly="1" />
+                                        <field name="HOP_DONG_MUA_ID" attrs="{'column_invisible': [('parent.GIAM_GIA_TRI_HANG_NHAP_KHO', '=', False),('parent.CHI_TIET_HANG_HOA', '=', 'hang_tien')]}" options="{'columns': ['SO_HOP_DONG','NGAY_KY','TEN_NCC','TRICH_YEU'], 'strings': ['Số hợp đồng','Ngày ký','Nhà cung cấp','Trích yếu'], 'displays': ['SO_HOP_DONG']}" />
+                                        <field name="HOP_DONG_BAN_ID" attrs="{'column_invisible': [('parent.CHI_TIET_HANG_HOA', '=', 'hang_tien')]}" options="{'columns': ['SO_HOP_DONG','NGAY_KY','TEN_KHACH_HANG','TRICH_YEU'], 'strings': ['Số hợp đồng','Ngày ký','Nhà cung cấp','Trích yếu'], 'displays': ['SO_HOP_DONG']}" />
+                                        <field name="MA_THONG_KE_ID" options="{'columns': ['MA_THONG_KE', 'TEN_THONG_KE'], 'strings': ['Mã thống kê', 'Mã thống kê'],'displays': ['MA_THONG_KE']}" attrs="{'column_invisible': [('parent.GIAM_GIA_TRI_HANG_NHAP_KHO', '=', False),('parent.CHI_TIET_HANG_HOA', '=', 'hang_tien')]}" />
+                                        <field name="currency_id" invisible="1" />
+                                        <field name="base_currency_id" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <group col="8">
+                            <field name="TONG_TIEN_HANG" colspan="4" sum="Ten.truong" readonly="1" />
+                            <field name="TONG_TIEN_HANG_QD" colspan="4" sum="Ten.truong" readonly="1" nolabel="1" attrs="{'invisible': [('LA_TIEN_CO_SO', '=', True)]}" string="Tổng tiền hàng" />
+                            <field name="TIEN_THUE_GTGT" colspan="2" sum="Ten.truong" readonly="1" />
+                            <field name="TIEN_THUE_GTGT_QD" colspan="2" sum="Ten.truong" readonly="1" nolabel="1" attrs="{'invisible': [('LA_TIEN_CO_SO', '=', True)]}" string="Tiền thuế GTGT" />
+                            <field name="TONG_TIEN_THANH_TOAN" colspan="2" sum="Ten.truong" readonly="1" />
+                            <field name="TONG_TIEN_THANH_TOAN_QD" colspan="2" sum="Ten.truong" readonly="1" nolabel="1" attrs="{'invisible': [('LA_TIEN_CO_SO', '=', True)]}" string="Tổng tiền thanh toán" />
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_purchase_ex_giam_gia_hang_mua_tree" model="ir.ui.view">
+            <field name="name">purchase.ex.giam.gia.hang.mua.tree</field>
+            <field name="model">purchase.ex.giam.gia.hang.mua</field>
+            <field name="arch" type="xml">
+                <tree string="Giảm giá hàng mua" decoration-info="state=='chua_ghi_so'" cloudify_js="giam_gia_hang_mua_list_view">
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="SO_HOA_DON" />
+                    <field name="TEN_NHA_CUNG_CAP" string="Nhà cung cấp" />
+                    <field name="DIA_CHI" />
+                    <field name="MA_SO_THUE" />
+                    <field name="DIEN_GIAI" />
+                    <field name="TONG_TIEN_HANG_QD" sum="Ten.truong" string="Tổng tiền hàng" />
+                    <field name="TIEN_THUE_GTGT_QD" sum="Ten.truong" string="Tiền thuế GTGT" />
+                    <field name="TONG_TIEN_THANH_TOAN_QD" sum="Ten.truong" string="Tổng tiền thanh toán" />
+                    <!-- <field name="SO_CHUNG_TU" string="Số chứng từ (Sổ QT)" /> -->
+                    <field name="CHI_NHANH_ID" />
+                    <field name="selection_chung_tu_giam_gia_hang_mua" invisible="1" />
+                    <field name="state" invisible="1" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_purchase_ex_giam_gia_hang_mua" model="ir.actions.act_window">
+            <field name="name">Giảm giá hàng mua</field>
+            <field name="res_model">purchase.ex.giam.gia.hang.mua</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_purchase_ex_giam_gia_hang_mua_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_purchase_ex_giam_gia_hang_mua_tree" />
+            <field name="act_window_id" ref="open_menu_purchase_ex_giam_gia_hang_mua" />
+        </record>
+        <record id="action_purchase_ex_giam_gia_hang_mua_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_purchase_ex_giam_gia_hang_mua_form" />
+            <field name="act_window_id" ref="open_menu_purchase_ex_giam_gia_hang_mua" />
+        </record>
+        <!-- <menuitem name="Giảm giá hàng mua" action="purchase_ex.open_menu_purchase_ex_giam_gia_hang_mua" id="menu_purchase_ex_giam_gia_hang_mua" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_purchase_ex_giam_gia_hang_mua_1" model="ir.sequence">
+            <field name="name">purchase_ex_giam_gia_hang_mua SO_CHUNG_TU sequence</field>
+            <field name="code">purchase_ex_giam_gia_hang_mua_SO_CHUNG_TU</field>
+            <field name="prefix">MGG</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

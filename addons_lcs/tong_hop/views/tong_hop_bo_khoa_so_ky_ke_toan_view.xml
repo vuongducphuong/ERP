@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tong_hop_bo_khoa_so_ky_ke_toan_tham_so_form" model="ir.ui.view">
+            <field name="name">tong.hop.bo.khoa.so.ky.ke.toan.form</field>
+            <field name="model">tong.hop.bo.khoa.so.ky.ke.toan</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="2" colspan="2">
+                            <field name="NGAY_KHOA_SO_HIEN_THOI" colspan="2" readonly="1" />
+                            <field name="DAT_NGAY_KHOA_SO_VE_NGAY" colspan="2" />
+                        </group>
+                        <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_tong_hop_bo_khoa_so_ky_ke_toan_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Bỏ khóa sổ kỳ kế toán</field>
+            <field name="res_model">tong.hop.bo.khoa.so.ky.ke.toan</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="size">small</field>
+            <field name="view_id" ref="view_tong_hop_bo_khoa_so_ky_ke_toan_tham_so_form" />
+        </record>
+        <record id="action_open_tong_hop_bo_khoa_so_ky_ke_toan_form" model="ir.actions.act_window">
+            <field name="name">Bỏ khóa sổ kỳ kế toán</field>
+            <field name="res_model">tong.hop.bo.khoa.so.ky.ke.toan</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

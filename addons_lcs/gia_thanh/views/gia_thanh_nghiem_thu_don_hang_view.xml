@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_gia_thanh_nghiem_thu_don_hang_form1" model="ir.ui.view">
+            <field name="name">gia.thanh.nghiem.thu.cong.trinh.form</field>
+            <field name="model">gia.thanh.nghiem.thu</field>
+            <field name="arch" type="xml">
+                <form string="Nghiệm thu đơn hàng" cloudify_js="nghiem_thu_don_hang_form_view">
+                    <header>
+                        <button id="btn_duyet" string="Duyệt" class="oe_highlight" />
+                        <button name="action_ghi_so" string="Ghi sổ" type="object" class="oe_highlight" states="chua_ghi_so" />
+                        <button id="action_bo_ghi_so" string="Bỏ ghi" states="da_ghi_so" />
+                        <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so" />
+                    </header>
+                    <sheet>
+                        <group col="6">
+                            <group col="4" colspan="4" string="Thông tin chung">
+                                <field name="KY_TINH_GIA_THANH" readonly="1" colspan="4" />
+                                <field name="DIEN_GIAI" colspan="4" />
+                                <field name="THAM_CHIEU" readonly="1" colspan="4" />
+                                <button name="btn_chon_don_hang" string="Chọn đơn hàng" class="oe_highlight" colspan="4" />
+                                <field name="LOAI_CHUNG_TU" invisible="1" />
+                            </group>
+                            <group colspan="2" string="Chứng từ">
+                                <field name="NGAY_HACH_TOAN" />
+                                <field name="NGAY_CHUNG_TU" />
+                                <field name="SO_CHUNG_TU" />
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Hạch toán">
+                                <field name="GIA_THANH_NGHIEM_THU_HACH_TOAN_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="STT" widget="handle" invisible="1" />
+                                        <field name="SO_DON_HANG_ID" fixed_column="True" />
+                                        <field name="NGAY_DON_HANG" readonly="1" />
+                                        <field name="KHACH_HANG" readonly="1" />
+                                        <field name="DIEN_GIAI" />
+                                        <field name="TK_NO_ID" />
+                                        <field name="TK_CO_ID" />
+                                        <field name="DOANH_THU" readonly="1" sum="Tổng" />
+                                        <field name="SO_CHUA_NGHIEM_THU" sum="Tổng" />
+                                        <field name="PHAN_TRAM_NGHIEM_THU" />
+                                        <field name="GIA_TRI_NGHIEM_THU" sum="Tổng" />
+                                        <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục', 'Tên khoản mục'], 'displays': ['MA_KHOAN_MUC_CP']}" />
+                                        <field name="MA_THONG_KE_ID" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_gia_thanh_nghiem_thu_don_hang_tree1" model="ir.ui.view">
+            <field name="name">gia.thanh.nghiem.thu.don.hang.tree</field>
+            <field name="model">gia.thanh.nghiem.thu</field>
+            <field name="arch" type="xml">
+                <tree string="Nghiệm thu đơn hàng" cloudify_js="nghiem_thu_don_hang_list_view">
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="KY_TINH_GIA_THANH" />
+                    <field name="DIEN_GIAI" />
+                    <field name="SO_TIEN" sum="Tổng" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_gia_thanh_nghiem_thu_don_hang1" model="ir.actions.act_window">
+            <field name="name">Nghiệm thu đơn hàng</field>
+            <field name="res_model">gia.thanh.nghiem.thu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'default_LOAI_CHUNG_TU': 4091 }</field>
+            <field name="domain">[('LOAI_CHUNG_TU', '=', 4091)]</field>
+        </record>
+        <record id="action_gia_thanh_nghiem_thu_don_hang_tree1" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_gia_thanh_nghiem_thu_don_hang_tree1" />
+            <field name="act_window_id" ref="open_menu_gia_thanh_nghiem_thu_don_hang1" />
+        </record>
+        <record id="action_gia_thanh_nghiem_thu_don_hang_form1" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_gia_thanh_nghiem_thu_don_hang_form1" />
+            <field name="act_window_id" ref="open_menu_gia_thanh_nghiem_thu_don_hang1" />
+        </record>
+        
+    </data>
+    <data noupdate="1">
+        <record id="sequence_gia_thanh_nghiem_thu_cong_trinh_1" model="ir.sequence">
+            <field name="name">gia_thanh_nghiem_thu_cong_trinh SO_CHUNG_TU sequence</field>
+            <field name="code">gia_thanh_nghiem_thu_cong_trinh_SO_CHUNG_TU</field>
+            <field name="prefix">NT</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

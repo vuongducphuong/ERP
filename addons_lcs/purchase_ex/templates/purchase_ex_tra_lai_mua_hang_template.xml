@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="purchase_ex_tra_lai_hang_mua">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-6 text-left truong-gia-tri-kieu-text-dat-tren-header" >
+                       <span t-esc="o.get_ten_cong_ty()"/> <br/>
+                        <span t-esc="o.get_dia_chi_cong_ty()"/>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                        <div class="mau-so">
+                            <span>
+                                <strong>Mẫu số 02 - VT</strong>
+                            </span>
+                            <br />
+                        </div>
+                        <div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '0'">
+                            <span>(Ban hành theo Thông tư số 200/2014/TT-BTC)</span>
+                            <br />
+                            <span>Ngày 22/12/2014 của Bộ Tài chính)</span>
+                        </div>
+						<div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '15'">
+                            <span>(Ban hành theo Thông tư số 133/2016/TT-BTC)</span>
+							<br />
+                            <span>Ngày 26/08/2016 của Bộ Tài chính)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <div class="tieu-de-cua-bao-cao">
+                            <span>
+                                <strong>PHIẾU XUẤT KHO</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8 text-right truong-gia-tri-kieu-text-dat-tren-header">
+                            <div style="padding-right: 35px;">
+                                <strong>
+                                    <i>
+                                        <span t-if="o.NGAY_CHUNG_TU" t-field="o.NGAY_CHUNG_TU" t-options="{'widget': 'ngaythang'}" />
+                                    </i>
+                                </strong>
+                            </div>
+                            <div style="padding-right: 76px;">
+                                <span>Số: </span>
+                                <span t-if="o.SO_PHIEU_XUAT" t-field="o.SO_PHIEU_XUAT" />
+                                <t t-if="not o.SO_PHIEU_XUAT" t-call="danh_muc.empty_line" />
+                                <br />
+                            </div>
+                        </div>
+                        <div class="col-xs-4 text-left" >
+                            <span>Nợ: </span>
+                            <span t-field="o.PURCHASE_EX_CHI_TIET_CHUNG_TU_TRA_LAI_HANG_MUA_IDS" t-options="{'widget': 'ghinohangmua'}" />
+                            <br />
+                            <span>Có: </span>
+                            <span t-field="o.PURCHASE_EX_CHI_TIET_CHUNG_TU_TRA_LAI_HANG_MUA_IDS" t-options="{'widget': 'ghicohangmua'}" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <span>- Họ tên người nhận hàng: </span>
+                        <span t-if="o.NGUOI_NHAN_HANG" t-field="o.NGUOI_NHAN_HANG" style="margin-left: 5px;"/>
+                        <t t-if="not o.NGUOI_NHAN_HANG" t-call="danh_muc.empty_line" />
+                    </div>
+                    <br />
+                    <div class="col-xs-12">
+                        <span>- Địa chỉ (bộ phận): </span>
+                        <span t-if="o.DIA_CHI" t-field="o.DIA_CHI" style="margin-left: 5px;"/>
+                        <t t-if="not o.DIA_CHI" t-call="danh_muc.empty_line" />
+                    </div>
+                    <br />
+                    <div class="col-xs-12">
+                        <span>- Lý do xuất kho: </span>
+                        <span t-if="o.LY_DO_XUAT" t-field="o.LY_DO_XUAT" style="margin-left: 5px;"/>
+                        <t t-if="not o.LY_DO_XUAT" t-call="danh_muc.empty_line" />
+                    </div>
+                    <div class="col-xs-6">
+                        <span>- Xuất tại kho (Ngăn lô): </span>
+                        <span t-field="o.PURCHASE_EX_CHI_TIET_CHUNG_TU_TRA_LAI_HANG_MUA_IDS" t-options="{'widget': 'khohang'}" style="margin-left: 5px;"/>
+                    </div>
+                    <div class="col-xs-6">
+                        <span>Địa điểm: ......................................................................................</span>
+                    </div>
+                    <!--Table-->
+                    <table class="table table-condensed table-bordereds" style="font-size:12px;margin-left: 15px;width: 96%;margin-top: 48px; border-collapse: collapse;">
+                        <thead>
+                            <tr style="border: 1px solid black;">
+                                <th class="text-center" style="vertical-align: middle;width: 6%; border: 1px solid black;" rowspan="2">
+                                    <strong>STT</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 24%; border: 1px solid black;" rowspan="2">
+                                    <strong>Tên, nhãn hiệu, quy cách, phẩm chất vật tư, dụng cụ sản phẩm, hàng hóa</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 10%; border: 1px solid black;" rowspan="2">
+                                    <strong>Mã số</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 9%; border: 1px solid black;" rowspan="2">
+                                    <strong>Đơn vị tính</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 19%; border: 1px solid black;" colspan="2">
+                                    <strong>Số lượng</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 13%; border: 1px solid black;" rowspan="2">
+                                    <strong>Đơn giá</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;border: 1px solid black;" rowspan="2">
+                                    <strong>Thành tiền</strong>
+                                </th>
+                            </tr>
+                            <tr style="border: 1px solid black;">
+                                <th class="text-center col-xs-1" style="border: 1px solid black;">
+                                    <strong>Yêu cầu</strong>
+                                </th>
+                                <th class="text-center col-xs-1" style="border: 1px solid black;">
+                                    <strong>Thực xuất</strong>
+                                </th>
+                            </tr>
+                            <tr style="border: 1px solid black;">
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>A</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>B</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>C</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>D</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>1</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>2</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>3</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>4</strong>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="so_thu_tu" t-value="0"></t>
+                            <tr t-foreach="o.PURCHASE_EX_CHI_TIET_CHUNG_TU_TRA_LAI_HANG_MUA_IDS" t-as="line" style="border: 1px solid black;">
+                                <t t-set="so_thu_tu" t-value="so_thu_tu + 1"></t>
+                                <td class="text-center" style="border: 1px solid black;">
+                                    <span t-esc="so_thu_tu"></span>
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;">
+                                    <span t-field="line.MA_HANG_ID.TEN" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;">
+                                    <span t-field="line.MA_HANG_ID.MA" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;">
+                                    <span t-field="line.DVT_ID" />
+                                </td>
+                                <td class="text-right" style="border: 1px solid black;">
+                                    <span t-field="line.SO_LUONG" />
+                                </td>
+                                <td class="text-right" style="border: 1px solid black;">
+                                    <span></span>
+                                </td>
+                                <td class="text-right" style="border: 1px solid black;">
+                                    <span t-field="line.DON_GIA" />
+                                </td>
+                                <td class="text-right" style="border: 1px solid black;">
+                                    <span t-field="line.THANH_TIEN" />
+                                </td>
+                            </tr>
+                            <tr style="border: 1px solid black;">
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong></strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong>Cộng</strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong></strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong></strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong></strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong></strong>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;">
+                                    <strong></strong>
+                                </th>
+                                <th class="text-right" style="border: 1px solid black;">
+                                    <strong>
+                                        <span t-field="o.PURCHASE_EX_CHI_TIET_CHUNG_TU_TRA_LAI_HANG_MUA_IDS" t-options="{'widget': 'tongtien'}" />
+                                    </strong>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="margin-left: 20px;">
+                        <span>- Tổng tiền (Viết bằng chữ): </span> 
+                        <strong>
+                            <span t-if="o.TONG_TIEN_HANG" t-field="o.TONG_TIEN_HANG" t-options="{'widget': 'vietbangchu'}"  style="margin-left: 5px; font-style: italic;"/>
+                            <t t-if="not o.TONG_TIEN_HANG" t-call="danh_muc.empty_line" />
+                        </strong>
+                        <br />
+                        <span>- Số chứng từ gốc kèm theo:</span>
+                        <span>..........................................................................................................................................................................</span>
+                    </div>
+                    <div class='text-right' style="margin-right: 18px;">
+                        <span>
+                            <i>Ngày ...... tháng ...... năm .........</i>
+                        </span>
+                    </div>
+                    <table style="font-size:12px;margin-left: 15px;width: 96%;margin-top: 10px;">
+                        <thead>
+                            <tr>
+                                <th class="text-center nguoi-ky" style="vertical-align: middle;width: 20%;">
+                                    <strong>Người lập phiếu</strong>
+                                </th>
+                                <th class="text-center nguoi-ky" style="vertical-align: middle;width: 20%;">
+                                    <strong>Người nhận hàng</strong>
+                                </th>
+                                <th class="text-center nguoi-ky" style="vertical-align: middle;width: 20%;">
+                                    <strong>Thủ kho</strong>
+                                </th>
+                                <th class="text-center nguoi-ky" style="vertical-align: middle;width: 20%;">
+                                    <strong>Kế toán trưởng</strong>
+                                </th>
+                                <th class="text-center nguoi-ky" style="vertical-align: middle;">
+                                    <strong>Giám đốc</strong>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    <i>(Ký, họ tên)</i>
+                                </td>
+                                <td class="text-center">
+                                    <i>(Ký, họ tên)</i>
+                                </td>
+                                <td class="text-center">
+                                    <i>(Ký, họ tên)</i>
+                                </td>
+                                <td class="text-center">
+                                    <strong>(Hoặc bộ phận có</strong>
+                                </td>
+                                <td class="text-center">
+                                    <i>(Ký, họ tên, đóng dấu)</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-center">
+                                    <strong>(nhu cầu nhập)</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-center">
+                                    <i>(Ký, họ tên)</i>
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="nguoi-ky" style="font-size:12px;margin-left: 15px;width: 96%;margin-top: 70px;">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="vertical-align: middle;width: 20%;"></th>
+                                <th class="text-center" style="vertical-align: middle;width: 20%;">
+                                    <!-- <strong><span t-if="o.NGUOI_NHAN_TEXT" t-field="o.NGUOI_NHAN_TEXT"/></strong> -->
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 20%;"></th>
+                                <th class="text-center" style="vertical-align: middle;width: 20%;"></th>
+                                <th class="text-center" style="vertical-align: middle;"></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="template_purchase_ex_tra_lai_mua_hang">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="purchase_ex.purchase_ex_tra_lai_hang_mua" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="02-VT: Phiếu xuất kho" id="action_template_purchase_ex_tra_lai_mua_hang" model="purchase.ex.tra.lai.hang.mua" report_type="qweb-html" name="purchase_ex.template_purchase_ex_tra_lai_mua_hang" file="purchase_ex.template_purchase_ex_tra_lai_mua_hang" print_report_name="Trả lại mua hàng" />
+    </data>
+</odoo>

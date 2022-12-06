@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_s02b_dn_so_dang_ky_chung_tu_ghi_so_tree" model="ir.ui.view">
+            <field name="name">bao.cao.s02b.dn.so.dang.ky.chung.tu.ghi.so.tree</field>
+            <field name="model">bao.cao.s02b.dn.so.dang.ky.chung.tu.ghi.so</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="S02b DN Sổ đăng ký chứng từ ghi sổ" create="false" report="true">
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="SO_TIEN" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__s02b_dn_so_dang_ky_chung_tu_ghi_so" model="ir.actions.act_window">
+            <field name="name">S02b DN Sổ đăng ký chứng từ ghi sổ</field>
+            <field name="res_model">bao.cao.s02b.dn.so.dang.ky.chung.tu.ghi.so</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!--<field name="context">{'group_by': ['kho_id'], 'header_struct': [['Đầu kỳ', ['sl_dau_ky', ['XYZ', ['gt_dau_ky', 'sl_nhap_kho']]]], ['Cuối kỳ', ['sl_cuoi_ky', 'gt_cuoi_ky','gt_nhap_kho']]], 'expand_all': 'true'}</field>-->
+        </record>
+        <record id="view_bao_cao_s02b_dn_so_dang_ky_chung_tu_ghi_so_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.s02b.dn.so.dang.ky.chung.tu.ghi.so.form</field>
+            <field name="model">bao.cao.s02b.dn.so.dang.ky.chung.tu.ghi.so</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <field name="CHI_NHANH_ID" colspan="4" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" colspan="4" />
+                        </group>
+                        <group col="4">
+                            <field name="KY_BAO_CAO" colspan="4" />
+                            <field name="TU" colspan="2" required="1" />
+                            <field name="DEN" colspan="2" required="1" />
+                        </group>
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_s02b_dn_so_dang_ky_chung_tu_ghi_so_tham_so_form" model="ir.actions.act_window">
+            <field name="name">S02b-DN: Sổ đăng ký chứng từ ghi sổ</field>
+            <field name="res_model">bao.cao.s02b.dn.so.dang.ky.chung.tu.ghi.so</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_s02b_dn_so_dang_ky_chung_tu_ghi_so_tham_so_form" />
+        </record>
+    </data>
+</odoo>

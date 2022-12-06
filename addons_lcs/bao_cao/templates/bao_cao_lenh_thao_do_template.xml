@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="vdismantler">
+        <t t-call="web.external_layout">
+            <div class="page" style="margin-left: 15px;margin-right: 15px;">
+
+                <div class="col-xs-12 text-left truong-gia-tri-kieu-text-dat-tren-header" style="padding-left: 0px;padding-right: 0px;">
+                    <span t-esc="o.get_ten_cong_ty()" />
+                    <br />
+                    <span t-esc="o.get_dia_chi_cong_ty()" />
+                </div>
+
+                <div class="col-xs-12 text-center report-title" style="padding-left: 0px;padding-right: 0px;padding-bottom: 20px;">
+                    <span>LỆNH THÁO DỠ</span>
+                </div>
+
+                <div class="col-xs-12 text-left" style="padding-left: 0px;padding-right: 0px;">
+                    <div class="col-xs-8 text-left" style="padding-left: 0px;padding-right: 0px;width: 72%;">
+                        <div class="col-xs-12 text-left" style="padding-left: 0px;padding-right: 0px;">
+                            <div class="col-xs-4 text-left header-label" style="padding-left: 0px;padding-right: 0px;width: 14%;">
+                                <span>Mã hàng:</span>
+                            </div>
+                            <div class="col-xs-8 text-left header-value-text" style="padding-left: 0px;padding-right: 15px;width: 86%;">
+                                <span t-if="o.MA_HANG" t-field="o.MA_HANG" />
+
+                            </div>
+                        </div>
+                        <div class="col-xs-12 text-left" style="padding-left: 0px;padding-right: 0px;">
+                            <div class="col-xs-4 text-left header-label" style="padding-left: 0px;padding-right: 0px;width: 15%;">
+                                <span>Tên hàng:</span>
+                            </div>
+                            <div class="col-xs-8 text-left header-value-text" style="padding-left: 0px;padding-right: 0px;width: 85%;">
+                                <span t-if="o.TEN_HANG" t-field="o.TEN_HANG" />
+
+                            </div>
+                        </div>
+                        <div class="col-xs-12 text-left" style="padding-left: 0px;padding-right: 0px;">
+                            <div class="col-xs-6 text-left" style="padding-left: 0px;padding-right: 0px;">
+                                <div class="col-xs-4 text-left header-label" style="padding-left: 0px;padding-right: 0px;width: 35%;">
+                                    <span>Đơn vị tính:</span>
+                                </div>
+                                <div class="col-xs-8 text-left header-value-text" style="padding-left: 0px;padding-right: 0px;width: 65%;">
+                                    <span t-if="o.DON_VI_TINH" t-field="o.DON_VI_TINH" />
+
+                                </div>
+                            </div>
+                            <div class="col-xs-6 text-left" style="padding-left: 0px;padding-right: 0px;">
+                                <div class="col-xs-4 text-left header-label" style="padding-left: 0px;padding-right: 0px;width: 50%;">
+                                    <span>Số lượng tháo dỡ:</span>
+                                </div>
+                                <div class="col-xs-8 text-left header-value-text" style="padding-left: 0px;padding-right: 0px;width: 50%;">
+                                    <t t-if="o.SO_LUONG != 0">
+                                        <span t-field="o.SO_LUONG" />
+                                    </t>
+                                    <t t-if="not o.SO_LUONG" t-esc="' '" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 text-left" style="padding-left: 0px;padding-right: 0px;">
+                            <div class="col-xs-4 text-left header-label" style="padding-left: 0px;padding-right: 0px;width: 15%;">
+                                <span>Diễn giải:</span>
+                            </div>
+                            <div class="col-xs-8 text-left header-value-text" style="padding-left: 0px;padding-right: 15px;width: 85%;">
+                                <span t-if="o.DIEN_GIAI" t-field="o.DIEN_GIAI" />
+                                <t t-if="not o.DIEN_GIAI" t-esc="'..........................................................................................................'" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 text-left" style="padding-left: 0px;padding-right: 0px;width: 28%;">
+                        <div class="col-xs-12 text-left" style="padding-left: 0px;padding-right: 0px;">
+                            <div class="col-xs-4 text-left header-label" style="padding-left: 0px;padding-right: 0px;width: 30%;">
+                                <span>Ngày :</span>
+                            </div>
+                            <div class="col-xs-8 text-left header-value-date" style="padding-left: 0px;padding-right: 0px;width: 70%;">
+                                <span t-if="o.NGAY" t-field="o.NGAY" />
+                                <t t-if="not o.NGAY" t-call="danh_muc.empty_line" />
+                            </div>
+                        </div>
+                        <div class="col-xs-12 text-left" style="padding-left: 0px;padding-right: 0px;">
+                            <div class="col-xs-4 text-left header-label" style="padding-left: 0px;padding-right: 0px;width: 20%;">
+                                <span>Số:</span>
+                            </div>
+                            <div class="col-xs-8 text-left header-value-text" style="padding-left: 0px;padding-right: 0px;width: 80%;">
+                                <span t-if="o.SO" t-field="o.SO" />
+                                <t t-if="not o.SO" t-call="danh_muc.empty_line" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
+                    <!--Table-->
+                    <table class="table-condensed table-bordereds" style="width: 100%;margin-bottom: 0px;">
+                        <thead>
+                            <tr class="detail-header">
+                                <th class="text-center" style="width: 38px;height: 6px">
+                                    <span>Mã thành phẩm</span>
+                                </th>
+                                <th class="text-center" style="width: 97px;height: 6px">
+                                    <span>Tên thành phẩm</span>
+                                </th>
+                                <th class="text-center" style="width: 25px;height: 6px">
+                                    <span>ĐVT</span>
+                                </th>
+                                <th class="text-center" style="width: 25px;height: 6px">
+                                    <span>Số lượng</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="o.ACCOUNT_EX_PHIEU_THU_CHI_TIET_IDS" t-as="line">
+
+                                <td class="text-left detail-text" style="width: 38px;height: 6px">
+                                    <span t-field="line.MA_HANG_DETAIL" />
+                                </td>
+                                <td class="text-left detail-text" style="width: 97px;height: 6px">
+                                    <span t-field="line.TEN_HANG_DETAL" />
+                                </td>
+                                <td class="text-left detail-text" style="width: 25px;height: 6px">
+                                    <span t-field="line.DVT_DETAIL" />
+                                </td>
+                                <td class="text-right detail-number" style="width: 25px;height: 6px">
+                                    <span t-field="line.SO_LUONG_DEATAIL" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
+                    <table style="width: 100%;margin-top: 10px;">
+                        <thead>
+                            <tr class="signer-title">
+                                <th class="text-center nguoi-ky" style="width: 78px;height: 6px;">
+                                    <span>Thủ kho</span>
+                                </th>
+                                <th class="text-center nguoi-ky" style="width: 30px;height: 6px;"></th>
+                                <th class="text-center nguoi-ky" style="width: 75px;height: 6px;">
+                                    <span>Người thực hiện</span>
+                                </th>
+                            </tr>
+                            <tr class="signer-sub-title">
+                                <td class="text-center" style="width: 78px;height: 6px;">
+                                    <span>(Ký, họ tên)</span>
+                                </td>
+                                <td class="text-center" style="width: 30px;height: 6px;"></td>
+                                <td class="text-center" style="width: 75px;height: 6px;">
+                                    <span>(Ký, họ tên)</span>
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+
+                    <table style="width: 100%;margin-top: 95px;">
+                        <thead>
+                            <tr class="signer-name">
+                                <th class="text-center" style="width: 78px;height: 6px;">
+                                    <span t-esc="o.get_thu_kho()" />
+                                </th>
+                                <th class="text-center" style="width: 30px;height: 6px;"></th>
+                                <th class="text-center" style="width: 75px;height: 6px;"></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="template_vdismantler">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="bao_cao.vdismantler" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="Lệnh tháo dỡ" id="action_template_vdismantler" model="bao.cao.lenh.thao.do" report_type="qweb-html" name="bao_cao.template_vdismantler" file="bao_cao.template_vdismantler" print_report_name="Lệnh tháo dỡ" />
+    </data>
+</odoo>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_nganhang_thu_tien_gui_tu_kh_tree" model="ir.ui.view">
+    <field name="name">account.thu.tien.gui.tu.kh.tree</field>
+    <field name="model">account.ex.phieu.thu.chi</field>
+    <field name="arch" type="xml">
+      <tree>
+        <!-- <field name="ngay_hach_toan" fixed_column="True"/>
+        <field name="ngay_chung_tu" fixed_column="True"/>
+        <field name="SO_CHUNG_TU_THU" fixed_column="True"/>
+        <field name="DIEN_GIAI_LIST"/>
+        <field name="SO_TIEN_1"/>
+        <field name="partner_id"/>
+        <field name="ly_do_thu"/>
+        <field name="LY_DO_THU_LIST" string='Loại chứng từ'/>
+        <field name="chi_nhanh_id"/> -->
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_nganhang_thu_tien_gui_tu_kh_form" model="ir.ui.view">
+    <field name="name">account.thu.tien.gui.tu.kh.form</field>
+    <field name="model">account.ex.phieu.thu.chi</field>
+    <field name="arch" type="xml">
+      <form string="Register Payment">
+        <!-- <sheet>
+          <group col="6">
+            <group colspan="4" col="4">
+              <field name="partner_id" string="Khách hàng" readonly='1'/>
+              <field name="ten_doi_tuong" string='Tên KH'/>
+              <field name="NGUOI_NOP" colspan="4" attrs="{'invisible': [('IS_NGUOI_NOP', '=', False)]}"/>
+              <field name="dia_chi" colspan="4"/>
+              <field name="LY_DO_NOP"/>
+              <field name="NHAN_VIEN_ID" string="NV thu nợ" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}"/>
+              <field name="kem_theo"/>
+              <field name="tham_chieu_1"/>
+
+            </group>
+            <group colspan="2">
+              <field name="ngay_hach_toan"/>
+              <field name="ngay_chung_tu"/>
+              <field name="SO_CHUNG_TU_THU" string='Số chứng từ'/>
+              <field name="DIEN_GIAI_LIST" invisible='1'/>
+              <field name="SO_TIEN_1" invisible='1'/>
+              <field name="LY_DO_THU_LIST" invisible='1'/>
+              <field name="IS_NGUOI_NOP" invisible='1'/>
+            </group>
+          </group>
+          <notebook>
+            <page string="Hạch toán">
+              <field name="account_payment_ids">
+                <tree editable="bottom" create="false" report="true">
+                  <field name="dien_giai"/>
+                  <field name="tk_no_id" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                  <field name="tk_co_id" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                  <field name="amount" string="Số tiền" sum='Total amount' readonly='1'/>
+                  <field name="khoan_muc_cp_id" />
+                  <field name="DON_VI_ID" />
+                  <field name="HOP_DONG_BAN_ID"/>
+                  <field name="CONG_TRINH"  options="{'columns': ['MA_CONG_TRINH', 'TEN_CONG_TRINH'], 'strings': ['Mã công trình', 'Tên công trình']}"/>
+                  <field name="MA_THONG_KE_ID" options="{'columns': ['MA_THONG_KE', 'TEN_THONG_KE'], 'strings': ['Mã thống kê', 'Tên thống kê']}"/>
+                </tree>
+              </field>
+            </page>
+            <page string="Chứng từ">
+              <field name="ACCOUNT_EX_PHIEU_THU_TIEN_KHACH_HANG_CHUNG_TU_IDS" mode="tree">
+                <tree editable="bottom" create="false" report="true">
+                  <field name="NGAY_CHUNG_TU" readonly='1'/>
+                  <field name="SO_CHUNG_TU" readonly='1'/>
+                  <field name="SO_HOA_DON" readonly='1'/>
+                  <field name="HAN_HACH_TOAN" readonly='1'/>
+                  <field name="SO_PHAI_THU" readonly='1'/>
+                  <field name="SO_CHUA_THU" readonly='1'/>
+                  <field name="SO_THU" readonly='1'/>
+                  <field name="TK_PHAI_THU_ID" readonly='1'/>
+                  <field name="DIEU_KHOAN_THANH_TOAN" readonly='1'/>
+                  <field name="TY_LE_CK" readonly='1'/>
+                  <field name="TIEN_CHIET_KHAU" readonly='1'/>
+                  <field name="TK_CHIET_KHAU_ID" readonly='1'/>
+                </tree>
+              </field>
+            </page>
+          </notebook>
+        </sheet> -->
+        <div class="oe_chatter">
+          <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+          <field name="message_ids" widget="mail_thread"/>
+        </div>
+      </form>
+    </field>
+  </record>
+
+  <record id="open_menu_account_ex_thu_tien_gui_tu_kh" model="ir.actions.act_window">
+    <field name="name">Phiếu thu</field>
+    <field name="res_model">account.ex.phieu.thu.chi</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+    <field name="domain">[('LOAI_PHIEU', '=', 'PHIEU_THU'),('TYPE_NH_Q', '=', 'NGAN_HANG')]</field>
+    <field name="context">{'default_payment_type': 'PHIEU_THU', 'LOAI_PHIEU': 'PHIEU_THU','default_TYPE_NH_Q': 'NGAN_HANG'}</field>
+  </record>
+
+  <record id="action_nganhang_thu_tien_gui_kh_tree" model="ir.actions.act_window.view">
+    <field name="view_mode">tree</field>
+    <field name="view_id" ref="view_nganhang_thu_tien_gui_tu_kh_tree"/>
+    <field name="act_window_id" ref="open_menu_account_ex_thu_tien_gui_tu_kh"/>
+  </record>
+
+  <record id="action_nganhang_thu_tien_gui_kh_form" model="ir.actions.act_window.view">
+    <field name="view_mode">form</field>
+    <field name="view_id" ref="view_nganhang_thu_tien_gui_tu_kh_form"/>
+    <field name="act_window_id" ref="open_menu_account_ex_thu_tien_gui_tu_kh"/>
+  </record>
+  <!-- <data noupdate="1"> -->
+    <!-- <record id="sequence_sale_documentt_1" model="ir.sequence"> -->
+      <!-- <field name="name">sale_documentt SO_CHUNG_TU sequence</field> -->
+      <!-- <field name="code">sale_documentt_SO_CHUNG_TU</field> -->
+      <!-- <field name="prefix">NTTK</field> -->
+      <!-- <field name="padding">4</field> -->
+    <!-- </record> -->
+    <!-- <record id="sequence_account_thu_chi_1" model="ir.sequence"> -->
+		<!-- <field name="name">account_thu_chi SO_CHUNG_TU_THU sequence</field> -->
+		<!-- <field name="code">account_thu_chi_SO_CHUNG_TU_THU</field> -->
+		<!-- <field name="prefix">PT</field> -->
+		<!-- <field name="padding">4</field> -->
+	<!-- </record> -->
+  <!-- </data> -->
+</odoo>

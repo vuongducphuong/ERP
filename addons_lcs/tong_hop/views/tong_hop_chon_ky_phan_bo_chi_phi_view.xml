@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tong_hop_chon_ky_phan_bo_chi_phi_tham_so_form" model="ir.ui.view">
+            <field name="name">tong.hop.chon.ky.phan.bo.chi.phi.form</field>
+            <field name="model">tong.hop.chon.ky.phan.bo.chi.phi</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="6">
+                            <group col="4" colspan="4">
+                                <field name="KY" colspan="4"/>
+                                <field name="TU_NGAY" colspan="2"/>
+                                <field name="DEN_NGAY" colspan="2"/>
+                                <field name="PHAN_BO_SELECTION" widget="radio" options="{'vertical': True}" nolabel="1" colspan="4"/>
+                            </group>
+                        </group>
+                       
+                        <!--<notebook>
+                            <page string="Chi tiết">
+                                <field name="FIELD_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>-->
+                        <!--Master/Detail form-->
+                        
+                        <!-- <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer> -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_tong_hop_chon_ky_phan_bo_chi_phi_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Chọn kỳ phân bổ chi phí</field>
+            <field name="res_model">tong.hop.chon.ky.phan.bo.chi.phi</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_tong_hop_chon_ky_phan_bo_chi_phi_tham_so_form"/>
+        </record>
+
+        <record id="action_open_tong_hop_chon_ky_phan_bo_chi_phi_form" model="ir.actions.act_window">
+            <field name="name">Chọn kỳ phân bổ chi phí</field>
+            <field name="res_model">tong.hop.chon.ky.phan.bo.chi.phi</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="Chọn kỳ phân bổ chi phí"
+                  action="tong_hop.open_tong_hop_chon_ky_phan_bo_chi_phi_tham_so_form"
+                  id="menu_tong_hop_chon_ky_phan_bo_chi_phi"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

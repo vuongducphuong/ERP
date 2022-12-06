@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+<MSC_ReportTemplate>
+	  <ReportID>phieuxuatkhotonghop</ReportID>
+	  <ReportName>Phiếu xuất kho tổng hợp</ReportName>
+	  <RefTypeList>/2091/3030/3031/2024/2025/2026/2020/2021/2022/2023//2020/2022/2023/</RefTypeList>
+	  <Description>Phiếu xuất kho tổng hợp</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO TỔNG HỢP</ReportTitle>
+</MSC_ReportTemplate>
+</DataSetImportExport>

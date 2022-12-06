@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+<SYSReportList>
+  <ReportID>ChiPhiDuKienTheoDonDatHang</ReportID>
+  <ReportName>Chi phí dự kiến theo đơn đặt hàng</ReportName>
+  <ReportName48>Chi phí dự kiến theo đơn đặt hàng</ReportName48>
+  <GroupID>7</GroupID>
+  <SortOrder>249</SortOrder>
+  <AccountingSystem>0</AccountingSystem>
+  <Description>Chi phí dự kiến theo đơn đặt hàng</Description>
+  <IsBeta>0</IsBeta>
+  <IsInvoice>0</IsInvoice>
+  <IsSystem>1</IsSystem>
+  <IsShow>1</IsShow>
+  <ReportNameEnglish>Profit and loss by order summary</ReportNameEnglish>
+  <ReportNameEnglish48>Profit and loss by order summary</ReportNameEnglish48>
+  <ReportName133>Báo cáo tổng hợp lãi lỗ theo đơn hàng</ReportName133>
+  <ReportNameEnglish133>Profit and loss by order summary</ReportNameEnglish133>
+</SYSReportList>
+</DataSetImportExport>

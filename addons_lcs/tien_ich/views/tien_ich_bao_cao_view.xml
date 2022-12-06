@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_ich_bao_cao_form" model="ir.ui.view">
+            <field name="name">tien.ich.bao.cao.form</field>
+            <field name="model">tien.ich.bao.cao</field>
+            <field name="arch" type="xml">
+                <form string="Báo cáo">
+                    <sheet>
+                        <group col="2">
+                            <field name="TEN_BAO_CAO" colspan="2" />
+                            <field name="TEN_BAO_CAO_TIENG_ANH" colspan="2" />
+                            <field name="parent_id" colspan="2" options="{'columns': ['TEN_BAO_CAO'], 'strings': ['Tên báo cáo']}" />
+                            <field name="active" colspan="2" />
+                            <field name="THUOC" invisible="1" />
+                            <field name="STT" invisible="1" />
+                        </group>
+                        <!--Master/Detail form-->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_tien_ich_bao_cao_tree" model="ir.ui.view">
+            <field name="name">tien.ich.bao.cao.tree</field>
+            <field name="model">tien.ich.bao.cao</field>
+            <field name="arch" type="xml">
+                <tree string="Báo cáo" hierarchy="parent_id" default_order='STT' cloudify_js="bao_cao_list_view" create="false" report="true">
+                    <field name="TEN_BAO_CAO" />
+                    <field name="RES_MODEL" invisible="1" />
+                    <field name="VIEW_ID" invisible="1" />
+                    <field name="parent_id" invisible="1" />
+                    <field name="form_size" invisible="1" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_tien_ich_bao_cao" model="ir.actions.act_window">
+            <field name="name">Báo cáo</field>
+            <field name="res_model">tien.ich.bao.cao</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="option">{"disable_groupby": true}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_tien_ich_bao_cao_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_tien_ich_bao_cao_tree" />
+            <field name="act_window_id" ref="open_menu_tien_ich_bao_cao" />
+        </record>
+        <record id="action_tien_ich_bao_cao_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_tien_ich_bao_cao_form" />
+            <field name="act_window_id" ref="open_menu_tien_ich_bao_cao" />
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

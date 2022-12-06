@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_ich_danh_lai_so_chung_tu_form" model="ir.ui.view">
+            <field name="name">tien.ich.danh.lai.so.chung.tu.form</field>
+            <field name="model">tien.ich.danh.lai.so.chung.tu</field>
+            <field name="arch" type="xml">
+                <form string="Đánh lại số chứng từ" cloudify_js="danh_lai_so_chung_tu_view">
+                    <header>
+                        <button id="btn_danh_lai_so_chung_tu" string="Đánh lại số chứng từ" class="oe_highlight" />
+                    </header>
+                    <sheet>
+                        <group col="12">
+                            <group col="6" colspan="6">
+                                <field name="KHOANG_THOI_GIAN" colspan="6" />
+                                <field name="NHOM_LOAI_CHUNG_TU_ID" domain="[('SU_DUNG_SO_CHUNG_TU', '=', 1)]" colspan="6" />
+                                <button id="btn_lay_du_lieu" string="Lấy dữ liệu" class="oe_highlight" context="{'discard_changes': True}"/>
+                            </group>
+                            <group col="6" colspan="6">
+                                <field name="TU_NGAY" colspan="6" />
+                                <field name="DEN_NGAY" colspan="6" />
+                                <field name="BAO_GOM_CHUNG_TU_CHI_NHANH_PHU_THUOC" colspan="6" />
+                            </group>
+                        </group>
+                        <group col="12">
+                            <field name="TIEN_TO" />
+                            <field name="GIA_TRI_BAT_DAU_PHAN_SO" />
+                            <field name="TONG_SO_KY_TU_PHAN_SO" />
+                            <field name="HAU_TO" />
+                            
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Đánh lại số chứng từ chi tiết">
+                                <field name="TIEN_ICH_DANH_LAI_SO_CHUNG_TU_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false">
+                                        <field name="LOAI_CHUNG_TU" />
+                                        <field name="NGAY_HACH_TOAN" />
+                                        <field name="NGAY_CHUNG_TU" />
+                                        <field name="SO_CHUNG_TU" />
+                                        <field name="SO_HOA_DON" />
+                                        <field name="SO_CHUNG_TU_MOI" />
+                                        <field name="DIEN_GIAI" />
+                                        <field name="ID_GOC" invisible="1" />
+                                        <field name="MODEL_GOC" invisible="1" />
+                                        <field name="ID_AND_MODEL" invisible="1" />
+                                        <field name="REF_TYPE" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <p>
+                            Chú ý: Chức năng này chỉ đánh lại số chứng từ ở số bạn đang làm việc, số chứng từ ở sổ còn lại không bị ảnh hưởng.
+                        </p>
+                        <footer>
+                            <button id="btn_cat" string="Cất" class="oe_highlight" />
+                            <!-- <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" /> -->
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_menu_tien_ich_danh_lai_so_chung_tu" model="ir.actions.act_window">
+            <field name="name">Đánh lại số chứng từ</field>
+            <field name="res_model">tien.ich.danh.lai.so.chung.tu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_tien_ich_danh_lai_so_chung_tu_form" />
+        </record>
+        <!-- <record id="action_tien_ich_danh_lai_so_chung_tu_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_tien_ich_danh_lai_so_chung_tu_tree" />
+            <field name="act_window_id" ref="open_menu_tien_ich_danh_lai_so_chung_tu" />
+        </record> -->
+        <record id="action_tien_ich_danh_lai_so_chung_tu_form" model="ir.actions.act_window.view">
+            <field name="name">Kiểm tra đối chiếu chứng từ sổ sách</field>
+            <field name="res_model">tien.ich.danh.lai.so.chung.tu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

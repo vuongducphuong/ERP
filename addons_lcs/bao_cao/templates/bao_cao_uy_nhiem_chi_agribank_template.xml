@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="bao_cao_phieu_chi_uy_nhiem_chi_agribank">
+        <t t-call="web.external_layout">
+            <div class="page" style="margin-left:15px;margin-right:15px;">
+                <div class="row">
+                    <div class="col-xs-4" style="width: 40%;padding-right: 0px;padding-top: 5px;">
+                        <table style="width: 100%;border: none;margin-bottom: 0px;">
+                            <tr colspan="2">
+                                <span>
+                                    <img src="/bao_cao/static/src/img/agribank.PNG" style="height:13mm;width:63mm;"></img>
+                                </span>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: none;margin-bottom: 0px;">
+                            <tr>
+                                <td style="width: 30%;vertical-align: top;line-height: 1;font-size:10pt;padding-left: 5px;">
+                                    <span>CHI NHÁNH</span>
+                                </td>
+                                <td style="line-height: 1;font-size:10pt;">
+                                    <span t-if="o.CHI_NHANH_CUA_NGAN_HANG" t-field="o.CHI_NHANH_CUA_NGAN_HANG" />
+                                    <t t-if=" not o.CHI_NHANH_CUA_NGAN_HANG" t-esc="'................................................................'" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-8 " style="width: 60%;">
+                        <table style="width: 100%;margin-bottom: 0px;">
+                            <tr>
+                                <td style="width:40%;text-align:center;">
+                                    <span style="color:darkred;font-size:18pt;">
+                                        <strong> UỶ NHIỆM CHI</strong>
+                                    </span>
+                                    <p class="tieu-de-cua-bao-cao" style="font-size:12pt;vertical-align: top;line-height: 0;">
+                                        Payment Order
+                                    </p>
+                                    <p style="line-height: 0; padding-top: 5px;">
+                                        <span style="font-size:10pt;vertical-align: top;line-height: 0;">Ngày
+                                    </span>
+                                        <span style="font-size:10pt;vertical-align: top;line-height: 0;" t-if="o.NGAY_CHUNG_TU" t-field="o.NGAY_CHUNG_TU" />
+                                    </p>
+                                    <p style="margin-left: -70px;font-size: 9pt;line-height: 0.5; ">
+                                        <i>Date</i>
+                                    </p>
+                                </td>
+                                <td style="width: 30%; vertical-align: top;text-align: center;padding-top: 5px;">
+                                    <span style="font-size:10pt;">Số: </span>
+                                    <span t-if="o.SO_CHUNG_TU" t-field="o.SO_CHUNG_TU" />
+                                    <br />
+                                    <span style="font-size:8pt;">
+                                        <i style="vertical-align: top;margin-right: 65px;line-height: 0.5;">No</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;line-height: 1.3;width: 30%;padding-top: 6px;">
+                                    <span style="font-size:10pt">Liên 1: Ngân hàng</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Original Bank</i>
+                                    </span>
+                                    <br />
+                                    <span style="font-size:10pt">Loại tiền tệ :</span>
+                                    <span style="font-size:10pt" t-if="o.LOAI_TIEN" t-field="o.LOAI_TIEN" />
+                                    <br />
+                                    <span style="font-size:8pt;">
+                                        <i>Currency</i>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="row" style="margin-left: 15px;margin-right: 15px;">
+                        <table style="width: 100%;border: 1px solid black;border-bottom: none;margin-bottom: 0px;border-radius: 7px 7px 0 0;border-collapse: initial;">
+                            <tr style="line-height:0.35cm">
+                                <td style="vertical-align: top; width: 16%;font-size:10pt;padding-top: 3px;padding-left: 4px;">
+                                    <span>Khách hàng trả tiền:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Applicant</i>
+                                    </span>
+                                </td>
+                                <td style="width: 54%;vertical-align: top;padding-top: 4px; ">
+                                    <span style="font-size:9pt;" t-esc="o.get_ten_cong_ty()" />
+                                </td>
+                                <td style="vertical-align: top;width: 9%;padding-top: 3px;">
+                                    <span style="font-size:10pt">Điện thoại:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Tel</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;padding-top: 4px;">
+                                    <span style="font-size:9pt">043 762 7891</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:none;border-bottom: none;margin-bottom: 0px;">
+                            <tr style="line-height: 0.35cm;">
+                                <td style="vertical-align: top;  width: 11%;padding-top: 3px;padding-left: 4px;">
+                                    <span style="font-size:10pt">Số tài khoản: </span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Account No</i>
+                                    </span>
+                                </td>
+                                <td style="width: 36%;vertical-align: top;padding-top: 4px; ">
+                                    <span style="font-size:9pt" t-if="o.STK_NGAN_HANG" t-field="o.STK_NGAN_HANG" />
+                                    <t t-if="not o.STK_NGAN_HANG" t-esc="'..........................................................................................'" />
+                                </td>
+                                <td style="vertical-align: top;width: 11%;white-space: nowrap;padding-top: 3px;">
+                                    <span style="font-size:10pt">Tại Agribank:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>At Agribank</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;padding-top: 4px; ">
+                                    
+                                    <span style="font-size:9pt">Agribank </span>
+                                    <t t-if="o.CHI_NHANH_CUA_NGAN_HANG">
+                                        <span style="font-size:9pt" t-field="o.CHI_NHANH_CUA_NGAN_HANG" />
+                                    </t>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:  none;border-bottom: none;line-height: 0;margin-bottom: 0px;">
+                            <tr style="line-height: 0.35cm;">
+                                <td style="vertical-align: top;width:18%;padding-top: 3px;padding-left: 4px;">
+                                    <span style="font-size:10pt">Khách hàng thụ hưởng:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Beneficiary</i>
+                                    </span>
+                                </td>
+                                <td style="width: 52%;vertical-align: top;padding-top: 4px;">
+                                    <span style="font-size:9pt" t-if="o.TEN_DOI_TUONG" t-field="o.TEN_DOI_TUONG" />
+                                    <t t-if="not o.TEN_DOI_TUONG" t-esc="'...................................................................................................................................'" />
+                                </td>
+                                <td style="vertical-align: top;width: 9%;padding-top: 3px;">
+                                    <span style="font-size:10pt">Điện thoại:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Tel</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;padding-top: 4px; ">
+                                    <span style="font-size:9pt" t-if="o.SO_DIEN_THOAI" t-field="o.SO_DIEN_THOAI" />
+                                    <t t-if="not o.SO_DIEN_THOAI" t-esc="'......................................................'" />
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:  none;border-bottom: none;line-height: 0;margin-bottom: 0px;">
+                            <tr style="line-height: 0.35cm;">
+                                <td style="vertical-align: top;width: 15%;padding-top: 3px;padding-left: 4px;">
+                                    <span style="font-size:10pt">Số CMT/Hộ chiếu:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i style="vertical-align: top; ">ID/Passort No</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;width: 32%;padding-top: 4px;">
+                                    <span style="font-size:9pt" t-if="o.SO_CMND" t-field="o.SO_CMND" />
+                                    <t t-if="not o.SO_CMND" t-esc="'................................................................................'" />
+                                </td>
+                                <td style="width: 8%;vertical-align: top;padding-top: 3px;">
+                                    <span style="font-size:10pt">Ngày cấp:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i style="vertical-align: top; ">Date of issue</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;width: 15%;padding-top: 4px;">
+                                    <span style="font-size:9pt" t-if="o.NGAY_CMND" t-field="o.NGAY_CMND" />
+                                    <t t-if="not o.NGAY_CMND" t-esc="'.....................................'" />
+                                </td>
+                                <td style="vertical-align: top;width: 8%;padding-top: 3px;">
+                                    <span style="font-size:10pt ; ">Nơi cấp:</span>
+                                    <br />
+                                    <span style="font-size:8pt; ">
+                                        <i style="vertical-align: top; ">Place of issue</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;padding-top: 4px;">
+                                    <span style="font-size:9pt" t-if="o.NOI_CAP_CMND" t-field="o.NOI_CAP_CMND" />
+                                    <t t-if="not o.NOI_CAP_CMND" t-esc="'.......................................................'" />
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:  none;border-bottom: none;line-height: 0;margin-bottom: 0px;">
+                            <tr style="line-height: 0.35cm;">
+                                <td style="vertical-align: top;  width: 11%;padding-top: 3px;padding-left: 4px;">
+                                    <span style="font-size:10pt">Số tài khoản: </span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Account No</i>
+                                    </span>
+                                </td>
+                                <td style="width: 36%;vertical-align: top;padding-top: 4px; ">
+                                    <span style="font-size:9pt" t-if="o.STK_NGAN_HANG_DOI_TUONG" t-field="o.STK_NGAN_HANG_DOI_TUONG" />
+                                    <t t-if="not o.STK_NGAN_HANG_DOI_TUONG" t-esc="'..........................................................................................'" />
+                                </td>
+                                <td style="vertical-align: top;width: 12%;white-space: nowrap;padding-top: 3px;">
+                                    <span style="font-size:10pt">Tại ngân hàng:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>At bank</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;padding-top: 4px; ">
+                                    <span style="font-size:9pt" t-if="o.TEN_NGAN_HANG_DOI_TUONG" t-field="o.TEN_NGAN_HANG_DOI_TUONG" />
+                                    <t t-if="not o.TEN_NGAN_HANG_DOI_TUONG" t-esc="'.........................................................................................................'" />
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:  none;border-bottom: none;margin-bottom: 0px;">
+                            <tr style="line-height: 0.3cm;">
+                                <td style="vertical-align: top; width: 11%;padding-top: 3px;padding-left: 4px;">
+                                    <span style="font-size:10pt">Số tiền bằng chữ:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Amount in words</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top; width: 45%;font-size: 9pt;padding-top: 4px;">
+                                    
+                                    
+                                    <span style="font-weight: bold;font-style: italic;" t-if="o.TONG_TIEN" t-field="o.TONG_TIEN" t-options="{'widget': 'vietbangchu'}" />
+                                    <t t-if="not o.TONG_TIEN" t-esc="'..................................'" />
+                                    
+                                    
+                                </td>
+                                <td style="vertical-align: top;width: 25%;padding-top: 3px;">
+                                    <span style="font-size:10pt;">Số tiền bằng số</span>
+                                    <br />
+                                    <span style="font-size:8pt;">
+                                        <i>Amount in figures</i>
+                                    </span>
+                                </td>
+                                <tr>
+                                    <td colspan="3" style="text-align:right;height: 20px;padding-right: 20px;padding-top: 4px;font-family:'Arial Narrow';font-weight: bold;">
+                                        <t t-if="o.TONG_TIEN">
+                                            <span t-field="o.TONG_TIEN" />
+                                            <span t-field="o.LOAI_TIEN" />
+                                        </t>
+                                        
+                                    </td>
+                                </tr>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:  none;margin-bottom: 0px;border-radius: 0 0 7px 7px;border-collapse: initial;">
+                            <tr style="line-height: 0.35cm;">
+                                <td style="vertical-align: top; width: 9%;padding-top: 3px;padding-left: 4px;">
+                                    <span style="font-size:10pt;vertical-align: top;">Nội dung:</span>
+                                    <br />
+                                    <span style="font-size:8pt;vertical-align: top;">
+                                        <i>Detail</i>
+                                    </span>
+                                </td>
+                                <td style="width: 60.5%;vertical-align: top;padding-top: 4px; ">
+                                    <span style="font-size:9pt;vertical-align: top;" t-if="o.DIEN_GIAI" t-field="o.DIEN_GIAI" />
+                                    <t t-if="not o.DIEN_GIAI" t-esc="'...........'" />
+                                </td>
+                                <td style="vertical-align: top;width: 5%;padding-top: 3px;">
+                                    <span style="font-size:10pt;padding-right: 10px;">Phí</span>
+                                    <br />
+                                    <span style="font-size:8pt;padding-right: 10px;">
+                                        <i>Change</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;padding-top: 3px;">
+                                    <!-- <input type="checkbox" style="margin-top:-5px"></input> -->
+                                    <div class="check-box-fake"/>
+                                    <span style="font-size:10pt">Phí trong</span>
+                                    <br />
+                                    <span style="font-size:8pt;">
+                                        <i style="margin-left: 15px;">Change included</i>
+                                    </span>
+                                    <br />
+                                    <!-- <input type="checkbox" style="margin-top:-5px"></input> -->
+                                    <div class="check-box-fake"/>
+                                    <span style="font-size:10pt">Phí ngoài</span>
+                                    <br />
+                                    <span style="font-size:8pt;padding-left: 15px;">
+                                        <i>Change excluded</i>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:  none;line-height: 0;margin-bottom: 0px;border-radius: 7px;border-collapse: initial;">
+                            <tr>
+                                <td style="-webkit-transform: rotate(-90.0deg); height: 70px;text-align: center;font-size: 6pt;">
+                                    <div style="margin-top: -373px;">
+                                        <p> Dành cho ngân hàng </p>
+                                        <p style="padding-bottom: 350px">
+                                            <i> For bank use only</i>
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 96%;border-top:  none;line-height: 0;">
+                            <tr>
+                                <td style="-webkit-transform: rotate(-90.0deg);text-align: center;font-size: 6pt;">
+                                    <div style="margin-top: -373px;margin-right:-315px">
+                                        <p>Mẫu số DP004 kèm theo Quyết định 599/QĐ-NHNo-TCKT ngày 19/04/2017</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:100%;line-height: 0.35cm;margin-top: -20px;">
+                            <tr>
+                                <td colspan="2" style="width:50%;font-size:10pt;text-align:center">
+                                    <span>Khách hàng trả tiền</span>
+                                    <span>
+                                        <i>(Applicant)</i>
+                                    </span>
+                                </td>
+                                <td style="width:25%;font-size:10pt">
+                                    <span>Giao dịch viên</span>
+                                    <span>
+                                        <i>(Teller)</i>
+                                    </span>
+                                </td>
+                                <td style="width:25%;font-size:10pt">
+                                    <span style="margin-left: 55px;">Kiểm soát</span>
+                                    <span>
+                                        <i>(Supervisor)</i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center">
+                                    <span style="font-size:10pt">Kế toán trưởng</span>
+                                </td>
+                                <td>
+                                    <span style="font-size:10pt;margin-left: 25px;">Chủ tài khoản</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center">
+                                    <span style="font-size:8pt">
+                                        <i>Chief accountant</i>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span style="font-size:8pt;margin-left: 25px;">
+                                        <i>Account holder</i>
+                                    </span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td style="font-size:9pt;text-align: center;padding-top: 25px;vertical-align: top;">
+                                    <strong>
+                                        <span t-esc="o.get_ke_toan_truong()" />
+                                    </strong>
+                                </td>
+                                <td style="font-size:9pt;text-align: center;padding-top: 25px;">
+                                    <strong>
+                                        <span t-if="o.CHU_TK_NGAN_HANG" t-field="o.CHU_TK_NGAN_HANG" />
+                                    </strong>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="font-size: 7pt;">
+                                    <span>
+                                        <i>Khách hàng kiểm tra và chịu trách nhiệm về thông tin trước khi đăng ký/Customer checks and takes responsibility for infor mation on receipt</i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background: rgb(149,55,52);height:10px;text-align: right;" colspan="4">
+                                    <span style="color: rgb(255,255,255);padding-right: 50px;font-size: 9pt;">www.agribank.com.vn</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!---page 2-->
+            <span>..............................................................................................................................................................................................</span>
+            <div class="page" style="margin-left:15px;margin-right:15px;">
+                <div class="row">
+                    <div class="col-xs-4" style="width: 40%;padding-right: 0px;padding-top: 5px;">
+                        <table style="width: 100%;border: none;margin-bottom: 0px;">
+                            <tr colspan="2">
+                                <span>
+                                    <img src="/bao_cao/static/src/img/agribank.PNG" style="height:13mm;width:63mm;"></img>
+                                </span>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: none;margin-bottom: 0px;">
+                            <tr>
+                                <td style="width: 30%;vertical-align: top;line-height: 1;font-size:10pt;padding-left: 5px;">
+                                    <span>CHI NHÁNH</span>
+                                </td>
+                                <td style="line-height: 1;font-size:10pt;">
+                                    <span t-if="o.CHI_NHANH_CUA_NGAN_HANG" t-field="o.CHI_NHANH_CUA_NGAN_HANG" />
+                                    <t t-if=" not o.CHI_NHANH_CUA_NGAN_HANG" t-esc="'................................................................'" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-8 " style="width: 60%;">
+                        <table style="width: 100%;margin-bottom: 0px;">
+                            <tr>
+                                <td style="width:40%;text-align:center;">
+                                    <span style="color:darkred;font-size:18pt;">
+                                        <strong> UỶ NHIỆM CHI</strong>
+                                    </span>
+                                    <p class="tieu-de-cua-bao-cao" style="font-size:12pt;vertical-align: top;line-height: 0;">
+                                            Payment Order
+                                        </p>
+                                    <p style="line-height: 0; padding-top: 5px;">
+                                        <span style="font-size:10pt;vertical-align: top;line-height: 0;">Ngày
+                                        </span>
+                                        <span style="font-size:10pt;vertical-align: top;line-height: 0;" t-if="o.NGAY_CHUNG_TU" t-field="o.NGAY_CHUNG_TU" />
+                                    </p>
+                                    <p style="margin-left: -70px;font-size: 9pt;line-height: 0.5; ">
+                                        <i>Date</i>
+                                    </p>
+                                </td>
+                                <td style="width: 30%; vertical-align: top;text-align: center;padding-top: 5px;">
+                                    <span style="font-size:10pt;">Số: </span>
+                                    <span t-if="o.SO_CHUNG_TU" t-field="o.SO_CHUNG_TU" />
+                                    <br />
+                                    <span style="font-size:8pt;">
+                                        <i style="vertical-align: top;margin-right: 65px;line-height: 0.5;">No</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;line-height: 1.3;width: 30%;padding-top: 6px;">
+                                    <span style="font-size:10pt">Liên 2:Khách hàng</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Copy 2 Customer</i>
+                                    </span>
+                                    <br />
+                                    <span style="font-size:10pt">Loại tiền tệ :</span>
+                                    <span style="font-size:10pt" t-if="o.LOAI_TIEN" t-field="o.LOAI_TIEN" />
+                                    <br />
+                                    <span style="font-size:8pt;">
+                                        <i>Currency</i>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="row" style="margin-left: 15px;margin-right: 15px;">
+                        <table style="width: 100%;border: 1px solid black;border-bottom: none;margin-bottom: 0px;border-radius: 7px 7px 0 0;border-collapse: initial;">
+                            <tr style="line-height:0.35cm">
+                                <td style="vertical-align: top; width: 16%;font-size:10pt;padding-top: 3px;padding-left: 4px;">
+                                    <span>Khách hàng trả tiền:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Applicant</i>
+                                    </span>
+                                </td>
+                                <td style="width: 54%;vertical-align: top;padding-top: 4px; ">
+                                    <span style="font-size:9pt;" t-esc="o.get_ten_cong_ty()" />
+                                </td>
+                                <td style="vertical-align: top;width: 9%;padding-top: 3px;">
+                                    <span style="font-size:10pt">Điện thoại:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Tel</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;padding-top: 4px;">
+                                    <span style="font-size:9pt">043 762 7891</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:none;border-bottom: none;margin-bottom: 0px;">
+                            <tr style="line-height: 0.35cm;">
+                                <td style="vertical-align: top;  width: 11%;padding-top: 3px;padding-left: 4px;">
+                                    <span style="font-size:10pt">Số tài khoản: </span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Account No</i>
+                                    </span>
+                                </td>
+                                <td style="width: 36%;vertical-align: top;padding-top: 4px; ">
+                                    <span style="font-size:9pt" t-if="o.STK_NGAN_HANG" t-field="o.STK_NGAN_HANG" />
+                                    <t t-if="not o.STK_NGAN_HANG" t-esc="'..........................................................................................'" />
+                                </td>
+                                <td style="vertical-align: top;width: 11%;white-space: nowrap;padding-top: 3px;">
+                                    <span style="font-size:10pt">Tại Agribank:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>At Agribank</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;padding-top: 4px; ">
+                                    
+                                    <span style="font-size:9pt">Agribank </span>
+                                    <t t-if="o.CHI_NHANH_CUA_NGAN_HANG">
+                                        <span style="font-size:9pt" t-field="o.CHI_NHANH_CUA_NGAN_HANG" />
+                                    </t>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:  none;border-bottom: none;line-height: 0;margin-bottom: 0px;">
+                            <tr style="line-height: 0.35cm;">
+                                <td style="vertical-align: top;width:18%;padding-top: 3px;padding-left: 4px;">
+                                    <span style="font-size:10pt">Khách hàng thụ hưởng:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Beneficiary</i>
+                                    </span>
+                                </td>
+                                <td style="width: 52%;vertical-align: top;padding-top: 4px;">
+                                    <span style="font-size:9pt" t-if="o.TEN_DOI_TUONG" t-field="o.TEN_DOI_TUONG" />
+                                    <t t-if="not o.TEN_DOI_TUONG" t-esc="'...................................................................................................................................'" />
+                                </td>
+                                <td style="vertical-align: top;width: 9%;padding-top: 3px;">
+                                    <span style="font-size:10pt">Điện thoại:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Tel</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;padding-top: 4px; ">
+                                    <span style="font-size:9pt" t-if="o.SO_DIEN_THOAI" t-field="o.SO_DIEN_THOAI" />
+                                    <t t-if="not o.SO_DIEN_THOAI" t-esc="'......................................................'" />
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:  none;border-bottom: none;line-height: 0;margin-bottom: 0px;">
+                            <tr style="line-height: 0.35cm;">
+                                <td style="vertical-align: top;width: 15%;padding-top: 3px;padding-left: 4px;">
+                                    <span style="font-size:10pt">Số CMT/Hộ chiếu:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i style="vertical-align: top; ">ID/Passort No</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;width: 32%;padding-top: 4px;">
+                                    <span style="font-size:9pt" t-if="o.SO_CMND" t-field="o.SO_CMND" />
+                                    <t t-if="not o.SO_CMND" t-esc="'................................................................................'" />
+                                </td>
+                                <td style="width: 8%;vertical-align: top;padding-top: 3px;">
+                                    <span style="font-size:10pt">Ngày cấp:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i style="vertical-align: top; ">Date of issue</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;width: 15%;padding-top: 4px;">
+                                    <span style="font-size:9pt" t-if="o.NGAY_CMND" t-field="o.NGAY_CMND" />
+                                    <t t-if="not o.NGAY_CMND" t-esc="'.....................................'" />
+                                </td>
+                                <td style="vertical-align: top;width: 8%;padding-top: 3px;">
+                                    <span style="font-size:10pt ; ">Nơi cấp:</span>
+                                    <br />
+                                    <span style="font-size:8pt; ">
+                                        <i style="vertical-align: top; ">Place of issue</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;padding-top: 4px;">
+                                    <span style="font-size:9pt" t-if="o.NOI_CAP_CMND" t-field="o.NOI_CAP_CMND" />
+                                    <t t-if="not o.NOI_CAP_CMND" t-esc="'.......................................................'" />
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:  none;border-bottom: none;line-height: 0;margin-bottom: 0px;">
+                            <tr style="line-height: 0.35cm;">
+                                <td style="vertical-align: top;  width: 11%;padding-top: 3px;padding-left: 4px;">
+                                    <span style="font-size:10pt">Số tài khoản: </span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Account No</i>
+                                    </span>
+                                </td>
+                                <td style="width: 36%;vertical-align: top;padding-top: 4px; ">
+                                    <span style="font-size:9pt" t-if="o.STK_NGAN_HANG_DOI_TUONG" t-field="o.STK_NGAN_HANG_DOI_TUONG" />
+                                    <t t-if="not o.STK_NGAN_HANG_DOI_TUONG" t-esc="'..........................................................................................'" />
+                                </td>
+                                <td style="vertical-align: top;width: 12%;white-space: nowrap;padding-top: 3px;">
+                                    <span style="font-size:10pt">Tại ngân hàng:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>At bank</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;padding-top: 4px; ">
+                                    <span style="font-size:9pt" t-if="o.TEN_NGAN_HANG_DOI_TUONG" t-field="o.TEN_NGAN_HANG_DOI_TUONG" />
+                                    <t t-if="not o.TEN_NGAN_HANG_DOI_TUONG" t-esc="'.........................................................................................................'" />
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:  none;border-bottom: none;margin-bottom: 0px;">
+                            <tr style="line-height: 0.3cm;">
+                                <td style="vertical-align: top; width: 11%;padding-top: 3px;padding-left: 4px;">
+                                    <span style="font-size:10pt">Số tiền bằng chữ:</span>
+                                    <br />
+                                    <span style="font-size:8pt">
+                                        <i>Amount in words</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top; width: 45%;font-size: 9pt;padding-top: 4px;">
+                                    
+                                    
+                                    <span style="font-weight: bold;font-style: italic;" t-if="o.TONG_TIEN" t-field="o.TONG_TIEN" t-options="{'widget': 'vietbangchu'}" />
+                                    <t t-if="not o.TONG_TIEN" t-esc="'..................................'" />
+                                    
+                                    
+                                </td>
+                                <td style="vertical-align: top;width: 25%;padding-top: 3px;">
+                                    <span style="font-size:10pt;">Số tiền bằng số</span>
+                                    <br />
+                                    <span style="font-size:8pt;">
+                                        <i>Amount in figures</i>
+                                    </span>
+                                </td>
+                                <tr>
+                                    <td colspan="3" style="text-align:right;height: 20px;padding-right: 20px;padding-top: 4px;font-family:'Arial Narrow';font-weight: bold;">
+                                        <t t-if="o.TONG_TIEN">
+                                            <span t-field="o.TONG_TIEN" />
+                                            <span t-field="o.LOAI_TIEN" />
+                                        </t>
+                                        
+                                    </td>
+                                </tr>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:  none;margin-bottom: 0px;border-radius: 0 0 7px 7px;border-collapse: initial;">
+                            <tr style="line-height: 0.35cm;">
+                                <td style="vertical-align: top; width: 9%;padding-top: 3px;padding-left: 4px;">
+                                    <span style="font-size:10pt;vertical-align: top;">Nội dung:</span>
+                                    <br />
+                                    <span style="font-size:8pt;vertical-align: top;">
+                                        <i>Detail</i>
+                                    </span>
+                                </td>
+                                <td style="width: 60.5%;vertical-align: top;padding-top: 4px; ">
+                                    <span style="font-size:9pt;vertical-align: top;" t-if="o.DIEN_GIAI" t-field="o.DIEN_GIAI" />
+                                    <t t-if="not o.DIEN_GIAI" t-esc="'...........'" />
+                                </td>
+                                <td style="vertical-align: top;width: 5%;padding-top: 3px;">
+                                    <span style="font-size:10pt;padding-right: 10px;">Phí</span>
+                                    <br />
+                                    <span style="font-size:8pt;padding-right: 10px;">
+                                        <i>Change</i>
+                                    </span>
+                                </td>
+                                <td style="vertical-align: top;padding-top: 3px;">
+                                    <!-- <input type="checkbox" style="margin-top:-5px"></input> -->
+                                    <div class="check-box-fake"/>
+                                    <span style="font-size:10pt">Phí trong</span>
+                                    <br />
+                                    <span style="font-size:8pt;">
+                                        <i style="margin-left: 15px;">Change included</i>
+                                    </span>
+                                    <br />
+                                    <!-- <input type="checkbox" style="margin-top:-5px"></input> -->
+                                    <div class="check-box-fake"/>
+                                    <span style="font-size:10pt">Phí ngoài</span>
+                                    <br />
+                                    <span style="font-size:8pt;padding-left: 15px;">
+                                        <i>Change excluded</i>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;border: 1px solid black;border-top:  none;line-height: 0;margin-bottom: 0px;border-radius: 7px;border-collapse: initial;">
+                            <tr>
+                                <td style="-webkit-transform: rotate(-90.0deg); height: 70px;text-align: center;font-size: 6pt;">
+                                    <div style="margin-top: -373px;">
+                                        <p> Dành cho ngân hàng </p>
+                                        <p style="padding-bottom: 350px">
+                                            <i> For bank use only</i>
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 96%;border-top:  none;line-height: 0;">
+                            <tr>
+                                <td style="-webkit-transform: rotate(-90.0deg);text-align: center;font-size: 6pt;">
+                                    <div style="margin-top: -373px;margin-right:-315px">
+                                        <p>Mẫu số DP004 kèm theo Quyết định 599/QĐ-NHNo-TCKT ngày 19/04/2017</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width:100%;line-height: 0.35cm;margin-top: -20px;">
+                            <tr>
+                                <td colspan="2" style="width:50%;font-size:10pt;text-align:center">
+                                    <span>Khách hàng trả tiền</span>
+                                    <span>
+                                        <i>(Applicant)</i>
+                                    </span>
+                                </td>
+                                <td style="width:25%;font-size:10pt">
+                                    <span>Giao dịch viên</span>
+                                    <span>
+                                        <i>(Teller)</i>
+                                    </span>
+                                </td>
+                                <td style="width:25%;font-size:10pt">
+                                    <span style="margin-left: 55px;">Kiểm soát</span>
+                                    <span>
+                                        <i>(Supervisor)</i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center">
+                                    <span style="font-size:10pt">Kế toán trưởng</span>
+                                </td>
+                                <td>
+                                    <span style="font-size:10pt;margin-left: 25px;">Chủ tài khoản</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center">
+                                    <span style="font-size:8pt">
+                                        <i>Chief accountant</i>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span style="font-size:8pt;margin-left: 25px;">
+                                        <i>Account holder</i>
+                                    </span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td style="font-size:9pt;text-align: center;padding-top: 25px;vertical-align: top;">
+                                    <strong>
+                                        <span t-esc="o.get_ke_toan_truong()" />
+                                    </strong>
+                                </td>
+                                <td style="font-size:9pt;text-align: center;padding-top: 25px;">
+                                    <strong>
+                                        <span t-if="o.CHU_TK_NGAN_HANG" t-field="o.CHU_TK_NGAN_HANG" />
+                                    </strong>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="font-size: 7pt;">
+                                    <span>
+                                        <i>Khách hàng kiểm tra và chịu trách nhiệm về thông tin trước khi đăng ký/Customer checks and takes responsibility for infor mation on receipt</i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background: rgb(149,55,52);height:10px;text-align: right;" colspan="4">
+                                    <span style="color: rgb(255,255,255);padding-right: 50px;font-size: 9pt;">www.agribank.com.vn</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="template_agribankunc">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="bao_cao.bao_cao_phieu_chi_uy_nhiem_chi_agribank" />
+                <!-- <t t-call="bao_cao.bao_cao_phieu_chi_uy_nhiem_chi_agribank" /> -->
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="Uỷ nhiệm chi (Agribank)" id="action_template_agribankunc" model="bao.cao.uy.nhiem.chi.agribank" report_type="qweb-html" name="bao_cao.template_agribankunc" file="bao_cao.template_agribankunc" print_report_name="Uỷ nhiệm chi (agribank)" />
+    </data>
+</odoo>

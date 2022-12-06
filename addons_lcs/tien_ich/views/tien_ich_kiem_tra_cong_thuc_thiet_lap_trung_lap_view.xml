@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_ich_kiem_tra_cong_thuc_thiet_lap_trung_lap_tham_so_form" model="ir.ui.view">
+            <field name="name">tien.ich.kiem.tra.cong.thuc.thiet.lap.trung.lap.form</field>
+            <field name="model">tien.ich.kiem.tra.cong.thuc.thiet.lap.trung.lap</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="TIEN_ICH_KIEM_TRA_CONG_THUC_BI_THIET_LAP_TRUNG_LAP_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false">
+                                        <field name="TAI_KHOAN" />
+                                        <field name="MA_CHI_TIEU" />
+                                        <field name="TEN_CHI_TIEU" />
+                                        <field name="CONG_THUC" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button name="button_cancel" string="Đóng" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_tien_ich_kiem_tra_cong_thuc_thiet_lap_trung_lap_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Kiểm tra công thức thiết lập trùng lặp</field>
+            <field name="res_model">tien.ich.kiem.tra.cong.thuc.thiet.lap.trung.lap</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_tien_ich_kiem_tra_cong_thuc_thiet_lap_trung_lap_tham_so_form" />
+        </record>
+        <record id="action_open_tien_ich_kiem_tra_cong_thuc_thiet_lap_trung_lap_form" model="ir.actions.act_window">
+            <field name="name">Kiểm tra công thức thiết lập trùng lặp</field>
+            <field name="res_model">tien.ich.kiem.tra.cong.thuc.thiet.lap.trung.lap</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

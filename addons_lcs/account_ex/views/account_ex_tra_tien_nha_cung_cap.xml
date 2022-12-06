@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_nganhang_tra_tien_ncc_tree" model="ir.ui.view">
+    <field name="name">account.ex.phieu.thu.chi.tree</field>
+    <field name="model">account.ex.phieu.thu.chi</field>
+    <field name="arch" type="xml">
+      <tree>
+        <!-- <field name="ngay_hach_toan" string='1111'/>
+        <field name="ngay_chung_tu"/>
+        <field name="SO_CHUNG_TU_CHI"/>
+        <field name="TEN_NOI_DUNG_TT" string='Diễn giải'/>
+        <field name="SO_TIEN_1"/>
+        <field name="partner_id"/>
+        <field name="NOI_DUNG_TT" string='Lý do thu chi'/>
+        <field name="PHUONG_THUC_TT" string='Loại chứng từ'/>
+        <field name="chi_nhanh_id"/> -->
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_nganhang_tra_tien_ncc_form" model="ir.ui.view">
+    <field name="name">account.ex.phieu.thu.chi.form</field>
+    <field name="model">account.ex.phieu.thu.chi</field>
+    <field name="arch" type="xml">
+      <form string="Register Payment">
+        <!-- <header>
+          <field name="state" widget="statusbar" statusbar_visible="draft,posted,reconciled,cancelled"/>
+        </header>
+        <sheet>
+          <group col="6">
+            <group colspan="4" col="4">
+              <field name="partner_id" string="Nhà cung cấp" readonly='1' options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}"/>
+              <field name="ten_doi_tuong"/>
+
+              <field name="NGUOI_LINH_TIEN" string='Người nhận' colspan='4' attrs="{'invisible': [('PHUONG_THUC_TT', '!=', 'SEC_TIEN_MAT')]}"/>
+
+              <field name="SO_CMND" attrs="{'invisible': [('PHUONG_THUC_TT', '!=', 'SEC_TIEN_MAT')]}"/>
+              <field name="NGAY_CAP" attrs="{'invisible': [('PHUONG_THUC_TT', '!=', 'SEC_TIEN_MAT')]}"/>
+              <field name="NOI_CAP" attrs="{'invisible': [('PHUONG_THUC_TT', '!=', 'SEC_TIEN_MAT')]}"/>
+
+              <field name="dia_chi" colspan="4" attrs="{'invisible': [('PHUONG_THUC_TT', '=', 'SEC_TIEN_MAT')]}"/>
+              <field name="TAI_KHOAN_THU_NHAN_ID" string="Tài khoản nhận" attrs="{'invisible': [('PHUONG_THUC_TT', '=', 'SEC_TIEN_MAT')]}"  options="{'columns': ['SO_TAI_KHOAN', 'NGAN_HANG_ID.CHI_NHANH', 'CHI_NHANH'], 'strings': ['Số tài khoản', 'Tên ngân hàng', 'Chi nhánh'],'displays': ['SO_TAI_KHOAN']}" />
+              <field name="TEN_TK_NHAN" attrs="{'invisible': [('PHUONG_THUC_TT', '=', 'SEC_TIEN_MAT')]}"/>
+              <field name="NOI_DUNG_TT" string="Nội dung TT"/>
+              <field name="TEN_NOI_DUNG_TT" string='Tên ND TT'/>
+              <field name="tham_chieu_1"/>
+              <field name="SO_TIEN_1" invisible='1'/>
+              <field name="PHUONG_THUC_TT" invisible='1'/>
+            </group>
+            <group colspan="2">
+              <field name="ngay_hach_toan"/>
+              <field name="ngay_chung_tu"/>
+              <field name="SO_CHUNG_TU_CHI"/>
+            </group>
+          </group>
+          <notebook>
+            <page string="Hạch toán">
+              <field name="account_payment_ids" context="{'default_dien_giai':TEN_NOI_DUNG_TT}">
+                <tree editable="bottom">
+                  <field name="dien_giai"/>
+                  <field name="tk_no_id" options="{'columns': ['code', 'name'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['code']}"/>
+                  <field name="tk_co_id" options="{'columns': ['code', 'name'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['code']}"/>
+                  <field name="amount" string="Số tiền" sum='Total amount'/>
+                  <field name="DOI_TUONG" context="{'default_DOI_TUONG': 'parent.partner_id'}" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}"/>
+                  <field name="TEN_DOI_TUONG"/>
+                  <field name="khoan_muc_cp_id" attrs="{'column_invisible': [('parent.NOI_DUNG_TT', '!=', 'CHI_KHAC')]}"/>
+                  <field name="DON_VI_ID" attrs="{'column_invisible': [('parent.NOI_DUNG_TT', '!=', 'CHI_KHAC')]}" options="{'columns': ['MA_DON_VI', 'name'], 'strings': ['Mã đơn vị', 'Tên đơn vị']}"/>
+
+                  <field name="doi_tuong_thcp_id" attrs="{'column_invisible': [('parent.NOI_DUNG_TT', '!=', 'CHI_KHAC')]}"/>
+                  <field name="CONG_TRINH" attrs="{'column_invisible': [('parent.NOI_DUNG_TT', '!=', 'CHI_KHAC')]}" options="{'columns': ['MA_CONG_TRINH', 'name'], 'strings': ['Mã công trình', 'Tên công trình']}"/>
+
+                  <field name="DON_DAT_HANG" attrs="{'column_invisible': [('parent.NOI_DUNG_TT', '!=', 'CHI_KHAC')]}"/>
+                  <field name="DON_MUA_HANG" attrs="{'column_invisible': [('parent.NOI_DUNG_TT', '!=', 'CHI_KHAC')]}"/>
+                  <field name="HOP_DONG_MUA" attrs="{'column_invisible': [('parent.NOI_DUNG_TT', '!=', 'CHI_KHAC')]}" options="{'columns': ['SO_HOP_DONG', 'NGAY_KY','NHA_CUNG_CAP_ID.HO_VA_TEN','TRICH_YEU'], 'strings': ['Số hợp đồng', 'Ngày ký','Nhà cung cấp','Trích yếu']}"/>
+                  <field name="HOP_DONG_BAN" attrs="{'column_invisible': [('parent.NOI_DUNG_TT', '!=', 'CHI_KHAC')]}" options="{'columns': ['SO_HOP_DONG', 'NGAY_KY','KHACH_HANG_ID.HO_VA_TEN','TRICH_YEU'], 'strings': ['Số hợp đồng', 'Ngày ký','Khách hàng','Trích yếu']}"/>
+
+                  <field name="MA_THONG_KE_ID" options="{'columns': ['MA_THONG_KE', 'TEN_THONG_KE'], 'strings': ['Mã thống kê', 'Tên thống kê']}"/>
+                </tree>
+              </field>
+            </page>
+            <page string="Chứng từ">
+              <field name="ACCOUNT_EX_SEC_CHUYEN_KHOAN_TRA_TIEN_NHA_CUNG_CAP_IDS" mode="tree">
+                <tree editable="bottom">
+                  <field name="NGAY_CHUNG_TU" readonly='1'/>
+                  <field name="SO_CHUNG_TU" readonly='1'/>
+                  <field name="NGAY_HOA_DON" readonly='1'/>
+                  <field name="SO_HOA_DON" readonly='1'/>
+                  <field name="DIEN_GIAI" readonly='1'/>
+                  <field name="HAN_THANH_TOAN" readonly='1'/>
+                  <field name="TONG_NO" readonly='1'/>
+                  <field name="SO_CON_NO" readonly='1'/>
+                  <field name="SO_TRA" readonly='1'/>
+                  <field name="TK_PHAI_TRA" readonly='1'/>
+                  <field name="DIEU_KHOAN_TT" readonly='1'/>
+                  <field name="TY_LE_CK" readonly='1'/>
+                  <field name="TIEN_CHIET_KHAU" readonly='1'/>
+                  <field name="TK_CHIET_KHAU" readonly='1'/>
+                </tree>
+              </field>
+            </page>
+          </notebook>
+        </sheet>
+        <div class="oe_chatter">
+          <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+          <field name="message_ids" widget="mail_thread"/>
+        </div> -->
+      </form>
+    </field>
+  </record>
+
+  <record id="open_menu_account_ex_tra_tien_ncc" model="ir.actions.act_window">
+    <field name="name">Phiếu chi</field>
+    <field name="res_model">account.ex.phieu.thu.chi</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+    <field name="domain">[('LOAI_PHIEU', '=', 'PHIEU_CHI'),('TYPE_NH_Q', '=', 'NGAN_HANG')]</field>
+    <field name="context">{'default_payment_type': 'PHIEU_CHI', 'LOAI_PHIEU': 'PHIEU_CHI','default_TYPE_NH_Q': 'NGAN_HANG'}</field>
+  </record>
+
+  <record id="action_nganhang_phieuchi_tree" model="ir.actions.act_window.view">
+    <field name="view_mode">tree</field>
+    <field name="view_id" ref="view_nganhang_tra_tien_ncc_tree"/>
+    <field name="act_window_id" ref="open_menu_account_ex_tra_tien_ncc"/>
+  </record>
+
+  <record id="action_nganhang_phieuchi_form" model="ir.actions.act_window.view">
+    <field name="view_mode">form</field>
+    <field name="view_id" ref="view_nganhang_tra_tien_ncc_form"/>
+    <field name="act_window_id" ref="open_menu_account_ex_tra_tien_ncc"/>
+  </record>
+
+  <data noupdate="1">
+    <record id="sequence_account_thu_chi_2" model="ir.sequence">
+      <field name="name">account_thu_chi SO_CHUNG_TU_CHI sequence</field>
+      <field name="code">account_thu_chi_SO_CHUNG_TU_CHI</field>
+      <field name="prefix">STM</field>
+      <field name="padding">5</field>
+    </record>
+  </data>
+
+</odoo>

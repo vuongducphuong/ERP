@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_tong_hop_ton_kho_theo_lo_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.ton.kho.theo.lo.tree</field>
+            <field name="model">bao.cao.tong.hop.ton.kho.theo.lo</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp tồn kho theo lô" create="false" report="true">
+                    <field name="MA_KHO" />
+                    <field name="MA_HANG" />
+                    <field name="TEN_HANG" />
+                    <field name="SO_LO" width="100" />
+                    <field name="HAN_SU_DUNG" width="120" />
+                    <field name="DVT" />
+                    <field name="SO_LUONG_DAU_KY" sum="Tổng" />
+                    <field name="SO_LUONG_NHAP" sum="Tổng" />
+                    <field name="SO_LUONG_XUAT" sum="Tổng" />
+                    <field name="SO_LUONG_TON" sum="Tổng" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__tong_hop_ton_kho_theo_lo" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP TỒN KHO THEO LÔ</field>
+            <field name="res_model">bao.cao.tong.hop.ton.kho.theo.lo</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by':['MA_KHO'],'expand_all': 'true'} </field>
+        </record>
+        <record id="view_bao_cao_tong_hop_ton_kho_theo_lo_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.ton.kho.theo.lo.form</field>
+            <field name="model">bao.cao.tong.hop.ton.kho.theo.lo</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <field name="CHI_NHANH_ID" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" />
+                        </group>
+                        <group col="12">
+                            <group col="6" colspan="6">
+                                <field name="KY_BAO_CAO" colspan="6" />
+                                <field name="TU" colspan="6"/>
+                                <field name="DEN" colspan="6"/>
+                            </group>
+                            <group  col="6" colspan="6">
+                                <field name="DON_VI_TINH" colspan="6"/>
+                                <field name="NHOM_VTHH_ID" colspan="6" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'],'displays':['MA']}" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Kho">
+                                <field name="KHO_IDS" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA_KHO" string="Mã kho" />
+                                        <field name="TEN_KHO" string="Tên kho" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_tong_hop_ton_kho_theo_lo_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Tổng hợp tồn kho theo lô</field>
+            <field name="res_model">bao.cao.tong.hop.ton.kho.theo.lo</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_ton_kho_theo_lo_tham_so_form" />
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <!-- Phương pháp tính giá thành: Giản đơn -->
+        <record id="view_bao_cao_bang_tinh_gia_thanh_gian_don_tree" model="ir.ui.view">
+            <field name="name">bao.cao.bang.tinh.gia.thanh.gian.don.tree</field>
+            <field name="model">bao.cao.bang.tinh.gia.thanh</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Bảng tính giá thành" create="false" report="true">
+                    <field name="MA_THANH_PHAM" />
+                    <field name="TEN_THANH_PHAM" />
+                    <field name="TEN_DOI_TUONG_THCP" />
+                    <field name="NVL_TRUC_TIEP" sum="Tổng" />
+                    <field name="NVL_GIAN_TIEP" sum="Tổng" />
+                    <field name="NHAN_CONG_TRUC_TIEP" sum="Tổng" />
+                    <field name="NHAN_CONG_GIAN_TIEP" sum="Tổng" />
+                    <field name="KHAU_HAO" sum="Tổng" />
+                    <field name="CHI_PHI_MUA_NGOAI" sum="Tổng" />
+                    <field name="CHI_PHI_KHAC" sum="Tổng" />
+                    <field name="TONG" sum="Tổng" />
+                    <field name="SO_LUONG_THANH_PHAM" sum="Tổng" />
+                    <field name="GIA_THANH_DON_VI" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__bang_tinh_gia_thanh_gian_don" model="ir.actions.act_window">
+            <field name="name">BẢNG TÍNH GIÁ THÀNH</field>
+            <field name="res_model">bao.cao.bang.tinh.gia.thanh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{ 'header_struct': [['Giá thành',['NVL_TRUC_TIEP','NVL_GIAN_TIEP','NHAN_CONG_TRUC_TIEP','NHAN_CONG_GIAN_TIEP','KHAU_HAO','CHI_PHI_MUA_NGOAI','CHI_PHI_KHAC','TONG']]],'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_bang_tinh_gia_thanh_gian_don" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_bang_tinh_gia_thanh_gian_don_tree" />
+            <field name="act_window_id" ref="open_report__bang_tinh_gia_thanh_gian_don" />
+        </record>
+        <!-- end -->
+        <!-- Phương pháp tính giá thành: Hệ số tỷ lệ -->
+        <record id="view_bao_cao_bang_tinh_gia_thanh_hstl_tree" model="ir.ui.view">
+            <field name="name">bao.cao.bang.tinh.gia.thanh.hstl.tree</field>
+            <field name="model">bao.cao.bang.tinh.gia.thanh</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Bảng tính giá thành" create="false" report="true">
+                    <field name="MA_THANH_PHAM" />
+                    <field name="TEN_THANH_PHAM" />
+                    <field name="NVL_TRUC_TIEP" sum="Tổng" />
+                    <field name="NVL_GIAN_TIEP" sum="Tổng" />
+                    <field name="NHAN_CONG_TRUC_TIEP" sum="Tổng" />
+                    <field name="NHAN_CONG_GIAN_TIEP" sum="Tổng" />
+                    <field name="KHAU_HAO" sum="Tổng" />
+                    <field name="CHI_PHI_MUA_NGOAI" sum="Tổng" />
+                    <field name="CHI_PHI_KHAC" sum="Tổng" />
+                    <field name="TONG" sum="Tổng" />
+                    <field name="SO_LUONG_THANH_PHAM" sum="Tổng" />
+                    <field name="GIA_THANH_DON_VI" />
+                    <field name="TEN_DOI_TUONG_THCP" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__bang_tinh_gia_thanh_hstl" model="ir.actions.act_window">
+            <field name="name">BẢNG TÍNH GIÁ THÀNH</field>
+            <field name="res_model">bao.cao.bang.tinh.gia.thanh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by': ['TEN_DOI_TUONG_THCP'], 'header_struct': [['Giá thành',['NVL_TRUC_TIEP','NVL_GIAN_TIEP','NHAN_CONG_TRUC_TIEP','NHAN_CONG_GIAN_TIEP','KHAU_HAO','CHI_PHI_MUA_NGOAI','CHI_PHI_KHAC','TONG']]],'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_bang_tinh_gia_thanh_hstl" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_bang_tinh_gia_thanh_hstl_tree" />
+            <field name="act_window_id" ref="open_report__bang_tinh_gia_thanh_hstl" />
+        </record>
+        <!-- end -->
+        <record id="view_bao_cao_bang_tinh_gia_thanh_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.bang.tinh.gia.thanh.form</field>
+            <field name="model">bao.cao.bang.tinh.gia.thanh</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="bao_cao_bang_tinh_gia_thanh_view">
+                    <sheet>
+                        <group col="4">
+                            <field name="CHI_NHANH_ID" colspan="4" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" colspan="4" />
+                        </group>
+                        <group col="4">
+                            <field name="PP_TINH_GIA_THANH" colspan="3" />
+                            <field name="KY_TINH_GIA_THANH" colspan="3" options="{'columns': ['TEN'], 'strings': ['Chọn kỳ tính giá thành'],'displays': ['TEN']}"/>
+                        </group>
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_bang_tinh_gia_thanh_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Bảng tính giá thành</field>
+            <field name="res_model">bao.cao.bang.tinh.gia.thanh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="size">large</field>
+            <field name="view_id" ref="view_bao_cao_bang_tinh_gia_thanh_tham_so_form" />
+        </record>
+    </data>
+</odoo>

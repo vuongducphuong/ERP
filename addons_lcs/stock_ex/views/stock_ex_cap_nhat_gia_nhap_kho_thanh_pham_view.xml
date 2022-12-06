@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_stock_ex_cap_nhat_gia_nhap_kho_thanh_pham_tham_so_form" model="ir.ui.view">
+            <field name="name">stock.ex.cap.nhat.gia.nhap.kho.thanh.pham.form</field>
+            <field name="model">stock.ex.cap.nhat.gia.nhap.kho.thanh.pham</field>
+            <field name="arch" type="xml">
+               <form string="Cập nhật giá nhập kho thành phẩm">
+                    <sheet>
+                        <group col="4">
+                            <field name="KHOANG_THOI_GIAN" colspan="2"/>
+                            <field name="NHOM_VTHH_ID" colspan="2" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'],'displays': ['MA']}"/>
+                            <field name="TU" colspan="2"/>
+                            <field name="DEN" colspan="2"/>
+                            <field name="MA_KHO_ID" colspan="2" options="{'columns': ['MA_KHO', 'TEN_KHO'], 'strings': ['Mã kho', 'Tên kho'],'displays': ['MA_KHO']}"/>
+                            <field name="LOAI_PHIEU_NHAP" colspan="2"/>
+                            
+                        </group>
+                        <!--<notebook>
+                            <page string="Chi tiết">
+                                <field name="FIELD_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>-->
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="">
+                                <field name="STOCK_EX_CAP_NHAT_GIA_NHAP_KHO_THANH_PHAM_CHI_TIET_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" report="true" delete="false">
+                                        <field name="AUTO_SELECT" invisible ="1"/>
+                                        <field name="MA_HANG_ID"/>
+                                        <field name="TEN_HANG"/>
+                                        <field name="DON_GIA"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                        <footer>
+                            <button name="btn_thuc_hien" string="Thực hiện" type="object" class="oe_highlight" context="{'discard_changes': True}"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_stock_ex_cap_nhat_gia_nhap_kho_thanh_pham_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Cập nhật giá nhập kho thành phẩm</field>
+            <field name="res_model">stock.ex.cap.nhat.gia.nhap.kho.thanh.pham</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_stock_ex_cap_nhat_gia_nhap_kho_thanh_pham_tham_so_form"/>
+        </record>
+
+        <record id="action_open_stock_ex_cap_nhat_gia_nhap_kho_thanh_pham_form" model="ir.actions.act_window">
+            <field name="name">Cập nhật giá nhập kho thành phẩm</field>
+            <field name="res_model">stock.ex.cap.nhat.gia.nhap.kho.thanh.pham</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="Cập nhật giá nhập kho thành phẩm"
+                  action="stock_ex.open_stock_ex_cap_nhat_gia_nhap_kho_thanh_pham_tham_so_form"
+                  id="menu_stock_ex_cap_nhat_gia_nhap_kho_thanh_pham"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

@@ -1,0 +1,631 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <!-- Thống kê theo mặt hàng -->
+        <record id="view_bao_cao_tong_hop_ban_hang_mathang_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.ban.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.ban.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp bán hàng" create="false" report="true">
+                    <field name="MA_HANG" />
+                    <field name="TEN_HANG" />
+                    <field name="DVT" />
+                    <field name="SO_LUONG_BAN" sum="Ten.truong" />
+                    <field name="DOANH_SO_BAN" sum="Ten.truong" />
+                    <field name="CHIET_KHAU" sum="Ten.truong" />
+                    <field name="SO_LUONG_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Ten.truong" />
+                    <field name="DOANH_THU_THUAN" sum="Ten.truong" />
+                    <field name="DON_GIA_VON" />
+                    <field name="TIEN_VON" sum="Ten.truong" />
+                    <field name="LAI_GOP" sum="Ten.truong" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report_tong_hop_ban_hang_mathang" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP BÁN HÀNG THEO MẶT HÀNG</field>
+            <field name="res_model">bao.cao.tong.hop.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!--<field name="context">{'group_by': ['kho_id'], 'header_struct': [['Đầu kỳ', ['sl_dau_ky', ['XYZ', ['gt_dau_ky', 'sl_nhap_kho']]]], ['Cuối kỳ', ['sl_cuoi_ky', 'gt_cuoi_ky','gt_nhap_kho']]], 'expand_all': 'true'}</field>-->
+        </record>
+        <record id="action_bao_cao_tong_hop_ban_hang_mathang" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_ban_hang_mathang_tree" />
+            <field name="act_window_id" ref="open_report_tong_hop_ban_hang_mathang" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo mặt hàng và khách hàng -->
+        <record id="view_bao_cao_tong_hop_ban_hang_mathang_khachhang_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.ban.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.ban.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp bán hàng" create="false" report="true">
+                    <field name="TEN_HANG" />
+                    <field name="MA_KHACH_HANG" />
+                    <field name="TEN_KHACH_HANG" />
+                    <field name="MA_NHOM_KH" />
+                    <field name="TEN_NHOM_KH" />
+                    <field name="DVT" />
+                    <field name="SO_LUONG_BAN" sum="Ten.truong" />
+                    <field name="DOANH_SO_BAN" sum="Ten.truong" />
+                    <field name="CHIET_KHAU" sum="Ten.truong" />
+                    <field name="SO_LUONG_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Ten.truong" />
+                    <field name="DOANH_THU_THUAN" sum="Ten.truong" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report_tong_hop_ban_hang_mathang_khachhang" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP BÁN HÀNG THEO MẶT HÀNG VÀ KHÁCH HÀNG</field>
+            <field name="res_model">bao.cao.tong.hop.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by': ['TEN_HANG'], 'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_tong_hop_ban_hang_mathang_khachhang" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_ban_hang_mathang_khachhang_tree" />
+            <field name="act_window_id" ref="open_report_tong_hop_ban_hang_mathang_khachhang" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo mặt hàng và nhân viên -->
+        <record id="view_bao_cao_tong_hop_ban_hang_mathang_nhanvien_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.ban.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.ban.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp bán hàng" create="false" report="true">
+                    <field name="TEN_HANG" />
+                    <field name="MA_NHAN_VIEN" />
+                    <field name="TEN_NHAN_VIEN" />
+                    <field name="DVT" />
+                    <field name="SO_LUONG_BAN" sum="Ten.truong" />
+                    <field name="DOANH_SO_BAN" sum="Ten.truong" />
+                    <field name="CHIET_KHAU" sum="Ten.truong" />
+                    <field name="SO_LUONG_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Ten.truong" />
+                    <field name="DOANH_THU_THUAN" sum="Ten.truong" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report_tong_hop_ban_hang_mathang_nhanvien" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP BÁN HÀNG THEO MẶT HÀNG VÀ NHÂN VIÊN</field>
+            <field name="res_model">bao.cao.tong.hop.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by': ['TEN_HANG'], 'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_tong_hop_ban_hang_mathang_nhanvien" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_ban_hang_mathang_nhanvien_tree" />
+            <field name="act_window_id" ref="open_report_tong_hop_ban_hang_mathang_nhanvien" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo Khách hàng -->
+        <record id="view_bao_cao_tong_hop_ban_hang_KhachHang_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.ban.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.ban.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp bán hàng" create="false" report="true">
+                    <field name="MA_KHACH_HANG" />
+                    <field name="TEN_KHACH_HANG" />
+                    <field name="DOANH_SO_BAN" sum="Ten.truong" />
+                    <field name="CHIET_KHAU" sum="Ten.truong" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Ten.truong" />
+                    <field name="DOANH_THU_THUAN" sum="Ten.truong" />
+                    <field name="TINH_THANH_PHO" />
+                    <field name="QUAN_HUYEN" />
+                    <field name="XA_PHUONG" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report_tong_hop_ban_hang_KhachHang" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP BÁN HÀNG THEO KHÁCH HÀNG</field>
+            <field name="res_model">bao.cao.tong.hop.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!-- <field name="context">{'group_by': ['TEN_HANG'], 'expand_all': 'true'}</field> -->
+        </record>
+        <record id="action_bao_cao_tong_hop_ban_hang_KhachHang" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_ban_hang_KhachHang_tree" />
+            <field name="act_window_id" ref="open_report_tong_hop_ban_hang_KhachHang" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo Nhân viên -->
+        <record id="view_bao_cao_tong_hop_ban_hang_nhanvien_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.ban.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.ban.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp bán hàng" create="false" report="true">
+                    <field name="MA_NHAN_VIEN" />
+                    <field name="TEN_NHAN_VIEN" />
+                    <field name="DOANH_SO_BAN" sum="Ten.truong" />
+                    <field name="CHIET_KHAU" sum="Ten.truong" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Ten.truong" />
+                    <field name="DOANH_THU_THUAN" sum="Ten.truong" />
+                    <field name="DON_VI_KINH_DOANH" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report_tong_hop_ban_hang_nhanvien" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP BÁN HÀNG THEO NHÂN VIÊN</field>
+            <field name="res_model">bao.cao.tong.hop.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!-- <field name="context">{'group_by': ['TEN_HANG'], 'expand_all': 'true'}</field> -->
+        </record>
+        <record id="action_bao_cao_tong_hop_ban_hang_nhanvien" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_ban_hang_nhanvien_tree" />
+            <field name="act_window_id" ref="open_report_tong_hop_ban_hang_nhanvien" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo Nhân viên và khách hàng -->
+        <record id="view_bao_cao_tong_hop_ban_hang_nhanvienvakh_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.ban.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.ban.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp bán hàng" create="false" report="true">
+                    <field name="MA_NHAN_VIEN" />
+                    <field name="TEN_NHAN_VIEN" />
+                    <field name="MA_KHACH_HANG" />
+                    <field name="TEN_KHACH_HANG" />
+                    <field name="DOANH_SO_BAN" sum="Ten.truong" />
+                    <field name="CHIET_KHAU" sum="Ten.truong" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Ten.truong" />
+                    <field name="DOANH_THU_THUAN" sum="Ten.truong" />
+                    <field name="TIEN_VON" sum="Ten.truong" />
+                    <field name="LAI_GOP" sum="Ten.truong" />
+                    <field name="TY_LE_LAI_GOP" />
+                    <field name="MA_NHOM_KH" />
+                    <field name="TEN_NHOM_KH" />
+                    <field name="DON_VI_KINH_DOANH" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report_tong_hop_ban_hang_nhanvienvakh" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP BÁN HÀNG THEO NHÂN VIÊN VÀ KHÁCH HÀNG</field>
+            <field name="res_model">bao.cao.tong.hop.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!-- <field name="context">{'group_by': ['TEN_HANG'], 'expand_all': 'true'}</field> -->
+        </record>
+        <record id="action_bao_cao_tong_hop_ban_hang_nhanvienvakh" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_ban_hang_nhanvienvakh_tree" />
+            <field name="act_window_id" ref="open_report_tong_hop_ban_hang_nhanvienvakh" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo Nhân viên, khách hàng và mặt hàng -->
+        <record id="view_bao_cao_tong_hop_ban_hang_nhanvien_kh_mh_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.ban.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.ban.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp bán hàng" create="false" report="true">
+                    <field name="TEN_NHAN_VIEN" />
+                    <field name="TEN_KHACH_HANG" />
+                    <field name="MA_HANG" />
+                    <field name="DVT" />
+                    <field name="SO_LUONG_BAN" sum="Ten.truong" />
+                    <field name="DOANH_SO_BAN" sum="Ten.truong" />
+                    <field name="CHIET_KHAU" sum="Ten.truong" />
+                    <field name="SO_LUONG_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Ten.truong" />
+                    <field name="DOANH_THU_THUAN" sum="Ten.truong" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report_tong_hop_ban_hang_nhanvien_kh_mh" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP BÁN HÀNG THEO NHÂN VIÊN KHÁCH HÀNG VÀ MẶT HÀNG</field>
+            <field name="res_model">bao.cao.tong.hop.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by': ['TEN_NHAN_VIEN'], 'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_tong_hop_ban_hang_nhanvien_kh_mh" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_ban_hang_nhanvien_kh_mh_tree" />
+            <field name="act_window_id" ref="open_report_tong_hop_ban_hang_nhanvien_kh_mh" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo Địa phương -->
+        <record id="view_bao_cao_tong_hop_ban_hang_diaphuong_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.ban.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.ban.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp bán hàng" create="false" report="true">
+                    <field name="TINH_THANH_PHO" />
+                    <field name="QUAN_HUYEN" />
+                    <field name="XA_PHUONG" />
+                    <field name="DOANH_SO_BAN" sum="Ten.truong" />
+                    <field name="CHIET_KHAU" sum="Ten.truong" />
+                    <!-- <field name="SO_LUONG_TRA_LAI" sum="Ten.truong" /> -->
+                    <field name="GIA_TRI_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Ten.truong" />
+                    <field name="DOANH_THU_THUAN" sum="Ten.truong" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report_tong_hop_ban_hang_diaphuong" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP BÁN HÀNG THEO ĐỊA PHƯƠNG</field>
+            <field name="res_model">bao.cao.tong.hop.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!-- <field name="context">{'group_by': ['TEN_NHAN_VIEN'], 'expand_all': 'true'}</field> -->
+        </record>
+        <record id="action_bao_cao_tong_hop_ban_hang_diaphuong" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_ban_hang_diaphuong_tree" />
+            <field name="act_window_id" ref="open_report_tong_hop_ban_hang_diaphuong" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo Đơn vị kinh doanh -->
+        <record id="view_bao_cao_tong_hop_ban_hang_donvikinhdoanh_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.ban.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.ban.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp bán hàng" create="false" report="true">
+                    <field name="MA_DON_VI" />
+                    <field name="TEN_DON_VI" />
+                    <field name="DOANH_SO_BAN" sum="Ten.truong" />
+                    <field name="CHIET_KHAU" sum="Ten.truong" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Ten.truong" />
+                    <field name="DOANH_THU_THUAN" sum="Ten.truong" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report_tong_hop_ban_hang_donvikinhdoanh" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP BÁN HÀNG THEO ĐƠN VỊ KINH DOANH</field>
+            <field name="res_model">bao.cao.tong.hop.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!-- <field name="context">{'group_by': ['TEN_NHAN_VIEN'], 'expand_all': 'true'}</field> -->
+        </record>
+        <record id="action_bao_cao_tong_hop_ban_hang_donvikinhdoanh" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_ban_hang_donvikinhdoanh_tree" />
+            <field name="act_window_id" ref="open_report_tong_hop_ban_hang_donvikinhdoanh" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo Đơn vị kinh doanh và mặt hàng-->
+        <record id="view_bao_cao_tong_hop_ban_hang_donvikinhdoanh_mh_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.ban.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.ban.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp bán hàng" create="false" report="true">
+                    <field name="TEN_DON_VI" />
+                    <field name="MA_HANG" />
+                    <field name="TEN_HANG" />
+                    <field name="DVT" />
+                    <field name="SO_LUONG_BAN" sum="Ten.truong" />
+                    <field name="SO_LUONG_KM" sum="Ten.truong" />
+                    <field name="DOANH_SO_BAN" sum="Ten.truong" />
+                    <field name="CHIET_KHAU" sum="Ten.truong" />
+                    <field name="SO_LUONG_TRA_LAI" sum="Ten.truong" />
+                    <field name="SO_LUONG_HANG_KM_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Ten.truong" />
+                    <field name="DOANH_THU_THUAN" sum="Ten.truong" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report_tong_hop_ban_hang_donvikinhdoanh_mh" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP BÁN HÀNG THEO ĐƠN VỊ KINH DOANH VÀ MẶT HÀNG</field>
+            <field name="res_model">bao.cao.tong.hop.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by': ['TEN_DON_VI'], 'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_tong_hop_ban_hang_donvikinhdoanh_mh" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_ban_hang_donvikinhdoanh_mh_tree" />
+            <field name="act_window_id" ref="open_report_tong_hop_ban_hang_donvikinhdoanh_mh" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo Nhóm khách hàng-->
+        <record id="view_bao_cao_tong_hop_ban_hang_nhomkh_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.ban.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.ban.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp bán hàng" create="false" report="true">
+                    <field name="MA_NHOM_KH" />
+                    <field name="TEN_NHOM_KH" />
+                    <field name="DOANH_SO_BAN" sum="Ten.truong" />
+                    <field name="CHIET_KHAU" sum="Ten.truong" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Ten.truong" />
+                    <field name="DOANH_THU_THUAN" sum="Ten.truong" />
+                    <field name="TIEN_VON" sum="Ten.truong" />
+                    <field name="LAI_GOP" sum="Ten.truong" />
+                    <field name="TY_LE_LAI_GOP" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report_tong_hop_ban_hang_nhomkh" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP BÁN HÀNG THEO NHÓM KHÁCH HÀNG</field>
+            <field name="res_model">bao.cao.tong.hop.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!-- <field name="context">{'group_by': ['TEN_DON_VI'], 'expand_all': 'true'}</field> -->
+        </record>
+        <record id="action_bao_cao_tong_hop_ban_hang_nhomkh" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_ban_hang_nhomkh_tree" />
+            <field name="act_window_id" ref="open_report_tong_hop_ban_hang_nhomkh" />
+        </record>
+        <!-- end -->
+        <record id="view_bao_cao_tong_hop_ban_hang_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.ban.hang.form</field>
+            <field name="model">bao.cao.tong.hop.ban.hang</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="bao_cao_so_tong_hop_ban_hang_view">
+                    <sheet>
+                        <group col="4" colspan="4">
+                            <field name="THONG_KE_THEO" colspan="4" />
+                            <field name="CHI_NHANH_ID" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" />
+                            <field name="MA_PC_NHOM_VTHH" invisible="1" />
+                            <field name="MA_PC_NHOM_KH" invisible="1" />
+                            <field name="MA_PC_NHOM_NV" invisible="1" />
+                        </group>
+                        <group col="4">
+                            <group col="2" colspan="2">
+                                <field name="KY_BAO_CAO" colspan="2" />
+                                <field name="TU_NGAY" colspan="2" />
+                                <field name="DEN_NGAY" colspan="2" />
+                                <field name="CHI_LAY_KHACH_HANG_CO_PHAT_SINH" colspan="2" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'KHACH_HANG')]}" />
+                                <field name="TINH_THANH_PHO" colspan="2" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'DIA_PHUONG')]}" />
+                                <field name="QUAN_HUYEN" colspan="2" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'DIA_PHUONG')]}" />
+                                <field name="XA_PHUONG" colspan="2" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'DIA_PHUONG')]}" />
+                            </group>
+                            <group col="2" colspan="2">
+                                <field name="DON_VI_ID" colspan="2" attrs="{'invisible': ['|','|','|',('THONG_KE_THEO', '=', 'MAT_HANG'),('THONG_KE_THEO', '=', 'MAT_HANG_KHACH_HANG'),('THONG_KE_THEO', '=', 'DON_VI_KINH_DOANH_VA_MAT_HANG'),('THONG_KE_THEO', '=', 'NHOM_KHACH_HANG')]}" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['MA_DON_VI']}" />
+                                <field name="NHAN_VIEN_ID" colspan="2" attrs="{'invisible': [('THONG_KE_THEO', 'not in', ('DIA_PHUONG','KHACH_HANG'))]}" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}" />
+                                <field name="DON_VI_TINH" colspan="2" attrs="{'invisible': ['|','|','|','|','|',('THONG_KE_THEO', '=', 'NHOM_KHACH_HANG'),('THONG_KE_THEO', '=', 'DON_VI_KINH_DOANH'),('THONG_KE_THEO', '=', 'DIA_PHUONG'),('THONG_KE_THEO', '=', 'NHAN_VIEN_VA_KHACH_HANG'),('THONG_KE_THEO', '=', 'NHAN_VIEN'),('THONG_KE_THEO', '=', 'KHACH_HANG')]}" />
+                                <field name="NHOM_VTHH_ID" colspan="2" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'],'displays':['MA']}" attrs="{'invisible': ['|','|','|','|',('THONG_KE_THEO', '=', 'NHOM_KHACH_HANG'),('THONG_KE_THEO', '=', 'NHAN_VIEN_KHACH_HANG_MATHANG'),('THONG_KE_THEO', '=', 'NHAN_VIEN_VA_KHACH_HANG'),('THONG_KE_THEO', '=', 'NHAN_VIEN'),('THONG_KE_THEO', '=', 'KHACH_HANG')]}" />
+                                <field name="NHOM_KHACH_HANG_ID" string="Nhóm KH" colspan="2" attrs="{'invisible': [('THONG_KE_THEO', 'not in', ('KHACH_HANG','MAT_HANG_KHACH_HANG','NHAN_VIEN_VA_KHACH_HANG','NHAN_VIEN_KHACH_HANG_MATHANG'))]}" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'],'displays': ['MA']}" />                                
+                                <field name="CHON_KHACH_HANG" colspan="2" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG')]}" />
+                                <field name="MAT_HANG_ID" colspan="2" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'DIA_PHUONG')]}" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã hàng', 'Tên hàng'],'displays': ['MA']}" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Sản phẩm" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_SAN_PHAM" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG')]}" />
+                                    <field name="SAN_PHAM_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}" colspan="12" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã hàng', 'Tên hàng']}" />
+                                </group>
+                                <field name="MAT_HANG_IDS_ID_MATHANG" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="TEN" string="Tên hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Sản phẩm" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG_KHACH_HANG')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_SAN_PHAM" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG_KHACH_HANG')]}" />
+                                    <field name="SAN_PHAM_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}" colspan="12" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã hàng', 'Tên hàng']}" />
+                                </group>
+                                <field name="MAT_HANG_IDS_ID_MATHANG_KH" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="TEN" string="Tên hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Khách hàng" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG_KHACH_HANG')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_KHACH_HANG" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG_KHACH_HANG')]}" />
+                                    <field name="KHACH_HANG_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI', 'MA_SO_THUE'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Địa chỉ', 'Mã số thuế']}" />
+                                </group>
+                                <field name="KHACH_HANG_IDS_ID_MATHANG_KH" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA_KHACH_HANG" string="Mã khách hàng" />
+                                        <field name="HO_VA_TEN" string="Tên khách hàng" />
+                                        <field name="DIA_CHI" string="Địa chỉ" />
+                                        <field name="MA_SO_THUE" string="Mã số thuế" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Sản phẩm" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG_NHAN_VIEN')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_SAN_PHAM" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG_NHAN_VIEN')]}" />
+                                    <field name="SAN_PHAM_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}" colspan="12" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã hàng', 'Tên hàng']}" />
+                                </group>
+                                <field name="MAT_HANG_IDS_ID_MATHANG_NV" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="TEN" string="Tên hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Nhân viên" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG_NHAN_VIEN')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_NHAN_VIEN" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG_NHAN_VIEN')]}" />
+                                    <field name="NHAN_VIEN_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_NHAN_VIEN', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Đơn vị']}" />
+                                </group>
+                                <field name="NHAN_VIEN_IDS_ID_MATHANG_NV" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_NHAN_VIEN', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA_NHAN_VIEN" string="Mã nhân viên" />
+                                        <field name="HO_VA_TEN" string="Tên nhân viên" />
+                                        <field name="DON_VI_ID" string="Đơn vị" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Khách hàng" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'KHACH_HANG')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_KHACH_HANG" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'KHACH_HANG')]}" />
+                                    <field name="KHACH_HANG_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI', 'MA_SO_THUE'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Địa chỉ', 'Mã số thuế']}" />
+                                </group>
+                                <field name="KHACH_HANG_IDS_ID_KHACH_HANG" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA_KHACH_HANG" string="Mã khách hàng" />
+                                        <field name="HO_VA_TEN" string="Tên khách hàng" />
+                                        <field name="DIA_CHI" string="Địa chỉ" />
+                                        <field name="MA_SO_THUE" string="Mã số thuế" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Nhân viên" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'NHAN_VIEN')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_NHAN_VIEN" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'NHAN_VIEN')]}" />
+                                    <field name="NHAN_VIEN_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_NHAN_VIEN', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Đơn vị']}" />
+                                </group>
+                                <field name="NHAN_VIEN_IDS_ID_NHANVIEN" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_NHAN_VIEN', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA_NHAN_VIEN" string="Mã nhân viên" />
+                                        <field name="HO_VA_TEN" string="Tên nhân viên" />
+                                        <field name="DON_VI_ID" string="Đơn vị" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Nhân viên" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'NHAN_VIEN_VA_KHACH_HANG')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_NHAN_VIEN" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'NHAN_VIEN_VA_KHACH_HANG')]}" />
+                                    <field name="NHAN_VIEN_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_NHAN_VIEN', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Đơn vị']}" />
+                                </group>
+                                <field name="NHAN_VIEN_IDS_ID_NV_KH" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_NHAN_VIEN', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA_NHAN_VIEN" string="Mã nhân viên" />
+                                        <field name="HO_VA_TEN" string="Tên nhân viên" />
+                                        <field name="DON_VI_ID" string="Đơn vị" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Khách hàng" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'NHAN_VIEN_VA_KHACH_HANG')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_KHACH_HANG" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'NHAN_VIEN_VA_KHACH_HANG')]}" />
+                                    <field name="KHACH_HANG_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI', 'MA_SO_THUE'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Địa chỉ', 'Mã số thuế']}" />
+                                </group>
+                                <field name="KHACH_HANG_IDS_ID_NV_KH" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA_KHACH_HANG" string="Mã khách hàng" />
+                                        <field name="HO_VA_TEN" string="Tên khách hàng" />
+                                        <field name="DIA_CHI" string="Địa chỉ" />
+                                        <field name="MA_SO_THUE" string="Mã số thuế" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Nhân viên" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'NHAN_VIEN_KHACH_HANG_MATHANG')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_NHAN_VIEN" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'NHAN_VIEN_KHACH_HANG_MATHANG')]}" />
+                                    <field name="NHAN_VIEN_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_NHAN_VIEN', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Đơn vị']}" />
+                                </group>
+                                <field name="NHAN_VIEN_IDS_ID_NV_KH_MH" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_NHAN_VIEN', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA_NHAN_VIEN" string="Mã nhân viên" />
+                                        <field name="HO_VA_TEN" string="Tên nhân viên" />
+                                        <field name="DON_VI_ID" string="Đơn vị" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Khách hàng" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'NHAN_VIEN_KHACH_HANG_MATHANG')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_KHACH_HANG" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'NHAN_VIEN_KHACH_HANG_MATHANG')]}" />
+                                    <field name="KHACH_HANG_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI', 'MA_SO_THUE'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Địa chỉ', 'Mã số thuế']}" />
+                                </group>
+                                <field name="KHACH_HANG_IDS_ID_NV_KH_MH" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA_KHACH_HANG" string="Mã khách hàng" />
+                                        <field name="HO_VA_TEN" string="Tên khách hàng" />
+                                        <field name="DIA_CHI" string="Địa chỉ" />
+                                        <field name="MA_SO_THUE" string="Mã số thuế" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Sản phẩm " attrs="{'invisible': [('THONG_KE_THEO', '!=', 'DON_VI_KINH_DOANH')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_SAN_PHAM" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'DON_VI_KINH_DOANH')]}" />
+                                    <field name="SAN_PHAM_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}" colspan="12" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã hàng', 'Tên hàng']}" />
+                                </group>
+                                <field name="MAT_HANG_IDS_ID_DVKD" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="TEN" string="Tên hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Sản phẩm" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'DON_VI_KINH_DOANH_VA_MAT_HANG')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_SAN_PHAM" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'DON_VI_KINH_DOANH_VA_MAT_HANG')]}" />
+                                    <field name="SAN_PHAM_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}" colspan="12" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã hàng', 'Tên hàng']}" />
+                                </group>
+                                <field name="MAT_HANG_IDS_ID_DVKD_MATHANG" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="TEN" string="Tên hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Đơn vị" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'DON_VI_KINH_DOANH_VA_MAT_HANG')]}">
+                                <field name="DON_VI_IDS_DVKD_MH" mode="tree">
+                                    <tree report="true" create="false" edit="false">
+                                        <field name="MA_DON_VI" string="Mã đơn vị" />
+                                        <field name="TEN_DON_VI" string="Tên đơn vị" />
+                                        <field name="BAC" string="Bậc" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Nhóm khách hàng" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'NHOM_KHACH_HANG')]}">
+                                <field name="NHOM_KH_IDS" mode="tree">
+                                    <tree report="true" create="false" edit="false">
+                                        <field name="MA" string="Mã nhóm" />
+                                        <field name="TEN" string="Tên nhóm" />
+                                        <field name="BAC" string="Bậc" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Khách hàng" attrs="{'invisible': ['|',('CHON_KHACH_HANG', '=',False),('THONG_KE_THEO', '!=', 'MAT_HANG')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_KHACH_HANG" nolabel="1" colspan="12" attrs="{'invisible': [('CHON_KHACH_HANG', '=', False)]}" />
+                                    <field name="KHACH_HANG_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI', 'MA_SO_THUE'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Địa chỉ', 'Mã số thuế']}" />
+                                </group>
+                                <field name="CHON_KHACH_HANG_IDS" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA_KHACH_HANG" string="Mã khách hàng" />
+                                        <field name="HO_VA_TEN" string="Tên khách hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_tong_hop_ban_hang_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Tổng hợp bán hàng</field>
+            <field name="res_model">bao.cao.tong.hop.ban.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_ban_hang_tham_so_form" />
+        </record>
+        <!-- <menuitem name="Tổng hợp bán hàng" action="bao_cao.open_bao_cao_tong_hop_ban_hang_tham_so_form" id="menu_bao_cao_tong_hop_ban_hang" parent="" sequence="0" /> -->
+    </data>
+</odoo>

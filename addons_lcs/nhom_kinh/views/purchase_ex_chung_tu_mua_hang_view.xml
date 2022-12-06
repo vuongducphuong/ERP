@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+	<data>
+		<record id="view_purchase_document_form_inherit" model="ir.ui.view">
+			<field name="name">purchase.document.form.inherit</field>
+			<field name="model">purchase.document</field>
+			<field name="inherit_id" ref="purchase_ex.purchase_document_form"/>
+			<field name="arch" type="xml">
+				<data>
+					<xpath expr="//field[@name='CHI_TIET_IDS']//tree//field[@name='BAN_KINH']" position="replace">
+					</xpath>
+					<xpath expr="//field[@name='CHI_TIET_IDS']//tree//field[@name='CHIEU_CAO']" position="replace">
+					</xpath>
+					<xpath expr="//field[@name='CHI_TIET_IDS']//tree//field[@name='LUONG']" position="attributes">
+						<attribute name="string">Tấm</attribute>
+					</xpath>
+				</data>
+			</field>
+		</record>
+	</data>
+</odoo>

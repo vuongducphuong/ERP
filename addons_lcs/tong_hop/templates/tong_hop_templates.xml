@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="tong_hop assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/tong_hop/static/src/js/tong_hop_chung_tu_ghi_so_view.js"></script>
+                <script type="text/javascript" src="/tong_hop/static/src/js/tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi_view.js"></script>
+                
+                <script type="text/javascript" src="/tong_hop/static/src/js/ctgs_chon_chung_tu_form_view.js"></script>
+                <script type="text/javascript" src="/tong_hop/static/src/js/tong_hop_danh_gia_lai_tai_khoan_ngoai_te_view.js"></script>
+                <script type="text/javascript" src="/tong_hop/static/src/js/tong_hop_chung_tu_nghiep_vu_khac_view.js"></script>
+                <script type="text/javascript" src="/tong_hop/static/src/js/phan_bo_chi_phi_tra_truoc_view.js"></script>
+                <script type="text/javascript" src="/tong_hop/static/src/js/tinh_ty_gia_xuat_quy_form_view.js"></script> 
+                <!-- <script type="text/javascript" src="/tong_hop/static/src/js/tong_hop_bctc_chon_nghiep_vu_va_hoat_dong_lctt_form_view.js"></script> -->
+                <!-- <script type="text/javascript" src="/tong_hop/static/src/js/tong_hop_bao_cao_tai_chinh_view.js"></script> -->
+
+                
+            </xpath>
+        </template>
+    </data>
+</odoo>

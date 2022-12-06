@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_supply_ghi_giam_form" model="ir.ui.view">
+            <field name="name">supply.ghi.giam.form</field>
+            <field name="model">supply.ghi.giam</field>
+            <field name="arch" type="xml">
+                <form string="Ghi giảm công cụ dụng cụ">
+                    <header>
+                        <button name="action_ghi_so" string="Ghi sổ" type="object" class="oe_highlight oe_read_only" states="chua_ghi_so" />
+                        <button id="action_bo_ghi_so" string="Bỏ ghi" states="da_ghi_so" />
+                        <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so" />
+                    </header>
+                    <sheet>
+                        <group col="6" >
+                            <group col="4" colspan="4" string="Thông tin chung">
+                                <field name="LY_DO_GHI_GIAM" colspan="4" />
+                                <field name="THAM_CHIEU"  invisible="1" readonly="1" colspan="4" />
+                            </group>
+                            <group colspan="2" string="Chứng từ">
+                                <field name="NGAY_CHUNG_TU" />
+                                <field name="SO_CHUNG_TU" />
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1. Chi tiết">
+                                <field name="SUPPLY_CCDC_GHI_GIAM_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <!-- <field name="MA_CCDC_ID" fixed_column="True" options="{'columns': ['MA_CCDC', 'TEN_CCDC'], 'strings': ['Mã CCDC', 'Tên CCDC'],'displays': ['MA_CCDC']}" /> -->
+										<field name="MA_CCDC_ID" fixed_column="True" options="{'columns': ['MA_CCDC', 'TEN_CCDC'], 'strings': ['Mã CCDC', 'Tên CCDC'],'displays': ['MA_CCDC']}" />
+                                        <!-- <field name="TEN_CCDC" fixed_column="True" readonly="1" /> -->
+										<field name="TEN_CCDC" fixed_column="True" readonly="1" />
+                                        <field name="DON_VI_SU_DUNG_ID" />
+                                        <field name="SO_LUONG_DANG_DUNG" readonly="1" sum="Tổng" />
+                                        <field name="SO_LUONG_GHI_GIAM" sum="Tổng" />
+                                        <field name="GIA_TRI_CON_LAI_CUA_CCDC_GHI_GIAM" readonly="1" sum="Tổng" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_supply_ghi_giam_tree" model="ir.ui.view">
+            <field name="name">supply.ghi.giam.tree</field>
+            <field name="model">supply.ghi.giam</field>
+            <field name="arch" type="xml">
+                <tree string="Ghi giảm công cụ dụng cụ" decoration-info="state=='chua_ghi_so'">
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="LY_DO_GHI_GIAM" width="0"/>
+                    <field name="GIA_TRI_CON_LAI" sum="Tổng" width="0"/>
+                    <field name="CHI_NHANH_ID" />
+					<field name="state" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_supply_ghi_giam" model="ir.actions.act_window">
+            <field name="name">Ghi giảm công cụ dụng cụ</field>
+            <field name="res_model">supply.ghi.giam</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_supply_ghi_giam_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_supply_ghi_giam_tree" />
+            <field name="act_window_id" ref="open_menu_supply_ghi_giam" />
+        </record>
+        <record id="action_supply_ghi_giam_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_supply_ghi_giam_form" />
+            <field name="act_window_id" ref="open_menu_supply_ghi_giam" />
+        </record>
+        <!-- <menuitem name="Công cụ dụng cụ Ghi giảm"
+                  action="supply.open_menu_supply_ghi_giam"
+                  id="menu_supply_ghi_giam"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_supply_ghi_giam_1" model="ir.sequence">
+            <field name="name">supply_ghi_giam SO_CHUNG_TU sequence</field>
+            <field name="code">supply_ghi_giam_SO_CHUNG_TU</field>
+            <field name="prefix">GGCC</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

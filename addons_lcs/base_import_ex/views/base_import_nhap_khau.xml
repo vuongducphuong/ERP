@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="action_nhap_khau_du_lieu" model="ir.actions.client">
+            <field name="name">Nhập khẩu dữ liệu</field>
+            <field name="tag">import_ex</field>
+        </record>
+    </data>
+
+    <data>
+        <record id="action_nhap_khau_du_lieu_ban_dau_tu_excel" model="ir.actions.client">
+            <field name="name">Nhập khẩu dữ liệu</field>
+            <field name="tag">import_excel_ex</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_dsct_phat_sinh_ma_quy_cach_form_tham_so_form" model="ir.ui.view">
+            <field name="name">danh.muc.dsct.phat.sinh.ma.quy.cach.form.form</field>
+            <field name="model">danh.muc.dsct.phat.sinh.ma.quy.cach.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="danh_muc_danh_sach_chung_tu_phat_sinh_ma_quy_cach">
+                    <sheet>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="DANH_MUC_DSCT_PHAT_SINH_MA_QUY_CACH_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false">
+                                        <field name="NGAY_HACH_TOAN" string="Ngày hạch toán" />
+                                        <field name="SO_CHUNG_TU_SO_TC" string="Số chứng từ (sổ TC)" />
+                                        <field name="SO_CHUNG_TU_SO_QT" string="Số chứng từ (sổ QT)" />
+                                        <field name="DIEN_GIAI" string="Diễn giải" />
+                                        <field name="LOAI_CHUNG_TU" string="Loại chứng từ" />
+                                        <field name="CHI_NHANH" string="Chi nhánh" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <footer>
+                            <button name="btn_xoa_ma_quy_cach" string="Xóa mã quy cách" />
+                            <button name="button_cancel" string="Đóng" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_danh_muc_dsct_phat_sinh_ma_quy_cach_form_tham_so_form" model="ir.actions.act_window">
+            <field name="name">DSCT phát sinh mã quy cách form</field>
+            <field name="res_model">danh.muc.dsct.phat.sinh.ma.quy.cach.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_danh_muc_dsct_phat_sinh_ma_quy_cach_form_tham_so_form" />
+        </record>
+        <record id="action_open_danh_muc_dsct_phat_sinh_ma_quy_cach_form_form" model="ir.actions.act_window">
+            <field name="name">DSCT phát sinh mã quy cách form</field>
+            <field name="res_model">danh.muc.dsct.phat.sinh.ma.quy.cach.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+        <!-- <menuitem name="DSCT phát sinh mã quy cách form" action="danh_muc.open_danh_muc_dsct_phat_sinh_ma_quy_cach_form_tham_so_form" id="menu_danh_muc_dsct_phat_sinh_ma_quy_cach_form" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="tien_ich assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/tien_ich/static/src/js/thiet_lap_bao_cao_tai_chinh_view.js"></script>
+                <script type="text/javascript" src="/tien_ich/static/src/js/thiet_lap_bao_cao_tai_chinh_chi_tiet_view.js"></script>
+                <script type="text/javascript" src="/tien_ich/static/src/js/thiet_lap_bao_cao_tai_chinh_thnvdvnn_ky_truoc_chuyen_sang_view.js"></script>
+                <script type="text/javascript" src="/tien_ich/static/src/js/thiet_lap_bao_cao_tai_chinh_thnvdvnn_phai_nop_trong_ky_view.js"></script>
+                <script type="text/javascript" src="/tien_ich/static/src/js/thiet_lap_bao_cao_tai_chinh_thnvdvnn_da_nop_trong_ky_view.js"></script>
+                <script type="text/javascript" src="/tien_ich/static/src/js/tien_ich_kiem_tra_doi_chieu_chung_tu_so_sach_view.js"></script>
+                <script type="text/javascript" src="/tien_ich/static/src/js/tien_ich_bao_cao_view.js"></script>
+                <script type="text/javascript" src="/tien_ich/static/src/js/tien_ich_danh_lai_so_chung_tu_view.js"></script>
+                <script type="text/javascript" src="/tien_ich/static/src/js/tien_ich_ghi_so_bo_ghi_so_theo_lo_view.js"></script>
+				
+				<script type="text/javascript" src="/tien_ich/static/src/js/tong_hop_bctc_chon_nghiep_vu_va_hoat_dong_lctt_form_view.js"></script>
+                <script type="text/javascript" src="/tien_ich/static/src/js/tong_hop_bao_cao_tai_chinh_view.js"></script>
+                <script type="text/javascript" src="/tien_ich/static/src/js/tien_ich_xay_dung_cong_thuc_thuyet_minh_bctc_view.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

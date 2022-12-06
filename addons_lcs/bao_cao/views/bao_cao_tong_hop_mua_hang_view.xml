@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_tong_hop_mua_hang_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.mua.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.mua.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp mua hàng" create="false" report="true">
+                    <field name="MA_HANG" />
+                    <field name="TEN_HANG" />
+                    <field name="DVT" />
+                    <field name="SO_LUONG_MUA" sum="Ten.truong" />
+                    <field name="GIA_TRI_MUA" sum="Ten.truong" />
+                    <field name="CHIET_KHAU" sum="Ten.truong" />
+                    <field name="SO_LUONG_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Ten.truong" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Ten.truong" />
+                    <field name="TONG_GIA_TRI_MUA" sum="Ten.truong" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__tong_hop_mua_hang" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP MUA HÀNG THEO MẶT HÀNG</field>
+            <field name="res_model">bao.cao.tong.hop.mua.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!--<field name="context">{'group_by': ['kho_id'], 'header_struct': [['Đầu kỳ', ['sl_dau_ky', ['XYZ', ['gt_dau_ky', 'sl_nhap_kho']]]], ['Cuối kỳ', ['sl_cuoi_ky', 'gt_cuoi_ky','gt_nhap_kho']]], 'expand_all': 'true'}</field>-->
+        </record>
+        <record id="action_bao_cao_tong_hop_mua_hang" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_mua_hang_tree" />
+            <field name="act_window_id" ref="open_report__tong_hop_mua_hang" />
+        </record>
+        <!-- Thống kê theo nhà cung cấp -->
+        <record id="view_bao_cao_tong_hop_mua_hang_nhacungcap_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.mua.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.mua.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp mua hàng" create="false" report="true">
+                    <field name="MA_NHA_CUNG_CAP" />
+                    <field name="TEN_NHA_CUNG_CAP" />
+                    <field name="GIA_TRI_MUA" sum="Tổng" />
+                    <field name="CHIET_KHAU" sum="Tổng" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Tổng" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Tổng" />
+                    <field name="TONG_GIA_TRI_MUA" sum="Tổng" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__bao_cao_tong_hop_mua_hang_nhacungcap" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP MUA HÀNG THEO NHÀ CUNG CẤP</field>
+            <field name="res_model">bao.cao.tong.hop.mua.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!--<field name="context">{'group_by': ['kho_id'], 'header_struct': [['Đầu kỳ', ['sl_dau_ky', ['XYZ', ['gt_dau_ky', 'sl_nhap_kho']]]], ['Cuối kỳ', ['sl_cuoi_ky', 'gt_cuoi_ky','gt_nhap_kho']]], 'expand_all': 'true'}</field>-->
+        </record>
+        <record id="action_bao_cao_tong_hop_mua_hang_nhacungcap" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_mua_hang_nhacungcap_tree" />
+            <field name="act_window_id" ref="open_report__bao_cao_tong_hop_mua_hang_nhacungcap" />
+        </record>
+        <!--  -->
+        <!-- Thống kê theo mặt hàng và nhà cung cấp -->
+        <record id="view_bao_cao_tong_hop_mua_hang_mathang_nhacungcap_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.mua.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.mua.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp mua hàng" create="false" report="true">
+                    <field name="MA_NHA_CUNG_CAP" />
+                    <field name="TEN_NHA_CUNG_CAP" />
+                    <field name="DVT" />
+                    <field name="SO_LUONG_MUA" sum="Tổng" />
+                    <field name="GIA_TRI_MUA" sum="Tổng" />
+                    <field name="CHIET_KHAU" sum="Tổng" />
+                    <field name="SO_LUONG_TRA_LAI" sum="Tổng" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Tổng" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Tổng" />
+                    <field name="TONG_GIA_TRI_MUA" sum="Tổng" />
+                    <field name="TEN_HANG" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__bao_cao_tong_hop_mua_hang_mathang_nhacungcap" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP MUA HÀNG THEO MẶT HÀNG VÀ NHÀ CUNG CẤP</field>
+            <field name="res_model">bao.cao.tong.hop.mua.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by': ['TEN_HANG'], 'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_tong_hop_mua_hang_mathang_nhacungcap" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_mua_hang_mathang_nhacungcap_tree" />
+            <field name="act_window_id" ref="open_report__bao_cao_tong_hop_mua_hang_mathang_nhacungcap" />
+        </record>
+        <!-- Thống kê theo mặt hàng và nhân viên -->
+        <record id="view_bao_cao_tong_hop_mua_hang_mathang_nhanvien_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.mua.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.mua.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp mua hàng" create="false" report="true">
+                    <field name="MA_NHAN_VIEN" />
+                    <field name="TEN_NHAN_VIEN" />
+                    <field name="DVT" />
+                    <field name="SO_LUONG_MUA" sum="Tổng" />
+                    <field name="GIA_TRI_MUA" sum="Tổng" />
+                    <field name="CHIET_KHAU" sum="Tổng" />
+                    <field name="SO_LUONG_TRA_LAI" sum="Tổng" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Tổng" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Tổng" />
+                    <field name="TONG_GIA_TRI_MUA" sum="Tổng" />
+                    <field name="TEN_HANG" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__bao_cao_tong_hop_mua_hang_mathang_nhanvien" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP MUA HÀNG THEO MẶT HÀNG VÀ NHÂN VIÊN</field>
+            <field name="res_model">bao.cao.tong.hop.mua.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by': ['TEN_HANG'], 'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_tong_hop_mua_hang_mathang_nhanvien" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_mua_hang_mathang_nhanvien_tree" />
+            <field name="act_window_id" ref="open_report__bao_cao_tong_hop_mua_hang_mathang_nhanvien" />
+        </record>
+        <!-- Thống kê theo nhà cung cấp và công trình -->
+        <record id="view_bao_cao_tong_hop_mua_hang_nhacc_congtrinh_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.mua.hang.tree</field>
+            <field name="model">bao.cao.tong.hop.mua.hang</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tổng hợp mua hàng" create="false" report="true">
+                    <field name="TEN_HANG" />
+                    <field name="DVT" />
+                    <field name="SO_LUONG_MUA" sum="Tổng" />
+                    <field name="GIA_TRI_MUA" sum="Tổng" />
+                    <field name="CHIET_KHAU" sum="Tổng" />
+                    <field name="SO_LUONG_TRA_LAI" sum="Tổng" />
+                    <field name="GIA_TRI_TRA_LAI" sum="Tổng" />
+                    <field name="GIA_TRI_GIAM_GIA" sum="Tổng" />
+                    <field name="TONG_SO_LUONG_MUA" sum="Tổng" />
+                    <field name="TONG_GIA_TRI_MUA" sum="Tổng" />
+                    <field name="TEN_NHA_CUNG_CAP" />
+                    <field name="TEN_CONG_TRINH" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__bao_cao_tong_hop_mua_hang_nhacc_congtrinh" model="ir.actions.act_window">
+            <field name="name">TỔNG HỢP MUA HÀNG THEO NHÀ CUNG CẤP VÀ CÔNG TRÌNH</field>
+            <field name="res_model">bao.cao.tong.hop.mua.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by': ['TEN_NHA_CUNG_CAP','TEN_CONG_TRINH'],'expand_all': 'true'}</field>
+        </record>
+        <record id="action_bao_cao_tong_hop_mua_hang_nhacc_congtrinh" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_mua_hang_nhacc_congtrinh_tree" />
+            <field name="act_window_id" ref="open_report__bao_cao_tong_hop_mua_hang_nhacc_congtrinh" />
+        </record>
+        <!-- end -->
+        <record id="view_bao_cao_tong_hop_mua_hang_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.tong.hop.mua.hang.form</field>
+            <field name="model">bao.cao.tong.hop.mua.hang</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="bao_cao_tong_hop_mua_hang_view">
+                    <sheet>
+                        <group col="4">
+                            <field name="THONG_KE_THEO" colspan="4" />
+                            <field name="CHI_NHANH_ID" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" />
+                            <field name="MA_PC_NHOM_VTHH" invisible="1" />
+                            <field name="MA_PC_NHOM_NCC" invisible="1" />
+                        </group>
+                        <group col="4">
+                            <group col="2" colspan="2">
+                                <field name="KY_BAO_CAO" colspan="2" />
+                                <field name="TU" colspan="2" />
+                                <field name="DEN" colspan="2" />
+                            </group>
+                            <group col="2" colspan="2">
+                                <field name="NHOM_VTHH_ID" colspan="2" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'],'displays':['MA']}" attrs="{'invisible': ['|',('THONG_KE_THEO', '=', 'NHA_CUNG_CAP'),('THONG_KE_THEO', '=', 'NHA_CUNG_CAP_VA_CONG_TRINH')]}" />
+                                <field name="NHOM_NCC_ID" colspan="2" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'],'displays':['MA']}" attrs="{'invisible': ['|',('THONG_KE_THEO', '=', 'MAT_HANG'),('THONG_KE_THEO', '=', 'MAT_HANG_VA_NHAN_VIEN')]}" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Sản phẩm" attrs="{'invisible': [('THONG_KE_THEO', 'not in',('MAT_HANG','MAT_HANG_VA_NHA_CUNG_CAP','MAT_HANG_VA_NHAN_VIEN'))]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_SAN_PHAM" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', 'not in',('MAT_HANG','MAT_HANG_VA_NHA_CUNG_CAP','MAT_HANG_VA_NHAN_VIEN'))]}" />
+                                    <field name="SAN_PHAM_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}" colspan="12" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã hàng', 'Tên hàng']}" />
+                                </group>
+                                <field name="Sanpham_ids" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="TEN" string="Tên hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Nhân viên" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG_VA_NHAN_VIEN')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_NHAN_VIEN" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'MAT_HANG_VA_NHAN_VIEN')]}" />
+                                    <field name="NHAN_VIEN_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_NHAN_VIEN', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị']}" />
+                                </group>
+                                <field name="Nhanvien_ids" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_NHAN_VIEN', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA_NHAN_VIEN" string="Mã nhân viên" />
+                                        <field name="HO_VA_TEN" string="Tên nhân viên" />
+                                        <field name="DON_VI_ID" string="Đơn vị" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Nhà cung cấp" attrs="{'invisible': [('THONG_KE_THEO', 'not in', ('NHA_CUNG_CAP','MAT_HANG_VA_NHA_CUNG_CAP','NHA_CUNG_CAP_VA_CONG_TRINH'))]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_NHA_CUNG_CAP" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', 'not in', ('NHA_CUNG_CAP','MAT_HANG_VA_NHA_CUNG_CAP','NHA_CUNG_CAP_VA_CONG_TRINH'))]}" />
+                                    <field name="NHA_CUNG_CAP_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_NHA_CUNG_CAP', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE'], 'strings': ['Mã nhà cung cấp', 'Tên nhà cung cấp','Địa chỉ','Mã số thuế']}" />
+                                </group>
+                                <field name="Nha_cung_cap_ids" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_NHA_CUNG_CAP', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA_NHA_CUNG_CAP" string="Mã NCC" />
+                                        <field name="HO_VA_TEN" string="Tên NCC" />
+                                        <field name="DIA_CHI" string="Địa chỉ" />
+                                        <field name="MA_SO_THUE" string="Mã số thuế" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Công trình" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'NHA_CUNG_CAP_VA_CONG_TRINH')]}">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_CONG_TRINH" nolabel="1" colspan="12" attrs="{'invisible': [('THONG_KE_THEO', '!=', 'NHA_CUNG_CAP_VA_CONG_TRINH')]}" />
+                                    <field name="CONG_TRINH_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_CONG_TRINH', '=', True)]}" colspan="12" options="{'columns': ['MA_CONG_TRINH', 'TEN_CONG_TRINH','LOAI_CONG_TRINH.name'], 'strings': ['Mã công trình', 'Tên công trình','Loại công trình']}" />
+                                </group>
+                                <field name="Congtrinh_ids" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_CONG_TRINH', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA_CONG_TRINH" string="Mã công trình" />
+                                        <field name="name" string="Tên công trình" />
+                                        <field name="LOAI_CONG_TRINH" string="Loại công trình" />
+                                        <field name="BAC" string="Bậc" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_tong_hop_mua_hang_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Tổng hợp mua hàng</field>
+            <field name="res_model">bao.cao.tong.hop.mua.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_tong_hop_mua_hang_tham_so_form" />
+        </record>
+        <!-- <menuitem name="Tổng hợp mua hàng" action="bao_cao.open_bao_cao_tong_hop_mua_hang_tham_so_form" id="menu_bao_cao_tong_hop_mua_hang" parent="" sequence="0" /> -->
+    </data>
+</odoo>

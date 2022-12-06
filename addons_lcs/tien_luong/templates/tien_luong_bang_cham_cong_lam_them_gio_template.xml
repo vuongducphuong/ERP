@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="tien_luong_bang_cham_cong_chi_tiet_master">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-12 text-left truong-gia-tri-kieu-text-dat-tren-header">
+                        <span t-esc="o.get_ten_cong_ty()" />
+                        <br />
+                        <span t-esc="o.get_dia_chi_cong_ty()" />
+                    </div>
+                </div>
+                <div class="row" style="margin: 0px;">
+                    <div class="col-xs-12 text-center">
+                        <div class="tieu-de-cua-bao-cao">
+                            <span>
+                                <strong>BẢNG CHẤM CÔNG</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        <div class="tieu-de-cua-bao-cao" style="font-size: 12pt;" >
+                            <span>
+                                <i>Tháng</i> 
+                            </span>
+                            <span>
+                                <i>
+                                    <span t-if="o.thang" t-field="o.thang" style="margin-left:5px;margin-right:5px;"/>
+                                    <t t-if="not o.thang" t-esc="'....'" />
+                                </i>
+                            </span>
+                            <span>
+                                <i>năm</i> 
+                            </span>
+                            <span>
+                                <i>
+                                    <span t-if="o.nam" t-field="o.nam" style="margin-left:5px;"/>
+                                    <t t-if="not o.nam" t-esc="'....'" />
+                                </i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        <div class="tieu-de-cua-bao-cao" style="font-size: 12pt;" >
+                            <span>
+                                <i>Chi nhánh:</i> 
+                            </span>
+                            <span>
+                                <i>
+                                    <span t-if="o.CHI_NHANH_ID" t-field="o.CHI_NHANH_ID" style="margin-left:5px;"/>
+                                    <t t-if="not o.CHI_NHANH_ID" t-call="danh_muc.empty_line" />
+                                </i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--Table-->
+                <div class="row" style="margin-left: 0px;margin-right: 0px;margin-top:5px;">
+                    <table class="table table-condensed table-bordereds" style="font-size:12px;border-collapse: collapse;table-layout: auto;">
+                        <thead>
+                            <tr style="border: 1px solid black;">
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;width: 0.8cm;border: 1px solid black;font-size: 11px;" colspan="3">
+                                    <strong>Thông tin nhân viên</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;" colspan="31">
+                                    <strong>Giờ công trong kỳ</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;" rowspan="2">
+                                    <strong>Số công hưởng 100% lương</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;" rowspan="2">
+                                    <strong>Số công không hưởng 100% lương</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;" colspan="3">
+                                    <strong>Làm thêm ban ngày (giờ công)</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;" colspan="3">
+                                    <strong>Làm thêm ban đêm (giờ công)</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;" rowspan="2">
+                                    <strong>Tổng làm thêm</strong>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;width: 0.8cm;border: 1px solid black;font-size: 11px;">
+                                    <strong>STT</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;">
+                                    <strong>Mã nhân viên</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 3cm;">
+                                    <strong>Tên nhân viên</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>1</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>2</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>3</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>4</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>5</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>6</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>7</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>8</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>9</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>10</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>11</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>12</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>13</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>14</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>15</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>16</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>17</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>18</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>19</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>20</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>21</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>22</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>23</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>24</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>25</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>26</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>27</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>28</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>29</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>30</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>31</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>Ngày thường</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>Ngày thứ 7, chủ nhật</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>Ngày lễ, tết</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>Ngày thường</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>Ngày thứ 7, chủ nhật</strong>
+                                </th>
+                                <th class="text-center tieu-de-cot-cua-bang" style="vertical-align: middle;border: 1px solid black;font-size: 11px;width: 0.8cm;">
+                                    <strong>Ngày lễ, tết</strong>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="so_thu_tu" t-value="0"></t>
+                            <tr t-foreach="o.TIEN_LUONG_BANG_CHAM_CONG_CHI_TIET_DETAIL_IDS" t-as="line">
+                                <t t-set="so_thu_tu" t-value="so_thu_tu + 1"></t>
+                                <td class="text-center" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-esc="so_thu_tu"></span>
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.MA_NHAN_VIEN" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.TEN_NHAN_VIEN" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_1" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_2" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_3" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_4" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_5" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_6" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_7" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_8" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_9" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_10" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_11" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_12" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_13" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_14" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_15" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_16" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_17" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_18" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_19" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_20" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_21" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_22" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_23" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_24" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_25" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_26" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_27" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_28" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_29" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_30" />
+                                </td>
+                                <td class="text-left" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_31" />
+                                </td>
+                                <td class="text-right" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.SO_CONG_HUONG" />
+                                </td>
+                                <td class="text-right" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.SO_CONG_KHONG_HUONG" />
+                                </td>
+                                <td class="text-right" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_THUONG_BAN_NGAY" />
+                                </td>
+                                <td class="text-right" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.THU_BAY_CHU_NHAT_BAN_NGAY" />
+                                </td>
+                                <td class="text-right" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.LE_TET_BAN_NGAY" />
+                                </td>
+                                <td class="text-right" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.NGAY_THUONG_BAN_DEM" />
+                                </td>
+                                <td class="text-right" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.THU_7_CHU_NHAT_BAN_DEM" />
+                                </td>
+                                <td class="text-right" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.LE_TET_BAN_DEM" />
+                                </td>
+                                <td class="text-right" style="border: 1px solid black;font-size: 11px;">
+                                    <span t-field="line.TONG_LAM_THEM" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 text-center "></div>
+                    <div class="col-xs-4 text-center "></div>
+                    <div class="col-xs-4 text-center " style="margin-top: -15px;">
+                        <span>
+                            <i>Ngày ..... tháng ..... năm ...........</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col-xs-4 text-center ">
+                        <span class="nguoi-ky">Người chấm công</span>
+                        <br />
+                        <span style="font-style: italic;">(Ký, họ tên)</span>
+                    </div>
+                    <div class="col-xs-4 text-center ">
+                        <span class="nguoi-ky">Phụ trách bộ phận</span>
+                        <br />
+                        <span style="font-style: italic;">(Ký, họ tên)</span>
+                    </div>
+                    <div class="col-xs-4 text-center ">
+                        <span class="nguoi-ky">Người duyệt</span>
+                        <br />
+                        <span style="font-style: italic;">(Ký, họ tên)</span>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="template_tien_luong_bang_cham_cong_chi_tiet_master">
+        <t t-call="web.html_container">
+            <t t-set="data_paper_format" t-value="'A4-ngang'" />
+            <t t-foreach="docs" t-as="o">
+                <t t-call="tien_luong.tien_luong_bang_cham_cong_chi_tiet_master" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="Bảng chấm công (làm thêm giờ)" id="action_template_tien_luong_bang_cham_cong_chi_tiet_master" model="tien.luong.bang.cham.cong.chi.tiet.master" report_type="qweb-html" name="tien_luong.template_tien_luong_bang_cham_cong_chi_tiet_master" file="tien_luong.template_tien_luong_bang_cham_cong_chi_tiet_master" print_report_name="Bảng chấm công chi tiết master" />
+    </data>
+</odoo>

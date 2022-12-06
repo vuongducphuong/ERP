@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_account_ex_ton_kho_vat_tu_hang_hoa_master_form" model="ir.ui.view">
+            <field name="name">account.ex.ton.kho.vat.tu.hang.hoa.master.form</field>
+            <field name="model">account.ex.ton.kho.vat.tu.hang.hoa.master</field>
+            <field name="arch" type="xml">
+                <form string="Tồn kho vật tư hàng hóa master" cloudify_js="account_ex_ton_kho_vthh_form_view">
+                    <sheet>
+                        <group col="6">
+                            <group colspan="2">
+                                <field name="KHO_ID" options="{'columns': ['MA_KHO', 'TEN_KHO'], 'strings': ['Mã kho', 'Tên kho'],'displays': ['MA_KHO']}" />
+                            </group>
+                            <group colspan="2"></group>
+                            <group colspan="2"></group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="">
+                                <field name="ACCOUNT_EX_TON_KHO_VAT_TU_HANG_HOA_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="MA_HANG_ID" string="Mã hàng" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã hàng', 'Tên hàng'],'displays': ['MA']}" />
+                                        <field name="TEN_HANG" readonly="1" />
+                                        <field name="LIST_NHOM_VTHH" readonly="1" />
+                                        <field name="DVT_ID" />
+                                        <field name="SO_LUONG" sum=" Total amoun " />
+                                        <field name="GIA_TRI_TON" sum=" Total amount " />
+                                        <field name="SO_LO" />
+                                        <field name="HAN_SU_DUNG" />
+                                        <field name="NHAP_MA_QUY_CACH" string="Nhập mã quy cách" linked="true" />
+                                        <field name="DVT_ID" string="Đơn vị chính (ĐVC)" readonly="1" />
+                                        <field name="TY_LE_CHUYEN_DOI_THEO_DVT_CHINH" string="Tỷ lệ chuyển đổi" />
+                                        <field name="TOAN_TU_QUY_DOI" string="Phép tính" readonly="1" />
+                                        <field name="SO_LUONG_THEO_DVT_CHINH" string="Số lượng theo(ĐVC)" sum=" Total amount " />
+                                        <field name="THEO_DOI_THEO_MA_QUY_CACH" invisible="1" />
+                                        <field name="KHO_ID" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

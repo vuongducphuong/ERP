@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_luong_hach_toan_chi_phi_luong_form_tham_so_tham_so_form" model="ir.ui.view">
+            <field name="name">tien.luong.hach.toan.chi.phi.luong.form.tham.so.form</field>
+            <field name="model">tien.luong.hach.toan.chi.phi.luong.form.tham.so</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="tien_luong_hach_toan_chi_phi_luong_tham_so_form_view">
+                    <sheet>
+                        <group col="2">
+                            <field name="BANG_LUONG" options="{'columns': ['TEN_BANG_LUONG'], 'strings': ['Tên bảng lương'],'displays':['TEN_BANG_LUONG']}" colspan="2" required="True" />
+                        </group>
+                        
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+    </data>
+    <data noupdate="1"></data>
+</odoo>

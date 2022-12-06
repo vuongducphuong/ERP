@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="b01_dn_bang_can_doi_ke_toan">
+        <t t-call="web.external_layout">
+            <div class="page" style="margin-left: 15px;margin-right: 15px;">
+                <div class="col-xs-12 text-left" style="padding-left: 0px;padding-right: 0px;">
+                    <div class="col-xs-7 text-left truong-thong-tin-dat-tren-header" style="padding-left: 0px;padding-right: 0px;">
+                        <t t-call="bao_cao.external_layout_header" />
+                    </div>
+                    <div class="col-xs-5 text-center" style="padding-left: 0px;padding-right: 0px;">
+                        <div class="form-no">
+                            <span>
+                                Mẫu số: B01-DN
+                            </span>
+                            <br />
+                        </div>
+                        <div class="issue-by">
+                            <span>(Ban hành theo Thông tư số 200/2014/TT-BTC</span>
+                            <br />
+                            <span>Ngày 22/12/2014 của Bộ Tài chính)</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xs-12 text-center report-title" style="padding-left: 0px;padding-right: 0px;">
+                    <span>BẢNG CÂN ĐỐI KẾ TOÁN</span>
+                </div>
+
+                <div class="col-xs-12 text-center" style="padding-left: 0px;padding-right: 0px;">
+                    <div class="report-sub-title-1-italic-bold">
+                        <span t-esc="added_data.get('sub_title')" />
+                    </div>
+                </div>
+
+                <div class="col-xs-12 text-center report-sub-title-1-italic-bold" style="padding-left: 0px;padding-right: 0px;">
+                    <span>
+                        (Áp dụng cho doanh nghiệp đáp ứng giả định hoạt động liên tục)
+                    </span>
+                </div>
+
+                <div class="col-xs-12 text-right signer-sub-title" style="padding-left: 0px;padding-right: 0px;">
+                    <span>
+                        Đơn vị tính: VND
+                    </span>
+                </div>
+
+                <!--Table-->
+                <div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
+                    <table style="border: 1px solid black;margin-bottom: 0px; width: 100%;">
+                        <thead>
+                            <tr class="detail-header">
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 82px;">
+                                    <span>Chỉ tiêu</span>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 13px;">
+                                    <span>Mã số</span>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 26px;">
+                                    <span>Thuyết minh</span>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 32px;">
+                                    <span>Số cuối kỳ</span>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 32px;">
+                                    <span>Số đầu kỳ</span>
+                                </th>
+                            </tr>
+                            <tr class="detail-header">
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 82px;">
+                                    <span>1</span>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 13px;">
+                                    <span>2</span>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 26px;">
+                                    <span>3</span>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 32px;">
+                                    <span>4</span>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 32px;">
+                                    <span>5</span>
+                                </th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="docs" t-as="line">
+                                <td class="text-left detail-text" style="border: 1px solid black;height: 6px; width: 82px;">
+                                    <span t-esc="line.CHI_TIEU"></span>
+                                </td>
+                                <td class="text-left detail-text" style="border: 1px solid black;height: 6px; width: 13px;">
+                                    <span t-field="line.MA_SO" />
+                                </td>
+                                <td class="text-right detail-text" style="border: 1px solid black;height: 6px; width: 26px;">
+                                    <span t-field="line.THUYET_MINH" />
+                                </td>
+                                <td class="text-right detail-number" style="border: 1px solid black;height: 6px; width: 32px;">
+                                    <span t-field="line.SO_CUOI_KY" />
+                                </td>
+                                <td class="text-right detail-number" style="border: 1px solid black;height: 6px; width: 32px;">
+                                    <span t-field="line.SO_DAU_KY" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs-12 text-right" style="margin-right: 50px;padding-left: 0px;padding-right: 0px;">
+                    <span class="signer-date">
+                        Lập, Ngày ...... tháng ...... năm .........
+                    </span>
+                </div>
+                <div class="col-xs-12 page-break-inside" style="padding-left: 0px;padding-right: 0px;">
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr class="text-center signer-title">
+                                <th t-foreach="added_data.get('tieu_de_nguoi_ky')" t-as="line">
+                                    <span t-esc="line" />
+                                </th>
+                            </tr>
+                            <tr class="text-center signer-sub-title">
+                                <td t-foreach="added_data.get('tieu_de_nguoi_ky')" t-as="line">
+                                    <span>(Ký, họ tên)</span>
+                                </td>
+                            </tr>
+                            <tr style="height: 70px;" />
+                            <tr class="text-center signer-name">
+                                <td t-foreach="added_data.get('ten_nguoi_ky')" t-as="line">
+                                    <span t-esc="line" />
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="col-xs-12 text-left header-label" style="padding-left: 0px;padding-right: 0px;">
+                    <span>
+                        - Số chứng chỉ hành nghề:
+                    </span>
+                    <br />
+                    <span>
+                        - Đơn vị cung cấp dịch vụ kế toán:
+                    </span>
+
+                </div>
+
+                <!-- Table -->
+            </div>
+        </t>
+    </template>
+    <template id="template_b01dn_bang_can_doi_ke_toan">
+        <t t-call="web.html_container">
+            <!-- <t t-set="data_paper_format" t-value="'A4-ngang'" /> -->
+            <t t-call="bao_cao.b01_dn_bang_can_doi_ke_toan" />
+        </t>
+    </template>
+    <data>
+        <report string="Bảng cân đối kế toán" id="action_template_b01dn_bang_can_doi_ke_toan" model="bao.cao.b01dn.bang.can.doi.ke.toan" report_type="qweb-html" name="bao_cao.template_b01dn_bang_can_doi_ke_toan" file="bao_cao.template_b01dn_bang_can_doi_ke_toan" print_report_name="Bảng cân đối kế toán" />
+    </data>
+</odoo>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+	<data>
+		<record id="view_sale_document_line_tree" model="ir.ui.view">
+			<field name="name">sale.document.line.tree</field>
+			<field name="model">sale.document.line</field>
+			<field name="arch" type="xml">
+				<tree string="Chứng từ chi tiết">
+					<field name="NGAY_HACH_TOAN" />
+					<field name="NGAY_CHUNG_TU" />
+					<field name="SALE_DOCUMENT_ID" string="Số chứng từ"/>
+					<!-- <field name="SO_HOA_DON" /> -->
+					<field name="DOI_TUONG_ID" />
+					<field name="MA_HANG_ID" />
+					<field name="TEN_HANG" width="0"/>
+				</tree>
+			</field>
+		</record>
+	</data>
+</odoo>

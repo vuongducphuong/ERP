@@ -1,0 +1,50 @@
+# -*- coding: utf-8 -*-
+# Part of Odoo. See LICENSE file for full copyright and licensing details.
+
+{
+    'name': 'Tổng hợp',
+    'version': '1.0',
+    'sequence': 0,
+    'summary': 'Module mẫu',
+    'depends': [
+        'danh_muc',
+        'account_ex',
+        'sale_ex',
+    ],
+    'data': [
+		'views/tong_hop_bo_khoa_so_ky_ke_toan_view.xml',
+		# 'views/tong_hop_bctc_them_phu_luc_form_view.xml',
+		# 'templates/tong_hop_bao_cao_tai_chinh_template.xml',
+		# 'views/tong_hop_bctc_chon_nghiep_vu_va_hoat_dong_lctt_form_view.xml',
+		# 'views/tong_hop_bctc_chon_lai_hoat_dong_lctt_form_view.xml',
+		# 'views/tong_hop_bctc_chon_nghiep_vu_cho_cac_chung_tu_form_view.xml',
+		# 'views/tong_hop_bctc_kiem_tra_bang_ke_toan_khong_can_form_view.xml',
+		# 'views/tong_hop_bao_cao_tai_chinh_view.xml',
+		# 'views/tong_hop_lap_bao_cao_tai_chinh_view.xml',
+
+		'views/tong_hop_phan_bo_chon_doi_tuong_phan_bo_form_view.xml',
+        
+		'views/tong_hop_ctgs_chon_chung_tu_form_view.xml',
+		'views/tong_hop_phan_bo_chi_phi_bh_qldn_chi_phi_khac_cho_don_vi_view.xml',
+		'views/tong_hop_chon_ky_phan_bo_chi_phi_view.xml',
+		'views/tong_hop_khoa_so_ky_ke_toan_view.xml',
+		'views/tong_hop_danh_gia_lai_tai_khoan_ngoai_te_view.xml',
+		'views/tong_hop_tinh_ty_gia_xuat_quy_view.xml',
+		'templates/tong_hop_chung_tu_ghi_so_template.xml',
+		'views/tong_hop_chung_tu_ghi_so_view.xml',
+        'views/tong_hop_chi_phi_tra_truoc_view.xml',
+		'views/tong_hop_phan_bo_chi_phi_tra_truoc_view.xml',
+        'views/tong_hop_phan_bo_chi_phi_tra_truoc_tham_so_view.xml',
+        'views/tong_hop_chung_tu_nghiep_vu_khac_view.xml',
+        'views/tong_hop_chung_tu_nghiep_vu_khac_hach_toan_view.xml',
+        'views/tong_hop_tam_ung_hoa_don_view.xml',
+        'views/tong_hop_tam_ung_phieu_chi_view.xml',
+        'views/tong_hop_ket_chuyen_lai_lo_master_view.xml',
+        'templates/tong_hop_templates.xml',
+        'templates/tong_hop_chung_tu_nghiep_vu_khac_mau_in_template.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+    'qweb': [],
+}

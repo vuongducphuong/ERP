@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_so_theo_doi_cong_cu_dung_cu_tree" model="ir.ui.view">
+            <field name="name">bao.cao.so.theo.doi.cong.cu.dung.cu.tree</field>
+            <field name="model">bao.cao.so.theo.doi.cong.cu.dung.cu</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Sổ theo dõi công cụ dụng cụ" create="false" report="true">
+                    <field name="MA_CCDC" />
+                    <field name="TEN_CCDC" />
+                    <field name="LOAI_CONG_CU_DUNG_CU" />
+                    <field name="LY_DO_GHI_TANG" />
+                    <field name="NGAY_GHI_TANG" />
+                    <field name="SO_CT_GHI_TANG" linked="true"/>
+                    <field name="SO_KY_PHAN_BO" />
+                    <field name="SO_KY_PHAN_BO_CON_LAI" />
+                    <field name="DVT" />
+                    <field name="SO_LUONG_GHI_TANG" sum="Tong sl"/>
+                    <field name="LUY_KE_SL_DA_GIAM" sum="Tong sl"/>
+                    <field name="SL_CON_LAI" sum="Tong sl" />
+                    <field name="GIA_TRI_CCDC" sum="Tong sl" />
+                    <field name="GIA_TRI_PB_HANG_KY" sum="Tong sl" />
+                    <field name="PHAN_BO_TRONG_KY" sum="Tong sl" />
+                    <field name="LUY_KE_DA_PB" sum="Tong sl" />
+                    <field name="GIA_TRI_CON_LAI" sum="Tong sl" />
+                    <field name="SO_TAI_KHOAN" />
+                    <field name="ID_GOC" invisible="1"/>
+                    <field name="MODEL_GOC" invisible="1"/> 
+                </tree>
+            </field>
+        </record>
+        <record id="open_report_so_theo_doi_cong_cu_dung_cu" model="ir.actions.act_window">
+            <field name="name">SỔ THEO DÕI CÔNG CỤ DỤNG CỤ</field>
+            <field name="res_model">bao.cao.so.theo.doi.cong.cu.dung.cu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!--<field name="context">{'group_by': ['kho_id'], 'header_struct': [['Đầu kỳ', ['sl_dau_ky', ['XYZ', ['gt_dau_ky', 'sl_nhap_kho']]]], ['Cuối kỳ', ['sl_cuoi_ky', 'gt_cuoi_ky','gt_nhap_kho']]], 'expand_all': 'true'}</field>-->
+        </record>
+        <record id="view_bao_cao_so_theo_doi_cong_cu_dung_cu_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.so.theo.doi.cong.cu.dung.cu.form</field>
+            <field name="model">bao.cao.so.theo.doi.cong.cu.dung.cu</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="2">
+                            <field name="CHI_NHANH_ID" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" />
+                        </group>
+                        <group col="4">
+                            <field name="KY_BAO_CAO" colspan="4" />
+                            <field name="TU" />
+                            <field name="DEN" />
+                            <field name="LOAI_CCDC_ID" colspan="4" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã loại CCDC', 'Tên loại CCDC'],'displays': ['TEN']}" />
+                        </group>
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_so_theo_doi_cong_cu_dung_cu_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Sổ theo dõi công cụ dụng cụ</field>
+            <field name="res_model">bao.cao.so.theo.doi.cong.cu.dung.cu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_so_theo_doi_cong_cu_dung_cu_tham_so_form" />
+        </record>
+    </data>
+</odoo>

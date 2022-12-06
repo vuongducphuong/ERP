@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_tinh_hinh_thuc_hien_don_dat_hang_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tinh.hinh.thuc.hien.don.dat.hang.tree</field>
+            <field name="model">bao.cao.tinh.hinh.thuc.hien.don.dat.hang</field>
+            <field name="arch" type="xml">
+                <tree string="Tình hình thực hiện đơn đặt hàng" create="false" report="true">
+                    <field name="NGAY_DON_HANG" />
+                    <field name="SO_DON_HANG" linked="true" />
+                    <field name="NGAY_GIAO_HANG" />
+                    <field name="TEN_KHACH_HANG" />
+                    <field name="TEN_HANG" />
+                    <field name="DVT" />
+                    <field name="SO_LUONG_DAT_HANG" sum="Tổng" />
+                    <field name="SO_LUONG_DA_GIAO" sum="Tổng" />
+                    <field name="SO_LUONG_CON_LAI" sum="Tổng" />
+                    <field name="DOANH_SO_DAT_HANG" sum="Tổng" />
+                    <field name="DOANH_SO_DA_THUC_HIEN" sum="Tổng" />
+                    <field name="DOANH_SO_CHUA_THUC_HIEN" sum="Tổng" />
+                    <field name="TINH_TRANG" />
+                    <field name="ID_GOC" invisible="1" />
+                    <field name="MODEL_GOC" invisible="1" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_report_tinh_hinh_thuc_hien_don_dat_hang" model="ir.actions.act_window">
+            <field name="name">TÌNH HÌNH THỰC HIỆN ĐƠN ĐẶT HÀNG</field>
+            <field name="res_model">bao.cao.tinh.hinh.thuc.hien.don.dat.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!--<field name="context">{'group_by': ['kho_id'], 'header_struct': [['Đầu kỳ', ['sl_dau_ky', ['XYZ', ['gt_dau_ky', 'sl_nhap_kho']]]], ['Cuối kỳ', ['sl_cuoi_ky', 'gt_cuoi_ky','gt_nhap_kho']]], 'expand_all': 'true'}</field>-->
+        </record>
+
+        <record id="view_bao_cao_tinh_hinh_thuc_hien_don_dat_hang_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.tinh.hinh.thuc.hien.don.dat.hang.form</field>
+            <field name="model">bao.cao.tinh.hinh.thuc.hien.don.dat.hang</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="bao_cao_tinh_hinh_thuc_hien_don_dat_hang_view">
+                    <sheet>
+                        <group col="4" colspan="4">
+                            <field name="CHI_NHANH_ID" colspan="2" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" colspan="2" />
+                            <field name="MA_PC_NHOM_VTHH" invisible="1" />
+                            <field name="MA_PC_NHOM_KH" invisible="1" />
+                        </group>
+                        <group string="Tham số" col="4">
+                            <group col="2" colspan="2">
+                                <field name="KY_BAO_CAO" colspan="2" />
+                                <field name="TU_NGAY" colspan="2" />
+                                <field name="DEN_NGAY" colspan="2" />
+                                <field name="NHOM_VTHH_ID" colspan="2" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'],'displays':['MA']}" />
+                            </group>
+                            <group col="2" colspan="2">
+                                <field name="DON_VI_ID" colspan="2" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['MA_DON_VI']}" />
+                                <field name="NHAN_VIEN_ID" colspan="2" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}" />
+                                <field name="NHOM_KH_ID" colspan="2" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'],'displays': ['MA']}" />
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page string="Mặt hàng">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_SAN_PHAM" nolabel="1" colspan="12" />
+                                    <field name="SAN_PHAM_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}" colspan="12" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã hàng', 'Tên hàng']}" />
+                                </group>
+                                <field name="mat_hang_ids" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_SAN_PHAM', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA" string="Mã hàng" />
+                                        <field name="TEN" string="Tên hàng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Khách hàng">
+                                <group col="12">
+                                    <field name="CHON_TAT_CA_KHACH_HANG" nolabel="1" colspan="12" />
+                                    <field name="KHACH_HANG_MANY_IDS" widget="many2many_tags" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}" colspan="12" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI', 'MA_SO_THUE'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Địa chỉ', 'Mã số thuế']}" />
+                                </group>
+                                <field name="khach_hang_ids" mode="tree" attrs="{'invisible': [('CHON_TAT_CA_KHACH_HANG', '=', True)]}">
+                                    <tree create="false" edit="false">
+                                        <field name="MA_KHACH_HANG" string="Mã khách hàng" />
+                                        <field name="HO_VA_TEN" string="Tên khách hàng" />
+                                        <field name="DIA_CHI" string="Địa chỉ" />
+                                        <field name="MA_SO_THUE" string="Mã số thuế" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                        <group col="2" colspan="2">
+                            <field name="LAY_TINH_HINH_DA_THUC_HIEN_DEN_CUOI_KY_BAO_CAO" colspan="2" nolabel="1" />
+                        </group>
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_bao_cao_tinh_hinh_thuc_hien_don_dat_hang_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Tình hình thực hiện đơn đặt hàng</field>
+            <field name="res_model">bao.cao.tinh.hinh.thuc.hien.don.dat.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_tinh_hinh_thuc_hien_don_dat_hang_tham_so_form" />
+        </record>
+
+        <!-- <menuitem name="Tình hình thực hiện đơn đặt hàng" action="bao_cao.open_bao_cao_tinh_hinh_thuc_hien_don_dat_hang_tham_so_form" id="menu_bao_cao_tinh_hinh_thuc_hien_don_dat_hang" parent="" sequence="0" /> -->
+    </data>
+</odoo>

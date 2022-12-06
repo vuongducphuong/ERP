@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_luong_bang_cham_cong_chi_tiet_master_form" model="ir.ui.view">
+            <field name="name">tien.luong.bang.cham.cong.chi.tiet.master.form</field>
+            <field name="model">tien.luong.bang.cham.cong.chi.tiet.master</field>
+            <field name="arch" type="xml">
+                <form string="Bảng chấm công" cloudify_js="tien_luong_bang_cham_cong_form_view">
+                    <sheet>
+                        <group col="2">
+                            <field name="TEN_BANG_CHAM_CONG"  readonly="1" colspan="2" nolabel="1" style="font-size: 16pt;font-weight: bold;"/>
+                            <field name="ten_loai_cham_cong" invisible="1" />
+                            <field name="thang" invisible="1" />
+                            <field name="nam" invisible="1" />
+                            <field name="so_ngay_cua_thang" invisible="1" />
+                            <field name="LOAI_CHAM_CONG" invisible="1" />
+                        </group>
+                        <table style="margin: 0 25px;font-size: 12px;font-style: italic;" class="col-md-3">
+                            <tr>
+                                <th>STT</th>
+                                <th>Ký hiệu</th>
+                                <th>Diễn giải</th>
+                                <th>Giờ</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>-</td>
+                                <td>Lương thời gian (nửa ngày)</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>+</td>
+                                <td>Lương thời gian (cả ngày)</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Cô</td>
+                                <td>Con ốm</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Cô1/2</td>
+                                <td>Con ốm (nửa ngày)</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>H</td>
+                                <td>Hội nghị,học tập</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>H1/2</td>
+                                <td>Hội nghị,học tập (nửa ngày)</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>KL</td>
+                                <td>Nghỉ không lương</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>KL1/2</td>
+                                <td>Nghỉ không lương (nửa ngày)</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>LĐ</td>
+                                <td>Lao động nghĩa vụ</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>LĐ1/2</td>
+                                <td>Lao động nghĩa vụ (nửa ngày)</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="margin: 0 25px;font-size: 12px;font-style: italic;" class="col-md-3">
+                            <tr>
+                                <th>STT</th>
+                                <th>Ký hiệu</th>
+                                <th>Diễn giải</th>
+                                <th>Giờ</th>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>LT(Đ)</td>
+                                <td>Làm thêm ngày thường ban đêm</td>
+                                <td>
+                                    <input checked="" type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>LT(N)</td>
+                                <td>Làm thêm ngày thường ban ngày</td>
+                                <td>
+                                    <input checked="" type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>LTL(Đ)</td>
+                                <td>Làm thêm nghỉ lễ ban đêm</td>
+                                <td>
+                                    <input checked="" type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>LTL(N)</td>
+                                <td>Làm thêm nghỉ lễ ban ngày</td>
+                                <td>
+                                    <input checked="" type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>LTN(Đ)</td>
+                                <td>Làm thêm T7,CN ban đêm</td>
+                                <td>
+                                    <input checked="" type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>LTN(N)</td>
+                                <td>Làm thêm T7,CN ban ngày</td>
+                                <td>
+                                    <input checked="" type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>N</td>
+                                <td>Ngừng việc</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>N1/2</td>
+                                <td>Ngừng việc(nửa ngày)</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>NB</td>
+                                <td>Nghỉ bù</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>NB1/2</td>
+                                <td>Nghỉ bù (nửa ngày)</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="margin: 0 25px;font-size: 12px;font-style: italic;" class="col-md-3">
+                            <tr>
+                                <th>STT</th>
+                                <th>Ký hiệu</th>
+                                <th>Diễn giải</th>
+                                <th>Giờ</th>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>Ô</td>
+                                <td>Ốm, điều dưỡng</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>Ô1/2</td>
+                                <td>Ốm, điều dưỡng (nửa ngày)</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>P</td>
+                                <td>Nghỉ phép</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>24</td>
+                                <td>P1/2</td>
+                                <td>Nghỉ phép (nửa ngày)</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>SP</td>
+                                <td>Lương sản phẩm</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>T</td>
+                                <td>Tai nạn</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>27</td>
+                                <td>T1/2</td>
+                                <td>Tai nạn (nửa ngày)</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>TS</td>
+                                <td>Thai sản</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>TS1/2</td>
+                                <td>Thai sản (nửa ngày)</td>
+                                <td>
+                                    <input type="checkbox" disabled="" />
+                                </td>
+                            </tr>
+                        </table>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="TIEN_LUONG_BANG_CHAM_CONG_CHI_TIET_DETAIL_IDS" mode="tree">
+                                    <tree has_border="true" editable="bottom" calendar="true" delete="false" create="false" options="{'group_by':['PHONG_BAN'],'header_struct': [['Thông tin nhân viên', ['SO_THU_TU','MA_NHAN_VIEN','TEN_NHAN_VIEN']],['Ngày công trong kỳ', ['NGAY_1','NGAY_2','NGAY_3','NGAY_4','NGAY_5','NGAY_6','NGAY_7','NGAY_8','NGAY_9','NGAY_10','NGAY_11','NGAY_12','NGAY_13','NGAY_14','NGAY_15','NGAY_16','NGAY_17','NGAY_18','NGAY_19','NGAY_20','NGAY_21','NGAY_22','NGAY_23','NGAY_24','NGAY_25','NGAY_26','NGAY_27','NGAY_28','NGAY_29','NGAY_30','NGAY_31']],['Làm thêm ban ngày (giờ công)', ['NGAY_THUONG_BAN_NGAY','THU_BAY_CHU_NHAT_BAN_NGAY','LE_TET_BAN_NGAY']],['Làm thêm ban đêm (giờ công)', ['NGAY_THUONG_BAN_DEM','THU_7_CHU_NHAT_BAN_DEM','LE_TET_BAN_DEM']]]}">
+                                        <field name="SO_THU_TU" fixed_column="True" string="STT" width="50"/>
+                                        <field name="MA_NHAN_VIEN" fixed_column="True" options="{'columns': ['MA', 'HO_VA_TEN'], 'strings': ['Mã nhân viên', 'Tên nhân viên'],'displays':['MA']}" width="100"/>
+                                        <field name="TEN_NHAN_VIEN" fixed_column="True" width="120"/>
+                                        <field name="PHONG_BAN" />
+                                        <field name="NGAY_1" width="70" />
+                                        <field name="NGAY_2" width="70" />
+                                        <field name="NGAY_3" width="70" />
+                                        <field name="NGAY_4" width="70" />
+                                        <field name="NGAY_5" width="70" />
+                                        <field name="NGAY_6" width="70" />
+                                        <field name="NGAY_7" width="70" />
+                                        <field name="NGAY_8" width="70" />
+                                        <field name="NGAY_9" width="70" />
+                                        <field name="NGAY_10" width="70" />
+                                        <field name="NGAY_11" width="70" />
+                                        <field name="NGAY_12" width="70" />
+                                        <field name="NGAY_13" width="70" />
+                                        <field name="NGAY_14" width="70" />
+                                        <field name="NGAY_15" width="70" />
+                                        <field name="NGAY_16" width="70" />
+                                        <field name="NGAY_17" width="70" />
+                                        <field name="NGAY_18" width="70" />
+                                        <field name="NGAY_19" width="70" />
+                                        <field name="NGAY_20" width="70" />
+                                        <field name="NGAY_21" width="70" />
+                                        <field name="NGAY_22" width="70" />
+                                        <field name="NGAY_23" width="70" />
+                                        <field name="NGAY_24" width="70" />
+                                        <field name="NGAY_25" width="70" />
+                                        <field name="NGAY_26" width="70" />
+                                        <field name="NGAY_27" width="70" />
+                                        <field name="NGAY_28" width="70" />
+                                        <field name="NGAY_29" width="70" attrs="{'column_invisible': [('parent.so_ngay_cua_thang', 'not in', (29,30,31))]}" />
+                                        <field name="NGAY_30" width="70" attrs="{'column_invisible': [('parent.so_ngay_cua_thang', 'not in', (30,31))]}" />
+                                        <field name="NGAY_31" width="70" attrs="{'column_invisible': [('parent.so_ngay_cua_thang', '!=', 31)]}" />
+                                        <field name="SO_CONG_HUONG" sum="Tổng" />
+                                        <field name="SO_CONG_KHONG_HUONG" sum="Tổng" />
+                                        <field name="NGAY_THUONG_BAN_NGAY" sum="Tổng" string="Ngày thường"/>
+                                        <field name="THU_BAY_CHU_NHAT_BAN_NGAY" sum="Tổng" string="Thứ 7, CN"/>
+                                        <field name="LE_TET_BAN_NGAY" sum="Tổng" string="Lễ, tết"/>
+                                        <field name="NGAY_THUONG_BAN_DEM" sum="Tổng" string="Ngày thường"/>
+                                        <field name="THU_7_CHU_NHAT_BAN_DEM" sum="Tổng" string="Thứ 7, CN"/>
+                                        <field name="LE_TET_BAN_DEM" sum="Tổng" string="Lễ, tết"/>
+                                        <field name="TONG_LAM_THEM" sum="Tổng" />
+                                        <field name="THANG" invisible="1" />
+                                        <field name="NAM" invisible="1" />
+                                        <field name="LOAI_CHAM_CONG" invisible="1" />
+                                        <!-- <field name="sequence" invisible="1" /> -->
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_tien_luong_bang_cham_cong_chi_tiet_master_tree" model="ir.ui.view">
+            <field name="name">tien.luong.bang.cham.cong.chi.tiet.master.tree</field>
+            <field name="model">tien.luong.bang.cham.cong.chi.tiet.master</field>
+            <field name="arch" type="xml">
+                <tree string="Chi tiết" cloudify_js="tien_luong_bang_cham_cong_list_view">
+                    <field name="thang" />
+                    <field name="nam" />
+                    <field name="ten_loai_cham_cong" />
+                    <field name="TEN_BANG_CHAM_CONG" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_tien_luong_bang_cham_cong_chi_tiet_master" model="ir.actions.act_window">
+            <field name="name">Bảng chấm công</field>
+            <field name="res_model">tien.luong.bang.cham.cong.chi.tiet.master</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_tien_luong_bang_cham_cong_chi_tiet_master_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_tien_luong_bang_cham_cong_chi_tiet_master_tree" />
+            <field name="act_window_id" ref="open_menu_tien_luong_bang_cham_cong_chi_tiet_master" />
+        </record>
+        <record id="action_tien_luong_bang_cham_cong_chi_tiet_master_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_tien_luong_bang_cham_cong_chi_tiet_master_form" />
+            <field name="act_window_id" ref="open_menu_tien_luong_bang_cham_cong_chi_tiet_master" />
+        </record>
+        <!-- <menuitem name="Bảng chấm công chi tiết master" action="tien_luong.open_menu_tien_luong_bang_cham_cong_chi_tiet_master" id="menu_tien_luong_bang_cham_cong_chi_tiet_master" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

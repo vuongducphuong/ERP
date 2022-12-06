@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_supply_chon_chung_tu_dieu_chinh_ccdc_form_form" model="ir.ui.view">
+            <field name="name">supply.chon.chung.tu.dieu.chinh.ccdc.form.form</field>
+            <field name="model">supply.chon.chung.tu.dieu.chinh.ccdc.form</field>
+            <field name="arch" type="xml">
+                <form string="chọn chứng từ điều chỉnh ccdc form">
+                    <sheet>
+                        <group col="4">
+                            <field name="LOAI_CHUNG_TU" />
+                            <field name="KHOANG_THOI_GIAN" />
+                            <field name="TU_NGAY" />
+                            <field name="DEN_NGAY" />
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chi tiết ">
+                                <field name="SUPPLY_CHON_CHUNG_TU_DIEU_CHINH_CONG_CU_DUNG_CU_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="NGAY_HACH_TOAN" readonly="1" />
+                                        <field name="NGAY_CHUNG_TU" readonly="1"/>
+                                        <field name="SO_CHUNG_TU" readonly="1"/>
+                                        <field name="DIEN_GIAI" readonly="1"/>
+                                        <field name="LOAI_CHUNG_TU" readonly="1"/>
+                                        <field name="SO_TIEN" sum="Tổng" readonly="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                   
+                </form>
+            </field>
+        </record>
+        <!-- <record id="view_supply_chon_chung_tu_dieu_chinh_ccdc_form_tree" model="ir.ui.view">
+            <field name="name">supply.chon.chung.tu.dieu.chinh.ccdc.form.tree</field>
+            <field name="model">supply.chon.chung.tu.dieu.chinh.ccdc.form</field>
+            <field name="arch" type="xml">
+                <tree string="chọn chứng từ điều chỉnh ccdc form">
+                    <field name="LOAI_CHUNG_TU" />
+                    <field name="KHOANG_THOI_GIAN" />
+                    <field name="TU_NGAY" />
+                    <field name="DEN_NGAY" />
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_supply_chon_chung_tu_dieu_chinh_ccdc_form" model="ir.actions.act_window">
+            <field name="name">chọn chứng từ điều chỉnh ccdc form</field>
+            <field name="res_model">supply.chon.chung.tu.dieu.chinh.ccdc.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_supply_chon_chung_tu_dieu_chinh_ccdc_form_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_supply_chon_chung_tu_dieu_chinh_ccdc_form_tree" />
+            <field name="act_window_id" ref="open_menu_supply_chon_chung_tu_dieu_chinh_ccdc_form" />
+        </record>
+        <record id="action_supply_chon_chung_tu_dieu_chinh_ccdc_form_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_supply_chon_chung_tu_dieu_chinh_ccdc_form_form" />
+            <field name="act_window_id" ref="open_menu_supply_chon_chung_tu_dieu_chinh_ccdc_form" />
+        </record>
+        <menuitem name="chọn chứng từ điều chỉnh ccdc form" action="supply.open_menu_supply_chon_chung_tu_dieu_chinh_ccdc_form" id="menu_supply_chon_chung_tu_dieu_chinh_ccdc_form" parent="" sequence="0" />
+    </data>
+    <data noupdate="1"> -->
+        
+    </data>
+</odoo>

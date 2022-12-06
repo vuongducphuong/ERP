@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_luong_nop_bao_hiem_form_tham_so_tham_so_form" model="ir.ui.view">
+            <field name="name">tien.luong.nop.bao.hiem.form.tham.so.form</field>
+            <field name="model">tien.luong.nop.bao.hiem.form.tham.so</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="6">
+                            <group col="4" colspan="4">
+                                <field name="NGAY_NOP_BAO_HIEM" string="Ngày nộp BH" colspan="2" />
+                                <field name="PHUONG_THUC_THANH_TOAN" string="Phương thức TT" widget="radio" options="{'horizontal': true, 'alway_edit': True}" class="o_horizontal" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Thông tin chi tiết">
+                                <field name="TIEN_LUONG_NOP_BAO_HIEM_FORM_THAM_SO_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" report="True" delete="false" create="false">
+                                        <field name="KHOAN_PHAI_NOP" readonly="1" />
+                                        <field name="SO_PHAI_NOP" readonly="1" sum="Tổng" />
+                                        <field name="SO_NOP_LAN_NAY" sum="Tổng" />
+                                        <field name="SO_TAI_KHOAN_ID" invisible="1" />
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_nhom_vat_tu_hang_hoa_dich_vu_form" model="ir.ui.view">
+            <field name="name">danh.muc.nhom.vat.tu.hang.hoa.dich.vu.form</field>
+            <field name="model">danh.muc.nhom.vat.tu.hang.hoa.dich.vu</field>
+            <field name="arch" type="xml">
+                <form string="Nhóm vật tư hàng hóa dịch vụ">
+                    <sheet>
+                        <group col="2">
+                            <field name="MA" colspan="2" />
+                            <field name="TEN" colspan="2" />
+                            <field name="parent_id" colspan="2" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'],'displays': ['MA']}" />
+                        </group>
+                        <field name="active" />
+                        <!--Master/Detail form-->
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_danh_muc_nhom_vat_tu_hang_hoa_dich_vu_tree" model="ir.ui.view">
+            <field name="name">danh.muc.nhom.vat.tu.hang.hoa.dich.vu.tree</field>
+            <field name="model">danh.muc.nhom.vat.tu.hang.hoa.dich.vu</field>
+            <field name="arch" type="xml">
+
+                <tree string="Nhóm vật tư hàng hóa dịch vụ" hierarchy="parent_id">
+                    <field name="MA" string="Mã nhóm vật tư, hàng hóa, dịch vụ" />
+                    <field name="TEN" string="Tên nhóm vật tư, hàng hóa, dịch vụ" />
+                    <field name="active" string="Theo dõi" />
+                    <field name="parent_id" invisible="1" />
+                </tree>
+                
+            </field>
+        </record>
+        <record id="open_menu_danh_muc_nhom_vat_tu_hang_hoa_dich_vu" model="ir.actions.act_window">
+            <field name="name">Nhóm vật tư hàng hóa dịch vụ</field>
+            <field name="res_model">danh.muc.nhom.vat.tu.hang.hoa.dich.vu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'import_enabled': False}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_danh_muc_nhom_vat_tu_hang_hoa_dich_vu_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_nhom_vat_tu_hang_hoa_dich_vu_tree" />
+            <field name="act_window_id" ref="open_menu_danh_muc_nhom_vat_tu_hang_hoa_dich_vu" />
+        </record>
+        <record id="action_danh_muc_nhom_vat_tu_hang_hoa_dich_vu_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_nhom_vat_tu_hang_hoa_dich_vu_form" />
+            <field name="act_window_id" ref="open_menu_danh_muc_nhom_vat_tu_hang_hoa_dich_vu" />
+        </record>
+        <!-- <menuitem name="Nhóm vật tư hàng hóa dịch vụ" action="danh_muc.open_menu_danh_muc_nhom_vat_tu_hang_hoa_dich_vu" id="menu_danh_muc_nhom_vat_tu_hang_hoa_dich_vu" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

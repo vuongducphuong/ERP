@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_stock_ex_lenh_san_xuat_form" model="ir.ui.view">
+            <field name="name">stock.ex.lenh.san.xuat.form</field>
+            <field name="model">stock.ex.lenh.san.xuat</field>
+            <field name="arch" type="xml">
+                <form string="Lệnh sản xuất">
+                    <header>
+                        <button name="btn_LSX_PN" string="Lập PN" type="object" class="oe_highlight oe_read_only"/>
+                        <button name="btn_LSX_PX" string="Lập PX" type="object" class="oe_highlight oe_read_only"/>
+                    </header>
+                    <sheet>
+                        <group col="4">
+                            <group col="2" colspan="2" string="Thông tin chung">
+                                <field name="DIEN_GIAI"/>
+                                <field name="THAM_CHIEU"  invisible="1" readonly="True"/>
+                               
+                            </group>
+                            <group col="2" colspan="2" string="Chứng từ">
+                                <field name="NGAY"/>
+                                <field name="SO_LENH"  required="True" />
+                                <field name="TINH_TRANG"/>
+                                <field name="DA_LAP_DU_PN" invisible="1"/>
+                                <field name="DA_LAP_DU_PX"  invisible="1"/>
+                            </group>
+                        </group>
+
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Thành phẩm">
+                                <field name="STOCK_EX_LENH_SAN_XUAT_CHI_TIET_THANH_PHAM_IDS" mode="tree">
+                                  <tree >
+                                    <field name="MA_HANG_ID" required="True" options="{'columns': ['MA', 'TEN','SO_LUONG_TON'], 'strings': ['Mã hàng', 'Tên hàng','Số lượng tồn'],'displays': ['MA']}"/>
+                                    <field name="TEN_THANH_PHAM"/>
+                                    <field name="SO_LUONG" sum="so luong"/>
+                                    <field name="DVT_ID"/>
+                                    <field name="DON_DAT_HANG_ID" options="{'columns': ['SO_DON_HANG', 'TEN_KHACH_HANG','NGAY_DON_HANG'], 'strings': ['Số đơn hàng', 'Tên khách hàng','Ngày đơn hàng'],'displays': ['SO_DON_HANG']}"/>
+                                    <field name="HOP_DONG_BAN_ID" options="{'columns': ['SO_HOP_DONG', 'NGAY_KY','DOI_TUONG_ID.HO_VA_TEN','TRICH_YEU'], 'strings': ['Số hợp đồng', 'Ngày ký','Khách hàng','Trích yếu']}"/>
+                                    <field name="DOI_TUONG_THCP_ID" options="{'columns': ['MA_DOI_TUONG_THCP', 'TEN_DOI_TUONG_THCP'], 'strings': ['Mã đối tượng THCP', 'Tên đối tượng THCP'],'displays': ['MA_DOI_TUONG_THCP']}"/>
+                                    <field name="MA_THONG_KE_ID" options="{'columns': ['MA_THONG_KE', 'TEN_THONG_KE'], 'strings': ['Mã thống kê', 'Mã thống kê'],'displays': ['MA_THONG_KE']}"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                        <!-- <notebook>
+                            <page string="Định mức xuất NVL cho thành phẩm">
+                                <field name="STOCK_EX_LENH_SAN_XUAT_CHI_TIET_DINH_MUC_XUAT_THANH_PHAM_IDS" mode="tree">
+                                  <tree editable="bottom">
+                                    <field name="MA_NGUYEN_VAT_LIEU_ID" options="{'columns': ['MA', 'TEN','SO_LUONG_TON'], 'strings': ['Mã hàng', 'Tên hàng','Số lượng tồn'],'displays': ['MA']}"/>
+                                    <field name="TEN_NGUYEN_VAT_LIEU"/>
+                                    <field name="DVT_ID"/>
+                                    <field name="SO_LUONG_NVL_TREN_SP" sum="tong sl/sp"/>
+                                    <field name="SO_LUONG_NVL" sum="tong sl nvl"/>
+                                    <field name="DOI_TUONG_THCP_ID" options="{'columns': ['MA_DOI_TUONG_THCP', 'TEN_DOI_TUONG_THCP'], 'strings': ['Mã đối tượng THCP', 'Tên đối tượng THCP'],'displays': ['MA_DOI_TUONG_THCP']}"/>
+                                    <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục cp', 'Tên khoản mục cp'],'displays': ['MA_KHOAN_MUC_CP']}"/>
+                                    <field name="MA_THONG_KE_ID" options="{'columns': ['MA_THONG_KE', 'TEN_THONG_KE'], 'strings': ['Mã thống kê', 'Mã thống kê'],'displays': ['MA_THONG_KE']}"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook> -->
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_stock_ex_lenh_san_xuat_tree" model="ir.ui.view">
+            <field name="name">stock.ex.lenh.san.xuat.tree</field>
+            <field name="model">stock.ex.lenh.san.xuat</field>
+            <field name="arch" type="xml">
+                <tree string="Lệnh sản xuất">
+                    <field name="NGAY"/>
+                    <field name="SO_LENH"/>
+                    <field name="DIEN_GIAI"/>
+                    <field name="DA_LAP_DU_PN"/>
+                    <field name="DA_LAP_DU_PX"/>
+                    <field name="TINH_TRANG"/>
+                    <field name="CHI_NHANH_ID"/>
+                   
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_stock_ex_lenh_san_xuat" model="ir.actions.act_window">
+            <field name="name">Lệnh sản xuất</field>
+            <field name="res_model">stock.ex.lenh.san.xuat</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_stock_ex_lenh_san_xuat_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_stock_ex_lenh_san_xuat_tree"/>
+            <field name="act_window_id" ref="open_menu_stock_ex_lenh_san_xuat"/>
+        </record>
+
+        <record id="action_stock_ex_lenh_san_xuat_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_stock_ex_lenh_san_xuat_form"/>
+            <field name="act_window_id" ref="open_menu_stock_ex_lenh_san_xuat"/>
+        </record>
+
+        <!-- <menuitem name="Lệnh sản xuất"
+                  action="stock_ex.open_menu_stock_ex_lenh_san_xuat"
+                  id="menu_stock_ex_lenh_san_xuat"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_stock_ex_lenh_san_xuat_1" model="ir.sequence">
+            <field name="name">stock_ex_lenh_san_xuat SO_LENH sequence</field>
+            <field name="code">stock_ex_lenh_san_xuat_SO_LENH</field>
+            <field name="prefix">101</field>
+            <field name="padding">3</field>
+        </record>
+    </data>
+</odoo>

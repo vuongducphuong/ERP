@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+
+        <record id="tien_ech_search" model="ir.ui.view">
+            <field name="name">tien.ich.tim.kiem.chung.tu.search</field>
+            <field name="model">tien.ich.tim.kiem.chung.tu</field>
+            <field name="arch" type="xml">
+                <search string="Sales Analysis">
+                    <!-- Tìm kiếm với input text-->
+                    <field name="SO_CHUNG_TU" string="Số chứng từ"/>
+                    <field name="NGAY_CHUNG_TU" string="Ngày hạch toán"/>
+                    <field name="NGAY_HACH_TOAN" string="Ngày chứng từ"/>
+                    <!-- <field name="DOI_TUONG_ID" string="Khách hàng"/>
+                    <field name="TONG_TIEN_HANG" string="Tổng tiền hàng"/>
+                    <field name="state" string="Trạng thái"/> -->
+                    <!-- Lọc với điều kiện trong domain -->
+                    <filter name="da_ghi_so" string="Đã ghi sổ" domain="[('TINH_TRANG_GHI_SO','=', True)]"/>
+                    <!-- <separator/> -->
+                    <!-- Nhóm theo khách hàng -->
+                    <!-- <group expand="0" string="Extended Filters">
+                        <filter string="Khách hàng" domain="[]" context="{'group_by':'DOI_TUONG_ID'}"/>
+                    </group> -->
+                </search>
+            </field>
+        </record>
+
+
+        <record id="view_tien_ich_tim_kiem_chung_tu_tree" model="ir.ui.view">
+            <field name="name">tien.ich.tim.kiem.chung.tu.tree</field>
+            <field name="model">tien.ich.tim.kiem.chung.tu</field>
+            <field name="arch" type="xml">
+                <tree string="" create="false" decoration-info="TINH_TRANG_GHI_SO==False">
+                    <!-- <field name="STT" /> -->
+                    <!-- <field name="LOAI_CHUNG_TU" /> -->
+                    <field name="TEN_LOAI_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="SO_HOA_DON" />
+                    <field name="NGAY_HOA_DON" />
+                    <field name="TK_NO_ID" />
+                    <field name="TK_CO_ID" />
+                    <field name="currency_id" />
+                    <field name="SO_TIEN" sum="Tổng" />
+                    <field name="SO_TIEN_QUY_DOI" sum="Tổng" />
+                    <field name="MA_HANG_ID" />
+                    <field name="TEN_VTHH" />
+                    <field name="MA_KHO_NHAP_ID" />
+                    <field name="MA_KHO_XUAT_ID" />
+                    <field name="DVT_ID" />
+                    <field name="SO_LUONG" sum="Tổng" />
+                    <field name="DON_GIA" />
+                    <field name="TY_LE_CHIET_KHAU" />
+                    <field name="SO_TIEN_CHIET_KHAU" sum="Tổng" />
+                    <field name="LOAI_TSCD_ID" />
+                    <field name="TSCD_ID" />
+                    <field name="CCDC_ID" />
+                    <field name="DOI_TUONG_NO_ID" />
+                    <field name="DOI_TUONG_CO_ID" />
+                    <field name="DON_VI_ID" />
+                    <field name="NHAN_VIEN_ID" />
+                    <field name="TK_NGAN_HANG" />
+                    <field name="KHOAN_MUC_CP_ID" />
+                    <field name="CONG_TRINH_ID" />
+                    <field name="DOI_TUONG_THCP_ID" />
+                    <field name="DON_MUA_HANG_ID" />
+                    <field name="DON_DAT_HANG_ID" />
+                    <field name="HOP_DONG_MUA_ID" />
+                    <field name="HOP_DONG_BAN_ID" />
+                    <field name="MA_THONG_KE_ID" />
+                    <field name="DIEN_GIAI_CHUNG" />
+                    <field name="DIEN_GIAI" />
+                    <field name="TINH_TRANG_GHI_SO" />
+                    <field name="ID_GOC" invisible="1"/>
+                    <field name="MODEL_GOC" invisible="1"/>
+                    <field name="SOURCE_ID" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="open_menu_tien_ich_tim_kiem_chung_tu" model="ir.actions.act_window">
+            <field name="name">Tìm kiếm chứng từ</field>
+            <field name="res_model">tien.ich.tim.kiem.chung.tu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <!-- <record id="action_tien_ich_tim_kiem_chung_tu_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_tien_ich_tim_kiem_chung_tu_form" />
+            <field name="act_window_id" ref="open_menu_tien_ich_tim_kiem_chung_tu" />
+        </record> -->
+        <record id="action_tien_ich_tim_kiem_chung_tu_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_tien_ich_tim_kiem_chung_tu_tree"/>
+            <field name="act_window_id" ref="open_menu_tien_ich_tim_kiem_chung_tu"/>
+        </record>
+        <!-- <menuitem name="Tìm kiếm chứng từ" action="tien_ich.open_menu_tien_ich_tim_kiem_chung_tu" id="menu_tien_ich_tim_kiem_chung_tu" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

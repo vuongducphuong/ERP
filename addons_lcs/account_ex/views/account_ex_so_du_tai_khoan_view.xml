@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_account_ex_so_du_tai_khoan_form" model="ir.ui.view">
+            <field name="name">account.ex.so.du.tai.khoan.form</field>
+            <field name="model">account.ex.so.du.tai.khoan</field>
+            <field name="arch" type="xml">
+                <form string="Số dư tài khoản" cloudify_js="account_ex_so_du_tai_khoan_list_view">
+                    <sheet>
+                        <group col="6">
+                            <field name="currency_id"/>
+                            <field name="CHI_TIET_THEO_DOI_TUONG" invisible="1" />
+                            <field name="CHI_TIET_THEO_TK_NGAN_HANG" invisible="1" />
+                            <field name="LOAI_DOI_TUONG" invisible="1" />
+                            <field name="LOAI_CHUNG_TU" invisible="1" />
+                            <field name="SO_TAI_KHOAN_ID" invisible="1" />
+                            <field name="CO_HACH_TOAN_NGOAI_TE" invisible="1" />
+                        </group>
+                        <p style="color: red;">
+                            Lưu ý: Chức năng này chỉ nhập số dư của các tài khoản không theo dõi chi tiết theo tài khoản ngân hàng, khách hàng, nhà cung cấp hay nhân viên. 
+                            <br/>
+                            Với các tài khoản theo dõi chi tiết theo các đối tượng: tài khoản ngần hàng, khách hàng, nhà cung cấp hay nhân viên bạn vào các chức năng tương ứng để nhập số dư
+                        </p>
+                        <notebook>
+                            <page>
+                                <field name="ACCOUNT_EX_SO_DU_TAI_KHOAN_CHI_TIET_IDS" mode="tree" nolabel="1">
+                                    <tree editable="bottom" create="false" delete="false">
+                                        <field name="TK_ID" string="Số tài khoản" invisible="1"/>
+                                        <field name="SO_TAI_KHOAN" string="Số tài khoản" readonly="1"/>
+                                        <field name="TEN_TAI_KHOAN" string="Tên tài khoản" readonly="1"/>
+                                        <field name="DU_NO_NGUYEN_TE" string="Dư nợ" attrs="{'readonly': [('TINH_CHAT_TAI_KHOAN', '=', '1')], 'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_NO" string="Dư nợ quy đổi" attrs="{'readonly': [('TINH_CHAT_TAI_KHOAN', '=', '1')], 'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_CO_NGUYEN_TE" string="Dư có" attrs="{'readonly': [('TINH_CHAT_TAI_KHOAN', '=', '0')], 'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_CO" string="DƯ có quy đổi" attrs="{'readonly': [('TINH_CHAT_TAI_KHOAN', '=', '0')], 'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+
+                                        <field name="DU_NO" string="Dư nợ" attrs="{'readonly': [('TINH_CHAT_TAI_KHOAN', '=', '1')], 'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                                        <field name="DU_CO" string="Dư có" attrs="{'readonly': [('TINH_CHAT_TAI_KHOAN', '=', '0')], 'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                                        <field name="NHAP_SO_DU_CHI_TIET" string="Nhập số dư chi tiết" linked="true" readonly="1" />
+                                        <field name="currency_id" invisible="1" />
+                                        <field name="TINH_CHAT_TAI_KHOAN" invisible="1"/>
+                                        <field name="NGAY_HACH_TOAN" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_account_ex_so_du_tai_ngan_hang_khoan_form" model="ir.ui.view">
+            <field name="name">account.ex.so.du.tai.khoan.form</field>
+            <field name="model">account.ex.so.du.tai.khoan</field>
+            <field name="arch" type="xml">
+                <form string="Nhập số dư tài khoản ngân hàng" cloudify_js="account_ex_so_du_tai_khoan_ngan_hang_list_view">
+                    <sheet>
+                        <group col="6">
+                            <field name="currency_id" />
+                            <field name="CHI_TIET_THEO_DOI_TUONG" invisible="1" />
+                            <field name="CHI_TIET_THEO_TK_NGAN_HANG" invisible="1" />
+                            <field name="LOAI_DOI_TUONG" invisible="1" />
+                            <field name="LOAI_CHUNG_TU" invisible="1" />
+                            <field name="SO_TAI_KHOAN_ID" invisible="1" />
+                            <field name="CO_HACH_TOAN_NGOAI_TE" invisible="1" />
+                        </group>
+                        <notebook>
+                            <page>
+                                <field name="ACCOUNT_EX_SO_DU_TAI_KHOAN_CHI_TIET_IDS" mode="tree" nolabel="1">
+                                    <tree editable="bottom" create="false" delete="false">
+                                        <field name="TK_NGAN_HANG_ID" string="Số TK ngân hàng" readonly="1"/>
+                                        <field name="TEN_TAI_KHOAN" readonly="1"/>
+                                        <field name="TK_ID" string="Số tài khoản" required="True" domain="[('CHI_TIET_THEO_TAI_KHOAN_NGAN_HANG', '=', True)]"/>
+                                        <field name="DU_NO_NGUYEN_TE" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_NO" string="Dư nợ quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_CO_NGUYEN_TE" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_CO" string="DƯ có quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+
+                                        <field name="DU_NO" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                                        <field name="DU_CO" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                                        <field name="currency_id" invisible="1" />
+                                        <field name="NGAY_HACH_TOAN" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_account_ex_cong_no_khach_hang_form" model="ir.ui.view">
+            <field name="name">account.ex.so.du.tai.khoan.form</field>
+            <field name="model">account.ex.so.du.tai.khoan</field>
+            <field name="arch" type="xml">
+                <form string="Nhập số dư công nợ khách hàng" cloudify_js="account_ex_nhap_so_du_ban_dau_cong_no_khach_hang_list_view">
+                    <sheet>
+                        <group col="6">
+                            <field name="SO_TAI_KHOAN_ID" domain="[('DOI_TUONG', '=', True),('DOI_TUONG_SELECTION', '=', '1')]" options="{'showClearButton': false}"/>
+                            <field name="currency_id"/>
+                            <field name="CHI_TIET_THEO_DOI_TUONG" invisible="1" />
+                            <field name="CHI_TIET_THEO_TK_NGAN_HANG" invisible="1" />
+                            <field name="LOAI_DOI_TUONG" invisible="1" />
+                            <field name="LOAI_CHUNG_TU" invisible="1" />
+                            <field name="CO_HACH_TOAN_NGOAI_TE" invisible="1" />
+                        </group>
+                        <notebook>
+                            <page>
+                                <field name="ACCOUNT_EX_SO_DU_TAI_KHOAN_CHI_TIET_IDS" mode="tree" nolabel="1">
+                                    <tree editable="bottom" create="false" delete="false">
+                                        <field name="DOI_TUONG_ID" string="Mã khách hàng" readonly="1"/>
+                                        <field name="TEN_DOI_TUONG" string="Tên khách hàng" readonly="1"/>
+                                        <field name="DU_NO_NGUYEN_TE" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_NO" string="Dư nợ quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_CO_NGUYEN_TE" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_CO" string="DƯ có quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+
+                                        <field name="DU_NO" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                                        <field name="DU_CO" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                                        <field name="NHAP_SO_DU_CHI_TIET" string="Nhập chi tiết công nợ" linked="true" readonly="1" />
+                                        <field name="currency_id" invisible="1" />
+                                        <field name="TK_ID" invisible="1" />
+                                        <field name="NGAY_HACH_TOAN" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_account_ex_cong_no_ncc_form" model="ir.ui.view">
+            <field name="name">account.ex.so.du.tai.khoan.form</field>
+            <field name="model">account.ex.so.du.tai.khoan</field>
+            <field name="arch" type="xml">
+                <form string="Nhập số dư công nợ nhà cung cấp" cloudify_js="account_ex_nhap_so_du_ban_dau_cong_no_nha_cung_cap_list_view">
+                    <sheet>
+                        <group col="6">
+                            <field name="SO_TAI_KHOAN_ID" domain="[('DOI_TUONG', '=', True),('DOI_TUONG_SELECTION', '=', '0')]" options="{'showClearButton': false}"/>
+                            <field name="currency_id"/>
+                            <field name="CHI_TIET_THEO_DOI_TUONG" invisible="1" />
+                            <field name="CHI_TIET_THEO_TK_NGAN_HANG" invisible="1" />
+                            <field name="LOAI_DOI_TUONG" invisible="1" />
+                            <field name="LOAI_CHUNG_TU" invisible="1" />
+                            <field name="CO_HACH_TOAN_NGOAI_TE" invisible="1" />
+                        </group>
+                        <notebook>
+                            <page>
+                                <field name="ACCOUNT_EX_SO_DU_TAI_KHOAN_CHI_TIET_IDS" mode="tree" nolabel="1">
+                                    <tree editable="bottom" create="false" delete="false">
+                                        <field name="DOI_TUONG_ID" string="Mã nhà cung cấp" readonly="1"/>
+                                        <field name="TEN_DOI_TUONG" string="Tên nhà cung cấp" readonly="1"/>
+                                        <field name="DU_NO_NGUYEN_TE" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_NO" string="Dư nợ quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_CO_NGUYEN_TE" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_CO" string="DƯ có quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+
+                                        <field name="DU_NO" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                                        <field name="DU_CO" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                                        <field name="NHAP_SO_DU_CHI_TIET" string="Nhập chi tiết công nợ" linked="true" readonly="1" />
+                                        <field name="currency_id" invisible="1" />
+                                        <field name="TK_ID" invisible="1" />
+                                        <field name="NGAY_HACH_TOAN" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_account_ex_cong_no_nhan_vien_form" model="ir.ui.view">
+            <field name="name">account.ex.so.du.tai.khoan.form</field>
+            <field name="model">account.ex.so.du.tai.khoan</field>
+            <field name="arch" type="xml">
+                <form string="Nhập số dư công nợ nhân viên" cloudify_js="account_ex_nhap_so_du_ban_dau_cong_no_nhan_vien_list_view">
+                    <sheet>
+                        <group col="6">
+                            <field name="SO_TAI_KHOAN_ID" domain="[('DOI_TUONG', '=', True),('DOI_TUONG_SELECTION', '=', '2')]" options="{'showClearButton': false}"/>
+                            <field name="currency_id" />
+                            <field name="CHI_TIET_THEO_DOI_TUONG" invisible="1" />
+                            <field name="CHI_TIET_THEO_TK_NGAN_HANG" invisible="1" />
+                            <field name="LOAI_DOI_TUONG" invisible="1" />
+                            <field name="LOAI_CHUNG_TU" invisible="1" />
+                            <field name="CO_HACH_TOAN_NGOAI_TE" invisible="1" />
+                        </group>
+                        <notebook>
+                            <page>
+                                <field name="ACCOUNT_EX_SO_DU_TAI_KHOAN_CHI_TIET_IDS" mode="tree" nolabel="1">
+                                    <tree editable="bottom" create="false" delete="false">
+                                        <field name="DOI_TUONG_ID" string="Mã nhân viên" readonly="1"/>
+                                        <field name="TEN_DOI_TUONG" string="Tên nhân viên" readonly="1"/>
+                                        <field name="DU_NO_NGUYEN_TE" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_NO" string="Dư nợ quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_CO_NGUYEN_TE" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+                                        <field name="DU_CO" string="DƯ có quy đổi" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', False)]}"/>
+
+                                        <field name="DU_NO" string="Dư nợ" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                                        <field name="DU_CO" string="Dư có" attrs="{'column_invisible': [('parent.CO_HACH_TOAN_NGOAI_TE', '=', True)]}"/>
+                                        <field name="NHAP_SO_DU_CHI_TIET" string="Nhập chi tiết công nợ" linked="true" readonly="1" />
+                                        <field name="currency_id" invisible="1" />
+                                        <field name="TK_ID" invisible="1" />
+                                        <field name="NGAY_HACH_TOAN" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

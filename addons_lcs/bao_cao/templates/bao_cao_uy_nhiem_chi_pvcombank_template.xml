@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="pvcunc">
+        <t t-call="web.external_layout">
+            <div class="page" style="line-height: 1.1;">
+                <div class="col-xs-4">
+                    <span></span>
+                </div>
+                <div class="col-xs-4 text-center">
+                    <div class="tieu-de-cua-bao-cao" style="font-size: 15.5pt;">
+                        <span>
+                            <strong> UỶ NHIỆM CHI</strong>
+                        </span>
+                        <span style="font-family: Times New Roman; font-size: 12pt;">PAYMENT INSTRUCTION</span>
+                    </div>
+                </div>
+                <div class="col-xs-4 text-right">
+                    <span>
+                        <img src="/bao_cao/static/src/img/pvcombank.jpg" style="height:60px"></img>
+                    </span>
+                </div>
+                <table style="width:100%;">
+                    <tr>
+                        <td>
+                            <span style="font-family: Times New Roman; font-size: 10pt;">Ngày lập </span>
+                            <span style="font-family: Times New Roman; font-size: 9pt; color: rgb(0,0,128);"> |Date</span>
+                            <span style="font-size:10pt;margin-left: 13px;" t-if="o.NGAY_CHUNG_TU" t-field="o.NGAY_CHUNG_TU" />
+                        </td>
+                    </tr>
+                </table>
+                <div class="row" style="line-height: 1.16;">
+                    <div class="col-xs-12">
+                        <span style="font-family: Times New Roman; font-size:10pt">Đơn vị trả tiền </span>
+                        <span style=" font-family: Times New Roman; font-size:9pt; color: rgb(0,0,128); margin-left: 15px;">| Paymer's name</span>
+                        <span style=" font-family: Times New Roman; font-size:10pt; margin-left: 17px; background: rgb(173,216,230);" t-esc="o.get_ten_cong_ty()" />
+                    </div>
+                    <div class="col-xs-12">
+                        <span style="font-family: Times New Roman; font-size:10pt">Số tài khoản </span>
+                        <span style="font-family: Times New Roman; font-size:9pt; color: rgb(0,0,128);">  | Account number</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <span style="font-size:10pt" t-if="o.TAI_KHOAN_CHI_GUI_ID" t-field="o.TAI_KHOAN_CHI_GUI_ID" />
+                    <t t-if="not o.TAI_KHOAN_CHI_GUI_ID" t-esc="'...........................................'" />
+                    <span style="font-size:10pt;">Tại </span>
+                    <span style="font-size:9pt; color: rgb(0,0,128);"> |At PVcomBank</span>
+                </div>
+                <div class="col-xs-6">
+                    <span data-oe-model="account.ex.phieu.thu.chi" data-oe-id="189" data-oe-field="TEN_TK_CHI" data-oe-type="char" data-oe-expression="o.TEN_TK_CHI">Ngân hàng Đầu tư và Phát triển Việt Nam - Chi nhánh Thanh Xuân</span>
+                </div>
+            </div>
+            <div class="row" style="line-height: 1.16;">
+                <div class="col-xs-8">
+                    <span style="font-size:10pt">Số tiền</span>
+                    <span style="font-size:9pt; color: rgb(0,0,128);"> |Amount</span>
+                </div>
+                <div class="col-xs-4">
+                    <span style="font-family: Times New Roman; font-size:10pt">Phí Ngân hàng</span>
+                    <span style="font-size:9pt; color: rgb(0,0,128);"> |Bank charges</span>
+                </div>
+            </div>
+            <div class="row" style="line-height: 1.16;">
+                <div class="col-xs-8">
+                    <strong>
+                        <span style="font-size:11pt ; background: rgb(225,225,0);" t-if="o.SO_TIEN_1" t-field="o.SO_TIEN_1" />
+                        <span style="background: rgb(225,225,0);"></span>
+                    </strong>
+                    <span style=" margin-left: 30px;font-size:10pt;">Loại tiền tệ</span>
+                    <input type="checkbox" style="margin-left: 15px; color: rgb(0,176,240);" default="True"></input>
+                    <span>VND</span>
+                    <input type="checkbox" style="margin-left: 15px; color: rgb(0,176,240);"></input>
+                    <span>USD</span>
+                    <input type="checkbox" style="color: rgb(0,176,240); margin-left: 15px;"></input>
+                    <span style="font-size:10pt;">Khác</span>
+                    <span style="font-size:9pt; color: rgb(0,0,128);"> |Other</span>
+                </div>
+                <div class="col-xs-4">
+                    <input type="checkbox" style="margin-left: 15px; color: rgb(0,176,240);"></input>
+                    <span style="font-family: Times New Roman; font-size:10pt">Phí trong</span>
+                    <span style="font-family: Times New Roman; font-size:9pt; color: rgb(0,0,128);">  |Including</span>
+                </div>
+            </div>
+            <div class="row" style="line-height: 1.16;">
+                <div class="col-xs-8">
+                    <span style="font-size:10pt">Số tiền bằng chữ</span>
+                    <span style="font-size:9pt ;color: rgb(0,0,128);">  |Amount in words</span>
+                </div>
+                <div class="col-xs-4">
+                    <input type="checkbox" style="margin-left: 15px; color: rgb(0,176,240);"></input>
+                    <span style="font-family: Times New Roman; font-size:10pt">Phí ngoài</span>
+                    <span style="font-family: Times New Roman; font-size:9pt; color: rgb(0,0,128);">  |Excluding</span>
+                </div>
+            </div>
+            <div class="row" style="font-size:10pt line-height: 1.16;">
+                <div class="col-xs-6">
+                    <i>
+                        <span t-if="o.SO_TIEN_1" t-field="o.SO_TIEN_1" t-options="{'widget': 'vietbangchu'}" style="margin-left: 15px;" />
+                    </i>
+                    <i>
+                        
+                    </i>
+                    <t t-if="not o.SO_TIEN_1" t-call="danh_muc.empty_line" />
+                </div>
+            </div>
+            <hr style="margin-top: 4px; margin-bottom: -4px; line-height: 1.1666; border-style: solid; border-color: green;" />
+            <div class="row" style="line-height: 1.16666;">
+                <div class="col-xs-12">
+                    <span style="font-size:10pt">Người/Đơn vị thụ hưởng</span>
+                    <span style="font-size:9pt; color: rgb(0,0,128);">  |Beneficiary</span>
+                    <span style="font-size:10pt;margin-left: 15px;" t-if="o.TEN_DOI_TUONG" t-field="o.TEN_DOI_TUONG" />
+                </div>
+            </div>
+            <div class="row" style="line-height: 1.16;">
+                <div class="col-xs-12">
+                    <input type="checkbox"></input>
+                    <span style="font-size:10pt">Số tài khoản</span>
+                    <span style="font-size:9pt; color: rgb(0,0,128)">  |Account number</span>
+                    <strong>
+                        <span t-if="o.TAI_KHOAN_THU_NHAN_ID" t-field="o.TAI_KHOAN_THU_NHAN_ID" style="background: rgb(173,216,230); margin-left: 15px;" />
+                    </strong>
+                    <t t-if="not o.TAI_KHOAN_THU_NHAN_ID" t-call="danh_muc.empty_line" />
+                </div>
+            </div>
+            <div class="row" style="line-height: 1.16;">
+                <div class="col-xs-12">
+                    <span style="font-size:10pt">Tại ngân hàng</span>
+                    <span style="font-size:9pt; color: rgb(0,0,128); margin-left: 5px;">  |With bank</span>
+                    <strong>
+                        <span t-if="o.TEN_TK_NHAN" t-field="o.TEN_TK_NHAN" style="margin-left: 15px;" />
+                    </strong>
+                    <t t-if="not o.TEN_TK_NHAN" t-call="danh_muc.empty_line" />
+                </div>
+            </div>
+            <div class="row" style="line-height: 1.16;">
+                <div class="col-xs-6">
+                    <input type="checkbox"></input>
+                    <span style="font-size:10pt">Số CMND/Hộ chiếu</span>
+                    <span style="font-size:9pt ;color: rgb(0,0,128);">  |ID/PP</span>
+                    <span>.................................................</span>
+                </div>
+                <div class="col-xs-6">
+                    <span style="font-size:10pt">Ngày cấp</span>
+                    <span style="font-size:9pt; color: rgb(0,0,128);">  |Iss.date</span>
+                    <span>.................................................</span>
+                </div>
+            </div>
+            <div class="row" style="line-height: 1.16;">
+                <div class="col-xs-12">
+                    <span style="font-size:10pt">Nơi cấp</span>
+                    <span style="font-size:9pt ;color: rgb(0,0,128);">   |Iss.place</span>
+                    <span>..................................................................................................................................................</span>
+                </div>
+            </div>
+            <div class="row" style="line-height: 1.16;">
+                <div class="col-xs-12">
+                    <span style="font-size:10pt">Nội dung</span>
+                    <span style="font-size:9pt; color: rgb(0,0,128);">  |Remarks</span>
+                    <span style=" margin-left: 15px;font-size:10pt" t-if="o.TEN_NOI_DUNG_TT" t-field="o.TEN_NOI_DUNG_TT" />
+                    <t t-if="not o.TEN_NOI_DUNG_TT" t-esc="'.....................................................................................'" />
+                </div>
+            </div>
+            <div class="row" style="line-height: 1.16;">
+                <div class="col-xs-6">
+                    <span style="font-size:10pt">
+                        <strong>Chữ ký của đơn vị trả tiền </strong>
+                    </span>
+                    <span style="font-size:9pt; color: rgb(0,0,128);">   |Payer's name, signature</span>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <span style="font-size:10pt">
+                        <strong>Chữ ký kiểm soát viên </strong>
+                    </span>
+                    <span style="font-size:9pt; color: rgb(0,0,128);">  |Supervisor's name, signature</span>
+                </div>
+            </div>
+            <table style="width:100%;">
+                <tr>
+                    <td style="width:25%">
+                        <span style="font-size:10pt">
+                            <strong>Kế toán trưởng </strong>
+                        </span>
+                        <span style="font-size:9pt; color: rgb(0,0,128);">   |Chief Accountant's</span>
+                    </td>
+                    <td style="width:25%">
+                        <span style="font-size:10pt">
+                            <strong>Chủ tài khoản </strong>
+                        </span>
+                        <span style="font-size:8pt; color: rgb(0,0,128);">|A/C Holder's</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:25%">
+                        <span></span>
+                    </td>
+                    <td style="width:43%">
+                        <span style="font-size:8pt">Chữ ký,đóng dấu</span>
+                        <span style="font-size:8pt ;color: rgb(0,0,128);">|Signature Stamp</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:25%;padding-top: 16px; text-align: center;">
+                        <strong>
+                            <span style="font-size:10pt" t-esc="o.get_ke_toan_truong()" />
+                        </strong>
+                    </td>
+                    <td style="width:25%"></td>
+                </tr>
+            </table>
+            <div class="row" style="line-height: 1.16;">
+                <div class="col-xs-8">
+                    <strong>
+                        <span style="font-family: Times New Roman; font-size:8pt; color: rgb(0,176,240);"> No.22 Ngô Quyền,</span>
+                    </strong>
+                    <strong>
+                        <span style=" margin-left: 15px;font-family: Times New Roman; font-size:8pt; color: rgb(0,176,240)"> T</span>
+                    </strong>
+                    <span style=" font-size:8pt; margin-left: 5px">(84-4)39426800</span>
+                    <strong>
+                        <span style=" margin-left: 31px;font-family: Times New Roman; font-size:8pt; color: rgb(0,176,240)"> E </span>
+                    </strong>
+                    <span style=" font-size:8pt; margin-left: 5px">pvb@pvcombank.com.vn</span>
+                </div>
+                <div class="col-xs-4 text-right">
+                    <strong>
+                        <span style="font-family: Times New Roman; font-size:8pt; color: rgb(0,176,240);">Ngân hàng TMCP Đại Chúng Việt Nam</span>
+                    </strong>
+                </div>
+            </div>
+            <div class="row" style="line-height: 1.16;">
+                <div class="col-xs-8">
+                    <strong>
+                        <span style="font-family: Times New Roman; font-size:8pt; color: rgb(0,176,240);"> Hoàn Kiếm, Hà Nội</span>
+                    </strong>
+                    <strong>
+                        <span style=" margin-left: 15px;font-family: Times New Roman; font-size:8pt; color: rgb(0,176,240)"> F  </span>
+                    </strong>
+                    <span style=" font-size:8pt; margin-left: 5px">(84-4)39426796/97</span>
+                    <strong>
+                        <span style=" margin-left: 15px;font-family: Times New Roman; font-size:8pt; color: rgb(0,176,240)"> W </span>
+                    </strong>
+                    <span style=" font-size:8pt; margin-left: 5px">www.pvcombank.com.vn</span>
+                </div>
+                <div class="col-xs-4 text-right">
+                    <strong>
+                        <span style="font-family: Times New Roman; font-size:7pt">VIETNAM PUBLIC BANK</span>
+                    </strong>
+                </div>
+            </div>
+        </t>
+        
+    </template>
+    <template id="template_pvcunc">
+        <t t-call="web.html_container">
+            <t t-set="data_paper_format" t-value="'A4'" />
+            <t t-foreach="docs" t-as="o">
+                <t t-call="bao_cao.pvcunc" />
+                <br />
+                <span>..............................................................................................................................................................................................</span>
+                <br />
+                <t t-call="bao_cao.pvcunc" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="Uỷ nhiệm chi (PVC)" id="action_template_pvcunc" model="bao.cao.uy.nhiem.chi.pvc" report_type="qweb-html" name="bao_cao.template_pvcunc" file="bao_cao.template_pvcunc" print_report_name="Uỷ nhiệm chi PVcomBank" />
+    </data>
+</odoo>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+  <data>
+    <record id="view_gia_thanh_ky_tinh_gia_thanh_san_xuat_lien_tuc_gian_don_form" model="ir.ui.view">
+      <field name="name">gia.thanh.ky.tinh.gia.thanh.san.xuat.lien.tuc.gian.don.form</field>
+      <field name="model">gia.thanh.ky.tinh.gia.thanh</field>
+      <field name="arch" type="xml">
+        <form string="Kỳ tính giá thành" cloudify_js="ky_tinh_gia_thanh_san_xuat_lien_tuc_gian_don_form_view">
+          <header>
+            <button id="btn_tap_hop_chi_phi_truc_tiep" string="Tập hợp chi phí trực tiếp" class="oe_highlight oe_read_only" />
+            <button id="btn_tap_hop_khoan_giam_gia_thanh" string="Tập hợp khoản giảm giá thành" class="oe_highlight oe_read_only" />
+            <button id="btn_tinh_gia_thanh" string="Tính giá thành" class="oe_highlight oe_read_only" />
+            <button id="btn_ket_chuyen_chi_phi" string="Kết chuyển chi phí" class="oe_highlight oe_read_only" />
+            <button id="btn_bang_tap_hop_chi_phi_theo_yeu_to" string="Bảng tập hợp chi phí theo yếu tố" class="oe_highlight oe_read_only" />
+            <button id="btn_bang_tap_hop_chi_phi_theo_khoan_muc" string="Bảng tập hợp chi phí theo khoản mục" class="oe_highlight oe_read_only" />
+            <field name="LOAI_GIA_THANH" invisible="1" />
+          </header>
+          <sheet>
+            <group col="12" colspan="12" string="Thông tin chung">
+              <group col="6" colspan="6">
+                <field name="KY" colspan="6" />
+              </group>
+              <group col="6" colspan="6">
+                <field name="TU_NGAY" colspan="3" />
+                <field name="DEN_NGAY" colspan="3" />
+              </group>
+              <group col="8" colspan="8">
+                <field name="TEN" colspan="8" string="Tên (*)" />
+              </group>
+            </group>
+            <!--Master/Detail form-->
+            <notebook>
+              <page string="Đối tượng cần tập hợp chi phí">
+                <field name="GIA_THANH_KY_TINH_GIA_THANH_CHI_TIET_IDS" mode="tree">
+                  <tree editable="false" create="false">
+                    <field name="STT" widget="handle" invisible="1" />
+                    <field name="MA_DOI_TUONG_THCP_ID" />
+                    <field name="TEN_DOI_TUONG_THCP" />
+                    <field name="LOAI" />
+                  </tree>
+                </field>
+              </page>
+            </notebook>
+            <group>
+              <button id="btn_chon" string="Chọn..." class="oe_highlight oe_edit_only" colspan="4" />
+            </group>
+          </sheet>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+            <field name="message_ids" widget="mail_thread" />
+          </div>
+        </form>
+      </field>
+    </record>
+    <record id="view_gia_thanh_ky_tinh_gia_thanh_san_xuat_lien_tuc_gian_don_tree" model="ir.ui.view">
+      <field name="name">gia.thanh.ky.tinh.gia.thanh.san.xuat.lien.tuc.gian.don.tree</field>
+      <field name="model">gia.thanh.ky.tinh.gia.thanh</field>
+      <field name="arch" type="xml">
+        <tree string="Sản xuất liên tục - Giản đơn">
+          <field name="TU_NGAY" fixed_column="True" />
+          <field name="DEN_NGAY" fixed_column="True" />
+          <field name="TEN" />
+          <field name="DO_DANG_DAU_KY" sum="Tổng" />
+          <field name="PHAT_SINH_TRONG_KY" sum="Tổng" />
+          <field name="KHOAN_GIAM_GIA_THANH" sum="Tổng" />
+          <field name="DO_DANG_CUOI_KY" sum="Tổng" />
+          <field name="TONG_GIA_THANH" sum="Tổng" />
+        </tree>
+      </field>
+    </record>
+    <record id="open_menu_gia_thanh_ky_tinh_gia_thanh_san_xuat_lien_tuc_gian_don" model="ir.actions.act_window">
+      <field name="name">Kỳ tính giá thành</field>
+      <field name="res_model">gia.thanh.ky.tinh.gia.thanh</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain">[('LOAI_GIA_THANH', '=', 'DON_GIAN')]</field>
+      <field name="context">{'default_LOAI_GIA_THANH': 'DON_GIAN', 'LOAI_GIA_THANH': 'DON_GIAN'}</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+        <p></p>
+      </field>
+    </record>
+    <record id="action_gia_thanh_ky_tinh_gia_thanh_san_xuat_lien_tuc_gian_don_tree" model="ir.actions.act_window.view">
+      <field name="view_mode">tree</field>
+      <field name="view_id" ref="view_gia_thanh_ky_tinh_gia_thanh_san_xuat_lien_tuc_gian_don_tree" />
+      <field name="act_window_id" ref="open_menu_gia_thanh_ky_tinh_gia_thanh_san_xuat_lien_tuc_gian_don" />
+    </record>
+    <record id="action_gia_thanh_ky_tinh_gia_thanh_san_xuat_lien_tuc_gian_don_form" model="ir.actions.act_window.view">
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="view_gia_thanh_ky_tinh_gia_thanh_san_xuat_lien_tuc_gian_don_form" />
+      <field name="act_window_id" ref="open_menu_gia_thanh_ky_tinh_gia_thanh_san_xuat_lien_tuc_gian_don" />
+    </record>
+  </data>
+  <data noupdate="1"></data>
+</odoo>

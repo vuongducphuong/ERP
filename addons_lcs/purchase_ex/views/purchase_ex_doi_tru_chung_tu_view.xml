@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_purchase_ex_doi_tru_chung_tu_tham_so_form" model="ir.ui.view">
+            <field name="name">purchase.ex.doi.tru.chung.tu.form</field>
+            <field name="model">purchase.ex.doi.tru.chung.tu</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_chung_tu_mua_hang_form_view">
+                    <sheet>
+                        <group col="8" string="Đối tượng">
+                            <field name="DOI_TUONG_ID" domain="['|','|',('LA_KHACH_HANG','=','True'),('LA_NHA_CUNG_CAP','=','True'),('LA_NHAN_VIEN','=','True')]" required="True" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}"/>
+                            <field name="currency_id" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+                            <field name="TK_XU_LY_CL_LAI_ID" domain="[('SO_TAI_KHOAN', '=like', '515%')]" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" attrs="{'invisible': [('IS_TY_GIA', '=', False)]}"/>
+                            <field name="TK_XU_LY_CL_LO_ID" domain="[('SO_TAI_KHOAN', '=like', '635%')]" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" attrs="{'invisible': [('IS_TY_GIA', '=', False)]}"/>
+                            <field name="TAI_KHOAN_PHAI_TRA_ID" domain="[('SO_TAI_KHOAN', '=like','331%')]" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                            <field name="NGAY_DOI_TRU"/>
+                            <button name="btn_lay_du_lieu" string="Lấy dữ liệu" context="{'discard_changes': True}"/>
+                            <field name="IS_TY_GIA" invisible="1" />
+                            <field name="LAY_DU_LIEU_JSON" invisible="1" />
+
+                        </group>
+                        <notebook>
+                            <page string="Chứng từ thanh toán">
+                                <field name="PURCHASE_EX_DOI_TRU_CHUNG_TU_THANH_TOAN_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="CHON"/>
+                                        <field name="NGAY_CHUNG_TU" readonly='1'/>
+                                        <field name="SO_CHUNG_TU" readonly='1'/>
+                                        <field name="DIEN_GIAI" readonly='1'/>
+                                        <field name="NHAN_VIEN_ID" readonly='1' domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}"/>
+                                        <field name="TEN_NHAN_VIEN" readonly='1'/>
+                                        <field name="TY_GIA" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}" readonly="1"/>
+                                        <field name="SO_TIEN" readonly='1' sum='Total amount'/>
+                                        <field name="SO_TIEN_QUY_DOI" readonly="1" sum="tong so tien quy doi" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="TY_GIA_DANH_GIA_LAI" readonly="1" sum="tong ty gia" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+
+                                        <field name="SO_CHUA_DOI_TRU" readonly='1' sum='Total amount'/>
+                                        <field name="SO_CHUA_DOI_TRU_QUY_DOI" readonly="1" sum="tong chua doi tru quy doi" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="SO_TIEN_DOI_TRU" sum='Total amount'/>
+                                        <field name="SO_TIEN_DOI_TRU_QUY_DOI" readonly="1" sum="tong so tien doi tru quy doi" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="LOAI_CHUNG_TU" readonly='1'/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <notebook>
+                            <page string="Chứng từ công nợ">
+                                <field name="PURCHASE_EX_DOI_TRU_CHUNG_TU_CONG_NO_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="CHON"/>
+                                        <field name="NGAY_CHUNG_TU" readonly='1'/>
+                                        <field name="SO_CHUNG_TU" readonly='1'/>
+                                        <field name="SO_HOA_DON" readonly='1'/>
+                                        <field name="HAN_THANH_TOAN" readonly='1'/>
+                                        <field name="DIEN_GIAI" readonly='1'/>
+                                        <field name="NHAN_VIEN_ID" readonly='1'  domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}"/>
+                                        <field name="TEN_NHAN_VIEN" readonly='1'/>
+
+                                        <field name="TY_GIA" readonly="1" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="SO_TIEN" readonly="1" sum="tong so tien"/>
+                                        <field name="SO_TIEN_QUY_DOI" readonly="1" sum="tong so tien quy doi" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="TY_GIA_DANH_GIA_LAI" readonly="1" sum="tong ty gia" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="SO_CON_NO" readonly="1" sum="tong so tien con no"/>
+                                        <field name="SO_CON_NO_QUY_DOI" readonly="1" sum="tong so tien con no quy doi" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="SO_TIEN_DOI_TRU" readonly="1" sum="tong so tien doi tru"/>
+                                        <field name="SO_TIEN_DOI_TRU_QUY_DOI" readonly="1" sum="tong so tien doi tru quy doi" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="LOAI_CHUNG_TU" readonly="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+
+                        <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_purchase_ex_doi_tru_chung_tu_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Đối trừ chứng từ</field>
+            <field name="res_model">purchase.ex.doi.tru.chung.tu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_purchase_ex_doi_tru_chung_tu_tham_so_form"/>
+        </record>
+
+        <record id="action_open_purchase_ex_doi_tru_chung_tu_form" model="ir.actions.act_window">
+            <field name="name">Đối trừ chứng từ</field>
+            <field name="res_model">purchase.ex.doi.tru.chung.tu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement SO_TAI_KHOAN here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+
+        <!-- <menuitem name="Đối trừ chứng từ" action="purchase_ex.open_purchase_ex_doi_tru_chung_tu_tham_so_form" id="menu_purchase_ex_doi_tru_chung_tu" parent="" sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

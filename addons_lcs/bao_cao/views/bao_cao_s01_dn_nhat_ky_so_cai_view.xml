@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_s01_dn_nhat_ky_so_cai_tree" model="ir.ui.view">
+            <field name="name">bao.cao.s01.dn.nhat.ky.so.cai.tree</field>
+            <field name="model">bao.cao.s01.dn.nhat.ky.so.cai</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="S01 DN Nhật ký Sổ cái" create="false" report="true">
+                    <field name="THU_TU_DONG" />
+                    <field name="NGAY_THANG_GHI_SO" />
+                    <field name="SO_HIEU" />
+                    <field name="NGAY_THANG" />
+                    <field name="DIEN_GIAI" />
+                    <field name="SO_TIEN_PHAT_SINH" />
+                    <field name="NO" />
+                    <field name="CO" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__s01_dn_nhat_ky_so_cai" model="ir.actions.act_window">
+            <field name="name">NHẬT KÝ - SỔ CÁI</field>
+            <field name="res_model">bao.cao.s01.dn.nhat.ky.so.cai</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'header_struct': [['Chứng từ',['SO_HIEU','NGAY_THANG']],['Số hiệu tài khoản đối ứng',['NO','CO']]], 'expand_all': 'true'}</field>
+        </record>
+        <record id="view_bao_cao_s01_dn_nhat_ky_so_cai_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.s01.dn.nhat.ky.so.cai.form</field>
+            <field name="model">bao.cao.s01.dn.nhat.ky.so.cai</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <field name="CHI_NHANH_ID" colspan="4" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" colspan="4" />
+                        </group>
+                        <group col="4">
+                            <field name="KY_BAO_CAO" colspan="4" />
+                            <field name="TU" required="1" />
+                            <field name="DEN" required="1" />
+                        </group>
+                        <group col="4">
+                            <field name="CONG_GOP_CAC_BUT_TOAN_GIONG_NHAU" colspan="4" />
+                            <field name="HIEN_THI_SO_HOA_DON" colspan="4" />
+                            <field name="IN_BAO_CAO_THEO_DANG_MO_RONG" colspan="4" />
+                            <field name="IN_BAO_CAO_THEO_DANG_MAU_DOC" colspan="4" />
+                        </group>
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_s01_dn_nhat_ky_so_cai_tham_so_form" model="ir.actions.act_window">
+            <field name="name">S01-DN: Nhật ký - Sổ cái</field>
+            <field name="res_model">bao.cao.s01.dn.nhat.ky.so.cai</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="size">large</field>
+            <field name="view_id" ref="view_bao_cao_s01_dn_nhat_ky_so_cai_tham_so_form" />
+        </record>
+        <!-- <menuitem name="S01 DN Nhật ký Sổ cái" action="bao_cao.open_bao_cao_s01_dn_nhat_ky_so_cai_tham_so_form" id="menu_bao_cao_s01_dn_nhat_ky_so_cai" parent="" sequence="0"/> -->
+    </data>
+</odoo>

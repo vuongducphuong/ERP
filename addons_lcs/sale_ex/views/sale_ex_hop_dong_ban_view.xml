@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+  <data>
+    <record id="view_sale_ex_hop_dong_ban_form" model="ir.ui.view">
+      <field name="name">sale.ex.hop.dong.ban.form</field>
+      <field name="model">sale.ex.hop.dong.ban</field>
+      <field name="arch" type="xml">
+        <form string="Hợp đồng bán" cloudify_js="sale_ex_hop_dong_ban_view">
+          <sheet>
+            <group col="6" colspan="6">
+              <group col="3" colspan="2">
+                <field name="HOP_DONG_DU_AN_SELECTION" widget="radio" options="{'horizontal': True}" nolabel="1" colspan="3" />
+              </group>
+              <group col="3" colspan="2" attrs="{'invisible': [('HOP_DONG_DU_AN_SELECTION','=', 'DU_AN')]}">
+                <field name="DON_DAT_HANG_ID" colspan="3" nolabel="1" options="{'columns': ['SO_DON_HANG', 'NGAY_DON_HANG','TEN_KHACH_HANG'], 'strings': ['Số đơn hàng', 'Ngày đơn hàng','Khách hàng'],'displays': ['SO_DON_HANG']}" />
+              </group>
+              <field name="base_currency_id" invisible="1" />
+              <field name="DU_KIEN_CHI" invisible="1" />
+              <field name="CONG_TIEN_TRU_CK" invisible="1" />
+              <field name="TY_LE_CK_MT" invisible="1" />
+            </group>
+            <!--Master/Detail form-->
+            <notebook>
+              <page string="1. Thông tin chung">
+                <group col="12" attrs="{'invisible': [('HOP_DONG_DU_AN_SELECTION','=', 'DU_AN')]}">
+                  <group col="6" colspan="6">
+                    <field name="SO_HOP_DONG" colspan="6" string="Số hợp đồng(*)" required="True" />
+                    <field name="NGAY_KY" colspan="3" string="Ngày ký(*)" />
+                    <field name="THUOC_DU_AN_ID" colspan="6" domain="[('HOP_DONG_DU_AN_SELECTION', '=', 'DU_AN')]" options="{'columns': ['SO_HOP_DONG', 'NGAY_KY','TRICH_YEU','TEN_KHACH_HANG'], 'strings': ['Mã dự án', 'Ngày ký','Trích yếu','Khách hàng']}" />
+                    <field name="TRICH_YEU" colspan="6" />
+                    <field name="currency_id" colspan="3" options="{'showClearButton': false, 'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}" />
+                    <field name="TY_GIA" colspan="3" attrs="{'readonly': [('LA_TIEN_CO_SO', '=', True)]}" />
+                    <field name="GIA_TRI_HOP_DONG" colspan="6" />
+                    <field name="GTHD_QUY_DOI" colspan="6" attrs="{'readonly': [('LA_TIEN_CO_SO', '=', True)]}" />
+                    <field name="GIA_TRI_THANH_LY" colspan="6" />
+                    <field name="GTTL_QUY_DOI" colspan="6" attrs="{'readonly': [('LA_TIEN_CO_SO', '=', True)]}" />
+                    <field name="HAN_THANH_TOAN" colspan="3" />
+                    <field name="HAN_GIAO_HANG" colspan="3" />
+                  </group>
+                  <group col="6" colspan="6">
+                    <field name="KHACH_HANG_ID" colspan="4" domain="[('LA_KHACH_HANG','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}" />
+                    <field name="TEN_KHACH_HANG" colspan="6" />
+                    <field name="DIA_CHI" colspan="6" />
+                    <field name="NGUOI_LIEN_HE" colspan="6" />
+                    <field name="DON_VI_THUC_HIEN_ID" colspan="6" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['MA_DON_VI']}" />
+                    <field name="NGUOI_THUC_HIEN_ID" colspan="6" options="{'columns': ['MA_NHAN_VIEN', 'HO_VA_TEN','DON_VI_ID','DT_DI_DONG_LIEN_HE'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','ĐT di động'],'displays': ['MA_NHAN_VIEN']}" />
+                    <field name="TINH_TRANG_HOP_DONG" colspan="6" string="Tình trạng HĐ(*)" />
+                    <field name="NGAY_THANH_LY_HUY_BO" colspan="3" string="Ngày thanh lý/hủy bỏ" />
+                    <field name="LY_DO" colspan="6" />
+                    <field name="DIEU_KHOAN_KHAC" colspan="6" />
+                    <field name="TINH_GIA_THANH" colspan="2" />
+                    <field name="DA_XUAT_HOA_DON" colspan="2" nolabel="1" />
+                    <field name="LA_TIEN_CO_SO" invisible="1" colspan="6" />
+                  </group>
+                </group>
+                <group col="12" attrs="{'invisible': [('HOP_DONG_DU_AN_SELECTION','=', 'HOP_DONG')]}">
+                  <group col="6" colspan="6">
+                    <field name="SO_HOP_DONG" colspan="6" string="Mã dự án(*)" required="True" />
+                    <field name="NGAY_KY" colspan="6" string="Ngày ký(*)" />
+                    <field name="TRICH_YEU" colspan="6" />
+                    <field name="currency_id" colspan="3" options="{'showClearButton': false, 'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}" />
+                    <field name="TY_GIA" colspan="3" attrs="{'readonly': [('LA_TIEN_CO_SO', '=', True)]}" />
+                    <field name="GIA_TRI_HOP_DONG" colspan="6" string="Giá trị dự án" />
+                    <field name="GTHD_QUY_DOI" colspan="6" string="GTDA quy đổi" />
+                    <field name="GIA_TRI_THANH_LY" colspan="6" />
+                    <field name="GTTL_QUY_DOI" colspan="6" />
+                    <field name="HAN_THANH_TOAN" colspan="3" />
+                    <field name="HAN_GIAO_HANG" colspan="3" />
+                  </group>
+                  <group col="6" colspan="6">
+                    <field name="KHACH_HANG_ID" colspan="6" domain="[('LA_KHACH_HANG','=','True')]" options="{'columns': ['MA_KHACH_HANG', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã khách hàng', 'Tên khách hàng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA_KHACH_HANG']}" />
+                    <field name="TEN_KHACH_HANG" colspan="6" />
+                    <field name="DIA_CHI" colspan="6" />
+                                      
+                    <field name="NGUOI_LIEN_HE" colspan="6" />
+                    <field name="DON_VI_THUC_HIEN_ID" colspan="6" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['MA_DON_VI']}" />
+                    <field name="NGUOI_THUC_HIEN_ID" colspan="6" options="{'columns': ['MA_NHAN_VIEN', 'HO_VA_TEN','DON_VI_ID','phone'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','ĐT di động'],'displays': ['MA_NHAN_VIEN']}" />
+                    <field name="TINH_TRANG_HOP_DONG" colspan="6" string="Tình trạng DA(*)" />
+                    <field name="NGAY_THANH_LY_HUY_BO" colspan="6" string="Ngày thanh lý/hủy bỏ" />
+                    <field name="LY_DO" colspan="6" />
+                    <field name="DIEU_KHOAN_KHAC" colspan="6" />
+                    <!-- <field name="LA_HOP_DONG_DU_AN_PHAT_SINH_TRUOC_KHI_SU_DUNG_PHAN_MEM" colspan="6" /> -->
+                    <field name="TINH_GIA_THANH" colspan="2" />
+                    <field name="DA_XUAT_HOA_DON" colspan="2" nolabel="1" />
+                    <field name="LA_TIEN_CO_SO" invisible="1" colspan="6" />
+                  </group>
+                </group>
+                <group col="12">
+                  <group col="6" colspan="6">
+                    <field name="LA_HOP_DONG_DU_AN_PHAT_SINH_TRUOC_KHI_SU_DUNG_PHAN_MEM" colspan="6" nolabel="1" class="o_td_label" />
+                  </group>
+
+                </group>
+                <group col="12" attrs="{'invisible': [('LA_HOP_DONG_DU_AN_PHAT_SINH_TRUOC_KHI_SU_DUNG_PHAN_MEM','=',False)]}">
+                  <group col="6" colspan="6">
+                    <field name="SO_DA_CHI" colspan="6" />
+                    <field name="SO_DA_THU" colspan="6" />
+                    <field name="SO_DA_THU_QUY_DOI" attrs="{'readonly': [('LA_TIEN_CO_SO', '=', True)]}" colspan="6" />
+                    <field name="GIA_TRI_DA_XUAT_HD" colspan="6" />
+                    <field name="GT_DA_XUAT_HD_QUY_DOI" colspan="6" attrs="{'readonly': [('LA_TIEN_CO_SO', '=', True)]}" />
+                  </group>
+                  <group col="6" colspan="6">
+                    <field name="DOANH_THU" colspan="6" />
+                    <field name="GIA_VON_HANG_BAN" colspan="6" />
+                    <field name="CHI_PHI_KHAC" colspan="6" />
+                  </group>
+                </group>
+              </page>
+              <page string="2. Dự kiến chi">
+                <field name="SALE_EX_HOP_DONG_BAN_CHI_TIET_DU_KIEN_CHI_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="DIEN_GIAI" />
+                    <field name="TY_LE_PHAN_TRAM" string="Tỷ lệ %" />
+                    <field name="SO_TIEN" sum="tong tien" />
+                    <field name="NGAY_DU_KIEN_CHI" />
+                    <field name="KHOAN_MUC_CP_ID"  string="Khoản mục CP" options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục cp', 'Tên khoản mục cp'],'displays': ['MA_KHOAN_MUC_CP']}" />
+                    <field name="DON_VI_ID" />
+                    <field name="GTHD_QUY_DOI_DETAIL" invisible="1" />
+                    <field name="base_currency_id" invisible="1" />
+                  </tree>
+                </field>
+              </page>
+              <page string="3. Hàng hóa dịch vụ" attrs="{'invisible': [('HOP_DONG_DU_AN_SELECTION','=', 'DU_AN')]}">
+                <field name="SALE_EX_HOP_DONG_BAN_CHI_TIET_HANG_HOA_DICH_VU_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="MA_HANG_ID" options="{'columns': ['MA', 'TEN','SO_LUONG_TON','GIA_BAN_1','GIA_BAN_2','GIA_BAN_3','GIA_CO_DINH'], 'strings': ['Mã hàng', 'Tên hàng','SỐ lượng tồn','Giá bán 1','Giá bán 2','Giá bán 3','Giá bán cố định'],'displays': ['MA']}" />
+                    <field name="TEN_HANG" />
+                    <field name="DVT_ID" />
+                    <field name="SO_LUONG_YEU_CAU" sum="tong sl yeu cau" />
+                    <field name="SO_LUONG_DA_GIAO" sum="tong sl da giao" readonly="1" />
+                    <field name="DON_GIA" />
+                    <field name="THANH_TIEN" sum="tong thanh tien" />
+                    <field name="THANH_TIEN_QUY_DOI" sum="thanh tien quy doi" attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=' , True)]}" />
+                    <field name="TY_LE_CK" string="Tỷ lệ CK(%)" />
+                    <field name="TIEN_CHIET_KHAU" sum="tien chiet khau" />
+                    <field name="TIEN_CHIET_KHAU_QUY_DOI" sum="tien chiet khau quy doi" attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=' , True)]}" />
+                    <field name="PHAN_TRAM_THUE_GTGT_ID" string="%Thuế GTGT" options="{'no_create': True, 'columns': ['PHAN_TRAM_THUE_GTGT'], 'strings': ['% Thuế'],'displays': ['PHAN_TRAM_THUE_GTGT']}" />
+                    <field name="TIEN_THUE_GTGT" sum="tien thue gtgt" />
+                    <field name="TIEN_THUE_GTGT_QUY_DOI" sum="tien thue gtgt quy doi" attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=' , True)]}" />
+                    <field name="DON_DAT_HANG_ID" readonly="1" />
+                    <field name="currency_id" invisible="1" />
+                    <field name="base_currency_id" invisible="1" />
+                    <field name="DON_GIA_QUY_DOI" invisible="1" />
+                  </tree>
+                </field>
+                <group col="8">
+                  <field name="TIEN_HANG" colspan="2" readonly="1" />
+                  <field name="TIEN_HANG_QUY_DOI" colspan="2" nolabel="1" attrs="{'invisible': [('LA_TIEN_CO_SO','=',True)]}" readonly="1" />
+                  <field name="TIEN_THUE_GTGT" colspan="2" />
+                  <field name="TIEN_THUE_GTGT_QUY_DOI" colspan="2" nolabel="1" attrs="{'invisible': [('LA_TIEN_CO_SO','=',True)]}" readonly="1" />
+                  <field name="TIEN_CHIET_KHAU" colspan="2" />
+                  <field name="TIEN_CHIET_KHAU_QUY_DOI" colspan="2" nolabel="1" attrs="{'invisible': [('LA_TIEN_CO_SO','=',True)]}" readonly="1" />
+                  <field name="TONG_TIEN_THANH_TOAN" colspan="2" />
+                  <field name="TONG_TIEN_THANH_TOAN_QUY_DOI" colspan="2" nolabel="1" attrs="{'invisible': [('LA_TIEN_CO_SO','=',True)]}" readonly="1" />
+                </group>
+              </page>
+              <page string="4. Liên hệ" attrs="{'invisible': [('HOP_DONG_DU_AN_SELECTION','=', 'DU_AN')]}">
+                <field name="SALE_EX_HOP_DONG_BAN_CHI_TIET_LIEN_HE_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="HO_VA_TEN" />
+                    <field name="CHUC_VU" />
+                    <field name="DT_DI_DONG" string="ĐT di động" />
+                    <field name="DT_DI_DONG_KHAC" string="ĐT di động khác" />
+                    <field name="DT_CO_DINH" string="ĐT cố định" />
+                    <field name="EMAIL" />
+                  </tree>
+                </field>
+              </page>
+              <page string="5. Thực chi" attrs="{'invisible': [('HOP_DONG_DU_AN_SELECTION','=', 'DU_AN')]}">
+                <field name="SALE_EX_HOP_DONG_BAN_CHI_TIET_THUC_THI_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="DIEN_GIAI" />
+                    <field name="SO_TIEN" sum="tong tien" />
+                    <field name="KHOAN_MUC_CP_ID"  string="Khoản mục CP" options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục cp', 'Tên khoản mục cp'],'displays': ['MA_KHOAN_MUC_CP']}" />
+                    <field name="DON_VI_ID" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['MA_DON_VI']}" />
+                  </tree>
+                </field>
+                <button id="btn_chon_chung_tu_chi" string="Chọn chứng từ chi"></button>
+              </page>
+              <page string="6. Thực thu" attrs="{'invisible': [('HOP_DONG_DU_AN_SELECTION','=', 'DU_AN')]}">
+                <field name="SALE_EX_HOP_DONG_BAN_CHI_TIET_THUC_THU_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="DIEN_GIAI" />
+                    <field name="SO_TIEN" sum="tong tien" />
+                  </tree>
+                </field>
+                <button id="btn_chon_chung_tu_thu" string="Chọn chứng từ thu"></button>
+              </page>
+              <page string="7. Bán hàng" attrs="{'invisible': [('HOP_DONG_DU_AN_SELECTION','=', 'DU_AN')]}">
+                <field name="SALE_EX_HOP_DONG_BAN_CHI_TIET_BAN_HANG_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="SO_HOA_DON" />
+                    <field name="DIEN_GIAI" />
+                    <field name="TONG_TIEN_THANH_TOAN" sum="tong tien thanh toan" />
+                  </tree>
+                </field>
+              </page>
+              <page string="8. Ghi nhận doanh số" attrs="{'invisible': [('HOP_DONG_DU_AN_SELECTION','=', 'DU_AN')]}">
+                <field name="SALE_EX_HOP_DONG_BAN_CHI_TIET_GHI_NHAN_DOANH_SO_IDS" mode="tree">
+                  <tree editable="bottom">
+                    <field name="LOAI" />
+                    <field name="NGAY" />
+                    <field name="NHAN_VIEN_ID" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nhan_vien'}" />
+                    <field name="DON_VI_ID" />
+                    <field name="HANG_HOA_ID" />
+                    <field name="TY_LE_PHAN_TRAM" string="Tỷ lệ(%)" />
+                    <field name="DOANH_SO_GHI_NHAN_HUY_BO" string="Doanh số ghi nhận/hủy bỏ" sum="tong doanh so" />
+                    <field name="DIEN_GIAI" />
+                  </tree>
+                </field>
+                <!-- <button id="btn_de_nghi_ghi_doanh_so" string="Đề nghị ghi doanh số"></button> -->
+              </page>
+            </notebook>
+          </sheet>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+            <field name="message_ids" widget="mail_thread" />
+          </div>
+        </form>
+      </field>
+    </record>
+    <record id="view_sale_ex_hop_dong_ban_tree" model="ir.ui.view">
+      <field name="name">sale.ex.hop.dong.ban.tree</field>
+      <field name="model">sale.ex.hop.dong.ban</field>
+      <field name="arch" type="xml">
+        <tree string="Hợp đồng bán">
+          <field name="NGAY_GHI_DOANH_SO" />
+          <field name="SO_HOP_DONG" />
+          <field name="THUOC_DU_AN_ID" />
+          <field name="NGAY_KY" />
+          <field name="TRICH_YEU" />
+          <field name="KHACH_HANG_ID" string="Mã khách hàng" />
+          <field name="TEN_KHACH_HANG" />
+          <field name="DON_VI_THUC_HIEN_ID" />
+          <field name="NGUOI_THUC_HIEN_ID" />
+          <field name="GTHD_QUY_DOI" string="Giá trị hợp đồng" sum="tổng giá trị hợp đồng" />
+          <field name="GTTL_QUY_DOI" string="Giá trị thanh lý" sum="tổng giá trị thanh lý" />
+          <field name="GT_DA_XUAT_HD_QUY_DOI" string="Giá trị đã xuất hóa đơn" sum="tổng giá trị đã xuất" />
+          <field name="DU_KIEN_CHI" sum="tổng dự kiến chi" />
+          <field name="THUC_CHI" sum="tổng thực chi" />
+          <field name="SO_CON_PHAI_CHI" sum="tổng số còn phải chi" />
+          <field name="THUC_THU" sum="tổng thực thu" />
+          <field name="SO_CON_PHAI_THU" sum="tổng số còn phải thu" />
+          <field name="DU_KIEN_LAI_LO" sum="tổng dự kiến lãi lỗ" />
+          <field name="TINH_TRANG_HOP_DONG" string="Tình trạng hợp đồng" />
+          <field name="DA_XUAT_HOA_DON" />
+          <field name="LA_DU_AN" />
+          <field name="TINH_THANH_PHO" />
+          <field name="QUAN_HUYEN" />
+          <field name="XA_PHUONG" />
+          <field name="CHI_NHANH_ID" />
+        </tree>
+      </field>
+    </record>
+    <record id="open_menu_sale_ex_hop_dong_ban" model="ir.actions.act_window">
+      <field name="name">Hợp đồng bán</field>
+      <field name="res_model">sale.ex.hop.dong.ban</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+        <p></p>
+      </field>
+    </record>
+    <record id="action_sale_ex_hop_dong_ban_tree" model="ir.actions.act_window.view">
+      <field name="view_mode">tree</field>
+      <field name="view_id" ref="view_sale_ex_hop_dong_ban_tree" />
+      <field name="act_window_id" ref="open_menu_sale_ex_hop_dong_ban" />
+    </record>
+    <record id="action_sale_ex_hop_dong_ban_form" model="ir.actions.act_window.view">
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="view_sale_ex_hop_dong_ban_form" />
+      <field name="act_window_id" ref="open_menu_sale_ex_hop_dong_ban" />
+    </record>
+    <!-- <menuitem name="Hợp đồng bán" action="sale_ex.open_menu_sale_ex_hop_dong_ban" id="menu_sale_ex_hop_dong_ban" parent="" sequence="0" /> -->
+  </data>
+  <data noupdate="1">
+    <record id="sequence_sale_ex_hop_dong_ban_1" model="ir.sequence">
+      <field name="name">sale_ex_hop_dong_ban SO_HOP_DONG sequence</field>
+      <field name="code">sale_ex_hop_dong_ban_SO_HOP_DONG</field>
+      <field name="prefix">DA</field>
+      <field name="padding">5</field>
+    </record>
+  </data>
+</odoo>

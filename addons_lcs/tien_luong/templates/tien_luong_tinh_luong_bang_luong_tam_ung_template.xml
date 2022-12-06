@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="tien_luong_tinh_luong_bang_luong_tam_ung">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-12 text-left truong-thong-tin-dat-tren-header">
+                        <span t-esc="o.get_ten_cong_ty()" />
+                        <br />
+                        <span t-esc="o.get_dia_chi_cong_ty()" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <div class="tieu-de-cua-bao-cao">
+                            <span>
+                                <strong>BẢNG LƯƠNG TẠM ỨNG</strong>
+                            </span>
+                        </div>
+                        <div class="tieu-de-cua-bao-cao" style="font-size: 12pt;">
+                            <span>
+                                <i>Tháng</i>
+                            </span>
+                            <span>
+                                <i>
+                                    <span t-if="o.THANG" t-field="o.THANG" style="margin-left:5px;margin-right:5px;" />
+                                    <t t-if="not o.THANG" t-esc="'....'" />
+                                </i>
+                            </span>
+                            <span>
+                                <i>Năm</i>
+                            </span>
+                            <span>
+                                <i>
+                                    <span t-if="o.NAM" t-field="o.NAM" style="margin-left:5px;" />
+                                    <t t-if="not o.NAM" t-esc="'....'" />
+                                </i>
+                            </span>
+                        </div>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <span>
+                            <strong>Chi nhánh:</strong>
+                        </span>
+                        <span>
+                            <strong>
+                                <span t-if="o.CHI_NHANH_ID" t-field="o.CHI_NHANH_ID" style="margin-left:5px;" />
+                                <t t-if="not o.CHI_NHANH_ID" t-call="danh_muc.empty_line" />
+                            </strong>
+                        </span>
+                    </div>
+                    <!--Table-->
+                    <table class="table table-condensed table-bordereds" style="font-size:12px;margin-left: 15px;width: 96%;margin-top: 5px;">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="vertical-align: middle;width: 1.4cm;">
+                                    <strong>STT</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 2.8cm;">
+                                    <strong>Mã nhân viên</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;">
+                                    <strong>Tên nhân viên</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 2.8cm;">
+                                    <strong>Chức vụ</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 3cm;">
+                                    <strong>Số tiền tạm ứng</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 2.8cm;">
+                                    <strong>Ký nhận</strong>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="so_thu_tu" t-value="0"></t>
+                            <tr t-foreach="o.TIEN_LUONG_BANG_LUONG_CHI_TIET_IDS" t-as="line">
+                                <t t-set="so_thu_tu" t-value="so_thu_tu + 1"></t>
+                                <td class="text-center">
+                                    <span t-esc="so_thu_tu"></span>
+                                </td>
+                                <td class="text-left">
+                                    <span t-field="line.MA_NHAN_VIEN" />
+                                </td>
+                                <td class="text-left">
+                                    <span t-field="line.TEN_NHAN_VIEN" />
+                                </td>
+                                <td class="text-right"></td>
+                                <td class="text-right">
+                                    <span t-field="line.SO_TIEN_TAM_UNG" />
+                                </td>
+                                <td class="text-right"></td>
+                            </tr>
+                            <tr>
+                                <th class="text-left" colspan="4">
+                                    <strong>Cộng</strong>
+                                </th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                            </tr>
+                            <tr>
+                                <th class="text-left" colspan="4">
+                                    <strong>Tổng cộng</strong>
+                                </th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-xs-4 text-center "></div>
+                        <div class="col-xs-4 text-center "></div>
+                        <div class="col-xs-4 text-center " style="margin-top: -15px;">
+                            <span>
+                                <i>Ngày ..... tháng ..... năm ...........</i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 5px;">
+                        <div class="col-xs-4 text-center ">
+                            <span class="nguoi-ky">Người lập</span>
+                            <br />
+                            <span style="font-style: italic;">(Ký, họ tên)</span>
+                        </div>
+                        <div class="col-xs-4 text-center ">
+                            <span class="nguoi-ky">Kế toán trưởng</span>
+                            <br />
+                            <span style="font-style: italic;">(Ký, họ tên)</span>
+                        </div>
+                        <div class="col-xs-4 text-center ">
+                            <span class="nguoi-ky">Giám đốc</span>
+                            <br />
+                            <span style="font-style: italic;">(Ký, họ tên, đóng dấu)</span>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 50px;">
+                        <div class="col-xs-4 text-center ">
+                            <strong>
+                                <span t-esc="o.get_nguoi_lap_phieu()" />
+                            </strong>
+                        </div>
+                        <div class="col-xs-4 text-center ">
+                            <strong>
+                                <span t-esc="o.get_ke_toan_truong()" />
+                            </strong>
+                        </div>
+                        <div class="col-xs-4 text-center ">
+                            <strong>
+                                <span t-esc="o.get_giam_doc()" />
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="template_tien_luong_bang_luong_tam_ung">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="tien_luong.tien_luong_tinh_luong_bang_luong_tam_ung" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="Bảng lương tạm ứng" id="action_template_tien_luong_bang_luong_tam_ung" model="tien.luong.bang.luong" report_type="qweb-html" name="tien_luong.template_tien_luong_bang_luong_tam_ung" file="tien_luong.template_tien_luong_bang_luong_tam_ung" print_report_name="Bảng lương" />
+    </data>
+</odoo>

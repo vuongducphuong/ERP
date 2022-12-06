@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="tien_luong_tinh_luong">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-7 text-left truong-thong-tin-dat-tren-header">
+                        <span t-esc="o.get_ten_cong_ty()" />
+                        <br />
+                        <span t-esc="o.get_dia_chi_cong_ty()" />
+                    </div>
+                    <div class="col-xs-5 text-center">
+                        <div class="mau-so">
+                            <span>
+                                <strong>Mẫu số 02 - LĐTL</strong>
+                            </span>
+                            <br />
+                        </div>
+                        <div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '0'">
+                            <span>(Ban hành theo thông tư số 200/2014/TT-BTC)</span>
+                            <br />
+                            <span>Ngày 22/12/2014 của Bộ Tài chính)</span>
+                        </div>
+						<div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '15'">
+                            <span>(Ban hành theo Thông tư số 133/2016/TT-BTC)</span>
+							<br />
+                            <span>Ngày 26/08/2016 của Bộ Tài chính)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <div class="tieu-de-cua-bao-cao">
+                            <span>
+                                <strong>BẢNG THANH TOÁN TIỀN LƯƠNG</strong>
+                            </span>
+                        </div>
+                        <div class="tieu-de-cua-bao-cao" style="font-size: 12pt;">
+                            <span>
+                                <i>Tháng</i>
+                            </span>
+                            <span>
+                                <i>
+                                    <span t-if="o.THANG" t-field="o.THANG" style="margin-left:5px;margin-right:5px;" />
+                                    <t t-if="not o.THANG" t-esc="'....'" />
+                                </i>
+                            </span>
+                            <span>
+                                <i>Năm</i>
+                            </span>
+                            <span>
+                                <i>
+                                    <span t-if="o.NAM" t-field="o.NAM" style="margin-left:5px;" />
+                                    <t t-if="not o.NAM" t-esc="'....'" />
+                                </i>
+                            </span>
+                        </div>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <span>
+                            <strong>Chi nhánh:</strong>
+                        </span>
+                        <span>
+                            <strong>
+                                <span t-if="o.CHI_NHANH_ID" t-field="o.CHI_NHANH_ID" style="margin-left:5px;" />
+                                <t t-if="not o.CHI_NHANH_ID" t-call="danh_muc.empty_line" />
+                            </strong>
+                        </span>
+                    </div>
+                    <!--Table-->
+                    <table class="table table-condensed table-bordereds" style="font-size:12px;margin-left: 15px;width: 96%;margin-top: 5px;">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="vertical-align: middle;width: 1cm;" rowspan="2">
+                                    <strong>STT</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 3cm;" rowspan="2">
+                                    <strong>Họ và tên</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 1.5cm;" rowspan="2">
+                                    <strong>Đơn giá công</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 3cm;" colspan="2">
+                                    <strong>Lương thời gian</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 9%;" colspan="2">
+                                    <strong>Lương nghỉ việc không hưởng 100% lương</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 1.5cm;" rowspan="2">
+                                    <strong>Phụ cấp</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 1.8cm;" rowspan="2">
+                                    <strong>Tổng số</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 19%;" colspan="5">
+                                    <strong>Các khoản phải khấu trừ vào lương</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;width: 2.8cm;" colspan="2">
+                                    <strong>Kỳ II được lĩnh</strong>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="text-center" style="vertical-align: middle;">
+                                    <strong>Số công</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;">
+                                    <strong>Số tiền</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;">
+                                    <strong>Số công</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;">
+                                    <strong>Số tiền</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;">
+                                    <strong>BHXH</strong>
+                                </th>
+                                <th class="text-center" style="vertical-align: middle;">
+                                    <strong>BHYT</strong>
+                                </th>
+                                <th class="text-center " style="vertical-align: middle;">
+                                    <strong>BHTN</strong>
+                                </th>
+                                <th class="text-center " style="vertical-align: middle;">
+                                    <strong>Thuế TNCN phải nộp</strong>
+                                </th>
+                                <th class="text-center " style="vertical-align: middle;">
+                                    <strong>Cộng</strong>
+                                </th>
+                                <th class="text-center " style="vertical-align: middle;">
+                                    <strong>Số tiền</strong>
+                                </th>
+                                <th class="text-center " style="vertical-align: middle;">
+                                    <strong>Ký nhận</strong>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="text-center">
+                                    <strong>A</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>B</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>1</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>2</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>3</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>4</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>5</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>6</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>7</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>8</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>9</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>10</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>11</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>12</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>13</strong>
+                                </th>
+                                <th class="text-center">
+                                    <strong>C</strong>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="so_thu_tu" t-value="0"></t>
+                            <tr t-foreach="o.TIEN_LUONG_BANG_LUONG_CHI_TIET_IDS" t-as="line">
+                                <t t-set="so_thu_tu" t-value="so_thu_tu + 1"></t>
+                                <td class="text-center">
+                                    <span t-esc="so_thu_tu"></span>
+                                </td>
+                                <td class="text-left">
+                                    <span t-field="line.TEN_NHAN_VIEN" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.DON_GIA_NGAY_CONG" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.SO_CONG_HUONG" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.SO_TIEN_HUONG" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.SO_CONG_KHONG_HUONG" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.SO_TIEN_KHONG_HUONG" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.TONG_PHU_CAP" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.TONG_SO" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.BHXH_KHAU_TRU" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.BHYT_KHAU_TRU" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.BHTN_KHAU_TRU" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.THUE_TNCN_KHAU_TRU" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.CONG_KHAU_TRU" />
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="line.SO_TIEN_CON_DUOC_LINH" />
+                                </td>
+                                <td class="text-right"></td>
+                            </tr>
+                            <tr>
+                                <th class="text-center"></th>
+                                <th class="text-left" colspan="2">
+                                    <strong>Cộng</strong>
+                                </th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                            </tr>
+                            <tr>
+                                <th class="text-center"></th>
+                                <th class="text-left" colspan="2">
+                                    <strong>Tổng cộng</strong>
+                                </th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                                <th class="text-right"></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="margin-left: 20px;">
+                        <span>Tổng số tiền phải trả: </span>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <span>Tạm ứng trong kỳ: </span>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <span>Tổng số tiền còn phải trả: </span>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <span>Tổng số tiền còn phải trả (Viết bằng chữ): </span>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 text-center "></div>
+                        <div class="col-xs-4 text-center "></div>
+                        <div class="col-xs-4 text-center " style="margin-top: -15px;">
+                            <span>
+                                <i>Ngày ..... tháng ..... năm ...........</i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 5px;">
+                        <div class="col-xs-4 text-center ">
+                            <span class="nguoi-ky">Người lập biểu</span>
+                            <br />
+                            <span style="font-style: italic;">(Ký, họ tên)</span>
+                        </div>
+                        <div class="col-xs-4 text-center ">
+                            <span class="nguoi-ky">Kế toán trưởng</span>
+                            <br />
+                            <span style="font-style: italic;">(Ký, họ tên)</span>
+                        </div>
+                        <div class="col-xs-4 text-center ">
+                            <span class="nguoi-ky">Giám đốc</span>
+                            <br />
+                            <span style="font-style: italic;">(Ký, họ tên, đóng dấu)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="template_tien_luong_thanh_toan_tien_luong_luong_thoi_gian">
+        <t t-call="web.html_container">
+            <t t-set="data_paper_format" t-value="'A4-ngang'" />
+            <t t-foreach="docs" t-as="o">
+                <t t-call="tien_luong.tien_luong_tinh_luong" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="02-LĐTL: Bảng thanh toán tiền lương (Lương thời gian) (Mẫu A4)" id="action_template_tien_luong_tinh_luong_thanh_toan_tien_luong_luong_thoi_gian_a4" model="tien.luong.bang.luong" report_type="qweb-html" name="tien_luong.template_tien_luong_thanh_toan_tien_luong_luong_thoi_gian" file="tien_luong.template_tien_luong_thanh_toan_tien_luong_luong_thoi_gian" print_report_name="Bảng lương" />
+    </data>
+</odoo>

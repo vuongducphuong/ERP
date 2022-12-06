@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_ich_bao_tri_du_lieu_tham_so_form" model="ir.ui.view">
+            <field name="name">tien.ich.bao.tri.du.lieu.form</field>
+            <field name="model">tien.ich.bao.tri.du.lieu</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <p>
+                            Chức năng này sẽ thực hiện bỏ ghi sổ các chứng từ đang ghi sổ và ghi sổ lại chứng từ để đảm bảo tính đúng đắn của dữ liệu.
+                        </p>
+                        <br/>
+                        <br />
+                        <group col="2" colspan="2">
+                            <field name="KY" />
+                            <field name="TU_NGAY" />
+                            <field name="DEN_NGAY" />
+                            <field name="GHI_SO_CAC_CHUNG_TU_CHUA_GHI_SO" />
+                            <!-- <field name="TINH_LAI_GIA_XUAT_KHO" readonly="1" />
+                            <field name="TINH_LAI_TY_GIA_XUAT_QUY" /> -->
+                        </group>
+                        <p>
+                            Lưu ý: Tùy theo độ lớn dữ liệu kế toán mà thời gian bảo trì dữ liệu có thể kéo dài.
+                            <br />
+                            Xin vui lòng chờ!
+                        </p>
+                        <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_tien_ich_bao_tri_du_lieu_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Bảo trì dữ liệu</field>
+            <field name="res_model">tien.ich.bao.tri.du.lieu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_tien_ich_bao_tri_du_lieu_tham_so_form" />
+        </record>
+        <record id="action_open_tien_ich_bao_tri_du_lieu_form" model="ir.actions.act_window">
+            <field name="name">Bảo trì dữ liệu</field>
+            <field name="res_model">tien.ich.bao.tri.du.lieu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+        
+    </data>
+    <data noupdate="1"></data>
+</odoo>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_asset_khai_bao_dau_ky_form" model="ir.ui.view">
+            <field name="name">asset.khai.bao.dau.ky.form</field>
+            <field name="model">asset.khai.bao.dau.ky</field>
+            <field name="arch" type="xml">
+                <form string="Khai báo tài sản cố định đầu kỳ">
+                    <sheet>
+                        <notebook>
+                            <page string="Khai báo tài sản cố định đầu kỳ">
+                                <field name="ASSET_KHAI_BAO_TAI_SAN_CO_DINH_DAU_KY_CHI_TIET_IDS" mode="tree">
+                                  <tree editable="bottom">
+                                    <!-- <field name="MA_TAI_SAN" fixed_column="True"/> -->
+                                    <!-- <field name="TEN_TAI_SAN" fixed_column="True"/> -->
+									<field name="MA_TAI_SAN" fixed_column="True"/>
+                                    <field name="TEN_TAI_SAN" fixed_column="True"/>
+                                    <field name="LOAI_TAI_SAN_ID" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã loại TSCĐ', 'Tên loại TSCĐ'],'displays': ['TEN']}"/>
+                                    <field name="DON_VI_SU_DUNG_ID" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['MA_DON_VI']}"/>
+                                    <field name="NGAY_GHI_TANG"/>
+                                    <field name="NGAY_BAT_DAU_TINH_KH" string='Ngày bắt đầu tính KH'/>
+                                    <field name="DVT_THOI_GIAN_SD" string='ĐVT thời gian SD'/>
+                                    <field name="THOI_GIAN_SU_DUNG"/>
+                                    <field name="THOI_GIAN_SD_CON_LAI"/>
+                                    <field name="NGUYEN_GIA" sum="Tổng"/>
+                                    <field name="GIA_TRI_TINH_KHAU_HAO" sum="Tổng"/>
+                                    <field name="HAO_MON_LUY_KE" sum="Tổng"/>
+                                    <field name="GIA_TRI_CON_LAI" sum="Tổng"/>
+                                    <field name="GIA_TRI_KH_THANG" sum="Tổng"/>
+                                    <field name="TK_KHAU_HAO_ID" string='TK khấu hao' options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                                    <field name="TK_NGUYEN_GIA_ID" string='TK nguyên giá' options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                                    <field name="DOI_TUONG_PHAN_BO_ID"/>
+                                    <field name="TY_LE_PB" string='Tỷ lệ PB'/>
+                                    <field name="TK_NO_ID" string='TK chi phí' options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                                    <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục cp', 'Tên khoản mục cp'],'displays': ['MA_KHOAN_MUC_CP']}"/>
+                                    <field name="MA_THONG_KE_ID" options="{'columns': ['MA_THONG_KE', 'TEN_THONG_KE'], 'strings': ['Mã thống kê', 'Mã thống kê'],'displays': ['MA_THONG_KE']}"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                    </sheet>
+                    <!-- <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div> -->
+                </form>
+            </field>
+        </record>
+
+        <!-- <record id="view_asset_khai_bao_dau_ky_tree" model="ir.ui.view">
+            <field name="name">asset.khai.bao.dau.ky.tree</field>
+            <field name="model">asset.khai.bao.dau.ky</field>
+            <field name="arch" type="xml">
+                <tree string="Khai báo tài sản cố định đầu kỳ">
+                    <field name="TEN"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record> -->
+
+        <record id="open_menu_asset_khai_bao_dau_ky" model="ir.actions.act_window">
+            <field name="name">Khai báo tài sản cố định đầu kỳ</field>
+            <field name="res_model">asset.khai.bao.dau.ky</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_asset_khai_bao_dau_ky_form"/>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <!-- <record id="action_asset_khai_bao_dau_ky_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_asset_khai_bao_dau_ky_tree"/>
+            <field name="act_window_id" ref="open_menu_asset_khai_bao_dau_ky"/>
+        </record> -->
+
+        <!-- <record id="action_asset_khai_bao_dau_ky_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_asset_khai_bao_dau_ky_form"/>
+            <field name="act_window_id" ref="open_menu_asset_khai_bao_dau_ky"/>
+        </record> -->
+
+        <!--<menuitem name="Khai báo tài sản cố định đầu kỳ"
+                  action="asset.open_menu_asset_khai_bao_dau_ky"
+                  id="menu_asset_khai_bao_dau_ky"
+                  parent=""
+                  sequence="0"/>-->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

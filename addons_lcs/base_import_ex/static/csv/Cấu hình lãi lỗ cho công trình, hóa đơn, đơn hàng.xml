@@ -1,0 +1,232 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+<SYSReportTemplate>
+  <ReportItemID>55B5E4AC-44DE-480C-BBDF-0AAB726E5C1A</ReportItemID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemIndex>1</ReportItemIndex>
+  <ReportItemAlias>01</ReportItemAlias>
+  <ReportItemCode>01</ReportItemCode>
+  <ReportItemName>DOANH THU</ReportItemName>
+  <IsParent>0</IsParent>
+  <Grade>2</Grade>
+  <IsBold>1</IsBold>
+  <IsItalic>0</IsItalic>
+  <SortOrder>1</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>FAC58707-317B-41C4-8346-1511918AE361</ReportItemID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemIndex>4</ReportItemIndex>
+  <ReportItemAlias>04</ReportItemAlias>
+  <ReportItemCode>04</ReportItemCode>
+  <ReportItemName>Chi phí khác</ReportItemName>
+  <IsParent>0</IsParent>
+  <Grade>3</Grade>
+  <IsBold>1</IsBold>
+  <IsItalic>0</IsItalic>
+  <SortOrder>4</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>2F720C39-3C93-4EAA-8BF9-182DC06F0984</ReportItemID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemIndex>5</ReportItemIndex>
+  <ReportItemAlias>05</ReportItemAlias>
+  <ReportItemCode>05</ReportItemCode>
+  <ReportItemName>LỢI NHUẬN</ReportItemName>
+  <IsParent>1</IsParent>
+  <Grade>1</Grade>
+  <IsBold>1</IsBold>
+  <IsItalic>0</IsItalic>
+  <Formula>01-02</Formula>
+  <SortOrder>12</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>501D6139-3ABB-422B-8AB4-1BFF60B8EA8F</ReportItemID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemIndex>1.03</ReportItemIndex>
+  <ReportItemAlias>01.03</ReportItemAlias>
+  <ReportItemCode>01.03</ReportItemCode>
+  <ReportItemName>Doanh thu, thu nhập khác</ReportItemName>
+  <IsParent>0</IsParent>
+  <Grade>3</Grade>
+  <Part>0</Part>
+  <IsBold>1</IsBold>
+  <IsItalic>0</IsItalic>
+  <SortOrder>1.03</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>83F19400-17AF-4F95-A730-20B109E05A35</ReportItemID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemIndex>2</ReportItemIndex>
+  <ReportItemAlias>02</ReportItemAlias>
+  <ReportItemCode>02</ReportItemCode>
+  <ReportItemName>CHI PHÍ</ReportItemName>
+  <Grade>2</Grade>
+  <Formula>03+04</Formula>
+  <SortOrder>2</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>FF38DE4F-797C-4BE9-96FD-2939067C3DCE</ReportItemID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemIndex>1.02</ReportItemIndex>
+  <ReportItemAlias>01.02</ReportItemAlias>
+  <ReportItemCode>01.02</ReportItemCode>
+  <ReportItemName>Các khoản giảm trừ doanh thu</ReportItemName>
+  <IsParent>0</IsParent>
+  <Grade>3</Grade>
+  <Part>0</Part>
+  <IsBold>1</IsBold>
+  <IsItalic>0</IsItalic>
+  <SortOrder>1.02</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>D31E183A-4D33-4513-9B46-8D197583C7AD</ReportItemID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemIndex>2</ReportItemIndex>
+  <ReportItemAlias>02</ReportItemAlias>
+  <ReportItemCode>02</ReportItemCode>
+  <ReportItemName>CHI PHÍ</ReportItemName>
+  <IsParent>1</IsParent>
+  <Grade>2</Grade>
+  <IsBold>1</IsBold>
+  <IsItalic>0</IsItalic>
+  <Formula>03+04</Formula>
+  <SortOrder>4</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>CB7229FE-8FF6-4777-9D1F-958A1F613AEB</ReportItemID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemIndex>1.01</ReportItemIndex>
+  <ReportItemAlias>01.01</ReportItemAlias>
+  <ReportItemCode>01.01</ReportItemCode>
+  <ReportItemName>Doanh thu bán hàng, dịch vụ</ReportItemName>
+  <IsParent>0</IsParent>
+  <Grade>3</Grade>
+  <Part>0</Part>
+  <IsBold>1</IsBold>
+  <IsItalic>0</IsItalic>
+  <SortOrder>1.01</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>BFBF6F50-CA05-4EA7-8758-9DF6AF0B610B</ReportItemID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemIndex>2</ReportItemIndex>
+  <ReportItemAlias>02</ReportItemAlias>
+  <ReportItemCode>02</ReportItemCode>
+  <ReportItemName>CHI PHÍ</ReportItemName>
+  <IsParent>1</IsParent>
+  <Grade>2</Grade>
+  <IsBold>1</IsBold>
+  <IsItalic>0</IsItalic>
+  <Formula>03+04</Formula>
+  <SortOrder>2</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>344F9969-D582-4711-95C9-AE431ED1BC1A</ReportItemID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemIndex>1</ReportItemIndex>
+  <ReportItemAlias>01</ReportItemAlias>
+  <ReportItemCode>01</ReportItemCode>
+  <ReportItemName>DOANH THU</ReportItemName>
+  <Grade>2</Grade>
+  <SortOrder>1</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>FECDF735-877F-43C1-83E0-B4E6169EF848</ReportItemID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemIndex>3</ReportItemIndex>
+  <ReportItemAlias>03</ReportItemAlias>
+  <ReportItemCode>03</ReportItemCode>
+  <ReportItemName>Giá vốn hàng bán</ReportItemName>
+  <IsParent>0</IsParent>
+  <Grade>3</Grade>
+  <IsBold>1</IsBold>
+  <IsItalic>0</IsItalic>
+  <SortOrder>3</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>861F2086-DEA8-4086-B9F6-C6EA0176CBAE</ReportItemID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemIndex>4</ReportItemIndex>
+  <ReportItemAlias>04</ReportItemAlias>
+  <ReportItemCode>04</ReportItemCode>
+  <ReportItemName>Chi phí khác</ReportItemName>
+  <Grade>3</Grade>
+  <SortOrder>4</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>11F40C3F-879A-4138-8CFB-CF3224D175F5</ReportItemID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemIndex>3</ReportItemIndex>
+  <ReportItemAlias>03</ReportItemAlias>
+  <ReportItemCode>03</ReportItemCode>
+  <ReportItemName>Giá vốn hàng bán</ReportItemName>
+  <IsParent>0</IsParent>
+  <Grade>3</Grade>
+  <IsBold>1</IsBold>
+  <IsItalic>0</IsItalic>
+  <SortOrder>7</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>F5A8E811-212B-4402-A98B-DDA2FDD70A26</ReportItemID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemIndex>5</ReportItemIndex>
+  <ReportItemAlias>05</ReportItemAlias>
+  <ReportItemCode>05</ReportItemCode>
+  <ReportItemName>LỢI NHUẬN</ReportItemName>
+  <Grade>1</Grade>
+  <Formula>01-02</Formula>
+  <SortOrder>5</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>48EE8E65-39F8-4655-AFF0-E5E4B86E3A11</ReportItemID>
+  <ReportID>IncomeDetailBySAOrder</ReportID>
+  <ReportItemIndex>5</ReportItemIndex>
+  <ReportItemAlias>05</ReportItemAlias>
+  <ReportItemCode>05</ReportItemCode>
+  <ReportItemName>LỢI NHUẬN</ReportItemName>
+  <IsParent>1</IsParent>
+  <Grade>1</Grade>
+  <IsBold>1</IsBold>
+  <IsItalic>0</IsItalic>
+  <Formula>01-02</Formula>
+  <SortOrder>5</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>962DF8FD-DE52-46E5-AB5C-F3D4F423742E</ReportItemID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemIndex>4</ReportItemIndex>
+  <ReportItemAlias>04</ReportItemAlias>
+  <ReportItemCode>04</ReportItemCode>
+  <ReportItemName>Chi phí khác</ReportItemName>
+  <IsParent>0</IsParent>
+  <Grade>3</Grade>
+  <IsBold>1</IsBold>
+  <IsItalic>0</IsItalic>
+  <SortOrder>10</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>EBBDBEEC-CDB3-4106-9930-F67D7FE84BEC</ReportItemID>
+  <ReportID>JCIncomeDetailByProjectWork</ReportID>
+  <ReportItemIndex>3</ReportItemIndex>
+  <ReportItemAlias>03</ReportItemAlias>
+  <ReportItemCode>03</ReportItemCode>
+  <ReportItemName>Giá vốn hàng bán</ReportItemName>
+  <Grade>3</Grade>
+  <SortOrder>3</SortOrder>
+</SYSReportTemplate>
+<SYSReportTemplate>
+  <ReportItemID>791865E4-3822-456C-B98D-FDC09B4128C2</ReportItemID>
+  <ReportID>CTIncomeDetailByContract</ReportID>
+  <ReportItemIndex>1</ReportItemIndex>
+  <ReportItemAlias>01</ReportItemAlias>
+  <ReportItemCode>01</ReportItemCode>
+  <ReportItemName>DOANH THU</ReportItemName>
+  <IsParent>1</IsParent>
+  <Grade>2</Grade>
+  <IsBold>1</IsBold>
+  <IsItalic>0</IsItalic>
+  <Formula>01.01+01.02+01.03</Formula>
+  <SortOrder>1</SortOrder>
+</SYSReportTemplate>
+</DataSetImportExport>

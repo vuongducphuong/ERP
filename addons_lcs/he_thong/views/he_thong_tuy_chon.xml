@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="he_thong_tuy_chon_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.inherit</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="40" />
+            <field name="arch" type="xml">
+                <form string="Settings" class="oe_form_configuration o_base_settings" cloudify_js="base_settings">
+                    <div class="o_control_panel">
+                        <div class="o_panel">
+                            <div class="title h3 mb0 mt4 text-muted hidden-xs">Tùy chọn</div>
+                            <div class="o_setting_search">
+                                <input type="text" class="searchInput" placeholder="Tìm kiếm..." />
+                                <span class="searchIcon">
+                                    <i class="fa fa-search" />
+                                </span>
+                            </div>
+                        </div>
+                        <header>
+                            <button string="Lưu" type="object" name="execute" class="oe_highlight" />
+                            <button string="Hủy bỏ" type="object" name="cancel" />
+                        </header>
+                    </div>
+                    <div class="o_setting_container">
+                        <div class="settings_tab" />
+                        <div class="settings">
+                            <div class="app_settings_block" data-string="TuyChonRieng" string="Tùy chọn riêng" data-key="tuy_chon_rieng">
+                                <h2>Giao diện nhập liệu</h2>
+                                <div class="row o_settings_container o_setting_box">
+                                    <field name="HAN_CHE_TAI_KHOAN_KHI_NHAP_CHUNG_TU" />
+                                </div>
+                            </div>
+                            <div class="app_settings_block" data-string="TuyChonChung" string="Tùy chọn chung" data-key="tuy_chon_chung">
+                                <h2>Tiền tệ</h2>
+                                <div class="row o_settings_container o_setting_box">
+                                    <div class="row" style="width: 50%">
+                                        <label string="Loại tiền tệ chính" for="LOAI_TIEN_CHINH" class="width-lg" />
+                                        <field name="LOAI_TIEN_CHINH" />
+                                    </div>
+                                </div>
+                                <div class="row o_settings_container o_setting_box">
+                                    <div class="row" style="width: 50%">
+                                        <label string="Phương pháp tính tỷ giá xuất quỹ" for="PHUONG_PHAP_TINH_TY_GIA_XUAT_QUY" class="width-lg" />
+                                        <field name="PHUONG_PHAP_TINH_TY_GIA_XUAT_QUY" readonly="1" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>
+                                        <b>Tài khoản xử lý chênh lệch tỷ giá xuất quỹ</b>
+                                    </h5>
+                                    <div class="row o_settings_container o_setting_box">
+                                        <div class="row" style="width: 50%">
+                                            <label string="TK xử lý lãi" for="TK_XU_LY_LAI_CHENH_LECH_TGXQ" />
+                                            <field name="TK_XU_LY_LAI_CHENH_LECH_TGXQ" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        </div>
+                                        <div class="row" style="width: 50%">
+                                            <label string="TK xử lý lỗ" for="TK_XU_LY_LO_CHENH_LECH_TGXQ" />
+                                            <field name="TK_XU_LY_LO_CHENH_LECH_TGXQ" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>
+                                        <b>Tài khoản xử lý chênh lệch tỷ giá thu tiền KH/trả tiền NCC</b>
+                                    </h5>
+                                    <div class="row o_settings_container o_setting_box">
+                                        <div class="row" style="width: 50%">
+                                            <label string="TK xử lý lãi" for="TK_XU_LY_LAI_CHENH_LECH_TGTHKHTTNCC" />
+                                            <field name="TK_XU_LY_LAI_CHENH_LECH_TGTHKHTTNCC" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        </div>
+                                        <div class="row" style="width: 50%">
+                                            <label string="TK xử lý lỗ" for="TK_XU_LY_LO_CHENH_LECH_TGTHKHTTNCC" />
+                                            <field name="TK_XU_LY_LO_CHENH_LECH_TGTHKHTTNCC" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <h2>Chế độ kế toán - Năm tài chính</h2>
+                                <div class="row o_settings_container o_setting_box">
+                                    <div class="row" style="width: 100%">
+                                        <label string="Chế độ kế toán" for="CHE_DO_KE_TOAN" class="width-lg" />
+                                        <field name="CHE_DO_KE_TOAN" readonly="1" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12" style="padding: 0">
+                                    <div class="row o_settings_container o_setting_box col-md-3">
+                                        <div class="row">
+                                            <label string="Bắt đầu" for="NAM_TAI_CHINH_BAT_DAU" />
+                                            <field name="NAM_TAI_CHINH_BAT_DAU" options="{'showSpinButtons': true}" readonly="1" />
+                                        </div>
+                                    </div>
+                                    <div class="row o_settings_container o_setting_box col-md-3">
+                                        <div class="row">
+                                            <label string="Từ ngày" for="TU_NGAY_BAT_DAU_TAI_CHINH" />
+                                            <field name="TU_NGAY_BAT_DAU_TAI_CHINH" readonly="1" />
+                                        </div>
+                                    </div>
+                                    <div class="row o_settings_container o_setting_box col-md-3">
+                                        <div class="row">
+                                            <label string="Đến ngày" for="DEN_NGAY_BAT_DAU_TAI_CHINH" />
+                                            <field name="DEN_NGAY_BAT_DAU_TAI_CHINH" readonly="1" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <h2>Khác</h2>
+                                <div class="row o_settings_container o_setting_box">
+                                    <div class="row" style="width: 50%">
+                                        <label string="Cách lấy số liệu Thực thi của Hợp đồng bán" for="CACH_LAY_SO_LIEU_THUC_THI" class="width-lg" />
+                                        <field name="CACH_LAY_SO_LIEU_THUC_THI" />
+                                    </div>
+                                </div>
+                                <!-- <div class="row o_settings_container o_setting_box">
+                                    <div class="row" style="width: 50%">
+                                        <label string="Chọn chế độ kế toán" for="CHE_DO_KE_TOAN"/>
+                                        <field name="CHE_DO_KE_TOAN"/>
+                                    </div>
+                                </div> -->
+                                <div class="row o_settings_container o_setting_box">
+                                    <div class="row" style="width: 50%">
+                                        <label string="Lĩnh vực hoạt động" for="LINH_VUC_HOAT_DONG" class="width-lg" />
+                                        <field name="LINH_VUC_HOAT_DONG" />
+                                    </div>
+                                </div>
+                                <div class="row o_settings_container o_setting_box">
+                                    <div class="row" style="width: 50%">
+                                        <label string="Cách phân bổ CCDC, chi phí trả trước tháng đầu tiền" for="CACH_PHAN_BO_CCDC_CHI_PHI_TRA_TRUOC_THANG_DAU_TIEN" class="width-lg" />
+                                        <field name="CACH_PHAN_BO_CCDC_CHI_PHI_TRA_TRUOC_THANG_DAU_TIEN" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app_settings_block" data-string="BaoCaoChungTu" string="Báo cáo, chứng từ" data-key="bao_cao_chung_tu">
+                                <h2>Tiêu đề trên mẫu in</h2>
+                                <div class="row o_settings_container o_setting_box">
+                                    <label string="Kiểu hiển thị" for="KIEU_HIEN_THI_TIEU_DE" class="width-lg" />
+                                    <field name="KIEU_HIEN_THI_TIEU_DE" />
+                                    <a class="o_tuy_chinh_mau" style="padding: 10px;" attrs="{'invisible': [('KIEU_HIEN_THI_TIEU_DE','!=','TUY_CHINH')]}">Tùy chỉnh mẫu...</a>
+                                </div>
+                            </div>
+                            <div class="app_settings_block" data-string="BanHang" string="Bán hàng" data-key="ban_hang">
+                                <h2>Bán hàng</h2>
+                                <div class="row o_settings_container o_setting_box">
+                                    <field name="TAO_CHUNG_TU_BAN_HANG_TU_NHIEU_DON_DAT_HANG" />
+                                </div>
+                            </div>
+                            <div class="app_settings_block" data-string="TienLuong" string="Tiền lương" data-key="tien_luong">
+                                <h2>Chấm công</h2>
+                                <div class="row o_settings_container o_setting_box">
+                                    <field name="LAM_VIEC_NGAY_THU_7" />
+                                    <field name="LAM_VIEC_NGAY_CHU_NHAT" />
+                                </div>
+                            </div>
+                            <div class="app_settings_block" data-string="VatTuHangHoa" string="Vật tư hàng hóa" data-key="vat_tu_hang_hoa">
+                                <div class="row o_settings_container o_setting_box">
+                                    <div class="row" style="width: 50%">
+                                        <label string="Phương pháp tính giá xuất kho" for="PHUONG_PHAP_TINH_GIA_XUAT_KHO" class="width-lg" />
+                                        <field name="PHUONG_PHAP_TINH_GIA_XUAT_KHO" readonly="1" />
+                                        <field name="CHO_PHEP_XUAT_QUA_SO_LUONG_TON" />
+                                    </div>
+                                    <div class="row" style="width: 100%">
+                                        <field name="CO_VAT_TU_SO_LUONG_THEO_CHU_VI_THE_TICH" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app_settings_block" data-string="DinhDangSo" string="Định dạng số" data-key="dinh_dang_so">
+                                <h2>Số chữ số phần thập phân</h2>
+                                <div class="row o_settings_container o_setting_box">
+                                    <div class="row" style="width: 50%">
+                                        <label string="Số lượng" for="PHAN_THAP_PHAN_SO_LUONG" class="width-lg" />
+                                        <field name="PHAN_THAP_PHAN_SO_LUONG" options="{'showSpinButtons': true}" />
+                                    </div>
+                                </div>
+                                <div class="row o_settings_container o_setting_box">
+                                    <div class="row" style="width: 50%">
+                                        <label string="Đơn giá" for="PHAN_THAP_PHAN_DON_GIA" class="width-lg" />
+                                        <field name="PHAN_THAP_PHAN_DON_GIA" options="{'showSpinButtons': true}" />
+                                    </div>
+                                </div>
+                                <div class="row o_settings_container o_setting_box">
+                                    <div class="row" style="width: 50%">
+                                        <label string="Kích thước" for="PHAN_THAP_PHAN_KICH_THUOC" class="width-lg" />
+                                        <field name="PHAN_THAP_PHAN_KICH_THUOC" options="{'showSpinButtons': true}" />
+                                    </div>
+                                </div>
+                                <div class="row o_settings_container o_setting_box">
+                                    <div class="row" style="width: 50%">
+                                        <label string="Tỷ lệ phân bổ" for="PHAN_THAP_PHAN_CUA_TY_LE_PHAN_BO" class="width-lg" />
+                                        <field name="PHAN_THAP_PHAN_CUA_TY_LE_PHAN_BO" options="{'showSpinButtons': true}" />
+                                    </div>
+                                </div>
+                                <div class="row o_settings_container o_setting_box">
+                                    <div class="row" style="width: 50%">
+                                        <label string="Số công" for="PHAN_THAP_PHAN_SO_CONG" class="width-lg" />
+                                        <field name="PHAN_THAP_PHAN_SO_CONG" options="{'showSpinButtons': true}" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_menu_he_thong_tuy_chon" model="ir.actions.act_window">
+            <field name="name">Settings</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'form', 'view_id': ref('he_thong_tuy_chon_view_form')})]" />
+            <field name="context">{'module' : 'tuy_chon_rieng'}</field>
+        </record>
+    </data>
+</odoo>

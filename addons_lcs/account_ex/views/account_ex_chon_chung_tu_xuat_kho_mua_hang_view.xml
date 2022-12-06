@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+	<data>
+		<record id="view_account_ex_chon_chung_tu_xuat_kho_mua_hang_tham_so_form" model="ir.ui.view">
+			<field name="name">account.ex.chon.chung.tu.xuat.kho.mua.hang.form</field>
+			<field name="model">account.ex.chon.chung.tu.xuat.kho.mua.hang</field>
+			<field name="arch" type="xml">
+				<form string="Chọn tham số..." cloudify_js="chon_chung_tu_xk_mh_view">
+					<sheet>
+						<group col="4">
+							<field name="LOAI" />
+							<field name="KY" string="Kỳ" />
+							<field name="TU_NGAY" />
+							<field name="DEN_NGAY" />
+							<field name="LAY_DU_LIEU_JSON" invisible="1" colspan="4" />
+							<button name="btn_lay_du_lieu" string="Lấy dữ liệu" />
+						</group>
+						<!--Master/Detail form-->
+						<notebook>
+							<page string="Chọn chứng từ xuất kho mua hàng chi tiết">
+								<field name="ACCOUNT_EX_CHON_CHUNG_TU_XUAT_KHO_MUA_HANG_CHI_TIET_IDS" mode="tree">
+									<tree editable="bottom" report="True">
+										<!-- <field name="CHON" readonly="1" /> -->
+										<field name="AUTO_SELECT" invisible="1" />
+										<!-- <field name="MA_HANG_ID" readonly="1" fixed_column="True"/> -->
+										<!-- <field name="TEN_HANG" readonly="1" fixed_column="True" /> -->
+										<field name="MA_HANG_ID" readonly="1" fixed_column="True"/>
+										<field name="TEN_HANG" readonly="1" fixed_column="True"/>
+										<field name="NGAY_HACH_TOAN" readonly="1" />
+										<field name="NGAY_CHUNG_TU" readonly="1" />
+										<field name="SO_CHUNG_TU" readonly="1" />
+										<field name="TK_NO_ID" readonly="1" string="TK nợ"/>
+										<field name="TK_CO_ID" readonly="1" string="TK có" />
+										<field name="DVT_ID" readonly="1" string="ĐVT" />
+										<field name="SO_LUONG" readonly="1" sum="Tổng" />
+										<field name="DON_GIA" readonly="1" />
+										<field name="THANH_TIEN" readonly="1" sum="Tổng"/>
+										<field name="ID_GOC" invisible="1" />
+										<field name="MODEL_GOC" invisible="1" />
+									</tree>
+								</field>
+							</page>
+						</notebook>
+						<group>
+							<field name="CONG_GOP_CAC_MAT_HANG_GIONG_NHAU" />
+						</group>
+						<!-- <footer>
+              <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}"/>
+              <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+            </footer> -->
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record id="open_account_ex_chon_chung_tu_xuat_kho_mua_hang_tham_so_form" model="ir.actions.act_window">
+			<field name="name">Chọn chứng từ xuất kho mua hàng</field>
+			<field name="res_model">account.ex.chon.chung.tu.xuat.kho.mua.hang</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+			<field name="view_id" ref="view_account_ex_chon_chung_tu_xuat_kho_mua_hang_tham_so_form" />
+		</record>
+		<record id="action_open_account_ex_chon_chung_tu_xuat_kho_mua_hang_form" model="ir.actions.act_window">
+			<field name="name">Chọn chứng từ xuất kho mua hàng</field>
+			<field name="res_model">account.ex.chon.chung.tu.xuat.kho.mua.hang</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<!--Implement code here-->
+			<!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+		</record>
+		<!-- <menuitem name="Chọn chứng từ xuất kho mua hàng"
+              action="account_ex.open_account_ex_chon_chung_tu_xuat_kho_mua_hang_tham_so_form"
+              id="menu_account_ex_chon_chung_tu_xuat_kho_mua_hang"
+              parent=""
+              sequence="0"/> -->
+	</data>
+	<data noupdate="1"></data>
+</odoo>

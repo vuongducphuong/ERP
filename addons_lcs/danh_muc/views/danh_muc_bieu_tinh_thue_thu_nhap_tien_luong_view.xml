@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_bieu_tinh_thue_thu_nhap_tien_luong_form" model="ir.ui.view">
+            <field name="name">danh.muc.bieu.tinh.thue.thu.nhap.tien.luong.form</field>
+            <field name="model">danh.muc.bieu.tinh.thue.thu.nhap.tien.luong</field>
+            <field name="arch" type="xml">
+                <form string="Biểu tính thuế thu nhập tiền lương">
+                    <sheet>
+                        <group col="4">
+                            <field name="BAC" colspan="2" />
+                            <field name="PHAN_THU_NHAP_TU" colspan="3" />
+                            <field name="PHAN_THU_NHAP_DEN" colspan="3" />
+                            <field name="THUE_SUAT" colspan="2" />
+                            <field name="THUE_THEO_NAM_TU" invisible="1" />
+                            <field name="THUE_THEO_NAM_DEN" invisible="1" />
+                        </group>
+                        <!--Master/Detail form-->
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_danh_muc_bieu_tinh_thue_thu_nhap_tien_luong_tree" model="ir.ui.view">
+            <field name="name">danh.muc.bieu.tinh.thue.thu.nhap.tien.luong.tree</field>
+            <field name="model">danh.muc.bieu.tinh.thue.thu.nhap.tien.luong</field>
+            <field name="arch" type="xml">
+                <tree string="Biểu tính thuế thu nhập tiền lương">
+                    <field name="BAC" />
+                    <field name="PHAN_THU_NHAP_TU" string="Từ" />
+                    <field name="PHAN_THU_NHAP_DEN" string="Đến" />
+                    <field name="THUE_THEO_NAM_TU" string="Từ" />
+                    <field name="THUE_THEO_NAM_DEN" string="Đến" />
+                    <field name="THUE_SUAT" string="Thuế suất (%)" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_danh_muc_bieu_tinh_thue_thu_nhap_tien_luong" model="ir.actions.act_window">
+            <field name="name">Biểu tính thuế thu nhập tiền lương</field>
+            <field name="res_model">danh.muc.bieu.tinh.thue.thu.nhap.tien.luong</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'header_struct':
+                                    [
+                            [
+                                'Biểu tính thuế theo tháng',['PHAN_THU_NHAP_TU','PHAN_THU_NHAP_DEN']
+                            ],
+                            [
+                                'Biểu tính thuế theo năm',['THUE_THEO_NAM_TU','THUE_THEO_NAM_DEN']
+                            ],
+                            
+                        ], 'expand_all': 'true','import_enabled': True}
+                </field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_danh_muc_bieu_tinh_thue_thu_nhap_tien_luong_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_bieu_tinh_thue_thu_nhap_tien_luong_tree" />
+            <field name="act_window_id" ref="open_menu_danh_muc_bieu_tinh_thue_thu_nhap_tien_luong" />
+        </record>
+        <record id="action_danh_muc_bieu_tinh_thue_thu_nhap_tien_luong_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_bieu_tinh_thue_thu_nhap_tien_luong_form" />
+            <field name="act_window_id" ref="open_menu_danh_muc_bieu_tinh_thue_thu_nhap_tien_luong" />
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

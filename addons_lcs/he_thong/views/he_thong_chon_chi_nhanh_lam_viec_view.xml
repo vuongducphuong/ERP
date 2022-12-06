@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_he_thong_chon_chi_nhanh_lam_viec_tham_so_form" model="ir.ui.view">
+            <field name="name">he.thong.chon.chi.nhanh.lam.viec.form</field>
+            <field name="model">he.thong.chon.chi.nhanh.lam.viec</field>
+            <field name="arch" type="xml">
+                <form string="Chọn chi nhánh">
+                    <sheet>
+                        <group col="2">
+                            <field name="CHI_NHANH_ID" colspan="2" options="{'showClearButton': false, 'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['MA_DON_VI']}"/>
+                            <field name="BAO_GOM_CHUNG_TU_CHI_NHANH_PHU_THUOC" />
+                        </group>
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_he_thong_chon_chi_nhanh_lam_viec_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Chọn chi nhánh làm việc</field>
+            <field name="res_model">he.thong.chon.chi.nhanh.lam.viec</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="size">medium</field>
+            <field name="view_id" ref="view_he_thong_chon_chi_nhanh_lam_viec_tham_so_form" />
+        </record>
+        <record id="action_open_he_thong_chon_chi_nhanh_lam_viec_form" model="ir.actions.act_window">
+            <field name="name">Chọn chi nhánh làm việc</field>
+            <field name="res_model">he.thong.chon.chi.nhanh.lam.viec</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

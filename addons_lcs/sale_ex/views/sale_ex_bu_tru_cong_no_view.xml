@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_sale_ex_bu_tru_cong_no_tham_so_form" model="ir.ui.view">
+            <field name="name">sale.ex.bu.tru.cong.no.form</field>
+            <field name="model">sale.ex.bu.tru.cong.no</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="bu_tru_cong_no_form_view">
+                    <sheet>
+                        <group col="12">
+                            <field name="DOI_TUONG_ID" colspan="3" domain="[('LA_KHACH_HANG','=',True),('LA_NHA_CUNG_CAP','=',True)]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}" />
+                            <field name="TK_PHAI_THU_ID" colspan="2" string='TK phải thu' domain="[('SO_TAI_KHOAN', '=like', '131%')]" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                            <field name="TK_PHAI_TRA_ID" colspan="2" string='TK phải trả' domain="[('SO_TAI_KHOAN', '=like', '331%')]" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                            <field name="NGAY_BU_TRU" colspan="2"/>
+                            <field name="currency_id" colspan="2" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+                            <button id="btn_lay_du_lieu"  string="Lấy dữ liệu" class="btn btn-primary" type="object" colspan="1"/>
+                            <field name="IS_TY_GIA" invisible="1" colspan="2" />
+                            <field name="THAM_CHIEU"  invisible="1" />
+                            <field name="THAM_CHIEU2" invisible="1" />
+
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chứng từ phải thu">
+                                <field name="SALE_EX_BU_TRU_CONG_NO_CHUNG_TU_PHAI_THU_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true" delete="false">
+                                        <!-- <field name="CHON"/> -->
+                                        <field name="AUTO_SELECT" invisible="1"/>
+                                        <field name="NGAY_CHUNG_TU" readonly='1'/>
+                                        <field name="SO_CHUNG_TU" readonly='1'/>
+                                        <field name="SO_HOA_DON" readonly='1'/>
+                                        <field name="HAN_THANH_TOAN" readonly='1'/>
+                                        <field name="DIEN_GIAI" readonly='1'/>
+                                        <field name="TY_GIA" readonly='1' attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}" />
+                                        <field name="SO_TIEN" readonly='1' sum="Tổng"/>
+                                        <field name="SO_TIEN_QUY_DOI" readonly='1' sum="Tổng" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="TY_GIA_DANH_GIA_LAI" readonly='1' attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}" />
+                                        <field name="SO_CHUA_THU" readonly='1' sum="Tổng"/>
+                                        <field name="SO_CHUA_THU_QUY_DOI" readonly='1' sum="Tổng" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="SO_TIEN_BU_TRU" sum="Tổng"/>
+                                        <field name="SO_TIEN_BU_TRU_QUY_DOI" sum="Tổng" readonly='1' attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="TEN_LOAI_CHUNG_TU" readonly='1'/>
+                                        <field name="ID_GOC" invisible="1"/>
+                                        <field name="MODEL_GOC" invisible="1"/>
+                                        <field name="LOAI_CHUNG_TU" invisible="1"/>
+                                        <field name="NGAY_HOA_DON" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                   
+                        <notebook>
+                            <page string="Chứng từ phải trả">
+                                <field name="SALE_EX_BU_TRU_CONG_NO_CHUNG_TU_PHAI_TRA_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true" delete="false">
+                                        <!-- <field name="CHON"/> -->
+                                        <field name="AUTO_SELECT" invisible="1"/>
+                                        <field name="NGAY_CHUNG_TU" readonly='1'/>
+                                        <field name="SO_CHUNG_TU" readonly='1'/>
+                                        <field name="SO_HOA_DON" readonly='1'/>
+                                        <field name="HAN_THANH_TOAN" readonly='1'/>
+                                        <field name="DIEN_GIAI" readonly='1'/>
+                                        <field name="TY_GIA" readonly='1' attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="SO_TIEN" readonly='1' sum="Tổng"/>
+                                        <field name="SO_TIEN_QUY_DOI" readonly='1' sum="Tổng" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="TY_GIA_DANH_GIA_LAI" readonly='1' attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="SO_CON_NO" readonly='1' sum="Tổng"/>
+                                        <field name="SO_CON_NO_QUY_DOI" readonly='1' sum="Tổng" attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="SO_TIEN_BU_TRU" sum="Tổng"/>
+                                        <field name="SO_TIEN_BU_TRU_QUY_DOI" sum="Tổng" readonly='1' attrs="{'column_invisible': [('parent.IS_TY_GIA', '=' , False)]}"/>
+                                        <field name="TEN_LOAI_CHUNG_TU" readonly='1'/>
+                                        <field name="ID_GOC" invisible="1"/>
+                                        <field name="MODEL_GOC" invisible="1"/>
+                                        <field name="LOAI_CHUNG_TU" invisible="1"/>
+                                        <field name="NGAY_HOA_DON" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <group col="8">
+                            <field name="CHENH_LECH_BU_TRU_QUY_DOI" colspan="2" readonly='1' attrs="{'invisible': [('IS_TY_GIA', '=' , False)]}"/>
+                            <field name="TK_XU_LY_ID" colspan="2" domain="['|',('SO_TAI_KHOAN', '=like', '515%'),('SO_TAI_KHOAN', '=like', '635%')]"  attrs="{'invisible': [('CHENH_LECH_BU_TRU_QUY_DOI', '!=' , 0)]}"/>
+                        </group>
+                        <footer>
+                            <button id="btn_bu_tru" string="Bù trừ" type="object" class="btn btn-primary" context="{'discard_changes': True}"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_sale_ex_bu_tru_cong_no_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Bù trừ công nợ</field>
+            <field name="res_model">sale.ex.bu.tru.cong.no</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_sale_ex_bu_tru_cong_no_tham_so_form"/>
+        </record>
+
+        <!-- <record id="action_open_sale_ex_bu_tru_cong_no_form" model="ir.actions.act_window">
+            <field name="name">Bù trừ công nợ</field>
+            <field name="res_model">sale.ex.bu.tru.cong.no</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            
+           
+        </record> -->
+        <!-- <record id="action_open_bu_tru_cong_no_form" model="ir.actions.act_window"> -->
+            <!-- <field name="name">Chứng từ bù trừ công nợ</field> -->
+            <!-- <field name="res_model">account.ex.chung.tu.nghiep.vu.khac</field> -->
+            <!-- <field name="view_type">form</field> -->
+            <!-- <field name="view_mode">form</field> -->
+            <!-- <field name="view_id" ref="tong_hop.view_account_ex_chung_tu_nghiep_vu_khac_form"/> -->
+        <!-- </record> -->
+
+        <!-- <menuitem name="Bù trừ công nợ" action="sale_ex.open_sale_ex_bu_tru_cong_no_tham_so_form" id="menu_sale_ex_bu_tru_cong_no" parent="" sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

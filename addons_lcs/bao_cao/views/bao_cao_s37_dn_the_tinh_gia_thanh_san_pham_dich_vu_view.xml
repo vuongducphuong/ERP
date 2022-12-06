@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <!-- Sản xuất liên tục -->
+        <!-- Thống kê theo : Khoản mục chi phí -->
+        <record id="view_bao_cao_s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_san_xuat_lt_khoan_muc_cp_tree" model="ir.ui.view">
+            <field name="name">bao.cao.s37.dn.the.tinh.gia.thanh.san.pham.dich.vu.sxlt.kmcp.tree</field>
+            <field name="model">bao.cao.s37.dn.the.tinh.gia.thanh.san.pham.dich.vu</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="S37-DN:Thẻ tính giá thành sản phẩm dịch vụ" create="false" report="true">
+                    <field name="CHI_TIEU" />
+                    <field name="TONG_SO_TIEN" />
+                    <field name="NGUYEN_VAT_LIEU_TRUC_TIEP" />
+                    <field name="NHAN_CONG_TRUC_TIEP" />
+                    <field name="CHI_PHI_SAN_XUAT_CHUNG" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_san_xuat_lt_khoan_muc_cp" model="ir.actions.act_window">
+            <field name="name">S37-DN:Thẻ tính giá thành sản phẩm dịch vụ</field>
+            <field name="res_model">bao.cao.s37.dn.the.tinh.gia.thanh.san.pham.dich.vu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!--<field name="context">{'group_by': ['kho_id'], 'header_struct': [['Đầu kỳ', ['sl_dau_ky', ['XYZ', ['gt_dau_ky', 'sl_nhap_kho']]]], ['Cuối kỳ', ['sl_cuoi_ky', 'gt_cuoi_ky','gt_nhap_kho']]], 'expand_all': 'true'}</field>-->
+        </record>
+        <record id="action_bao_cao_s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_san_xuat_lt_khoan_muc_cp" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_san_xuat_lt_khoan_muc_cp_tree" />
+            <field name="act_window_id" ref="open_report__s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_san_xuat_lt_khoan_muc_cp" />
+        </record>
+        <!-- end -->
+        <!-- Thống kê theo: Yếu tố -->
+        <record id="view_bao_cao_s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_san_xuat_lt_yeu_to_tree" model="ir.ui.view">
+            <field name="name">bao.cao.s37.dn.the.tinh.gia.thanh.san.pham.dich.vu.sxlt.yt.tree</field>
+            <field name="model">bao.cao.s37.dn.the.tinh.gia.thanh.san.pham.dich.vu</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="S37-DN:Thẻ tính giá thành sản phẩm dịch vụ" create="false" report="true">
+                    <field name="CHI_TIEU" />
+                    <field name="TONG_SO_TIEN" />
+                    <field name="NGUYEN_VAT_LIEU" />
+                    <field name="NHAN_CONG" />
+                    <field name="KHAU_HAO" />
+                    <field name="CHI_PHI_MUA_NGOAI" />
+                    <field name="CHI_PHI_KHAC" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_san_xuat_lt_yeu_to" model="ir.actions.act_window">
+            <field name="name">S37-DN:Thẻ tính giá thành sản phẩm dịch vụ</field>
+            <field name="res_model">bao.cao.s37.dn.the.tinh.gia.thanh.san.pham.dich.vu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!--<field name="context">{'group_by': ['kho_id'], 'header_struct': [['Đầu kỳ', ['sl_dau_ky', ['XYZ', ['gt_dau_ky', 'sl_nhap_kho']]]], ['Cuối kỳ', ['sl_cuoi_ky', 'gt_cuoi_ky','gt_nhap_kho']]], 'expand_all': 'true'}</field>-->
+        </record>
+        <record id="action_bao_cao_s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_san_xuat_lt_yeu_to" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_san_xuat_lt_yeu_to_tree" />
+            <field name="act_window_id" ref="open_report__s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_san_xuat_lt_yeu_to" />
+        </record>
+        <!-- end -->
+        <!-- end sản xuất liên tục -->
+        
+        <!-- Công trình -->
+        
+        <record id="view_bao_cao_s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_cong_trinh_khoan_muc_cp_tree" model="ir.ui.view">
+            <field name="name">bao.cao.s37.dn.the.tinh.gia.thanh.san.pham.dich.vu.sxlt.kmcp.tree</field>
+            <field name="model">bao.cao.s37.dn.the.tinh.gia.thanh.san.pham.dich.vu</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="S37-DN:Thẻ tính giá thành sản phẩm dịch vụ" create="false" report="true">
+                    <field name="CHI_TIEU" />
+                    <field name="TONG_SO_TIEN" />
+                    <field name="NGUYEN_VAT_LIEU_TRUC_TIEP" />
+                    <field name="NHAN_CONG_TRUC_TIEP" />
+                    <field name="MAY_THI_CONG" />
+                    <field name="CHI_PHI_SAN_XUAT_CHUNG" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_cong_trinh_khoan_muc_cp" model="ir.actions.act_window">
+            <field name="name">S37-DN:Thẻ tính giá thành sản phẩm dịch vụ</field>
+            <field name="res_model">bao.cao.s37.dn.the.tinh.gia.thanh.san.pham.dich.vu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <!--<field name="context">{'group_by': ['kho_id'], 'header_struct': [['Đầu kỳ', ['sl_dau_ky', ['XYZ', ['gt_dau_ky', 'sl_nhap_kho']]]], ['Cuối kỳ', ['sl_cuoi_ky', 'gt_cuoi_ky','gt_nhap_kho']]], 'expand_all': 'true'}</field>-->
+        </record>
+        <record id="action_bao_cao_s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_cong_trinh_khoan_muc_cp" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bao_cao_s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_cong_trinh_khoan_muc_cp_tree" />
+            <field name="act_window_id" ref="open_report__s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_cong_trinh_khoan_muc_cp" />
+        </record>
+        
+        <!-- end công trình -->
+        
+        <record id="view_bao_cao_s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.s37.dn.the.tinh.gia.thanh.san.pham.dich.vu.form</field>
+            <field name="model">bao.cao.s37.dn.the.tinh.gia.thanh.san.pham.dich.vu</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <field name="THONG_KE_THEO" colspan="4" />
+                            <field name="CHI_NHANH_ID" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" colspan="2" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" colspan="2" />
+                            <field name="LOAI_GIA_THANH" invisible="1" />
+                        </group>
+                        <group col="4">
+                            <field name="KY_TINH_GIA_THANH" domain="[('LOAI_GIA_THANH', 'in', ('DON_GIAN','HE_SO_TY_LE','CONG_TRINH'))]" options="{'columns': ['TEN', 'TEN_LOAI_GIA_THANH'], 'strings': ['Tên kỳ tính giá thành', 'Loại'],'displays': ['TEN']}" colspan="4" />
+                        </group>
+                        <notebook>
+                            <page string="Chi tiết" attrs="{'invisible': [('LOAI_GIA_THANH', '!=', 'DON_GIAN')]}">
+                                <field name="DOI_TUONG_THCP_IDS_GIAN_DON" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA_THANH_PHAM_ID" string="Mã thành phẩm" />
+                                        <field name="TEN_THANH_PHAM" string="Tên thành phẩm" />
+                                        <field name="MA_DOI_TUONG_THCP_ID" string="Mã đối tượng THCP" />
+                                        <field name="TEN_DOI_TUONG_THCP" string="Tên đối tượng THCP" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Chi tiết" attrs="{'invisible': [('LOAI_GIA_THANH', '!=', 'HE_SO_TY_LE')]}">
+                                <field name="DOI_TUONG_THCP_IDS_HE_SO_TY_LE" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA_THANH_PHAM_ID" string="Mã thành phẩm" />
+                                        <field name="TEN_THANH_PHAM" string="Tên thành phẩm" />
+                                        <field name="MA_DOI_TUONG_THCP_ID" string="Mã đối tượng THCP" />
+                                        <field name="TEN_DOI_TUONG_THCP" string="Tên đối tượng THCP" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Chi tiết" attrs="{'invisible': [('LOAI_GIA_THANH', '!=', 'CONG_TRINH')]}">
+                                <field name="DOI_TUONG_THCP_IDS_CONG_TRINH" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA_CONG_TRINH_ID" string="Mã công trình" />
+                                        <field name="TEN_CONG_TRINH" string="Tên công trình" />
+                                        <field name="LOAI_CONG_TRINH" string="Loại công trình" />
+                                        <field name="BAC" string="Bậc" />
+                                    </tree>
+                                </field>
+                            </page>
+                            
+                        </notebook>
+                        <!-- Master/Detail form -->
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_tham_so_form" model="ir.actions.act_window">
+            <field name="name">S37-DN: Thẻ tính giá thành sản phẩm, dịch vụ</field>
+            <field name="res_model">bao.cao.s37.dn.the.tinh.gia.thanh.san.pham.dich.vu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="size">large</field>
+            <field name="view_id" ref="view_bao_cao_s37_dn_the_tinh_gia_thanh_san_pham_dich_vu_tham_so_form" />
+        </record>
+    </data>
+</odoo>

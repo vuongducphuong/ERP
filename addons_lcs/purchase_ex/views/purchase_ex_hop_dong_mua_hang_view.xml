@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_purchase_ex_hop_dong_mua_hang_form" model="ir.ui.view">
+            <field name="name">purchase.ex.hop.dong.mua.hang.form</field>
+            <field name="model">purchase.ex.hop.dong.mua.hang</field>
+            <field name="arch" type="xml">
+                <form string="Hợp đồng mua hàng">
+                    <sheet>
+                        <group col="6">
+                            <group colspan="2">
+                                <field name="DON_MUA_HANG_ID" options="{'columns': ['SO_DON_HANG', 'NGAY_DON_HANG','NHA_CUNG_CAP_ID.HO_VA_TEN'], 'strings': ['Số đơn hàng','Ngày đơn hàng','Nhà cung cấp'], 'displays': ['SO_DON_HANG']}" />
+                                <field name="base_currency_id" invisible="1" />
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1.Thông tin chung">
+                                <group col="12">
+                                    <group col="6" colspan="6">
+                                        <field name="SO_HOP_DONG" colspan="3" string="Số hợp đồng(*)" required="True" />
+                                        <field name="NGAY_KY" colspan="3" string="Ngày ký(*)" required="True" />
+                                        <field name="TRICH_YEU" colspan="6" />
+                                        <field name="currency_id" colspan="3" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}" required="True" />
+                                        <field name="TY_GIA" colspan="3" attrs="{'readonly': [('LA_TIEN_CO_SO', '=', True)]}" />
+                                        <field name="GIA_TRI_HOP_DONG" colspan="6" />
+                                        <field name="GT_HOP_DONG_QUY_DOI" colspan="6" attrs="{'readonly': [('LA_TIEN_CO_SO', '=', True)]}" />
+                                        <field name="TINH_TRANG" colspan="6" string="Tình trạng(*)" required="True" />
+                                        <field name="GIA_TRI_THANH_LY" colspan="6" />
+                                        <field name="GT_THANH_LY_QUY_DOI" colspan="6" readonly="1" />
+                                        <field name="NGAY_THANH_LY_HUY_BO" colspan="6" readonly="1" />
+                                        <field name="LY_DO" colspan="6" readonly="1" />
+                                        <field name="DIEU_KHOAN_KHAC" colspan="6" />
+                                        <field name="LA_TIEN_CO_SO" invisible="1" />
+                                    </group>
+                                    <group col="6" colspan="6">
+                                        <field name="NHA_CUNG_CAP_ID" colspan="6" domain="[('LA_NHA_CUNG_CAP','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã NCC', 'Tên NCC','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_nha_cung_cap'}" />
+                                        <field name="TEN_NCC" string="Tên NCC" colspan="6" />
+                                        <field name="DIA_CHI" colspan="6" />
+                                        <field name="MA_SO_THUE" colspan="6" />
+                                        <field name="NGUOI_LIEN_HE" colspan="6" />
+                                        <field name="HAN_GIAO_HANG" colspan="6" />
+                                        <field name="DIA_CHI_GIAO" colspan="6" />
+                                        <field name="HAN_THANH_TOAN" colspan="6" />
+                                        <field name="NV_MUA_HANG_ID" colspan="6" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}" />
+                                    </group>
+                                </group>
+
+                                <field name="LA_HOP_DONG_PHAT_SINH_TRUOC_KHI_SU_DUNG_PHAN_MEM" />
+                                <group col="4" attrs="{'invisible': [('LA_HOP_DONG_PHAT_SINH_TRUOC_KHI_SU_DUNG_PHAN_MEM', '!=', True)]}">
+                                    <field name="GIA_TRI_DA_THUC_HIEN" colspan="2"  />
+                                    <field name="SO_DA_TRA" colspan="2" />
+                                </group>
+                            </page>
+                            <page string="2.Hàng hóa dịch vụ">
+                                <field name="PURCHASE_EX_HOP_DONG_MUA_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="MA_HANG_ID" options="{'columns': ['MA', 'TEN','SO_LUONG_TON'], 'strings': ['Mã hàng', 'Tên hàng','Số lượng tồn'],'displays': ['MA']}" />
+                                        <field name="TEN_HANG" />
+                                        <field name="DVT_ID" />
+                                        <field name="SO_LUONG" sum="so luong" />
+                                        <field name="DON_GIA" />
+                                        <field name="THANH_TIEN" sum="thanh tien" />
+                                        <field name="THANH_TIEN_QUY_DOI" sum="thanh tien quy doi" attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=' , True)]}" />
+                                        <field name="TY_LE_CK" string="Tỷ lệ CK(%)" />
+                                        <field name="TIEN_CHIET_KHAU" sum="tien chiet khau" />
+                                        <field name="TIEN_CHIET_KHAU_QUY_DOI" sum="tien chiet khau quy doi" attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=' , True)]}" />
+                                        <field name="PHAN_TRAM_THUE_GTGT_ID" string="%Thuế GTGT" options="{'no_create': True}"/>
+                                        <field name="TIEN_THUE_GTGT" sum="tien thue gtgt" />
+                                        <field name="TIEN_THUE_GTGT_QUY_DOI" sum="tien thue gtgt quy doi" attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=' , True)]}" />
+                                        <field name="TONG_TIEN_THANH_TOAN" sum="tong tien thanh toan" />
+                                        <field name="TONG_TIEN_THANH_TOAN_QUY_DOI" sum="tong tien thanh toan quy doi" attrs="{'column_invisible': [('parent.LA_TIEN_CO_SO', '=' , True)]}" />
+                                        <field name="currency_id" invisible="1" />
+                                        <field name="base_currency_id" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_purchase_ex_hop_dong_mua_hang_tree" model="ir.ui.view">
+            <field name="name">purchase.ex.hop.dong.mua.hang.tree</field>
+            <field name="model">purchase.ex.hop.dong.mua.hang</field>
+            <field name="arch" type="xml">
+                <tree string="Hợp đồng mua hàng">
+                    <field name="TINH_TRANG" fixed_column="True" />
+                    <field name="SO_HOP_DONG" fixed_column="True" />
+                    <field name="NGAY_KY" />
+                    <field name="TRICH_YEU" />
+                    <field name="NHA_CUNG_CAP_ID" />
+                    <field name="GT_HOP_DONG_QUY_DOI" sum="tong gt hop dong" string="Giá trị hợp đồng"/>
+                    <field name="GT_THANH_LY_QUY_DOI" sum="tong gt thanh ly" string="Giá trị thanh lý"/>
+                    <field name="GIA_TRI_DA_THUC_HIEN" sum="tong gt da thuc hien" />
+                    <field name="SO_DA_TRA" sum="tong gtg so da tra" />
+                    <field name="SO_CON_PHAI_TRA_DU_KIEN" sum="tong so phai tra du kien" />
+                    <field name="SO_CON_PHAI_TRA" sum="tong so phai tra" />
+                    <field name="NV_MUA_HANG_ID" />
+                    <field name="NGAY_THANH_LY_HUY_BO" string="Ngày thanh lý/hủy bỏ" />
+                    <field name="LY_DO" />
+                    <field name="CHI_NHANH_ID" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_purchase_ex_hop_dong_mua_hang" model="ir.actions.act_window">
+            <field name="name">Hợp đồng mua</field>
+            <field name="res_model">purchase.ex.hop.dong.mua.hang</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_purchase_ex_hop_dong_mua_hang_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_purchase_ex_hop_dong_mua_hang_tree" />
+            <field name="act_window_id" ref="open_menu_purchase_ex_hop_dong_mua_hang" />
+        </record>
+        <record id="action_purchase_ex_hop_dong_mua_hang_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_purchase_ex_hop_dong_mua_hang_form" />
+            <field name="act_window_id" ref="open_menu_purchase_ex_hop_dong_mua_hang" />
+        </record>
+        <!-- <menuitem name="Hợp đồng mua hàng"
+                  action="purchase_ex.open_menu_purchase_ex_hop_dong_mua_hang"
+                  id="menu_purchase_ex_hop_dong_mua_hang"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_purchase_ex_hop_dong_mua_hang_1" model="ir.sequence">
+            <field name="name">purchase_ex_hop_dong_mua_hang SO_HOP_DONG sequence</field>
+            <field name="code">purchase_ex_hop_dong_mua_hang_SO_HOP_DONG</field>
+            <field name="prefix">HĐM</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

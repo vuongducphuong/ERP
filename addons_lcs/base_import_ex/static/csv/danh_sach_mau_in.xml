@@ -1,0 +1,2466 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+	<MSC_ReportTemplate>
+	  <ReportID>01_VT</ReportID>
+	  <ReportName>01-VT: Phiếu nhập kho</ReportName>
+	  <RefTypeList>/302/307/308/309/310/318/319/320/321/322/2010/2011/2012/2013/2014/2015/2016/2017/2090/352/357/358/359/360/368/369/370/371/372/</RefTypeList>
+	  <Description>01-VT: Phiếu nhập kho</Description>
+	  <ReportTitle>01-VT: PHIẾU NHẬP KHO</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>01_VT_LotExpiry</ReportID>
+	  <ReportName>Phiếu nhập kho (Theo số lô, hạn dùng)</ReportName>
+	  <RefTypeList>/302/307/308/309/310/318/319/320/321/322/2010/2011/2012/2013/2014/2015/2016/2017/2090/352/357/358/359/360/368/369/370/371/372/</RefTypeList>
+	  <Description>Phiếu nhập kho (Theo số lô, hạn dùng)</Description>
+	  <ReportTitle>PHIẾU NHẬP KHO (THEO SỐ LÔ, HẠN DÙNG)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>01_VT_StockDetail</ReportID>
+	  <ReportName>Phiếu nhập kho (Chi tiết theo kho)</ReportName>
+	  <RefTypeList>/302/307/308/309/310/318/319/320/321/322/2010/2011/2012/2013/2014/2015/2016/2017/2090/352/357/358/359/360/368/369/370/371/372/</RefTypeList>
+	  <Description>Phiếu nhập kho (chi tiết theo kho)</Description>
+	  <ReportTitle>PHIẾU NHẬP KHO (CHI TIẾT THEO KHO)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>02_VT</ReportID>
+	  <ReportName>02-VT: Phiếu xuất kho</ReportName>
+	  <RefTypeList>/2091/3030/3031/2024/2025/2026/2020/2021/2022/2023//2020/2022/2023/</RefTypeList>
+	  <Description>02-VT: Phiếu xuất kho</Description>
+	  <ReportTitle>02-VT: PHIẾU XUẤT KHO</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>02_VT_INTransfer</ReportID>
+	  <ReportName>02-VT: Phiếu xuất kho</ReportName>
+	  <RefTypeList>/2030/</RefTypeList>
+	  <Description>02-VT: Phiếu xuất kho</Description>
+	  <ReportTitle>02-VT: PHIẾU XUẤT KHO</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>02_VT_LotExpiry</ReportID>
+	  <ReportName>Phiếu xuất kho (Theo số lô, hạn sử dụng)</ReportName>
+	  <RefTypeList>/2091/3030/3031/2024/2025/2026/2020/2021/2022/2023//2020/2022/2023/</RefTypeList>
+	  <Description>Phiếu xuất kho (Theo số lô, hạn sử dụng)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO (THEO SỐ LÔ, HẠN SỬ DỤNG)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>02_VT_LotExpiry_INTransfer</ReportID>
+	  <ReportName>Phiếu xuất kho (Theo số lô, hạn sử dụng)</ReportName>
+	  <RefTypeList>/2030/</RefTypeList>
+	  <Description>Phiếu xuất kho (Theo số lô, hạn sử dụng)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO (THEO SỐ LÔ, HẠN SỬ DỤNG)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ABBankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (ABBANK)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (ABBANK)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (ABBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ABBankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (ABBANK)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (ABBANK)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (ABBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ABBankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (ABBANK)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (ABBANK)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (ABBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ACBUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (ACB)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (ACB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (ACB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ACBUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (ACB)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (ACB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (ACB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ACBUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (ACB)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (ACB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (ACB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountBalance</ReportID>
+	  <ReportName>Bàn làm việc</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Bàn làm việc</Description>
+	  <ReportTitle>Bàn làm việc</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_BADeposit</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/1500/1501/1502/1503/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_BAInternalTransfer</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_BAInternalTransferExchange</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu quy đổi)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu quy đổi)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_BAWithDraw</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/1510/1511/1512/1513/1514/1520/1521/1522/1523/1530/1531/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_BAWithDrawExchange</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu quy đổi)</ReportName>
+	  <RefTypeList>/1510/1511/1520/1521/1530/1531/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu quy đổi)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_CAPayment</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/1020/1021/1022/1023/1024/1025/1026/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_CAPaymentExchange</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu quy đổi)</ReportName>
+	  <RefTypeList>/1020/1021/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu quy đổi)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_CAReceipt</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/1010/1011/1012/1013/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_CAReceiptExchange</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu quy đổi)</ReportName>
+	  <RefTypeList>/1010/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu quy đổi)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_FAAdjustment</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/252/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_FAChangeFinancialLeasingToOwner</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/256/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_FADecrement</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/251/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_FADepreciation</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/254/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_GLVoucher</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/4010/4011/4012/4013/4014/4015/4016/4017/4018/4020/4030/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_GLVoucherExchange</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu quy đổi)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu quy đổi)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_INInward</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/2010/2011/2012/2013/2014/2015/2016/2017/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_INOutward</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/2020/2021/2022/2023/2024/2025/2026/2027/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_INTransfer</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/2030/2031/2032/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_JCAccepted</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/4090/4091/4092/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_JCExpenseTranfer</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/4080/4081/4082/4083/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_PASalaryExpense</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/6030/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_PUDiscount</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/3040/3041/3042/3043/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_PUInvoice</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/3400/3402/3403/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_PUReturn</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_PUService</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/330/331/332/333/334/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_PUServiceExchange</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu quy đổi)</ReportName>
+	  <RefTypeList>/331/332/333/334/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu quy đổi)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_PUVoucher</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/302/307/308/309/310/312/313/314/315/316/318/319/320/321/322/324/325/326/327/328/352/357/358/359/360/362/363/364/365/366/368/369/370/371/372/374/375/376/377/378/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_PUVoucherExchange</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu quy đổi)</ReportName>
+	  <RefTypeList>/307/308/309/310/313/314/315/316/357/358/359/360/363/364/365/366/319/320/321/322/325/326/327/328/369/370/371/372/375/376/377/378/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu quy đổi)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_SADiscount</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/3550/3551/3552/3553/3554/3555/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_SADiscountExchange</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu quy đổi)</ReportName>
+	  <RefTypeList>/3551/3553/3555/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu quy đổi)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_SAReturn</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/3540/3541/3542/3543/3544/3545/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_SAReturnExchange</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu quy đổi)</ReportName>
+	  <RefTypeList>/3541/3543/3545/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu quy đổi)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_SAVoucher</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/3530/3531/3532/3534/3535/3536/3537/3538/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucher_SUAllocation</ReportID>
+	  <ReportName>Chứng từ kế toán</ReportName>
+	  <RefTypeList>/453/</RefTypeList>
+	  <Description>Chứng từ kế toán</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_BADeposit</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/1500/1501/1502/1503/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_BAInternalTransfer</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_BAWithDraw</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/1510/1511/1512/1513/1514/1520/1521/1522/1523/1530/1531/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_CAPayment</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/1020/1021/1022/1023/1024/1025/1026/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_CAReceipt</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/1010/1011/1012/1013/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_FAAdjustment</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/252/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_FAChangeFinancialLeasingToOwner</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/256/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_FADecrement</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/251/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_FADepreciation</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/254/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_GLVoucher</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/4010/4011/4012/4013/4014/4015/4016/4017/4018/4020/4030/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_INInward</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/2010/2011/2012/2013/2014/2015/2016/2017/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_INOutward</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/2020/2021/2022/2023/2024/2025/2026/2027/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_INTransfer</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/2030/2031/2032/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_JCAccepted</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/4090/4091/4092/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_JCExpenseTranfer</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/4080/4081/4082/4083/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_PASalaryExpense</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/6030/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_PUDiscount</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/3040/3041/3042/3043/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_PUInvoice</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/3400/3402/3403/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_PUReturn</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_PUService</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/330/331/332/333/334/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_PUVoucher</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/302/307/308/309/310/312/313/314/315/316/318/319/320/321/322/324/325/326/327/328/352/357/358/359/360/362/363/364/365/366/368/369/370/371/372/374/375/376/377/378/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_SADiscount</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/3550/3551/3552/3553/3554/3555/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_SAReturn</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/3540/3541/3542/3543/3544/3545/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_SAVoucher</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/3530/3531/3532/3534/3535/3536/3537/3538/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AccountingVoucherDetail_SUAllocation</ReportID>
+	  <ReportName>Chứng từ kế toán (Mẫu chi tiết)</ReportName>
+	  <RefTypeList>/453/</RefTypeList>
+	  <Description>Chứng từ kế toán (Mẫu chi tiết)</Description>
+	  <ReportTitle>CHỨNG TỪ KẾ TOÁN (Mẫu chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AgribankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (Agribank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Agribank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (AGRIBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AgribankUNC_A5</ReportID>
+	  <ReportName>Ủy nhiệm chi (Agribank - A5)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Agribank - A5)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (AGRIBANK - A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AgribankUNC_A5_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (Agribank - A5)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Agribank - A5)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (AGRIBANK - A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AgribankUNC_A5_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (Agribank - A5)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Agribank - A5)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (AGRIBANK - A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AgribankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (Agribank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Agribank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (AGRIBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>AgribankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (Agribank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Agribank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (AGRIBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>BankReconcileOnline</ReportID>
+	  <ReportName>Đối chiếu ngân hàng online</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Đối chiếu ngân hàng online</Description>
+	  <ReportTitle>ĐỐI CHIẾU NGÂN HÀNG ONLINE</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>BAPaymentOrderSalary</ReportID>
+	  <ReportName>Bảng chi trả lương nhân viên qua ngân hàng</ReportName>
+	  <RefTypeList>/1523/</RefTypeList>
+	  <Description>Bảng chi trả lương nhân viên qua ngân hàng</Description>
+	  <ReportTitle>Bảng chi trả lương nhân viên qua ngân hàng</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>BIDVUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (BIDV)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (BIDV)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (BIDV)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>BIDVUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (BIDV)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (BIDV)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (BIDV)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>BIDVUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (BIDV)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (BIDV)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (BIDV)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ConstructionBankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (CB)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (CB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (CB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ConstructionBankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (CB)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (CB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (CB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ConstructionBankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (CB)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (CB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (CB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>CreditAnnouncement</ReportID>
+	  <ReportName>Giấy báo Có</ReportName>
+	  <RefTypeList>/1500/1502/1503/3537/3538/</RefTypeList>
+	  <Description>Giấy báo Có</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETINBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>CustomerReceivableVoucherList</ReportID>
+	  <ReportName>Danh sách chứng từ công nợ khách hàng</ReportName>
+	  <RefTypeList>/1011/1012/</RefTypeList>
+	  <Description>Danh sách chứng từ công nợ khách hàng</Description>
+	  <ReportTitle>DANH SÁCH CHỨNG TỪ CÔNG NỢ KHÁCH HÀNG</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>CustomerReceivableVoucherList_BA</ReportID>
+	  <ReportName>Danh sách chứng từ công nợ khách hàng</ReportName>
+	  <RefTypeList>/1502/1503/</RefTypeList>
+	  <Description>Danh sách chứng từ công nợ khách hàng</Description>
+	  <ReportTitle>DANH SÁCH CHỨNG TỪ CÔNG NỢ KHÁCH HÀNG</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>DaiAUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (DAIA Bank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (DAIA Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (DAIA BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>DaiAUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (DAIA Bank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (DAIA Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (DAIA BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>DaiAUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (DAIA Bank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (DAIA Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (DAIA BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>DebitAnnouncement</ReportID>
+	  <ReportName>Giấy báo Nợ</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/1560/309/315/321/327/333/310/316/322/328/334/1520/1521/1530/1531/358/364/370/376/359/360/365/366/371/372/377/378/</RefTypeList>
+	  <Description>Giấy báo Nợ</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETINBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>DebtCrossEntryCompare</ReportID>
+	  <ReportName>Biên bản đối chiếu bù trừ công nợ (Chi tiết theo hóa đơn)</ReportName>
+	  <RefTypeList>/4014/</RefTypeList>
+	  <Description>BIÊN BẢN ĐỐI CHIẾU BÙ TRỪ CÔNG NỢ</Description>
+	  <ReportTitle>BIÊN BẢN ĐỐI CHIẾU BÙ TRỪ CÔNG NỢ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>DeliveredNoteLotExpiry</ReportID>
+	  <ReportName>Phiếu xuất kho bán hàng (Số lô, hạn sử dụng)</ReportName>
+	  <RefTypeList>/3530/3531/3532/3534/3535/3536/3537/3538/</RefTypeList>
+	  <Description>Phiếu xuất kho bán hàng (Số lô, hạn sử dụng)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO BÁN HÀNG (SỐ LÔ, HẠN SỬ DỤNG)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>DeliveredNoteWarrantySerial</ReportID>
+	  <ReportName>Phiếu xuất kho kiêm bảo hành (Mã quy cách)</ReportName>
+	  <RefTypeList>/3530/3531/3532/3534/3535/3536/3537/3538/</RefTypeList>
+	  <Description>Phiếu xuất kho kiêm bảo hành (Mã quy cách)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO KIÊM BẢO HÀNH (MÃ QUY CÁCH)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>DeliveryNote_Warranty</ReportID>
+	  <ReportName>Phiếu giao hàng (Kiêm bảo hành)</ReportName>
+	  <RefTypeList>/3530/3531/3532/3534/3535/3536/3537/3538/</RefTypeList>
+	  <Description>Phiếu giao hàng (Kiêm bảo hành)</Description>
+	  <ReportTitle>PHIẾU GIAO HÀNG (KIÊM BẢO HÀNH)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>DongAUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (DONGA Bank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (DONGA Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (DONGA BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>DongAUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (DONGA Bank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (DONGA Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (DONGA BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>DongAUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (DONGA Bank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (DONGA Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (DONGA BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>EximbankBankOrder</ReportID>
+	  <ReportName>Lệnh chi (Eximbank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Lệnh chi (Eximbank)</Description>
+	  <ReportTitle>LỆNH CHI (EXIMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>EximbankBankOrder_BAInternalTransfer</ReportID>
+	  <ReportName>Lệnh chi (Eximbank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Lệnh chi (Eximbank)</Description>
+	  <ReportTitle>LỆNH CHI (EXIMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>EximbankBankOrder_GLVoucher</ReportID>
+	  <ReportName>Lệnh chi (Eximbank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Lệnh chi (Eximbank)</Description>
+	  <ReportTitle>LỆNH CHI (EXIMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>EximbankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (Eximbank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Eximbank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (EXIMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>EximbankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (Eximbank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Eximbank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (EXIMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>EximbankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (Eximbank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Eximbank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (EXIMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>FAAdjustment</ReportID>
+	  <ReportName>Đánh giá lại tài sản cố định</ReportName>
+	  <RefTypeList>/252/</RefTypeList>
+	  <Description>Bảng thanh toán tiền lương cố định</Description>
+	  <ReportTitle>ĐÁNH GIÁ LẠI TÀI SẢN CỐ ĐỊNH</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>FAAudit</ReportID>
+	  <ReportName>Biên bản kiểm kê tài sản cố định</ReportName>
+	  <RefTypeList>/255/</RefTypeList>
+	  <Description>Bảng thanh toán tiền lương cố định</Description>
+	  <ReportTitle>BIÊN BẢN KIỂM KÊ TÀI SẢN CỐ ĐỊNH</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>FADepreciation</ReportID>
+	  <ReportName>Bảng tính khấu hao tài sản cố định</ReportName>
+	  <RefTypeList>/254/</RefTypeList>
+	  <Description>Bảng thanh toán tiền lương cố định</Description>
+	  <ReportTitle>BẢNG TÍNH KHẤU HAO TÀI SẢN CỐ ĐỊNH</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>FATransfer</ReportID>
+	  <ReportName>Điều chuyển tài sản cố định</ReportName>
+	  <RefTypeList>/253/</RefTypeList>
+	  <Description>Bảng thanh toán tiền lương cố định</Description>
+	  <ReportTitle>ĐIỀU CHUYỂN TÀI SẢN CỐ ĐỊNH</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>FiguresSummary</ReportID>
+	  <ReportName>Bàn làm việc</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Bàn làm việc</Description>
+	  <ReportTitle>Bàn làm việc</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>FixedAssetIncrementVoucher</ReportID>
+	  <ReportName>Chứng từ ghi tăng TSCĐ</ReportName>
+	  <RefTypeList>/250/</RefTypeList>
+	  <Description>Theo dõi chi tiết từng TSCĐ của doanh nghiệp, tình hình thay đổi nguyên giá và giá trị hao mòn đã trích hàng năm của từng TSCĐ</Description>
+	  <ReportTitle>CHỨNG TỪ GHI TĂNG TSCĐ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GeneralUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi</Description>
+	  <ReportTitle>ỦY NHIỆM CHI</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GeneralUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi</Description>
+	  <ReportTitle>ỦY NHIỆM CHI</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GeneralUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi</Description>
+	  <ReportTitle>ỦY NHIỆM CHI</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GLCreatedB09_DN</ReportID>
+	  <ReportName>Thuyết minh báo cáo tài chính</ReportName>
+	  <RefTypeList>/4051/4053/</RefTypeList>
+	  <Description>In báo cáo tài chính đã lập</Description>
+	  <ReportTitle>THUYẾT MINH BÁO CÁO TÀI CHÍNH</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GLCreatedB09_DN_Summary</ReportID>
+	  <ReportName>Thuyết minh báo cáo tài chính tổng hợp</ReportName>
+	  <RefTypeList>/4051/4053/</RefTypeList>
+	  <Description>In thuyết minh báo cáo tài chính tổng hợp</Description>
+	  <ReportTitle>THUYẾT MINH BÁO CÁO TÀI CHÍNH TỔNG HỢP</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GLCreatedB09_DNN</ReportID>
+	  <ReportName>Thuyết minh báo cáo tài chính</ReportName>
+	  <RefTypeList>/4051/4053/</RefTypeList>
+	  <Description>In báo cáo tài chính đã lập</Description>
+	  <ReportTitle>THUYẾT MINH BÁO CÁO TÀI CHÍNH</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GLCreatedFinanceReport</ReportID>
+	  <ReportName>Báo cáo tài chính</ReportName>
+	  <RefTypeList>/4050/4052/</RefTypeList>
+	  <Description>In báo cáo tài chính đã lập</Description>
+	  <ReportTitle>BÁO CÁO TÀI CHÍNH</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GLCreatedFinanceReportMidYear</ReportID>
+	  <ReportName>Báo cáo tài chính giữa niên độ</ReportName>
+	  <RefTypeList>/4058/</RefTypeList>
+	  <Description>In báo cáo tài chính giữa niên độ đã lập</Description>
+	  <ReportTitle>BÁO CÁO TÀI CHÍNH GIỮA NIÊN ĐỘ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GLPostedVoucher</ReportID>
+	  <ReportName>Chứng từ ghi sổ (Không cộng gộp bút toán giống nhau)</ReportName>
+	  <RefTypeList>/4040/</RefTypeList>
+	  <Description>Chứng từ ghi sổ</Description>
+	  <ReportTitle>CHỨNG TỪ GHI SỔ (KHÔNG CỘNG GỘP BÚT TOÁN GIỐNG NHAU)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GLPostedVoucherSumVoucher</ReportID>
+	  <ReportName>Chứng từ ghi sổ (Cộng gộp bút toán giống nhau của cùng chứng từ gốc)</ReportName>
+	  <RefTypeList>/4040/</RefTypeList>
+	  <Description>Chứng từ ghi sổ</Description>
+	  <ReportTitle>CHỨNG TỪ GHI SỔ (CỘNG GỘP BÚT TOÁN GIỐNG NHAU CỦA CÙNG CHỨNG TỪ GỐC)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GLPostedVoucherSumVouchers</ReportID>
+	  <ReportName>Chứng từ ghi sổ (Cộng gộp bút toán giống nhau của nhiều chứng từ gốc)</ReportName>
+	  <RefTypeList>/4040/</RefTypeList>
+	  <Description>Chứng từ ghi sổ</Description>
+	  <ReportTitle>CHỨNG TỪ GHI SỔ (CỘNG GỘP BÚT TOÁN GIỐNG NHAU CỦA NHIỀU CHỨNG TỪ GỐC)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GLUReconcileData</ReportID>
+	  <ReportName>Báo cáo kiểm tra, đối chiếu chứng từ, sổ sách</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Báo cáo dùng để kiểm tra, đối chiếu chứng từ, sổ sách.</Description>
+	  <ReportTitle>BÁO CÁO KIỂM TRA, ĐỐI CHIẾU CHỨNG TỪ, SỔ SÁCH</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GPBankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (GP.Bank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (GP.Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (GP.BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GPBankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (GP.Bank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (GP.Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (GP.BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>GPBankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (GP.Bank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (GP.Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (GP.BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>HDbankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (HDBank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (HDBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (HDBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>HDbankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (HDBank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (HDBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (HDBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>HDbankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (HDBank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (HDBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (HDBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>HealthyState</ReportID>
+	  <ReportName>Bàn làm việc</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Bàn làm việc</Description>
+	  <ReportTitle>Bàn làm việc</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>Hop-dong-ban4e369ad8_5334_4141_84ed_795ff4dd516a</ReportID>
+	  <ReportName>Hợp đồng bán</ReportName>
+	  <RefTypeList>/9041/</RefTypeList>
+	  <Description>Mẫu ngầm định</Description>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>INDOTransferOrder</ReportID>
+	  <ReportName>Lệnh chuyển tiền (IndovinaBank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Lệnh chuyển tiền (IndovinaBank)</Description>
+	  <ReportTitle>LỆNH CHUYỂN TIỀN (INDOVINABANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>INDOTransferOrder_BAInternalTransfer</ReportID>
+	  <ReportName>Lệnh chuyển tiền (IndovinaBank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Lệnh chuyển tiền (IndovinaBank)</Description>
+	  <ReportTitle>LỆNH CHUYỂN TIỀN (INDOVINABANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>INDOTransferOrder_GLVoucher</ReportID>
+	  <ReportName>Lệnh chuyển tiền (IndovinaBank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Lệnh chuyển tiền (IndovinaBank)</Description>
+	  <ReportTitle>LỆNH CHUYỂN TIỀN (INDOVINABANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>IndovinaUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (IndovinaBank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (IndovinaBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (INDOVINABANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>IndovinaUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (IndovinaBank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (IndovinaBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (INDOVINABANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>IndovinaUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (IndovinaBank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (IndovinaBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (INDOVINABANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>INTransferInside_OrderPrint</ReportID>
+	  <ReportName>Phiếu xuất kho kiêm vận chuyển nội bộ (mẫu đặt in)</ReportName>
+	  <RefTypeList>/2021/</RefTypeList>
+	  <Description>Phiếu xuất kho kiêm vận chuyển nội bộ (mẫu đặt in)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO KIÊM VẬN CHUYỂN NỘI BỘ (MẪU ĐẶT IN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>INTransferInside_OrderPrint-679D59B1-B220-444F-9C9A-45D75ACFAD26</ReportID>
+	  <ReportName>Hoá đơn xuất kho kiêm vận chuyển nội bộ</ReportName>
+	  <RefTypeList>/2021/2030/2032/</RefTypeList>
+	  <Description>Phiếu xuất kho kiêm vận chuyển nội bộ (mẫu đặt in)</Description>
+	  <ReportTitle>HOÁ ĐƠN XUẤT KHO KIÊM VẬN CHUYỂN NỘI BỘ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>INTransferInside_OrderPrint_INTransfer</ReportID>
+	  <ReportName>Phiếu xuất kho kiêm vận chuyển nội bộ (mẫu đặt in)</ReportName>
+	  <RefTypeList>/2030/</RefTypeList>
+	  <Description>Phiếu xuất kho kiêm vận chuyển nội bộ (mẫu đặt in)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO KIÊM VẬN CHUYỂN NỘI BỘ (MẪU ĐẶT IN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>INTransferInside_SelfPrint</ReportID>
+	  <ReportName>Phiếu xuất kho kiêm vận chuyển nội bộ (mẫu tự in)</ReportName>
+	  <RefTypeList>/2021/</RefTypeList>
+	  <Description>Phiếu xuất kho kiêm vận chuyển nội bộ (mẫu tự in)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO KIÊM VẬN CHUYỂN NỘI BỘ (MẪU TỰ IN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>INTransferInside_SelfPrint_INTransfer</ReportID>
+	  <ReportName>Phiếu xuất kho kiêm vận chuyển nội bộ (mẫu tự in)</ReportName>
+	  <RefTypeList>/2030/</RefTypeList>
+	  <Description>Phiếu xuất kho kiêm vận chuyển nội bộ (mẫu tự in)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO KIÊM VẬN CHUYỂN NỘI BỘ (MẪU TỰ IN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>INTransferInside_SelfPrint_INTransfer_SP01</ReportID>
+	  <ReportName>Phiếu xuất kho kiêm vận chuyển nội bộ (Mẫu tự in - Mã quy cách)</ReportName>
+	  <RefTypeList>/2030/</RefTypeList>
+	  <Description>Phiếu xuất kho kiêm vận chuyển nội bộ (Mẫu tự in - Mã quy cách)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO KIÊM VẬN CHUYỂN NỘI BỘ (MẪU TỰ IN - MÃ QUY CÁCH)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>INTransferInside_SelfPrint_SP01</ReportID>
+	  <ReportName>Phiếu xuất kho kiêm vận chuyển nội bộ (Mẫu tự in - Mã quy cách)</ReportName>
+	  <RefTypeList>/2021/</RefTypeList>
+	  <Description>Phiếu xuất kho kiêm vận chuyển nội bộ (Mẫu tự in - Mã quy cách)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO KIÊM VẬN CHUYỂN NỘI BỘ (MẪU TỰ IN - MÃ QUY CÁCH)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>InventoryByExpiryDate</ReportID>
+	  <ReportName>Bàn làm việc</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Bàn làm việc</Description>
+	  <ReportTitle>Bàn làm việc</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>InventoryItemList</ReportID>
+	  <ReportName>Danh sách vật tư, hàng hóa</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Danh sách vật tư, hàng hóa</Description>
+	  <ReportTitle>DANH SÁCH VẬT TƯ, HÀNG HÓA</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>InventoryListBarcode</ReportID>
+	  <ReportName>Danh sách mã vạch vật tư, hàng hóa</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Danh sách mã vạch vật tư, hàng hóa</Description>
+	  <ReportTitle>DANH SÁCH MÃ VẠCH VẬT TƯ, HÀNG HÓA</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>InventoryState</ReportID>
+	  <ReportName>Bàn làm việc</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Bàn làm việc</Description>
+	  <ReportTitle>Bàn làm việc</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>InvoiceStatement</ReportID>
+	  <ReportName>Báo cáo tình hình sử dụng hóa đơn</ReportName>
+	  <RefTypeList>/515/</RefTypeList>
+	  <Description>Báo cáo tình hình sử dụng hóa đơn</Description>
+	  <ReportTitle>BÁO CÁO TÌNH HÌNH SỬ DỤNG HÓA ĐƠN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>IPAdjustAnnouncement</ReportID>
+	  <ReportName>Thông báo điều chỉnh thông tin tại thông báo phát hành hóa đơn</ReportName>
+	  <RefTypeList>/386/</RefTypeList>
+	  <Description>Thông báo phát hành hóa đơn</Description>
+	  <ReportTitle>THÔNG BÁO ĐIỀU CHỈNH THÔNG TIN TẠI THÔNG BÁO PHÁT HÀNH HÓA ĐƠN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>IPCancelAnnouncement</ReportID>
+	  <ReportName>Thông báo kết quả hủy hóa đơn</ReportName>
+	  <RefTypeList>/383/</RefTypeList>
+	  <Description>Thông báo hủy hóa đơn</Description>
+	  <ReportTitle>THÔNG BÁO KẾT QUẢ HỦY HÓA ĐƠN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>IPLBDAnnouncement</ReportID>
+	  <ReportName>Báo cáo mất, cháy, hỏng hóa đơn</ReportName>
+	  <RefTypeList>/384/</RefTypeList>
+	  <Description>Thông báo phát hành hóa đơn</Description>
+	  <ReportTitle>BÁO CÁO MẤT, CHÁY, HỎNG HÓA ĐƠN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>IPListInvoiceAttachment</ReportID>
+	  <ReportName>Bảng kê hóa đơn chưa sử dụng</ReportName>
+	  <RefTypeList>/386/</RefTypeList>
+	  <Description>Thông báo phát hành hóa đơn</Description>
+	  <ReportTitle>BẢNG KÊ HÓA ĐƠN CHƯA SỬ DỤNG</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>IPPublishAnnouncement</ReportID>
+	  <ReportName>Thông báo phát hành hóa đơn (tự in, đặt in) (TT39)</ReportName>
+	  <RefTypeList>/382/</RefTypeList>
+	  <Description>Thông báo phát hành hóa đơn</Description>
+	  <ReportTitle>THÔNG BÁO PHÁT HÀNH HÓA ĐƠN (TỰ IN, ĐẶT IN) (TT39)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>IPPublishAnnouncement_Electronic</ReportID>
+	  <ReportName>Thông báo phát hành hóa đơn điện tử</ReportName>
+	  <RefTypeList>/382/</RefTypeList>
+	  <Description>Thông báo phát hành hóa đơn</Description>
+	  <ReportTitle>THÔNG BÁO PHÁT HÀNH HÓA ĐƠN ĐIỆN TỬ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>IPPublishAnnouncement_TT26</ReportID>
+	  <ReportName>Thông báo phát hành hóa đơn (tự in, đặt in) (TT26)</ReportName>
+	  <RefTypeList>/382/</RefTypeList>
+	  <Description>Thông báo phát hành hóa đơn</Description>
+	  <ReportTitle>THÔNG BÁO PHÁT HÀNH HÓA ĐƠN (TỰ IN, ĐẶT IN) (TT26)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ListGoodsServices_INTransfer</ReportID>
+	  <ReportName>Bảng kê hàng hóa</ReportName>
+	  <RefTypeList>/2030/2031/</RefTypeList>
+	  <Description>Bảng kê hàng hóa, dịch vụ in trên chứng từ xuất kho kiêm vận chuyển nội bộ, xuất kho gửi bán đại lý</Description>
+	  <ReportTitle>BẢNG KÊ HÀNG HÓA</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ListProduction_SA</ReportID>
+	  <ReportName>Bảng kê hàng hóa, dịch vụ</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Bảng kê hàng hóa, dịch vụ</Description>
+	  <ReportTitle>BẢNG KÊ HÀNG HÓA, DỊCH VỤ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>LVBankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (LienVietBank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (LienVietBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (LIENVIETBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>LVBankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (LienVietBank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (LienVietBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (LIENVIETBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>LVBankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (LienVietBank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (LienVietBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (LIENVIETBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>MaritimeUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (Maritime Bank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Maritime Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (MARITIME BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>MaritimeUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (Maritime Bank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Maritime Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (MARITIME BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>MaritimeUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (Maritime Bank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Maritime Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (MARITIME BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>MBUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (MB)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (MB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (MB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>MBUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (MB)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (MB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (MB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>MBUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (MB)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (MB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (MB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>MHBUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (MHB)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (MHB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (MHB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>MHBUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (MHB)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (MHB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (MHB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>MHBUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (MHB)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (MHB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (MHB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>MinutesOfHandover</ReportID>
+	  <ReportName>Biên bản bàn giao</ReportName>
+	  <RefTypeList>/3530/3531/3532/3534/3535/3536/3537/3538/</RefTypeList>
+	  <Description>Biên bản bàn giao</Description>
+	  <ReportTitle>BIÊN BẢN BÀN GIAO</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>NamABankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (Nam A Bank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Nam A Bank)</Description>
+	  <ReportTitle>Ủy nhiệm chi (Nam A Bank)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>NamABankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (Nam A Bank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Nam A Bank)</Description>
+	  <ReportTitle>Ủy nhiệm chi (Nam A Bank)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>NamABankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (Nam A Bank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Nam A Bank)</Description>
+	  <ReportTitle>Ủy nhiệm chi (Nam A Bank)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>NaviBankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (NaviBank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (NaviBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (NAVIBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>NaviBankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (NaviBank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (NaviBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (NAVIBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>NaviBankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (NaviBank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (NaviBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (NAVIBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>OCBUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (OCB)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (OCB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (OCB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>OCBUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (OCB)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (OCB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (OCB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>OCBUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (OCB)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (OCB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (OCB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>OutwardStockBySaleVoucher</ReportID>
+	  <ReportName>Phiếu xuất kho bán hàng</ReportName>
+	  <RefTypeList>/3530/3531/3532/3534/3535/3536/3537/3538/</RefTypeList>
+	  <Description>Phiếu xuất kho bán hàng</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO BÁN HÀNG</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>OutwardStockBySaleVoucherA5</ReportID>
+	  <ReportName>Phiếu xuất kho bán hàng (Mẫu A5)</ReportName>
+	  <RefTypeList>/3530/3531/3532/3534/3535/3536/3537/3538/</RefTypeList>
+	  <Description>Phiếu xuất kho bán hàng (Mẫu A5)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO BÁN HÀNG (MẪU A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>OutwardTransferStock_BySerialNumber</ReportID>
+	  <ReportName>Phiếu xuất chuyển kho (Mã quy cách)</ReportName>
+	  <RefTypeList>/2030/2031//2032/</RefTypeList>
+	  <Description>Phiếu xuất chuyển kho (Mã quy cách)</Description>
+	  <ReportTitle>PHIẾU XUẤT CHUYỂN KHO (MÃ QUY CÁCH)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PASalaryPaySlip</ReportID>
+	  <ReportName>Phiếu lương</ReportName>
+	  <RefTypeList>/6020/6021/6022/</RefTypeList>
+	  <Description>Bảng thanh toán tiền lương cố định</Description>
+	  <ReportTitle>PHIẾU LƯƠNG</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PASalaryPaySlip2</ReportID>
+	  <ReportName>Phiếu lương</ReportName>
+	  <RefTypeList></RefTypeList>
+	  <Description>Bảng thanh toán tiền lương cố định</Description>
+	  <ReportTitle>PHIẾU LƯƠNG</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PASalarySheet</ReportID>
+	  <ReportName>Bảng thanh toán tiền lương</ReportName>
+	  <RefTypeList>/6020/6021/6022/</RefTypeList>
+	  <Description>Bảng thanh toán tiền lương (động)</Description>
+	  <ReportTitle>BẢNG THANH TOÁN TIỀN LƯƠNG</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PASalarySheetAdvance</ReportID>
+	  <ReportName>Bảng lương tạm ứng</ReportName>
+	  <RefTypeList>/6023/</RefTypeList>
+	  <Description>Bảng lương tạm ứng</Description>
+	  <ReportTitle>Bảng lương tạm ứng</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PASalarySheetByTime</ReportID>
+	  <ReportName>02-LĐTL: Bảng thanh toán tiền lương (Lương thời gian) (Mẫu A4)</ReportName>
+	  <RefTypeList>/6021/6022/</RefTypeList>
+	  <Description>Bảng thanh toán tiền lương theo thời gian</Description>
+	  <ReportTitle>02-LĐTL: BẢNG THANH TOÁN TIỀN LƯƠNG (LƯƠNG THỜI GIAN) (MẪU A4)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PASalarySheetFixed</ReportID>
+	  <ReportName>02-LĐTL: Bảng thanh toán tiền lương (Lương cơ bản cố định) (Mẫu A4)</ReportName>
+	  <RefTypeList>/6020/</RefTypeList>
+	  <Description>Bảng thanh toán tiền lương cố định</Description>
+	  <ReportTitle>02-LĐTL: BẢNG THANH TOÁN TIỀN LƯƠNG (LƯƠNG CƠ BẢN CỐ ĐỊNH) (MẪU A4)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PaymentableDebt</ReportID>
+	  <ReportName>Bàn làm việc</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Bàn làm việc</Description>
+	  <ReportTitle>Bàn làm việc</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PaymentVendor</ReportID>
+	  <ReportName>Bàn làm việc</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Bàn làm việc</Description>
+	  <ReportTitle>Bàn làm việc</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PGBUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (PG Bank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (PG Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (PG BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PGBUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (PG Bank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (PG Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (PG BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PGBUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (PG Bank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (PG Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (PG BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PNBUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (N.H Phương Nam)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (N.H Phương Nam)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (N.H PHƯƠNG NAM)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PNBUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (N.H Phương Nam)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (N.H Phương Nam)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (N.H PHƯƠNG NAM)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PNBUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (N.H Phương Nam)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (N.H Phương Nam)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (N.H PHƯƠNG NAM)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PurchaseListWithoutInvoiceVoucher</ReportID>
+	  <ReportName>01/TNDN: Bảng kê mua vào không có hóa đơn</ReportName>
+	  <RefTypeList>/1531/1521/1511/</RefTypeList>
+	  <Description>Bảng kê thu mua hàng hoá dịch vụ mua vào không có hoá đơn</Description>
+	  <ReportTitle>BẢNG KÊ THU MUA HÀNG HOÁ, DỊCH VỤ MUA VÀO KHÔNG CÓ HOÁ ĐƠN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PurchaseListWithoutInvoiceVoucherCA</ReportID>
+	  <ReportName>01/TNDN: Bảng kê mua vào không có hóa đơn</ReportName>
+	  <RefTypeList>/1021/</RefTypeList>
+	  <Description>Bảng kê thu mua hàng hoá dịch vụ mua vào không có hoá đơn</Description>
+	  <ReportTitle>BẢNG KÊ THU MUA HÀNG HOÁ, DỊCH VỤ MUA VÀO KHÔNG CÓ HOÁ ĐƠN</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PVCUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (PVC)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (PVC)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (PVC)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PVCUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (PVC)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (MB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (PVC)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>PVCUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (PVC)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (PVC)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (PVC)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ReceiptCustomer</ReportID>
+	  <ReportName>Bàn làm việc</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Bàn làm việc</Description>
+	  <ReportTitle>Bàn làm việc</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ReceiptVoucherFull</ReportID>
+	  <ReportName>Phiếu thu (Mẫu đầy đủ)</ReportName>
+	  <RefTypeList>/1010/1012/1011/1013/3031/3033/3041/3043/3531/3533/3535/</RefTypeList>
+	  <Description>Phiếu thu (Mẫu đầy đủ)</Description>
+	  <ReportTitle>PHIẾU THU (MẪU ĐẦY ĐỦ)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ReceivableDebt</ReportID>
+	  <ReportName>Bàn làm việc</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Bàn làm việc</Description>
+	  <ReportTitle>Bàn làm việc</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>RevenueAndCost</ReportID>
+	  <ReportName>Bàn làm việc</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Bàn làm việc</Description>
+	  <ReportTitle>Bàn làm việc</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>RevenueByIventoryItem</ReportID>
+	  <ReportName>Bàn làm việc</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Bàn làm việc</Description>
+	  <ReportTitle>Bàn làm việc</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SacombankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (Sacombank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Sacombank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SACOMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SacombankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (Sacombank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Sacombank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SACOMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SacombankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (Sacombank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Sacombank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SACOMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SaigonbankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (Saigonbank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Saigonbank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SAIGONBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SaigonbankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (Saigonbank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Saigonbank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SAIGONBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SaigonbankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (Saigonbank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Saigonbank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SAIGONBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SalesInVoice2LanguageSP</ReportID>
+	  <ReportName>Hóa đơn bán hàng (Mẫu tự in - song ngữ)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn bán hàng (Mẫu tự in - song ngữ)</Description>
+	  <ReportTitle>HÓA ĐƠN BÁN HÀNG (MẪU TỰ IN - SONG NGỮ)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SAOrderVoucher3520</ReportID>
+	  <ReportName>Đơn đặt hàng</ReportName>
+	  <RefTypeList>/3520/</RefTypeList>
+	  <Description>Đơn đặt hàng</Description>
+	  <ReportTitle>ĐƠN ĐẶT HÀNG</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SAOrderVoucherMultiDiscount3520</ReportID>
+	  <ReportName>Đơn đặt hàng (Nhiều tỷ lệ CK)</ReportName>
+	  <RefTypeList>/3520/</RefTypeList>
+	  <Description>Đơn đặt hàng (Nhiều tỷ lệ CK)</Description>
+	  <ReportTitle>ĐƠN ĐẶT HÀNG (NHIỀU TỶ LỆ CK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SAOrderVoucherMultiTax3520</ReportID>
+	  <ReportName>Đơn đặt hàng (Nhiều thuế suất)</ReportName>
+	  <RefTypeList>/3520/</RefTypeList>
+	  <Description>Đơn đặt hàng (Nhiều thuế suất)</Description>
+	  <ReportTitle>ĐƠN ĐẶT HÀNG (NHIỀU THUẾ SUẤT)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SAOrderVoucherMultiVATDiscount3520</ReportID>
+	  <ReportName>Đơn đặt hàng (Nhiều thuế suất, nhiều tỷ lệ CK)</ReportName>
+	  <RefTypeList>/3520/</RefTypeList>
+	  <Description>Đơn đặt hàng (Nhiều thuế suất, nhiều tỷ lệ CK)</Description>
+	  <ReportTitle>ĐƠN ĐẶT HÀNG (NHIỀU THUẾ SUẤT, NHIỀU TỶ LỆ CK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SAQuoteVoucher</ReportID>
+	  <ReportName>Báo giá</ReportName>
+	  <RefTypeList>/3510/</RefTypeList>
+	  <Description>Báo giá</Description>
+	  <ReportTitle>BÁO GIÁ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SAQuoteVoucher_MultiDiscount</ReportID>
+	  <ReportName>Báo giá (Mẫu nhiều tỷ lệ chiết khấu)</ReportName>
+	  <RefTypeList>/3510/</RefTypeList>
+	  <Description>Báo giá (Mẫu nhiều tỷ lệ chiết khấu)</Description>
+	  <ReportTitle>BÁO GIÁ (MẪU NHIỀU TỶ LỆ CHIẾT KHẤU)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SAQuoteVoucher_MultiTax</ReportID>
+	  <ReportName>Báo giá (Mẫu nhiều thuế suất)</ReportName>
+	  <RefTypeList>/3510/</RefTypeList>
+	  <Description>Báo giá (Mẫu nhiều thuế suất)</Description>
+	  <ReportTitle>BÁO GIÁ (MẪU NHIỀU THUẾ SUẤT)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SAVoucher_MultiDiscount</ReportID>
+	  <ReportName>Hóa đơn bán hàng (Nhiều tỷ lệ CK)</ReportName>
+	  <RefTypeList>/3530/3531/3532/3534/3535/3536/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn bán hàng (Nhiều tỷ lệ CK)</Description>
+	  <ReportTitle>HÓA ĐƠN BÁN HÀNG (NHIỀU TỶ LỆ CK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SAVoucher_MultiVAT</ReportID>
+	  <ReportName>Hóa đơn bán hàng (Nhiều thuế suất)</ReportName>
+	  <RefTypeList>/3530/3531/3532/3534/3535/3536/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn bán hàng (Nhiều thuế suất)</Description>
+	  <ReportTitle>HÓA ĐƠN BÁN HÀNG (NHIỀU THUẾ SUẤT)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SAVoucher_MultiVATDiscount</ReportID>
+	  <ReportName>Hóa đơn bán hàng (Nhiều thuế suất, nhiều tỷ lệ CK)</ReportName>
+	  <RefTypeList>/3530/3531/3532/3534/3535/3536/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn bán hàng (Nhiều thuế suất, nhiều tỷ lệ CK)</Description>
+	  <ReportTitle>HÓA ĐƠN BÁN HÀNG (NHIỀU THUẾ SUẤT, NHIỀU TỶ LỆ CK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SAVoucher3LSP</ReportID>
+	  <ReportName>Hóa đơn bán hàng (Mẫu tự in - 3 liên)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn bán hàng (Mẫu tự in - 3 liên)</Description>
+	  <ReportTitle>HÓA ĐƠN BÁN HÀNG (MẪU TỰ IN - 3 LIÊN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SAVoucherOP</ReportID>
+	  <ReportName>Hóa đơn bán hàng (Mẫu đặt in)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn bán hàng (Mẫu đặt in)</Description>
+	  <ReportTitle>HÓA ĐƠN BÁN HÀNG (MẪU ĐẶT IN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SCBUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (SCB)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (SCB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SCB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SCBUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (SCB)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (SCB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SCB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SCBUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (SCB)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (SCB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SCB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SeaBankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (SeaBank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (SeaBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SEABANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SeaBankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (SeaBank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (SeaBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SEABANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SeaBankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (SeaBank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (SeaBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SEABANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SHBUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (SHB)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (SHB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SHB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SHBUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (SHB)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (SHB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SHB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SHBUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (SHB)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (SHB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SHB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SHINHANTransferForm</ReportID>
+	  <ReportName>Giấy chuyển tiền (SHINHAN BANK)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Giấy chuyển tiền (SHINHAN BANK)</Description>
+	  <ReportTitle>GIẤY CHUYỂN TIỀN (SHINHAN BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SHINHANTransferForm_BAInternalTransfer</ReportID>
+	  <ReportName>Giấy chuyển tiền (SHINHAN BANK)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Giấy chuyển tiền (SHINHAN BANK)</Description>
+	  <ReportTitle>GIẤY CHUYỂN TIỀN (SHINHAN BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SHINHANTransferForm_GLVoucher</ReportID>
+	  <ReportName>Giấy chuyển tiền (SHINHAN BANK)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Giấy chuyển tiền (SHINHAN BANK)</Description>
+	  <ReportTitle>GIẤY CHUYỂN TIỀN (SHINHAN BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ShinhanUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (SHINHAN BANK)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (SHINHAN BANK)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SHINHAN BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ShinhanUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (SHINHAN BANK)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (SHINHAN BANK)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SHINHAN BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>ShinhanUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (SHINHAN BANK)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (SHINHAN BANK)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (SHINHAN BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SupplyIncrementVoucher</ReportID>
+	  <ReportName>Chứng từ ghi tăng CCDC</ReportName>
+	  <RefTypeList>/450/</RefTypeList>
+	  <Description>Chứng từ ghi tăng CCDC</Description>
+	  <ReportTitle>CHỨNG TỪ GHI TĂNG CÔNG CỤ DỤNG CỤ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>SupplyIncrementVoucherGeneral</ReportID>
+	  <ReportName>Chứng từ ghi tăng CCDC</ReportName>
+	  <RefTypeList>/450/</RefTypeList>
+	  <Description>Chứng từ ghi tăng CCDC</Description>
+	  <ReportTitle>CHỨNG TỪ GHI TĂNG CÔNG CỤ DỤNG CỤ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TA_01GTGT</ReportID>
+	  <ReportName>TT119 - Tờ khai thuế GTGT khấu trừ (01/GTGT)</ReportName>
+	  <RefTypeList>/5000/</RefTypeList>
+	  <Description>TT119 - Tờ khai thuế GTGT khấu trừ (01/GTGT)</Description>
+	  <ReportTitle>TỜ KHAI THUẾ GTGT KHẤU TRỪ (01/GTGT)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TA_01GTGTTT26</ReportID>
+	  <ReportName>TT26 - Tờ khai thuế GTGT khấu trừ (01/GTGT)</ReportName>
+	  <RefTypeList>/5004/</RefTypeList>
+	  <Description>TT26 - Tờ khai thuế GTGT khấu trừ (01/GTGT)</Description>
+	  <ReportTitle>TỜ KHAI THUẾ GTGT KHẤU TRỪ (01/GTGT)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TA_01TAIN</ReportID>
+	  <ReportName>Tờ khai thuế tài nguyên (01/TAIN)</ReportName>
+	  <RefTypeList>/5040/</RefTypeList>
+	  <Description>Tờ khai thuế tài nguyên (01/TAIN)</Description>
+	  <ReportTitle>TỜ KHAI THUẾ TÀI NGUYÊN (01/TAIN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TA_01TTDB</ReportID>
+	  <ReportName>Tờ khai thuế tiêu thụ đặc biệt (01/TTDB)</ReportName>
+	  <RefTypeList>/5010/</RefTypeList>
+	  <Description>Tờ khai thuế tiêu thụ đặc biệt (01/TTDB)</Description>
+	  <ReportTitle>TỜ KHAI THUẾ TIÊU THỤ ĐẶC BIỆT (01/TTDB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TA_01TTDB_TT195</ReportID>
+	  <ReportName>Tờ khai thuế tiêu thụ đặc biệt (01/TTDB)</ReportName>
+	  <RefTypeList>/5010/</RefTypeList>
+	  <Description>Tờ khai thuế tiêu thụ đặc biệt (01/TTDB)</Description>
+	  <ReportTitle>TỜ KHAI THUẾ TIÊU THỤ ĐẶC BIỆT (01/TTDB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TA_02GTGT</ReportID>
+	  <ReportName>Tờ khai Thuế GTGT cho dự án đầu tư (02/GTGT)</ReportName>
+	  <RefTypeList>/5001/</RefTypeList>
+	  <Description>Tờ khai Thuế GTGT cho dự án đầu tư (02/GTGT)</Description>
+	  <ReportTitle>TỜ KHAI THUẾ GTGT CHO DỰ ÁN ĐẦU TƯ (02/GTGT)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TA_03GTGT</ReportID>
+	  <ReportName>Tờ khai thuế GTGT trực tiếp trên GTGT (03/GTGT)</ReportName>
+	  <RefTypeList>/5003/</RefTypeList>
+	  <Description>Tờ khai thuế GTGT trực tiếp trên GTGT (03/GTGT)</Description>
+	  <ReportTitle>TỜ KHAI THUẾ GTGT TRỰC TIẾP TRÊN GTGT (03/GTGT)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TA_03TNDN</ReportID>
+	  <ReportName>Tờ khai quyết toán thuế TNDN năm (03/TNDN)</ReportName>
+	  <RefTypeList>/5023/</RefTypeList>
+	  <Description>Tờ khai quyết toán thuế TNDN năm (03/TNDN)</Description>
+	  <ReportTitle>TỜ KHAI QUYẾT TOÁN THUẾ TNDN NĂM (03/TNDN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TA_04GTGT</ReportID>
+	  <ReportName>Tờ khai thuế GTGT trực tiếp trên doanh thu (04/GTGT)</ReportName>
+	  <RefTypeList>/5002/</RefTypeList>
+	  <Description>Tờ khai thuế GTGT trực tiếp trên doanh thu (04/GTGT)</Description>
+	  <ReportTitle>TỜ KHAI THUẾ GTGT TRỰC TIẾP TRÊN DOANH THU (04/GTGT)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TARecolcileVATDeduction</ReportID>
+	  <ReportName>Báo cáo kiểm tra sai sót của dữ liệu thuế ở chức năng khấu trừ thuế</ReportName>
+	  <RefTypeList>/</RefTypeList>
+	  <Description>Báo cáo kiểm tra sai sót của dữ liệu thuế ở chức năng khấu trừ thuế</Description>
+	  <ReportTitle>Báo cáo kiểm tra sai sót của dữ liệu thuế ở chức năng khấu trừ thuế</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TechcombankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (Techcombank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Techcombank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (TECHCOMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TechcombankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (Techcombank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Techcombank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (TECHCOMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TechcombankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (Techcombank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Techcombank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (TECHCOMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TPBankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (TienPhongBank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (TienPhongBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (TIENPHONGBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TPBankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (TienPhongBank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (TienPhongBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (TIENPHONGBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>TPBankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (TienPhongBank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (TienPhongBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (TIENPHONGBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V01_TT</ReportID>
+	  <ReportName>01-TT: Phiếu thu</ReportName>
+	  <RefTypeList>/1010/1012/1011/1013/3031/3033/3041/3043/3531/3535/</RefTypeList>
+	  <Description>01-TT: Phiếu thu</Description>
+	  <ReportTitle>01-TT: PHIẾU THU</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V01_TT_A5</ReportID>
+	  <ReportName>01-TT: Phiếu thu (Mẫu A5)</ReportName>
+	  <RefTypeList>/1010/1012/1011/1013/3031/3033/3041/3043/3531/3535/</RefTypeList>
+	  <Description>01-TT: Phiếu thu (Mẫu A5)</Description>
+	  <ReportTitle>01-TT: PHIẾU THU (MẪU A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V01_TT_A5_Continuos</ReportID>
+	  <ReportName>01-TT: Phiếu thu (Mẫu dành cho in giấy cuộn)</ReportName>
+	  <RefTypeList>/1010/1012/1011/1013/3031/3033/3041/3043/3531/3535/</RefTypeList>
+	  <Description>01-TT: Phiếu thu (mẫu dành cho in giấy cuộn)</Description>
+	  <ReportTitle>01-TT: PHIẾU THU (MẪU DÀNH CHO IN GIẤY CUỘN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V01_TT_Receipts_2Lien</ReportID>
+	  <ReportName>01-TT: Phiếu thu (Mẫu 2 liên)</ReportName>
+	  <RefTypeList>/1010/1012/1011/1013/3031/3033/3041/3043/3531/3535/</RefTypeList>
+	  <Description>01-TT: Phiếu thu (Mẫu 2 liên)</Description>
+	  <ReportTitle>01-TT: PHIẾU THU (MẪU 2 LIÊN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V01_VT_A5</ReportID>
+	  <ReportName>01-VT: Phiếu nhập kho (Mẫu A5)</ReportName>
+	  <RefTypeList>/302/307/308/309/310/318/319/320/321/322/2010/2011/2012/2013/2014/2015/2016/2017/2090/352/357/358/359/360/368/369/370/371/372/</RefTypeList>
+	  <Description>01-VT: Phiếu nhập kho (Mẫu A5)</Description>
+	  <ReportTitle>01-VT: PHIẾU NHẬP KHO (MẪU A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V01_VT_A5_Continuous</ReportID>
+	  <ReportName>01-VT: Phiếu nhập kho (Mẫu A5 - dành cho giấy cuộn)</ReportName>
+	  <RefTypeList>/302/307/308/309/310/318/319/320/321/322/2010/2011/2012/2013/2014/2015/2016/2017/2090/352/357/358/359/360/368/369/370/371/372/</RefTypeList>
+	  <Description>01-VT: Phiếu nhập kho (Mẫu A5 - dành cho giấy cuộn)</Description>
+	  <ReportTitle>01-VT: PHIẾU NHẬP KHO (MẪU A5 - DÀNH CHO GIẤY CUỘN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V01_VT_SpecificationCode</ReportID>
+	  <ReportName>Phiếu nhập kho (Mã quy cách)</ReportName>
+	  <RefTypeList>/302/307/308/309/310/318/319/320/321/322/2010/2011/2012/2013/2014/2015/2016/2017/2090/352/357/358/359/360/368/369/370/371/372/</RefTypeList>
+	  <Description>Phiếu nhập kho (Mã quy cách)</Description>
+	  <ReportTitle>PHIẾU NHẬP KHO (MÃ QUY CÁCH)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V02_TT</ReportID>
+	  <ReportName>02-TT: Phiếu chi</ReportName>
+	  <RefTypeList>/1020/1021/1022/1023/1024/1025/1026/307/313/319/325/331/3541/3543/3545/3551/3553/3555/357/363/369/375/</RefTypeList>
+	  <Description>02-TT: Phiếu chi</Description>
+	  <ReportTitle>02-TT: PHIẾU CHI</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V02_TT_A5</ReportID>
+	  <ReportName>02-TT: Phiếu chi (Mẫu A5)</ReportName>
+	  <RefTypeList>/1020/1021/1022/1023/1024/1025/1026/307/313/319/325/331/3541/3543/3545/3551/3553/3555/357/363/369/375/</RefTypeList>
+	  <Description>Phiếu chi (Mẫu đầy đủ)</Description>
+	  <ReportTitle>02-TT: PHIẾU CHI (MẪU A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V02_TT_A5_GiayCuon</ReportID>
+	  <ReportName>02-TT: Phiếu chi (Mẫu A5 - In giấy cuộn)</ReportName>
+	  <RefTypeList>/1020/1021/1022/1023/1024/1025/1026/307/313/319/325/331/3541/3543/3545/3551/3553/3555/357/363/369/375/</RefTypeList>
+	  <Description>Phiếu chi (Mẫu A5 - In giấy cuộn)</Description>
+	  <ReportTitle>02-TT: PHIẾU CHI (MẪU A5 - IN GIẤY CUỘN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V02_VT_A5</ReportID>
+	  <ReportName>02-VT: Phiếu xuất kho (Mẫu A5)</ReportName>
+	  <RefTypeList>/2020/2022/2023/2024/2025/2026/2027/3030/3031/</RefTypeList>
+	  <Description>02-VT: Phiếu xuất kho</Description>
+	  <ReportTitle>02-VT: PHIẾU XUẤT KHO (MẪU A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V02_VT_A5_Continuous</ReportID>
+	  <ReportName>02-VT: Phiếu xuất kho (Mẫu A5 - dành cho in giấy cuộn)</ReportName>
+	  <RefTypeList>/2020/2022/2023/2024/2025/2026/2027/3030/3031/</RefTypeList>
+	  <Description>02-VT: Phiếu xuất kho</Description>
+	  <ReportTitle>02-VT: PHIẾU XUẤT KHO (MẪU A5 - DÀNH CHO IN GIẤY CUỘN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V02_VT_SpecificationCode</ReportID>
+	  <ReportName>Phiếu xuất kho (Mã quy cách)</ReportName>
+	  <RefTypeList>/2020/2022/2023/2024/2025/2026/2027/3030/3031/</RefTypeList>
+	  <Description>02-VT: Phiếu xuất kho</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO (MÃ QUY CÁCH)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V04HGDL3_001</ReportID>
+	  <ReportName>Phiếu xuất kho hàng gửi bán đại lý (Mẫu đặt in)</ReportName>
+	  <RefTypeList>/2031/</RefTypeList>
+	  <Description>Phiếu xuất kho hàng gửi bán đại lý (TT153) (Mẫu đặt in)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO HÀNG GỬI BÁN ĐẠI LÝ (MẪU ĐẶT IN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V04HGDL3_002</ReportID>
+	  <ReportName>Phiếu xuất kho hàng gửi bán đại lý (Mẫu tự in)</ReportName>
+	  <RefTypeList>/2031/</RefTypeList>
+	  <Description>Phiếu xuất kho hàng gửi bán đại lý (TT153) (Mẫu tự in)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO HÀNG GỬI BÁN ĐẠI LÝ (MẪU TỰ IN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V04HGDL3_002-1124B7BB-3BDD-4A20-B9C4-018112BF9C64</ReportID>
+	  <ReportName>Hàng gửi bán đại lý</ReportName>
+	  <RefTypeList>/2031/</RefTypeList>
+	  <Description>Phiếu xuất kho hàng gửi bán đại lý (TT153) (Mẫu tự in)</Description>
+	  <ReportTitle>HÀNG GỬI BÁN ĐẠI LÝ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V04HGDL3_003</ReportID>
+	  <ReportName>Phiếu xuất kho hàng gửi bán đại lý (Mẫu tự in – Mã quy cách)</ReportName>
+	  <RefTypeList>/2031/</RefTypeList>
+	  <Description>Phiếu xuất kho hàng gửi bán đại lý (Mẫu tự in – Mã quy cách)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO HÀNG GỬI BÁN ĐẠI LÝ (MẪU TỰ IN - MÃ QUY CÁCH)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>V04TT_DetailAmount</ReportID>
+	  <ReportName>Giấy thanh toán tạm ứng (Mẫu có số tiền chi tiết)</ReportName>
+	  <RefTypeList>/1010/1020/4010/4015/302/307/308/309/310/312/313/314/315/316/318/319/320/321/322/324/325/326/327/328/330/331/332/333/334/352/357/358/359/360/362/363/364/365/366/368/369/370/371/372/374/375/376/377/378/</RefTypeList>
+	  <Description>Giấy thanh toán tạm ứng (Mẫu có số tiền chi tiết)</Description>
+	  <ReportTitle>Giấy thanh toán tạm ứng (Mẫu có số tiền chi tiết)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VAssembly</ReportID>
+	  <ReportName>Lệnh lắp ráp</ReportName>
+	  <RefTypeList>/2050/</RefTypeList>
+	  <Description>Lệnh lắp ráp</Description>
+	  <ReportTitle>LỆNH LẮP RÁP</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VATInvoiceA5_InPlace</ReportID>
+	  <ReportName>Hóa đơn GTGT (Mẫu đặt in - A5)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn GTGT (Mẫu đặt in - A5)</Description>
+	  <ReportTitle>HÓA ĐƠN GTGT (MẪU ĐẶT IN - A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VATVoucher2LanguageSP</ReportID>
+	  <ReportName>Hóa đơn GTGT (Mẫu tự in - song ngữ)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn GTGT (Mẫu tự in - song ngữ)</Description>
+	  <ReportTitle>HÓA ĐƠN GTGT (MẪU TỰ IN - SONG NGỮ)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VATVoucher3LA5SP</ReportID>
+	  <ReportName>Hóa đơn GTGT (Mẫu tự in - 3 liên - A5)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn GTGT (Mẫu tự in - 3 liên - A5)</Description>
+	  <ReportTitle>HÓA ĐƠN GTGT (MẪU TỰ IN - 3 LIÊN - A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VATVoucher3LPetrolSP</ReportID>
+	  <ReportName>Hóa đơn GTGT (Mẫu xăng dầu - tự in)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn GTGT (Mẫu xăng dầu - đặt in)</Description>
+	  <ReportTitle>HÓA ĐƠN GTGT (MẪU XĂNG DẦU - TỰ IN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VATVoucher3LSP</ReportID>
+	  <ReportName>Hóa đơn GTGT (Mẫu tự in - 3 liên)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn GTGT (Mẫu tự in - 3 liên)</Description>
+	  <ReportTitle>HÓA ĐƠN GTGT (MẪU TỰ IN - 3 LIÊN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VATVoucher3LSP-431034DD-A925-48F8-84FB-9DA02B8E0C5B</ReportID>
+	  <ReportName>Hoá đơn GTGT</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3402/3403/3560/3561/3562/3563/3564/3565/</RefTypeList>
+	  <Description>Hóa đơn GTGT (Mẫu tự in - 3 liên)</Description>
+	  <ReportTitle>HOÁ ĐƠN GTGT</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VATVoucher3LSP-D5ADCDDB-61B4-4326-A76F-0667BCD1DCE0</ReportID>
+	  <ReportName>ffff</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3402/3403/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn GTGT (Mẫu tự in - 3 liên)</Description>
+	  <ReportTitle>FFFF</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VATVoucher3LSPDetailBySerialNumber</ReportID>
+	  <ReportName>Hóa đơn GTGT (Mẫu tự in - 3 liên - Mã quy cách)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn GTGT (Mẫu tự in - 3 liên - Mã quy cách)</Description>
+	  <ReportTitle>HÓA ĐƠN GTGT (MẪU TỰ IN - 3 LIÊN - MÃ QUY CÁCH)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VATVoucherMultiTaxOP</ReportID>
+	  <ReportName>Hóa đơn GTGT (Mẫu đặt in - nhiều thuế suất)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn GTGT (Mẫu đặt in - nhiều thuế suất)</Description>
+	  <ReportTitle>HÓA ĐƠN GTGT (MẪU ĐẶT IN - NHIỀU THUẾ SUẤT)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VATVoucherMultiTaxSP</ReportID>
+	  <ReportName>Hóa đơn GTGT (Mẫu tự in - nhiều thuế suất)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn GTGT (Mẫu tự in - nhiều thuế suất)</Description>
+	  <ReportTitle>HÓA ĐƠN GTGT (MẪU TỰ IN - NHIỀU THUẾ SUẤT)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VATVoucherOP</ReportID>
+	  <ReportName>Hóa đơn GTGT (Mẫu đặt in)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn GTGT (Mẫu đặt in)</Description>
+	  <ReportTitle>HÓA ĐƠN GTGT (MẪU ĐẶT IN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VATVoucherOPDetailBySerialNumber</ReportID>
+	  <ReportName>Hóa đơn GTGT (Mẫu đặt in - Mã quy cách)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn GTGT (Mẫu đặt in - Mã quy cách)</Description>
+	  <ReportTitle>HÓA ĐƠN GTGT (MẪU ĐẶT IN- MÃ QUY CÁCH)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VATVoucherPetrolOP</ReportID>
+	  <ReportName>Hóa đơn GTGT (Mẫu xăng dầu - đặt in)</ReportName>
+	  <RefTypeList>/3030/3031/3032/3033/3530/3531/3532/3534/3535/3536/3550/3551/3552/3553/3554/3555/3560/3561/3562/3563/3564/3565/3537/3538/</RefTypeList>
+	  <Description>Hóa đơn GTGT (Mẫu xăng dầu - đặt in)</Description>
+	  <ReportTitle>HÓA ĐƠN GTGT (MẪU XĂNG DẦU - ĐẶT IN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VCACheckList</ReportID>
+	  <ReportName>Bảng kiểm kê quỹ</ReportName>
+	  <RefTypeList>/1030/</RefTypeList>
+	  <Description>Bảng kiểm kê quỹ</Description>
+	  <ReportTitle>BẢNG KIỂM KÊ QUỸ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VCashPayment_Full</ReportID>
+	  <ReportName>Phiếu chi (Mẫu đầy đủ)</ReportName>
+	  <RefTypeList>/1020/1021/1022/1023/1024/1025/1026/307/313/319/325/331/3541/3543/3545/3551/3553/3555/357/363/369/375/</RefTypeList>
+	  <Description>Phiếu chi (Mẫu đầy đủ)</Description>
+	  <ReportTitle>PHIẾU CHI (MẪU ĐẦY ĐỦ)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VDismantler</ReportID>
+	  <ReportName>Lệnh tháo dỡ</ReportName>
+	  <RefTypeList>/2051/</RefTypeList>
+	  <Description>Lệnh tháo dỡ</Description>
+	  <ReportTitle>LỆNH THÁO DỠ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VendorPayableVoucherList</ReportID>
+	  <ReportName>Danh sách chứng từ công nợ nhà cung cấp</ReportName>
+	  <RefTypeList>/1021/</RefTypeList>
+	  <Description>Danh sách chứng từ công nợ nhà cung cấp</Description>
+	  <ReportTitle>DANH SÁCH CHỨNG TỪ CÔNG NỢ NHÀ CUNG CẤP</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VendorPayableVoucherList_BA</ReportID>
+	  <ReportName>Danh sách chứng từ công nợ nhà cung cấp</ReportName>
+	  <RefTypeList>/1511/1521/1531/</RefTypeList>
+	  <Description>Danh sách chứng từ công nợ nhà cung cấp</Description>
+	  <ReportTitle>DANH SÁCH CHỨNG TỪ CÔNG NỢ NHÀ CUNG CẤP</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VFADecrement</ReportID>
+	  <ReportName>Chứng từ ghi giảm tài sản cố định</ReportName>
+	  <RefTypeList>/251/</RefTypeList>
+	  <Description>Chứng từ ghi giảm tài sản cố định</Description>
+	  <ReportTitle>CHỨNG TỪ GHI GIẢM TÀI SẢN CỐ ĐỊNH</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VIBUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (VIB)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VIB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VIBUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (VIB)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VIB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VIBUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (VIB)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VIB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VIDBankLenhChi</ReportID>
+	  <ReportName>Lệnh chuyển tiền (VID public bank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Lệnh chi (VID public bank)</Description>
+	  <ReportTitle>LỆNH CHI (VID PUBLIC BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VIDBankLenhChi_BAInternalTransfer</ReportID>
+	  <ReportName>Lệnh chuyển tiền (VID public bank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Lệnh chi (VID public bank)</Description>
+	  <ReportTitle>LỆNH CHI (VID PUBLIC BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VIDBankLenhChi_GLVoucher</ReportID>
+	  <ReportName>Lệnh chuyển tiền (VID public bank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Lệnh chi (VID public bank)</Description>
+	  <ReportTitle>LỆNH CHI (VID PUBLIC BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietBankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (VietBank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VietBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietBankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (VietBank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VietBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietBankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (VietBank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VietBank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietCapitalUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (VietCapitalBank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VietCapitalBank)</Description>
+	  <ReportTitle>Ủy nhiệm chi (VietCapitalBank)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietCapitalUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (VietCapitalBank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VietCapitalBank)</Description>
+	  <ReportTitle>Ủy nhiệm chi (VietCapitalBank)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietCapitalUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (VietCapitalBank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VietCapitalBank)</Description>
+	  <ReportTitle>Ủy nhiệm chi (VietCapitalBank)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietcombankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (Vietcombank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Vietcombank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETCOMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietcombankUNC_A5</ReportID>
+	  <ReportName>Ủy nhiệm chi (Vietcombank - A5)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Vietcombank - A5)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETCOMBANK - A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietcombankUNC_A5_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (Vietcombank - A5)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Vietcombank - A5)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETCOMBANK - A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietcombankUNC_A5_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (Vietcombank - A5)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Vietcombank - A5)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETCOMBANK - A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietcombankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (Vietcombank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Vietcombank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETCOMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietcombankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (Vietcombank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Vietcombank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETCOMBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietinbankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (Vietinbank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Vietinbank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETINBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietinbankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (Vietinbank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Vietinbank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETINBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietinbankUNC_BAInternalTransfer_Inplace</ReportID>
+	  <ReportName>Ủy nhiệm chi (Vietinbank - Mẫu đặt in)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Vietinbank - Mẫu đặt in)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETINBANK - MẪU ĐẶT IN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietinbankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (Vietinbank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Vietinbank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETINBANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietinbankUNC_GLVoucher_Inplace</ReportID>
+	  <ReportName>Ủy nhiệm chi (Vietinbank - Mẫu đặt in)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Vietinbank - Mẫu đặt in)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETINBANK - MẪU ĐẶT IN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VietinbankUNC_Inplace</ReportID>
+	  <ReportName>Ủy nhiệm chi (Vietinbank - Mẫu đặt in)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (Vietinbank - Mẫu đặt in)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VIETINBANK - MẪU ĐẶT IN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VINAudit</ReportID>
+	  <ReportName>Biên bản kiểm kê</ReportName>
+	  <RefTypeList>/2060/</RefTypeList>
+	  <Description>Biên bản kiểm kê vật tư, hàng hóa</Description>
+	  <ReportTitle>BIÊN BẢN KIỂM KÊ VẬT TƯ, HÀNG HÓA</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VINAudit_05VT</ReportID>
+	  <ReportName>05-VT: Biên bản kiểm kê vật tư, công cụ, sản phẩm, hàng hóa</ReportName>
+	  <RefTypeList>/2060/</RefTypeList>
+	  <Description>Biên bản kiểm kê vật tư, hàng hóa</Description>
+	  <ReportTitle>BIÊN BẢN KIỂM KÊ VẬT TƯ, CÔNG CỤ, SẢN PHẨM, HÀNG HÓA</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VINAudit_FollowLotNoAndExpiryDate</ReportID>
+	  <ReportName>Biên bản kiểm kê theo số lô, HSD</ReportName>
+	  <RefTypeList>/2060/</RefTypeList>
+	  <Description>Biên bản kiểm kê vật tư, hàng hóa theo số lô, HSD</Description>
+	  <ReportTitle>BIÊN BẢN KIỂM KÊ VẬT TƯ, HÀNG HÓA THEO SỐ LÔ, HSD</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VINAuditDetailBySerialNumber</ReportID>
+	  <ReportName>Biên bản kiểm kê theo mã quy cách</ReportName>
+	  <RefTypeList>/2060/</RefTypeList>
+	  <Description>Biên bản kiểm kê vật tư, hàng hóa theo mã quy cách</Description>
+	  <ReportTitle>BIÊN BẢN KIỂM KÊ VẬT TƯ, HÀNG HÓA</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VINAuditHasClosing</ReportID>
+	  <ReportName>Biên bản kiểm kê (Lấy thêm VTHH khác còn tồn)</ReportName>
+	  <RefTypeList>/2060/</RefTypeList>
+	  <Description>Biên bản kiểm kê (Lấy thêm VTHH khác còn tồn)</Description>
+	  <ReportTitle>BIÊN BẢN KIỂM KÊ VẬT TƯ, HÀNG HÓA</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VINAuditHasClosing_FollowLotNoAndExpiryDate</ReportID>
+	  <ReportName>Biên bản kiểm kê theo số lô, HSD (Lấy thêm VTHH khác còn tồn)</ReportName>
+	  <RefTypeList>/2060/</RefTypeList>
+	  <Description>Biên bản kiểm kê vật tư, hàng hóa theo số lô, HSD (Lấy thêm VTHH khác còn tồn)</Description>
+	  <ReportTitle>BIÊN BẢN KIỂM KÊ VẬT TƯ, HÀNG HÓA THEO SỐ LÔ, HSD</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VINAuditHasClosingDetailBySerialNumber</ReportID>
+	  <ReportName>Biên bản kiểm kê theo mã quy cách (Lấy thêm VTHH khác còn tồn)</ReportName>
+	  <RefTypeList>/2060/</RefTypeList>
+	  <Description>Biên bản kiểm kê theo mã quy cách (Lấy thêm VTHH khác còn tồn)</Description>
+	  <ReportTitle>BIÊN BẢN KIỂM KÊ VẬT TƯ, HÀNG HÓA</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VOutwardTransferStock</ReportID>
+	  <ReportName>Phiếu xuất chuyển kho</ReportName>
+	  <RefTypeList>/2032/</RefTypeList>
+	  <Description>Phiếu xuất chuyển kho</Description>
+	  <ReportTitle>PHIẾU XUẤT CHUYỂN KHO</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VOutwardTransferStock_ByLotNo</ReportID>
+	  <ReportName>Phiếu xuất chuyển kho (Theo số lô, hạn dùng)</ReportName>
+	  <RefTypeList>/2032/</RefTypeList>
+	  <Description>Phiếu xuất chuyển kho (Theo số lô, hạn dùng)</Description>
+	  <ReportTitle>PHIẾU XUẤT CHUYỂN KHO (THEO SỐ LÔ, HẠN DÙNG)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VPayment_Lien2</ReportID>
+	  <ReportName>02-TT: Phiếu chi (Mẫu 2 liên)</ReportName>
+	  <RefTypeList>/1020/1021/1022/1023/1024/1025/1026/307/313/319/325/331/3541/3543/3545/3551/3553/3555/357/363/369/375/</RefTypeList>
+	  <Description>02-TT: Phiếu chi (Mẫu 2 liên)</Description>
+	  <ReportTitle>02-TT: PHIẾU CHI (MẪU 2 LIÊN)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VPBankUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (VP Bank)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VP Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VP BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VPBankUNC_A5</ReportID>
+	  <ReportName>Ủy nhiệm chi (VP Bank - A5)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VP Bank - A5)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VP BANK - A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VPBankUNC_A5_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (VP Bank - A5)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VP Bank - A5)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VP BANK - A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VPBankUNC_A5_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (VP Bank - A5)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VP Bank - A5)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VP BANK - A5)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VPBankUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (VP Bank)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VP Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VP BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VPBankUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (VP Bank)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VP Bank)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VP BANK)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VProductionOrder</ReportID>
+	  <ReportName>Lệnh sản xuất</ReportName>
+	  <RefTypeList>/2040/</RefTypeList>
+	  <Description>Lệnh sản xuất</Description>
+	  <ReportTitle>LỆNH SẢN XUẤT</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VProductionOrder_DetailByMaterial</ReportID>
+	  <ReportName>Lệnh sản xuất (Chi tiết NVL)</ReportName>
+	  <RefTypeList>/2040/</RefTypeList>
+	  <Description>Lệnh sản xuất (Chi tiết NVL)</Description>
+	  <ReportTitle>LỆNH SẢN XUẤT</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VProductionOrder_GroupByMaterial</ReportID>
+	  <ReportName>Lệnh sản xuất (Cộng gộp NVL)</ReportName>
+	  <RefTypeList>/2040/</RefTypeList>
+	  <Description>Lệnh sản xuất (Cộng gộp NVL)</Description>
+	  <ReportTitle>LỆNH SẢN XUẤT</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VPurchaseOrder.301</ReportID>
+	  <ReportName>Đơn mua hàng</ReportName>
+	  <RefTypeList>/301/</RefTypeList>
+	  <Description>Đơn mua hàng</Description>
+	  <ReportTitle>ĐƠN MUA HÀNG</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VPurchaseOrderMultiTax.301</ReportID>
+	  <ReportName>Đơn mua hàng (Mẫu nhiều thuế suất)</ReportName>
+	  <RefTypeList>/301/</RefTypeList>
+	  <Description>Đơn mua hàng (Mẫu nhiều thuế suất)</Description>
+	  <ReportTitle>ĐƠN MUA HÀNG (MẪU NHIỀU THUẾ SUẤT)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VRBUNC</ReportID>
+	  <ReportName>Ủy nhiệm chi (VRB)</ReportName>
+	  <RefTypeList>/308/314/320/326/332/1510/1511/1522/1523/1512/1513/1514/358/364/370/376/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VRB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VRB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VRBUNC_BAInternalTransfer</ReportID>
+	  <ReportName>Ủy nhiệm chi (VRB)</ReportName>
+	  <RefTypeList>/1560/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VRB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VRB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VRBUNC_GLVoucher</ReportID>
+	  <ReportName>Ủy nhiệm chi (VRB)</ReportName>
+	  <RefTypeList>/4010/</RefTypeList>
+	  <Description>Ủy nhiệm chi (VRB)</Description>
+	  <ReportTitle>ỦY NHIỆM CHI (VRB)</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VSUAdjustment</ReportID>
+	  <ReportName>Điều chỉnh công cụ dụng cụ</ReportName>
+	  <RefTypeList>/454/</RefTypeList>
+	  <Description>Điều chỉnh công cụ dụng cụ</Description>
+	  <ReportTitle>ĐIỀU CHỈNH CÔNG CỤ DỤNG CỤ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VSUAllocation</ReportID>
+	  <ReportName>Chứng từ phân bổ công cụ dụng cụ</ReportName>
+	  <RefTypeList>/453/</RefTypeList>
+	  <Description>Chứng từ phân bổ công cụ dụng cụ</Description>
+	  <ReportTitle>CHỨNG TỪ PHÂN BỔ CÔNG CỤ DỤNG CỤ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VSUAudit</ReportID>
+	  <ReportName>Biên bản kiểm kê công cụ dụng cụ</ReportName>
+	  <RefTypeList>/455/</RefTypeList>
+	  <Description>Biên bản kiểm kê công cụ dụng cụ</Description>
+	  <ReportTitle>BIÊN BẢN KIỂM KÊ CÔNG CỤ DỤNG CỤ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VSUDecrement</ReportID>
+	  <ReportName>Chứng từ ghi giảm công cụ dụng cụ</ReportName>
+	  <RefTypeList>/452/</RefTypeList>
+	  <Description>Chứng từ ghi giảm công cụ dụng cụ</Description>
+	  <ReportTitle>CHỨNG TỪ GHI GIẢM CÔNG CỤ DỤNG CỤ</ReportTitle>
+	</MSC_ReportTemplate>
+	<MSC_ReportTemplate>
+	  <ReportID>VSUTransfer</ReportID>
+	  <ReportName>Điều chuyển công cụ dụng cụ</ReportName>
+	  <RefTypeList>/451/</RefTypeList>
+	  <Description>Điều chuyển công cụ dụng cụ</Description>
+	  <ReportTitle>ĐIỀU CHUYỂN CÔNG CỤ DỤNG CỤ</ReportTitle>
+	</MSC_ReportTemplate>
+</DataSetImportExport>

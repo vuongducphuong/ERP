@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_luong_bang_cham_cong_form_tham_so_form" model="ir.ui.view">
+            <field name="name">tien.luong.bang.cham.cong.form.form</field>
+            <field name="model">tien.luong.bang.cham.cong.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="tien_luong_tao_bang_cham_cong_form_view">
+                    <sheet>
+                        <group col="12">
+                            <field name="tenLoaiChamCong" invisible="1" />
+                            <group col="6" colspan="6">
+                                <field name="LOAI_CHAM_CONG" colspan="6" />
+                            </group>
+                        </group>
+                        <group col="12" string="Kỳ chấm công">
+                            <field name="THANG" colspan="6" />
+                            <field name="NAM" colspan="6" options="{'showSpinButtons': true}" />
+                            <field name="TU_NGAY" colspan="6" />
+                            <field name="DEN_NGAY" colspan="6" />
+                        </group>
+                        <notebook>
+                            <page string="Đơn vị">
+                                <field name="DON_VI_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false" report="true">
+                                        <field name="MA_DON_VI" string="Mã đơn vị" />
+                                        <field name="TEN_DON_VI" string="Tên đơn vị" />
+                                        <field name="CAP_TO_CHUC" string="Cấp tổ chức" />
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <group col="2" colspan="2">
+                            <field name="TEN_BANG_CHAM_CONG" colspan="2" string="Tên bảng" />
+                        </group>
+                        <group col="2" colspan="2">
+                            <field name="HINH_THUC_TAO_CHAM_CONG" widget="radio" options="{'horizontal': true}" class="o_horizontal" colspan="2" nolabel="1" />
+                        </group>
+                        <group col="2" string="Dựa trên bảng chấm công" attrs="{'invisible': [('HINH_THUC_TAO_CHAM_CONG', '!=', 'LAY_DANH_SACH')]}">
+                            <field name="BANG_CHAM_CONG" colspan="2" options="{'columns': ['thang', 'nam', 'TEN_BANG_CHAM_CONG'], 'strings': ['Tháng', 'Năm', 'Tên bảng chấm công'],'displays':['TEN_BANG_CHAM_CONG']}" />
+                            <field name="LAY_TAT_CA_NHAN_VIEN_DA_NGUNG_THEO_DOI" string="Lấy cả nhân viên đã ngừng theo dõi" colspan="2" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

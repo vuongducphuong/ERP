@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_luong_bang_tong_hop_cham_cong_form" model="ir.ui.view">
+            <field name="name">tien.luong.bang.tong.hop.cham.cong.form</field>
+            <field name="model">tien.luong.bang.tong.hop.cham.cong</field>
+            <field name="arch" type="xml">
+                <form string="Bảng tổng hợp chấm công" cloudify_js="tien_luong_tong_hop_bang_cham_cong_form_view">
+                    <sheet>
+                        <group col="4">
+                            <field name="TEN_BANG_CHAM_CONG" readonly="1" nolabel="1" style="font-size: 16pt;font-weight: bold;" colspan="4"/>
+                            <field name="THANG" invisible="1" />
+                            <field name="NAM" invisible="1" />
+                            <field name="LOAI_CHAM_CONG" invisible="1" />
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="TIEN_LUONG_BANG_TONG_HOP_CHAM_CONG_CHI_TIET_IDS" mode="tree">
+                                    <tree has_border="true" editable="bottom" delete="false" create="false" options="{'group_by':['PHONG_BAN'],'header_struct': [['Làm thêm',[['Làm thêm ban ngày (giờ công)', ['NGAY_THUONG_BAN_NGAY','THU_BAY_CHU_NHAT_BAN_NGAY','LE_TET_BAN_NGAY']],['Làm thêm ban đêm (giờ công)', ['NGAY_THUONG_BAN_DEM','THU_BAY_CHU_NHAT_BAN_DEM','LE_TET_BAN_DEM']],'TONG']]]}">
+                                        <field name="STT" readonly="1" />
+                                        <field name="MA_NHAN_VIEN" options="{'columns': ['MA', 'HO_VA_TEN'], 'strings': ['Mã nhân viên', 'Tên nhân viên'],'displays':['MA']}" />
+                                        <field name="TEN_NHAN_VIEN" readonly="1" />
+                                        <field name="CON_OM" sum="Tổng" />
+                                        <field name="HOI_NGHI_HOC_TAP" sum="Tổng" />
+                                        <field name="LAO_DONG_NGHIA_VU" sum="Tổng" />
+                                        <field name="LUONG_SAN_PHAM" sum="Tổng" />
+                                        <field name="LUONG_THOI_GIAN_CA_NGAY" sum="Tổng" />
+                                        <field name="LUONG_THOI_GIAN_NUA_NGAY" sum="Tổng" />
+                                        <field name="NGHI_BU" sum="Tổng" />
+                                        <field name="NGHI_KHONG_LUONG" sum="Tổng" />
+                                        <field name="NGHI_PHEP" sum="Tổng" />
+                                        <field name="NGUNG_VIEC" sum="Tổng" />
+                                        <field name="OM_DIEU_DUONG" sum="Tổng" />
+                                        <field name="TAI_NAN" sum="Tổng" />
+                                        <field name="THAI_SAN" sum="Tổng" />
+                                        <field name="SO_CONG_HUONG" sum="Tổng" readonly="1" />
+                                        <field name="SO_CONG_KHONG_HUONG" sum="Tổng" readonly="1" />
+                                        <field name="NGAY_THUONG_BAN_NGAY" sum="Tổng" />
+                                        <field name="THU_BAY_CHU_NHAT_BAN_NGAY" sum="Tổng" />
+                                        <field name="LE_TET_BAN_NGAY" sum="Tổng" />
+                                        <field name="NGAY_THUONG_BAN_DEM" sum="Tổng" />
+                                        <field name="THU_BAY_CHU_NHAT_BAN_DEM" sum="Tổng" />
+                                        <field name="LE_TET_BAN_DEM" sum="Tổng" />
+                                        <field name="TONG" sum="Tổng" readonly="1" />
+                                        <field name="PHONG_BAN" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_tien_luong_bang_tong_hop_cham_cong_tree" model="ir.ui.view">
+            <field name="name">tien.luong.bang.tong.hop.cham.cong.tree</field>
+            <field name="model">tien.luong.bang.tong.hop.cham.cong</field>
+            <field name="arch" type="xml">
+                <tree string="Bảng tổng hợp chấm công" cloudify_js="tien_luong_tong_hop_bang_cham_cong_list_view">
+                    <field name="THANG" />
+                    <field name="NAM" />
+                    <field name="LOAI_CHAM_CONG" />
+                    <field name="TEN_BANG_CHAM_CONG" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_tien_luong_bang_tong_hop_cham_cong" model="ir.actions.act_window">
+            <field name="name">Bảng tổng hợp chấm công</field>
+            <field name="res_model">tien.luong.bang.tong.hop.cham.cong</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_tien_luong_bang_tong_hop_cham_cong_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_tien_luong_bang_tong_hop_cham_cong_tree" />
+            <field name="act_window_id" ref="open_menu_tien_luong_bang_tong_hop_cham_cong" />
+        </record>
+        <record id="action_tien_luong_bang_tong_hop_cham_cong_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_tien_luong_bang_tong_hop_cham_cong_form" />
+            <field name="act_window_id" ref="open_menu_tien_luong_bang_tong_hop_cham_cong" />
+        </record>
+        <!-- <menuitem name="Bảng tổng hợp chấm công" action="tien_luong.open_menu_tien_luong_bang_tong_hop_cham_cong" id="menu_tien_luong_bang_tong_hop_cham_cong" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

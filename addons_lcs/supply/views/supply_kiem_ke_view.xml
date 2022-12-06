@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_supply_kiem_ke_form" model="ir.ui.view">
+            <field name="name">supply.kiem.ke.form</field>
+            <field name="model">supply.kiem.ke</field>
+            <field name="arch" type="xml">
+                <form string="Kiểm kê công cụ dụng cụ" cloudify_js="supply_kiem_ke_form_view">
+					<header>
+						<button name="btn_ghi_giam" string="Ghi giảm" type="object" class="oe_highlight oe_read_only"/>
+						<button name="btn_ghi_tang" string="Ghi tăng" type="object" class="oe_highlight oe_read_only"/>
+					</header>
+                    <sheet>
+                        <notebook>
+                            <page string="Kiểm kê">
+                                <group col="6">
+                                    <group colspan="4" col="4" >
+                                        <field name="MUC_DICH" colspan="4"/>
+                                        <field name="KIEM_KE_DEN_NGAY_CCDC" string="KK đến ngày" readonly="1"/>
+                                        <field name="THAM_CHIEU"  invisible="1" readonly="1"/>
+                                    </group>
+                                    <group colspan="2" col="2" string="Chứng từ">
+                                        <field name="SO"/>
+                                        <field name="NGAY"/>
+                                        <field name="GIO" widget="float_time"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Thành viên tham gia">
+                                <field name="SUPPLY_KIEM_KE_CCDC_TV_THAM_GIA_IDS" mode="tree">
+                                  <tree editable="bottom">
+                                    <field name="HO_TEN"/>
+                                    <field name="CHUC_DANH"/>
+                                    <field name="DAI_DIEN"/>
+                                  </tree>
+                                </field>
+                              </page>
+                            <page string="Kết quả xử lý">
+                                <group col="4">
+                                    <field name="KET_LUAN" colspan="4"/>
+                                    <field name="DA_XU_LY_KIEN_NGHI" colspan="4" nolabel="1" class="o_td_label"/>
+                                </group>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1. Công cụ dụng cụ">
+                                <field name="SUPPLY_KIEM_KE_CCDC_CCDC_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" options="{'header_struct': [['Số lượng', ['TREN_SO_KE_TOAN','KIEM_KE','CHENH_LECH']],['Chất lượng hiện thời', ['SO_LUONG_TOT','SO_LUONG_HONG']],['Xử lý', ['KIEN_NGHI_XU_LY','SO_LUONG_XU_LY','GHI_CHU']]]}">
+                                    <field name="MA_CCDC_ID" string="Mã CCDC" readonly="1"/>
+                                    <field name="TEN_CCDC" string="Tên CCDC" readonly="1" />
+                                    <field name="DON_VI_SU_DUNG_ID" readonly="1" />
+                                    <field name="DVT" string="ĐVT" readonly="1"/>
+                                    <field name="TREN_SO_KE_TOAN" readonly="1" sum="Tổng" />
+                                    <field name="KIEM_KE"  sum="Tổng" />
+                                    <field name="CHENH_LECH" readonly="1" sum="Tổng" />
+                                    <field name="SO_LUONG_TOT" sum="Tổng"/>
+                                    <field name="SO_LUONG_HONG" sum="Tổng"/>
+                                    <field name="KIEN_NGHI_XU_LY"/>
+                                    <field name="SO_LUONG_XU_LY" sum="Tổng"/>
+                                    <field name="GHI_CHU"/>
+                                  </tree>
+                                </field>
+                              </page>
+                            
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_supply_kiem_ke_tree" model="ir.ui.view">
+            <field name="name">supply.kiem.ke.tree</field>
+            <field name="model">supply.kiem.ke</field>
+            <field name="arch" type="xml">
+                <tree string="Kiểm kê công cụ dụng cụ" cloudify_js="supply_kiem_ke_list_view">
+                    <field name="NGAY"/>
+                    <field name="GIO"/>
+                    <field name="SO"/>
+                    <field name="KIEM_KE_DEN_NGAY_CCDC"/>
+                    <field name="MUC_DICH"/>
+                    <field name="KET_LUAN" string="Kết quả"/>
+                    <field name="DA_XU_LY_KIEN_NGHI"/>
+                    <field name="CHI_NHANH_ID" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_supply_kiem_ke" model="ir.actions.act_window">
+            <field name="name">Kiểm kê công cụ dụng cụ</field>
+            <field name="res_model">supply.kiem.ke</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_supply_kiem_ke_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_supply_kiem_ke_tree"/>
+            <field name="act_window_id" ref="open_menu_supply_kiem_ke"/>
+        </record>
+
+        <record id="action_supply_kiem_ke_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_supply_kiem_ke_form"/>
+            <field name="act_window_id" ref="open_menu_supply_kiem_ke"/>
+        </record>
+
+        <record id="action_open_supply_kiem_ke_btn_ghi_giam_form" model="ir.actions.act_window">
+            <field name="name">ghi giảm công cụ dụng cụ</field>
+            <field name="res_model">supply.ghi.giam</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="supply.view_supply_ghi_giam_form"/>
+        </record>
+
+        <record id="action_open_supply_kiem_ke_btn_ghi_tang_form" model="ir.actions.act_window">
+            <field name="name">ghi tăng công cụ dụng cụ hàng loạt</field>
+            <field name="res_model">supply.ghi.tang.cong.cu.dung.cu.hang.loat</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="supply.view_supply_ghi_tang_cong_cu_dung_cu_hang_loat_form"/>
+        </record>
+
+        <!-- <menuitem name="Kiểm kê công cụ dụng cụ"
+                  action="supply.open_menu_supply_kiem_ke"
+                  id="menu_supply_kiem_ke_"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_supply_kiem_ke_1" model="ir.sequence">
+            <field name="name">supply_kiem_ke SO sequence</field>
+            <field name="code">supply_kiem_ke_SO</field>
+            <field name="prefix">SO</field>
+            <field name="padding">3</field>
+        </record>
+    </data>
+</odoo>

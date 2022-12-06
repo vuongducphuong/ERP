@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_purchase_ex_chung_tu_bu_tru_cong_no_ket_qua_ctcn_form" model="ir.ui.view">
+            <field name="name">purchase.ex.chung.tu.bu.tru.cong.no.ket.qua.ctcn.form</field>
+            <field name="model">purchase.ex.chung.tu.bu.tru.cong.no.ket.qua.ctcn</field>
+            <field name="arch" type="xml">
+                <form string="Chứng từ bù trừ công nợ kết quả ctcn">
+                    <sheet>
+                        <group col="4">
+                            <field name="LOAI_CHUNG_TU_PHAI_THU"/>
+                            <field name="NGAY_CHUNG_TU_PHAI_THU"/>
+                            <field name="SO_CHUNG_TU_PHAI_THU"/>
+                            <field name="SO_HOA_DON_CT_PHAI_THU"/>
+                            <field name="HAN_THANH_TOAN_CT_PHAI_THU"/>
+                            <field name="SO_TIEN_CT_PHAI_THU"/>
+                            <field name="SO_CHUA_THU_CT_PHAI_THU"/>
+                            <field name="SO_BU_TRU_CT_PHAI_THU"/>
+                            <field name="LOAI_CHUNG_TU_PHAI_TRA"/>
+                            <field name="NGAY_CHUNG_TU_PHAI_TRA"/>
+                            <field name="SO_CHUNG_TU_PHAI_TRA"/>
+                            <field name="SO_HOA_DON_CT_PHAI_TRA"/>
+                            <field name="HAN_THANH_TOAN_CT_PHAI_TRA"/>
+                            <field name="SO_TIEN_CT_PHAI_TRA"/>
+                            <field name="SO_CON_NO_CT_PHAI_TRA"/>
+                            <field name="SO_BU_TRU_CT_PHAI_TRA"/>
+                            <field name="CHUNG_TU_BU_TRU_CONG_NO_KET_QUA_ID"/>
+                            <field name="name"/>
+                        </group>
+
+                        <!--Master/Detail form-->
+                        
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_purchase_ex_chung_tu_bu_tru_cong_no_ket_qua_ctcn_tree" model="ir.ui.view">
+            <field name="name">purchase.ex.chung.tu.bu.tru.cong.no.ket.qua.ctcn.tree</field>
+            <field name="model">purchase.ex.chung.tu.bu.tru.cong.no.ket.qua.ctcn</field>
+            <field name="arch" type="xml">
+                <tree string="Chứng từ bù trừ công nợ kết quả ctcn">
+                    <field name="LOAI_CHUNG_TU_PHAI_THU"/>
+                    <field name="NGAY_CHUNG_TU_PHAI_THU"/>
+                    <field name="SO_CHUNG_TU_PHAI_THU"/>
+                    <field name="SO_HOA_DON_CT_PHAI_THU"/>
+                    <field name="HAN_THANH_TOAN_CT_PHAI_THU"/>
+                    <field name="SO_TIEN_CT_PHAI_THU"/>
+                    <field name="SO_CHUA_THU_CT_PHAI_THU"/>
+                    <field name="SO_BU_TRU_CT_PHAI_THU"/>
+                    <field name="LOAI_CHUNG_TU_PHAI_TRA"/>
+                    <field name="NGAY_CHUNG_TU_PHAI_TRA"/>
+                    <field name="SO_CHUNG_TU_PHAI_TRA"/>
+                    <field name="SO_HOA_DON_CT_PHAI_TRA"/>
+                    <field name="HAN_THANH_TOAN_CT_PHAI_TRA"/>
+                    <field name="SO_TIEN_CT_PHAI_TRA"/>
+                    <field name="SO_CON_NO_CT_PHAI_TRA"/>
+                    <field name="SO_BU_TRU_CT_PHAI_TRA"/>
+                    <field name="CHUNG_TU_BU_TRU_CONG_NO_KET_QUA_ID"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_purchase_ex_chung_tu_bu_tru_cong_no_ket_qua_ctcn" model="ir.actions.act_window">
+            <field name="name">Chứng từ bù trừ công nợ kết quả ctcn</field>
+            <field name="res_model">purchase.ex.chung.tu.bu.tru.cong.no.ket.qua.ctcn</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_purchase_ex_chung_tu_bu_tru_cong_no_ket_qua_ctcn_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_purchase_ex_chung_tu_bu_tru_cong_no_ket_qua_ctcn_tree"/>
+            <field name="act_window_id" ref="open_menu_purchase_ex_chung_tu_bu_tru_cong_no_ket_qua_ctcn"/>
+        </record>
+
+        <record id="action_purchase_ex_chung_tu_bu_tru_cong_no_ket_qua_ctcn_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_purchase_ex_chung_tu_bu_tru_cong_no_ket_qua_ctcn_form"/>
+            <field name="act_window_id" ref="open_menu_purchase_ex_chung_tu_bu_tru_cong_no_ket_qua_ctcn"/>
+        </record>
+
+        <menuitem name="Chứng từ bù trừ công nợ kết quả ctcn"
+                  action="purchase_ex.open_menu_purchase_ex_chung_tu_bu_tru_cong_no_ket_qua_ctcn"
+                  id="menu_purchase_ex_chung_tu_bu_tru_cong_no_ket_qua_ctcn"
+                  parent=""
+                  sequence="0"/>
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

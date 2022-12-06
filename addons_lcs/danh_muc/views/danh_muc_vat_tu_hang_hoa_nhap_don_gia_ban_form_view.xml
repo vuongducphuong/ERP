@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+  <data>
+    <record id="view_danh_muc_vat_tu_hang_hoa_nhap_don_gia_ban_form" model="ir.ui.view">
+      <field name="name">danh.muc.vat.tu.hang.hoa.form</field>
+      <field name="model">danh.muc.vat.tu.hang.hoa</field>
+      <field name="arch" type="xml">
+        <form string="Vật tư hàng hóa">
+          <sheet>
+            <group col="2">
+              <field name="GIA_BAN_1" string="Đơn giá bán 1" colspan="2" />
+              <field name="GIA_BAN_2" string="Đơn giá bán 2" colspan="2"/>
+              <field name="GIA_BAN_3" string="Đơn giá bán 3" colspan="2"/>
+              <field name="GIA_CO_DINH" string="Đơn giá cố định" colspan="2"/>
+            </group>
+          </sheet>
+          <!-- <div class="oe_chatter">
+            <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+            <field name="message_ids" widget="mail_thread" />
+          </div> -->
+        </form>
+      </field>
+    </record>
+    <record id="open_menu_danh_muc_vat_tu_hang_hoa_nhap_don_gia_ban_form" model="ir.actions.act_window">
+      <field name="name">Vật tư hàng hóa</field>
+      <field name="res_model">danh.muc.vat.tu.hang.hoa</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">form</field>
+    </record>
+    <record id="action_danh_muc_vat_tu_hang_hoa_nhap_don_gia_ban_form" model="ir.actions.act_window.view">
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="view_danh_muc_vat_tu_hang_hoa_nhap_don_gia_ban_form" />
+      <field name="act_window_id" ref="open_menu_danh_muc_vat_tu_hang_hoa_nhap_don_gia_ban_form" />
+    </record>
+  </data>
+  <data noupdate="1"></data>
+</odoo>

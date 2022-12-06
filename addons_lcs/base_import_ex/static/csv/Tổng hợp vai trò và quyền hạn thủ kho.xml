@@ -1,0 +1,85 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+
+<MSC_RegisPermisionForSubSystem>
+	  <ID>82F20D48-D966-4749-9BC5-42EFE70E0D66-DE_NGHI_NHAP-Use</ID>
+	  <SubSystemCode>DE_NGHI_NHAP</SubSystemCode>
+	  <PermissionID>Use</PermissionID>
+	</MSC_RegisPermisionForSubSystem>
+	
+	<MSC_RegisPermisionForSubSystem>
+	  <ID>82F20D48-D966-4749-9BC5-42EFE70E0D66-DE_NGHI_NHAP-Edit</ID>
+	  <SubSystemCode>DE_NGHI_NHAP</SubSystemCode>
+	  <PermissionID>Edit</PermissionID>
+	</MSC_RegisPermisionForSubSystem>
+	
+	<MSC_RegisPermisionForSubSystem>
+	  <ID>82F20D48-D966-4749-9BC5-42EFE70E0D66-DE_NGHI_XUAT-Use</ID>
+	  <SubSystemCode>DE_NGHI_XUAT</SubSystemCode>
+	  <PermissionID>Use</PermissionID>
+	</MSC_RegisPermisionForSubSystem>
+	
+	<MSC_RegisPermisionForSubSystem>
+	  <ID>82F20D48-D966-4749-9BC5-42EFE70E0D66-DE_NGHI_XUAT-Edit</ID>
+	  <SubSystemCode>DE_NGHI_XUAT</SubSystemCode>
+	  <PermissionID>Edit</PermissionID>
+	</MSC_RegisPermisionForSubSystem>
+	
+<MSC_RolePermissionMaping>
+	  <ID>BCB186DD-F44E-4851-82EB-69880E53DCAC-DE_NGHI_NHAP-Use</ID>
+	  <SubSystemCode>DE_NGHI_NHAP</SubSystemCode>
+	  <RoleID>4DEBA832-45C8-4F6C-9895-A1A6F2D9F8D2</RoleID>
+	  <PermissionID>Use</PermissionID>
+	</MSC_RolePermissionMaping>
+	
+	<MSC_RolePermissionMaping>
+	  <ID>BCB186DD-F44E-4851-82EB-69880E53DCAC-DE_NGHI_NHAP-Edit</ID>
+	  <SubSystemCode>DE_NGHI_NHAP</SubSystemCode>
+	  <RoleID>4DEBA832-45C8-4F6C-9895-A1A6F2D9F8D2</RoleID>
+	  <PermissionID>Edit</PermissionID>
+	</MSC_RolePermissionMaping>
+	
+	<MSC_RolePermissionMaping>
+	  <ID>BCB186DD-F44E-4851-82EB-69880E53DCAC-DE_NGHI_XUAT-Use</ID>
+	  <SubSystemCode>DE_NGHI_XUAT</SubSystemCode>
+	  <RoleID>4DEBA832-45C8-4F6C-9895-A1A6F2D9F8D2</RoleID>
+	  <PermissionID>Use</PermissionID>
+	</MSC_RolePermissionMaping>
+	
+	<MSC_RolePermissionMaping>
+	  <ID>BCB186DD-F44E-4851-82EB-69880E53DCAC-DE_NGHI_XUAT-Edit</ID>
+	  <SubSystemCode>DE_NGHI_XUAT</SubSystemCode>
+	  <RoleID>4DEBA832-45C8-4F6C-9895-A1A6F2D9F8D2</RoleID>
+	  <PermissionID>Edit</PermissionID>
+	</MSC_RolePermissionMaping>
+	
+	<MSC_RolePermissionMaping>
+	  <ID>F0644A67-8D1B-4601-8521-71ACA0D99874-DE_NGHI_NHAP-Use</ID>
+	  <SubSystemCode>DE_NGHI_NHAP</SubSystemCode>
+	  <RoleID>FBF62F29-9240-4022-BEC3-96A9CF64497C</RoleID>
+	  <PermissionID>Use</PermissionID>
+	</MSC_RolePermissionMaping>
+	
+	<MSC_RolePermissionMaping>
+	  <ID>F0644A67-8D1B-4601-8521-71ACA0D99874-DE_NGHI_NHAP-Edit</ID>
+	  <SubSystemCode>DE_NGHI_NHAP</SubSystemCode>
+	  <RoleID>FBF62F29-9240-4022-BEC3-96A9CF64497C</RoleID>
+	  <PermissionID>Edit</PermissionID>
+	</MSC_RolePermissionMaping>
+	
+	<MSC_RolePermissionMaping>
+	  <ID>F0644A67-8D1B-4601-8521-71ACA0D99874-DE_NGHI_XUAT-Use</ID>
+	  <SubSystemCode>DE_NGHI_XUAT</SubSystemCode>
+	  <RoleID>FBF62F29-9240-4022-BEC3-96A9CF64497C</RoleID>
+	  <PermissionID>Use</PermissionID>
+	</MSC_RolePermissionMaping>
+	
+	<MSC_RolePermissionMaping>
+	  <ID>F0644A67-8D1B-4601-8521-71ACA0D99874-DE_NGHI_XUAT-Edit</ID>
+	  <SubSystemCode>DE_NGHI_XUAT</SubSystemCode>
+	  <RoleID>FBF62F29-9240-4022-BEC3-96A9CF64497C</RoleID>
+	  <PermissionID>Edit</PermissionID>
+	</MSC_RolePermissionMaping>
+	
+	
+	</DataSetImportExport>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+<InvType>
+  <InvTypeID>1</InvTypeID>
+  <InvTypeCode>01GTKT</InvTypeCode>
+  <InvTypeName>Hóa đơn GTGT</InvTypeName>
+  <InvoiceTemplatePrefix>01GTKT</InvoiceTemplatePrefix>
+  <InvoiceType>0</InvoiceType>
+  <Inactive>0</Inactive>
+  <IsSystem>0</IsSystem>
+</InvType>
+<InvType>
+  <InvTypeID>2</InvTypeID>
+  <InvTypeCode>02GTTT</InvTypeCode>
+  <InvTypeName>Hóa đơn bán hàng</InvTypeName>
+  <InvoiceTemplatePrefix>02GTTT</InvoiceTemplatePrefix>
+  <InvoiceType>0</InvoiceType>
+  <Inactive>0</Inactive>
+  <IsSystem>0</IsSystem>
+</InvType>
+<InvType>
+  <InvTypeID>3</InvTypeID>
+  <InvTypeCode>06HDXK</InvTypeCode>
+  <InvTypeName>Hóa đơn xuất khẩu</InvTypeName>
+  <InvoiceTemplatePrefix>06HDXK</InvoiceTemplatePrefix>
+  <InvoiceType>0</InvoiceType>
+  <Inactive>0</Inactive>
+  <IsSystem>0</IsSystem>
+</InvType>
+<InvType>
+  <InvTypeID>4</InvTypeID>
+  <InvTypeCode>03XKNB</InvTypeCode>
+  <InvTypeName>Phiếu xuất kho kiêm vận chuyển hàng hóa nội bộ</InvTypeName>
+  <InvoiceTemplatePrefix>03XKNB</InvoiceTemplatePrefix>
+  <InvoiceType>1</InvoiceType>
+  <Inactive>0</Inactive>
+  <IsSystem>0</IsSystem>
+</InvType>
+<InvType>
+  <InvTypeID>5</InvTypeID>
+  <InvTypeCode>04HGDL</InvTypeCode>
+  <InvTypeName>Phiếu xuất kho gửi bán hàng đại lý</InvTypeName>
+  <InvoiceTemplatePrefix>04HGDL</InvoiceTemplatePrefix>
+  <InvoiceType>1</InvoiceType>
+  <Inactive>0</Inactive>
+  <IsSystem>0</IsSystem>
+</InvType>
+<InvType>
+  <InvTypeID>6</InvTypeID>
+  <InvTypeCode>07KPTQ</InvTypeCode>
+  <InvTypeName>Hóa đơn bán hàng (dành cho tổ chức, cá nhân trong khu phi thuế quan)</InvTypeName>
+  <InvoiceTemplatePrefix>07KPTQ</InvoiceTemplatePrefix>
+  <InvoiceType>0</InvoiceType>
+  <Inactive>0</Inactive>
+  <IsSystem>0</IsSystem>
+</InvType>
+<InvType>
+  <InvTypeID>8</InvTypeID>
+  <InvTypeCode>01/ hoặc 02/</InvTypeCode>
+  <InvTypeName>Tem, vé, thẻ</InvTypeName>
+  <InvoiceTemplatePrefix>01/ hoặc 02/</InvoiceTemplatePrefix>
+  <InvoiceType>0</InvoiceType>
+  <Inactive>0</Inactive>
+  <IsSystem>0</IsSystem>
+</InvType>
+</DataSetImportExport>

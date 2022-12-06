@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="thue assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/thue/static/src/js/thue_view.js"></script>
+                <script type="text/javascript" src="/thue/static/src/js/thue_chon_ky_tinh_thue_view.js"></script>
+                <script type="text/javascript" src="/thue/static/src/js/thue_chon_ky_tinh_thue_khau_tru_thue_gtgt_view.js"></script>
+                <!-- <script type="text/javascript" src="/thue/static/src/js/thue_nop_thue_form_view.js"></script> -->
+            </xpath>
+        </template>
+    </data>
+</odoo>

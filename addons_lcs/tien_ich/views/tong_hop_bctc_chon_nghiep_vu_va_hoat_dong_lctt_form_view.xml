@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+  <data>
+    <record id="view_tong_hop_bctc_chon_nghiep_vu_va_hoat_dong_lctt_form_tham_so_form" model="ir.ui.view">
+      <field name="name">tong.hop.bctc.chon.nghiep.vu.va.hoat.dong.lctt.form.form</field>
+      <field name="model">tong.hop.bctc.chon.nghiep.vu.va.hoat.dong.lctt.form</field>
+      <field name="arch" type="xml">
+        <form string="Chọn tham số..." cloudify_js="tong_hop_bctc_chon_nghiep_vu_va_hoat_dong_lctt_form_view">
+          <sheet>
+            <group col="4">
+              <field name="STEP" invisible="1" />
+            </group>
+            <!--<notebook>
+                            <page string="Chi tiết">
+                                <field name="FIELD_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>-->
+            <!--Master/Detail form-->
+            <notebook>
+              <page string="1. XÁC ĐỊNH LOẠI NGHIỆP VỤ PHÁT SINH CHỨNG TỪ CHO CÁC KHOẢN ĐIỀU CHỈNH" attrs="{'invisible': [('STEP', '!=',1)]}">
+                <field name="TONG_HOP_BCTC_CHON_NV_VA_HD_LCTT_CHI_TIET_DIEU_CHINH_FORM_IDS" mode="tree">
+                  <tree editable="bottom" create="false">
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="DIEN_GIAI" />
+                    <field name="TK_NO_ID" />
+                    <field name="TK_CO_ID" />
+                    <field name="SO_TIEN" />
+                    <field name="NGHIEP_VU" />
+                  </tree>
+                </field>
+              </page>
+              <page string="2. XÁC ĐỊNH HOẠT ĐỘNG LƯU CHUYỂN TIỀN TỆ CỦA SỐ DƯ BAN ĐẦU(TÀI KHOẢN CHI TIẾT THEO ĐỐI TƯỢNG)" attrs="{'invisible': [('STEP', '!=',2)]}">
+                <field name="TONG_HOP_BCTC_CHON_NV_VA_HD_LCTT_CHI_TIET_THEO_DT_FORM_IDS" mode="tree">
+                  <tree editable="bottom" create="false">
+                    <field name="TAI_KHOAN_ID" />
+                    <field name="MA_KHACH_HANG_ID" />
+                    <field name="TEN_KHACH_HANG" />
+                    <field name="DU_NO" />
+                    <field name="DU_CO" />
+                    <field name="HOAT_DONG" string="Hoạt động" />
+                  </tree>
+                </field>
+              </page>
+              <page string="3. XÁC ĐỊNH HOẠT ĐỘNG LƯU CHUYỂN TIỀN TỆ CỦA SỐ DƯ BAN ĐẦU(TÀI KHOẢN KHÔNG CHI TIẾT THEO ĐỐI TƯỢNG)" attrs="{'invisible': [('STEP', '!=',3)]}">
+                <field name="TONG_HOP_BCTC_CHON_NV_VA_HD_LCTT_CHI_TIET_KO_THEO_DT_FORM_IDS" mode="tree">
+                  <tree editable="bottom" create="false" options="{'header_struct': [['Phân bổ cho hoạt động', ['KINH_DOANH','DAU_TU','TAI_CHINH']]]}">
+                    <field name="MA_TAI_KHOAN_ID" />
+                    <field name="TEN_TAI_KHOAN" />
+                    <field name="DU_NO" />
+                    <field name="DU_CO" />
+                    <field name="KINH_DOANH" />
+                    <field name="DAU_TU" />
+                    <field name="TAI_CHINH" />
+                  </tree>
+                </field>
+              </page>
+              <page string="4. XÁC ĐỊNH HOẠT ĐỘNG LƯU CHUYỂN TIỀN TỆ CỦA CHỨNG TỪ PHÁT SINH" attrs="{'invisible': [('STEP', '!=',4)]}">
+                <field name="TONG_HOP_BCTC_CHON_NV_VA_HD_LCTT_CHI_TIET_PHAT_SINH_FORM_IDS" mode="tree">
+                  <tree editable="bottom" create="false">
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="DIEN_GIAI" />
+                    <field name="TK_NO_ID" />
+                    <field name="TK_CO_ID" />
+                    <field name="SO_TIEN" />
+                    <field name="HOAT_DONG" />
+                  </tree>
+                </field>
+              </page>
+            </notebook>
+
+            <group col="12" attrs="{'invisible': [('STEP', '!=',1)]}">
+                <group col="4" colspan="4" >
+                    <field name="CHON_NGHIEP_VU_AP_CHO_TAT_CA_CHUNG_TU" colspan="4"/>
+                </group>
+               
+                <group colspan="4" >
+                    <button id="btn_ap_dung" string="Áp dụng" class="btn btn-primary"/>
+                </group>
+            </group>
+
+            <group col="12" attrs="{'invisible': ['|',('STEP', '=',1),('STEP', '=',3)]}">
+                <group col="4" colspan="4" >
+                    <field name="CHON_HOAT_DONG_LCTT_AP_CHO_TAT_CA_CAC_CHUNG_TU" colspan="4"/>
+                </group>
+                <group colspan="4" >
+                    <button id="btn_ap_dung" string="Áp dụng" class="btn btn-primary"/>
+                </group>
+            </group>
+
+            <footer>
+              <button id="btn_ve_truoc" string="Về trước" attrs="{'readonly': [('STEP', '=' , 1)]}" class="oe_highlight"/>
+              <button id="btn_tiep_theo" string="Tiếp theo" attrs="{'readonly': [('STEP', '=' , 4)]}" class="oe_highlight"/>
+              <button id="btn_dong_y" string="Đồng ý" class="oe_highlight"/>
+              <button id="btn_huy_bo" string="Hủy bỏ" special="cancel"/>
+            </footer>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <record id="open_tong_hop_bctc_chon_nghiep_vu_va_hoat_dong_lctt_form_tham_so_form" model="ir.actions.act_window">
+      <field name="name">BCTC chọn nghiệp vụ và hoạt động LCTT form </field>
+      <field name="res_model">tong.hop.bctc.chon.nghiep.vu.va.hoat.dong.lctt.form</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">form</field>
+      <field name="target">new</field>
+      <field name="view_id" ref="view_tong_hop_bctc_chon_nghiep_vu_va_hoat_dong_lctt_form_tham_so_form" />
+    </record>
+    <record id="action_open_tong_hop_bctc_chon_nghiep_vu_va_hoat_dong_lctt_form_form" model="ir.actions.act_window">
+      <field name="name">BCTC chọn nghiệp vụ và hoạt động LCTT form </field>
+      <field name="res_model">tong.hop.bctc.chon.nghiep.vu.va.hoat.dong.lctt.form</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">form</field>
+      <!--Implement code here-->
+      <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+    </record>
+    <!-- <menuitem name="BCTC chọn nghiệp vụ và hoạt động LCTT form "
+                  action="tien_ich.open_tong_hop_bctc_chon_nghiep_vu_va_hoat_dong_lctt_form_tham_so_form"
+                  id="menu_tong_hop_bctc_chon_nghiep_vu_va_hoat_dong_lctt_form"
+                  parent=""
+                  sequence="0"/> -->
+  </data>
+  <data noupdate="1"></data>
+</odoo>

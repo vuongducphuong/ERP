@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_ich_thuyet_minh_bao_cao_tai_chinh_chi_tiet_form" model="ir.ui.view">
+            <field name="name">tien.ich.thuyet.minh.bao.cao.tai.chinh.chi.tiet.form</field>
+            <field name="model">tien.ich.thuyet.minh.bao.cao.tai.chinh.chi.tiet</field>
+            <field name="arch" type="xml">
+                <form string="Thuyết minh báo cáo tài chính chi tiết" cloudify_js="xay_dung_cong_thuc_thuyet_minh_bctc_form_view">
+                    <sheet>
+                        <group col="2" colspan="2">
+                            <field name="TEN_CHI_TIEU" readonly="1" string="Chỉ tiêu" />
+                            <field name="CUOI_NAM" readonly="1" string="Công thức" />
+                            <field name="LOAI_CHI_TIEU" invisible="1" />
+                        </group>
+                        <button id="btn_xoa_cong_thuc_tmbctc" class="oe_edit_only" string="Xóa công thức" />
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chi tiết" attrs="{'invisible': [('LOAI_CHI_TIEU', '!=', '1')]}">
+                                <field name="TIEN_ICH_XAY_DUNG_CONG_THUC_TMBCTC_LOAI_CHI_TIEU_TONG_HOP_IDS" mode="tree">
+                                    <tree editable="bottom" create="true">
+                                        <field name="PHEP_TINH" />
+                                        <field name="MA_CHI_TIEU" />
+                                        <field name="TEN_CHI_TIEU" readonly="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Chi tiết" attrs="{'invisible': [('LOAI_CHI_TIEU', '!=', '0')]}">
+                                <field name="TIEN_ICH_XAY_DUNG_CONG_THUC_TMBCTC_LOAI_CHI_TIEU_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="true">
+                                        <field name="PHEP_TINH" />
+                                        <field name="KY_HIEU" />
+                                        <field name="DIEN_GIAI" readonly="1" />
+                                        <field name="TAI_KHOAN_ID" />
+                                        <field name="TK_DOI_UNG_ID" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="COT"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <button id="btn_lay_lai_cong_thuc_mac_dinh_tmbctc" class="oe_edit_only" string="Lấy lại công thức mặc định" />
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_menu_tien_ich_thuyet_minh_bao_cao_tai_chinh_chi_tiet" model="ir.actions.act_window">
+            <field name="name">Thuyết minh báo cáo tài chính chi tiết</field>
+            <field name="res_model">tien.ich.thuyet.minh.bao.cao.tai.chinh.chi.tiet</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <record id="action_tien_ich_thuyet_minh_bao_cao_tai_chinh_chi_tiet_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_tien_ich_thuyet_minh_bao_cao_tai_chinh_chi_tiet_form" />
+            <field name="act_window_id" ref="open_menu_tien_ich_thuyet_minh_bao_cao_tai_chinh_chi_tiet" />
+        </record>
+        <!-- <menuitem name="Báo cáo tài chính chi tiết" action="tien_ich.open_menu_tien_ich_thuyet_minh_bao_cao_tai_chinh_chi_tiet" id="menu_tien_ich_bao_cao_tai_chinh_chi_tiet" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

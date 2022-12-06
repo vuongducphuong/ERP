@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_purchase_ex_chon_tu_lenh_san_xuat_form_tham_so_form" model="ir.ui.view">
+            <field name="name">purchase.ex.chon.tu.lenh.san.xuat.form.form</field>
+            <field name="model">purchase.ex.chon.tu.lenh.san.xuat.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_tu_lenh_san_xuat_fom_view">
+                    <sheet>
+                        <group col="12" colspan="12">
+                            <group col="3" colspan="3">
+                                <field name="KHOANG_THOI_GIAN" colspan="3" />
+                            </group>
+                            <group col="6" colspan="6">
+                                <field name="TU_NGAY" colspan="3" string="Từ" />
+                                <field name="DEN_NGAY" colspan="3" string="Đến" />
+                            </group>
+                            <group col="3" colspan="3">
+                                <button id="btn_lay_du_lieu_chon_lenh_san_xuat" class="btn btn-primary" colspan="3" string="Lấy dữ liệu" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="PURCHASE_EX_CHON_TU_LENH_SAN_XUAT_FORM_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" report="true">
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                        <field name="ID_THANH_PHAM" invisible="1" />
+                                        <field name="SO" readonly="1" />
+                                        <field name="NGAY" readonly="1" />
+                                        <field name="DA_LAP_DU_PX" readonly="1" />
+                                        <field name="DIEN_GIAI" readonly="1" />
+                                        <field name="MA_THANH_PHAM_ID" readonly="1" />
+                                        <field name="TEN_THANH_PHAM" readonly="1" />
+                                        <field name="SO_LUONG" readonly="1" />
+                                        <field name="SO_LUONG_SAN_XUAT" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!-- <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer> -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_purchase_ex_chon_tu_lenh_san_xuat_form_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Chọn từ lệnh sản xuất form</field>
+            <field name="res_model">purchase.ex.chon.tu.lenh.san.xuat.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_purchase_ex_chon_tu_lenh_san_xuat_form_tham_so_form" />
+        </record>
+        <record id="action_open_purchase_ex_chon_tu_lenh_san_xuat_form_form" model="ir.actions.act_window">
+            <field name="name">Chọn từ lệnh sản xuất form</field>
+            <field name="res_model">purchase.ex.chon.tu.lenh.san.xuat.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+        <!-- <menuitem name="Chọn từ lệnh sản xuất form" action="purchase_ex.open_purchase_ex_chon_tu_lenh_san_xuat_form_tham_so_form" id="menu_purchase_ex_chon_tu_lenh_san_xuat_form" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

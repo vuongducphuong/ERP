@@ -1,0 +1,698 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="tong_hop_bao_cao_tai_chinh">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-7 text-left truong-thong-tin-dat-tren-header">
+                        <span t-esc="o.get_ten_cong_ty()" />
+                        <br />
+                        <span t-esc="o.get_dia_chi_cong_ty()" />
+                    </div>
+                    <div class="col-xs-5 text-center">
+                        <div class="mau-so">
+                            <span>
+                                <strong>Mẫu số: B01 - DN</strong>
+                            </span>
+                            <br />
+                        </div>
+                        <div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '0'">
+                            <span>(Ban hành theo Thông tư số 200/2014/TT-BTC)</span>
+                            <br />
+                            <span>Ngày 22/12/2014 của Bộ Tài chính)</span>
+                        </div>
+						<div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '15'">
+                            <span>(Ban hành theo Thông tư số 133/2016/TT-BTC)</span>
+							<br />
+                            <span>Ngày 26/08/2016 của Bộ Tài chính)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:15px">
+                    <div class="col-xs-12 text-center">
+                        <div class="tieu-de-cua-bao-cao">
+                            <span>
+                                <strong>BẢNG CÂN ĐỐI KẾ TOÁN</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        <strong>
+                            <i>
+                                Tại
+                                <span t-if="o.DEN_NGAY_BAT_RA" t-field="o.DEN_NGAY_BAT_RA" t-options="{'widget': 'ngaythang'}" />
+                            </i>
+                        </strong>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        <strong>
+                            <i>
+                                <span t-if="o.DOANH_NGHIEP_SELECTION_BAT_RA" t-field="o.DOANH_NGHIEP_SELECTION_BAT_RA"></span>
+                            </i>
+                        </strong>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="text-align:right">
+                    <span>
+                        <i>Đơn vị tính:VND</i>
+                    </span>
+                </div>
+                <table class="table table-condensed table-bordereds" style="font-size:11px;">
+                    <thead>
+                        <tr>
+                            <th class="text-center col-xs-2" style="width:44%">
+                                <strong>Chỉ tiêu</strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:6%">
+                                <strong>Mã số</strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:14%">
+                                <strong>Thuyết minh</strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:18%">
+                                <strong><span t-if="o.CAPTION_THEO_KY_B01_MOI" t-field="o.CAPTION_THEO_KY_B01_MOI"></span></strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:18%">
+                                <strong><span t-if="o.CAPTION_THEO_KY_B01_CU" t-field="o.CAPTION_THEO_KY_B01_MOI"></span></strong>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="text-center col-xs-2">
+                                <strong>1</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>2</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>3</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>4</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>5</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr t-foreach="o.TONG_HOP_BAO_CAO_TAI_CHINH_CHI_TIET_B01_DN_IDS" t-as="line">
+                            <td class="text-left">
+                                <span t-field="line.CHI_TIEU" />
+                            </td>
+                            <td class="text-center">
+                                <span t-field="line.MA_SO" />
+                            </td>
+                            <td class="text-center">
+                                <span t-field="line.THUYET_MINH" />
+                            </td>
+                            <td class="text-right">
+                                <span t-field="line.SO_CUOI_QUY" />
+                            </td>
+                            <td class="text-right">
+                                <span t-field="line.SO_DAU_QUY" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-xs-4"></div>
+                    <div class="col-xs-4"></div>
+                    <div class="col-xs-4">
+                        <i>
+                            <span>Lập,</span>
+                            <span t-if="o.NGAY_LAP" t-field="o.NGAY_LAP" t-options="{'widget': 'ngaythang'}" />
+                        </i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 text-center">
+                        <strong>Người lập biểu</strong>
+                        <p>
+                            <i>(Ký, họ tên)</i>
+                        </p>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>Kế toán trưởng</strong>
+                        <p>
+                            <i>(Ký, họ tên)</i>
+                        </p>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>Giám đốc</strong>
+                        <p>
+                            <i>(Ký, họ tên, đóng dấu)</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="margin-top:50px"></div>
+                <div class="row">
+                    <div class="col-xs-4 text-center">
+                        <strong>
+                            <span t-if="o.NGUOI_LAP_BIEU" t-field="o.NGUOI_LAP_BIEU" />
+                        </strong>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>
+                            <span t-esc="o.get_ke_toan_truong()" />
+                        </strong>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>
+                            <span t-if="o.GIAM_DOC" t-field="o.GIAM_DOC" />
+                        </strong>
+                    </div>
+                </div>
+                <div class="col-xs-12 text-left" style="font-size:12pt;">
+                    <span>- Số chứng chỉ hành nghề:</span>
+                    <br />
+                    <span>- Đơn vị cung cấp dịch vụ kế toán:</span>
+                </div>
+                 <p style="page-break-before: always;"></p>
+            </div>
+           
+    
+
+       
+         <!--B02-->
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-7 text-left truong-thong-tin-dat-tren-header">
+                        <span t-esc="o.get_ten_cong_ty()" />
+                        <br />
+                        <span t-esc="o.get_dia_chi_cong_ty()" />
+                    </div>
+                    <div class="col-xs-5 text-center">
+                        <div class="mau-so">
+                            <span>
+                                <strong>Mẫu số: B02 - DN</strong>
+                            </span>
+                            <br />
+                        </div>
+                        <div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '0'">
+                            <span>(Ban hành theo Thông tư số 200/2014/TT-BTC)</span>
+                            <br />
+                            <span>Ngày 22/12/2014 của Bộ Tài chính)</span>
+                        </div>
+						<div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '15'">
+                            <span>(Ban hành theo Thông tư số 133/2016/TT-BTC)</span>
+							<br />
+                            <span>Ngày 26/08/2016 của Bộ Tài chính)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:15px">
+                    <div class="col-xs-12 text-center">
+                        <div class="tieu-de-cua-bao-cao">
+                            <span>
+                                <strong>BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        <strong>
+                            <i>
+                                <span t-if="o.TEN_KY_BAO_CAO" t-field="o.TEN_KY_BAO_CAO"></span>
+                            </i>
+                        </strong>
+                    </div>
+                   
+                </div>
+                <div class="col-xs-12" style="text-align:right">
+                    <span>
+                        <i>Đơn vị tính:VND</i>
+                    </span>
+                </div>
+                <table class="table table-condensed table-bordereds" style="font-size:11px;">
+                    <thead>
+                        <tr>
+                            <th class="text-center col-xs-2" style="width:43%">
+                                <strong>Chỉ tiêu</strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:7%">
+                                <strong>Mã số</strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:14%">
+                                <strong>Thuyết minh</strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:18%">
+                                <strong><span t-if="o.CAPTION_THEO_KY_CON_LAI_MOI" t-field="o.CAPTION_THEO_KY_CON_LAI_MOI"></span></strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:18%">
+                                <strong><span t-if="o.CAPTION_THEO_KY_CON_LAI_CU" t-field="o.CAPTION_THEO_KY_CON_LAI_CU"></span></strong>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="text-center col-xs-2">
+                                <strong>1</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>2</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>3</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>4</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>5</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr t-foreach="o.TONG_HOP_BAO_CAO_TAI_CHINH_CHI_TIET_B02_DN_IDS" t-as="line">
+                            <td class="text-left">
+                                <span t-field="line.CHI_TIEU" />
+                            </td>
+                            <td class="text-center">
+                                <span t-field="line.MA_SO" />
+                            </td>
+                            <td class="text-center">
+                                <span t-field="line.THUYET_MINH" />
+                            </td>
+                            <td class="text-right">
+                                <span t-field="line.NAM_NAY" />
+                            </td>
+                            <td class="text-right">
+                                <span t-field="line.NAM_TRUOC" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <i>
+                            <span><strong>Ghi chú:</strong></span>
+                            <span> (*)Chỉ áp dụng tại công ty cổ phần</span>
+                        </i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-4"></div>
+                    <div class="col-xs-4"></div>
+                    <div class="col-xs-4">
+                        <i>
+                            <span>Lập,</span>
+                            <span t-if="o.NGAY_LAP" t-field="o.NGAY_LAP" t-options="{'widget': 'ngaythang'}" />
+                        </i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 text-center">
+                        <strong>Người lập biểu</strong>
+                        <p>
+                            <i>(Ký, họ tên)</i>
+                        </p>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>Kế toán trưởng</strong>
+                        <p>
+                            <i>(Ký, họ tên)</i>
+                        </p>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>Giám đốc</strong>
+                        <p>
+                            <i>(Ký, họ tên, đóng dấu)</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="margin-top:50px"></div>
+                <div class="row">
+                    <div class="col-xs-4 text-center">
+                        <strong>
+                            <span t-if="o.NGUOI_LAP_BIEU" t-field="o.NGUOI_LAP_BIEU" />
+                        </strong>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>
+                            <span t-esc="o.get_ke_toan_truong()" />
+                        </strong>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>
+                            <span t-if="o.GIAM_DOC" t-field="o.GIAM_DOC" />
+                        </strong>
+                    </div>
+                </div>
+                <div class="col-xs-12 text-left" style="font-size:12pt;">
+                    <span>- Số chứng chỉ hành nghề:</span>
+                    <br />
+                    <span>- Đơn vị cung cấp dịch vụ kế toán:</span>
+                </div>
+                <p style="page-break-before: always;"></p>
+            </div>
+            <!--END B02-->
+             
+             <!--Mẫu  B03 DN-->
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-7 text-left truong-thong-tin-dat-tren-header">
+                        <span t-esc="o.get_ten_cong_ty()" />
+                        <br />
+                        <span t-esc="o.get_dia_chi_cong_ty()" />
+                    </div>
+                    <div class="col-xs-5 text-center">
+                        <div class="mau-so">
+                            <span>
+                                <strong>Mẫu số: B03 - DN</strong>
+                            </span>
+                            <br />
+                        </div>
+                        <div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '0'">
+                            <span>(Ban hành theo Thông tư số 200/2014/TT-BTC)</span>
+                            <br />
+                            <span>Ngày 22/12/2014 của Bộ Tài chính)</span>
+                        </div>
+						<div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '15'">
+                            <span>(Ban hành theo Thông tư số 133/2016/TT-BTC)</span>
+							<br />
+                            <span>Ngày 26/08/2016 của Bộ Tài chính)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:15px">
+                    <div class="col-xs-12 text-center">
+                        <div class="tieu-de-cua-bao-cao">
+                            <span>
+                                <strong>BÁO CÁO LƯU CHUYỂN TIỀN TỆ</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                     
+                            <i>
+                                <span>(Theo phương pháp trực tiếp)</span>
+                            </i>
+                        
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        <strong>
+                            <i>
+                                <span t-if="o.TEN_KY_BAO_CAO" t-field="o.TEN_KY_BAO_CAO"></span>
+                            </i>
+                        </strong>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="text-align:right">
+                    <span>
+                        <i>Đơn vị tính:VND</i>
+                    </span>
+                </div>
+                <table class="table table-condensed table-bordereds" style="font-size:11px;">
+                    <thead>
+                        <tr>
+                            <th class="text-center col-xs-2" style="width:43%">
+                                <strong>Chỉ tiêu</strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:7%">
+                                <strong>Mã số</strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:14%">
+                                <strong>Thuyết minh</strong>
+                            </th>
+                           <th class="text-center col-xs-2" style="width:18%">
+                                <strong><span t-if="o.CAPTION_THEO_KY_CON_LAI_MOI" t-field="o.CAPTION_THEO_KY_CON_LAI_MOI"></span></strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:18%">
+                                <strong><span t-if="o.CAPTION_THEO_KY_CON_LAI_CU" t-field="o.CAPTION_THEO_KY_CON_LAI_CU"></span></strong>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="text-center col-xs-2">
+                                <strong>1</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>2</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>3</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>4</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>5</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr t-foreach="o.TONG_HOP_BAO_CAO_TAI_CHINH_CHI_TIET_B03_DN_IDS" t-as="line">
+                            <td class="text-left">
+                                <span t-field="line.CHI_TIEU" />
+                            </td>
+                            <td class="text-center">
+                                <span t-field="line.MA_SO" />
+                            </td>
+                            <td class="text-center">
+                                <span t-field="line.THUYET_MINH" />
+                            </td>
+                            <td class="text-right">
+                                <span t-field="line.NAM_NAY" />
+                            </td>
+                            <td class="text-right">
+                                <span t-field="line.NAM_TRUOC" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-xs-4"></div>
+                    <div class="col-xs-4"></div>
+                    <div class="col-xs-4">
+                        <i>
+                            <span>Lập,</span>
+                            <span t-if="o.NGAY_LAP" t-field="o.NGAY_LAP" t-options="{'widget': 'ngaythang'}" />
+                        </i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 text-center">
+                        <strong>Người lập biểu</strong>
+                        <p>
+                            <i>(Ký, họ tên)</i>
+                        </p>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>Kế toán trưởng</strong>
+                        <p>
+                            <i>(Ký, họ tên)</i>
+                        </p>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>Giám đốc</strong>
+                        <p>
+                            <i>(Ký, họ tên, đóng dấu)</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="margin-top:50px"></div>
+                <div class="row">
+                    <div class="col-xs-4 text-center">
+                        <strong>
+                            <span t-if="o.NGUOI_LAP_BIEU" t-field="o.NGUOI_LAP_BIEU" />
+                        </strong>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>
+                            <span t-esc="o.get_ke_toan_truong()" />
+                        </strong>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>
+                            <span t-if="o.GIAM_DOC" t-field="o.GIAM_DOC" />
+                        </strong>
+                    </div>
+                </div>
+                <div class="col-xs-12 text-left" style="font-size:12pt;">
+                    <span>- Số chứng chỉ hành nghề:</span>
+                    <br />
+                    <span>- Đơn vị cung cấp dịch vụ kế toán:</span>
+                </div>
+                 <p style="page-break-before: always;"></p>
+            </div>
+
+     <!--Mẫu  B03 DN GT -->
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-7 text-left truong-thong-tin-dat-tren-header">
+                        <span t-esc="o.get_ten_cong_ty()" />
+                        <br />
+                        <span t-esc="o.get_dia_chi_cong_ty()" />
+                    </div>
+                    <div class="col-xs-5 text-center">
+                        <div class="mau-so">
+                            <span>
+                                <strong>Mẫu số: B03 - DN</strong>
+                            </span>
+                            <br />
+                        </div>
+                        <div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '0'">
+                            <span>(Ban hành theo Thông tư số 200/2014/TT-BTC)</span>
+                            <br />
+                            <span>Ngày 22/12/2014 của Bộ Tài chính)</span>
+                        </div>
+						<div class="ban-hanh-theo-quyet-dinh-so" t-if="o.lay_che_do_ke_toan() == '15'">
+                            <span>(Ban hành theo Thông tư số 133/2016/TT-BTC)</span>
+							<br />
+                            <span>Ngày 26/08/2016 của Bộ Tài chính)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:15px">
+                    <div class="col-xs-12 text-center">
+                        <div class="tieu-de-cua-bao-cao">
+                            <span>
+                                <strong>BÁO CÁO LƯU CHUYỂN TIỀN TỆ</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        
+                            <i>
+                                <span>(Theo phương pháp gián tiếp)</span>
+                            </i>
+                     
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        <strong>
+                            <i>
+                                <span t-if="o.TEN_KY_BAO_CAO" t-field="o.TEN_KY_BAO_CAO"></span>
+                            </i>
+                        </strong>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="text-align:right">
+                    <span>
+                        <i>Đơn vị tính:VND</i>
+                    </span>
+                </div>
+                <table class="table table-condensed table-bordereds" style="font-size:11px;">
+                    <thead>
+                        <tr>
+                            <th class="text-center col-xs-2" style="width:44%">
+                                <strong>Chỉ tiêu</strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:6%">
+                                <strong>Mã số</strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:14%">
+                                <strong>Thuyết minh</strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:18%">
+                                <strong><span t-if="o.CAPTION_THEO_KY_CON_LAI_MOI" t-field="o.CAPTION_THEO_KY_CON_LAI_MOI"></span></strong>
+                            </th>
+                            <th class="text-center col-xs-2" style="width:18%">
+                                <strong><span t-if="o.CAPTION_THEO_KY_CON_LAI_CU" t-field="o.CAPTION_THEO_KY_CON_LAI_CU"></span></strong>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="text-center col-xs-2">
+                                <strong>1</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>2</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>3</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>4</strong>
+                            </th>
+                            <th class="text-center col-xs-2">
+                                <strong>5</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr t-foreach="o.TONG_HOP_BAO_CAO_TAI_CHINH_CHI_TIET_B03_DN_GT_IDS" t-as="line">
+                            <td class="text-left">
+                                <span t-field="line.CHI_TIEU" />
+                            </td>
+                            <td class="text-center">
+                                <span t-field="line.MA_SO" />
+                            </td>
+                            <td class="text-center">
+                                <span t-field="line.THUYET_MINH" />
+                            </td>
+                            <td class="text-right">
+                                <span t-field="line.QUY_NAY" />
+                            </td>
+                            <td class="text-right">
+                                <span t-field="line.QUY_TRUOC" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-xs-4"></div>
+                    <div class="col-xs-4"></div>
+                    <div class="col-xs-4">
+                        <i>
+                            <span>Lập,</span>
+                            <span t-if="o.NGAY_LAP" t-field="o.NGAY_LAP" t-options="{'widget': 'ngaythang'}" />
+                        </i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 text-center">
+                        <strong>Người lập biểu</strong>
+                        <p>
+                            <i>(Ký, họ tên)</i>
+                        </p>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>Kế toán trưởng</strong>
+                        <p>
+                            <i>(Ký, họ tên)</i>
+                        </p>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>Giám đốc</strong>
+                        <p>
+                            <i>(Ký, họ tên, đóng dấu)</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="margin-top:50px"></div>
+                <div class="row">
+                    <div class="col-xs-4 text-center">
+                        <strong>
+                            <span t-if="o.NGUOI_LAP_BIEU" t-field="o.NGUOI_LAP_BIEU" />
+                        </strong>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>
+                            <span t-esc="o.get_ke_toan_truong()" />
+                        </strong>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <strong>
+                            <span t-if="o.GIAM_DOC" t-field="o.GIAM_DOC" />
+                        </strong>
+                    </div>
+                </div>
+                <div class="col-xs-12 text-left" style="font-size:12pt">
+                    <span>- Số chứng chỉ hành nghề:</span>
+                    <br />
+                    <span>- Đơn vị cung cấp dịch vụ kế toán:</span>
+                </div>
+            </div>
+
+
+
+    </t>
+    </template>
+    <template id="template_tong_hop_bao_cao_tai_chinh">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="tien_ich.tong_hop_bao_cao_tai_chinh" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="Báo cáo tài chính" id="action_template_tong_hop_bao_cao_tai_chinh" model="tong.hop.bao.cao.tai.chinh" report_type="qweb-html" name="tien_ich.template_tong_hop_bao_cao_tai_chinh" file="tien_ich.template_tong_hop_bao_cao_tai_chinh" print_report_name="Báo cáo tài chính" />
+    </data>
+</odoo>

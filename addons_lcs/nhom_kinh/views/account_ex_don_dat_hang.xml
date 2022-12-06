@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_account_ex_don_dat_hang_form_inherit" model="ir.ui.view">
+            <field name="name">account.ex.don.dat.hang.form.inherit</field>
+            <field name="model">account.ex.don.dat.hang</field>
+            <field name="inherit_id" ref="account_ex.view_account_ex_don_dat_hang_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='ACCOUNT_EX_DON_DAT_HANG_CHI_TIET_IDS']//tree" position="attributes">
+                    <attribute name="options">{'header_struct': [['Quy cách', ['CHIEU_DAI','CHIEU_RONG']],['Số lượng', ['LUONG','SO_LUONG','SO_LUONG_GIA_CONG_1','SO_LUONG_GIA_CONG_2','SO_LUONG_GIA_CONG_3']],['Đơn giá gia công', ['DON_GIA_GIA_CONG_1','DON_GIA_GIA_CONG_2','DON_GIA_GIA_CONG_3']],['Thành tiền', ['THANH_TIEN','THANH_TIEN_GIA_CONG_1','THANH_TIEN_GIA_CONG_2','THANH_TIEN_GIA_CONG_3','THANH_TIEN_TONG_CONG']]]}</attribute>
+                    <attribute name="has_border">true</attribute>
+                </xpath>
+                <xpath expr="//field[@name='ACCOUNT_EX_DON_DAT_HANG_CHI_TIET_IDS']//tree//field[@name='DVT_ID']" position="after">
+                    <field name="CHIEU_DAI" />
+                    <field name="CHIEU_RONG" />
+                    <field name="LUONG" string='Tấm' sum="Tấm"/>
+                </xpath>
+                <xpath expr="//field[@name='ACCOUNT_EX_DON_DAT_HANG_CHI_TIET_IDS']//tree//field[@name='SO_LUONG']" position="after">
+                    <field name="SO_LUONG_GIA_CONG_1" sum="Mét dài"/>
+                    <field name="SO_LUONG_GIA_CONG_2" sum="Số khoan"/>
+                    <field name="SO_LUONG_GIA_CONG_3" sum="Số khoét"/>
+                </xpath>
+                <xpath expr="//field[@name='ACCOUNT_EX_DON_DAT_HANG_CHI_TIET_IDS']//tree//field[@name='DON_GIA']" position="after">
+                    <field name="DON_GIA_GIA_CONG_1" />
+                    <field name="DON_GIA_GIA_CONG_2" />
+                    <field name="DON_GIA_GIA_CONG_3" />
+                </xpath>
+                <xpath expr="//field[@name='ACCOUNT_EX_DON_DAT_HANG_CHI_TIET_IDS']//tree//field[@name='THANH_TIEN']" position="replace">
+                    <field name="THANH_TIEN" string='Vật liệu' sum='Tổng tiền vật liệu'/>
+                    <field name="THANH_TIEN_GIA_CONG_1" sum='Tổng tiền mài'/>
+                    <field name="THANH_TIEN_GIA_CONG_2" sum='Tổng tiền khoan'/>
+                    <field name="THANH_TIEN_GIA_CONG_3" sum='Tổng tiền khoét'/>
+                    <field name="THANH_TIEN_TONG_CONG" sum='Tổng tiền'/>
+                </xpath>
+                <xpath expr="//field[@name='THAM_CHIEU']" position="replace">
+                    <field name="PHUONG_TIEN_VAN_CHUYEN" />
+                </xpath>
+                <xpath expr="//field[@name='TONG_TIEN_THANH_TOAN']" position="before">
+                    <field name="TONG_TIEN_GIA_CONG" />
+                </xpath>
+                <xpath expr="//button[@class='btn_xem_sl_ton']" position="replace">
+                    <button class="btn_xem_cong_no" string="Xem công nợ"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_account_ex_don_dat_hang_tree_inherit" model="ir.ui.view">
+            <field name="name">account.ex.don.dat.hang.tree.inherit</field>
+            <field name="model">account.ex.don.dat.hang</field>
+            <field name="inherit_id" ref="account_ex.view_account_ex_don_dat_hang_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='TONG_TIEN_THANH_TOAN']" position="before">
+                    <field name="TONG_TIEN_GIA_CONG" />
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

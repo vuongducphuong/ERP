@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_asset_ghi_giam_form" model="ir.ui.view">
+            <field name="name">asset.ghi.giam.form</field>
+            <field name="model">asset.ghi.giam</field>
+            <field name="arch" type="xml">
+                <form string="Tài sản cố định ghi giảm">
+                    <header>
+                        <button name="action_ghi_so" string="Ghi sổ" type="object" class="oe_highlight oe_read_only" states="chua_ghi_so" />
+                        <button id="action_bo_ghi_so" string="Bỏ ghi" states="da_ghi_so" />
+                        <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so" />
+                        <field name="LOAI_CHUNG_TU" invisible="1" />
+                    </header>
+                    <sheet>
+                        <group col="4">
+                            <group colspan="2" col="2" string="Thông tin chung">
+                                <field name="LY_DO_GIAM" string="Lý do ghi giảm" colspan="2" />
+                                <field name="THAM_CHIEU"  invisible="1" colspan="2" />
+                            </group>
+                            <group colspan="2" string="Chứng từ">
+                                <field name="NGAY_HACH_TOAN" />
+                                <field name="NGAY_CHUNG_TU" />
+                                <field name="SO_CHUNG_TU" />
+                                <field name="STT_CHUNG_TU" invisible="1"/>
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1. Tài sản">
+                                <field name="ASSET_TAI_SAN_CO_DINH_GHI_GIAM_TAI_SAN_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <!-- <field name="MA_TAI_SAN" fixed_column="True" options="{'columns': ['MA_TAI_SAN', 'TEN_TAI_SAN'], 'strings': ['Mã tài sản', 'Tên tài sản'],'displays': ['MA_TAI_SAN']}" /> -->
+										<field name="MA_TAI_SAN" fixed_column="True" options="{'columns': ['MA_TAI_SAN', 'TEN_TAI_SAN'], 'strings': ['Mã tài sản', 'Tên tài sản'],'displays': ['MA_TAI_SAN']}" />
+                                        <field name="TEN_TAI_SAN" readonly="1" />
+                                        <field name="DON_VI_SU_DUNG_ID" readonly="1" />
+                                        <field name="NGUYEN_GIA"  readonly="1" sum="Tổng"/>
+                                        <field name="GIA_TRI_TINH_KHAU_HAO" readonly="1" sum="Tổng" />
+                                        <field name="HAO_MON_LUY_KE" readonly="1" sum="Tổng" />
+                                        <field name="GIA_TRI_CON_LAI" readonly="1" sum="Tổng" />
+                                        <field name="TK_NGUYEN_GIA_ID" readonly="1" string="TK nguyên giá" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="TK_HAO_MON_ID" readonly="1" string="TK hao mòn" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="TK_XU_LY_GIA_TRI_CON_LAI_ID" string="TK xử lý giá trị còn lại" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="2. Hạch toán">
+                                <field name="ASSET_TAI_SAN_CO_DINH_GHI_GIAM_HACH_TOAN_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <!-- <field name="DIEN_GIAI" fixed_column="True" /> -->
+                                        <!-- <field name="TK_NO_ID" fixed_column="True" string="TK nợ" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" /> -->
+                                        <!-- <field name="TK_CO_ID" fixed_column="True" string="TK có" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" /> -->
+										<field name="DIEN_GIAI" fixed_column="True"/>
+                                        <field name="TK_NO_ID" fixed_column="True" string="TK Nợ" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="TK_CO_ID" fixed_column="True" string="TK Có" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="SO_TIEN" sum="Tổng"/>
+                                        <field name="KHOAN_MUC_CP_ID"  string="Khoản mục CP" options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục cp', 'Tên khoản mục cp'],'displays': ['MA_KHOAN_MUC_CP']}" />
+                                        <field name="DOI_TUONG_ID" domain="['|','|',('LA_KHACH_HANG','=','True'),('LA_NHA_CUNG_CAP','=','True'),('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}" />
+                                        <field name="TEN_DOI_TUONG" readonly="1" />
+                                        <field name="DON_VI_ID" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['MA_DON_VI']}" />
+                                        <field name="DOI_TUONG_THCP_ID" string="Đối tượng THCP" options="{'columns': ['MA_DOI_TUONG_THCP', 'TEN_DOI_TUONG_THCP'], 'strings': ['Mã đối tượng THCP', 'Tên đối tượng THCP'],'displays': ['MA_DOI_TUONG_THCP']}" />
+                                        <field name="CONG_TRINH_ID" options="{'columns': ['MA_CONG_TRINH', 'name'], 'strings': ['Mã công trình', 'Tên công trình'],'displays': ['MA_CONG_TRINH']}" />
+                                        <field name="DON_DAT_HANG_ID" options="{'columns': ['SO_DON_HANG', 'partner_id', 'date_order'], 'strings': ['Số đơn hàng', 'Khách hàng', 'Ngày đơn hàng'],'displays': ['SO_DON_HANG']}" />
+                                        <field name="HOP_DONG_BAN_ID" options="{'columns': ['SO_HOP_DONG', 'NGAY_KY', 'KHACH_HANG_ID','TRICH_YEU'], 'strings': ['Số hợp đồng', 'Ngày ký', 'Khách hàng','Trích yếu']}" />
+                                        <field name="CP_KHONG_HOP_LY" string="CP không hợp lý" />
+                                        <field name="MA_THONG_KE_ID" options="{'columns': ['MA_THONG_KE', 'TEN_THONG_KE'], 'strings': ['Mã thống kê', 'Mã thống kê'],'displays': ['MA_THONG_KE']}" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_asset_ghi_giam_tree" model="ir.ui.view">
+            <field name="name">asset.ghi.giam.tree</field>
+            <field name="model">asset.ghi.giam</field>
+            <field name="arch" type="xml">
+                <tree string="Tài sản cố định ghi giảm" decoration-info="state=='chua_ghi_so'">
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_CHUNG_TU" />
+                    <field name="LY_DO_GIAM" string="Lý do ghi giảm" />
+
+                    <field name="CHI_NHANH_ID" />
+					<field name="state" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_asset_ghi_giam" model="ir.actions.act_window">
+            <field name="name">Tài sản cố định ghi giảm</field>
+            <field name="res_model">asset.ghi.giam</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_asset_ghi_giam_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_asset_ghi_giam_tree" />
+            <field name="act_window_id" ref="open_menu_asset_ghi_giam" />
+        </record>
+        <record id="action_asset_ghi_giam_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_asset_ghi_giam_form" />
+            <field name="act_window_id" ref="open_menu_asset_ghi_giam" />
+        </record>
+        <!-- <menuitem name="Tài sản cố định ghi giảm"
+                  action="asset.open_menu_asset_ghi_giam"
+                  id="menu_asset_ghi_giam"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_asset_ghi_giam_1" model="ir.sequence">
+            <field name="name">asset_ghi_giam SO_CHUNG_TU sequence</field>
+            <field name="code">asset_ghi_giam_SO_CHUNG_TU</field>
+            <field name="prefix">GGTS</field>
+            <field name="padding">5</field>
+        </record>
+        <record id="sequence_asset_tinh_khau_hao_2" model="ir.sequence">
+            <field name="name">asset STT_CHUNG_TU sequence</field> 
+            <field name="code">asset_STT_CHUNG_TU</field>
+            <field name="prefix"></field> 
+            <field name="padding">10</field>
+        </record>
+    </data>
+</odoo>

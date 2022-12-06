@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_stock_ex_nhap_xuat_kho_chi_tiet_form" model="ir.ui.view">
+            <field name="name">stock.ex.nhap.xuat.kho.chi.tiet.form</field>
+            <field name="model">stock.ex.nhap.xuat.kho.chi.tiet</field>
+            <field name="arch" type="xml">
+                <form string="Nhập xuất kho chi tiết">
+                    <sheet>
+                        <group col="6">
+                            <field name="MA_HANG_ID" options="{'columns': ['MA', 'TEN','SO_LUONG_TON'], 'strings': ['Mã sản phẩm', 'Tên sản phẩm','Số lượng tồn'],'displays': ['MA']}"/>
+                            <field name="TEN_HANG"/>
+                            <field name="SO_LUONG"/>
+                        </group>
+
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="chứng từ lưu mã quy cách">
+                                <field name="STOCK_EX_CHUNG_TU_LUU_MA_QUY_CACH_IDS" mode="tree">
+                                  <tree editable="bottom">
+                                    <field name="KHO_NHAP" string="Kho"/>
+                                    <field name="MA_QUY_CACH_1" string="Màu sắc"/>
+                                    <field name="MA_QUY_CACH_2" string="Kích cỡ"/>
+                                    <field name="SO_LUONG_TON"/>
+                                    <field name="SO_LUONG_XUAT"/>
+                                    <field name="SO_LUONG_NHAP"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="open_menu_stock_ex_nhap_xuat_kho_chi_tiet" model="ir.actions.act_window">
+            <field name="name">Chứng từ lưu mã quy cách master</field>
+            <field name="res_model">stock.ex.nhap.xuat.kho.chi.tiet</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        
+
+        <!-- <menuitem name="Chứng từ lưu mã quy cách master"
+                  action="stock_ex.open_menu_stock_ex_chung_tu_luu_ma_quy_cach_master"
+                  id="menu_stock_ex_chung_tu_luu_ma_quy_cach_master"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

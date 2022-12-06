@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_account_ex_thue_form" model="ir.ui.view">
+            <field name="name">account.ex.thue.form</field>
+            <field name="model">account.ex.thue</field>
+            <field name="arch" type="xml">
+                <form string="2.Thuế">
+                    <sheet>
+                        <group col="4">
+                            <field name="DIEN_GIAI"/> 
+                            <field name="TK_THUE_GTGT_ID" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                            <field name="TIEN_THUE_GT"/>
+                            <field name="PHAN_TRAM_THUE_GTGT_ID" options="{'no_create': True}"/>
+                            <field name="GIA_TRI_HHDV_CHUA_THUE"/>
+                             <field name="MAU_SO_HD_ID"/>
+                            <field name="KY_HIEU_HD"/>
+                            <field name="SO_HOA_DON"/>
+                            <field name="NGAY_HOA_DON"/>
+                            <field name="NHOM_HHDV_MUA_VAO_ID" options="{'no_create': True,'columns': ['MA_NHOM_HHDV', 'TEN_NHOM_HHDV'], 'strings': ['Mã nhóm HHDV', 'Tên nhóm HHDV'],'displays': ['MA_NHOM_HHDV']}"/>
+                            <field name="DOI_TUONG_ID"/>
+                            <field name="TEN_DOI_TUONG"/>
+                            <field name="MA_SO_THUE"/>
+                            <field name="DIA_CHI"/>
+                           
+                        </group>
+
+                        <!--Master/Detail form-->
+                        
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_account_ex_thue_tree" model="ir.ui.view">
+            <field name="name">account.ex.thue.tree</field>
+            <field name="model">account.ex.thue</field>
+            <field name="arch" type="xml">
+                <tree string="Thuế">
+                    <field name="DIEN_GIAI"/>
+                    <field name="TK_THUE_GTGT_ID"/>
+                    <field name="TIEN_THUE_GT"/>
+                    <field name="PHAN_TRAM_THUE_GTGT_ID"/>
+                    <field name="GIA_TRI_HHDV_CHUA_THUE"/>
+                     <field name="MAU_SO_HD_ID"/>
+                    <field name="KY_HIEU_HD"/>
+                    <field name="SO_HOA_DON"/>
+                    <field name="NGAY_HOA_DON"/>
+                     <field name="NHOM_HHDV_MUA_VAO_ID"/>
+                    <field name="DOI_TUONG_ID"/>
+                    <field name="TEN_DOI_TUONG"/>
+                    <field name="MA_SO_THUE"/>
+                    <field name="DIA_CHI"/>
+                  
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_account_ex_thue" model="ir.actions.act_window">
+            <field name="name">Thuế</field>
+            <field name="res_model">account.ex.thue</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_account_ex_thue_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_account_ex_thue_tree"/>
+            <field name="act_window_id" ref="open_menu_account_ex_thue"/>
+        </record>
+
+        <record id="action_account_ex_thue_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_account_ex_thue_form"/>
+            <field name="act_window_id" ref="open_menu_account_ex_thue"/>
+        </record>
+<!-- 
+        <menuitem name="Thuế"
+                  action="account_ex.open_menu_account_ex_thue"
+                  id="menu_account_ex_thue"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+   
+</odoo>

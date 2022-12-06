@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+  <record id="view_sale_document_thu_kho_form_inherit" model="ir.ui.view">
+      <field name="name">sale.document.thu.kho.form.inherit</field>
+      <field name="model">sale.document</field>
+      <field name="inherit_id" ref="sale_ex.view_sale_document_form"/>
+      <field name="arch" type="xml">
+          <xpath expr="//field[@name='SALE_DOCUMENT_LINE_IDS']//tree//field[@name='SO_LUONG']" position="before">
+          <field name="SO_LUONG_YEU_CAU" attrs="{'column_invisible': ['|',('parent.chi_tiet', '=', 'thue'),('parent.chi_tiet', '=', 'thong_ke')]}" sum="Tổng SL yêu cầu" />
+          </xpath>
+          <xpath expr="//field[@name='SALE_DOCUMENT_LINE_IDS']//tree//field[@name='SO_LUONG']" position="attributes">
+            <attribute name="string">SL thực xuất</attribute>
+            <attribute name="readonly">1</attribute>
+            <attribute name="sum">Tổng SL thực xuất</attribute>
+          </xpath>
+      </field>
+    </record>
+    <record id="view_sale_document_thu_kho_form" model="ir.ui.view">
+      <field name="name">sale.document.thu.kho.form</field>
+      <field name="model">sale.document</field>
+      <field name="arch" type="xml">
+        <form string="Thông tin chung" create='false' delete='false'>
+          <header>
+            <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so" />
+          </header>
+          <sheet>
+            <!--Master/Detail form-->
+            <notebook>
+              <!--tab Phiếu xuất-->
+              <page string="Phiếu xuất">
+                <group col="6">
+                  <group colspan="4" col="4">
+                    <field name="DOI_TUONG_ID" readonly="1"/>
+                    <field name="TEN_KHACH_HANG" readonly="1"/>
+                    <field name="NGUOI_GIAO_NHAN_HANG" colspan="4" string="Người nhận" />
+                    <field name="DIA_CHI" colspan="4" />
+                    <field name="LY_DO_NHAP_XUAT" colspan="4" string="Lý do xuất" />
+                    <field name="KEM_THEO_CHUNG_TU_GOC" />
+                    <field name="currency_id" invisible="1"/>
+										<field name="TY_GIA" invisible="1"/>
+                  </group>
+                  <group colspan="2" string="Chứng từ">
+                    <field name="NGAY_HACH_TOAN" string='Ngày ghi sổ'/>
+                    <field name="NGAY_CHUNG_TU" readonly="1"/>
+                    <field name="SO_CHUNG_TU_PHIEU_XUAT" string="Số chứng từ" readonly="1"/>
+                  </group>
+                </group>
+              </page>
+            </notebook>
+            <notebook>
+              <page string="Chi tiết">
+                <field name="XAC_NHAN_DU_SO_LUONG"/>
+                <field name="SALE_DOCUMENT_LINE_IDS" mode="tree">
+                  <tree editable="bottom" create='false' delete='false'>
+                    <!-- <field name="MA_HANG_ID" fixed_column="True" options="{'columns': ['MA', 'TEN','SO_LUONG_TON','GIA_BAN_1','GIA_BAN_2','GIA_BAN_3','GIA_CO_DINH'], 'strings': ['Mã hàng', 'Tên hàng','SỐ lượng tồn','Giá bán 1','Giá bán 2','Giá bán 3','Giá cố định'],'displays': ['MA']}" /> -->
+                    <field name="MA_HANG_ID" fixed_column="True" readonly="1"/>
+                    <field name="TEN_HANG" readonly="1"/>
+                    <field name="KHO_ID" readonly="1"/>
+                    <field name="DVT_ID" readonly="1"/>
+                    <field name="SO_LUONG_YEU_CAU" readonly="1" sum="Tổng SL yêu cầu"/>
+                    <field name="SO_LUONG" string="SL thực xuất" sum="Tổng SL thực xuất"/>
+                    <field name="SO_LO" invisible="1"/>
+                    <field name="HAN_SU_DUNG" invisible="1"/>
+                    <field name="THU_KHO_GHI_CHU" />
+                    <!-- Có trường invisible để còn onchange -->
+										<field name="TY_GIA" invisible="1"/>
+                    <field name="DON_GIA" invisible="1"/>
+										<field name="THANH_TIEN" invisible="1"/>
+                    <field name="THANH_TIEN_QUY_DOI" invisible="1"/>
+                    
+                    <field name="DON_GIA_VON" invisible="1"/>                    
+                    <field name="TIEN_VON" invisible="1"/>
+                    
+                    <field name="THUE_GTGT_ID" invisible="1" />
+                    <field name="TIEN_THUE_GTGT" invisible="1"/>
+                    <field name="TIEN_THUE_GTGT_QUY_DOI" invisible="1"/>
+
+                    <field name="TY_LE_CK" invisible="1"/>
+                    <field name="TIEN_CHIET_KHAU" invisible="1"/>
+                    <field name="TIEN_CK_QUY_DOI" invisible="1"/>
+                  </tree>
+                </field>
+              </page>
+            </notebook>
+          </sheet>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+            <field name="message_ids" widget="mail_thread" />
+          </div>
+        </form>
+
+
+      </field>
+    </record>
+    <record id="view_sale_document_thu_kho_tree" model="ir.ui.view">
+      <field name="name">sale.document.thu.kho.tree</field>
+      <field name="model">sale.document</field>
+      <field name="arch" type="xml">
+        <tree string="Phiếu xuất kho" decoration-info="state=='chua_ghi_so'" create='false' delete='false'>
+          <field name="NGAY_HACH_TOAN" fixed_column="True" />
+          <field name="NGAY_CHUNG_TU" fixed_column="True" />
+          <field name="SO_CHUNG_TU" fixed_column="True" />
+          <field name="DIEN_GIAI" />
+          <field name="NGUOI_GIAO_NHAN_HANG" width="120"/>
+          <field name="LOAI_CHUNG_TU_TEXT" width="220"/>
+          <field name="state" invisible="1" />
+        </tree>
+      </field>
+    </record>
+    <record id="view_sale_document_thu_kho_search" model="ir.ui.view">
+      <field name="name">sale.document.thu.kho.search</field>
+      <field name="model">sale.document</field>
+      <field name="arch" type="xml">
+        <search string="Phiếu xuất kho">
+          <!-- Tìm kiếm với input text-->
+          <field name="name" string="Phiếu xuất kho" filter_domain="['|','|',('SO_CHUNG_TU','ilike',self),('NGUOI_GIAO_NHAN_HANG','ilike',self),('DIEN_GIAI','ilike',self)]" />
+          <separator />
+          <field name="SO_CHUNG_TU" string="Số chứng từ" />
+          <field name="NGUOI_GIAO_NHAN_HANG" string="Khách hàng" />
+          <field name="DIEN_GIAI" string="Diễn giải" />
+        </search>
+      </field>
+    </record>
+
+    <record id="open_menu_sale_document_thu_kho" model="ir.actions.act_window">
+      <field name="name">Phiếu xuất kho</field>
+      <field name="res_model">sale.document</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="search_view_id" ref="view_sale_document_thu_kho_search"/>
+			<field name="view_ids"
+                   eval="[(5, 0, 0),
+                          (0, 0, {'view_mode': 'tree', 'view_id': ref('view_sale_document_thu_kho_tree')}),
+                          (0, 0, {'view_mode': 'form', 'view_id': ref('view_sale_document_thu_kho_form')})]"/>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+            Chưa có yêu cầu xuất kho.
+        </p>
+        <p></p>
+      </field>
+    </record>
+</odoo>

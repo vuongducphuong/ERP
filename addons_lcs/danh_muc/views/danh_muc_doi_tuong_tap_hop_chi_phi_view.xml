@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_doi_tuong_tong_hop_chi_phi_form" model="ir.ui.view">
+            <field name="name">danh.muc.doi.tuong.tap.hop.chi.phi.form</field>
+            <field name="model">danh.muc.doi.tuong.tap.hop.chi.phi</field>
+            <field name="arch" type="xml">
+                <form string="Đối tượng tập hợp chi phí">
+                    <sheet>
+                        <group col="4">
+                            <field name="LOAI" string="Loại (*)" colspan="2" />
+                            <field name="CHON_THANH_PHAM" domain="[('TINH_CHAT', '=', '1')]" colspan="2" attrs="{'invisible': [('LOAI', '!=', '1')],'required': [('LOAI', '=', '1')]}" />
+                            <field name="MA_DOI_TUONG_THCP" string="Mã (*)" colspan="2" />
+                            
+                            <field name="TEN_DOI_TUONG_THCP" string="Tên (*)" colspan="2" />
+                            
+                            <field name="parent_id" colspan="2" attrs="{'invisible': [('LOAI', '!=', '3')],'required': [('LOAI', '=', '3')]}" />
+                            <field name="CONG_DOAN_THU" colspan="2" attrs="{'invisible': [('LOAI', '!=', '3')],'required': [('LOAI', '=', '3')]}" />
+                            <field name="DIEN_GIAI" colspan="4" />
+                            <field name="name" invisible="True" />
+                        </group>
+                        <group col="4" attrs="{'invisible': [('LOAI', '!=','3')]}">
+                            <field name="DOI_TUONG_THCP_SELECTION" string="" widget="radio" options="{'horizontal': True, 'alway_edit': True}" nolabel="1" />
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Đối tượng tập hợp chi phí" attrs="{'invisible': [('DOI_TUONG_THCP_SELECTION', '!=','1')]}">
+                                <field name="DANH_MUC_CHI_TIET_DOI_TUONG_TONG_HOP_CHI_PHI_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        
+                                        <field name="MA_DOI_TUONG_THCP_ID" />
+                                        <field name="TEN_DOI_TUONG_THCP" />
+                                        <field name="MA_THANH_PHAM" />
+                                        <field name="TEN_THANH_PHAM" />
+                                    </tree>
+                                </field>
+                            </page>
+                            
+                            <page string="Đối tượng tính giá thành" attrs="{'invisible': ['|',('LOAI', 'in',('1','2')),('DOI_TUONG_THCP_SELECTION', '=','1')]}">
+                                <field name="DANH_MUC_CHI_TIET_DOI_TUONG_TINH_GIA_THANH_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        
+                                        <field name="MA_HANG_ID" domain="[('TINH_CHAT', '=', '1')]" options="{'columns': ['MA', 'TEN','SO_LUONG_TON'], 'strings': ['Mã sản phẩm', 'Tên sản phẩm','Số lượng tồn'],'displays': ['MA']}" />
+                                        <field name="TEN_THANH_PHAM" />
+                                        
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <field name="active" colspan="4" />
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_danh_muc_doi_tuong_tong_hop_chi_phi_tree" model="ir.ui.view">
+            <field name="name">danh.muc.doi.tuong.tap.hop.chi.phi.tree</field>
+            <field name="model">danh.muc.doi.tuong.tap.hop.chi.phi</field>
+            <field name="arch" type="xml">
+                <tree string="Đối tượng tập hợp chi phí" hierarchy="parent_id">
+                    <field name="MA_DOI_TUONG_THCP" string="Mã đối tượng THCP" />
+                    <field name="TEN_DOI_TUONG_THCP" string="Tên đối tượng THCP" />
+                    <field name="LOAI" string="Loại" />
+                    <field name="DIEN_GIAI" />
+                    <field name="active" />
+                    <field name="CHI_NHANH_ID" />
+                    <field name="parent_id" invisible="1" /> 
+                    
+                </tree>
+            </field>
+        </record>
+        
+        <record id="open_menu_danh_muc_doi_tuong_tong_hop_chi_phi" model="ir.actions.act_window">
+            <field name="name">Đối tượng tập hợp chi phí</field>
+            <field name="res_model">danh.muc.doi.tuong.tap.hop.chi.phi</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'import_enabled': True}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        
+        <record id="action_danh_muc_doi_tuong_tong_hop_chi_phi_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_doi_tuong_tong_hop_chi_phi_tree" />
+            <field name="act_window_id" ref="open_menu_danh_muc_doi_tuong_tong_hop_chi_phi" />
+        </record>
+        
+        <record id="action_danh_muc_doi_tuong_tong_hop_chi_phi_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_doi_tuong_tong_hop_chi_phi_form" />
+            <field name="act_window_id" ref="open_menu_danh_muc_doi_tuong_tong_hop_chi_phi" />
+        </record>
+        
+        <!-- <menuitem name="Đối tượng tổng hợp chi phí"
+                  action="danh_muc.open_menu_danh_muc_doi_tuong_tong_hop_chi_phi"
+                  id="menu_danh_muc_doi_tuong_tong_hop_chi_phi"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <!-- <data noupdate="1"> -->
+    <!-- <record id="sequence_danh_muc_doi_tuong_tong_hop_chi_phi_1" model="ir.sequence"> -->
+    <!-- <field name="name">danh_muc_doi_tuong_tong_hop_chi_phi MA_DOI_TUONG_THCP sequence</field> -->
+    <!-- <field name="code">danh_muc_doi_tuong_tong_hop_chi_phi_MA_DOI_TUONG_THCP</field> -->
+    <!-- <field name="prefix">MA_DOI_TUONG_THCP</field> -->
+    <!-- <field name="padding">3</field> -->
+    <!-- </record> -->
+    <!-- </data> -->
+</odoo>

@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_ich_thiet_lap_bao_cao_tai_chinh_form" model="ir.ui.view">
+            <field name="name">tien.ich.thiet.lap.bao.cao.tai.chinh.form</field>
+            <field name="model">tien.ich.thiet.lap.bao.cao.tai.chinh</field>
+            <field name="arch" type="xml">
+                <form string="Thiết lập báo cáo tài chính" cloudify_js="thiet_lap_bao_cao_tai_chinh_view">
+                    <sheet>
+                        <group col="4">
+                            <group col="2" colspan="2">
+                                <field name="MA_BAO_CAO" colspan="2" />
+                                <field name="TEN_BAO_CAO" colspan="2" />
+                            </group>
+                        </group>
+                        
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chi tiết" attrs="{'invisible': [('TEN_BAO_CAO', '!=', 'THUYET_MINH_BAO_CAO_TAI_CHINH')]}">
+                                <field name="THUYET_MINH_BAO_CAO_TAI_CHINH_TAB" widget="radio" options="{'horizontal': true, 'alway_edit': True}" class="o_horizontal" />
+                                <field name="TIEN_ICH_THUYET_MINH_BAO_CAO_TAI_CHINH_CHI_TIET_IDS" mode="tree" context="{'default_tab':THUYET_MINH_BAO_CAO_TAI_CHINH_TAB}">
+                                    <tree editable="bottom" delete="true">
+                                        <field name="tab" invisible="1"/>
+                                        <field name="MA_CHI_TIEU" width="80"/>
+                                        <field name="TEN_CHI_TIEU" />
+                                        <field name="TEN_TIENG_ANH" />
+                                        <field name="NOI_DUNG" />
+                                        <field name="THUOC_PHAN" />
+                                        <field name="LOAI_CHI_TIEU" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '=', '1')]}" width="100"/>
+                                        <field name="CUOI_NAM" string="Cuối năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '2')]}" readonly="1" linked="True" />
+                                        <field name="DAU_NAM" string="Đầu năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '2')]}" readonly="1" linked="True" />
+                                        <field name="CUOI_NAM" string="Giá gốc cuối năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', 'not in', ('3','5','6','7'))]}" readonly="1" linked="True" />
+                                        <field name="NHA_CUA_VAT_CHAT_KIEN_TRUC" string='Giá trị có thể thu hồi cuối năm' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', 'not in', ('5','7'))]}" readonly="1" linked="True" />
+                                        <field name="NHA_CUA_VAT_CHAT_KIEN_TRUC" string='Giá trị hợp lý/ghi sổ cuối năm' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '3')]}" readonly="1" linked="True" />
+                                        <field name="CUOI_NAM" string="Giá trị cuối năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '4')]}" readonly="1" linked="True" />
+                                        <field name="DU_PHONG_CUOI_NAM" string="Dự phòng cuối năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', 'not in', ('3','4','6'))]}" readonly="1" linked="True" />
+                                        <field name="DAU_NAM" string="Giá gốc đầu năm" attrs="{'column_invisible':[('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', 'not in', ('3','5','6','7'))]}" readonly="1" linked="True" />
+                                        <field name="DU_PHONG_DAU_NAM" string="Giá trị có thể thu hồi đầu năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', 'not in', ('5','7'))]}" readonly="1" linked="True" />
+                                        <field name="DU_PHONG_DAU_NAM" string="Giá trị hợp lý/ghi sổ đầu năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '3')]}" readonly="1" linked="True" />
+                                        <field name="DAU_NAM" string="Giá trị đầu năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '4')]}" readonly="1" linked="True" />
+                                        <field name="DU_PHONG_DAU_NAM" string="Dự phòng đầu năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', 'not in', ('3','4','6'))]}" readonly="1" linked="True" />
+                                        <!-- tab 8 -->
+                                        <field name="NHA_CUA_VAT_CHAT_KIEN_TRUC" string='Nhà cửa vật chất kiến trúc' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', 'not in', ('8','10'))]}" readonly="1" linked="True" />
+                                        <field name="DU_PHONG_CUOI_NAM" string="Máy móc thiết bị" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', 'not in', ('8','10'))]}" readonly="1" linked="True" />
+                                        <field name="PHUONG_TIEN_VAN_TAI_TRUYEN_DAN" string="Phương tiện vận tải truyền dẫn" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', 'not in', ('8','10'))]}" readonly="1" linked="True" />
+                                        <field name="PHUONG_TIEN_VAN_TAI_TRUYEN_DAN" string="Thiết bị dụng cụ quản lý" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', 'not in', ('8','10'))]}" readonly="1" linked="True" />
+                                        <field name="CAY_LAU_NAM_SUC_VAT_LAM_VIEC_CHO_SAN_PHAM" string="Cây lâu năm, súc vật làm việc cho sản phẩm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '8')]}" readonly="1" linked="True" />
+                                        <field name="KET_CAU_HA_TANG_DNNDTXD" string='Kết cấu hạ tầng do NN ĐTXD...' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '8')]}" readonly="1" linked="True" />
+                                        <field name="TAI_SAN_CO_DINH_HUU_HINH_KHAC" string='Tài sản cố định hữu hình khác' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', 'not in', ('8','10'))]}" readonly="1" linked="True" />
+                                        <!-- end -->
+                                        <!-- tab 9 -->
+                                        <field name="NHA_CUA_VAT_CHAT_KIEN_TRUC" string='Quyền sử dụng đất' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '9')]}" readonly="1" linked="True" />
+                                        <field name="DU_PHONG_CUOI_NAM" string="Quyền phát hành" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '9')]}" readonly="1" linked="True" />
+                                        <field name="DU_PHONG_DAU_NAM" string="Bản quyền, bằng sáng chế" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '9')]}" readonly="1" linked="True" />
+                                        <field name="PHUONG_TIEN_VAN_TAI_TRUYEN_DAN" string="Nhãn hiệu hàng hóa" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '9')]}" readonly="1" linked="True" />
+                                        <field name="TAI_SAN_CO_DINH_HUU_HINH_KHAC" string='Phần mềm máy tính' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '9')]}" readonly="1" linked="True" />
+                                        <field name="CAY_LAU_NAM_SUC_VAT_LAM_VIEC_CHO_SAN_PHAM" string="Giấy phép" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '9')]}" readonly="1" linked="True" />
+                                        <field name="KET_CAU_HA_TANG_DNNDTXD" string='TSCĐ vô hình' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', 'not in', ('9','10'))]}" readonly="1" linked="True" />
+                                        <!-- end -->
+                                        <!-- tab 11 -->
+                                        <field name="DAU_NAM" string='Số đầu năm' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '11')]}" readonly="1" linked="True" />
+                                        <field name="DU_PHONG_DAU_NAM" string="Giảm trong năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '11')]}" readonly="1" linked="True" />
+                                        <field name="DU_PHONG_CUOI_NAM" string="Tăng trong năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '11')]}" readonly="1" linked="True" />
+                                        <field name="CUOI_NAM" string="Số cuối năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '11')]}" readonly="1" linked="True" />
+                                        <!-- end -->
+                                        <!-- tab 12 -->
+                                        <field name="GIA_TRI_CUOI_NAM_12" string='Giá trị cuối năm' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '12')]}" readonly="1" linked="True" />
+                                        <field name="TAI_SAN_CO_DINH_HUU_HINH_KHAC" string='Số không có khả năng trả nợ cuối năm' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '12')]}" readonly="1" linked="True" />
+                                        <field name="PHUONG_TIEN_VAN_TAI_TRUYEN_DAN" string="Lãi cuối năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '12')]}" readonly="1" linked="True" />
+                                        <field name="TANG_TRONG_NAM_12" string="Tăng trong năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '12')]}" readonly="1" linked="True" />
+                                        <field name="GIAM_TRONG_NAM_12" string="Giảm trong năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '12')]}" readonly="1" linked="True" />
+                                        <field name="GIA_TRI_DAU_NAM_12" string="Giá trị đầu năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '12')]}" readonly="1" linked="True" />
+                                        <field name="KET_CAU_HA_TANG_DNNDTXD" string='Số không có khả năng trả nợ đầu năm' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '12')]}" readonly="1" linked="True" />
+                                        <field name="CAY_LAU_NAM_SUC_VAT_LAM_VIEC_CHO_SAN_PHAM" string="Lãi đầu năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '12')]}" readonly="1" linked="True" />
+                                        <!-- end -->
+                                        <!-- tab 13 -->
+                                        <field name="DU_PHONG_CUOI_NAM" string="Tổng khoản Thanh toán tiền thuế tài chính năm nay" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '13')]}" readonly="1" linked="True" />
+                                        <field name="DU_PHONG_DAU_NAM" string="Trả tiền lãi thuê năm nay" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '13')]}" readonly="1" linked="True" />
+                                        <field name="PHUONG_TIEN_VAN_TAI_TRUYEN_DAN" string="Trả nợ gốc năm nay" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '13')]}" readonly="1" linked="True" />
+                                        <field name="TAI_SAN_CO_DINH_HUU_HINH_KHAC" string='Tổng khoản Thanh toán tiền thuế tài chính năm trước' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '13')]}" readonly="1" linked="True" />
+                                        <field name="CAY_LAU_NAM_SUC_VAT_LAM_VIEC_CHO_SAN_PHAM" string="Trả tiền lãi thuê năm trước" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '13')]}" readonly="1" linked="True" />
+                                        <field name="KET_CAU_HA_TANG_DNNDTXD" string='Trả nợ gốc năm trước' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '13')]}" readonly="1" linked="True" />
+                                        <!-- end -->
+                                        <!-- tab 14 -->
+                                        <field name="DAU_NAM_14" string="Đầu năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '14')]}" readonly="1" linked="True" />
+                                        <field name="PHUONG_TIEN_VAN_TAI_TRUYEN_DAN" string="Số phải nộp trong năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '14')]}" readonly="1" linked="True" />
+                                        <field name="CAY_LAU_NAM_SUC_VAT_LAM_VIEC_CHO_SAN_PHAM" string="Số đã thực nộp trong năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '14')]}" readonly="1" linked="True" />
+                                        <field name="CUOI_NAM_14" string="Cuối năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '14')]}" readonly="1" linked="True" />
+                                        <!-- end -->
+                                        <!-- tab 15 -->
+                                        <field name="GIA_TRI_CUOI_NAM_15" string="Giá trị cuối năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '15')]}" readonly="1" linked="True" />
+                                        <field name="PHUONG_TIEN_VAN_TAI_TRUYEN_DAN" string="Lãi suất cuối năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '15')]}" readonly="1" linked="True" />
+                                        <field name="GIA_TRI_DAU_NAM_15" string="giá trị đầu năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '15')]}" readonly="1" linked="True" />
+                                        <field name="CAY_LAU_NAM_SUC_VAT_LAM_VIEC_CHO_SAN_PHAM" string="Lãi suất đầu năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '15')]}" readonly="1" linked="True" />
+                                        <!-- end -->
+                                        <!-- tab 16 -->
+                                        <field name="DU_PHONG_CUOI_NAM" string="Vốn góp của chủ sở hữu" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '16')]}" readonly="1" linked="True" />
+                                        <field name="DU_PHONG_DAU_NAM" string="Thặng dư vốn cổ phần" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '16')]}" readonly="1" linked="True" />
+                                        <field name="DAU_NAM" string="Quyền chọn chuyển đổi trái phiếu" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '16')]}" readonly="1" linked="True" />
+                                        <field name="PHUONG_TIEN_VAN_TAI_TRUYEN_DAN" string="Vốn khác của chủ sở hữu" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '16')]}" readonly="1" linked="True" />
+                                        <field name="CAY_LAU_NAM_SUC_VAT_LAM_VIEC_CHO_SAN_PHAM" string="Chênh lệch đánh giá lại tài sản" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '16')]}" readonly="1" linked="True" />
+                                        <field name="KET_CAU_HA_TANG_DNNDTXD" string='Chênh lệch tỷ giá' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '16')]}" readonly="1" linked="True" />
+                                        <field name="TAI_SAN_CO_DINH_HUU_HINH_KHAC" string='LNST chưa phân phối và các quỹ' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '16')]}" readonly="1" linked="True" />
+                                        <field name="NHA_CUA_VAT_CHAT_KIEN_TRUC" string='Các khoản mục khác' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '16')]}" readonly="1" linked="True" />
+                                        <field name="TONG_CONG" string='Cộng' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '16')]}" readonly="1" linked="True" />
+                                        <!-- end -->
+                                        <!-- tab 17 -->
+                                        <field name="DU_PHONG_CUOI_NAM" string="Số lượng cuối năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '17')]}" />
+                                        <field name="GIA_TRI_CUOI_NAM_17" string="Giá trị cuối năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '17')]}" readonly="1" linked="True" />
+                                        <field name="DU_PHONG_DAU_NAM" string="Số lượng đầu năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '17')]}" />
+                                        <field name="GIA_TRI_DAU_NAM_17" string="Giá trị đầu năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '17')]}" readonly="1" linked="True" />
+                                        <!-- end -->
+                                        <!-- tab 18 -->
+                                        <field name="GIA_TRI_CUOI_NAM_18" string="Giá trị cuối năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '18')]}" readonly="1" linked="True" />
+                                        <field name="DU_PHONG_CUOI_NAM" string="Số có khả năng trả nợ cuối năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '18')]}" />
+                                        <field name="GIA_TRI_DAU_NAM_18" string="Giá trị đầu năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '18')]}" readonly="1" linked="True" />
+                                        <field name="DU_PHONG_DAU_NAM" string="Số có khả năng trả nợ đầu năm" attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', '!=', '18')]}" />
+                                        <!-- end -->
+                                        <field name="TONG_CONG" string='Tổng cộng' attrs="{'column_invisible': [('parent.THUYET_MINH_BAO_CAO_TAI_CHINH_TAB', 'not in', ('8','9','10'))]}" />
+                                        <field name="KHONG_IN" />
+                                        <field name="IN_DAM" />
+                                        <field name="IN_NGHIENG" />
+                                        <field name="SO_THU_TU" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Chi tiết" attrs="{'invisible': [('TEN_BAO_CAO', 'in', ('THUYET_MINH_BAO_CAO_TAI_CHINH', 'TINH_HINH_THUC_HIEN_NGHIA_VU_DOI_VOI_NHA_NUOC'))]}">
+                                <field name="TIEN_ICH_BAO_CAO_TAI_CHINH_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" delete="true">
+                                        <field name="MA_CHI_TIEU" width="80"/>
+                                        <field name="TEN_CHI_TIEU" />
+                                        <field name="TEN_TIENG_ANH" />
+                                        <field name="THUYET_MINH" width="90"/>
+                                        <field name="LOAI_CHI_TIEU" width="100"/>
+                                        <field name="CONG_THUC" readonly="1" linked="True" />
+                                        <field name="KHONG_IN" />
+                                        <field name="IN_DAM" />
+                                        <field name="IN_NGHIENG" />
+                                        <field name="DA_SUA_CT_MAC_DINH" />
+                                        <field name="SO_THU_TU" invisible="1" />
+                                        <field name="ID_CHI_TIEU" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Chi tiết" attrs="{'invisible': [('TEN_BAO_CAO', '!=', 'TINH_HINH_THUC_HIEN_NGHIA_VU_DOI_VOI_NHA_NUOC')]}">
+                                <field name="TIEN_ICH_TINH_HINH_THUC_HIEN_NGHIA_VU_DOI_VOI_NHA_NUOC_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" delete="true">
+                                        <field name="MA_CHI_TIEU" width="80"/>
+                                        <field name="TEN_CHI_TIEU" />
+                                        <field name="TEN_TIENG_ANH" />
+                                        <field name="LOAI_CHI_TIEU" width="100"/>
+                                        <field name="SO_CON_PHAI_NOP_KY_TRUOC_CHUYEN_SANG" readonly="1" linked="True" />
+                                        <field name="SO_PHAI_NOP_TRONG_KY" readonly="1" linked="True" />
+                                        <field name="SO_DA_NOP_TRONG_KY" readonly="1" linked="True" />
+                                        <field name="KHONG_IN" />
+                                        <field name="IN_DAM" />
+                                        <field name="IN_NGHIENG" />
+                                        <field name="SO_THU_TU" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                       
+                            <button id="btn_lay_gia_tri_mac_dinh" class="oe_highlight oe_edit_only" string="Lấy giá trị mặc định" />
+                            <button id="btn_kiem_tra_cong_thuc_trung_lap" class="oe_highlight oe_edit_only" string="Kiểm tra CT trùng lặp" />
+                       
+                        
+                    </sheet>
+                     
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_tien_ich_thiet_lap_bao_cao_tai_chinh_tree" model="ir.ui.view">
+            <field name="name">tien.ich.thiet.lap.bao.cao.tai.chinh.tree</field>
+            <field name="model">tien.ich.thiet.lap.bao.cao.tai.chinh</field>
+            <field name="arch" type="xml">
+                <tree string="Thiết lập báo cáo tài chính">
+                    <field name="TEN_BAO_CAO" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_tien_ich_thiet_lap_bao_cao_tai_chinh" model="ir.actions.act_window">
+            <field name="name">Thiết lập báo cáo tài chính</field>
+            <field name="res_model">tien.ich.thiet.lap.bao.cao.tai.chinh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_tien_ich_thiet_lap_bao_cao_tai_chinh_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_tien_ich_thiet_lap_bao_cao_tai_chinh_tree" />
+            <field name="act_window_id" ref="open_menu_tien_ich_thiet_lap_bao_cao_tai_chinh" />
+        </record>
+        <record id="action_tien_ich_thiet_lap_bao_cao_tai_chinh_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_tien_ich_thiet_lap_bao_cao_tai_chinh_form" />
+            <field name="act_window_id" ref="open_menu_tien_ich_thiet_lap_bao_cao_tai_chinh" />
+        </record>
+    </data>
+    <data noupdate="1"></data>
+</odoo>

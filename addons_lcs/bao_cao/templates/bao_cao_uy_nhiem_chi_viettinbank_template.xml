@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="vietinbankunc">
+        <t t-call="web.external_layout">
+            <div class="page" style="margin-left:15px; margin-right:15px;">
+                <div class="col-xs-12 tieu-de-cot-cua-bang text-left" style="padding-left:0px; padding-right:0px;">
+                    <div class="col-xs-12 tieu-de-cot-cua-bang text-left" style="padding-left:0px; padding-right:0px;">
+                        <span style="font-size:12pt;color: rgb(91,155,213) !important;font-weight: bold;">
+                                    Ngân Hàng TMCP Công thương Việt Nam
+                        </span>
+                    </div>
+
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;"></div>
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;"></div>
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;margin-top: -15px;margin-bottom: -20px;text-align: right;">
+                            <img src="/bao_cao/static/src/img/viettinbank.jpg"></img>
+                        </div>
+                    </div>
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;"></div>
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;">
+                            <span style="font-size:12pt;color: rgb(91,155,213) !important;font-weight: normal;">Chứng từ giao dịch</span>
+                        </div>
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;"></div>
+                    </div>
+
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;margin-top: -10px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;"></div>
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;width: 40%;">
+                            <span class="tieu-de-cua-bao-cao" style="font-size:20pt;color: rgb(91,155,213) !important;">Uỷ nhiệm chi</span>
+                            <span style="font-size:11pt;padding-left: 18px;font-weight: normal;">Payment order</span>
+                        </div>
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;width: 20%;"></div>
+                    </div>
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;margin-top: -10px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;"></div>
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;text-align: right;font-weight: normal;">
+                            <span style="font-size:10pt">Số</span>
+                            <span style="font-size:7pt;vertical-align: bottom;">No</span>
+                            <span style="font-size:10pt" t-if="o.SO_CHUNG_TU" t-field="o.SO_CHUNG_TU" />
+                        </div>
+                        <div class="col-xs-4" style="padding-left:50px; padding-right:0px;text-align: center;font-weight: normal;">
+                            <span style="font-size:10pt">Ngày</span>
+                            <span style="font-size:7pt;vertical-align: bottom;">Date</span>
+                            <span style="font-size:10pt" t-if="o.NGAY_CHUNG_TU" t-field="o.NGAY_CHUNG_TU" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12" style="padding-left:0px; padding-right:0px;background-color: paleturquoise !important;">
+                    <div class="col-xs-3" style="padding-left:0px; padding-right:0px;">
+                        <span style="font-size:10pt;color: rgb(91,155,213) !important;font-weight: bold;">Ký hiệu</span>
+                        <span style="font-size:7pt;vertical-align: bottom;">Invoice sign</span>
+                    </div>
+                    <div class="col-xs-3" style="padding-left:0px; padding-right:0px;">
+                        <span style="font-size:10pt;color: rgb(0,176,240) !important;font-weight: bold;">Số HĐ</span>
+                        <span style="font-size:7pt;vertical-align: bottom;">Invoice No</span>
+                    </div>
+                    <div class="col-xs-3" style="padding-left:0px; padding-right:0px;">
+                        <span style="font-size:10pt;color: rgb(0,176,240) !important;font-weight: bold;">Mẫu số 01GTKT2/003</span>
+                    </div>
+                    <div class="col-xs-3" style="padding-left:0px; padding-right:0px;">
+                        <span style="font-size:10pt;color: rgb(0,176,240) !important;font-weight: bold;" t-esc="lien" />
+                        <span style="font-size:7pt;vertical-align: bottom;" t-esc="lien_ghi_chu" />
+                    </div>
+                </div>
+
+                <div class="col-xs-12" style="padding-left:0px; padding-right:0px;">
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;margin-top: -5px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;width: 23%;">
+                            <span style="font-size:10pt;color: rgb(0,176,240) !important;font-weight: bold;">Tên người trả tiền</span>
+                            <span style="font-size:7pt;vertical-align: bottom;">Applicant Name</span>
+                        </div>
+                        <div class="col-xs-8" style="padding-left:0px; padding-right:0px;width: 77%;">
+                            <span style="font-size:10pt" t-esc="o.get_ten_cong_ty()" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;margin-top: -5px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;width: 20%;">
+                            <span style="font-size:9.5pt;font-weight: bold;">Số Tài khoản</span>
+                            <span style="font-size:7pt;vertical-align: bottom;">Debit Account No</span>
+                        </div>
+                        <div class="col-xs-8" style="padding-left:0px; padding-right:0px;width: 80%;">
+                            <span style="font-size:10pt" t-if="o.STK_NGAN_HANG" t-field="o.STK_NGAN_HANG" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;margin-top: -5px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;width: 18%;">
+                            <span style="font-size:9.5pt;font-weight: bold;">Tại Ngân hàng</span>
+                            <span style="font-size:7pt;vertical-align: bottom;">With bank</span>
+                        </div>
+                        <div class="col-xs-8" style="padding-left:0px; padding-right:0px;width: 82%;">
+                            <span style="font-size:10pt" t-if="o.TEN_NGAN_HANG" t-field="o.TEN_NGAN_HANG" />
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;margin-top: -5px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;width: 23%;">
+                            <span style="font-size:9.5pt;color: rgb(0,176,240) !important;font-weight: bold;">Tên người hưởng</span>
+                            <span style="font-size:7pt;vertical-align: bottom;">Beneficiary Name</span>
+                        </div>
+                        <div class="col-xs-8" style="padding-left:0px; padding-right:0px;width: 77%;">
+                            <t t-if="o.LOAI_CHUNG_TU == 1560">
+                                <span style="font-size:10pt" t-esc="o.get_ten_cong_ty()" />
+                            </t>
+                            <t t-if="o.LOAI_CHUNG_TU != 1560">
+                                <span style="font-size:10pt" t-if="o.TEN_DOI_TUONG" t-field="o.TEN_DOI_TUONG" />
+                                <t t-if="not o.TEN_DOI_TUONG" t-esc="'.........................................................................................................................................'" />
+                            </t>
+                        </div>
+                    </div>
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;margin-top: -5px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;width: 20%;">
+                            <span style="font-size:9.5pt;font-weight: bold;">Số Tài khoản</span>
+                            <span style="font-size:7pt;vertical-align: bottom;">Credit Account No</span>
+                        </div>
+                        <div class="col-xs-8" style="padding-left:0px; padding-right:0px;width: 80%;">
+                            <span style="font-size:10pt" t-if="o.STK_NGAN_HANG_DOI_TUONG" t-field="o.STK_NGAN_HANG_DOI_TUONG" />
+                            <t t-if="not o.STK_NGAN_HANG_DOI_TUONG" t-esc="'..............................................................................................................................................'" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;margin-top: -5px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;">
+                            <div class="col-xs-3" style="padding-left:0px; padding-right:0px; width: 45%;">
+                                <span style="font-size:10pt;font-weight: bold;">Số CMT/HC</span>
+                                <span style="font-size:7pt;vertical-align: bottom;">IP/PP No</span>
+                            </div>
+                            <div class="col-xs-9" style="padding-left:0px; padding-right:0px;width: 55%;">
+                                <span style="font-size:10pt" t-if="o.SO_CMND" t-field="o.SO_CMND" />
+                                <t t-if="not o.SO_CMND" t-esc="'................................'" />
+                            </div>
+                        </div>
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;">
+                            <div class="col-xs-3" style="padding-left:0px; padding-right:0px;width: 45%;">
+                                <span style="font-size:10pt;font-weight: bold;">Ngày cấp</span>
+                                <span style="font-size:7pt;vertical-align: bottom;">Date of issua</span>
+                            </div>
+                            <div class="col-xs-9" style="padding-left:0px; padding-right:0px;width: 55%;">
+                                <span style="font-size:10pt" t-if="o.NGAY_CMND" t-field="o.NGAY_CMND" />
+                                <t t-if="not o.NGAY_CMND" t-esc="'................................'" />
+                            </div>
+                        </div>
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;">
+                            <div class="col-xs-3" style="padding-left:0px; padding-right:0px;width: 45%;">
+                                <span style="font-size:10pt;font-weight: bold;">Nơi cấp</span>
+                                <span style="font-size:7pt;vertical-align: bottom;">Place of Issue</span>
+                            </div>
+                            <div class="col-xs-9" style="padding-left:0px; padding-right:0px;width: 55%;">
+                                <span style="font-size:10pt" t-if="o.NOI_CAP_CMND" t-field="o.NOI_CAP_CMND" />
+                                <t t-if="not o.NOI_CAP_CMND" t-esc="'................................'" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;margin-top: -5px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;width: 17%;">
+                            <span style="font-size:9.5pt;font-weight: bold;">Tại Ngân hàng</span>
+                            <span style="font-size:7pt;vertical-align: bottom;">With bank</span>
+                        </div>
+                        <div class="col-xs-8" style="padding-left:0px; padding-right:0px;width: 83%;">
+                            <span style="font-size:10pt" t-if="o.TEN_NGAN_HANG_DOI_TUONG" t-field="o.TEN_NGAN_HANG_DOI_TUONG" />
+                            <t t-if="not o.TEN_NGAN_HANG_DOI_TUONG" t-esc="'....................................................................................................................................................'" />
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;margin-top: -5px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;width: 21%;">
+                            <span style="font-size:9.5pt;font-weight: bold;">Số tiền bằng số</span>
+                            <span style="font-size:7pt;vertical-align: bottom;">Amount in figues</span>
+                        </div>
+                        <div class="col-xs-8" style="padding-left:0px; padding-right:0px;width: 79%;font-weight: bold;">
+                            <t t-if="o.TONG_TIEN != 0">
+                                <span style="font-size:10pt" t-if="o.TONG_TIEN" t-field="o.TONG_TIEN" />
+                                <span style="font-size:10pt" t-if="o.LOAI_TIEN" t-field="o.LOAI_TIEN" />
+                            </t>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;margin-top: -5px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;width: 21%;">
+                            <span style="font-size:9.5pt;font-weight: bold;">Số tiền bằng chữ</span>
+                            <span style="font-size:7pt;vertical-align: bottom;">Amount in words</span>
+                        </div>
+                        <div class="col-xs-8" style="padding-left:0px; padding-right:0px;width: 79%;font-weight: bold;">
+                            <span t-if="o.TONG_TIEN" t-field="o.TONG_TIEN" t-options="{'widget': 'vietbangchu'}" style="margin-left: 15px; font-style: italic;font-size:10pt" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;margin-top: -5px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;">
+                            <span style="font-size:10pt">
+                                <strong>Phí ngân hàng</strong>
+                            </span>
+                            <span style="font-size:7pt;vertical-align: bottom;">Fee:</span>
+                        </div>
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;">
+                            <div class="check-box-fake" />
+                            <span style="font-size:10pt">
+                                <strong>Phí trong</strong>
+                            </span>
+                            <span style="font-size:7pt;vertical-align: bottom;">Including</span>
+                        </div>
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;">
+                            <div class="check-box-fake" />
+                            <span style="font-size:10pt">
+                                <strong>Phí ngoài</strong>
+                            </span>
+                            <span style="font-size:7pt;vertical-align: bottom;">Excluding</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12" style="padding-left:0px; padding-right:0px;margin-top: -5px;">
+                        <div class="col-xs-4" style="padding-left:0px; padding-right:0px;width: 12%;">
+                            <span style="font-size:9.5pt;font-weight: bold;">Nội dung</span>
+                            <span style="font-size:7pt;vertical-align: bottom;">Remarks:</span>
+                        </div>
+                        <div class="col-xs-8" style="padding-left:0px; padding-right:0px;width: 88%;">
+                            <span style="font-size:10pt" t-if="o.DIEN_GIAI" t-field="o.DIEN_GIAI" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="padding-left:0px; padding-right:0px;margin-top: 20px;">
+                    <table style="width:100%;background-color: paleturquoise !important;text-align: center;line-height: normal;border-top: 7px solid rgb(192,0,0) !important;">
+                        <tr>
+                            <td style="width:25%">
+                                <span style="font-size:10pt">
+                                    <strong>Kế toán trưởng</strong>
+                                </span>
+                            </td>
+                            <td style="width:25%">
+                                <span style="font-size:10pt">
+                                    <strong>Chủ TK</strong>
+                                </span>
+                                <span style="font-size:8pt">
+                                    <strong>A/c holder</strong>
+                                </span>
+                            </td>
+                            <td style="width:25%">
+                                <span style="font-size:10pt">
+                                    <strong>Giao dịch viên</strong>
+                                </span>
+                            </td>
+                            <td style="width:25%">
+                                <span style="font-size:10pt">
+                                    <strong>Kiểm soát viên</strong>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:25%">
+                                <span style="font-size:8pt;padding-right: 15px;">Chief accountant</span>
+                            </td>
+                            <td style="width:25%">
+                                <span style="font-size:8pt;padding-left: 45px;">Ký tên,đóng dấu Signature Stamp</span>
+                            </td>
+                            <td style="width:25%">
+                                <span style="font-size:8pt;padding-right: 55px;">Teller</span>
+                            </td>
+                            <td style="width:25%">
+                                <span style="font-size:8pt;padding-right: 40px;">Supervisor</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:25%;padding-top: 55px;">
+                                <strong>
+                                    <span style="font-size:10pt" t-esc="o.get_ke_toan_truong()" />
+                                </strong>
+                            </td>
+                            <td style="width:25%">
+                                <span style="font-size:10pt" t-if="o.CHU_TK_NGAN_HANG" t-field="o.CHU_TK_NGAN_HANG" />
+                            </td>
+                            <td style="width:25%"></td>
+                            <td style="width:25%"></td>
+                        </tr>
+                    </table>
+                    <table style="width:100%;width: 100%; margin-top: -58px;margin-left: 374px;text-align: center;line-height: 0.1cm;">
+                        <tr>
+                            <td style="-webkit-transform: rotate(-90.0deg);">
+                                <span style="font-size:9pt;padding-left: 45px;">Mẫu số 01GTKT2/003</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </t>
+    </template>
+    <template id="template_vietinbankunc">
+        <t t-call="web.html_container">
+            <t t-set="data_paper_format" t-value="'A5-ngang'" />
+            <t t-foreach="docs" t-as="o">
+                <t t-set="lien" t-value="'Liên 1.Lưu'" />
+                <t t-set="lien_ghi_chu" t-value="'Copy1. Banks copy'" />
+                <t t-call="bao_cao.vietinbankunc" />
+                <t t-set="lien" t-value="'Liên 2.KH'" />
+                <t t-set="lien_ghi_chu" t-value="'Copy2. Customers copy'" />
+                <t t-call="bao_cao.vietinbankunc" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report string="Uỷ nhiệm chi (Viettinbank)" id="action_template_vietinbankunc" model="bao.cao.uy.nhiem.chi.viettinbank" report_type="qweb-html" name="bao_cao.template_vietinbankunc" file="bao_cao.template_vietinbankunc" print_report_name="Uỷ nhiệm chi (Viettinbank)" />
+    </data>
+</odoo>

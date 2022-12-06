@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="bang_can_doi_tai_khoan">
+        <t t-call="web.external_layout">
+            <div class="page" style="margin-left: 15px;margin-right: 15px;">
+                <div class="col-xs-12 text-left" style="padding-left: 0px;padding-right: 0px;">
+                    <div class="col-xs-7 text-left truong-thong-tin-dat-tren-header" style="padding-left: 0px;padding-right: 0px;">
+                        <t t-call="bao_cao.external_layout_header" />
+                    </div>
+                    <div class="col-xs-5 text-left" style="padding-left: 0px;padding-right: 0px;"></div>
+                </div>
+                <div class="col-xs-12 text-center report-title" style="padding-left: 0px;padding-right: 0px;">
+                    <span>BẢNG CÂN ĐỐI TÀI KHOẢN</span>
+                </div>
+                <div class="col-xs-12 text-center" style="padding-left: 0px;padding-right: 0px;">
+                    <div class="report-sub-title-1-italic-bold">
+                        <span t-esc="added_data.get('sub_title')" />
+                    </div>
+                </div>
+                <div class="col-xs-12 text-right signer-sub-title" style="padding-left: 0px;padding-right: 0px;">
+                    <span>
+                        Đơn vị tính: VND
+                    </span>
+                </div>
+                <!--Table-->
+                <div class="col-xs-12" style="padding-left: 0px;padding-right: 0px;">
+                    <table style="border: 1px solid black;margin-bottom: 0px; width: 100%;">
+                        <thead>
+                            <tr class="detail-header">
+                                <th class="text-center" rowspan="2" style="border: 1px solid black;height: 12px; width: 17px;">
+                                    <span>Số hiệu tài khoản</span>
+                                </th>
+                                <th class="text-center" rowspan="2" style="border: 1px solid black;height: 12px; width: 63px;">
+                                    <span>Tên tài khoản</span>
+                                </th>
+                                <th class="text-center" colspan="2" style="border: 1px solid black;height: 6px; width: 64px;">
+                                    <span>Đầu kỳ</span>
+                                </th>
+                                <th class="text-center" colspan="2" style="border: 1px solid black;height: 6px; width: 64px;">
+                                    <span>Phát sinh</span>
+                                </th>
+                                <th class="text-center" colspan="2" style="border: 1px solid black;height: 6px; width: 64px;">
+                                    <span>Cuối kỳ</span>
+                                </th>
+                            </tr>
+                            <tr class="detail-header">
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 32px;">
+                                    <span>Nợ</span>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 32px;">
+                                    <span>Có</span>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 32px;">
+                                    <span>Nợ</span>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 32px;">
+                                    <span>Có</span>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 32px;">
+                                    <span>Nợ</span>
+                                </th>
+                                <th class="text-center" style="border: 1px solid black;height: 6px; width: 32px;">
+                                    <span>Có</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="docs" t-as="line">
+                                <t t-if="line.SO_HIEU_TAI_KHOAN">
+                                    <td class="text-left detail-hyper-link" style="border: 1px solid black;height: 6px; width: 17px;">
+                                        <span t-esc="line.SO_HIEU_TAI_KHOAN"></span>
+                                    </td>
+                                    <td class="text-left detail-text" style="border: 1px solid black;height: 6px; width: 63px;">
+                                        <span t-field="line.TEN_TAI_KHOAN" />
+                                    </td>
+                                    <td class="text-right detail-number" style="border: 1px solid black;height: 6px; width: 32px;">
+                                        <span t-field="line.NO_DAU_KY" />
+                                    </td>
+                                    <td class="text-right detail-number" style="border: 1px solid black;height: 6px; width: 32px;">
+                                        <span t-field="line.CO_DAU_KY" />
+                                    </td>
+                                    <td class="text-right detail-number" style="border: 1px solid black;height: 6px; width: 32px;">
+                                        <span t-field="line.NO_PHAT_SINH" />
+                                    </td>
+                                    <td class="text-right detail-number" style="border: 1px solid black;height: 6px; width: 32px;">
+                                        <span t-field="line.CO_PHAT_SINH" />
+                                    </td>
+                                    <td class="text-right detail-number" style="border: 1px solid black;height: 6px; width: 32px;">
+                                        <span t-field="line.NO_CUOI_KY" />
+                                    </td>
+                                    <td class="text-right detail-number" style="border: 1px solid black;height: 6px; width: 32px;">
+                                        <span t-field="line.CO_CUOI_KY" />
+                                    </td>
+                                </t>
+                                <t t-if="not line.SO_HIEU_TAI_KHOAN">
+                                    <td class="text-center summary-detail-number" colspan="2" style="border: 1px solid black;">
+                                        <span t-field="line.TEN_TAI_KHOAN" />
+                                    </td>
+                                    <td class="text-right summary-detail-number" style="border: 1px solid black;">
+                                        <span t-field="line.NO_DAU_KY" />
+                                    </td>
+                                    <td class="text-right summary-detail-number" style="border: 1px solid black;">
+                                        <span t-field="line.CO_DAU_KY" />
+                                    </td>
+                                    <td class="text-right summary-detail-number" style="border: 1px solid black;">
+                                        <span t-field="line.NO_PHAT_SINH" />
+                                    </td>
+                                    <td class="text-right summary-detail-number" style="border: 1px solid black;">
+                                        <span t-field="line.CO_PHAT_SINH" />
+                                    </td>
+                                    <td class="text-right summary-detail-number" style="border: 1px solid black;">
+                                        <span t-field="line.NO_CUOI_KY" />
+                                    </td>
+                                    <td class="text-right summary-detail-number" style="border: 1px solid black;">
+                                        <span t-field="line.CO_CUOI_KY" />
+                                    </td>
+                                </t>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs-12 text-right" style="margin-right: 50px;padding-left: 0px;padding-right: 0px;">
+                    <span class="signer-date">
+                        Lập, Ngày ...... tháng ...... năm .........
+                    </span>
+                </div>
+                <div class="col-xs-12 page-break-inside" style="padding-left: 0px;padding-right: 0px;">
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr class="text-center signer-title">
+                                <th t-foreach="added_data.get('tieu_de_nguoi_ky')" t-as="line">
+                                    <span>
+                                        <span t-esc="line" />
+                                    </span>
+                                </th>
+                            </tr>
+                            <tr class="text-center signer-sub-title">
+                                <td t-foreach="added_data.get('tieu_de_nguoi_ky')" t-as="line">
+                                    <span>(Ký, họ tên)</span>
+                                </td>
+                            </tr>
+                            <tr style="height: 70px;" />
+                            <tr class="text-center signer-name">
+                                <td t-foreach="added_data.get('ten_nguoi_ky')" t-as="line">
+                                    <span t-esc="line" />
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+                <!-- Table -->
+            </div>
+        </t>
+    </template>
+    <template id="template_bang_can_doi_tai_khoan">
+        <t t-call="web.html_container">
+            <t t-set="data_paper_format" t-value="'A4-ngang'" />
+            <t t-call="bao_cao.bang_can_doi_tai_khoan" />
+        </t>
+    </template>
+    <data>
+        <report string="Bảng cân đối tài khoản" id="action_template_bang_can_doi_tai_khoan" model="bao.cao.bang.can.doi.tai.khoan" report_type="qweb-html" name="bao_cao.template_bang_can_doi_tai_khoan" file="bao_cao.template_bang_can_doi_tai_khoan" print_report_name="Bảng cân đối tài khoản" />
+    </data>
+</odoo>

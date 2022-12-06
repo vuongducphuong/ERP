@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <template id="danh_muc_lenh_san_xuat">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <h2 class="text-center">LỆNH SẢN XUẤT</h2>
+                <div class="row mt32 mb32">
+                    <div class="col-xs-6">
+                        <span>Ngày:</span>
+                        <span t-if="o.NGAY" t-field="o.NGAY" />
+                        <t t-if="not o.NGAY" t-call="danh_muc.empty_line" />
+                    </div>
+                    <div class="col-xs-6">
+                        <span>Số lệnh sản xuất:</span>
+                        <span t-if="o.SO_LENH_SAN_XUAT" t-field="o.SO_LENH_SAN_XUAT" />
+                        <t t-if="not o.SO_LENH_SAN_XUAT" t-call="danh_muc.empty_line" />
+                    </div>
+                    <div class="col-xs-6">
+                        <span>Name:</span>
+                        <span t-if="o.name" t-field="o.name" />
+                        <t t-if="not o.name" t-call="danh_muc.empty_line" />
+                    </div>
+                    <!--Table-->
+                    <!-- <div class="row">
+                        <div class="col-xs-4">
+                            <strong>Người lập</strong>
+                            <p>
+                                <i>(Ký, họ tên)</i>
+                            </p>
+                        </div>
+                        <div class="col-xs-4">
+                            <strong>Kế toán trưởng</strong>
+                            <p>
+                                <i>(Ký, họ tên)</i>
+                            </p>
+                        </div>
+                        <div class="col-xs-4">
+                            <strong>Giám đốc</strong>
+                            <p>
+                                <i>(Ký, họ tên, đóng dấu)</i>
+                            </p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="template_danh_muc_lenh_san_xuat">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="danh_muc.danh_muc_lenh_san_xuat" />
+            </t>
+        </t>
+    </template>
+    <data>
+        <report 
+            string="Lệnh sản xuất" 
+            id="action_template_danh_muc_lenh_san_xuat" 
+            model="danh.muc.lenh.san.xuat" 
+            report_type="qweb-html"
+            name="danh_muc.template_danh_muc_lenh_san_xuat" 
+            file="danh_muc.template_danh_muc_lenh_san_xuat"
+            print_report_name="Lệnh sản xuất"
+        />
+    </data>
+</odoo>

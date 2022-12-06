@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_loai_cong_trinh_form" model="ir.ui.view">
+            <field name="name">danh.muc.loai.cong.trinh.form</field>
+            <field name="model">danh.muc.loai.cong.trinh</field>
+            <field name="arch" type="xml">
+                <form string="Loại công trình">
+                    <sheet>
+                        <group col="2">
+                            <field name="MA_LOAI_CONG_TRINH" string="Mã(*)" required="True" colspan="2"/>
+                            <field name="name" string="Tên(*)" required="True" colspan="2"/>
+                            <field name="DIEN_GIAI" colspan="2"/>
+                            
+                        </group>
+                        <field name="active"/>
+                        <!--Master/Detail form-->
+                        
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_danh_muc_loai_cong_trinh_tree" model="ir.ui.view">
+            <field name="name">danh.muc.loai.cong.trinh.tree</field>
+            <field name="model">danh.muc.loai.cong.trinh</field>
+            <field name="arch" type="xml">
+                <tree string="Loại công trình">
+                    <field name="MA_LOAI_CONG_TRINH"/>
+                    <field name="name"/>
+                    <field name="DIEN_GIAI"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_danh_muc_loai_cong_trinh" model="ir.actions.act_window">
+            <field name="name">Loại công trình</field>
+            <field name="res_model">danh.muc.loai.cong.trinh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_danh_muc_loai_cong_trinh_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_loai_cong_trinh_tree"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_loai_cong_trinh"/>
+        </record>
+
+        <record id="action_danh_muc_loai_cong_trinh_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_loai_cong_trinh_form"/>
+            <field name="act_window_id" ref="open_menu_danh_muc_loai_cong_trinh"/>
+        </record>
+
+        <!-- <menuitem name="Loại công trình"
+                  action="danh_muc.open_menu_danh_muc_loai_cong_trinh"
+                  id="menu_danh_muc_loai_cong_trinh"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <!-- <data noupdate="1"> -->
+        <!-- <record id="sequence_danh_muc_loai_cong_trinh_1" model="ir.sequence"> -->
+            <!-- <field name="name">danh_muc_loai_cong_trinh MA_LOAI_CONG_TRINH sequence</field> -->
+            <!-- <field name="code">danh_muc_loai_cong_trinh_MA_LOAI_CONG_TRINH</field> -->
+            <!-- <field name="prefix">MA_LOAI_CONG_TRINH</field> -->
+            <!-- <field name="padding">3</field> -->
+        <!-- </record> -->
+    <!-- </data> -->
+</odoo>

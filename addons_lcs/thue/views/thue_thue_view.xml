@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_thue_thue_form" model="ir.ui.view">
+            <field name="name">thue.thue.form</field>
+            <field name="model">thue.thue</field>
+            <field name="arch" type="xml">
+                <form string="Thuế" cloudify_js="thue_form_view">
+                    <sheet>
+                        <field name="KHOAN_MUC_THUE" invisible="1" />
+                        <field name="PL011_GTGT_BOLEAN" invisible="1" />
+                        <field name="PL012_GTGT_BOLEAN" invisible="1" />
+                        <field name="PL015_GTGT_BOLEAN" invisible="1" />
+                        <field name="PL016_GTGT_BOLEAN" invisible="1" />
+                        <field name="PL017_GTGT_BOLEAN" invisible="1" />
+                        <field name="THUE_031A_TNDN_BOLEAN" invisible="1" />
+                        <field name="THUE_032A_TNDN_BOLEAN" invisible="1" />
+                        <field name="THUE_PL_BKBR_TTDB" invisible="1" />
+                        <field name="THUE_TO_KHAI_TRUC_TIEP_TREN_GTGT" invisible="1" />
+                        <field name="THUE_TO_KHAI_THUE_TNDN" invisible="1" />
+                        
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <!-- <page string="Tờ khai">
+                                <group col="4">
+                                    <span style="text-align: center;" colspan="4">TỜ KHAI THUẾ GIÁ TRỊ GIA TĂNG (01/GTGT)</span>
+                                    <span style="text-align: center;" colspan="4">(Dành cho người nộp thuế khai thuế GTGT theo phương pháp khấu trừ)</span>
+                                    <field name="KY" string="Kỳ tính thuế: " colspan="4" />
+                                    <field name="TO_KHAI_LAN_DAU" string="Lần đầu: " col="2" />
+                                    <field name="BO_SUNG_LAN_THU" string="Bổ sung lần thứ: " col="2" />
+                                    <field name="TEN_NGUOI_NOP_THUE" string="Tên người nộp thuế: " />
+                                    <field name="MA_SO_THUE" string="Mã số thuế: " />
+                                    <field name="TEN_DAI_LY_THUE" string="Tên đại lý thuế (nếu có): " />
+                                    <field name="MA_SO_THUE_DAI_LY" string="Mã số thuế đại lý: " />
+                                    <field name="GIA_HAN" col="2" />
+                                    <field name="TRUONG_HOP_DUOC_GIA_HAN" colspan="4" />
+                                </group> -->
+                            <!-- <field name="THUE_TO_KHAI_TT26_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="KHONG_PHAT_SINH_HOAT_DONG_MUA_BAN_TRONG_KY" />
+                                        <field name="THUE_GTGT_CON_DUOC_KHAU_TRU_KY_TRUOC_CHUYEN_SANG" />
+                                        <field name="KE_KHAI_THUE_GTGT_PHAI_NOP_NGAN_SACH_NHA_NUOC" />
+                                        <field name="HANG_HOA_DICH_VU_MUA_VAO_TRONG_KY" />
+                                        <field name="GIA_TRI_VA_THUE_GTGT_CUA_HANG_HOA_DICH_VU_MUA_VAO" />
+                                        <field name="TONG_SO_THUE_GTGT_DUOC_KHAU_TRU_KY_NAY" />
+                                        <field name="HANG_HOA_DICH_VU_BAN_RA_TRONG_KY" />
+                                        <field name="HANG_HOA_DICH_VU_KHONG_CHIU_THUE_GTGT" />
+                                        <field name="HANG_HOA_DICH_VU_BAN_RA_KHONG_CHIU_THUE_GTGT" />
+                                        <field name="HANG_HOA_DICH_VU_BAN_RA_CHIU_THUE_SUAT_0_PHAN_TRAM" />
+                                        <field name="HANG_HOA_DICH_VU_BAN_RA_CHIU_THUE_SUAT_5_PHAN_TRAM" />
+                                        <field name="HANG_HOA_DICH_VU_BAN_RA_CHIU_THUE_SUAT_10_PHAN_TRAM" />
+                                        <field name="HANG_HOA_DICH_VU_BAN_RA_KHONG_TINH_THUE" />
+                                        <field name="TONG_DOANH_THU_VA_THUE_GTGT_CUA_HHDV_BAN_RA" />
+                                        <field name="THUE_GTGT_PHAT_SINH_TRONG_KY" />
+                                        <field name="DIEU_CHINH_TANG_GIAM_THUE_GTGT_CON_DUOC_KT_CUA_CAC_KY_TRUOC" />
+                                        <field name="DIEU_CHINH_GIAM" />
+                                        <field name="DIEU_CHINH_TANG" />
+                                        <field name="THUE_GTGT_DA_NOP_O_DIA_PHUONG_KHAC_CUA_HDKDXDLDBHBDS_NGOAI_TINH" />
+                                        <field name="XAC_DINH_NGHIA_VU_THUE_GTGT_PHAI_NOP_TRONG_KY" />
+                                        <field name="THUE_GTGT_PHAI_NOP_CUA_HOAT_DONG_SAN_XUAT_KINH_DOANH_TRONG_KY" />
+                                        <field name="THUE_GTGT_MUA_VAO_CUA_DU_AN_DAU_TU" />
+                                        <field name="THUE_GTGT_CON_PHAI_NOP_TRONG_KY" />
+                                        <field name="THUE_GTGT_CHUA_KHAU_TRU_HET_KY_NAY" />
+                                        <field name="TONG_SO_THUE_GTGT_DE_NGHI_HOAN" />
+                                        <field name="THUE_GTGT_DE_NGHI_HOAN_TAI_KHOAN_1331" />
+                                        <field name="THUE_GTGT_DE_NGHI_HOAN_TAI_KHOAN_1332" />
+                                        <field name="THUE_GTGT_CON_CHUA_DUOC_KHAU_TRU_CHUYEN_KY_SAU" />
+                                    </tree>
+                                </field> -->
+                            <!-- </page> -->
+                            <!-- <page string="Tờ khai"> -->
+                            <!-- <group col="4">
+                                    <span style="text-align: center;" colspan="4">TỜ KHAI THUẾ GTGT DÀNH CHO DỰ ÁN ĐẦU TƯ (02/GTGT)</span>
+                                    <field name="KY" string="Kỳ tính thuế: " colspan="4" />
+                                    <field name="TO_KHAI_LAN_DAU" string="Lần đầu: " col="2" />
+                                    <field name="BO_SUNG_LAN_THU" string="Bổ sung lần thứ: " col="2" />
+                                    <field name="TEN_NGUOI_NOP_THUE" string="Tên người nộp thuế: " />
+                                    <field name="MA_SO_THUE" string="Mã số thuế: " />
+                                    <field name="TEN_DAI_LY_THUE" string="Tên đại lý thuế (nếu có): " />
+                                    <field name="MA_SO_THUE_DAI_LY" string="Mã số thuế đại lý: " />
+                                </group> -->
+                            <!-- <field name="THUE_TO_KHAI_THUE_GTGT_DANH_CHO_DU_AN_DAU_TU_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="THUE_GTGT_CHUA_DUOC_HOAN_KY_TRUOC_CHUYEN_SANG" />
+                                        <field name="THUE_GTGT_DAU_VAO_CUA_DADT_NHAN_BAN_GIAO_TU_CHU_DADT" />
+                                        <field name="KE_KHAI_THUE_GTGT_DAU_VAO_CUA_DU_AN_DAU_TU" />
+                                        <field name="HANG_HOA_DICH_VU_MUA_VAO_TRONG_KY" />
+                                        <field name="DIEU_CHINH_TANG" />
+                                        <field name="DIEU_CHINH_GIAM" />
+                                        <field name="TONG_SO_THUE_GTGT_DAU_VAO_CUA_HHDV_MUA_VAO" />
+                                        <field name="THUE_GTGT_MUA_VAO_DU_AN_DAU_TU" />
+                                        <field name="THUE_GTGT_DAU_VAO_CHUA_DUOC_HOAN_DEN_KY_TINH_THUE_CUA_DADT" />
+                                        <field name="THUE_GTGT_DE_NGHI_HOAN" /> -->
+                            <!-- <field name="THUE_GTGT_DAU_VAO_CUA_HANG_HOA_NHAP_KHAU_THUOC_LOAI_TRONG_NUOC_CHUA_SAN_XUAT_DUOC_DE_TAO_TAI_SAN_CO_DINH_DA_DE_NGHI_HOAN" /> -->
+                            <!-- <field name="THUE_GTGT_DAU_VAO_CON_LAI_CUA_DU_AN_DAU_TU_DE_NGHI_HOAN" /> -->
+                            <!-- <field name="THUE_GTGT_DAU_VAO_CUA_DU_AN_DAU_TU_CHUA_DUOC_HOAN_BAN_GIAO_CHO_DOANH_NGHIEP_MOI_THANH_LAP_TRONG_KY" /> -->
+                            <!-- <field name="THUE_GTGT_DAU_VAO_CUA_DU_AN_DAU_TU_CHUA_DUOC_HOAN_CHUYEN_KY_SAU" /> -->
+                            <!-- </tree> -->
+                            <!-- </field> -->
+                            <!-- </page> -->
+                            <page string="Tờ khai" attrs="{'invisible': [('THUE_TO_KHAI_TRUC_TIEP_TREN_GTGT', '=', False)]}"> 
+                                <group col="4">
+                                    <span style="text-align: center;" colspan="4">TỜ KHAI THUẾ GIÁ TRỊ GIA TĂNG</span>
+                                    <span style="text-align: center;" colspan="4">(Dành cho người nộp thuế mua bán, chế tác vàng bạc, đá quý)</span>
+                                    <field name="KY" string="Kỳ tính thuế: " colspan="4" />
+                                    <field name="TO_KHAI_LAN_DAU" string="Lần đầu: " col="2" />
+                                    <field name="BO_SUNG_LAN_THU" string="Bổ sung lần thứ: " col="2" />
+                                    <field name="TEN_NGUOI_NOP_THUE" string="Tên người nộp thuế: " />
+                                    <field name="MA_SO_THUE" string="Mã số thuế: " />
+                                    <field name="TEN_DAI_LY_THUE" string="Tên đại lý thuế (nếu có): " />
+                                    <field name="MA_SO_THUE_DAI_LY" string="Mã số thuế đại lý: " />
+                                    <i>
+                                        <span style="text-align:right;">Đơn vị tiền: đồng Việt Nam</span>
+                                    </i>
+                                </group>
+                                <field name="THUE_TO_KHAI_THUE_GTGT_TRUC_TIEP_TREN_GTGT_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false">
+                                        <field name="STT" readonly="1" />
+                                        <field name="CHI_TIEU" readonly="1" />
+                                        <field name="MA_CHI_TIEU" readonly="1" />
+                                        <field name="GIA_TRI" />
+                                    </tree>
+                                </field>
+                                <group col="4" string="NHÂN VIÊN ĐẠI LÝ THUẾ">
+                                    <field name="HO_VA_TEN" colspan="2" />
+                                    <field name="NGUOI_KY" colspan="2" />
+                                    <field name="CHUNG_CHI_HANH_NGHE_SO" colspan="2" />
+                                    <field name="NGAY_KY" colspan="2" />
+                                </group>
+                            </page>
+                            <page string="Tờ khai" attrs="{'invisible': [('THUE_TO_KHAI_THUE_TNDN', '=', False)]}">
+                                <group col="4">
+                                    <span style="text-align: center;" colspan="4">TỜ KHAI QUYẾT TOÁN THUẾ THU NHẬP DOANH NGHIỆP (03/TNDN)</span>
+                                    <field name="KY" string="Kỳ tính thuế: " colspan="4" />
+                                    <field name="TO_KHAI_LAN_DAU" string="Lần đầu: " col="2" />
+                                    <field name="BO_SUNG_LAN_THU" string="Bổ sung lần thứ: " col="2" />
+                                    <field name="DN_VUA_VA_NHO" colspan="4" />
+                                    <field name="DN_CO_CSSX_HACH_TOAN_PHU_THUOC" colspan="4" />
+                                    <field name="DN_THUOC_DOI_TUONG_KE_KHAI" colspan="4" />
+                                    <field name="NGHANH_NGHE_CO_TY_LE_DOANH_THU_CAO_NHAT" string="Nghành nghề có tỷ lệ doanh thu cao nhất:" colspan="4" />
+                                    <field name="TY_LE_PHAN_TRAM" string="Tỷ lệ (%):" colspan="4" />
+                                    <field name="TEN_NGUOI_NOP_THUE" string="Tên người nộp thuế: " />
+                                    <field name="MA_SO_THUE" string="Mã số thuế: " />
+                                    <field name="TEN_DAI_LY_THUE" string="Tên đại lý thuế (nếu có): " />
+                                    <field name="MA_SO_THUE_DAI_LY" string="Mã số thuế đại lý: " />
+                                </group>
+                                <field name="THUE_TO_KHAI_QUYET_TOAN_THUE_TNDN_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false">
+                                        <field name="STT" readonly="1" />
+                                        <field name="CHI_TIEU" readonly="1" />
+                                        <field name="MA_CHI_TIEU" readonly="1" />
+                                        <field name="SO_TIEN" />
+                                    </tree>
+                                </field>
+                                <strong>
+                                    <span>L. Gia hạn nộp thuế (nếu có):</span>
+                                </strong>
+                                <br />
+                                <group col="4">
+                                    <field name="DOI_TUONG_DUOC_GIA_HAN" colspan="2" />
+                                    <field name="GIA_HAN_NOP_THUE_THEO" colspan="4" attrs="{'readonly': [('DOI_TUONG_DUOC_GIA_HAN', '=', False)]}" />
+                                    <field name="THOI_HAN_DUOC_GIA_HAN" colspan="4" attrs="{'readonly': [('DOI_TUONG_DUOC_GIA_HAN', '=', False)]}" />
+                                    <field name="SO_THUE_TNDN_DUOC_GIA_HAN" colspan="4" attrs="{'readonly': [('DOI_TUONG_DUOC_GIA_HAN', '=', False)]}" />
+                                    <field name="SO_THUE_TNDN_KHONG_DUOC_GIA_HAN" colspan="4" attrs="{'readonly': [('DOI_TUONG_DUOC_GIA_HAN', '=', False)]}" />
+                                </group>
+                                <strong>
+                                    <span>M.Tiền chậm nộp của khoản chênh lệch từ 20% trở lên đến ngày hết hạn nộp hồ sơ quyết toán thuế TNDN</span>
+                                    <br />
+                                    <span>(trường hợp kê khai quyết toán và nộp thuế theo quyết toán trước thời hạn thì tính đến ngày nộp thuế)</span>
+                                </strong>
+                                <br />
+                                <group col="4">
+                                    <field name="SO_NGAY_CHAM_NOP" colspan="4" />
+                                    <field name="TU_NGAY" colspan="2" />
+                                    <field name="DEN_NGAY" colspan="2" />
+                                    <field name="SO_TIEN_CHAM_NOP" colspan="4" />
+                                </group>
+                                <strong>
+                                    <span>I. Ngoài các Phụ lục của tờ khai này, chúng tôi gửi kèm theo các tài liệu sau:</span>
+                                </strong>
+                                <br />
+                                <field name="THUE_TAI_LIEU_KEM_THEO_IDS" mode="tree" string="">
+                                    <tree editable="bottom" create="false" delete="false">
+                                        <field name="STT" readonly="1" />
+                                        <field name="TEN_TAI_LIEU" />
+                                    </tree>
+                                </field>
+                                <strong>
+                                    <span>NHÂN VIÊN ĐẠI LÝ THUẾ:</span>
+                                </strong>
+                                <br />
+                                <group col="4">
+                                    <field name="HO_VA_TEN" colspan="2" />
+                                    <field name="NGUOI_KY" colspan="2" />
+                                    <field name="CHUNG_CHI_HANH_NGHE_SO" colspan="2" />
+                                    <field name="NGAY_KY" colspan="2" />
+                                </group>
+                            </page>
+                            <page string="PL 01-1/GTGT" attrs="{'invisible': [('PL011_GTGT_BOLEAN', '=', False)]}">
+                                <group col="4">
+                                    <span colspan="4">BẢNG KÊ HÓA ĐƠN, CHỨNG TỪ HÀNG HÓA, DỊCH VỤ BÁN RA</span>
+                                </group>
+                                <field name="THUE_PL_011_GTGT_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false" options="{'group_by': ['NHOM_HHDV'],'header_struct': [['Hóa đơn, chứng từ bán ra', ['SO_HOA_DON','NGAY_THANG_NAM_LAP_HOA_DON']]]}">
+                                        <field name="STT" readonly="1" />
+                                        <field name="SO_HOA_DON" />
+                                        <field name="NGAY_THANG_NAM_LAP_HOA_DON" />
+                                        <field name="TEN_NGUOI_MUA" />
+                                        <field name="MA_SO_THUE_NGUOI_MUA" />
+                                        <field name="DOANH_THU_CHUA_CO_THUE_GTGT" />
+                                        <field name="THUE_GTGT" />
+                                        <field name="GHI_CHU" />
+                                        <field name="NHOM_HHDV" />
+                                    </tree>
+                                </field>
+                                <group colspan="4">
+                                    <field name="TONG_DOANH_THU_HANG_HOA_DV_BAN_RA_CHIU_THUE_GTGT" colspan="4" string="Tổng doanh thu hàng hóa, dịch vụ bán ra chịu thuế GTGT:" />
+                                    <field name="TONG_SO_THUE_GTGT_CUA_HANG_HOA_DV_BAN_RA" colspan="4" string="Tổng số thuế GTGT của hàng hóa, dịch vụ bán ra:" />
+                                </group>
+                                <group colspan="4">
+                                    <span style="color:red;">Có một số chứng từ không lên bảng kê do thiếu một trong các thông tin: Số hóa đơn, ngày hóa đơn, % thuế GTGT.</span>
+                                    <br />
+                                    <button id="btn_xem_chi_tiet" string="Bấm vào đây để xem chi tiết" class="oe_highlight" />
+                                </group>
+                            </page>
+                            <page string="PL 01-2/GTGT" attrs="{'invisible': [('PL012_GTGT_BOLEAN', '=', False)]}">
+                                <group col="4">
+                                    <span colspan="4">BẢNG KÊ HÓA ĐƠN, CHỨNG TỪ HÀNG HÓA, DỊCH VỤ MUA VÀO</span>
+                                </group>
+                                <field name="THUE_PL_012_GTGT_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false" options="{'group_by': ['NHOM_HHDV'],'header_struct': [['Hóa đơn, chứng từ, biên lai nộp thuế', ['SO_HOA_DON','NGAY_THANG_NAM_LAP_HOA_DON']]]}">
+                                        <field name="STT" readonly="1" />
+                                        <field name="SO_HOA_DON" />
+                                        <field name="NGAY_THANG_NAM_LAP_HOA_DON" />
+                                        <field name="TEN_NGUOI_BAN" />
+                                        <field name="MA_SO_THUE_NGUOI_BAN" />
+                                        <field name="GIA_TRI_HHDV_MUA_VAO_CHUA_CO_THUE" />
+                                        <field name="THUE_GTGT" />
+                                        <field name="GHI_CHU" />
+                                        <field name="NHOM_HHDV" />
+                                    </tree>
+                                </field>
+                                <group colspan="4">
+                                    <field name="TONG_GIA_TRI_HHDV_MUA_VAO_PV_SXKD_DUOC_KHAU_TRU_THUE_GTGT" colspan="4" string="Tổng giá trị HHDV mua vào phục vụ SXKD được khấu trừ thuế GTGT:" />
+                                    <field name="TONG_THUE_GTGT_CUA_HHDV_MUA_VAO_DU_DK_KHAU_TRU" colspan="4" string="Tổng thuế GTGT của HHDV mua vào đủ điều kiện được khấu trừ:" />
+                                </group>
+                                <group colspan="4">
+                                    <span style="color:red;">Có một số chứng từ không lên bảng kê do thiếu một trong các thông tin: Số hóa đơn, ngày hóa đơn, nhóm HHDV mua vào.</span>
+                                    <br />
+                                    <button id="btn_xem_chi_tiet_pl012" string="Bấm vào đây để xem chi tiết" class="oe_highlight" />
+                                </group>
+                            </page>
+                            <page string="PL 01-5/GTGT" attrs="{'invisible': [('PL015_GTGT_BOLEAN', '=', False)]}">
+                                <group col="4">
+                                    <span colspan="4">BẢNG KÊ THUẾ GIÁ TRỊ GIA TĂNG ĐÃ NỘP CỦA DOANH THU KINH DOANH XÂY DỰNG, LẮP ĐẶT, BÁN HÀNG, BẤT ĐỘNG SẢN NGOẠI TỈNH</span>
+                                </group>
+                                <field name="THUE_PL_015_GTGT_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false" options="{'header_struct': [['Cơ quan thuế quản lý hoạt động kinh doanh xây dựng, lắp đặt, bán hàng, bất động sản ngoại tỉnh', ['CO_QUAN_THUE_CAP_CUC','CO_QUAN_THUE_QUAN_LY']]]}">
+                                        <field name="STT" readonly="1" />
+                                        <field name="SO_CHUNG_TU_NOP_THUE" />
+                                        <field name="NGAY_NOP_THUE" />
+                                        <field name="NOI_NOP_THUE" />
+                                        <field name="CO_QUAN_THUE_CAP_CUC" />
+                                        <field name="CO_QUAN_THUE_QUAN_LY" />
+                                        <field name="SO_TIEN_THUE_DA_NOP" sum="Tổng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="PL 01-6/GTGT" attrs="{'invisible': [('PL016_GTGT_BOLEAN', '=', False)]}">
+                                <group col="4">
+                                    <span colspan="4">BẢNG PHÂN BỔ THUẾ GIÁ TRỊ GIA TĂNG CHO ĐỊA PHƯƠNG NƠI ĐÓNG TRỤ SỞ CHÍNH VÀ CHO CÁC ĐỊA PHƯƠNG NƠI CÓ CƠ SỞ SẢN XUẤT TRỰC THUỘC KHÔNG THỰC HIỆN HẠCH TOÁN KẾ TOÁN</span>
+                                    <field name="SO_THUE_PHAI_NOP_CUA_NGUOI_NOP_THUE" colspan="4" string="Số thuế phải nộp của người nộp thuế:" />
+                                    <field name="DOANH_THU_CHUA_CO_THUE_GTGT_CUA_SPSX_CUA_NNT" colspan="4" string="Doanh thu chưa có thuế GTGT của sản phẩm sản xuất ra của người nộp thuế:" />
+                                </group>
+                                <field name="THUE_PL_016_GTGT_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false" options="{'header_struct': [['Cơ quan thuế', ['CO_QUAN_THUE_CAP_CUC','CO_QUAN_THUE_TRUC_TIEP_QUAN_LY']],['Doanh thu của sản phẩm sản xuất của cơ sở sản xuất trực thuộc', ['HANG_HOA_CHIU_THUE_5_PT','HANG_HOA_CHIU_THUE_10_PT','TONG']]]}">
+                                        <field name="STT" readonly="1" />
+                                        <field name="TEN_CO_SO_SX_TRUC_THUOC" />
+                                        <field name="MA_SO_THUE" />
+                                        <field name="CO_QUAN_THUE_CAP_CUC" />
+                                        <field name="CO_QUAN_THUE_TRUC_TIEP_QUAN_LY" />
+                                        <field name="HANG_HOA_CHIU_THUE_5_PT" />
+                                        <field name="HANG_HOA_CHIU_THUE_10_PT" />
+                                        <field name="TONG" readonly="1" />
+                                        <field name="SO_THUE_PHAI_NOP_CHO_DIA_PHUONG" sum="Tổng" readonly="1" />
+                                        <field name="SO_THUE_PHAI_NOP_CHO_DIA_PHUONG_TH_O616" sum="Tổng" readonly="1" />
+                                    </tree>
+                                </field>
+                                <group>
+                                    <field name="SO_THUE_PHAI_NOP_CHO_DIA_PHUONG_NOI_CO_TRU_SO_CHINH" colspan="4" string="Số thuế phải nộp cho địa phương nơi có trụ sở chính:" />
+                                    <field name="SO_THUE_PHAI_NOP_CHO_DIA_PHUONG_NOI_CO_TRU_SO_CHINH_TH_0616" colspan="4" string="Số thuế phải nộp cho địa phương nơi có trụ sở chính trong trường hợp [06] [16]:" />
+                                </group>
+                            </page>
+                            <page string="PL 01-7/GTGT" attrs="{'invisible': [('PL017_GTGT_BOLEAN', '=', False)]}">
+                                <group col="4">
+                                    <span colspan="4">BẢNG PHÂN BỔ SỐ THUẾ GIÁ TRỊ GIA TĂNG PHẢI NỘP CHO CÁC ĐỊA PHƯƠNG NƠI CÓ CÔNG TRÌNH XÂY DỰNG, LẮP ĐẶT LIÊN TỈNH</span>
+                                </group>
+                                <field name="THUE_PL_017_GTGT_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false" options="{'header_struct': [['Cơ quan thuế địa phương quản lý', ['CO_QUAN_THUE_CAP_CUC','CO_QUAN_THUE_QUAN_LY']]]}">
+                                        <field name="STT" readonly="1" />
+                                        <field name="TEN_CONG_TRINH" />
+                                        <field name="DOANH_THU" />
+                                        <field name="CO_QUAN_THUE_CAP_CUC" />
+                                        <field name="CO_QUAN_THUE_QUAN_LY" />
+                                        <field name="TY_LE_PHAN_BO" />
+                                        <field name="SO_THUE_GIA_TRI_GIA_TANG_PHAI_NOP" readonly="1" sum="Tổng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="03-1A/TNDN" attrs="{'invisible': [('THUE_031A_TNDN_BOLEAN', '=', False)]}">
+                                <group col="4">
+                                    <span colspan="4">KẾT QUẢ HOẠT ĐỘNG SẢN XUẤT KINH DOANH</span>
+                                    <br />
+                                    <span colspan="4">(Dành cho người nộp thuế thuộc các nghành sản xuất, thương mại, dịch vụ)</span>
+                                    <br />
+                                    <i>
+                                        <span style="text-align:right;">Đơn vị tiền: đồng Việt Nam</span>
+                                    </i>
+                                </group>
+                                <field name="THUE_031A_TNDN_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false">
+                                        <field name="STT" readonly="1" />
+                                        <field name="CHI_TIEU" readonly="1" />
+                                        <field name="MA_CHI_TIEU" readonly="1" />
+                                        <field name="SO_TIEN" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="03-2A/TNDN" attrs="{'invisible': [('THUE_032A_TNDN_BOLEAN', '=', False)]}">
+                                <group col="4">
+                                    <span style="text-align:middle;" colspan="4">CHUYỂN LỖ TỪ HOẠT ĐỘNG SXKD</span>
+                                    <span>Xác định số lỗ được chuyển trong kỳ tính thuế:</span>
+                                    <br />
+                                    <i>
+                                        <span style="text-align:right;">Đơn vị tiền: đồng Việt Nam</span>
+                                    </i>
+                                </group>
+                                <field name="THUE_032A_TNDN_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false">
+                                        <field name="STT" readonly="1" />
+                                        <field name="NAM_PHAT_SINH_LO" readonly="1" />
+                                        <field name="SO_LO_PHAT_SINH" sum="Tổng" />
+                                        <field name="SO_LO_DA_CHUYEN_TRONG_CAC_KY_TINH_THUE_TRUOC" sum="Tổng" />
+                                        <field name="SO_LO_DUOC_CHUYEN_TRONG_KY_TINH_THUE_NAY" sum="Tổng" />
+                                        <field name="SO_LO_CON_DUOC_CHUYEN_CHUYEN_SANG_KY_TINH_THUE_SAU" sum="Tổng" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="PL-BKBR/TTĐB" attrs="{'invisible': [('THUE_PL_BKBR_TTDB', '=', False)]}"> 
+                                <group col="4">
+                                    <span colspan="4">BẢNG KÊ HÓA ĐƠN HÀNG HÓA, DỊCH VỤ BÁN RA CHỊU THUẾ TIÊU THỤ ĐẶC BIỆT</span>
+                                </group>
+                                <field name="THUE_PL_BKBR_TTDB_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" delete="false" options="{'header_struct': [['Hóa đơn bán hàng', ['KY_HIEU_HOA_DON_BH','SO_HOA_DON_BAN_HANG','NGAY_THANG_NAM_PHAT_HANH']]]}">
+                                        <field name="STT" readonly="1" />
+                                        <field name="KY_HIEU_HOA_DON_BH" />
+                                        <field name="SO_HOA_DON_BAN_HANG" />
+                                        <field name="NGAY_THANG_NAM_PHAT_HANH" />
+                                        <field name="TEN_KHACH_HANG" />
+                                        <field name="TEN_HANG_HOA_DICH_VU" />
+                                        <field name="NHOM_HANG_HOA_DICH_VU" />
+                                        <field name="SO_LUONG" sum="Tổng" />
+                                        <field name="DON_GIA" />
+                                        <field name="DOANH_SO_BAN_CO_THUE" sum="Tổng" />
+                                    </tree>
+                                </field>
+                                <group colspan="4">
+                                    <span style="color:red;">Có một số chứng từ không lên bảng kê do thiếu một trong các thông tin: Số hóa đơn, ngày hóa đơn.</span>
+                                    <br />
+                                    <button id="btn_xem_chi_tiet_plbkbr" string="Bấm vào đây để xem chi tiết" class="oe_highlight" />
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_thue_thue_tree" model="ir.ui.view">
+            <field name="name">thue.thue.tree</field>
+            <field name="model">thue.thue</field>
+            <field name="arch" type="xml">
+                <tree string="Thuế" cloudify_js="thue_list_view">
+                    <field name="MAU_SO" />
+                    <field name="TO_KHAI" />
+                    <field name="LOAI_THUE" />
+                    <field name="KY" />
+                    <field name="TO_KHAI_LAN_DAU" />
+                    <field name="BO_SUNG_LAN_THU" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_thue_thue" model="ir.actions.act_window">
+            <field name="name">Thuế</field>
+            <field name="res_model">thue.thue</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!-- <field name="create_list"></field> -->
+            <field name="create_list">[{"name":"TT26 - Tờ khai thuế GTGT khấu trừ (01/GTGT)","context":{"default_KHOAN_MUC_THUE": "TT26"}}, 
+            {"name":"TT119 - Tờ khai thuế GTGT khấu trừ (01/GTGT)","context": {"default_KHOAN_MUC_THUE": "TT119"}}, 
+            {"name":"Tờ khai thuế GTGT cho dự án đầu tư (02/GTGT)","context": {"default_KHOAN_MUC_THUE": "THUE_GTGT_DU_AN_DAU_TU"}}, 
+            {"name":"Tờ khai thuế GTGT trực tiếp trên GTGT (03/GTGT)","context": {"default_KHOAN_MUC_THUE": "THUE_GTGT_TRUC_TIEP_TREN_GTGT"}}, 
+            {"name":"Quyết toán thuế TNDN năm (03/TNDN)","context": {"default_KHOAN_MUC_THUE": "QUYET_TOAN_THUE_TNDN"}}, 
+            {"name":"Tờ khai thuế tiêu thụ đặc biệt (01/TTĐB)","context": {"default_KHOAN_MUC_THUE": "TIEU_THU_DAC_BIET"}}, 
+            {"name":"Tờ khai thuế tài nguyên (01/TAIN)","context": {"default_KHOAN_MUC_THUE": "THUE_TAI_NGUYEN"}}]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_thue_thue_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_thue_thue_tree" />
+            <field name="act_window_id" ref="open_menu_thue_thue" />
+        </record>
+        <record id="action_thue_thue_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_thue_thue_form" />
+            <field name="act_window_id" ref="open_menu_thue_thue" />
+        </record>
+        <!-- <menuitem name="thuế"
+                  action="thue.open_menu_thue_thue"
+                  id="menu_thue_thue"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

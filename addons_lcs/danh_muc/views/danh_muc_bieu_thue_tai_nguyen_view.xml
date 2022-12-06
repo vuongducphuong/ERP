@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_bieu_thue_tai_nguyen_form" model="ir.ui.view">
+            <field name="name">danh.muc.bieu.thue.tai.nguyen.form</field>
+            <field name="model">danh.muc.bieu.thue.tai.nguyen</field>
+            <field name="arch" type="xml">
+                <form string="Biểu thuế tài nguyên">
+                    <sheet>
+                        <group col="4">
+                            <group colspan="2">
+                                <field name="MA" />
+                                <field name="TEN" />
+                                <field name="DON_VI" />
+                                <field name="parent_id" options="{'columns': ['MA', 'HO_VA_TEN'], 'strings': ['Mã tài nguyên', 'Tên tài nguyên'],'displays':['HO_VA_TEN']}" />
+                                <field name="THUE_SUAT_PHAN_TRAM"  />
+                            </group>
+                        </group>
+                        <field name="active" />
+                        <group col="4" colspan="4">
+                            
+                            <field name="name" invisible="True" />
+                        </group>
+                        <!--Master/Detail form-->
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_danh_muc_bieu_thue_tai_nguyen_tree" model="ir.ui.view">
+            <field name="name">danh.muc.bieu.thue.tai.nguyen.tree</field>
+            <field name="model">danh.muc.bieu.thue.tai.nguyen</field>
+            <field name="arch" type="xml">
+                <tree string="Biểu thuế tài nguyên" hierarchy="parent_id" >
+                    <field name="MA" string="Mã" />
+                    <field name="TEN" string="Tên tài nguyên" />
+                    <field name="DON_VI" string="Đơn vị tính" />
+                    <field name="THUE_SUAT_PHAN_TRAM" string="Thuế suất %" />
+                    <field name="active" string="Theo dõi" />
+                    <field name="parent_id" invisible="1" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_danh_muc_bieu_thue_tai_nguyen" model="ir.actions.act_window">
+            <field name="name">Biểu thuế tài nguyên</field>
+            <field name="res_model">danh.muc.bieu.thue.tai.nguyen</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_danh_muc_bieu_thue_tai_nguyen_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_bieu_thue_tai_nguyen_tree" />
+            <field name="act_window_id" ref="open_menu_danh_muc_bieu_thue_tai_nguyen" />
+        </record>
+        <record id="action_danh_muc_bieu_thue_tai_nguyen_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_bieu_thue_tai_nguyen_form" />
+            <field name="act_window_id" ref="open_menu_danh_muc_bieu_thue_tai_nguyen" />
+        </record>
+        <!-- <menuitem name="Biểu thuế tài nguyên" action="danh_muc.open_menu_danh_muc_bieu_thue_tai_nguyen" id="menu_danh_muc_bieu_thue_tai_nguyen" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

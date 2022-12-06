@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_s03_a2_dn_so_nhat_ky_chi_tien_tree" model="ir.ui.view">
+            <field name="name">bao.cao.s03.a2.dn.so.nhat.ky.chi.tien.tree</field>
+            <field name="model">bao.cao.s03.a2.dn.so.nhat.ky.chi.tien</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="S03a2-DN:Sổ nhật ký chi tiền" create="false" report="true">
+                    <field name="NGAY_THANG_GHI_SO" />
+                    <field name="SO_HIEU" />
+                    <field name="NGAY_THANG" />
+                    <field name="DIEN_GIAI" />
+                    <field name="GHI_CO_TK" />
+                    <field name="TK_TRONG_1" />
+                    <field name="TK_TRONG_2" />
+                    <field name="TK_TRONG_3" />
+                    <field name="TK_TRONG_4" />
+                    <field name="SO_TIEN" />
+                    <field name="SO_HIEU_TK_KHAC" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__s03_a2_dn_so_nhat_ky_chi_tien" model="ir.actions.act_window">
+            <field name="name">SỔ NHẬT KÝ CHI TIỀN</field>
+            <field name="res_model">bao.cao.s03.a2.dn.so.nhat.ky.chi.tien</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'header_struct': [['Ghi Có các TK', ['TK_TRONG_1','TK_TRONG_2','TK_TRONG_3','TK_TRONG_4',['Tài khoản khác', ['SO_TIEN', 'SO_HIEU_TK_KHAC']]]], ['Chứng từ', ['SO_HIEU', 'NGAY_THANG']]], 'expand_all': 'true'}</field>
+        </record>
+        <record id="view_bao_cao_s03_a2_dn_so_nhat_ky_chi_tien_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.s03.a2.dn.so.nhat.ky.chi.tien.form</field>
+            <field name="model">bao.cao.s03.a2.dn.so.nhat.ky.chi.tien</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <field name="CHI_NHANH_ID" colspan="4" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" colspan="4" />
+                        </group>
+                        <group col="4">
+                            <field name="KY_BAO_CAO" colspan="4" />
+                            <field name="TU" required="1" />
+                            <field name="DEN" required="1" />
+                            <field name="TAI_KHOAN_ID" options="{'showClearButton': false, 'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                            <field name="currency_id" options="{'showClearButton': false, 'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}" />
+                            <field name="TAI_KHOAN_NGAN_HANG_ID" colspan="4" options="{'columns': ['SO_TAI_KHOAN', 'NGAN_HANG_ID.CHI_NHANH', 'CHI_NHANH'], 'strings': ['Số tài khoản', 'Tên ngân hàng', 'Chi nhánh'],'displays': ['SO_TAI_KHOAN']}" />
+                            <field name="CONG_GOP_THEO_CHUNG_TU" colspan="4" />
+                        </group>
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_s03_a2_dn_so_nhat_ky_chi_tien_tham_so_form" model="ir.actions.act_window">
+            <field name="name">S03a2-DN: Sổ nhật ký chi tiền</field>
+            <field name="res_model">bao.cao.s03.a2.dn.so.nhat.ky.chi.tien</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_s03_a2_dn_so_nhat_ky_chi_tien_tham_so_form" />
+        </record>
+    </data>
+</odoo>

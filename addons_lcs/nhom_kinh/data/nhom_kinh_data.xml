@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <!-- <data noupdate="1"> -->
+        <record forcecreate="True" id="danh_muc_vthh_cpgc" model="danh.muc.vat.tu.hang.hoa">
+            <field name="TEN">Chi phí gia công</field>
+            <field name="MA">CPGC</field>
+            <field name="TINH_CHAT">2</field>
+        </record>
+        <!-- <record forcecreate="True" id="danh_muc_dvt_mm" model="danh.muc.don.vi.tinh">
+            <field name="DON_VI_TINH">mm</field>
+            <field name="MO_TA">Mi-li-mét</field>
+        </record> -->
+    </data>
+</odoo>

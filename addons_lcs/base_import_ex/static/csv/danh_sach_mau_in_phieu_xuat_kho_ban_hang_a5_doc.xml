@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+<MSC_ReportTemplate>
+	  <ReportID>OutwardStockBySaleVoucherA5Doc</ReportID>
+	  <ReportName>Phiếu xuất kho bán hàng (Mẫu A5-Dọc)</ReportName>
+	  <RefTypeList>/3530/3531/3532/3534/3535/3536/3537/3538/</RefTypeList>
+	  <Description>Phiếu xuất kho bán hàng (Mẫu A5-DỌC)</Description>
+	  <ReportTitle>PHIẾU XUẤT KHO BÁN HÀNG (MẪU A5-DỌC)</ReportTitle>
+	</MSC_ReportTemplate>
+</DataSetImportExport>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_cong_trinh_form" model="ir.ui.view">
+            <field name="name">danh.muc.cong.trinh.form</field>
+            <field name="model">danh.muc.cong.trinh</field>
+            <field name="arch" type="xml">
+                <form string="Công trình">
+                    <sheet>
+                        <group col="4">
+                            <field name="CONG_TRINH_SELECTION" widget="radio" options="{'horizontal': True, 'alway_edit': True}" nolabel="1" />
+                            <field name="parent_id" string="Thuộc" attrs="{'invisible': [('CONG_TRINH_SELECTION', '!=','1')]}" options="{'columns': ['MA_CONG_TRINH', 'TEN_CONG_TRINH'], 'strings': ['Mã công trình', 'Tên công trình'],'displays': ['MA_CONG_TRINH']}" />
+                        </group>
+                        <group col="4">
+                            <field name="MA_CONG_TRINH" colspan="4" required="True" string="Mã(*)" />
+                            <field name="TEN_CONG_TRINH" colspan="4" required="True" string="Tên(*)" />
+                            
+                            <field name="LOAI_CONG_TRINH" colspan="4" string="Loại" options="{'columns': ['MA_LOAI_CONG_TRINH', 'name'], 'strings': ['Mã loại công trình', 'Tên loại công trình'],'displays': ['MA_LOAI_CONG_TRINH']}" />
+                            <field name="TINH_TRANG" />
+                            <field name="DU_TOAN" />
+                            <field name="NGAY_BAT_DAU" />
+                            <field name="NGAY_KET_THUC" />
+                            
+                            <field name="CHU_DAU_TU" colspan="4" />
+                            <field name="DIA_CHI" colspan="4" />
+                            <field name="DIEN_GIAI" colspan="4" />
+                            <field name="CHI_NHANH_ID" invisible="1" />
+                            <field name="name" invisible="1" />
+                            
+                            
+                        </group>
+                        <field name="active" />
+                        
+                        <!--Master/Detail form-->
+                        
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_danh_muc_cong_trinh_tree" model="ir.ui.view">
+            <field name="name">danh.muc.cong.trinh.tree</field>
+            <field name="model">danh.muc.cong.trinh</field>
+            <field name="arch" type="xml">
+                <tree string="Công trình" hierarchy="parent_id">
+                    <field name="MA_CONG_TRINH" />
+                    <field name="TEN_CONG_TRINH" />
+                    
+                    <field name="LOAI_CONG_TRINH" />
+                    <field name="TINH_TRANG" />
+                    
+                    <field name="NGAY_BAT_DAU" />
+                    <field name="NGAY_KET_THUC" />
+                    <field name="DU_TOAN" />
+                    
+                    <field name="CHU_DAU_TU" />
+                    <field name="DIA_CHI" />
+                    <field name="active" />
+                    <field name="CHI_NHANH_ID" />
+                    <field name="parent_id" invisible="1" />
+                    
+                </tree>
+            </field>
+        </record>
+        
+        <record id="open_menu_danh_muc_cong_trinh" model="ir.actions.act_window">
+            <field name="name">Công trình</field>
+            <field name="res_model">danh.muc.cong.trinh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'import_enabled': True}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        
+        <record id="action_danh_muc_cong_trinh_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_cong_trinh_tree" />
+            <field name="act_window_id" ref="open_menu_danh_muc_cong_trinh" />
+        </record>
+        
+        <record id="action_danh_muc_cong_trinh_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_cong_trinh_form" />
+            <field name="act_window_id" ref="open_menu_danh_muc_cong_trinh" />
+        </record>
+        
+        <!-- <menuitem name="Công trình"
+                  action="danh_muc.open_menu_danh_muc_cong_trinh"
+                  id="menu_danh_muc_cong_trinh"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <!-- <data noupdate="1"> -->
+    <!-- <record id="sequence_danh_muc_cong_trinh_1" model="ir.sequence"> -->
+    <!-- <field name="name">danh_muc_cong_trinh MA_CONG_TRINH sequence</field> -->
+    <!-- <field name="code">danh_muc_cong_trinh_MA_CONG_TRINH</field> -->
+    <!-- <field name="prefix">MA_CONG_TRINH</field> -->
+    <!-- <field name="padding">3</field> -->
+    <!-- </record> -->
+    <!-- </data> -->
+</odoo>

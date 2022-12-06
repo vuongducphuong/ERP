@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_stock_ex_lap_rap_thao_do_form" model="ir.ui.view">
+            <field name="name">stock.ex.lap.rap.thao.do.form</field>
+            <field name="model">stock.ex.lap.rap.thao.do</field>
+            <field name="arch" type="xml">
+                <form string="Lắp ráp tháo dỡ">
+                    <header>
+                        <button name="btn_LSX_PN" string="Lập PN" type="object" class="oe_highlight oe_read_only" />
+                        <button name="btn_LSX_PX" string="Lập PX" type="object" class="oe_highlight oe_read_only" />
+                    </header>
+                    <sheet>
+                        <group col="12">
+                            <field name="LAP_RAP_THAO_DO" widget="radio" options="{'horizontal': True}" nolabel="1" colspan="3"/>
+                            <field name="SOURCE_ID" attrs="{'invisible': ['|',('LAP_RAP_THAO_DO', '!=', 'LAP_RAP'),('SOURCE_ID','=',False)]}" readonly="1" colspan="2"/>
+                            <field name="DA_XUAT_KHO" invisible="1" />
+                            <field name="DA_NHAP_KHO" invisible="1" />
+                        </group>
+                        <group col="12">
+                            <group col="8" colspan="8" string="Thông tin chung" attrs="{'invisible': [('LAP_RAP_THAO_DO', '=', 'LAP_RAP')]}">
+                                <group colspan="8" col="8">
+                                    <field name="HANG_HOA_ID" string="Hàng hóa" colspan="4" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã hàng', 'Tên hàng'],'displays': ['MA']}" required="True" />
+                                    <field name="TEN_HANG_HOA" string="Tên hàng hóa" colspan="4" readonly="1" />
+                                </group>
+                                <group colspan="8" col="4">
+                                    <field name="DVT_ID" />
+                                    <field name="SO_LUONG" />
+                                    <field name="DON_GIA" readonly="True" />
+                                    <field name="THANH_TIEN" readonly="True" />
+                                </group>
+                                <group colspan="4" col="4">
+                                    <field name="DIEN_GIAI" colspan="4" />
+                                    <field name="THAM_CHIEU" colspan="4" readonly="True" widget='many2many_tags'/>
+                                </group>
+                            </group>
+                            <group col="4" colspan="4" string="Lệnh tháo dỡ" attrs="{'invisible': [('LAP_RAP_THAO_DO', '=', 'LAP_RAP')]}">
+                                <field name="NGAY" colspan="4" />
+                                <field name="SO" colspan="4" required="True" />
+                            </group>
+                        </group>
+                        <group col="12">
+                            <group col="8" colspan="8" string="Thông tin chung" attrs="{'invisible': [('LAP_RAP_THAO_DO', '=', 'THAO_DO')]}">
+                                <group colspan="8" col="8">
+                                    <field name="HANG_HOA_ID" string="Thành phẩm" colspan="4" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã hàng', 'Tên hàng'],'displays': ['MA']}" required="True" />
+                                    <field name="TEN_HANG_HOA" string="Tên thành phẩm" colspan="4" readonly="1" />
+                                </group>
+                                <group colspan="8" col="8">
+                                    <field name="DVT_ID" colspan="2" />
+                                    <field name="SO_LUONG" colspan="2" />
+                                    <field name="DON_GIA" colspan="2" readonly="True" />
+                                    <field name="THANH_TIEN" colspan="2" readonly="True" />
+                                </group>
+                                <group colspan="4" col="4">
+                                    <field name="DIEN_GIAI" colspan="4" />
+                                    <field name="THAM_CHIEU" colspan="4" readonly="True" widget='many2many_tags'/>
+                                </group>
+                            </group>
+                            <group col="4" colspan="4" string="Lệnh lắp ráp" attrs="{'invisible': [('LAP_RAP_THAO_DO', '=', 'THAO_DO')]}">
+                                <field name="NGAY" colspan="4" />
+                                <field name="SO" colspan="4" required="True" />
+                            </group>
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Lắp ráp tháo dỡ chi tiết">
+                                <field name="STOCK_EX_LAP_RAP_THAO_DO_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="MA_HANG_ID" options="{'columns': ['MA', 'TEN','SO_LUONG_TON'], 'strings': ['Mã hàng', 'Tên hàng','Số lượng tồn'],'displays': ['MA']}" required="True" />
+                                        <field name="TEN_HANG" />
+                                        <field name="KHO_ID" options="{'columns': ['MA_KHO', 'TEN_KHO'], 'strings': ['Mã kho', 'Tên kho'],'displays': ['MA_KHO']}" />
+                                        <field name="DVT_ID" />
+                                        <field name="SO_LUONG" sum="so luong" />
+                                        <field name="DON_GIA" readonly="True" />
+                                        <field name="THANH_TIEN" sum="thanh tien" readonly="True" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_stock_ex_lap_rap_thao_do_tree" model="ir.ui.view">
+            <field name="name">stock.ex.lap.rap.thao.do.tree</field>
+            <field name="model">stock.ex.lap.rap.thao.do</field>
+            <field name="arch" type="xml">
+                <tree string="Lắp ráp tháo dỡ">
+                    <field name="NGAY" fixed_column="True" />
+                    <field name="SO" string="Số lệnh" fixed_column="True" />
+                    <field name="LAP_RAP_THAO_DO" string="Loại" />
+                    <field name="HANG_HOA_ID" string="Mã thành phẩm/hàng hóa" />
+                    <field name="TEN_HANG_HOA" string="Tên thành phẩm/hàng hóa" />
+                    <field name="DVT_ID" string="ĐVT" />
+                    <field name="SO_LUONG" sum="tong sl" />
+                    <field name="DON_GIA" />
+                    <field name="THANH_TIEN" sum="tong thanh tien" />
+                    <field name="DIEN_GIAI" />
+                    <field name="DA_XUAT_KHO" />
+                    <field name="DA_NHAP_KHO" />
+                    <field name="CHI_NHANH_ID" />
+                    <field name="SOURCE_ID" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_stock_ex_lap_rap_thao_do" model="ir.actions.act_window">
+            <field name="name">Lắp ráp tháo dỡ</field>
+            <field name="res_model">stock.ex.lap.rap.thao.do</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_stock_ex_lap_rap_thao_do_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_stock_ex_lap_rap_thao_do_tree" />
+            <field name="act_window_id" ref="open_menu_stock_ex_lap_rap_thao_do" />
+        </record>
+        <record id="action_stock_ex_lap_rap_thao_do_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_stock_ex_lap_rap_thao_do_form" />
+            <field name="act_window_id" ref="open_menu_stock_ex_lap_rap_thao_do" />
+        </record>
+        <!-- <menuitem name="Lắp ráp tháo dỡ"
+                  action="stock_ex.open_menu_stock_ex_lap_rap_thao_do"
+                  id="menu_stock_ex_lap_rap_thao_do"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_stock_ex_lap_rap_thao_do_1" model="ir.sequence">
+            <field name="name">stock_ex_lap_rap_thao_do SO sequence</field>
+            <field name="code">stock_ex_lap_rap_thao_do_SO</field>
+            <field name="prefix">LRTD</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

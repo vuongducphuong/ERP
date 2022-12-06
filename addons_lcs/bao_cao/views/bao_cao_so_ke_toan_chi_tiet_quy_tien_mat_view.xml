@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_baocao_so_ke_toan_chi_tiet_quy_tien_mat_tree" model="ir.ui.view">
+            <field name="name">bao.cao.so.ke.toan.chi.tiet.quy.tien.mat.tree</field>
+            <field name="model">bao.cao.so.ke.toan.chi.tiet.quy.tien.mat</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Sổ kế toán chi tiết quỹ tiền mặt" create="false" report="true" decoration-bf="LOAI_PHIEU == '0'">
+                    <field name="NGAY_HACH_TOAN" />
+                    <field name="NGAY_CHUNG_TU" />
+                    <field name="SO_PHIEU_THU" linked="true" />
+                    <field name="SO_PHIEU_CHI" linked="true" />
+                    <field name="DIEN_GIAI" />
+                    <field name="TAI_KHOAN" />
+                    <field name="TK_DOI_UNG" />
+                    <field name="PS_NO" sum="Total amount" />
+                    <field name="PS_CO" sum="Total amount" />
+                    <field name="SO_TON" />
+                    <field name="NGUOI_NHAN_NOP" />
+                    <field name="LOAI_PHIEU" invisible="1" />
+                    <field name="MODEL_GOC" invisible="1" />
+                    <field name="ID_GOC" invisible="1" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__so_ke_toan_chi_tiet_quy_tien_mat" model="ir.actions.act_window">
+            <field name="name">Sổ kế toán chi tiết quỹ tiền mặt</field>
+            <field name="res_model">bao.cao.so.ke.toan.chi.tiet.quy.tien.mat</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'header_struct': [['Số phát sinh', ['PS_NO','PS_CO']]]}</field>
+        </record>
+        <!-- Chọn treeview tương ứng với các actions -->
+        <record id="action_bao_cao_so_ke_toan_chi_tiet_quy_tien_mat" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_baocao_so_ke_toan_chi_tiet_quy_tien_mat_tree" />
+            <field name="act_window_id" ref="open_report__so_ke_toan_chi_tiet_quy_tien_mat" />
+        </record>
+        <record id="view_bao_cao_so_ke_toan_chi_tiet_quy_tien_mat_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.so.ke.toan.chi.tiet.quy.tien.mat.form</field>
+            <field name="model">bao.cao.so.ke.toan.chi.tiet.quy.tien.mat</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <field name="CHI_NHANH_ID" options="{'showClearButton': false, 'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays':['TEN_DON_VI']}"/>
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" />
+                            <field name="KY_BAO_CAO" />
+                            <field name="currency_id" options="{'showClearButton': false, 'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}" />
+                            <field name="TU_NGAY" />
+                            <field name="DEN_NGAY" />
+                        </group>
+                        <notebook>
+                            <page string="Tài khoản">
+                                <field name="TAI_KHOAN_IDS" mode="tree">
+                                    <tree create="false" edit="false" delete="false" selection="true">
+                                        <field name="SO_TAI_KHOAN" string="Số tài khoản"/>
+                                        <field name="TEN_TAI_KHOAN" string="Tên tài khoản"/>
+                                        <field name="BAC" string="Bậc"/>
+                                        <!-- <field name="level"/> -->
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <group col="4" >
+                            <field name="CONG_GOP_CAC_BUT_TOAN_GIONG_NHAU" colspan="2" />
+                            <field name="SAP_XEP_CHUNG_TU_THEO_THU_TU_LAP" colspan="2" />
+                        </group>
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_so_ke_toan_chi_tiet_quy_tien_mat_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Sổ kế toán chi tiết quỹ tiền mặt</field>
+            <field name="res_model">bao.cao.so.ke.toan.chi.tiet.quy.tien.mat</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_so_ke_toan_chi_tiet_quy_tien_mat_tham_so_form" />
+        </record>
+    </data>
+</odoo>

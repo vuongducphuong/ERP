@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="sale_ex assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/sale_ex/static/src/js/chung_tu_ban_hang_view.js"></script>
+                
+                <script type="text/javascript" src="/sale_ex/static/src/js/sale_ex_doi_tru_chung_tu_nhieu_dt.js"></script>
+                <script type="text/javascript" src="/sale_ex/static/src/js/sale_ex_doi_tru_chung_tu.js"></script>
+                <script type="text/javascript" src="/sale_ex/static/src/js/sale_ex_bo_doi_tru_chung_tu.js"></script>
+                <script type="text/javascript" src="/sale_ex/static/src/js/sale_ex_tinh_gia_ban.js"></script>
+                <script type="text/javascript" src="/sale_ex/static/src/js/sale_ex_bu_tru_cong_no_view.js"></script>
+                <script type="text/javascript" src="/sale_ex/static/src/js/sale_ex_hop_dong_ban_view.js"></script>
+                <script type="text/javascript" src="/sale_ex/static/src/js/tra_lai_hang_ban_view.js"></script>
+                <script type="text/javascript" src="/sale_ex/static/src/js/giam_gia_hang_ban_view.js"></script>
+                <script type="text/javascript" src="/sale_ex/static/src/js/hoa_don_ban_hang_view.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

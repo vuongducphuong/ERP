@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_supply_dieu_chuyen_form" model="ir.ui.view">
+            <field name="name">supply.dieu.chuyen.cong.cu.dung.cu.form</field>
+            <field name="model">supply.dieu.chuyen.cong.cu.dung.cu</field>
+            <field name="arch" type="xml">
+                <form string="Điều chuyển công cụ dụng cụ">
+                    <header>
+                        <button name="action_ghi_so" string="Ghi sổ" type="object" class="oe_highlight oe_read_only" states="chua_ghi_so"/>
+                        <button id="action_bo_ghi_so" string="Bỏ ghi" states="da_ghi_so"/>
+                        <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so"/>
+                        <field name="LOAI_CHUNG_TU" invisible='1'/>
+
+                    </header>
+                    <sheet>
+                        <group col="12" string="Thông tin chung">
+                            <group colspan ="6" col="6">
+                                <field name="BIEN_BAN_GIAO_NHAN_SO" string="BB giao nhận số"  colspan="6"/>
+                            </group>
+                            <group colspan ="3" col="3">
+                                <field name="NGAY" colspan="3"/>
+                            </group>
+                            <group colspan="6" col="6">
+                                <field name="NGUOI_BAN_GIAO" colspan="6"/>
+                            </group> 
+                            <group colspan="6" col="6">
+                                <field name="NGUOI_TIEP_NHAN" colspan="6"/>
+                            </group> 
+                             <group colspan="12" col="12">
+                                 <field name="LY_DO_DIEU_CHUYEN" colspan="12" string="Lý do ĐC"/>
+                            </group> 
+                          
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1.Chi tiết">
+                                <field name="SUPPLY_DIEU_CHUYEN_CCDC_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <!-- <field name="MA_CCDC_ID" fixed_column="True" options="{'columns': ['MA_CCDC', 'TEN_CCDC'], 'strings': ['Mã CCDC', 'Tên CCDC'],'displays': ['MA_CCDC']}" required='True'/> -->
+										<field name="MA_CCDC_ID" fixed_column="True" options="{'columns': ['MA_CCDC', 'TEN_CCDC'], 'strings': ['Mã CCDC', 'Tên CCDC'],'displays': ['MA_CCDC']}" required='True'/>
+                                        <field name="TEN_CCDC" readonly="1" />
+                                        <field name="TU_DON_VI_ID" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['MA_DON_VI']}" />
+                                        <field name="DEN_DON_VI_ID" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['MA_DON_VI']}" />
+                                        <field name="SO_LUONG_DANG_DUNG" sum="Tổng" readonly="1" />
+                                        <field name="SO_LUONG_DIEU_CHUYEN" sum="Tổng" />
+                                        <field name="TK_NO_ID" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                                        <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục chi phí', 'Tên khoản mục chi phí'],'displays': ['MA_KHOAN_MUC_CP']}" />
+                                        <field name="DOI_TUONG_TONG_HOP_CHI_PHI_ID" options="{'columns': ['MA_DOI_TUONG_THCP', 'TEN_DOI_TUONG_THCP'], 'strings': ['Mã đối tượng THCP', 'Tên đối tượng THCP'],'displays': ['MA_DOI_TUONG_THCP']}" />
+                                        <field name="CONG_TRINH_ID" options="{'columns': ['MA_CONG_TRINH', 'name'], 'strings': ['Mã công trình', 'Tên công trình'],'displays': ['MA_CONG_TRINH']}" />
+                                        <field name="DON_DAT_HANG_ID" options="{'columns': ['SO_DON_HANG', 'partner_id.HO_VA_TEN', 'date_order'], 'strings': ['Số đơn hàng', 'Khách hàng', 'Ngày đơn hàng'],'displays': ['SO_DON_HANG']}" />
+                                        <field name="HOP_DONG_BAN_ID" options="{'columns': ['SO_HOP_DONG', 'NGAY_KY', 'KHACH_HANG_ID.HO_VA_TEN','TRICH_YEU'], 'strings': ['Số hợp đồng', 'Ngày ký', 'Khách hàng','Trích yếu'],'displays': ['SO_HOP_DONG']}" />
+                                        <field name="MA_THONG_KE_ID" options="{'columns': ['MA_THONG_KE', 'TEN_THONG_KE'], 'strings': ['Mã thống kê', 'Tên thống kê'],'displays': ['MA_THONG_KE']}" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_supply_dieu_chuyen_tree" model="ir.ui.view">
+            <field name="name">supply.dieu.chuyen.cong.cu.dung.cu.tree</field>
+            <field name="model">supply.dieu.chuyen.cong.cu.dung.cu</field>
+            <field name="arch" type="xml">
+                <tree string="Điều chuyển công cụ dụng cụ" decoration-info="state=='chua_ghi_so'">
+                    <field name="NGAY" />
+                    <field name="BIEN_BAN_GIAO_NHAN_SO" />
+                    <field name="NGUOI_BAN_GIAO" />
+                    <field name="NGUOI_TIEP_NHAN" />
+                    <field name="LY_DO_DIEU_CHUYEN" />
+                    <field name="CHI_NHANH_ID" />
+					<field name="state" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_supply_dieu_chuyen" model="ir.actions.act_window">
+            <field name="name">Điều chuyển công cụ dụng cụ</field>
+            <field name="res_model">supply.dieu.chuyen.cong.cu.dung.cu</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_supply_dieu_chuyen_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_supply_dieu_chuyen_tree" />
+            <field name="act_window_id" ref="open_menu_supply_dieu_chuyen" />
+        </record>
+        <record id="action_supply_dieu_chuyen_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_supply_dieu_chuyen_form" />
+            <field name="act_window_id" ref="open_menu_supply_dieu_chuyen" />
+        </record>
+        <!-- <menuitem name="Điều chuyển công cụ dụng cụ" action="supply.open_menu_supply_dieu_chuyen" id="menu_supply_dieu_chuyen_" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_supply_dieu_chuyen_1" model="ir.sequence">
+            <field name="name">supply_dieu_chuyen BIEN_BAN_GIAO_NHAN_SO sequence</field>
+            <field name="code">supply_dieu_chuyen_BIEN_BAN_GIAO_NHAN_SO</field>
+            <field name="prefix">ĐCCC</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

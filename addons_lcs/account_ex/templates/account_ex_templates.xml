@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="account assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_so_du_tai_khoan_view.js"></script>
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_so_du_ban_dau_view.js"></script>
+                <script type="text/javascript" src="/account_ex/static/src/js/chon_chung_tu_xuat_kho_mua_hang_view.js"></script>
+                <script type="text/javascript" src="/account_ex/static/src/js/chon_chung_tu_form_view.js"></script>
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_quy_phieu_chi_view.js"></script>
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_ton_kho_vthh_view.js"></script>
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_chi_phi_do_dang_dtthcp_view.js"></script>
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_chi_phi_do_dang_cong_trinh_view.js"></script>
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_chi_phi_do_dang_don_hang_view.js"></script>
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_chi_phi_do_dang_hop_dong_view.js"></script>                
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_nhap_so_du_ban_dau_cong_no_nhan_vien_view.js"></script>                
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_nhap_so_du_ban_dau_cong_no_khach_hang_view.js"></script>                
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_nhap_so_du_ban_dau_cong_no_nha_cung_cap_view.js"></script>                
+                <script type="text/javascript" src="/account_ex/static/src/js/don_dat_hang_view.js"></script>                              
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_so_du_tai_khoan_ngan_hang_view.js"></script>
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_quy_phieu_thu_view.js"></script>
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_ngan_hang_phieu_chi_view.js"></script>
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_ngan_hang_phieu_thu_view.js"></script>
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_ngan_hang_chuyen_tien_noi_bo_view.js"></script>
+                <script type="text/javascript" src="/account_ex/static/src/js/account_ex_chi_phi_chung_can_phan_bo.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

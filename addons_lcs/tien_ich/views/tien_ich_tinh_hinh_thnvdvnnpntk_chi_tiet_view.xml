@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+  <data>
+    <record id="view_tien_ich_tinh_hinh_thnvdvnnpntk_chi_tiet_form" model="ir.ui.view">
+      <field name="name">tien.ich.tinh.hinh.thnvdvnn.chi.tiet.form</field>
+      <field name="model">tien.ich.thuc.hien.nghia.vu.doi.voi.nha.nuoc.chi.tiet</field>
+      <field name="arch" type="xml">
+        <form string="Tình hình thực hiện nghĩa vụ đối với nhà nước chi tiết" cloudify_js="thiet_lap_bao_cao_tai_chinh_thnvdvnn_phai_nop_trong_ky_view">
+          <sheet>
+            <group col="2">
+              <field name="TEN_CHI_TIEU" readonly="1" string="Chỉ tiêu" />
+              <field name="SO_PHAI_NOP_TRONG_KY" colspan="2" string="Công thức" readonly="1" />
+              <field name="LOAI_CHI_TIEU" colspan="2" invisible="1" />
+            </group>
+            <button id="btn_xoa_cong_thuc_1" class="oe_edit_only" string="Xóa công thức" />
+            <!--Master/Detail form-->
+            <notebook>
+              <page string="Chi tiết" attrs="{'invisible': [('LOAI_CHI_TIEU', '=', '1')]}">
+                <field name="TIEN_ICH_TINH_HINH_THNVDVNN_PNTK_LOAI_CHI_TIEU_CHI_TIET_IDS" mode="tree">
+                  <tree editable="bottom" create="true">
+                    <field name="PHEP_TINH" />
+                    <field name="KY_HIEU" />
+                    <field name="DIEN_GIAI" readonly="1" />
+                    <field name="TAI_KHOAN_ID" />
+                    <field name="TK_DOI_UNG_ID" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                  </tree>
+                </field>
+              </page>
+              <page string="Chi tiết" attrs="{'invisible': [('LOAI_CHI_TIEU', '!=', '1')]}">
+                <field name="TIEN_ICH_TINH_HINH_THNVDVNN_PNTK_LOAI_CHI_TIEU_TONG_HOP_IDS" mode="tree">
+                  <tree editable="bottom" create="true">
+                    <field name="PHEP_TINH" />
+                    <field name="MA_CHI_TIEU" />
+                    <field name="TEN_CHI_TIEU" readonly="1" />
+                  </tree>
+                </field>
+              </page>
+            </notebook>
+            <button id="btn_lay_lai_cong_thuc_mac_dinh_1" class="oe_edit_only" string="Lấy lại công thức mặc định" />
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <record id="open_menu_tien_ich_tinh_hinh_thuc_hien_nghia_vu_doi_voi_nha_nuoc_chi_tiet" model="ir.actions.act_window">
+      <field name="name">Tình hình thực hiện nghĩa vụ đối với nhà nước chi tiết</field>
+      <field name="res_model">tien.ich.thuc.hien.nghia.vu.doi.voi.nha.nuoc.chi.tiet</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">form</field>
+    </record>
+    <record id="action_tien_ich_tinh_hinh_thuc_hien_nghia_vu_doi_voi_nha_nuoc_chi_tiet_form" model="ir.actions.act_window.view">
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="view_tien_ich_tinh_hinh_thnvdvnnpntk_chi_tiet_form" />
+      <field name="act_window_id" ref="open_menu_tien_ich_tinh_hinh_thuc_hien_nghia_vu_doi_voi_nha_nuoc_chi_tiet" />
+    </record>
+    <!-- <menuitem name="Tình hình thực hiện nghĩa vụ đối với nhà nước chi tiết" action="tien_ich.open_menu_tien_ich_tinh_hinh_thuc_hien_nghia_vu_doi_voi_nha_nuoc_chi_tiet" id="menu_tien_ich_tinh_hinh_thuc_hien_nghia_vu_doi_voi_nha_nuoc_chi_tiet" parent="" sequence="0" /> -->
+  </data>
+  <data noupdate="1"></data>
+</odoo>

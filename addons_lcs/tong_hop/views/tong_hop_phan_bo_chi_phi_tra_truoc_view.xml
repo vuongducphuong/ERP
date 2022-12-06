@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tong_hop_phan_bo_chi_phi_tra_truoc_form" model="ir.ui.view">
+            <field name="name">account.ex.chung.tu.nghiep.vu.khac.form</field>
+            <field name="model">account.ex.chung.tu.nghiep.vu.khac</field>
+            <field name="arch" type="xml">
+                <form string="Phân bổ chi phí trả trước" cloudify_js="phan_bo_chi_phi_tra_truoc_view">
+                    <header>
+                        <button name="action_ghi_so" string="Ghi sổ" type="object" class="oe_highlight oe_read_only" states="chua_ghi_so"/>
+                        <button id="action_bo_ghi_so" string="Bỏ ghi" states="da_ghi_so"/>
+                        <field name="state" widget="statusbar" statusbar_visible="chua_ghi_so,da_ghi_so"/>
+                        <field name="LOAI_CHUNG_TU" invisible="1"/>
+                    </header>
+                    <sheet>
+                        <group col='6'>
+                            <group colspan='4' col='6' string="Thông tin chung">
+                                
+                                <field name="DIEN_GIAI" colspan='6'/>
+                                <field name="THANG" readonly='1' colspan='2'/>
+                                <field name="NAM" readonly='1' colspan='2'/>
+                                <field name="THAM_CHIEU"  invisible="1" readonly='1'/>
+                            </group>
+                            <group colspan='2' string="Chứng từ">
+                                <field name="NGAY_HACH_TOAN"/>
+                                <field name="NGAY_CHUNG_TU"/>
+                                <field name="SO_CHUNG_TU"/>
+                            </group>
+                        </group>
+                        
+
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1. Xác định chi phí">
+                                <field name="TONG_HOP_PHAN_BO_CHI_PHI_TRA_TRUOC_XD_CHI_PHI_IDS" mode="tree">
+                                  <tree editable="bottom">
+                                    <field name="MA_CP_TRA_TRUOC_ID" string="Mã CP trả trước" readonly='1'/>
+                                    <field name="TEN_CP_TRA_TRUOC" readonly='1' string="Tên CP trả trước"/>
+                                    <field name="SO_TIEN" sum='Total amount' readonly='1'/>
+                                    <field name="SO_TIEN_CHUA_PHAN_BO" sum='Total amount' readonly='1'/>
+                                    <field name="SO_TIEN_PHAN_BO_TRONG_KY" sum='Total amount'/>
+
+                                    <field name="base_currency_id" invisible = '1'/>
+                                  </tree>
+                                </field>
+                            </page>
+                            <page string="2. Phân bổ">
+                                <field name="TONG_HOP_PHAN_BO_CHI_PHI_TRA_TRUOC_PHAN_BO_IDS" mode="tree">
+                                  <tree editable="bottom">
+                                    <field name="MA_CP_TRA_TRUOC_ID" readonly='1'/>
+                                    <field name="TEN_CP_TRA_TRUOC" string="Tên CP trả trước" readonly='1' />
+                                    <field name="CHI_PHI_PHAN_BO" readonly='1'/>
+                                    <field name="DOI_TUONG_PHAN_BO_ID"/>
+                                    <field name="TEN_DOI_TUONG_PHAN_BO" readonly='1'/>
+                                    <field name="TY_LE" sum='Total amount'/>
+                                    <field name="SO_TIEN" sum='Total amount'/>
+                                    <field name="TK_NO_ID" string="TK chi phí" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                                    <field name="KHOAN_MUC_CP_ID"  string="Khoản mục CP" options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục cp', 'Tên khoản mục cp'],'displays': ['MA_KHOAN_MUC_CP']}"/>
+                                    <field name="base_currency_id" invisible = '1'/>
+
+                                  </tree>
+                                </field>
+                              </page>
+                            <page string="3. Hạch toán">
+                                <field name="ACCOUNT_EX_CHUNG_TU_NGHIEP_VU_KHAC_HACH_TOAN_IDS" mode="tree">
+                                  <tree editable="bottom">
+                                    <!-- <field name="DIEN_GIAI" fixed_column="True"/> -->
+                                    <!-- <field name="TK_NO_ID" fixed_column="True" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" readonly='1'/> -->
+                                    <!-- <field name="TK_CO_ID" fixed_column="True" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" readonly='1'/> -->
+									<field name="DIEN_GIAI" fixed_column="True"/>
+                                    <field name="TK_NO_ID" fixed_column="True" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" readonly='1'/>
+                                    <field name="TK_CO_ID" fixed_column="True" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" readonly='1'/>
+                                    <field name="SO_TIEN" sum='Total amount'/>
+                                    <field name="DOI_TUONG_NO_ID" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}"/>
+                                    <field name="TEN_DOI_TUONG_NO" readonly='1'/>
+                                    <field name="DOI_TUONG_CO_ID" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}"/>
+                                    <field name="TEN_DOI_TUONG_CO" readonly='1'/>
+                                    <field name="KHOAN_MUC_CP_ID"  options="{'no_create': True,'columns': ['MA_KHOAN_MUC_CP', 'TEN_KHOAN_MUC_CP'], 'strings': ['Mã khoản mục', 'Tên khoản mục'], 'displays': ['MA_KHOAN_MUC_CP']}" readonly='1'/>
+                                    <field name="DON_VI_ID" readonly='1'/>
+                                    <field name="DOI_TUONG_THCP_ID" readonly='1'/>
+                                    <field name="CONG_TRINH_ID" readonly='1'/>
+                                    <field name="DON_DAT_HANG_ID" readonly='1'/>
+                                    <field name="HOP_DONG_BAN_ID" readonly='1'/>
+                                    <field name="MA_THONG_KE_ID" options="{'columns': ['MA_THONG_KE', 'TEN_THONG_KE'], 'strings': ['Mã thống kê', 'Mã thống kê'],'displays': ['MA_THONG_KE']}"/>
+
+                                    
+                                    <field name="base_currency_id" invisible = '1'/>
+                                  </tree>
+                                </field>
+                              </page>
+                            
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_tong_hop_phan_bo_chi_phi_tra_truoc_tree" model="ir.ui.view">
+            <field name="name">account.ex.chung.tu.nghiep.vu.khac.tree</field>
+            <field name="model">account.ex.chung.tu.nghiep.vu.khac</field>
+            <field name="arch" type="xml">
+                <tree string="Phân bổ chi phí trả trước" decoration-info="state=='chua_ghi_so'" cloudify_js="phan_bo_chi_phi_tra_truoc_list_view">
+                    <field name="NGAY_HACH_TOAN" fixed_column="True"/>
+                    <field name="NGAY_CHUNG_TU" fixed_column="True"/>
+                    <field name="SO_CHUNG_TU" fixed_column="True"/>
+                    <field name="DIEN_GIAI"/>
+                    <field name="TONG_TIEN_PHAN_BO" sum="tổng tiền"/>
+                    
+                    <field name="CHI_NHANH_ID"/>
+					<field name="state" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="open_menu_tong_hop_phan_bo_chi_phi_tra_truoc" model="ir.actions.act_window">
+            <field name="name">Phân bổ chi phí trả trước</field>
+            <field name="res_model">account.ex.chung.tu.nghiep.vu.khac</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'default_LOAI_CHUNG_TU': 4020 }</field>
+             <field name="domain">[('LOAI_CHUNG_TU', '=', 4020)]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p>
+
+                </p>
+            </field>
+        </record>
+
+        <record id="action_tong_hop_phan_bo_chi_phi_tra_truoc_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_tong_hop_phan_bo_chi_phi_tra_truoc_tree"/>
+            <field name="act_window_id" ref="open_menu_tong_hop_phan_bo_chi_phi_tra_truoc"/>
+        </record>
+
+        <record id="action_tong_hop_phan_bo_chi_phi_tra_truoc_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_tong_hop_phan_bo_chi_phi_tra_truoc_form"/>
+            <field name="act_window_id" ref="open_menu_tong_hop_phan_bo_chi_phi_tra_truoc"/>
+        </record>
+
+        <!-- <menuitem name="Phân bổ chi phí trả trước"
+                  action="tong_hop.open_menu_tong_hop_phan_bo_chi_phi_tra_truoc"
+                  id="menu_tong_hop_phan_bo_chi_phi_tra_truoc"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_account_ex_phan_bo_cptt" model="ir.sequence">
+            <field name="name">account_ex_chung_tu_nghiep_vu_khac_SO_CHUNG_TU_PBCPTT sequence</field>
+            <field name="code">account_ex_chung_tu_nghiep_vu_khac_SO_CHUNG_TU_PBCPTT</field>
+            <field name="prefix">PBPTT</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

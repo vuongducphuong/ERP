@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_danh_muc_dieu_khoan_thanh_toan_form" model="ir.ui.view">
+            <field name="name">danh.muc.dieu.khoan.thanh.toan.form</field>
+            <field name="model">danh.muc.dieu.khoan.thanh.toan</field>
+            <field name="arch" type="xml">
+                <form string="Điều khoản thanh toán">
+                    <sheet>
+                        <group col="2">
+                            <field name="MA_DIEU_KHOAN" string="Mã (*)" colspan="2" />
+                            <field name="TEN_DIEU_KHOAN" string="Tên (*)" colspan="2" />
+                        </group>
+                        <group col="2" colspan="2">
+                            <field name="SO_NGAY_DUOC_NO" string="Số ngày được nợ" colspan="2" />
+                            <field name="THOI_HAN_HUONG_CHIET_KHAU" colspan="2" />
+                            <field name="TY_LE_CHIET_KHAU" colspan="2"/>
+                        </group>
+                        <field name="active" />
+                        <group col="2" colspan="2">
+                            
+                            <field name="name" invisible="True" />
+                        </group>
+                        <!--Master/Detail form-->
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_danh_muc_dieu_khoan_thanh_toan_tree" model="ir.ui.view">
+            <field name="name">danh.muc.dieu.khoan.thanh.toan.tree</field>
+            <field name="model">danh.muc.dieu.khoan.thanh.toan</field>
+            <field name="arch" type="xml">
+                <tree string="Điều khoản thanh toán">
+                    <field name="MA_DIEU_KHOAN" />
+                    <field name="TEN_DIEU_KHOAN" />
+                    <field name="SO_NGAY_DUOC_NO" />
+                    <field name="THOI_HAN_HUONG_CHIET_KHAU" string="Thời hạn hưởng CK (ngày)" />
+                    <field name="TY_LE_CHIET_KHAU" string="Tỷ lệ CK (%)"/>
+                    <field name="active" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_danh_muc_dieu_khoan_thanh_toan" model="ir.actions.act_window">
+            <field name="name">Điều khoản thanh toán</field>
+            <field name="res_model">danh.muc.dieu.khoan.thanh.toan</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_danh_muc_dieu_khoan_thanh_toan_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_danh_muc_dieu_khoan_thanh_toan_tree" />
+            <field name="act_window_id" ref="open_menu_danh_muc_dieu_khoan_thanh_toan" />
+        </record>
+        <record id="action_danh_muc_dieu_khoan_thanh_toan_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_danh_muc_dieu_khoan_thanh_toan_form" />
+            <field name="act_window_id" ref="open_menu_danh_muc_dieu_khoan_thanh_toan" />
+        </record>
+        <!-- <menuitem name="Điều khoản thanh toán" action="danh_muc.open_menu_danh_muc_dieu_khoan_thanh_toan" id="menu_danh_muc_dieu_khoan_thanh_toan" parent="" sequence="0" /> -->
+    </data>
+    <!-- <data noupdate="1"> -->
+        <!-- <record id="sequence_danh_muc_dieu_khoan_thanh_toan_1" model="ir.sequence"> -->
+            <!-- <field name="name">danh_muc_dieu_khoan_thanh_toan MA_DIEU_KHOAN sequence</field> -->
+            <!-- <field name="code">danh_muc_dieu_khoan_thanh_toan_MA_DIEU_KHOAN</field> -->
+            <!-- <field name="prefix">ĐKTT</field> -->
+            <!-- <field name="padding">2</field> -->
+        <!-- </record> -->
+        <!-- <record id="sequence_danh_muc_dieu_khoan_thanh_toan_2" model="ir.sequence"> -->
+            <!-- <field name="name">danh_muc_dieu_khoan_thanh_toan TEN_DIEU_KHOAN sequence</field> -->
+            <!-- <field name="code">danh_muc_dieu_khoan_thanh_toan_TEN_DIEU_KHOAN</field> -->
+            <!-- <field name="prefix">Điều khoản thanh toán </field> -->
+            <!-- <field name="padding">2</field> -->
+        <!-- </record> -->
+    <!-- </data> -->
+</odoo>

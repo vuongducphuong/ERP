@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_luong_lich_su_tra_luong_tham_so_form" model="ir.ui.view">
+            <field name="name">tien.luong.lich.su.tra.luong.form.form</field>
+            <field name="model">tien.luong.lich.su.tra.luong.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="tien_luong_lich_su_tra_luong_view">
+                    <sheet>
+                        <group colspan="6" col="6">
+                            <field name="NHAN_VIEN_ID" colspan="4" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.TEN_DON_VI', 'DT_DI_DONG_LIEN_HE'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','ĐT di động'],'displays': ['HO_VA_TEN']}" />
+                            <button id="btn_lay_du_lieu" string="Lấy dữ liệu" class="btn btn-primary" colspan="2" />
+                        </group>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="TIEN_LUONG_LICH_SU_TRA_LUONG_FORM_CHI_TIET_IDS" mode="tree">
+                                    <tree create="false" report="true">
+                                        <field name="NGAY_HACH_TOAN" readonly="1" />
+                                        <field name="NGAY_CHUNG_TU" readonly="1" />
+                                        <field name="SO_CHUNG_TU" readonly="1" linked="true" />
+                                        <field name="DIEN_GIAI" readonly="1" />
+                                        <field name="SO_PHAI_TRA" readonly="1" sum="Tổng" />
+                                        <field name="SO_DA_TRA" readonly="1" sum="Tổng" />
+                                        <field name="SO_CON_PHAI_TRA" sum="Tổng" />
+                                        <field name="ID_GOC" invisible="1" />
+                                        <field name="MODEL_GOC" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_tien_luong_lich_su_tra_luong_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Lịch sử trả lương</field>
+            <field name="res_model">tien.luong.lich.su.tra.luong.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_tien_luong_lich_su_tra_luong_tham_so_form" />
+        </record>
+        <record id="action_open_tien_luong_lich_su_tra_luong_form" model="ir.actions.act_window">
+            <field name="name">Lịch sử trả lương</field>
+            <field name="res_model">tien.luong.lich.su.tra.luong.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+
+
+        <!-- <menuitem name="Trả lương form tham số" action="tien_luong.open_tien_luong_lich_su_tra_luong_tham_so_form" id="menu_tien_luong_lich_su_tra_luong" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

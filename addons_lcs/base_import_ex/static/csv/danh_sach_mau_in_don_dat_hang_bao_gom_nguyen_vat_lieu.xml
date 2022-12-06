@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<DataSetImportExport>
+<MSC_ReportTemplate>
+	  <ReportID>SAOrderVoucher3520NVL</ReportID>
+	  <ReportName>Đơn đặt hàng (bao gồm NVL)</ReportName>
+	  <RefTypeList>/3520/</RefTypeList>
+	  <Description>Đơn đặt hàng (bao gồm NVL)</Description>
+	  <ReportTitle>ĐƠN ĐẶT HÀNG (BAO GỒM NVL)</ReportTitle>
+</MSC_ReportTemplate>
+</DataSetImportExport>

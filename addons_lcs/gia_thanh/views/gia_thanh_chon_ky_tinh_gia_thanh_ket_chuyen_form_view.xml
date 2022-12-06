@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_gia_thanh_chon_ky_tinh_gia_thanh_ket_chuyen_form_tham_so_form" model="ir.ui.view">
+            <field name="name">gia.thanh.chon.ky.tinh.gia.thanh.ket.chuyen.form.form</field>
+            <field name="model">gia.thanh.chon.ky.tinh.gia.thanh.ket.chuyen.form</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số..." cloudify_js="chon_ky_tinh_gia_thanh_ket_chuyen_form_view">
+                    <sheet>
+                        <group col="2" colspan="2">
+                            <field name="KY_TINH_GIA_THANH_ID" />
+                            <field name="DEN_NGAY" invisible="1" />
+                        </group>
+                        <!-- <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer> -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_gia_thanh_chon_ky_tinh_gia_thanh_ket_chuyen_form_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Chọn kỳ tính giá thành</field>
+            <field name="res_model">gia.thanh.chon.ky.tinh.gia.thanh.ket.chuyen.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_gia_thanh_chon_ky_tinh_gia_thanh_ket_chuyen_form_tham_so_form" />
+        </record>
+        <record id="action_open_gia_thanh_chon_ky_tinh_gia_thanh_ket_chuyen_form_form" model="ir.actions.act_window">
+            <field name="name">Chọn kỳ tính giá thành kết chuyển form</field>
+            <field name="res_model">gia.thanh.chon.ky.tinh.gia.thanh.ket.chuyen.form</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <!-- <menuitem name="Chọn kỳ tính giá thành kết chuyển form"
+                  action="gia_thanh.open_gia_thanh_chon_ky_tinh_gia_thanh_ket_chuyen_form_tham_so_form"
+                  id="menu_gia_thanh_chon_ky_tinh_gia_thanh_ket_chuyen_form"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>

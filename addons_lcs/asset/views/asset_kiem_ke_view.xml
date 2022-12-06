@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_asset_kiem_ke_form" model="ir.ui.view">
+            <field name="name">asset.kiem.ke.form</field>
+            <field name="model">asset.kiem.ke</field>
+            <field name="arch" type="xml">
+                <form string="Kiểm kê tài sản cố định" cloudify_js="kiem_ke_form_view">
+                    <header>
+                        <button name="btn_ghi_giam" string="Ghi giảm" type="object" class="oe_read_only" />
+                    </header>
+                    <sheet>
+                        <notebook>
+                            <page string="Kiểm kê">
+                                <group col="6">
+                                    <group colspan="4" col="4">
+                                        <field name="MUC_DICH" colspan="4" />
+                                        <field name="KIEM_KE_DEN_NGAY_TSCD" string="KK đến ngày" colspan="2" readonly="1" />
+                                        <field name="THAM_CHIEU"  invisible="1" readonly="1" />
+                                    </group>
+                                    <group colspan="2" string="Chứng từ">
+                                        <field name="SO" />
+                                        <field name="NGAY" />
+                                        <field name="GIO" widget="float_time" />
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Thành viên tham gia">
+                                <field name="ASSET_KIEM_KE_TAI_SAN_CO_DINH_THANH_VIEN_THAM_GIA_IDS" mode="tree">
+                                    <tree editable="bottom">
+                                        <field name="HO_TEN" />
+                                        <field name="CHUC_DANH" />
+                                        <field name="DAI_DIEN" />
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Kết quả xử lý">
+                                <group col="4">
+                                    <field name="KET_LUAN" colspan="4" />
+                                    <field name="DA_XU_LY_KIEN_DINH" colspan="4" string="Đã xử lý kiến nghị" nolabel="1"/>
+                                </group>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="1. Tài sản">
+                                <field name="ASSET_KIEM_KE_TAI_SAN_CO_DINH_TAI_SAN_IDS" mode="tree">
+                                    <tree editable="bottom" create="false" options="{'header_struct': [['Theo sổ kế toán', ['NGUYEN_GIA','GIA_TRI_TINH_KHAU_HAO','HAO_MON_LUY_KE','GIA_TRI_CON_LAI']],['Theo kiểm kê', ['TON_TAI','CHAT_LUONG_HIEN_THOI']],['Xử lý', ['KIEN_NGHI_XU_LY','GHI_CHU']]]}">
+                                        <field name="MA_TAI_SAN" readonly="1" />
+                                        <field name="TEN_TAI_SAN" readonly="1" />
+                                        <field name="DON_VI_SU_DUNG_ID" readonly="1" />
+                                        <field name="NGUYEN_GIA" readonly="1" sum="Total amount" />
+                                        <field name="GIA_TRI_TINH_KHAU_HAO" readonly="1" sum="Total amount" />
+                                        <field name="HAO_MON_LUY_KE" readonly="1" sum="Total amount" />
+                                        <field name="GIA_TRI_CON_LAI" readonly="1" sum="Total amount" />
+                                        <field name="TON_TAI" />
+                                        <field name="CHAT_LUONG_HIEN_THOI" />
+                                        <field name="KIEN_NGHI_XU_LY" />
+                                        <field name="GHI_CHU" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_asset_kiem_ke_tree" model="ir.ui.view">
+            <field name="name">asset.kiem.ke.tree</field>
+            <field name="model">asset.kiem.ke</field>
+            <field name="arch" type="xml">
+                <tree string="Kiểm kê tài sản cố định" cloudify_js="kiem_ke_list_view">
+                    <field name="NGAY" />
+                    <field name="GIO" />
+                    <field name="SO" />
+                    <field name="KIEM_KE_DEN_NGAY_TSCD" />
+                    <field name="MUC_DICH" />
+                    <field name="KET_LUAN" />
+                    <field name="DA_XU_LY_KIEN_DINH" string="Đã xử lý" />
+                    <field name="CHI_NHANH_ID" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_asset_kiem_ke" model="ir.actions.act_window">
+            <field name="name">Kiểm kê tài sản cố định</field>
+            <field name="res_model">asset.kiem.ke</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_asset_kiem_ke_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_asset_kiem_ke_tree" />
+            <field name="act_window_id" ref="open_menu_asset_kiem_ke" />
+        </record>
+        <record id="action_asset_kiem_ke_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_asset_kiem_ke_form" />
+            <field name="act_window_id" ref="open_menu_asset_kiem_ke" />
+        </record>
+        <record id="action_open_asset_kiem_ke_btn_ghi_giam_form" model="ir.actions.act_window">
+            <field name="name">ghi giảm tài sản cố định</field>
+            <field name="res_model">asset.ghi.giam</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="asset.view_asset_ghi_giam_form" />
+            <!--Implement code here-->
+            <!--
+            <field name="domain">[('payment_type', '=', 'outbound')]</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier'}</field>
+            -->
+        </record>
+        <!-- <menuitem name="Kiểm kê tài sản cố định"
+                  action="asset.open_menu_asset_kiem_ke"
+                  id="menu_asset_kiem_ke"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+        <record id="sequence_asset_kiem_ke_1" model="ir.sequence">
+            <field name="name">asset_kiem_ke_ SO sequence</field>
+            <field name="code">asset_kiem_ke_SO</field>
+            <field name="prefix">KKTS</field>
+            <field name="padding">5</field>
+        </record>
+    </data>
+</odoo>

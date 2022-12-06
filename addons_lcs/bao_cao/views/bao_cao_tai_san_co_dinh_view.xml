@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_tai_san_co_dinh_tree" model="ir.ui.view">
+            <field name="name">bao.cao.tai.san.co.dinh.tree</field>
+            <field name="model">bao.cao.tai.san.co.dinh</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Tài sản cố định" create="false" report="true">
+                    <field name="STT" />
+                    <field name="MA_TSCD" string="Mã TSCĐ" />
+                    <field name="SO_HIEU_CT" string="Số hiệu" />
+                    <field name="NGAY_THANG_CT" string="Ngày tháng" />
+                    <field name="NUOC_SAN_XUAT" />
+                    <field name="THANG_NAM_DUA_VAO_SU_DUNG" />
+                    <field name="SO_HIEU_TSCD" string="Số hiệu TSCĐ" />
+                    <field name="NGUYEN_GIA" />
+                    <field name="GIA_TRI_TINH_KH" string="Giá trị tính KH" />
+                    <field name="TY_LE_KHAU_HAO" string="Tỷ lệ % khấu hao" />
+                    <field name="KHAU_HAO" />
+                    <field name="KHAU_HAO_LUY_KE" />
+                    <field name="SO_HIEU_CT2" string="Số hiệu" />
+                    <field name="NGAY_THANG_NAM_CT2" string="Ngày tháng, năm" />
+                    <field name="LY_DO_GIAM_TSCD" string="Loại TSCĐ" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__tai_san_co_dinh" model="ir.actions.act_window">
+            <field name="name">Tài sản cố định</field>
+            <field name="res_model">bao.cao.tai.san.co.dinh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">{'group_by': ['MA_TSCD'], 'header_struct': [
+	[
+		'Ghi tăng TSCĐ', 
+			[
+				[
+					'Chứng từ',['SO_HIEU_CT','NGAY_THANG_CT']
+				],
+				'NUOC_SAN_XUAT',
+				'THANG_NAM_DUA_VAO_SU_DUNG',
+				'SO_HIEU_TSCD',
+				'NGUYEN_GIA',
+				'GIA_TRI_TINH_KH'
+			]
+	],
+	[
+		'Khấu hao TSCĐ',['TY_LE_KHAU_HAO','KHAU_HAO','KHAU_HAO_LUY_KE']
+	],
+	[
+		'Ghi giảm TSCĐ', 
+			[
+				[
+					'Chứng từ',['SO_HIEU_CT2','NGAY_THANG_NAM_CT2']
+				],
+				'LY_DO_GIAM_TSCD'
+			]
+	]
+], 'expand_all': 'true'}</field>
+        </record>
+        <record id="view_bao_cao_tai_san_co_dinh_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.tai.san.co.dinh.form</field>
+            <field name="model">bao.cao.tai.san.co.dinh</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <field name="CHI_NHANH_ID" colspan="4" options="{'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}"/>
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" colspan="4" />
+                        </group>
+                        <group col="4">
+                            <field name="DON_VI_SU_DUNG_ID" colspan="4" />
+                            <field name="LOAI_TAI_SAN_CO_DINH_ID" colspan="4" />
+                            <field name="KY_BAO_CAO" colspan="4" />
+                            <field name="TU_NGAY" />
+                            <field name="DEN_NGAY" />
+                        </group>
+                        <!--<notebook>
+                            <page string="Chi tiết">
+                                <field name="TAI_KHOAN_IDS" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="code"/>
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>-->
+                        <!--Master/Detail form-->
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_tai_san_co_dinh_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Tài sản cố định</field>
+            <field name="res_model">bao.cao.tai.san.co.dinh</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_tai_san_co_dinh_tham_so_form" />
+        </record>
+        <!-- <menuitem name="Tài sản cố định" action="bao_cao.open_bao_cao_tai_san_co_dinh_tham_so_form" id="menu_bao_cao_tai_san_co_dinh" parent="" sequence="0"/> -->
+    </data>
+</odoo>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_account_tra_tien_ncc_form" model="ir.ui.view">
+            <field name="name">account.tra.tien.nha.cung.cap.form</field>
+            <field name="model">account.tra.tien.nha.cung.cap</field>
+            <field name="arch" type="xml">
+                <form string="Trả tiền NCC">
+                    <sheet>
+
+
+                        <group col="8">
+                            <group colspan="4" col="4">
+                                <field name="phuong_thuc_thanh_toan" colspan="2"/>
+                                <field name="loai_tien" colspan="2" options="{'columns': ['MA_LOAI_TIEN', 'TEN_LOAI_TIEN'], 'strings': ['Mã loại tiền', 'Tên loại tiền'],'displays': ['MA_LOAI_TIEN']}"/>
+                            </group>
+                            <group colspan="8" col="8">
+                                <field name="DOI_TUONG_ID" domain="['|','|',('LA_KHACH_HANG','=','True'),('LA_NHA_CUNG_CAP','=','True'),('LA_NHAN_VIEN','=','True')]" colspan="2" options="{'columns': ['MA', 'HO_VA_TEN','DIA_CHI','MA_SO_THUE','DIEN_THOAI'], 'strings': ['Mã đối tượng', 'Tên đối tượng','Địa chỉ','Mã số thuế','Điện thoại'],'displays': ['MA'],'act_window' : 'danh_muc.open_menu_danh_muc_doi_tuong'}"/>
+                                <field name="ngay_tra_tien" colspan="2"/>
+                                <field name="NHAN_VIEN_ID" colspan="2" domain="[('LA_NHAN_VIEN','=','True')]" options="{'columns': ['MA', 'HO_VA_TEN','DON_VI_ID.name','DIEN_THOAI'], 'strings': ['Mã nhân viên', 'Tên nhân viên','Đơn vị','Điện thoại di động'],'displays': ['MA']}" />
+                                <button name="btn_lay_du_lieu" string="Lấy dữ liệu" class="btn btn-primary" colspan="2"/>
+                                <field name="so_tien" colspan="2"/>
+                            </group>
+                            
+                        </group>
+                        <notebook>
+                            <page string="Chứng từ công nợ">
+                                <field name="PURCHASE_EX_CHUNG_TU_CONG_NO_IDS" mode="tree">
+                                  <tree editable="bottom" create="false" report="true">
+                                    <field name="AUTO_SELECT" invisible="1"/>
+                                    <field name="NGAY_CHUNG_TU" readonly='1'/>
+                                    <field name="SO_CHUNG_TU" readonly='1'/>
+                                    <field name="NGAY_HOA_DON" readonly='1'/>
+                                    <field name="SO_HOA_DON" readonly='1'/>
+                                    <field name="DIEN_GIAI" readonly='1'/>
+                                    <field name="HAN_HACH_TOAN" readonly='1'/>
+                                    <field name="TONG_NO" readonly='1'/>
+                                    <field name="SO_CON_NO" readonly='1'/>
+                                    <field name="SO_TRA"/>
+                                    <field name="TK_PHAI_TRA" readonly='1'/>
+                                    <field name="DIEU_KHOAN_TT" readonly='1'/>
+                                    <field name="TY_LE_CK"/>
+                                    <field name="TIEN_CHIET_KHAU"/>
+                                    <field name="TK_CHIET_KHAU" options="{'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}"/>
+                                  </tree>
+                                </field>
+                              </page>
+                        </notebook>
+                    </sheet>
+                    <footer>
+                        <button name="action_view_result" string="Trả tiền" type="object" class="btn btn-primary" context="{'discard_changes': True}"/>
+                        <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_menu_account_tra_tien_nha_cung_cap" model="ir.actions.act_window">
+            <field name="name">Trả tiền nhà cung cấp</field>
+            <field name="res_model">account.tra.tien.nha.cung.cap</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_account_tra_tien_ncc_form"/>
+        </record>
+
+        <record id="action_account_phieuchi_tra_tien_nha_cung_cap" model="ir.actions.act_window">
+            <field name="name">Phiếu chi trả tiền nhà cung cấp</field>
+            <field name="res_model">account.ex.phieu.thu.chi</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="account_ex.view_nganhang_tra_tien_ncc_form"/>
+        </record>
+
+        <!-- <menuitem name="Trả tiền Nhà cung cấp"
+             action="open_menu_account_tra_tien_nha_cung_cap"
+             id="menu_account_tra_tien_nha_cung_cap"
+             parent=""
+             sequence=""/> -->
+    </data>
+</odoo>

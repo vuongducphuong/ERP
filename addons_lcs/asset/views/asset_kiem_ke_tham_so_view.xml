@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_asset_kiem_ke_tham_so_tham_so_form" model="ir.ui.view">
+            <field name="name">asset.kiem.ke.tham.so.form</field>
+            <field name="model">asset.kiem.ke.tham.so</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <group colspan="2" col="2">
+                                <field name="KIEM_KE_DEN_NGAY"/>
+                            </group>
+                            <group>
+
+                            </group>
+                        </group>
+                        <footer>
+                            <button name="action_view_result" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}"/>
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="open_asset_kiem_ke_tham_so_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Kiểm kê tài sản cố định tham số</field>
+            <field name="res_model">asset.kiem.ke.tham.so</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_asset_kiem_ke_tham_so_tham_so_form"/>
+        </record>
+
+        <record id="action_open_asset_kiem_ke_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Kiểm kê tài sản cố định tham số</field>
+            <field name="res_model">asset.kiem.ke</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="asset.view_asset_kiem_ke_form"/>
+        </record>
+
+        <!-- <menuitem name="Kiểm kê tài sản cố định tham số"
+                  action="asset.open_asset_kiem_ke_tham_so_tham_so_form"
+                  id="menu_asset_kiem_ke_tham_so"
+                  parent=""
+                  sequence="0"/> -->
+    </data>
+    <data noupdate="1">
+    </data>
+</odoo>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_bao_cao_phan_tich_cong_no_phai_tra_theo_tuoi_no_tree" model="ir.ui.view">
+            <field name="name">bao.cao.phan.tich.cong.no.phai.tra.theo.tuoi.no.tree</field>
+            <field name="model">bao.cao.phan.tich.cong.no.phai.tra.theo.tuoi.no</field>
+            <field name="arch" type="xml">
+                <tree has_border="true" string="Phân tích công nợ phải trả theo tuổi nợ" create="false" report="true">
+                    <field name="MA_NHOM_NCC" />
+                    <field name="MA_NHA_CUNG_CAP" />
+                    <field name="TEN_NHA_CUNG_CAP" />
+                    <field name="DIA_CHI" />
+                    <field name="TONG_NO" sum="tong nơ" />
+                    <field name="KHONG_CO_HAN_NO" sum="tong nơ" />
+                    <field name="NO_TRUOC_HAN_0_30_NGAY" sum="tong nơ" />
+                    <field name="NO_TRUOC_HAN_31_60_NGAY" sum="tong nơ" />
+                    <field name="NO_TRUOC_HAN_61_90_NGAY" sum="tong nơ" />
+                    <field name="NO_TRUOC_HAN_91_120_NGAY" sum="tong nơ" />
+                    <field name="NO_TRUOC_HAN_TREN_120_NGAY" sum="tong nơ" />
+                    <field name="NO_TRUOC_HAN_TONG" sum="tong nơ" />
+                    <field name="NO_QUA_HAN_1_30_NGAY" sum="tong nơ" />
+                    <field name="NO_QUA_HAN_31_60_NGAY" sum="tong nơ" />
+                    <field name="NO_QUA_HAN_61_90_NGAY" sum="tong nơ" />
+                    <field name="NO_QUA_HAN_91_120_NGAY" sum="tong nơ" />
+                    <field name="NO_QUA_HAN_TREN_120_NGAY" sum="tong nơ" />
+                    <field name="NO_QUA_HAN_TONG" sum="tong nơ" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_report__phan_tich_cong_no_phai_tra_theo_tuoi_no" model="ir.actions.act_window">
+            <field name="name">PHÂN TÍCH CÔNG NỢ PHẢI TRẢ THEO TUỔI NỢ</field>
+            <field name="res_model">bao.cao.phan.tich.cong.no.phai.tra.theo.tuoi.no</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--Implement grouping and header organization-->
+            <field name="context">
+        {'group_by': 
+        ['MA_NHOM_NCC'], 'header_struct':
+        [['Nợ trước hạn', ['NO_TRUOC_HAN_0_30_NGAY','NO_TRUOC_HAN_31_60_NGAY', 'NO_TRUOC_HAN_61_90_NGAY', 'NO_TRUOC_HAN_91_120_NGAY','NO_TRUOC_HAN_TREN_120_NGAY','NO_TRUOC_HAN_TONG']], 
+        ['Nợ quá hạn', ['NO_QUA_HAN_1_30_NGAY', 'NO_QUA_HAN_31_60_NGAY','NO_QUA_HAN_61_90_NGAY','NO_QUA_HAN_91_120_NGAY','NO_QUA_HAN_TREN_120_NGAY','NO_QUA_HAN_TONG']]]
+        , 'expand_all': 'true'}</field>
+        </record>
+        <record id="view_bao_cao_phan_tich_cong_no_phai_tra_theo_tuoi_no_tham_so_form" model="ir.ui.view">
+            <field name="name">bao.cao.phan.tich.cong.no.phai.tra.theo.tuoi.no.form</field>
+            <field name="model">bao.cao.phan.tich.cong.no.phai.tra.theo.tuoi.no</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="4">
+                            <field name="CHI_NHANH_ID" options="{'showClearButton': false,'columns': ['MA_DON_VI', 'TEN_DON_VI'], 'strings': ['Mã đơn vị', 'Tên đơn vị'],'displays': ['TEN_DON_VI']}" />
+                            <field name="BAO_GOM_SO_LIEU_CHI_NHANH_PHU_THUOC" />
+                        </group>
+                        <group col="4">
+                            <field name="DEN_NGAY" />
+                            <field name="TAI_KHOAN_ID" options="{'showClearButton': false,'columns': ['SO_TAI_KHOAN', 'TEN_TAI_KHOAN'], 'strings': ['Số tài khoản', 'Tên tài khoản'],'displays': ['SO_TAI_KHOAN']}" />
+                            <field name="NHOM_NCC_ID" options="{'columns': ['MA', 'TEN'], 'strings': ['Mã nhóm', 'Tên nhóm'],'displays':['MA']}" />
+                        </group>
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="NHACUNGCAP_IDS" mode="tree">
+                                    <tree report="true" create="false" edit="false" delete="false">
+                                        <field name="MA_DOI_TUONG" string="Mã nhà cung cấp" />
+                                        <field name="name" string="Tên nhà cung cấp" />
+                                        <field name="DIA_CHI" string="Địa chỉ" />
+                                        <field name="MA_SO_THUE" string="Mã số thuế" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                        <!--Master/Detail form-->
+                        <footer>
+                            <button name="action_view_report" string="Đồng ý" type="object" class="oe_highlight" context="{'discard_changes': True}" />
+                            <button name="button_cancel" string="Hủy bỏ" type="object" special="cancel" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="open_bao_cao_phan_tich_cong_no_phai_tra_theo_tuoi_no_tham_so_form" model="ir.actions.act_window">
+            <field name="name">Phân tích công nợ phải trả theo tuổi nợ</field>
+            <field name="res_model">bao.cao.phan.tich.cong.no.phai.tra.theo.tuoi.no</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_bao_cao_phan_tich_cong_no_phai_tra_theo_tuoi_no_tham_so_form" />
+        </record>
+    </data>
+</odoo>

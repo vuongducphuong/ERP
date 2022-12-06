@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_luong_bang_luong_form" model="ir.ui.view">
+            <field name="name">tien.luong.bang.luong.form</field>
+            <field name="model">tien.luong.bang.luong</field>
+            <field name="arch" type="xml">
+                <form string="Bảng lương" cloudify_js="tien_luong_tinh_luong_form_view">
+                    <sheet>
+                        <group col="2" colspan="2">
+                            <field name="THANG" invisible="1" />
+                            <field name="NAM" invisible="1" options="{'showSpinButtons': true}" />
+                            <field name="TEN_BANG_LUONG" readonly="1" nolabel="1" style="font-size: 16pt; font-weight: bold;" />
+                            <field name="TONG_SO_TIEN" invisible="1" />
+                            <field name="LOAI_BANG_LUONG" invisible="1" />
+                            <field name="LOAI_CHUNG_TU" invisible="1" />
+                            <field name="TEN_LOAI_BANG_LUONG" invisible="1" />
+                        </group>
+                        <!--Master/Detail form-->
+                        <notebook>
+                            <page string="Chi tiết">
+                                <field name="TIEN_LUONG_BANG_LUONG_CHI_TIET_IDS" mode="tree">
+                                    <tree has_border="true" editable="bottom" delete="false" create="false" options="{'group_by':['PHONG_BAN'],'header_struct': [['Lương thời gian được hưởng 100% lương', ['SO_CONG_HUONG','SO_TIEN_HUONG']],['Nghỉ việc, ngừng việc, không hưởng 100% lương', ['SO_CONG_KHONG_HUONG','SO_TIEN_KHONG_HUONG']],['Lương làm thêm', ['SO_GIO_CONG_LAM_THEM','SO_TIEN_LAM_THEM']],['Các khoản khấu trừ', ['BHXH_KHAU_TRU','BHYT_KHAU_TRU','BHTN_KHAU_TRU','KPCD_KHAU_TRU','THUE_TNCN_KHAU_TRU','CONG_KHAU_TRU']],['Bảo hiểm, KPCĐ công ty đóng', ['BHXH_CONG_TY_DONG','BHYT_CONG_TY_DONG','BHTN_CONG_TY_DONG','KPCD_CONG_TY_DONG']]]}">
+                                        <field name="STT" readonly="1" />
+                                        <field name="MA_NHAN_VIEN" options="{'columns': ['MA', 'HO_VA_TEN'], 'strings': ['Mã nhân viên', 'Tên nhân viên'],'displays':['MA']}" />
+                                        <field name="TEN_NHAN_VIEN" readonly="1" />
+                                        <field name="CHUC_DANH" />
+                                        <field name="LUONG_CO_BAN" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="DON_GIA_NGAY_CONG" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '!=', 'LUONG_THOI_GIAN_THEO_BUOI')]}" />
+                                        <field name="DON_GIA_GIO_CONG" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '!=', 'LUONG_THOI_GIAN_THEO_GIO')]}" />
+                                        <!-- <field name="SO_NGAY_CONG_HUONG" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '!=', 'LUONG_THOI_GIAN_THEO_BUOI')]}" sum="Tổng" /> -->
+                                        <field name="SO_CONG_HUONG" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', 'not in', ('LUONG_THOI_GIAN_THEO_BUOI', 'LUONG_THOI_GIAN_THEO_GIO'))]}" sum="Tổng" />
+                                        <field name="SO_TIEN_HUONG" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', 'not in', ('LUONG_THOI_GIAN_THEO_BUOI', 'LUONG_THOI_GIAN_THEO_GIO'))]}" sum="Tổng" />
+                                        <field name="SO_CONG_KHONG_HUONG" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', 'not in', ('LUONG_THOI_GIAN_THEO_BUOI', 'LUONG_THOI_GIAN_THEO_GIO'))]}" sum="Tổng" />
+                                        <!-- <field name="SO_GIO_CONG_KHONG_HUONG" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '!=', 'LUONG_THOI_GIAN_THEO_GIO')]}" sum="Tổng" /> -->
+                                        <field name="SO_TIEN_KHONG_HUONG" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', 'not in', ('LUONG_THOI_GIAN_THEO_BUOI', 'LUONG_THOI_GIAN_THEO_GIO'))]}" sum="Tổng" />
+                                        <field name="SO_GIO_CONG_LAM_THEM" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', 'not in', ('LUONG_THOI_GIAN_THEO_BUOI', 'LUONG_THOI_GIAN_THEO_GIO'))]}" sum="Tổng" />
+                                        <field name="SO_TIEN_LAM_THEM" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', 'not in', ('LUONG_THOI_GIAN_THEO_BUOI', 'LUONG_THOI_GIAN_THEO_GIO'))]}" sum="Tổng" />
+                                        <field name="PHU_CAP_THUOC_QUY_LUONG" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="PHU_CAP_KHAC" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="TONG_SO" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="SO_TIEN_TAM_UNG" sum="Tổng" />
+                                        <field name="LUONG_DONG_BH" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="BHXH_KHAU_TRU" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="BHYT_KHAU_TRU" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="BHTN_KHAU_TRU" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="KPCD_KHAU_TRU" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="THUE_TNCN_KHAU_TRU" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="CONG_KHAU_TRU" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="GIAM_TRU_GIA_CANH" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="TONG_THU_NHAP_CHIU_THUE_TNCN" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="THU_NHAP_TINH_THUE_TNCN" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="SO_TIEN_CON_DUOC_LINH" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="BHXH_CONG_TY_DONG" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="BHYT_CONG_TY_DONG" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="BHTN_CONG_TY_DONG" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="KPCD_CONG_TY_DONG" attrs="{'column_invisible': [('parent.TEN_LOAI_BANG_LUONG', '=', 'LUONG_TAM_UNG')]}" sum="Tổng" />
+                                        <field name="PHONG_BAN" />
+                                        <field name="DON_VI_ID" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_tien_luong_bang_luong_tree" model="ir.ui.view">
+            <field name="name">tien.luong.bang.luong.tree</field>
+            <field name="model">tien.luong.bang.luong</field>
+            <field name="arch" type="xml">
+                <tree string="Bảng lương" cloudify_js="tien_luong_tinh_luong_list_view">
+                    <field name="THANG" />
+                    <field name="NAM" />
+                    <field name="TONG_SO_TIEN" />
+                    <field name="LOAI_BANG_LUONG" />
+                    <field name="TEN_BANG_LUONG" />
+                </tree>
+            </field>
+        </record>
+        <record id="open_menu_tien_luong_bang_luong" model="ir.actions.act_window">
+            <field name="name">Bảng lương</field>
+            <field name="res_model">tien.luong.bang.luong</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Nhấn vào đây để thêm mới!
+                </p>
+                <p></p>
+            </field>
+        </record>
+        <record id="action_tien_luong_bang_luong_tree" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_tien_luong_bang_luong_tree" />
+            <field name="act_window_id" ref="open_menu_tien_luong_bang_luong" />
+        </record>
+        <record id="action_tien_luong_bang_luong_form" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_tien_luong_bang_luong_form" />
+            <field name="act_window_id" ref="open_menu_tien_luong_bang_luong" />
+        </record>
+
+    </data>
+    <data noupdate="1"></data>
+</odoo>

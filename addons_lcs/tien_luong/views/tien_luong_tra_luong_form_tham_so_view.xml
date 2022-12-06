@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- © 2018 GDC COMPANY ALL RIGHTS RESERVED -->
+<odoo>
+    <data>
+        <record id="view_tien_luong_tra_luong_form_tham_so_tham_so_form" model="ir.ui.view">
+            <field name="name">tien.luong.tra.luong.form.tham.so.form</field>
+            <field name="model">tien.luong.tra.luong.form.tham.so</field>
+            <field name="arch" type="xml">
+                <form string="Chọn tham số...">
+                    <sheet>
+                        <group col="6">
+                            <group colspan="4" col="4">
+                                <field name="NGAY_TRA_LUONG" colspan="2" />
+                                <field name="PHUONG_THUC_THANH_TOAN" string="Phương thức TT" widget="radio" options="{'horizontal': true, 'alway_edit': True}" class="o_horizontal" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Thông tin trả lương">
+                                <field name="TIEN_LUONG_TRA_LUONG_FORM_THAM_SO_CHI_TIET_IDS" mode="tree">
+                                    <tree editable="bottom" report="True" delete="false" create="false">
+                                        <field name="MA_NHAN_VIEN" readonly="1" />
+                                        <field name="TEN_NHAN_VIEN" readonly="1" />
+                                        <field name="DON_VI" readonly="1" />
+                                        <field name="SO_TAI_KHOAN" readonly="1" />
+                                        <field name="TEN_NGAN_HANG" readonly="1" />
+                                        <field name="SO_CON_PHAI_TRA" readonly="1" sum="Tổng" />
+                                        <field name="SO_TRA" sum="Tổng" />
+                                        <field name="LICH_SU_TRA_LUONG" linked="true" />
+                                        <field name="AUTO_SELECT" invisible="1" />
+                                        <field name="MA_NHAN_VIEN_ID" invisible="1" />
+                                        <field name="DON_VI_ID" invisible="1" />
+                                        <field name="NGAN_HANG_ID" invisible="1" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- <menuitem name="Trả lương form tham số" action="tien_luong.open_tien_luong_tra_luong_form_tham_so_tham_so_form" id="menu_tien_luong_tra_luong_form_tham_so" parent="" sequence="0" /> -->
+    </data>
+    <data noupdate="1"></data>
+</odoo>
