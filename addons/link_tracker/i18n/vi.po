@@ -165,7 +165,7 @@ msgstr "Link Clicks"
 #: model:ir.model,name:link_tracker.model_link_tracker
 #: model:ir.ui.menu,name:link_tracker.link_tracker_menu_main
 msgid "Link Tracker"
-msgstr "Kiểm soát đường dẫn"
+msgstr "Kiểm soát link"
 
 #. module: link_tracker
 #: model:ir.model,name:link_tracker.model_link_tracker_click

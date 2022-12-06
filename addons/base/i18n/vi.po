@@ -21717,7 +21717,7 @@ msgstr "Trường liên kết"
 #: model:ir.module.module,shortdesc:base.module_link_tracker
 #: model:ir.module.module,shortdesc:base.module_website_links
 msgid "Link Tracker"
-msgstr "Kiểm soát đường dẫn"
+msgstr "Kiểm soát link"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_timesheet_grid_holidays

@@ -341,7 +341,7 @@ msgstr "Để sau"
 #. module: utm
 #: model:ir.ui.menu,name:utm.menu_link_tracker_root
 msgid "Link Tracker"
-msgstr "Kiểm soát đường dẫn"
+msgstr "kiểm soát link"
 
 #. module: utm
 #. openerp-web

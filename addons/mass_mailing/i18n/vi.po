@@ -2422,7 +2422,7 @@ msgstr "Let's try the Email Marketing app."
 #: model:ir.model,name:mass_mailing.model_link_tracker
 #: model:ir.ui.menu,name:mass_mailing.link_tracker_menu_mass_mailing
 msgid "Link Tracker"
-msgstr "Kiểm soát đường dẫn"
+msgstr "kiểm soát link"
 
 #. module: mass_mailing
 #: model:ir.model,name:mass_mailing.model_link_tracker_click
