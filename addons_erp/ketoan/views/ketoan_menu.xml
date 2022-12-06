@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Top menu item -->
+    <menuitem name="Kế toán"
+        id="menu_ketoan"        
+        web_icon="ketoan,static/description/icon.png"
+        sequence="609">
+        <!-- <menuitem id="menu_ke_toan_dashboard" name="Trang chủ" action="open_ketoan_dashboard_kanban" sequence="1"/> -->
+        <menuitem id="menu_ke_toan_dashboard" name="Trang chủ" sequence="1"/>
+        <menuitem id="menu_ke_toan_thu_chi" name="Thu-Chi" sequence="2">
+            <menuitem id="menu_ke_toan_thu_chi_quy_tien_mat" name="Quỹ tiền mặt" sequence="1">
+                <!-- <menuitem id="menu_ke_toan_thu_chi_quy_tien_mat_thu_tien" name="Thu tiền" action="action_ke_toan_thu_chi_quy_tien_mat_thu_tien" sequence="1"/> -->
+                <menuitem id="menu_ke_toan_thu_chi_quy_tien_mat_thu_tien" name="Thu tiền" sequence="1"/>
+                <!-- <menuitem id="menu_ke_toan_thu_chi_quy_tien_mat_chi_tien" name="Chi tiền" action="action_ke_toan_thu_chi_quy_tien_mat_chi_tien" sequence="2"/> -->
+                <menuitem id="menu_ke_toan_thu_chi_quy_tien_mat_chi_tien" name="Chi tiền" sequence="2"/>
+            </menuitem>
+            <menuitem id="menu_ke_toan_thu_chi_ngan_hang" name="Ngân hàng" sequence="2">
+                <!-- <menuitem id="menu_ke_toan_thu_chi_ngan_hang_thu_tien" name="Thu tiền" action="action_ke_toan_thu_chi_ngan_hang_thu_tien" sequence="1"/> -->
+                <menuitem id="menu_ke_toan_thu_chi_ngan_hang_thu_tien" name="Thu tiền" sequence="1"/>
+                <!-- <menuitem id="menu_ke_toan_thu_chi_ngan_hang_chi_tien" name="Chi tiền" action="action_ke_toan_thu_chi_ngan_hang_chi_tien" sequence="2"/> -->
+                <menuitem id="menu_ke_toan_thu_chi_ngan_hang_chi_tien" name="Chi tiền" sequence="2"/>
+                <!-- <menuitem id="menu_ke_toan_thu_chi_ngan_hang_chuyen_tien_noi_bo" name="Chuyển nội bộ" action="action_ke_toan_thu_chi_ngan_hang_chuyen_noi_bo" sequence="3"/> -->
+                <menuitem id="menu_ke_toan_thu_chi_ngan_hang_chuyen_tien_noi_bo" name="Chuyển nội bộ" sequence="3"/>
+            </menuitem>            
+        </menuitem>
+    </menuitem>
+</odoo>
