@@ -2206,7 +2206,7 @@ msgstr "Bật cấu hình"
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_invite_users.xml:0
 #, python-format
 msgid "Enter e-mail address"
-msgstr "Enter e-mail address"
+msgstr "Nhập địa chỉ email"
 
 #. module: web
 #. openerp-web
@@ -2813,7 +2813,7 @@ msgstr "Mời"
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_invite_users.xml:0
 #, python-format
 msgid "Invite New Users"
-msgstr "Invite New Users"
+msgstr "Mời người dùng mới"
 
 #. module: web
 #. openerp-web
@@ -3882,7 +3882,7 @@ msgstr "Mật khẩu"
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_invite_users.xml:0
 #, python-format
 msgid "Pending Invitations:"
-msgstr "Pending Invitations:"
+msgstr "Lời mời đang chờ xác nhận:"
 
 #. module: web
 #. openerp-web

@@ -50,7 +50,7 @@ msgstr ""
 "                                            Active User\n"
 "                                        </span>\n"
 "                                        <span class=\"o_form_label\" attrs=\"{'invisible':[('active_user_count', '&lt;=', '1')]}\">\n"
-"                                            Active Users\n"
+"                                            Người dùng kích hoạt\n"
 "                                        </span>"
 
 #. module: base_setup
@@ -395,12 +395,12 @@ msgstr "Quản lý liên công ty"
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid "Manage Languages"
-msgstr "Manage Languages"
+msgstr "Quản lý ngôn ngữ"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid "Manage Users"
-msgstr "Manage Users"
+msgstr "Quản lý Người dùng"
 
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings__group_multi_currency
@@ -410,7 +410,7 @@ msgstr "Đa tiền tệ"
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings__active_user_count
 msgid "Number of Active Users"
-msgstr "Number of Active Users"
+msgstr "Số lượng Người dùng kích hoạt"
 
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings__company_count
@@ -420,7 +420,7 @@ msgstr "Số lượng công ty"
 #. module: base_setup
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings__language_count
 msgid "Number of Languages"
-msgstr "Number of Languages"
+msgstr "Số ngôn ngữ"
 
 #. module: base_setup
 #: model_terms:ir.ui.view,arch_db:base_setup.res_config_settings_view_form

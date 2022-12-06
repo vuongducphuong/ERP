@@ -195,7 +195,7 @@ msgstr "Đạt được mục tiêu kinh doanh hằng tháng"
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.default_website_description
 msgid "Additional languages"
-msgstr "Biết ngôn ngữ khác"
+msgstr "Ngôn ngữ khác"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.default_website_description

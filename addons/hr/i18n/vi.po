@@ -467,7 +467,7 @@ msgstr "Ghi chú bổ sung"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Additional languages"
-msgstr "Biết ngôn ngữ khác"
+msgstr "Ngôn ngữ khác"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__address_home_id
