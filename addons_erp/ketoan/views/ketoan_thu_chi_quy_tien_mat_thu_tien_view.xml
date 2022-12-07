@@ -4,7 +4,7 @@
 
         <!-- VIEWS -->
 
-        <record id="view_ketoan_thu_chi_quy_tien_mat_thu_tien" model="ir.ui.view">
+        <record id="view_ketoan_thu_chi_quy_tien_mat_thu_tien_tree" model="ir.ui.view">
             <field name="name">ketoan.thu.chi.quy.tien.mat.thu.tien.tree</field>
             <field name="model">account.payment</field>
             <field name="arch" type="xml">
@@ -13,15 +13,15 @@
                         <button name="action_post" type="object" string="Confirm"/>
                     </header>
                     <field name="company_currency_id" invisible="1"/>
-                    <field name="date"/>
-                    <field name="name"/>
-                    <field name="journal_id"/>
+                    <field name="date" string="Ngày CT"/>
+                    <field name="name" string="Số chứng từ"/>
+                    <field name="journal_id" string="Nghiệp vụ"/>
                     <field name="payment_method_line_id"/>
-                    <field name="partner_id" string="Customer"/>
+                    <field name="partner_id" string="Đối tượng"/>
                     <field name="amount_signed" string="Amount in Currency" groups="base.group_multi_currency" optional="hide"/>
                     <field name="currency_id" string="Payment Currency" groups="base.group_multi_currency" optional="hide"/>
-                    <field name="amount_company_currency_signed" widget="monetary" string="Amount" sum="Total"/>
-                    <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-success="state == 'posted'"/>
+                    <field name="amount_company_currency_signed" widget="monetary" string="Số tiền" sum="Tổng"/>
+                    <field name="state" string="Trạng thái" widget="badge" decoration-info="state == 'draft'" decoration-success="state == 'posted'"/>
                 </tree>
             </field>
         </record>
@@ -29,7 +29,7 @@
         <record id="view_account_supplier_payment_tree" model="ir.ui.view">
             <field name="name">account.supplier.payment.tree</field>
             <field name="model">account.payment</field>
-            <field name="inherit_id" ref="account.view_ketoan_thu_chi_quy_tien_mat_thu_tien"/>
+            <field name="inherit_id" ref="ketoan.view_ketoan_thu_chi_quy_tien_mat_thu_tien_tree"/>
             <field name="mode">primary</field>
             <field name="arch" type="xml">
                 <field name="partner_id" position="attributes">
@@ -41,7 +41,7 @@
         <!-- <record id="view_account_various_payment_tree" model="ir.ui.view">
             <field name="name">account.supplier.payment.tree</field>
             <field name="model">account.payment</field>
-            <field name="inherit_id" ref="account.view_ketoan_thu_chi_quy_tien_mat_thu_tien"/>
+            <field name="inherit_id" ref="ketoan.view_ketoan_thu_chi_quy_tien_mat_thu_tien_tree"/>
             <field name="mode">primary</field>
             <field name="arch" type="xml">
                 <field name="partner_id" position="attributes">
@@ -145,28 +145,28 @@
             <field name="name">ketoan.thu.chi.quy.tien.mat.thu.tien.form</field>
             <field name="model">account.payment</field>
             <field name="arch" type="xml">
-                <form string="Register Payment">
+                <form string="Thu quỹ">
                     <header>
-                        <button name="action_post" string="Confirm" type="object" class="oe_highlight"
+                        <button name="action_post" string="Xác nhận" type="object" class="oe_highlight"
                                 attrs="{'invisible': [('state', '!=', 'draft')]}" data-hotkey="v"/>
-                        <button name="action_draft" string="Reset To Draft" type="object" class="btn btn-secondary"
+                        <button name="action_draft" string="Chuyển về bản nháp" type="object" class="btn btn-secondary"
                                 attrs="{'invisible': [('state', 'not in', ('posted', 'cancel'))]}"
                                 groups="account.group_account_invoice" data-hotkey="w"/>
-                        <button name="action_cancel" string="Cancel" type="object"
+                        <button name="action_cancel" string="Hủy bỏ" type="object"
                                 attrs="{'invisible': [('state', '!=', 'draft')]}" data-hotkey="z"/>
-                        <button name="mark_as_sent" string="Mark as Sent" type="object" data-hotkey="q"
+                        <button name="mark_as_sent" string="Đánh dấu Đã gửi" type="object" data-hotkey="q"
                                 attrs="{'invisible': ['|', '|', ('state', '!=', 'posted'), ('is_move_sent', '=', True), ('payment_method_code', '!=', 'manual')]}"/>
-                        <button name="unmark_as_sent"  string="Unmark as Sent" type="object" data-hotkey="k"
+                        <button name="unmark_as_sent"  string="Bỏ đánh dấu Đã gửi" type="object" data-hotkey="k"
                                 attrs="{'invisible': ['|', '|', ('state', '!=', 'posted'), ('is_move_sent', '=', False), ('payment_method_code', '!=', 'manual')]}"/>
                         <field name="state" widget="statusbar" statusbar_visible="draft,posted"/>
                     </header>
                     <div class="alert alert-info text-center" role="alert" attrs="{'invisible': ['|','|',('paired_internal_transfer_payment_id','!=',False),('is_internal_transfer','=',False),('state','!=','draft')]}">
-                        A second payment will be created automatically in the destination journal.
+                        Khoản thanh toán thứ hai sẽ được tự động tạo trong sổ nhật ký đích.
                     </div>
                     <div class="alert alert-warning text-center" role="alert" attrs="{
                             'invisible': ['|', '|', ('is_internal_transfer','=',False), ('require_partner_bank_account', '=', False), ('partner_bank_id', '!=', False)]}">
-                        The selected payment method requires a bank account but none is set on
-                        <button class="oe_link alert-link" type="object" name="action_open_destination_journal" style="padding: 0; vertical-align: baseline;">the destination journal</button>.
+                        Phương thức thanh toán đã chọn yêu cầu phải có tài khoản ngân hàng nhưng không có tài khoản nào được đặt chọn
+                        <button class="oe_link alert-link" type="object" name="action_open_destination_journal" style="padding: 0; vertical-align: baseline;">ở sổ nhật ký đích</button>.
                     </div>
                     <sheet>
                         <!-- Invisible fields -->
@@ -196,8 +196,8 @@
                                 <div class="o_form_field o_stat_info">
                                     <span class="o_stat_text">
                                         <field name="reconciled_invoices_count"/>
-                                        <span attrs="{'invisible': [('reconciled_invoices_type', '!=', 'invoice')]}"> Invoice</span>
-                                        <span attrs="{'invisible': [('reconciled_invoices_type', '=', 'invoice')]}"> Credit Note</span>
+                                        <span attrs="{'invisible': [('reconciled_invoices_type', '!=', 'invoice')]}"> Hóa đơn KH</span>
+                                        <span attrs="{'invisible': [('reconciled_invoices_type', '=', 'invoice')]}"> Ghi nợ</span>
                                     </span>
                                 </div>
                             </button>
@@ -209,7 +209,7 @@
                                 <div class="o_form_field o_stat_info">
                                     <span class="o_stat_text">
                                         <field name="reconciled_bills_count"/>
-                                        <span> Bill</span>
+                                        <span> Hóa đơn NCC</span>
                                     </span>
                                 </div>
                             </button>
@@ -227,7 +227,7 @@
                             <!-- Journal Entry  button -->
                             <button name="button_open_journal_entry" type="object" class="oe_stat_button" icon="fa-bars">
                                 <div class="o_stat_info">
-                                    <span class="o_stat_text">Journal Entry</span>
+                                    <span class="o_stat_text">Bút toán</span>
                                 </div>
                             </button>
                         </div>
@@ -239,52 +239,52 @@
                         />
 
                         <div class="oe_title">
-                            <h1 attrs="{'invisible': [('state', '!=', 'draft')]}"><span>Draft</span></h1>
+                            <h1 attrs="{'invisible': [('state', '!=', 'draft')]}"><span>Nháp</span></h1>
                             <h1 attrs="{'invisible': [('state', '=', 'draft')]}"><field name="name" readonly="1"/></h1>
                         </div>
 
                         <group>
                             <group name="group1">
-                                <field name="is_internal_transfer" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="is_internal_transfer" string="Chuyển nội bộ" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
                                 <field name="payment_type" widget="radio" options="{'horizontal': True}"
                                         attrs="{'readonly': [('state', '!=', 'draft')]}"/>
-                                <field name="partner_id" context="{'default_is_company': True}" string="Customer"
+                                <field name="partner_id" context="{'default_is_company': True}" string="Đối tượng"
                                        options="{'no_quick_create': True}"
                                        attrs="{'readonly':[('state', '!=', 'draft')],
                                              'invisible':['|', ('partner_type','!=','customer'), ('is_internal_transfer', '=', True)]}"/>
-                                <field name="partner_id" context="{'default_is_company': True}" string="Vendor"
+                                <field name="partner_id" context="{'default_is_company': True}" string="Đối tượng"
                                        options="{'no_quick_create': True}"
                                        attrs="{'readonly':[('state', '!=', 'draft')],
-                                               'invisible':['|', ('partner_type','!=','supplier'), ('is_internal_transfer', '=', True)]}"/>
+                                               'invisible':['|', ('partner_type','!=','supplier'), ('is_internal_transfer', '=', True)]}"/>                                
                                 <label for="amount"/>
                                 <div name="amount_div" class="o_row">
-                                    <field name="amount"
+                                    <field name="amount" string="Số tiền"
                                            attrs="{'readonly': [('state', '!=', 'draft')]}"/>
                                     <field name="currency_id"
                                            options="{'no_create': True, 'no_open': True}"
                                            required="1"
                                            attrs="{'readonly': [('state', '!=', 'draft')]}"
                                            groups="base.group_multi_currency"/>
-                                </div>
-                                <field name="date"
+                                </div>                                
+                                <field name="date" string="Ngày"
                                        attrs="{'readonly': [('state', '!=', 'draft')]}"/>
-                                <field name="ref" string="Memo"/>
+                                <field name="ref" string="Ghi chú"/>
                             </group>
                             <group name="group2">
-                                <field name="journal_id"
+                                <field name="journal_id" string="Nghiệp vụ"
                                        domain="[('id', 'in', available_journal_ids)]"
                                        attrs="{'readonly': [('state', '!=', 'draft')]}"/>
                                 <field name="payment_method_line_id" required="1" options="{'no_create': True, 'no_open': True}"
                                        attrs="{'readonly': [('state', '!=', 'draft')]}"/>
 
-                                <field name="partner_bank_id" string="Customer Bank Account"
+                                <field name="partner_bank_id" string="TKNH KH"
                                       context="{'default_partner_id': partner_id, 'default_allow_out_payment': True}"
                                         attrs="{
                                             'invisible': ['|', '|', '|', ('show_partner_bank_account', '=', False), ('partner_type','!=','customer'), ('is_internal_transfer', '=', True), ('payment_type', '=', 'inbound')],
                                             'required': [('require_partner_bank_account', '=', True), ('is_internal_transfer', '=', False)],
                                         }"/>
 
-                                <field name="partner_bank_id" string="Vendor Bank Account"
+                                <field name="partner_bank_id" string="TKNH NCC"
                                         context="{'default_partner_id': partner_id, 'default_allow_out_payment': True}"
                                         attrs="{
                                             'invisible': ['|', '|', '|', ('show_partner_bank_account', '=', False), ('partner_type','!=','supplier'), ('is_internal_transfer', '=', True), ('payment_type', '=', 'inbound')],
@@ -293,7 +293,7 @@
 
                                 <!-- This field should always be readonly but using readonly="1" overrides the other partner_bank_id
                                 fields readonly condition in the framework, preventing the modification of these fields -->
-                                <field name="partner_bank_id" string="Company Bank Account"
+                                <field name="partner_bank_id" string="TKNH công ty"
                                         context="{'default_partner_id': partner_id, 'default_allow_out_payment': True}"
                                         attrs="{
                                             'invisible': ['|', '|', ('show_partner_bank_account', '=', False), ('is_internal_transfer', '=', True), ('payment_type', '=', 'outbound')],
@@ -340,20 +340,25 @@
             <field name="name">Thu tiền</field>
             <field name="res_model">account.payment</field>
             <field name="view_mode">tree,kanban,form,graph</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('view_ketoan_thu_chi_quy_tien_mat_thu_tien_tree')}),
+                (0, 0, {'view_mode': 'kanban', 'view_id': ref('view_ketoan_thu_chi_quy_tien_mat_thu_tien_kanban')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('view_ketoan_thu_chi_quy_tien_mat_thu_tien_form')}),
+                (0, 0, {'view_mode': 'graph', 'view_id': ref('view_ketoan_thu_chi_quy_tien_mat_thu_tien_graph')})]"/>            
             <field name="context">{
                 'default_payment_type': 'inbound',
+                'default_is_internal_transfer': True,                
                 'default_partner_type': 'customer',
                 'search_default_inbound_filter': 1,
-                'default_move_journal_types': ('bank', 'cash'),
+                'default_move_journal_types': ('cash'),
             }</field>
 
-            <field name="view_id" ref="view_ketoan_thu_chi_quy_tien_mat_thu_tien"/>
+            <field name="view_id" ref="view_ketoan_thu_chi_quy_tien_mat_thu_tien_tree"/>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                   Đăng ký thu tiền
                 </p><p>
-                  Payments are used to register liquidity movements. You can process those payments by your own means or by using installed facilities.
-                  Thu tiền được sử dụng để Thu một khoản tiền.
+                  Payments are used to register liquidity movements. You can process those payments by your own means or by using installed facilities.                  
                 </p>
             </field>
         </record>
