@@ -49,3 +49,5 @@ package.json
 tsconfig.json
 odoo.conf
 odoo.log
+odoo.log
+odoo.conf
