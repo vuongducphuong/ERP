@@ -11,7 +11,10 @@ Kế toán VN
     'website': '',    
     'depends' : ['account'],
     'data': [        
+
         'views/ketoan_thu_chi_quy_tien_mat_thu_tien_view.xml',
+        'views/ketoan_thu_chi_quy_tien_mat_chi_tien_view.xml',        
+        
         'views/ketoan_menu.xml',
     ],
     'installable': True,
