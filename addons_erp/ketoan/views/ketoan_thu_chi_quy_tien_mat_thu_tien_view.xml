@@ -19,38 +19,15 @@
                     <field name="amount_company_currency_signed" widget="monetary" string="Số tiền" sum="Tổng"/>
                     <field name="ref" string="Diễn giải"/>
                     <field name="journal_id" string="Nghiệp vụ" invisible="1"/>
-                    <field name="payment_method_line_id" invisible="1"/>                    
+                    <field name="payment_method_line_id" invisible="1"/>
+                    <field name="payment_type" string="Thu/Chi" optional="hide"/>
                     <field name="amount_signed" string="Amount in Currency" groups="base.group_multi_currency" optional="hide"/>
                     <field name="currency_id" string="Payment Currency" groups="base.group_multi_currency" optional="hide"/>                    
                     <field name="state" string="Trạng thái" widget="badge" decoration-info="state == 'draft'" decoration-success="state == 'posted'"/>
                 </tree>
             </field>
         </record>
-<!-- 
-        <record id="view_account_supplier_payment_tree" model="ir.ui.view">
-            <field name="name">account.supplier.payment.tree</field>
-            <field name="model">account.payment</field>
-            <field name="inherit_id" ref="ketoan.view_ketoan_thu_chi_quy_tien_mat_thu_tien_tree"/>
-            <field name="mode">primary</field>
-            <field name="arch" type="xml">
-                <field name="partner_id" position="attributes">
-                    <attribute name="string">Vendor</attribute>
-                </field>
-            </field>
-        </record>
- -->
-        <!-- <record id="view_account_various_payment_tree" model="ir.ui.view">
-            <field name="name">account.supplier.payment.tree</field>
-            <field name="model">account.payment</field>
-            <field name="inherit_id" ref="ketoan.view_ketoan_thu_chi_quy_tien_mat_thu_tien_tree"/>
-            <field name="mode">primary</field>
-            <field name="arch" type="xml">
-                <field name="partner_id" position="attributes">
-                    <attribute name="string">Partner</attribute>
-                </field>
-            </field>
-        </record>
- -->
+
         <record id="view_ketoan_thu_chi_quy_tien_mat_thu_tien_kanban" model="ir.ui.view">
             <field name="name">ketoan.thu.chi.quy.tien.mat.thu.tien.kanban</field>
             <field name="model">account.payment</field>
@@ -339,11 +316,11 @@
                 (0, 0, {'view_mode': 'tree', 'view_id': ref('view_ketoan_thu_chi_quy_tien_mat_thu_tien_tree')}),
                 (0, 0, {'view_mode': 'kanban', 'view_id': ref('view_ketoan_thu_chi_quy_tien_mat_thu_tien_kanban')}),
                 (0, 0, {'view_mode': 'form', 'view_id': ref('view_ketoan_thu_chi_quy_tien_mat_thu_tien_form')}),
-                (0, 0, {'view_mode': 'graph', 'view_id': ref('view_ketoan_thu_chi_quy_tien_mat_thu_tien_graph')})]"/>            
+                (0, 0, {'view_mode': 'graph', 'view_id': ref('view_ketoan_thu_chi_quy_tien_mat_thu_tien_graph')})]"/>                        
+            <field name="domain">['&amp;',('payment_type', '=', 'inbound'),('move_id.journal_id.type', '=', 'cash')]</field>
             <field name="context">{
-                'default_payment_type': 'inbound',                
+                'default_payment_type': 'inbound',
                 'default_partner_type': 'customer',
-                'search_default_inbound_filter': 1,
                 'default_move_journal_types': ('cash'),
             }</field>
 
@@ -352,7 +329,7 @@
                 <p class="o_view_nocontent_smiling_face">
                   Đăng ký thu tiền
                 </p><p>
-                  Payments are used to register liquidity movements. You can process those payments by your own means or by using installed facilities.                  
+                  Payments are used to register liquidity movements. You can process those payments by your own means or by using installed facilities.
                 </p>
             </field>
         </record>
