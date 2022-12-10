@@ -13,7 +13,9 @@ Kế toán VN
     'data': [        
 
         'views/ketoan_thu_chi_quy_tien_mat_thu_tien_view.xml',
-        'views/ketoan_thu_chi_quy_tien_mat_chi_tien_view.xml',        
+        'views/ketoan_thu_chi_quy_tien_mat_chi_tien_view.xml',
+        'views/ketoan_thu_chi_ngan_hang_chi_tien_view.xml',
+        'views/ketoan_thu_chi_ngan_hang_thu_tien_view.xml',
         
         'views/ketoan_menu.xml',
     ],

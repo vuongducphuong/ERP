@@ -13,9 +13,9 @@
                 <menuitem id="menu_ketoan_thu_chi_quy_tien_mat_chi_tien" name="Chi tiền" action="action_ketoan_thu_chi_quy_tien_mat_chi_tien" sequence="2"/>                
             </menuitem>
             <menuitem id="menu_ketoan_thu_chi_ngan_hang" name="Ngân hàng" sequence="2">
-                <!-- <menuitem id="menu_ketoan_thu_chi_ngan_hang_thu_tien" name="Thu tiền" action="action_ketoan_thu_chi_ngan_hang_thu_tien" sequence="1"/>                 -->
+                <menuitem id="menu_ketoan_thu_chi_ngan_hang_thu_tien" name="Thu tiền" action="action_ketoan_thu_chi_ngan_hang_thu_tien" sequence="1"/>                
                 <!-- <menuitem id="menu_ketoan_thu_chi_ngan_hang_thu_tien" name="Thu tiền" sequence="1"/>                 -->
-                <!-- <menuitem id="menu_ketoan_thu_chi_ngan_hang_chi_tien" name="Chi tiền" action="action_ketoan_thu_chi_ngan_hang_chi_tien" sequence="2"/>                 -->
+                <menuitem id="menu_ketoan_thu_chi_ngan_hang_chi_tien" name="Chi tiền" action="action_ketoan_thu_chi_ngan_hang_chi_tien" sequence="2"/>                
                 <!-- <menuitem id="menu_ketoan_thu_chi_ngan_hang_chi_tien" name="Chi tiền" sequence="2"/>                 -->
                 <!-- <menuitem id="menu_ketoan_thu_chi_ngan_hang_chuyen_tien_noi_bo" name="Chuyển nội bộ" action="action_ketoan_thu_chi_ngan_hang_chuyen_noi_bo" sequence="3"/> -->
                 <!-- <menuitem id="menu_ketoan_thu_chi_ngan_hang_chuyen_tien_noi_bo" name="Chuyển nội bộ" sequence="3"/> -->
