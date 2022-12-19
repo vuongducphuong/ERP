@@ -25,7 +25,7 @@ msgstr ""
 msgid ""
 "Good, you can customize canned responses in the live chat "
 "application.<br/><br/><b>It's the end of this overview</b>, enjoy "
-"discovering Odoo!"
+"discovering Lean Soft!"
 msgstr ""
 "Good, you can customize canned responses in the live chat "
 "application.<br/><br/><b>It's the end of this overview</b>, enjoy "
@@ -50,7 +50,7 @@ msgstr ""
 
 #. module: im_livechat_mail_bot
 #: model:ir.model.fields,field_description:im_livechat_mail_bot.field_res_users__leansoftbot_state
-msgid "OdooBot Status"
+msgid "Lean SoftBot Status"
 msgstr "Trạng thái của ERPBot"
 
 #. module: im_livechat_mail_bot

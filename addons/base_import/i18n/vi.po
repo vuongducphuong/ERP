@@ -698,7 +698,7 @@ msgstr "Không tìm thấy hồ sơ khớp cho"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Lean Soft Field"
-msgstr "Trường Odoo"
+msgstr "Trường Lean Soft"
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__othervalue

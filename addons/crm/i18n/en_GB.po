@@ -117,7 +117,7 @@ msgid ""
 "                </tbody>\n"
 "            </table>\n"
 "            <div dir=\"ltr\" style=\"font-size:13px;margin-top:0pt;margin-bottom:8pt;color:grey\">\n"
-"                <span><br/>-- <br/>The Lean Soft Team<br/>PS: People love Odoo, check </span><a target=\"_blank\" href=\"https://twitter.com/leansoft/favorites\"><span style=\"text-decoration:underline;\">what they say about it.</span></a></span>\n"
+"                <span><br/>-- <br/>The Lean Soft Team<br/>PS: People love Lean Soft, check </span><a target=\"_blank\" href=\"https://twitter.com/leansoft/favorites\"><span style=\"text-decoration:underline;\">what they say about it.</span></a></span>\n"
 "            </div>\n"
 "        </div>"
 msgstr ""
@@ -633,7 +633,7 @@ msgstr ""
 msgid ""
 "<strong>Trainings</strong><br/>\n"
 "                                To build a strong sales training program, you can use the following\n"
-"                                apps of Odoo:"
+"                                apps of Lean Soft:"
 msgstr ""
 
 #. module: crm
@@ -2099,7 +2099,7 @@ msgstr ""
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_planner
-msgid "In Odoo, there are 3 different ways to manage your prices.<br/>"
+msgid "In Lean Soft, there are 3 different ways to manage your prices.<br/>"
 msgstr ""
 
 #. module: crm
@@ -3804,7 +3804,7 @@ msgstr ""
 msgid ""
 "There are several ways for your company to generate leads with Lean Soft CRM.\n"
 "                        One of them is using your company's generic email address as a trigger\n"
-"                        to create a new lead in the system. In Odoo, each one of your sales channels\n"
+"                        to create a new lead in the system. In Lean Soft, each one of your sales channels\n"
 "                        is linked to its own email address from which prospects can reach them.\n"
 "                        For example, if the personal email address of your Direct team is\n"
 "                        direct@mycompany.example.com, every email sent when a new prospect\n"

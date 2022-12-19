@@ -63,11 +63,11 @@ msgstr "HTTP Routing"
 #: code:addons/mail_bot/models/res_users.py:0
 #, python-format
 msgid ""
-"Hello,<br/>Odoo's chat helps employees collaborate efficiently. I'm here to "
+"Hello,<br/>Lean Soft's chat helps employees collaborate efficiently. I'm here to "
 "help you discover its features.<br/><b>Try to send me an emoji</b> <span "
 "class=\"o_leansoftbot_command\">:)</span>"
 msgstr ""
-"Hello,<br/>Odoo's chat helps employees collaborate efficiently. I'm here to "
+"Hello,<br/>Lean Soft's chat helps employees collaborate efficiently. I'm here to "
 "help you discover its features.<br/><b>Try to send me an emoji</b> <span "
 "class=\"o_leansoftbot_command\">:)</span>"
 
@@ -83,11 +83,11 @@ msgstr "Hmmm..."
 msgid ""
 "I am a simple bot, but if that's a dog, he is the cutest 😊 "
 "<br/>Congratulations, you finished this tour. You can now <b>close this chat"
-" window</b>. Enjoy discovering Odoo."
+" window</b>. Enjoy discovering Lean Soft."
 msgstr ""
 "I am a simple bot, but if that's a dog, he is the cutest 😊 "
 "<br/>Congratulations, you finished this tour. You can now <b>close this chat"
-" window</b>. Enjoy discovering Odoo."
+" window</b>. Enjoy discovering Lean Soft."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -144,13 +144,13 @@ msgstr ""
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__leansoftbot_state
-msgid "OdooBot Status"
+msgid "Lean SoftBot Status"
 msgstr "Trạng thái của ERPBot"
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__leansoftbot_failed
-msgid "Odoobot Failed"
-msgstr "Odoobot Failed"
+msgid "Lean Softbot Failed"
+msgstr "Lean Softbot Failed"
 
 #. module: mail_bot
 #: model:ir.model.fields.selection,name:mail_bot.selection__res_users__leansoftbot_state__onboarding_attachement
@@ -189,10 +189,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write <span class=\"o_leansoftbot_command\">@OdooBot</span> and select me."
+"Write <span class=\"o_leansoftbot_command\">@Lean SoftBot</span> and select me."
 msgstr ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write <span class=\"o_leansoftbot_command\">@OdooBot</span> and select me."
+"Write <span class=\"o_leansoftbot_command\">@Lean SoftBot</span> and select me."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -238,7 +238,7 @@ msgstr "Người dùng"
 msgid ""
 "Wow you are a natural!<br/>Ping someone with @username to grab their "
 "attention. <b>Try to ping me using</b> <span "
-"class=\"o_leansoftbot_command\">@OdooBot</span> in a sentence."
+"class=\"o_leansoftbot_command\">@Lean SoftBot</span> in a sentence."
 msgstr ""
 
 #. module: mail_bot

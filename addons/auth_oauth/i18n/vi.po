@@ -144,7 +144,7 @@ msgstr "Log in with Google"
 
 #. module: auth_oauth
 #: model:auth.oauth.provider,body:auth_oauth.provider_openerp
-msgid "Log in with Odoo.com"
+msgid "Log in with Lean Soft.com"
 msgstr "Log in with ERP"
 
 #. module: auth_oauth

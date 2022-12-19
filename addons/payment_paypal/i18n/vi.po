@@ -32,7 +32,7 @@ msgstr ""
 #. module: payment_paypal
 #: code:addons/payment_paypal/models/payment.py:0
 #, python-format
-msgid "Add your Paypal account to Odoo"
+msgid "Add your Paypal account to Lean Soft"
 msgstr ""
 
 #. module: payment_paypal
@@ -57,7 +57,7 @@ msgid ""
 "                <br/><br/>\n"
 "                You have received a payment through PayPal.<br/>\n"
 "                Kindly follow the instructions given by PayPal to create your account.<br/>\n"
-"                Then, help us complete your Paypal credentials in Odoo.<br/><br/>"
+"                Then, help us complete your Paypal credentials in Lean Soft.<br/><br/>"
 msgstr ""
 
 #. module: payment_paypal

@@ -1360,8 +1360,8 @@ msgstr "Số lượng tin gửi đi bị lỗi"
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_template_register_no_user
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Lean Soft"
+msgstr "Lean Soft"
 
 #. module: hr_expense
 #: model_terms:ir.actions.act_window,help:hr_expense.action_hr_expense_account
@@ -1735,10 +1735,10 @@ msgstr "Hiển thị tất cả dữ liệu có ngày xử lý tiếp theo trư�
 #. module: hr_expense
 #: model_terms:ir.actions.act_window,help:hr_expense.hr_expense_actions_my_all
 msgid ""
-"Snap pictures of your receipts and let Odoo<br> automatically create "
+"Snap pictures of your receipts and let Lean Soft<br> automatically create "
 "expenses for you."
 msgstr ""
-"Snap pictures of your receipts and let Odoo<br> automatically create "
+"Snap pictures of your receipts and let Lean Soft<br> automatically create "
 "expenses for you."
 
 #. module: hr_expense

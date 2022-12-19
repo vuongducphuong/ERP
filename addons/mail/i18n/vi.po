@@ -1236,7 +1236,7 @@ msgstr "Hình đại diện 512"
 #. openerp-web
 #: code:addons/mail/static/src/components/notification_request/notification_request.xml:0
 #, python-format
-msgid "Avatar of OdooBot"
+msgid "Avatar of Lean SoftBot"
 msgstr "Ảnh đại diện ERPBot"
 
 #. module: mail
@@ -3345,7 +3345,7 @@ msgstr "Xử lý bằng email"
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__res_users__notification_type__inbox
-msgid "Handle in Odoo"
+msgid "Handle in Lean Soft"
 msgstr "Xử lý trong hệ thống"
 
 #. module: mail
@@ -5354,7 +5354,7 @@ msgstr "Số lượng tin gửi đi bị lỗi"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_notification_layout
 #: model_terms:ir.ui.view,arch_db:mail.mail_notification_light
-msgid "Odoo"
+msgid "Lean Soft"
 msgstr "Cloud ERP"
 
 #. module: mail
@@ -5474,7 +5474,7 @@ msgstr "Chỉ có thể sửa đổi các mô hình tùy chỉnh."
 
 #. module: mail
 #: model:ir.model.constraint,message:mail.constraint_res_users_notification_type
-msgid "Only internal user can receive notifications in Odoo"
+msgid "Only internal user can receive notifications in Lean Soft"
 msgstr "Chỉ những người dùng nội bộ mới nhận được thông báo"
 
 #. module: mail
@@ -5867,7 +5867,7 @@ msgstr "Vui lòng đợi..."
 msgid ""
 "Policy on how to handle Chatter notifications:\n"
 "- Handle by Emails: notifications are sent to your email address\n"
-"- Handle in Odoo: notifications appear in your Lean Soft Inbox"
+"- Handle in Lean Soft: notifications appear in your Lean Soft Inbox"
 msgstr ""
 "Policy on how to handle Chatter notifications:\n"
 "- Xử lý bởi Emails: Thông báo được gửi đến địa chỉ email của bạn\n"

@@ -106,7 +106,7 @@ msgid ""
 "Could not connect to the Lean Soft server, please check your internet connection "
 "and try again."
 msgstr ""
-"Không thể kết nối với máy chủ Odoo, vui lòng kiểm tra kết nối internet và "
+"Không thể kết nối với máy chủ Lean Soft, vui lòng kiểm tra kết nối internet và "
 "thử lại. "
 
 #. module: pos_adyen

@@ -5076,7 +5076,7 @@ msgstr "Ví dụ ngày"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_financial_year_op__opening_date
 msgid ""
-"Date from which the accounting is managed in Odoo. It is the date of the "
+"Date from which the accounting is managed in Lean Soft. It is the date of the "
 "opening entry."
 msgstr ""
 "Ngày kể từ khi kế toán được quản lý bởi hệ thống. Nó là ngày của bút toán "
@@ -8941,7 +8941,7 @@ msgstr "Bút toán thủ công"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__inbound_payment_method_line_ids
 msgid ""
-"Manual: Get paid by any method outside of Odoo.\n"
+"Manual: Get paid by any method outside of Lean Soft.\n"
 "Payment Providers: Each payment provider has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
@@ -8950,21 +8950,21 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__outbound_payment_method_line_ids
 msgid ""
-"Manual: Pay by any method outside of Odoo.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Manual: Pay by any method outside of Lean Soft.\n"
+"Check: Pay bills by check and print it from Lean Soft.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 msgstr ""
 "Thủ công: Thanh toán bằng bất kỳ phương thức nào bên ngoài ERP.\n"
-"Séc: Thanh toán hóa đơn bằng Séc và in từ Odoo.\n"
+"Séc: Thanh toán hóa đơn bằng Séc và in từ Lean Soft.\n"
 "Chuyển khoản tín dụng SEPA: Thanh toán trong khu vực SEPA bằng cách gửi tệp Chuyển khoản tín dụng SEPA cho ngân hàng của bạn. Ứng dụng account_sepa là cần thiết.\n"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_payment__payment_method_line_id
 #: model:ir.model.fields,help:account.field_account_payment_register__payment_method_line_id
 msgid ""
-"Manual: Pay or Get paid by any method outside of Odoo.\n"
+"Manual: Pay or Get paid by any method outside of Lean Soft.\n"
 "Payment Providers: Each payment provider has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Check: Pay bills by check and print it from Lean Soft.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
@@ -9751,7 +9751,7 @@ msgstr "Tháng Mười"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__leansoft
-msgid "Odoo"
+msgid "Lean Soft"
 msgstr "Hệ thống"
 
 #. module: account
@@ -12203,7 +12203,7 @@ msgid ""
 "\n"
 "Any file extension will be accepted.\n"
 "\n"
-"Only PDF and XML files will be interpreted by Odoo"
+"Only PDF and XML files will be interpreted by Lean Soft"
 msgstr ""
 "Gửi một email riêng cho mỗi hóa đơn.\n"
 "\n"
@@ -15710,7 +15710,7 @@ msgstr "Dược dùng để gộp các bút toán liên quan tới tài khoản 
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_tour_upload_bill
-msgid "With Odoo, you won't have to record bills manually"
+msgid "With Lean Soft, you won't have to record bills manually"
 msgstr "Với ERP, bạn sẽ không phải ghi hóa đơn theo cách thủ công"
 
 #. module: account

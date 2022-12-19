@@ -143,7 +143,7 @@ msgstr "Tên dịch vụ"
 #. openerp-web
 #: code:addons/iap/static/src/js/insufficient_credit_error_handler.js:0
 #, python-format
-msgid "Start a Trial at Odoo"
+msgid "Start a Trial at Lean Soft"
 msgstr "Start a Trial at ERP"
 
 #. module: iap

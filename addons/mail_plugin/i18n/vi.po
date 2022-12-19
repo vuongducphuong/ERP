@@ -495,7 +495,7 @@ msgstr "Không thể tìm thêm thông tin cho công ty liên kết với liên 
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
-msgid "No company linked to this contact could be enriched or found in Odoo"
+msgid "No company linked to this contact could be enriched or found in Lean Soft"
 msgstr ""
 "Không thể tìm thấy trong ERP hoặc tìm thêm thông tin cho công ty liên kết "
 "với liên hệ này"
@@ -642,7 +642,7 @@ msgstr "Doanh thu"
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "Save in Odoo"
+msgid "Save in Lean Soft"
 msgstr "Lưu trong ERP"
 
 #. module: mail_plugin
@@ -677,7 +677,7 @@ msgstr "Tìm kiếm trong cơ sở dữ liệu"
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
-msgid "Search In Odoo"
+msgid "Search In Lean Soft"
 msgstr "Tìm kiếm trong ERP"
 
 #. module: mail_plugin
@@ -691,7 +691,7 @@ msgstr "Tìm kiếm liên hệ"
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
-msgid "Search contact in Odoo..."
+msgid "Search contact in Lean Soft..."
 msgstr "Tìm liên hệ trong ERP..."
 
 #. module: mail_plugin

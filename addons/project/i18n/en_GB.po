@@ -175,7 +175,7 @@ msgid ""
 "            </table>\n"
 "            <div dir=\"ltr\" style=\"font-size:13px;margin-top:0pt;margin-"
 "bottom:8pt;color:grey\">\n"
-"                <span><br/>-- <br/>The Lean Soft Team<br/>PS: People love Odoo, "
+"                <span><br/>-- <br/>The Lean Soft Team<br/>PS: People love Lean Soft, "
 "check </span><a href=\"https://twitter.com/leansoft/favorites\"><span style="
 "\"text-decoration:underline;\">what they say about it.</span></a></span>\n"
 "            </div>\n"
@@ -367,7 +367,7 @@ msgstr ""
 msgid ""
 "<span class=\"panel-title\">\n"
 "                                            <span class=\"fa fa-tasks\"/>\n"
-"                                            <strong> Directly in Odoo</"
+"                                            <strong> Directly in Lean Soft</"
 "strong>\n"
 "                                        </span>"
 msgstr ""
@@ -620,7 +620,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:project.project_planner
 msgid ""
 "<strong>Create tasks and issues by email</strong><br/>\n"
-"                                In Odoo, every project has an email alias. "
+"                                In Lean Soft, every project has an email alias. "
 "If you send an email to this alias, it will automatically create a task or "
 "issue in the first stage of the project, with all the email recipients as "
 "its default followers."
@@ -782,7 +782,7 @@ msgstr ""
 msgid ""
 "<strong>Rely on the chatter</strong><br/>\n"
 "                                    Below every Task and Issue (or more "
-"generally, below every Document in Odoo) is an area called Chatter."
+"generally, below every Document in Lean Soft) is an area called Chatter."
 msgstr ""
 
 #. module: project
@@ -912,7 +912,7 @@ msgid ""
 "A project usually involves many stakeholders, be it the project's sponsor, "
 "resources, customers or external contractors. But the most important person "
 "in a project is usually the Project Manager.<br/>\n"
-"                    In Odoo, the Project Managers have the responsibility of "
+"                    In Lean Soft, the Project Managers have the responsibility of "
 "managing the Kanban view: they ensure smooth progression of the projects, "
 "minimal downtime between stages and optimal work distribution between "
 "resources."
@@ -1435,7 +1435,7 @@ msgstr "Created on"
 msgid ""
 "Creating Tasks and/or Issues is the next step in managing your Projects.<br/"
 ">\n"
-"                        In Odoo, it is pretty straightforward, but here are "
+"                        In Lean Soft, it is pretty straightforward, but here are "
 "some explanations you may find useful."
 msgstr ""
 
@@ -1588,7 +1588,7 @@ msgstr "Delete"
 #: model_terms:ir.ui.view,arch_db:project.project_planner
 msgid ""
 "Depending on what you need and how you want to operate, there are several "
-"ways to work with Odoo. First, decide if you want to think in terms of tasks "
+"ways to work with Lean Soft. First, decide if you want to think in terms of tasks "
 "or issues. Then, activate the Timesheets app if you need it."
 msgstr ""
 
@@ -1799,7 +1799,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_planner
 msgid ""
-"Even if there is no specific field in Odoo, it's important to define a "
+"Even if there is no specific field in Lean Soft, it's important to define a "
 "person responsible for each stage of your Project.<br/>\n"
 "                        This person will have the responsibility for "
 "validating each stage and ensuring that the requirements to move to the next "
@@ -1957,8 +1957,8 @@ msgstr ""
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_planner
-msgid "Get full synchronization with Odoo"
-msgstr "Get full synchronisation with Odoo"
+msgid "Get full synchronization with Lean Soft"
+msgstr "Get full synchronisation with Lean Soft"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_planner
@@ -2205,7 +2205,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:project.project_planner
 msgid ""
 "Internal notes are messages that will appear in the Chatter but will not be "
-"notified in Odoo's Inbox."
+"notified in Lean Soft's Inbox."
 msgstr ""
 
 #. module: project
@@ -2261,7 +2261,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:project.project_planner
 msgid ""
 "It is time to think about how you will transform your activities into real "
-"projects in Odoo.<br/>\n"
+"projects in Lean Soft.<br/>\n"
 "                        For that, the most important part is defining the "
 "stages of your projects. Stages are the different steps a task or an issue "
 "can go through, from its creation to its ending. They will appear in what we "
@@ -2594,7 +2594,7 @@ msgstr ""
 #. module: project
 #: model_terms:ir.actions.act_window,help:project.action_view_task
 msgid ""
-"Odoo's project management allows you to manage the pipeline of your tasks "
+"Lean Soft's project management allows you to manage the pipeline of your tasks "
 "efficiently. You can track progress, discuss on tasks, attach documents, etc."
 msgstr ""
 
@@ -3037,7 +3037,7 @@ msgstr "Responsible"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.project_planner
-msgid "Runs outside Odoo, always available"
+msgid "Runs outside Lean Soft, always available"
 msgstr ""
 
 #. module: project

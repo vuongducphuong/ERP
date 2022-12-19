@@ -32,8 +32,8 @@ msgstr "<span class=\"button\" id=\"button_open_report\">Open Report</span>"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_mail_main
-msgid "<span class=\"leansoft_link_text\">Odoo</span>"
-msgstr "<span class=\"leansoft_link_text\">Odoo</span>"
+msgid "<span class=\"leansoft_link_text\">Lean Soft</span>"
+msgstr "<span class=\"leansoft_link_text\">Lean Soft</span>"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_mail_main
@@ -410,7 +410,7 @@ msgstr "Mô tả mẹo"
 
 #. module: digest
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_2
-msgid "Tip: A calculator in Odoo"
+msgid "Tip: A calculator in Lean Soft"
 msgstr "Tip: A calculator in ERP"
 
 #. module: digest
@@ -435,7 +435,7 @@ msgstr "Tip: Speed up your workflow with shortcuts"
 
 #. module: digest
 #: model:digest.tip,name:digest.digest_tip_digest_2
-msgid "Tip: A calculator in Odoo"
+msgid "Tip: A calculator in Lean Soft"
 msgstr "Tip: A calculator in ERP"
 
 #. module: digest
@@ -467,7 +467,7 @@ msgstr "Tiêu đề"
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_3
 msgid ""
 "Type \"@\" to notify someone in a message, or \"#\" to link to a channel. "
-"Try to notify @OdooBot to test the feature."
+"Try to notify @Lean SoftBot to test the feature."
 msgstr ""
 "Type \"@\" to notify someone in a message, or \"#\" to link to a channel. "
 "Try to notify @ERPBot to test the feature."

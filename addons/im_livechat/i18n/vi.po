@@ -1226,7 +1226,7 @@ msgstr "OK"
 
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.livechat_email_template
-msgid "Odoo"
+msgid "Lean Soft"
 msgstr "ERP"
 
 #. module: im_livechat

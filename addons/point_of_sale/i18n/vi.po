@@ -2535,7 +2535,7 @@ msgstr "ID"
 #: code:addons/point_of_sale/static/src/js/Popups/ErrorTracebackPopup.js:0
 #, python-format
 msgid "IMPORTANT: Bug Report From Lean Soft Point Of Sale"
-msgstr "QUAN TRỌNG: Báo cáo lỗi từ điểm bán lẻ (PoS) trong Odoo"
+msgstr "QUAN TRỌNG: Báo cáo lỗi từ điểm bán lẻ (PoS) trong Lean Soft"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config__proxy_ip
@@ -4222,7 +4222,7 @@ msgstr "Vui lòng kiểm tra xem máy in của bạn có còn kết nối không
 #, python-format
 msgid ""
 "Please check if the printer is still connected. \n"
-"Some browsers don't allow HTTP calls from websites to devices in the network (for security reasons). If it is the case, you will need to follow Odoo's documentation for 'Self-signed certificate for ePOS printers' and 'Secure connection (HTTPS)' to solve the issue"
+"Some browsers don't allow HTTP calls from websites to devices in the network (for security reasons). If it is the case, you will need to follow Lean Soft's documentation for 'Self-signed certificate for ePOS printers' and 'Secure connection (HTTPS)' to solve the issue"
 msgstr ""
 
 #. module: point_of_sale
