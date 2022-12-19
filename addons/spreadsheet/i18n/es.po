@@ -459,7 +459,7 @@ msgstr "Formato de zona incorrecta"
 
 #. module: spreadsheet
 #. openerp-web
-#: code:addons/spreadsheet/static/src/chart/odoo_chart/odoo_bar_chart.js:0
+#: code:addons/spreadsheet/static/src/chart/leansoft_chart/leansoft_bar_chart.js:0
 #, python-format
 msgid "Bar"
 msgstr "Barra"
@@ -600,7 +600,7 @@ msgstr "Plan"
 
 #. module: spreadsheet
 #. openerp-web
-#: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
+#: code:addons/spreadsheet/static/src/chart/plugins/leansoft_chart_core_plugin.js:0
 #, python-format
 msgid "Chart - %s"
 msgstr "Cuadro - %s"
@@ -2320,7 +2320,7 @@ msgstr "Posición de la leyenda"
 
 #. module: spreadsheet
 #. openerp-web
-#: code:addons/spreadsheet/static/src/chart/odoo_chart/odoo_line_chart.js:0
+#: code:addons/spreadsheet/static/src/chart/leansoft_chart/leansoft_line_chart.js:0
 #, python-format
 msgid "Line"
 msgstr "Línea"
@@ -2898,7 +2898,7 @@ msgstr "percentil"
 
 #. module: spreadsheet
 #. openerp-web
-#: code:addons/spreadsheet/static/src/chart/odoo_chart/odoo_pie_chart.js:0
+#: code:addons/spreadsheet/static/src/chart/leansoft_chart/leansoft_pie_chart.js:0
 #, python-format
 msgid "Pie"
 msgstr "Pastel"

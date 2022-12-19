@@ -147,7 +147,7 @@ msgstr "2x"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "3 Stars"
 msgstr ""
@@ -184,7 +184,7 @@ msgstr "4x"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "5 Stars"
 msgstr ""
@@ -438,7 +438,7 @@ msgstr "Animasyonlaştırılmış"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Anonymous"
 msgstr "İsimsiz"
@@ -554,7 +554,7 @@ msgstr "Altında"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Big section heading."
 msgstr "Büyük bölüm başlığı."
@@ -626,7 +626,7 @@ msgstr "Parlaklık"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Bulleted list"
 msgstr "Maddeli liste"
@@ -670,7 +670,7 @@ msgstr "Medya tanımını ve araç bilgisini değiştir"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Checklist"
 msgstr "Kontrol Listesi"
@@ -818,21 +818,21 @@ msgstr "Oluştur"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Create a list with numbering."
 msgstr "Numaralandırma içeren bir liste oluşturun."
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Create a simple bulleted list."
 msgstr "Basit bir madde işaretli liste oluşturun."
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Create an URL."
 msgstr ""
@@ -1059,36 +1059,36 @@ msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Embed"
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Embed Image"
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Embed Youtube Video"
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Embed the image in the document."
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Embed the youtube video in the document."
 msgstr ""
@@ -1231,12 +1231,12 @@ msgstr "Teknik nedenlerden dolayı, bu blok buraya bırakılamaz"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #: code:addons/web_editor/static/src/xml/ace.xml:0
 #, python-format
 msgid "Format"
@@ -1317,21 +1317,21 @@ msgstr "Başlık 6"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Heading 1"
 msgstr "Başlık 1"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Heading 2"
 msgstr "Başlık 2"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Heading 3"
 msgstr "Başlık 3"
@@ -1519,21 +1519,21 @@ msgstr "Satır İçi Metin"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Insert a rating over 3 stars."
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Insert a rating over 5 stars."
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Insert a table."
 msgstr "Tablo ekleyin."
@@ -1547,7 +1547,7 @@ msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Insert an horizontal rule separator."
 msgstr "Yatay kural ayırıcısı ekleyin."
@@ -1774,7 +1774,7 @@ msgstr "Orta"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Medium section heading."
 msgstr "Orta bölüm başlığı."
@@ -1870,7 +1870,7 @@ msgstr "Normal"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Numbered list"
 msgstr "Numaralı liste"
@@ -1965,29 +1965,29 @@ msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Paragraph block."
 msgstr "Paragraf bloğu."
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Paste"
 msgstr "Yapıştır"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Paste as URL"
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Paste as text"
 msgstr ""
@@ -2454,7 +2454,7 @@ msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Separator"
 msgstr "Ayraç"
@@ -2528,7 +2528,7 @@ msgstr "İmza"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Simple text paste."
 msgstr ""
@@ -2580,7 +2580,7 @@ msgstr "Küçük"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Small section heading."
 msgstr "Küçük bölüm başlığı."
@@ -2615,12 +2615,12 @@ msgstr "Özel"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #: code:addons/web_editor/static/src/js/wysiwyg/wysiwyg.js:0
 #: code:addons/web_editor/static/src/js/wysiwyg/wysiwyg.js:0
 #: code:addons/web_editor/static/src/js/wysiwyg/wysiwyg.js:0
@@ -2649,21 +2649,21 @@ msgstr "Öneriler"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Switch direction"
 msgstr "Yön değiştir"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Switch the text's direction."
 msgstr "Metnin yönünü değiştirin."
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Table"
 msgstr "Masa"
@@ -2691,7 +2691,7 @@ msgstr "Tema ID:%s"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #: code:addons/web_editor/static/src/xml/snippets.xml:0
 #, python-format
 msgid "Text"
@@ -2949,7 +2949,7 @@ msgstr "Bilgi Çubuğu"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Track tasks with a checklist."
 msgstr "Bir denetim listesiyle görevleri izleyin."
@@ -2996,7 +2996,7 @@ msgstr "Tür"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Type \"/\" for commands"
 msgstr "Komutlar için \"/\" yazın"
@@ -3133,9 +3133,9 @@ msgstr "Web Editör Dönüştürücü Testi"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/odoo-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
 #, python-format
 msgid "Widgets"
 msgstr ""

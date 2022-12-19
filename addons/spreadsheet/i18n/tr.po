@@ -450,7 +450,7 @@ msgstr ""
 
 #. module: spreadsheet
 #. openerp-web
-#: code:addons/spreadsheet/static/src/chart/odoo_chart/odoo_bar_chart.js:0
+#: code:addons/spreadsheet/static/src/chart/leansoft_chart/leansoft_bar_chart.js:0
 #, python-format
 msgid "Bar"
 msgstr "Bar"
@@ -589,7 +589,7 @@ msgstr "Plan"
 
 #. module: spreadsheet
 #. openerp-web
-#: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
+#: code:addons/spreadsheet/static/src/chart/plugins/leansoft_chart_core_plugin.js:0
 #, python-format
 msgid "Chart - %s"
 msgstr ""
@@ -2302,7 +2302,7 @@ msgstr "Legend position"
 
 #. module: spreadsheet
 #. openerp-web
-#: code:addons/spreadsheet/static/src/chart/odoo_chart/odoo_line_chart.js:0
+#: code:addons/spreadsheet/static/src/chart/leansoft_chart/leansoft_line_chart.js:0
 #, python-format
 msgid "Line"
 msgstr "Satır"
@@ -2879,7 +2879,7 @@ msgstr "Yüzdelik"
 
 #. module: spreadsheet
 #. openerp-web
-#: code:addons/spreadsheet/static/src/chart/odoo_chart/odoo_pie_chart.js:0
+#: code:addons/spreadsheet/static/src/chart/leansoft_chart/leansoft_pie_chart.js:0
 #, python-format
 msgid "Pie"
 msgstr "Turta"

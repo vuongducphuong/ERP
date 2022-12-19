@@ -451,7 +451,7 @@ msgstr "错误区域格式"
 
 #. module: spreadsheet
 #. openerp-web
-#: code:addons/spreadsheet/static/src/chart/odoo_chart/odoo_bar_chart.js:0
+#: code:addons/spreadsheet/static/src/chart/leansoft_chart/leansoft_bar_chart.js:0
 #, python-format
 msgid "Bar"
 msgstr "条"
@@ -588,7 +588,7 @@ msgstr "图表"
 
 #. module: spreadsheet
 #. openerp-web
-#: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
+#: code:addons/spreadsheet/static/src/chart/plugins/leansoft_chart_core_plugin.js:0
 #, python-format
 msgid "Chart - %s"
 msgstr "图表 - %s"
@@ -2271,7 +2271,7 @@ msgstr "图例位置"
 
 #. module: spreadsheet
 #. openerp-web
-#: code:addons/spreadsheet/static/src/chart/odoo_chart/odoo_line_chart.js:0
+#: code:addons/spreadsheet/static/src/chart/leansoft_chart/leansoft_line_chart.js:0
 #, python-format
 msgid "Line"
 msgstr "行"
@@ -2843,7 +2843,7 @@ msgstr "百分位数"
 
 #. module: spreadsheet
 #. openerp-web
-#: code:addons/spreadsheet/static/src/chart/odoo_chart/odoo_pie_chart.js:0
+#: code:addons/spreadsheet/static/src/chart/leansoft_chart/leansoft_pie_chart.js:0
 #, python-format
 msgid "Pie"
 msgstr "派"
