@@ -27,7 +27,7 @@ _DEFAULT_MANIFEST = {
     'application': False,
     'bootstrap': False,  # web
     'assets': {},
-    'author': 'Odoo S.A.',
+    'author': 'Lean Soft.',
     'auto_install': False,
     'category': 'Uncategorized',
     'data': [],

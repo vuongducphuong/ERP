@@ -3268,10 +3268,10 @@ msgstr "Перед"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_default_terms_and_conditions
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Lean Soft. "
 "responsibility."
 msgstr ""
-"Нижче наведений текст є пропозицією і Odoo S.A не несе відповідальності."
+"Нижче наведений текст є пропозицією і Lean Soft не несе відповідальності."
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_setup_bank_manual_config__bank_bic
