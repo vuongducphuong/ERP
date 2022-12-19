@@ -1,0 +1,16 @@
+<odoo>
+
+    <record id="action_print_bao_cao_so_cai" model="ir.actions.report">
+            <field name="name">Report</field>
+            <field name="model">ketoan.bao.cao.so.cai</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ketoan.bao_cao_so_cai</field>
+            <field name="report_file">ketoan.bao_cao_so_cai</field>
+    </record>
+
+    <record id="action_ketoan_bao_cao_tong_hop_so_cai" model="ir.actions.client">
+        <field name="name">Sổ cái chi tiết các tài khoản</field>
+        <field name="tag">g_l</field>
+    </record>
+
+</odoo>

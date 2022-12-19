@@ -18,5 +18,10 @@
                 <menuitem id="menu_ketoan_thu_chi_ngan_hang_chuyen_tien_noi_bo" name="Chuyển tiền nội bộ" action="action_ketoan_thu_chi_ngan_hang_chuyen_tien_noi_bo" sequence="3"/>            
             </menuitem>            
         </menuitem>
+        <menuitem id="menu_ketoan_bao_cao" name="Báo cáo" sequence="20">
+            <menuitem id="menu_ketoan_bao_cao_tong_hop" name="Tổng hợp" sequence="90">
+                <menuitem id="menu_ketoan_bao_cao_tong_hop_so_cai" name="Sổ cái" action="action_ketoan_bao_cao_tong_hop_so_cai" sequence="20"/>
+            </menuitem>
+        </menuitem>
     </menuitem>
 </odoo>

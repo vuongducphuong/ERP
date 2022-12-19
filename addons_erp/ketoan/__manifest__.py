@@ -17,6 +17,7 @@ Kế toán VN
         'views/ketoan_thu_chi_ngan_hang_chi_tien_view.xml',
         'views/ketoan_thu_chi_ngan_hang_thu_tien_view.xml',
         'views/ketoan_thu_chi_ngan_hang_chuyen_tien_noi_bo_view.xml',
+        'views/ketoan_bao_cao_so_cai.xml',
         
 
 
@@ -24,6 +25,13 @@ Kế toán VN
         
         'views/ketoan_menu.xml',
     ],
+    'assets': {
+        'web.assets_backend': [
+            'ketoan/static/src/css/report.css',            
+            'ketoan/static/src/js/ketoan_bao_cao_so_cai.js',            
+            'ketoan/static/src/xml/ketoan_bao_cao_so_cai_view.xml',
+        ],
+    },    
     'installable': True,
     'application': True,
     'license': '',
