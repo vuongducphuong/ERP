@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of LeanSoft Server.
 # This file contains the translation of the following modules:
 # 	* web_editor
 # 
@@ -7,7 +7,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.5alpha1\n"
+"Project-Id-Version: LeanSoft Server 15.5alpha1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-20 09:02+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
@@ -124,7 +124,7 @@ msgstr "2x"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "3 Stars"
 msgstr ""
@@ -161,7 +161,7 @@ msgstr "4x"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "5 Stars"
 msgstr ""
@@ -413,7 +413,7 @@ msgstr "動畫"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Anonymous"
 msgstr "匿名"
@@ -529,7 +529,7 @@ msgstr "下方"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Big section heading."
 msgstr ""
@@ -601,7 +601,7 @@ msgstr "亮度"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Bulleted list"
 msgstr ""
@@ -645,7 +645,7 @@ msgstr "更改媒體說明和工具提示"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Checklist"
 msgstr "清單 Checklist"
@@ -793,21 +793,21 @@ msgstr "建立"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Create a list with numbering."
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Create a simple bulleted list."
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Create an URL."
 msgstr ""
@@ -1024,36 +1024,36 @@ msgstr "不建議通過此編輯器編輯內置文件，因為它會阻止在以
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Embed"
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Embed Image"
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Embed Youtube Video"
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Embed the image in the document."
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Embed the youtube video in the document."
 msgstr ""
@@ -1196,12 +1196,12 @@ msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #: code:addons/web_editor/static/src/xml/ace.xml:0
 #, python-format
 msgid "Format"
@@ -1280,21 +1280,21 @@ msgstr "標題6"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Heading 1"
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Heading 2"
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Heading 3"
 msgstr ""
@@ -1478,21 +1478,21 @@ msgstr "內嵌文本"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Insert a rating over 3 stars."
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Insert a rating over 5 stars."
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Insert a table."
 msgstr ""
@@ -1506,7 +1506,7 @@ msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Insert an horizontal rule separator."
 msgstr ""
@@ -1719,7 +1719,7 @@ msgstr "媒體"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Medium section heading."
 msgstr ""
@@ -1815,14 +1815,14 @@ msgstr "一般"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Numbered list"
 msgstr ""
 
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.tests
-msgid "Odoo Editor Tests"
+msgid "LeanSoft Editor Tests"
 msgstr ""
 
 #. module: web_editor
@@ -1910,29 +1910,29 @@ msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Paragraph block."
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Paste"
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Paste as URL"
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Paste as text"
 msgstr ""
@@ -2399,7 +2399,7 @@ msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Separator"
 msgstr ""
@@ -2473,7 +2473,7 @@ msgstr "簽名"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Simple text paste."
 msgstr ""
@@ -2525,7 +2525,7 @@ msgstr "小"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Small section heading."
 msgstr ""
@@ -2560,12 +2560,12 @@ msgstr "特殊動作"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #: code:addons/web_editor/static/src/js/wysiwyg/wysiwyg.js:0
 #: code:addons/web_editor/static/src/js/wysiwyg/wysiwyg.js:0
 #: code:addons/web_editor/static/src/js/wysiwyg/wysiwyg.js:0
@@ -2594,21 +2594,21 @@ msgstr "建議"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Switch direction"
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Switch the text's direction."
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Table"
 msgstr "餐桌"
@@ -2636,7 +2636,7 @@ msgstr "模板ID： %s"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #: code:addons/web_editor/static/src/xml/snippets.xml:0
 #, python-format
 msgid "Text"
@@ -2776,8 +2776,8 @@ msgstr "這個圖像是一個外部圖像"
 #, python-format
 msgid ""
 "This type of image is not supported for cropping.<br/>If you want to crop "
-"it, please first download it from the original source and upload it in Odoo."
-msgstr "不支援裁剪這種類型的圖片。<br/>如果您想裁剪它，請先從原始來源下載並在Odoo中上傳。"
+"it, please first download it from the original source and upload it in LeanSoft."
+msgstr "不支援裁剪這種類型的圖片。<br/>如果您想裁剪它，請先從原始來源下載並在LeanSoft中上傳。"
 
 #. module: web_editor
 #. openerp-web
@@ -2880,7 +2880,7 @@ msgstr "工具提示"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Track tasks with a checklist."
 msgstr ""
@@ -2927,7 +2927,7 @@ msgstr "類型"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Type \"/\" for commands"
 msgstr ""
@@ -3062,9 +3062,9 @@ msgstr "Web編輯器轉換器測試"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Widgets"
 msgstr ""

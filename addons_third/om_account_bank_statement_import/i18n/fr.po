@@ -525,7 +525,7 @@ msgstr "Pièce jointe principale"
 #. module: om_account_bank_statement_import
 #: model:ir.model.fields,help:om_account_bank_statement_import.field_account_bank_statement_import_journal_creation__inbound_payment_method_line_ids
 msgid ""
-"Manual: Get paid by any method outside of Odoo.\n"
+"Manual: Get paid by any method outside of LeanSoft.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request "
 "a transaction on/to a card thanks to a payment token saved by the partner "
 "when buying or subscribing online.\n"
@@ -539,8 +539,8 @@ msgstr ""
 #. module: om_account_bank_statement_import
 #: model:ir.model.fields,help:om_account_bank_statement_import.field_account_bank_statement_import_journal_creation__outbound_payment_method_line_ids
 msgid ""
-"Manual: Pay by any method outside of Odoo.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Manual: Pay by any method outside of LeanSoft.\n"
+"Check: Pay bills by check and print it from LeanSoft.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit "
 "Transfer file to your bank. Module account_sepa is necessary.\n"
 msgstr ""
@@ -678,13 +678,13 @@ msgid ""
 "\n"
 "Any file extension will be accepted.\n"
 "\n"
-"Only PDF and XML files will be interpreted by Odoo"
+"Only PDF and XML files will be interpreted by LeanSoft"
 msgstr ""
 "Envoyez un e-mail distinct pour chaque facture.\n"
 "\n"
 "Toute extension de fichier sera acceptée.\n"
 "\n"
-"Seuls les fichiers PDF et XML seront interprétés par Odoo"
+"Seuls les fichiers PDF et XML seront interprétés par LeanSoft"
 
 #. module: om_account_bank_statement_import
 #: model:ir.model.fields,field_description:om_account_bank_statement_import.field_account_bank_statement_import_journal_creation__sequence
@@ -774,12 +774,12 @@ msgstr ""
 #. module: om_account_bank_statement_import
 #: model_terms:ir.ui.view,arch_db:om_account_bank_statement_import.om_account_bank_statement_import_journal_creation_view
 msgid ""
-"The account of the statement you are uploading is not yet recorded in Odoo. "
+"The account of the statement you are uploading is not yet recorded in LeanSoft. "
 "In order to proceed with the upload, you need to create a bank journal for "
 "this account."
 msgstr ""
 "Le compte du relevé que vous téléchargez n'est pas encore enregistré dans "
-"Odoo. Afin de procéder au téléchargement, vous devez créer un journal "
+"LeanSoft. Afin de procéder au téléchargement, vous devez créer un journal "
 "bancaire pour ce compte."
 
 #. module: om_account_bank_statement_import
@@ -901,10 +901,10 @@ msgstr "Vous avez déjà importé ce fichier."
 #: model:ir.model.fields,help:om_account_bank_statement_import.field_account_bank_statement_import_journal_creation__invoice_reference_model
 msgid ""
 "You can choose different models for each type of reference. The default one "
-"is the Odoo reference."
+"is the LeanSoft reference."
 msgstr ""
 "Vous pouvez choisir différents modèles par type de référence. Le modèle par "
-"défaut est la référence Odoo."
+"défaut est la référence LeanSoft."
 
 #. module: om_account_bank_statement_import
 #: model:ir.model.fields,help:om_account_bank_statement_import.field_account_bank_statement_import_journal_creation__invoice_reference_type

@@ -1,10 +1,10 @@
-# Translation of Odoo Server.
+# Translation of LeanSoft Server.
 # This file contains the translation of the following modules:
 # 	* om_account_bank_statement_import
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: LeanSoft Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-15 06:34+0000\n"
 "PO-Revision-Date: 2022-04-15 06:34+0000\n"
@@ -524,12 +524,12 @@ msgstr "Ana Ek"
 #. module: om_account_bank_statement_import
 #: model:ir.model.fields,help:om_account_bank_statement_import.field_account_bank_statement_import_journal_creation__inbound_payment_method_line_ids
 msgid ""
-"Manual: Get paid by any method outside of Odoo.\n"
+"Manual: Get paid by any method outside of LeanSoft.\n"
 "Payment Acquirers: Each payment acquirer has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
 msgstr ""
-"Manuel: Odoo dışında herhangi bir yöntemle ödeme alın.\n"
+"Manuel: LeanSoft dışında herhangi bir yöntemle ödeme alın.\n"
 "Ödeme Alıcıları: Her ödeme alıcısının kendi Ödeme Yöntemi vardır. Çevrimiçi satın alırken veya abone olurken iş ortağı tarafından kaydedilen bir ödeme jetonu sayesinde bir kart üzerinden işlem talep edin.\n"
 "Toplu Para Yatırma: Aynı anda birkaç müşteri çeki toplayın ve bankanıza toplu depozito gönderin. Account_batch_payment modülü gerekli.\n"
 "SEPA Otomatik Ödeme: Ortağınızın size vereceği yetki sayesinde SEPA bölgesinde ödeme alın. Account_sepa modülü gerekli."
@@ -537,12 +537,12 @@ msgstr ""
 #. module: om_account_bank_statement_import
 #: model:ir.model.fields,help:om_account_bank_statement_import.field_account_bank_statement_import_journal_creation__outbound_payment_method_line_ids
 msgid ""
-"Manual: Pay by any method outside of Odoo.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Manual: Pay by any method outside of LeanSoft.\n"
+"Check: Pay bills by check and print it from LeanSoft.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 msgstr ""
-"Manuel: Odoo dışında herhangi bir yöntemle ödeme yapın.\n"
-"Çek: Faturaları çekle ödeyin ve Odoo'dan yazdırın.\n"
+"Manuel: LeanSoft dışında herhangi bir yöntemle ödeme yapın.\n"
+"Çek: Faturaları çekle ödeyin ve LeanSoft'dan yazdırın.\n"
 "SEPA Kredi Transferi: Bankanıza bir SEPA Kredi Transfer dosyası göndererek SEPA bölgesinde ödeme yapın. Account_sepa modülü gerekli."
 
 #. module: om_account_bank_statement_import
@@ -676,13 +676,13 @@ msgid ""
 "\n"
 "Any file extension will be accepted.\n"
 "\n"
-"Only PDF and XML files will be interpreted by Odoo"
+"Only PDF and XML files will be interpreted by LeanSoft"
 msgstr ""
 "Her fatura için ayrı bir e-posta gönderin.\n"
 "\n"
 "Herhangi bir dosya uzantısı kabul edilecektir.\n"
 "\n"
-"Odoo tarafından yalnızca PDF ve XML dosyaları yorumlanacaktır."
+"LeanSoft tarafından yalnızca PDF ve XML dosyaları yorumlanacaktır."
 
 #. module: om_account_bank_statement_import
 #: model:ir.model.fields,field_description:om_account_bank_statement_import.field_account_bank_statement_import_journal_creation__sequence
@@ -771,11 +771,11 @@ msgstr ""
 #. module: om_account_bank_statement_import
 #: model_terms:ir.ui.view,arch_db:om_account_bank_statement_import.om_account_bank_statement_import_journal_creation_view
 msgid ""
-"The account of the statement you are uploading is not yet recorded in Odoo. "
+"The account of the statement you are uploading is not yet recorded in LeanSoft. "
 "In order to proceed with the upload, you need to create a bank journal for "
 "this account."
 msgstr ""
-"Yüklediğiniz ekstrenin hesabı henüz Odoo'da kayıtlı değil. Yüklemeye devam "
+"Yüklediğiniz ekstrenin hesabı henüz LeanSoft'da kayıtlı değil. Yüklemeye devam "
 "etmek için bu hesap için bir banka defteri oluşturmanız gerekir."
 
 #. module: om_account_bank_statement_import
@@ -895,9 +895,9 @@ msgstr ""
 #: model:ir.model.fields,help:om_account_bank_statement_import.field_account_bank_statement_import_journal_creation__invoice_reference_model
 msgid ""
 "You can choose different models for each type of reference. The default one "
-"is the Odoo reference."
+"is the LeanSoft reference."
 msgstr ""
-"Her referans türü için farklı modeller seçebilirsiniz. Varsayılan, Odoo "
+"Her referans türü için farklı modeller seçebilirsiniz. Varsayılan, LeanSoft "
 "referansıdır."
 
 #. module: om_account_bank_statement_import

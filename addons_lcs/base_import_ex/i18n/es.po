@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of LeanSoft Server.
 # This file contains the translation of the following modules:
 # * base_import
 # 
@@ -19,7 +19,7 @@
 # e2f_EPV Translator <e2f_EPV@outlook.com>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0\n"
+"Project-Id-Version: LeanSoft Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-19 13:43+0000\n"
 "PO-Revision-Date: 2018-02-19 13:43+0000\n"
@@ -294,11 +294,11 @@ msgstr "ID"
 #, python-format
 msgid ""
 "If the file contains\n"
-"                the column names, Odoo can try auto-detecting the\n"
+"                the column names, LeanSoft can try auto-detecting the\n"
 "                field corresponding to the column. This makes imports\n"
 "                simpler especially when the file has many columns."
 msgstr ""
-"Si el archivo contiene los nombres de columna, Odoo puede intentar auto-"
+"Si el archivo contiene los nombres de columna, LeanSoft puede intentar auto-"
 "detectar el campo correspondiente a la columna. Esto hace la importación más"
 " simple, especialmente cuando el archivo tiene muchas columnas."
 

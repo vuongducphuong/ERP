@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of LeanSoft Server.
 # This file contains the translation of the following modules:
 # 	* website_slides_forum
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: LeanSoft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-04 09:26+0000\n"
 "PO-Revision-Date: 2022-09-22 05:57+0000\n"
@@ -363,7 +363,7 @@ msgstr ""
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
 msgid ""
 "The goal of this site is create a relevant knowledge base that would answer "
-"questions related to Odoo."
+"questions related to LeanSoft."
 msgstr ""
 "الهدف من هذا الموقع الإلكتروني هو إنشاء قاعدة معرفية للإجابة عن الأسئلة "
 "المتعلقة بأودو. "
@@ -473,7 +473,7 @@ msgstr "كافة الإجابات مسموح بها: \"ما ______ المفضل 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "how to configure or customize Odoo to specific business needs,"
+msgid "how to configure or customize LeanSoft to specific business needs,"
 msgstr "كيفية تهيئة أو تخصيص أودو لاحتياجات أعمال معينة، "
 
 #. module: website_slides_forum
@@ -485,7 +485,7 @@ msgstr "كيفية تطوير تطبيقات لتلائم احتياجاتك، "
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "how to install Odoo on a specific infrastructure,"
+msgid "how to install LeanSoft on a specific infrastructure,"
 msgstr "كيفية تثبيت أودو على بنية تحتية معينة،"
 
 #. module: website_slides_forum
@@ -497,7 +497,7 @@ msgstr "إنها ثرثرة على شكل سؤال: \"______ سيء، أليس �
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "specific questions about Odoo service offers, etc."
+msgid "specific questions about LeanSoft service offers, etc."
 msgstr "أسئلة محددة عن عروض خدمة أودو، إلخ."
 
 #. module: website_slides_forum
@@ -521,7 +521,7 @@ msgstr "يُطرح علينا سؤال فرضي مفتوح: \"ماذا لو حد
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "what's the best way to use Odoo for a specific business need,"
+msgid "what's the best way to use LeanSoft for a specific business need,"
 msgstr "ما أفضل طريقة لاستخدام أودو لاحتياجات أعمال معينة،"
 
 #. module: website_slides_forum

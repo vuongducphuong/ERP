@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of LeanSoft Server.
 # This file contains the translation of the following modules:
 # 	* web_editor
 # 
@@ -16,7 +16,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: LeanSoft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-10 10:23+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
@@ -136,7 +136,7 @@ msgstr "2x"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "3 Stars"
 msgstr ""
@@ -173,7 +173,7 @@ msgstr "4x"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "5 Stars"
 msgstr ""
@@ -427,7 +427,7 @@ msgstr "Animált"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Anonymous"
 msgstr "Ismeretlen"
@@ -543,7 +543,7 @@ msgstr "Alulra"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Big section heading."
 msgstr "Nagy címsor beszúrása"
@@ -615,7 +615,7 @@ msgstr "Fényerő"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Bulleted list"
 msgstr "Listajeles felsorolás"
@@ -659,7 +659,7 @@ msgstr "Média leírásának és súgójának módosítása"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Checklist"
 msgstr "Ellenőrzőlista"
@@ -807,21 +807,21 @@ msgstr "Létrehozás"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Create a list with numbering."
 msgstr "Számozott lista beszúrása"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Create a simple bulleted list."
 msgstr "Listajeles lista beszúrása"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Create an URL."
 msgstr "URL beszúrása"
@@ -1047,36 +1047,36 @@ msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Embed"
 msgstr "Beágyazás"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Embed Image"
 msgstr "Kép beágyazása"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Embed Youtube Video"
 msgstr "Youtube videó beágyazása"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Embed the image in the document."
 msgstr "Kép beágyazása a dokumentumba."
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Embed the youtube video in the document."
 msgstr "Youtube videó beágyazása a dokumentumba."
@@ -1219,12 +1219,12 @@ msgstr "Technikai okok miatt ezt a blokkot nem lehet itt elhelyezni"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #: code:addons/web_editor/static/src/xml/ace.xml:0
 #, python-format
 msgid "Format"
@@ -1305,21 +1305,21 @@ msgstr "Fejléc 6"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Heading 1"
 msgstr "Címsor 1"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Heading 2"
 msgstr "Címsor 2"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Heading 3"
 msgstr "Címsor 3"
@@ -1507,21 +1507,21 @@ msgstr "Szöveg"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Insert a rating over 3 stars."
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Insert a rating over 5 stars."
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Insert a table."
 msgstr "Táblázat beszúrása"
@@ -1535,7 +1535,7 @@ msgstr "Videó beszúrása"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Insert an horizontal rule separator."
 msgstr "Vízszintes beszúrása"
@@ -1762,7 +1762,7 @@ msgstr "Közepes"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Medium section heading."
 msgstr "Közepes szakasz címsor"
@@ -1858,14 +1858,14 @@ msgstr "Normál"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Numbered list"
 msgstr "Számozott lista"
 
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.tests
-msgid "Odoo Editor Tests"
+msgid "LeanSoft Editor Tests"
 msgstr ""
 
 #. module: web_editor
@@ -1953,29 +1953,29 @@ msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Paragraph block."
 msgstr "Bekezdés blokk"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Paste"
 msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Paste as URL"
 msgstr "Beillesztés URL-ként"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Paste as text"
 msgstr "Beillesztés szövegként"
@@ -2442,7 +2442,7 @@ msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Separator"
 msgstr "Elválasztó"
@@ -2516,7 +2516,7 @@ msgstr "Aláírás"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Simple text paste."
 msgstr "Egyszerű szöveg beszúrása"
@@ -2568,7 +2568,7 @@ msgstr "Kicsi"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Small section heading."
 msgstr "Kis szakasz címsor"
@@ -2603,12 +2603,12 @@ msgstr "Különleges"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #: code:addons/web_editor/static/src/js/wysiwyg/wysiwyg.js:0
 #: code:addons/web_editor/static/src/js/wysiwyg/wysiwyg.js:0
 #: code:addons/web_editor/static/src/js/wysiwyg/wysiwyg.js:0
@@ -2637,21 +2637,21 @@ msgstr "Javaslatok"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Switch direction"
 msgstr "Irány módosítása"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Switch the text's direction."
 msgstr "Szöveg irányának módosítása."
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Table"
 msgstr "Táblázat"
@@ -2679,7 +2679,7 @@ msgstr "Sablon ID: %s"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #: code:addons/web_editor/static/src/xml/snippets.xml:0
 #, python-format
 msgid "Text"
@@ -2827,11 +2827,11 @@ msgstr "Ez egy külső kép"
 #, python-format
 msgid ""
 "This type of image is not supported for cropping.<br/>If you want to crop "
-"it, please first download it from the original source and upload it in Odoo."
+"it, please first download it from the original source and upload it in LeanSoft."
 msgstr ""
 "Az ilyen típusú képek vágása nem támogatott.<br/>Ha meg szeretné vágni ezt a"
 " képet, töltse le az eredeti forrásból, majd a vágás után töltse fel újra az"
-" Odooba."
+" LeanSoftba."
 
 #. module: web_editor
 #. openerp-web
@@ -2938,7 +2938,7 @@ msgstr "Helyi súgó"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Track tasks with a checklist."
 msgstr "Feladatok követése ellenőrzőlistával"
@@ -2986,7 +2986,7 @@ msgstr "Típus"
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Type \"/\" for commands"
 msgstr "\"/\" gépelése parancshoz"
@@ -3125,9 +3125,9 @@ msgstr ""
 
 #. module: web_editor
 #. openerp-web
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
-#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/OdooEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
+#: code:addons/web_editor/static/src/js/editor/leansoft-editor/src/LeanSoftEditor.js:0
 #, python-format
 msgid "Widgets"
 msgstr ""

@@ -374,7 +374,7 @@ msgstr "Trang web"
 #: model_terms:sale.order,website_description:website_sale_slides.sale_order_course_1
 #: model_terms:sale.order,website_description:website_sale_slides.sale_order_course_2
 msgid ""
-"You can <strong>set a description per product</strong>. Odoo will\n"
+"You can <strong>set a description per product</strong>. LeanSoft will\n"
 "                        automatically create a quotation using the descriptions\n"
 "                        of all products in the proposal. The table of content\n"
 "                        on the left is generated automatically using the styles you\n"

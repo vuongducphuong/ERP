@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of LeanSoft Server.
 # This file contains the translation of the following modules:
 # 	* website_slides_forum
 # 
@@ -12,7 +12,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: LeanSoft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-04 09:26+0000\n"
 "PO-Revision-Date: 2022-09-22 05:57+0000\n"
@@ -348,7 +348,7 @@ msgstr ""
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
 msgid ""
 "The goal of this site is create a relevant knowledge base that would answer "
-"questions related to Odoo."
+"questions related to LeanSoft."
 msgstr ""
 
 #. module: website_slides_forum
@@ -443,9 +443,9 @@ msgstr "mindegyik válasz egyenlően érvényes: “Mi a kedvence ______?”"
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "how to configure or customize Odoo to specific business needs,"
+msgid "how to configure or customize LeanSoft to specific business needs,"
 msgstr ""
-"hogyan állítsa vagy szabja személyre az Odoo rendszert a sajátos üzleti "
+"hogyan állítsa vagy szabja személyre az LeanSoft rendszert a sajátos üzleti "
 "követelményekhez,"
 
 #. module: website_slides_forum
@@ -457,8 +457,8 @@ msgstr "hogyan fejlesszen a szükségleteihez modulokat,"
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "how to install Odoo on a specific infrastructure,"
-msgstr "hogyan telepítse az Odoo rendszert egy sajátos infrastruktúrához,"
+msgid "how to install LeanSoft on a specific infrastructure,"
+msgstr "hogyan telepítse az LeanSoft rendszert egy sajátos infrastruktúrához,"
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -469,8 +469,8 @@ msgstr "ez egy zavarosan összeszedett kérdés: “______ szívás, igazam van?
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "specific questions about Odoo service offers, etc."
-msgstr "sajátos kérdés az Odoo rendszer szolgáltatás ajánlatairól, stb."
+msgid "specific questions about LeanSoft service offers, etc."
+msgstr "sajátos kérdés az LeanSoft rendszer szolgáltatás ajánlatairól, stb."
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -495,9 +495,9 @@ msgstr ""
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "what's the best way to use Odoo for a specific business need,"
+msgid "what's the best way to use LeanSoft for a specific business need,"
 msgstr ""
-"mi a legjobb módja az Odoo rendszer felhasználásának egy sajátos üzleti "
+"mi a legjobb módja az LeanSoft rendszer felhasználásának egy sajátos üzleti "
 "igényben,"
 
 #. module: website_slides_forum

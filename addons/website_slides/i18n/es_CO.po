@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of LeanSoft Server.
 # This file contains the translation of the following modules:
 # * website_slides
 #
@@ -9,7 +9,7 @@
 # Mateo Tibaquirá <nestormateo@gmail.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: LeanSoft 9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-18 14:08+0000\n"
 "PO-Revision-Date: 2016-03-04 16:54+0000\n"
@@ -331,7 +331,7 @@ msgstr "Sólo Usuarios Autenticados"
 
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_5
-msgid "Awesome Timesheet by Odoo"
+msgid "Awesome Timesheet by LeanSoft"
 msgstr ""
 
 #. module: website_slides
@@ -446,7 +446,7 @@ msgstr ""
 #. module: website_slides
 #: model:slide.slide,description:website_slides.slide_1
 msgid ""
-"Create a beautiful and professional eCommerce on your website with Odoo. \n"
+"Create a beautiful and professional eCommerce on your website with LeanSoft. \n"
 "\n"
 "Find out more at https://www.leensoft.vn/page/e-commerce"
 msgstr ""
@@ -561,7 +561,7 @@ msgstr "Descargar"
 #. module: website_slides
 #: model:slide.slide,description:website_slides.slide_5
 msgid ""
-"Download Awesome Timesheet by Odoo and discover how easy time tracking and "
+"Download Awesome Timesheet by LeanSoft and discover how easy time tracking and "
 "employee management can be!\n"
 "\n"
 "Chrome: http://bit.ly/2613LcY\n"
@@ -882,58 +882,58 @@ msgstr "Número de Videos"
 
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_2
-msgid "Odoo All-in-One Software Demonstration"
+msgid "LeanSoft All-in-One Software Demonstration"
 msgstr ""
 
 #. module: website_slides
 #: model:slide.category,name:website_slides.category_2
-msgid "Odoo Days"
-msgstr "Días Odoo"
+msgid "LeanSoft Days"
+msgstr "Días LeanSoft"
 
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_0
-msgid "Odoo Explained"
-msgstr "Odoo Explicado"
+msgid "LeanSoft Explained"
+msgstr "LeanSoft Explicado"
 
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_6
-msgid "Odoo Marketing - part 1: ATTRACT"
-msgstr "Mercadeo Odoo - parte 1: ATRAER"
+msgid "LeanSoft Marketing - part 1: ATTRACT"
+msgstr "Mercadeo LeanSoft - parte 1: ATRAER"
 
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_7
-msgid "Odoo Marketing - part 1: ATTRACT_2"
-msgstr "Mercadeo Odoo - parte 1: ATRAER_2"
+msgid "LeanSoft Marketing - part 1: ATTRACT_2"
+msgstr "Mercadeo LeanSoft - parte 1: ATRAER_2"
 
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_8
-msgid "Odoo Marketing - part 1: ATTRACT_3"
-msgstr "Mercadeo Odoo - parte 1: ATRAER_3"
+msgid "LeanSoft Marketing - part 1: ATTRACT_3"
+msgstr "Mercadeo LeanSoft - parte 1: ATRAER_3"
 
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_10
-msgid "Odoo Roadmap & Strategy - Fabien Pinckaers"
-msgstr "Mapa de Desarrollo & Estrategia Odoo - Fabien Pinckaers"
+msgid "LeanSoft Roadmap & Strategy - Fabien Pinckaers"
+msgstr "Mapa de Desarrollo & Estrategia LeanSoft - Fabien Pinckaers"
 
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_3
-msgid "Odoo Sign Demonstration"
+msgid "LeanSoft Sign Demonstration"
 msgstr ""
 
 #. module: website_slides
 #: model:slide.slide,name:website_slides.slide_1
-msgid "Odoo Website & E-commerce Demonstration"
+msgid "LeanSoft Website & E-commerce Demonstration"
 msgstr ""
 
 #. module: website_slides
 #: model:slide.slide,description:website_slides.slide_6
 #, fuzzy
 msgid ""
-"Odoo's fully-integrated marketing app will help you to attract, convert and "
+"LeanSoft's fully-integrated marketing app will help you to attract, convert and "
 "close new leads. Check out our three-part video and discover more at www."
 "leensoft.vn"
 msgstr ""
-"La aplicación de marketing totalmente integrada de Odoo que le ayudará a "
+"La aplicación de marketing totalmente integrada de LeanSoft que le ayudará a "
 "atraer, convertir y obtener a sus clientes potenciales. Revise nuestro vídeo "
 "de tres partes y descubra más en www.leensoft.vn. \n"
 "\n"
@@ -943,13 +943,13 @@ msgstr ""
 #: model:slide.slide,description:website_slides.slide_7
 #: model:slide.slide,description:website_slides.slide_8
 msgid ""
-"Odoo's fully-integrated marketing app will help you to attract, convert and "
+"LeanSoft's fully-integrated marketing app will help you to attract, convert and "
 "close new leads. Check out our three-part video and discover more at www."
 "leensoft.vn\n"
 "\n"
 "Video made by Miroslava Ganzarcikova and Sophia Eribo."
 msgstr ""
-"La aplicación de marketing totalmente integrada de Odoo que le ayudará a "
+"La aplicación de marketing totalmente integrada de LeanSoft que le ayudará a "
 "atraer, convertir y obtener a sus clientes potenciales. Revise nuestro vídeo "
 "de tres partes y descubra más en www.leensoft.vn. \n"
 "\n"
@@ -1096,12 +1096,12 @@ msgstr ""
 #: model:slide.slide,description:website_slides.slide_0
 msgid ""
 "Run your business with a comprehensive suite of business apps. Do it easily "
-"with Odoo! \n"
+"with LeanSoft! \n"
 "\n"
 "http://leensoft.vn/start"
 msgstr ""
 "Ejecutar su negocio con un conjunto completo de aplicaciones de negocios. "
-"¡Lo puede hacer fácilmente con Odoo!\n"
+"¡Lo puede hacer fácilmente con LeanSoft!\n"
 "\n"
 "http://leensoft.vn/start"
 
@@ -1215,7 +1215,7 @@ msgstr "Lo sentimos, pero no hay coincidencias para su criterio de búsqueda"
 #: model:slide.slide,description:website_slides.slide_3
 msgid ""
 "Stop doing manual printing and scanning. Move to electronic signature with "
-"Odoo Sign!\n"
+"LeanSoft Sign!\n"
 "\n"
 "Discover more at https://www.leensoft.vn/page/sign"
 msgstr ""
@@ -1561,7 +1561,7 @@ msgstr "su-amigo@dominio.com"
 #~ "        <td style=\"width: 600px; text-align:center\" valign=\"center\">\n"
 #~ "            <a href=\"${user.company_id.website}\" style=\"text-"
 #~ "decoration:none\">\n"
-#~ "                <img alt=\"Odoo\" src=\"${ctx['base_url']}/logo.png\" "
+#~ "                <img alt=\"LeanSoft\" src=\"${ctx['base_url']}/logo.png\" "
 #~ "style=\"display:block; border:none; min-height:60px; margin:0 auto;\">\n"
 #~ "            </a>\n"
 #~ "        </td>\n"
@@ -1624,7 +1624,7 @@ msgstr "su-amigo@dominio.com"
 #~ "        <td style=\"width: 600px; text-align:center\" valign=\"center\">\n"
 #~ "            <a href=\"${user.company_id.website}\" style=\"text-"
 #~ "decoration:none\">\n"
-#~ "                <img alt=\"Odoo\" src=\"${ctx['base_url']}/logo.png\" "
+#~ "                <img alt=\"LeanSoft\" src=\"${ctx['base_url']}/logo.png\" "
 #~ "style=\"display:block; border:none; min-height:60px; margin:0 auto;\">\n"
 #~ "            </a>\n"
 #~ "        </td>\n"
@@ -1688,7 +1688,7 @@ msgstr "su-amigo@dominio.com"
 #~ "        <td style=\"width: 600px; text-align:center\" valign=\"center\">\n"
 #~ "            <a href=\"${user.company_id.website}\" style=\"text-"
 #~ "decoration:none\">\n"
-#~ "                <img alt=\"Odoo\" src=\"${ctx['base_url']}/logo.png\" "
+#~ "                <img alt=\"LeanSoft\" src=\"${ctx['base_url']}/logo.png\" "
 #~ "style=\"display:block; border:none; min-height:60px; margin:0 auto;\">\n"
 #~ "            </a>\n"
 #~ "        </td>\n"
@@ -1750,7 +1750,7 @@ msgstr "su-amigo@dominio.com"
 #~ "        <td style=\"width: 600px; text-align:center\" valign=\"center\">\n"
 #~ "            <a href=\"${user.company_id.website}\" style=\"text-"
 #~ "decoration:none\">\n"
-#~ "                <img alt=\"Odoo\" src=\"${ctx['base_url']}/logo.png\" "
+#~ "                <img alt=\"LeanSoft\" src=\"${ctx['base_url']}/logo.png\" "
 #~ "style=\"display:block; border:none; min-height:60px; margin:0 auto;\">\n"
 #~ "            </a>\n"
 #~ "        </td>\n"
@@ -1825,7 +1825,7 @@ msgstr "su-amigo@dominio.com"
 #~ "etc.\n"
 #~ "\n"
 #~ "Se trata de una nueva aplicación de código abierto en Python / Javascript "
-#~ "basado en Bootstrap y Odoo.\n"
+#~ "basado en Bootstrap y LeanSoft.\n"
 #~ "\n"
 #~ "La puede descargar o utilizar en línea en http://leensoft.vn"
 
@@ -1849,12 +1849,12 @@ msgstr "su-amigo@dominio.com"
 
 #~ msgid ""
 #~ "Interview with Guy Christiaens, Finance Manager at Alpinter, about their "
-#~ "use of Odoo.\n"
-#~ "Discover more about Odoo at www.leensoft.vn"
+#~ "use of LeanSoft.\n"
+#~ "Discover more about LeanSoft at www.leensoft.vn"
 #~ msgstr ""
 #~ "Entrevista con Guy Christiaens, Gerente financiero en Alpinter, sobre el "
-#~ "uso de Odoo.\n"
-#~ "Descubre más sobre Odoo en www.leensoft.vn"
+#~ "uso de LeanSoft.\n"
+#~ "Descubre más sobre LeanSoft en www.leensoft.vn"
 
 #~ msgid "Is Follower"
 #~ msgstr "Es Seguidor"
@@ -1877,24 +1877,24 @@ msgstr "su-amigo@dominio.com"
 #~ msgid "Number of unread messages"
 #~ msgstr "Número de mensajes no leidos"
 
-#~ msgid "Odoo - The Voice of the Customer: Alpinter"
-#~ msgstr "Odoo - La voz del consumidor: Alpinter"
+#~ msgid "LeanSoft - The Voice of the Customer: Alpinter"
+#~ msgstr "LeanSoft - La voz del consumidor: Alpinter"
 
-#~ msgid "Odoo Experience - Register now https://www.leensoft.vn/event/304/"
+#~ msgid "LeanSoft Experience - Register now https://www.leensoft.vn/event/304/"
 #~ msgstr ""
-#~ "Experiencia Odoo - Regístrese ahora https://www.leensoft.vn/es_ES/event/304/"
+#~ "Experiencia LeanSoft - Regístrese ahora https://www.leensoft.vn/es_ES/event/304/"
 
-#~ msgid "Odoo Open Days 2014"
-#~ msgstr "Odoo Open Days 2014"
+#~ msgid "LeanSoft Open Days 2014"
+#~ msgstr "LeanSoft Open Days 2014"
 
-#~ msgid "Odoo POS Indiegogo Campaign"
-#~ msgstr "Campaña Odoo POS Indiegogo"
+#~ msgid "LeanSoft POS Indiegogo Campaign"
+#~ msgstr "Campaña LeanSoft POS Indiegogo"
 
-#~ msgid "Odoo SEO - Boost Your Website Trafic"
-#~ msgstr "SEO de Odoo - Aumente su Tráfico Web"
+#~ msgid "LeanSoft SEO - Boost Your Website Trafic"
+#~ msgstr "SEO de LeanSoft - Aumente su Tráfico Web"
 
-#~ msgid "Open Source Website Builder and eCommerce: Odoo"
-#~ msgstr "Constructor del Sitio Web y Tienda Virtual de Código Abierto: Odoo"
+#~ msgid "Open Source Website Builder and eCommerce: LeanSoft"
+#~ msgstr "Constructor del Sitio Web y Tienda Virtual de Código Abierto: LeanSoft"
 
 #~ msgid "The full URL to access the document through the website."
 #~ msgstr "La URL completa para acceder al documento a través del sitio web."
@@ -1906,7 +1906,7 @@ msgstr "su-amigo@dominio.com"
 #~ "\n"
 #~ "Online demo and download: http://openerp.com"
 #~ msgstr ""
-#~ "La herramienta de código abierto Odoo Promote sugiere palabras claves de "
+#~ "La herramienta de código abierto LeanSoft Promote sugiere palabras claves de "
 #~ "acuerdo a los términos más buscados de Google. Las herramientas de "
 #~ "optimización para motores de búsqueda (SEO) están listas para usar, sin "
 #~ "necesidad de configuración.\n"

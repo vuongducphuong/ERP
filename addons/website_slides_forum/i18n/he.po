@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of LeanSoft Server.
 # This file contains the translation of the following modules:
 # 	* website_slides_forum
 # 
@@ -11,7 +11,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: LeanSoft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-04 09:26+0000\n"
 "PO-Revision-Date: 2022-09-22 05:57+0000\n"
@@ -363,7 +363,7 @@ msgstr ""
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
 msgid ""
 "The goal of this site is create a relevant knowledge base that would answer "
-"questions related to Odoo."
+"questions related to LeanSoft."
 msgstr ""
 
 #. module: website_slides_forum
@@ -467,8 +467,8 @@ msgstr "כל תשובה תקינה באותה מידה: \"מה ______ האהוב
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "how to configure or customize Odoo to specific business needs,"
-msgstr "כיצד להגדיר או להתאים אישית את Odoo לצרכים עסקיים מסוימים,"
+msgid "how to configure or customize LeanSoft to specific business needs,"
+msgstr "כיצד להגדיר או להתאים אישית את LeanSoft לצרכים עסקיים מסוימים,"
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -479,8 +479,8 @@ msgstr "כיצד לפתח מודולים לצרכים שלך,"
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "how to install Odoo on a specific infrastructure,"
-msgstr "כיצד להתקין את Odoo בתשתית מסוימת,"
+msgid "how to install LeanSoft on a specific infrastructure,"
+msgstr "כיצד להתקין את LeanSoft בתשתית מסוימת,"
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -491,8 +491,8 @@ msgstr "זו התבכיינות שמוסוות כשאלה: \"____ מחורבן �
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "specific questions about Odoo service offers, etc."
-msgstr "שאלות ספציפיות לגבי הצעות שירות של Odoo וכו'."
+msgid "specific questions about LeanSoft service offers, etc."
+msgstr "שאלות ספציפיות לגבי הצעות שירות של LeanSoft וכו'."
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
@@ -513,8 +513,8 @@ msgstr "נשאלת שאלה פתוחה והיפותטית: \"מה אם ______ ה
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_2
-msgid "what's the best way to use Odoo for a specific business need,"
-msgstr "מה הדרך הטובה ביותר להשתמש ב Odoo לצורך עסקי מסוים,"
+msgid "what's the best way to use LeanSoft for a specific business need,"
+msgstr "מה הדרך הטובה ביותר להשתמש ב LeanSoft לצורך עסקי מסוים,"
 
 #. module: website_slides_forum
 #: model_terms:forum.forum,faq:website_slides_forum.forum_forum_demo_channel_0

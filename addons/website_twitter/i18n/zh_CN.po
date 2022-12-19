@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of LeanSoft Server.
 # This file contains the translation of the following modules:
 # 	* website_twitter
 # 
@@ -9,7 +9,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.5alpha1\n"
+"Project-Id-Version: LeanSoft Server 15.5alpha1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-20 09:02+0000\n"
 "PO-Revision-Date: 2022-09-22 05:57+0000\n"
@@ -54,13 +54,13 @@ msgstr "<strong>应用名称：</strong>选择一个独特的名称"
 
 #. module: website_twitter
 #: model_terms:ir.ui.view,arch_db:website_twitter.res_config_settings_view_form
-msgid "<strong>Description: </strong> Odoo Twitter Integration"
-msgstr "<strong>描述: </strong> Odoo 推特集成"
+msgid "<strong>Description: </strong> LeanSoft Twitter Integration"
+msgstr "<strong>描述: </strong> LeanSoft 推特集成"
 
 #. module: website_twitter
 #: model_terms:ir.ui.view,arch_db:website_twitter.res_config_settings_view_form
-msgid "<strong>Name: </strong> Odoo Twitter Integration"
-msgstr "<strong>名称: </strong> Odoo 推特集成"
+msgid "<strong>Name: </strong> LeanSoft Twitter Integration"
+msgstr "<strong>名称: </strong> LeanSoft 推特集成"
 
 #. module: website_twitter
 #: model_terms:ir.ui.view,arch_db:website_twitter.res_config_settings_view_form

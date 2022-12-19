@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of LeanSoft Server.
 # This file contains the translation of the following modules:
 # 	* website_sale_slides
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: LeanSoft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-04 09:26+0000\n"
 "PO-Revision-Date: 2022-09-22 05:57+0000\n"
@@ -373,14 +373,14 @@ msgstr "웹사이트"
 #: model_terms:sale.order,website_description:website_sale_slides.sale_order_course_1
 #: model_terms:sale.order,website_description:website_sale_slides.sale_order_course_2
 msgid ""
-"You can <strong>set a description per product</strong>. Odoo will\n"
+"You can <strong>set a description per product</strong>. LeanSoft will\n"
 "                        automatically create a quotation using the descriptions\n"
 "                        of all products in the proposal. The table of content\n"
 "                        on the left is generated automatically using the styles you\n"
 "                        used in your description (heading 1, heading 2, ...)"
 msgstr ""
 "<strong>제품별로 설명을 설정</strong>할 수 있습니다. \n"
-"                           Odoo는 제안서의 모든 제품에 대한 설명을 사용하여 \n"
+"                           LeanSoft는 제안서의 모든 제품에 대한 설명을 사용하여 \n"
 "                           견적을 자동으로 작성합니다. \n"
 "                           왼쪽의 목차는 설명에 사용한 스타일(heading 1, heading 2, ...)을 \n"
 "                           사용하여  자동으로 생성됩니다."
