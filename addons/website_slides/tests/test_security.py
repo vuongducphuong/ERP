@@ -314,7 +314,7 @@ class TestAccessFeatures(common.SlidesCase):
             {'name': 'Link',
              'slide_id': self.slide_3.id,
              'resource_type': 'url',
-             'link': 'https://www.odoo.com'}
+             'link': 'https://www.leansoft.vn'}
         ])
         # No public access to resources
         with self.assertRaises(AccessError):

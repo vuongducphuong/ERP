@@ -28,8 +28,8 @@
             <xpath expr="//footer" position="replace">
                 <div class="container mt16 mb8">
                     <div class="float-end" t-ignore="true" t-if="not editable">
-                        Create a <a target="_blank" href="https://www.odoo.com/app/website">free website</a> with
-                        <a target="_blank" class="label label-danger" href="https://www.odoo.com/app/website">Odoo</a>
+                        Create a <a target="_blank" href="https://www.leansoft.vn/app/website">free website</a> with
+                        <a target="_blank" class="label label-danger" href="https://www.leansoft.vn/app/website">Odoo</a>
                     </div>
                     <div class="float-start text-muted" itemscope="itemscope" itemtype="https://schema.org/Organization">
                         Copyright &amp;copy; <span t-field="res_company.name" itemprop="name">Company name</span>

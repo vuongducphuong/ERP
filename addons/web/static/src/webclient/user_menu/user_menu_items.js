@@ -8,7 +8,7 @@ import { session } from "@web/session";
 import { Component } from "@odoo/owl";
 
 function documentationItem(env) {
-    const documentationURL = "https://www.odoo.com/documentation/16.0";
+    const documentationURL = "https://www.leansoft.vn/documentation/16.0";
     return {
         type: "item",
         id: "documentation",
@@ -88,7 +88,7 @@ function odooAccountItem(env) {
                     browser.location.href = url;
                 })
                 .catch(() => {
-                    browser.location.href = "https://accounts.odoo.com/account";
+                    browser.location.href = "https://accounts.leansoft.vn/account";
                 });
         },
         sequence: 60,

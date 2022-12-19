@@ -300,7 +300,7 @@ If you have development competencies, we can propose you specific traineeships</
           <field name="category_ids" eval="[(6, 0, [ref('employee_category_4')])]"/>
           <field name="work_location_id" ref="work_location_1"/>
           <field name="work_phone">+3281813700</field>
-          <field name="work_email">gilles@odoo.com</field>
+          <field name="work_email">gilles@leansoft.vn</field>
           <field name="image_1920" type="base64" file="hr/static/img/employee_qdp-image.png"/>
           <field name="create_date">2010-01-01 00:00:00</field>
       </record>
@@ -434,7 +434,7 @@ If you have development competencies, we can propose you specific traineeships</
           <field name="job_title">Marketing and Community Manager</field>
           <field name="work_location_id" ref="work_location_1"/>
           <field name="work_phone">(206)-267-3735</field>
-          <field name="work_email">jod@odoo.com</field>
+          <field name="work_email">jod@leansoft.vn</field>
           <field name="image_1920" type="base64" file="hr/static/img/employee_jod-image.jpg"/>
           <field name="create_date">2010-01-01 00:00:00</field>
       </record>

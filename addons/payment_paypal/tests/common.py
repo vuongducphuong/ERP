@@ -35,7 +35,7 @@ class PaypalCommon(PaymentCommon):
             'mc_fee': '2.00',
             'mc_gross': '50.00',
             'notify_version': 'UNVERSIONED',
-            'payer_email': 'test-buyer@mail.odoo.com',
+            'payer_email': 'test-buyer@mail.leansoft.vn',
             'payer_id': '59XDVNACRAZZK',
             'payer_status': 'VERIFIED',
             'payment_date': '2022-01-19T08:38:06Z',

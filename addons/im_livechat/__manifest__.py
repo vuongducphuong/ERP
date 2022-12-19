@@ -5,7 +5,7 @@
     'sequence': 210,
     'summary': 'Chat with your website visitors',
     'category': 'Website/Live Chat',
-    'website': 'https://www.odoo.com/app/live-chat',
+    'website': 'https://www.leansoft.vn/app/live-chat',
     'description':
         """
 Live Chat Support

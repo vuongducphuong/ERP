@@ -8,7 +8,7 @@
             <input type="hidden" name="import_id"/>
             <div class="oe_import_box col-sm-9">
                 <div class="col-sm-12">
-                    <p>Chọn một file .xml để nhập khẩu. <!--<a href="https://www.odoo.com/documentation/user/11.0/general/base_import/import_faq.html" target="new" class="pull-right">Help</a>--></p>
+                    <p>Chọn một file .xml để nhập khẩu. <!--<a href="https://www.leansoft.vn/documentation/user/11.0/general/base_import/import_faq.html" target="new" class="pull-right">Help</a>--></p>
                 </div>
                 <div class="col-sm-10">
                     <div class="input-group">

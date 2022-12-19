@@ -6,7 +6,7 @@
 
 # List of contributors:
 # Mag. Wolfgang Taferner <wolfgang.taferner@wt-io-it.at>
-# Josse Colpaert <jco@odoo.com>
+# Josse Colpaert <jco@leansoft.vn>
 
 {
     "name": "Austria - Accounting",

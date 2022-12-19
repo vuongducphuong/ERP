@@ -12,11 +12,11 @@ Group: Development/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Prefix: %{_prefix}
 BuildArch: noarch
-Vendor: Lean Soft. <info@odoo.com>
+Vendor: Lean Soft. <info@leansoft.vn>
 Requires: sassc
 BuildRequires: python3-devel
 BuildRequires: pyproject-rpm-macros
-Url: https://www.odoo.com
+Url: https://www.leansoft.vn
 
 %description
 Odoo is a complete ERP and CRM. The main features are accounting (analytic

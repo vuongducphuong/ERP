@@ -22,7 +22,7 @@ class TestLeadConvert(TestCrmCommon):
 
         partner_1 = self.env['res.partner'].create({
             'name': 'Dave',
-            'email': 'dave@odoo.com',
+            'email': 'dave@leansoft.vn',
             'mobile': '+1 202 555 0123',
             'phone': False,
             'parent_id': company.id,
@@ -34,7 +34,7 @@ class TestLeadConvert(TestCrmCommon):
         })
         partner_2 = self.env['res.partner'].create({
             'name': 'Eve',
-            'email': 'eve@odoo.com',
+            'email': 'eve@leansoft.vn',
             'mobile': '+1 202 555 3210',
             'phone': False,
             'parent_id': company.id,
@@ -49,17 +49,17 @@ class TestLeadConvert(TestCrmCommon):
             'name': 'Lead 1',
             'type': 'lead',
             'partner_name': 'Alice',
-            'email_from': 'alice@odoo.com',
+            'email_from': 'alice@leansoft.vn',
         })
         lead_2 = self.env['crm.lead'].create({
             'name': 'Opportunity 1',
             'type': 'opportunity',
-            'email_from': 'alice@odoo.com',
+            'email_from': 'alice@leansoft.vn',
         })
         lead_3 = self.env['crm.lead'].create({
             'name': 'Opportunity 2',
             'type': 'opportunity',
-            'email_from': 'alice@odoo.com',
+            'email_from': 'alice@leansoft.vn',
         })
         lead_4 = self.env['crm.lead'].create({
             'name': 'Lead 2',
@@ -80,7 +80,7 @@ class TestLeadConvert(TestCrmCommon):
             'name': 'Opportunity 5',
             'type': 'opportunity',
             'partner_name': 'Bob Doe',
-            'email_from': 'bob@odoo.com',
+            'email_from': 'bob@leansoft.vn',
         })
         lead_8 = self.env['crm.lead'].create({
             'name': 'Opportunity 6',
@@ -207,17 +207,17 @@ class TestLeadConvert(TestCrmCommon):
         lead_3 = self.env['crm.lead'].create({
             'name': 'Opportunity 2',
             'type': 'lead',
-            'email_from': 'odoo.com'
+            'email_from': 'leansoft.vn'
         })
         lead_4 = self.env['crm.lead'].create({
             'name': 'Opportunity 3',
             'type': 'opportunity',
-            'email_from': 'odoo.com'
+            'email_from': 'leansoft.vn'
         })
         lead_5 = self.env['crm.lead'].create({
             'name': 'Opportunity 3',
             'type': 'opportunity',
-            'email_from': 'myodoo.com'
+            'email_from': 'myleansoft.vn'
         })
 
         self.assertEqual(lead_1 + lead_2, lead_1.duplicate_lead_ids)

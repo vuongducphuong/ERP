@@ -982,7 +982,7 @@ QUnit.test('Chat with partner should be opened after clicking on their mention',
     assert.expect(2);
 
     const pyEnv = await startServer();
-    const resPartnerId = pyEnv['res.partner'].create({ name: 'Test Partner', email: 'testpartner@odoo.com' });
+    const resPartnerId = pyEnv['res.partner'].create({ name: 'Test Partner', email: 'testpartner@leansoft.vn' });
     pyEnv['res.users'].create({ partner_id: resPartnerId });
     const { click, insertText, openFormView } = await start();
     await openFormView({

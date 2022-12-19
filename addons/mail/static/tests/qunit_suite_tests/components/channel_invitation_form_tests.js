@@ -14,7 +14,7 @@ QUnit.test('should display the channel invitation form after clicking on the inv
 
     const pyEnv = await startServer();
     const resPartnerId1 = pyEnv['res.partner'].create({
-        email: "testpartner@odoo.com",
+        email: "testpartner@leansoft.vn",
         name: "TestPartner",
     });
     pyEnv['res.users'].create({ partner_id: resPartnerId1 });
@@ -46,11 +46,11 @@ QUnit.test('should be able to search for a new user to invite from an existing c
 
     const pyEnv = await startServer();
     const resPartnerId1 = pyEnv['res.partner'].create({
-        email: "testpartner@odoo.com",
+        email: "testpartner@leansoft.vn",
         name: "TestPartner",
     });
     const resPartnerId2 = pyEnv['res.partner'].create({
-        email: "testpartner2@odoo.com",
+        email: "testpartner2@leansoft.vn",
         name: "TestPartner2",
     });
     pyEnv['res.users'].create({ partner_id: resPartnerId1 });
@@ -84,11 +84,11 @@ QUnit.test('should be able to create a new group chat from an existing chat', as
 
     const pyEnv = await startServer();
     const resPartnerId1 = pyEnv['res.partner'].create({
-        email: "testpartner@odoo.com",
+        email: "testpartner@leansoft.vn",
         name: "TestPartner",
     });
     const resPartnerId2 = pyEnv['res.partner'].create({
-        email: "testpartner2@odoo.com",
+        email: "testpartner2@leansoft.vn",
         name: "TestPartner2",
     });
     pyEnv['res.users'].create({ partner_id: resPartnerId1 });
@@ -125,7 +125,7 @@ QUnit.test('Invitation form should display channel group restriction', async fun
 
     const pyEnv = await startServer();
     const resPartnerId1 = pyEnv['res.partner'].create({
-        email: "testpartner@odoo.com",
+        email: "testpartner@leansoft.vn",
         name: "TestPartner",
     });
     pyEnv['res.users'].create({ partner_id: resPartnerId1 });

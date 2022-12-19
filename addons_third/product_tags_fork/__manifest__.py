@@ -26,7 +26,7 @@
     "version": "14.1.0.0",
     'license': 'LGPL-3',
     "author": "Shurshilov Artem",
-    'website': "http://www.eurodoo.com",
+    'website': "http://www.eurleansoft.vn",
     "category": "Sales Management",
     "depends": [
         'product',

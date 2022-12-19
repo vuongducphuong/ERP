@@ -5,7 +5,7 @@
     'name': 'Notes',
     'version': '1.0',
     'category': 'Productivity/Notes',
-    'website': 'https://www.odoo.com/app/notes',
+    'website': 'https://www.leansoft.vn/app/notes',
     'summary': 'Organize your work with memos',
     'sequence': 260,
     'depends': [

@@ -1,7 +1,7 @@
 # Please note that this Dockerfile is used for testing nightly builds and should
 # not be used to deploy Odoo
 FROM debian:buster
-MAINTAINER Lean Soft. <info@odoo.com>
+MAINTAINER Lean Soft. <info@leansoft.vn>
 
 RUN apt-get update && \
 	apt-get install -y locales && \

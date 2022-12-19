@@ -8,7 +8,7 @@
     'category': 'Sales/CRM',
     'sequence': 15,
     'summary': 'Track leads and close opportunities',
-    'website': 'https://www.odoo.com/app/crm',
+    'website': 'https://www.leansoft.vn/app/crm',
     'depends': [
         'base_setup',
         'sales_team',

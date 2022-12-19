@@ -12,7 +12,7 @@ odoo.define('website.tour.form_editor', function (require) {
     const ESSENTIAL_FIELDS_VALID_DATA_FOR_DEFAULT_FORM = [
         {
             name: 'email_from',
-            value: 'admin@odoo.com',
+            value: 'admin@leansoft.vn',
         },
         {
             name: 'subject',

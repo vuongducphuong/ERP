@@ -27,15 +27,15 @@ wTourUtils.registerWebsitePreviewTour('link_tools', {
         trigger: "#toolbar #create-link",
     },
     {
-        content: "Type the link URL odoo.com",
+        content: "Type the link URL leansoft.vn",
         trigger: '#o_link_dialog_url_input',
-        run: 'text odoo.com'
+        run: 'text leansoft.vn'
     },
     clickOnImgStep,
     // 2. Edit the link with the link tools.
     {
         content: "Click on the newly created link, change content to odoo website",
-        trigger: 'iframe .s_text_image a[href="http://odoo.com"]:contains("odoo.com")',
+        trigger: 'iframe .s_text_image a[href="http://leansoft.vn"]:contains("leansoft.vn")',
         run: 'text odoo website',
     },
     {
@@ -91,7 +91,7 @@ wTourUtils.registerWebsitePreviewTour('link_tools', {
     {
         content: "Set URL.",
         trigger: '.o_we_customize_panel we-input:contains("Your URL") input',
-        run: 'text odoo.com',
+        run: 'text leansoft.vn',
     },
     {
         content: "Deselect image.",
@@ -103,13 +103,13 @@ wTourUtils.registerWebsitePreviewTour('link_tools', {
     },
     {
         content: "Check that link tools appear.",
-        trigger: 'iframe .popover div a:contains("http://odoo.com")',
+        trigger: 'iframe .popover div a:contains("http://leansoft.vn")',
         run: () => {}, // It's a check.
     },
     // 5. Remove link from image.
     {
         content: "Remove link.",
-        trigger: 'iframe .popover:contains("http://odoo.com") a .fa-chain-broken',
+        trigger: 'iframe .popover:contains("http://leansoft.vn") a .fa-chain-broken',
     },
     {
         content: "Check that image is not within a link anymore.",

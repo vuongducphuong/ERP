@@ -2,7 +2,7 @@
 {
     'name': 'Events Organization',
     'version': '1.7',
-    'website': 'https://www.odoo.com/app/events',
+    'website': 'https://www.leansoft.vn/app/events',
     'category': 'Marketing/Events',
     'summary': 'Trainings, Conferences, Meetings, Exhibitions, Registrations',
     'description': """

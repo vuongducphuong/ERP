@@ -9,7 +9,7 @@ Design gorgeous mails
     """,
     'version': '1.1',
     'sequence': 110,
-    'website': 'https://www.odoo.com/app/mailing',
+    'website': 'https://www.leansoft.vn/app/mailing',
     'category': 'Marketing/Email Marketing',
     'depends': [
         'mass_mailing',

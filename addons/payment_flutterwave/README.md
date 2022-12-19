@@ -24,7 +24,7 @@ The version of the API implemented by this module is v3.
 ## Merge details
 
 The first version of the module was specified in task
-[2759117](https://www.odoo.com/web#id=2759117&model=project.task) and merged with PR
+[2759117](https://www.leansoft.vn/web#id=2759117&model=project.task) and merged with PR
 odoo/odoo#84820 in `saas-15.4`.
 
 ## Testing instructions

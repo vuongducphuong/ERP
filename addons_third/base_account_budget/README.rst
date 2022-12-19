@@ -4,13 +4,13 @@ Odoo 15 Budgets Management
 
 Installation
 ============
-	- www.odoo.com/documentation/15.0/setup/install.html
+	- www.leansoft.vn/documentation/15.0/setup/install.html
 	- Install our custom addon
 
 License
 -------
 General Public License, Version 3 (LGPL v3).
-(https://www.odoo.com/documentation/user/13.0/legal/licenses/licenses.html)
+(https://www.leansoft.vn/documentation/user/13.0/legal/licenses/licenses.html)
 
 Company
 -------

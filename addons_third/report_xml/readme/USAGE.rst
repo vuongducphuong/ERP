@@ -32,10 +32,10 @@ to see your XML report online as a web page.
 
 For further information, please visit:
 
-* https://www.odoo.com/forum/help-1
+* https://www.leansoft.vn/forum/help-1
 * https://github.com/OCA/reporting-engine
 
-.. _custom report: https://www.odoo.com/documentation/13.0/reference/reports.html#custom-reports
-.. _instructions to create reports: https://www.odoo.com/documentation/13.0/reference/reports.html
+.. _custom report: https://www.leansoft.vn/documentation/13.0/reference/reports.html#custom-reports
+.. _instructions to create reports: https://www.leansoft.vn/documentation/13.0/reference/reports.html
 .. _demo report: https://github.com/OCA/reporting-engine/blob/13.0/report_xml/demo/demo_report.xml
 .. _report definition: https://github.com/OCA/reporting-engine/blob/13.0/report_xml/demo/report.xml

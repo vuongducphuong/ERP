@@ -8,18 +8,18 @@ declaration.
 
 Signed,
 
-Filippo Iovine filippo.iovine@rapsodoo.com https://github.com/ioFilippo
+Filippo Iovine filippo.iovine@rapsleansoft.vn https://github.com/ioFilippo
 
 List of contributors:
 
-Filippo Iovine filippo.iovine@rapsodoo.com https://github.com/ioFilippo
-Lucio Valente lucio.valente@rapsodoo.com https://github.com/luciovalente
-Mario Pitingolo mario.pitingolo@rapsodoo.com https://github.com/Pits79
-Simone Papandrea simone.papandrea@rapsodoo.com https://github.com/SI3P
-Davide Fella davide.fella@rapsodoo.com https://github.com/davidefella
-Angel Corpuz angel.corpuz@rapsodoo.com https://github.com/acorpuz
-Tony Masci tony.masci@rapsodoo.com https://github.com/TonyMasciI
-Andrea Patusso andrea.patusso@rapsodoo.com https://github.com/AndreaPatusso
-Valentina Maltese valentina.maltese@rapsodoo.com https://github.com/ValentinaMal
-Tommaso Bellelli tommaso.bellelli@rapsodoo.com https://github.com/tommasobellelli
-Saydigital info@rapsodoo.com https://github.com/saydigital
+Filippo Iovine filippo.iovine@rapsleansoft.vn https://github.com/ioFilippo
+Lucio Valente lucio.valente@rapsleansoft.vn https://github.com/luciovalente
+Mario Pitingolo mario.pitingolo@rapsleansoft.vn https://github.com/Pits79
+Simone Papandrea simone.papandrea@rapsleansoft.vn https://github.com/SI3P
+Davide Fella davide.fella@rapsleansoft.vn https://github.com/davidefella
+Angel Corpuz angel.corpuz@rapsleansoft.vn https://github.com/acorpuz
+Tony Masci tony.masci@rapsleansoft.vn https://github.com/TonyMasciI
+Andrea Patusso andrea.patusso@rapsleansoft.vn https://github.com/AndreaPatusso
+Valentina Maltese valentina.maltese@rapsleansoft.vn https://github.com/ValentinaMal
+Tommaso Bellelli tommaso.bellelli@rapsleansoft.vn https://github.com/tommasobellelli
+Saydigital info@rapsleansoft.vn https://github.com/saydigital

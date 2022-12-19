@@ -731,8 +731,8 @@ QUnit.test('display partner mention suggestions on typing "@"', async function (
 
     const pyEnv = await startServer();
 
-    const resPartnerId1 = pyEnv['res.partner'].create({ email: "testpartner@odoo.com", name: "TestPartner" });
-    const resPartnerId2 = pyEnv['res.partner'].create({ email: "testpartner2@odoo.com", name: "TestPartner2" });
+    const resPartnerId1 = pyEnv['res.partner'].create({ email: "testpartner@leansoft.vn", name: "TestPartner" });
+    const resPartnerId2 = pyEnv['res.partner'].create({ email: "testpartner2@leansoft.vn", name: "TestPartner2" });
     pyEnv['res.users'].create({ partner_id: resPartnerId1 });
     const mailChannelId1 = pyEnv['mail.channel'].create({
         channel_member_ids: [
@@ -770,7 +770,7 @@ QUnit.test('mention a partner', async function (assert) {
     assert.expect(4);
 
     const pyEnv = await startServer();
-    const resPartnerId = pyEnv['res.partner'].create({ email: "testpartner@odoo.com", name: "TestPartner" });
+    const resPartnerId = pyEnv['res.partner'].create({ email: "testpartner@leansoft.vn", name: "TestPartner" });
     const mailChannelId1 = pyEnv['mail.channel'].create({
         channel_member_ids: [
             [0, 0, { partner_id: pyEnv.currentPartnerId }],
@@ -812,7 +812,7 @@ QUnit.test('mention a partner after some text', async function (assert) {
     assert.expect(5);
 
     const pyEnv = await startServer();
-    const resPartnerId = pyEnv['res.partner'].create({ email: "testpartner@odoo.com", name: "TestPartner" });
+    const resPartnerId = pyEnv['res.partner'].create({ email: "testpartner@leansoft.vn", name: "TestPartner" });
     const mailChannelId1 = pyEnv['mail.channel'].create({
         channel_member_ids: [
             [0, 0, { partner_id: pyEnv.currentPartnerId }],
@@ -860,7 +860,7 @@ QUnit.test('add an emoji after a partner mention', async function (assert) {
     assert.expect(5);
 
     const pyEnv = await startServer();
-    const resPartnerId = pyEnv['res.partner'].create({ email: "testpartner@odoo.com", name: "TestPartner" });
+    const resPartnerId = pyEnv['res.partner'].create({ email: "testpartner@leansoft.vn", name: "TestPartner" });
     const mailChannelId1 = pyEnv['mail.channel'].create({
         channel_member_ids: [
             [0, 0, { partner_id: pyEnv.currentPartnerId }],

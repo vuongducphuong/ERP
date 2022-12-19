@@ -53,8 +53,8 @@ class TestResCompany(common.TransactionCase, MockIAPPartnerAutocomplete):
         company_1.website = "http://localhost:8069/%7Eguido/Python.html"
         self.assertEqual(company_1._get_company_domain(), False)
 
-        company_1.website = "http://runbot.odoo.com"
-        self.assertEqual(company_1._get_company_domain(), 'odoo.com')
+        company_1.website = "http://runbot.leansoft.vn"
+        self.assertEqual(company_1._get_company_domain(), 'leansoft.vn')
 
         company_1.website = "http://www.example.com/biniou"
         self.assertEqual(company_1._get_company_domain(), False)

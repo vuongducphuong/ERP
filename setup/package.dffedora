@@ -1,7 +1,7 @@
 # Please note that this Dockerfile is used for testing nightly builds and should
 # not be used to deploy Odoo
 FROM fedora:36
-MAINTAINER Lean Soft. <info@odoo.com>
+MAINTAINER Lean Soft. <info@leansoft.vn>
 
 # Dependencies and postgres
 RUN dnf update -d 0 -e 0 -y && \

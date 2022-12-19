@@ -44,7 +44,7 @@ QUnit.module('partner_autocomplete', {
                         return Promise.resolve([
                             {
                                 "name": "Odoo",
-                                "domain": "odoo.com",
+                                "domain": "leansoft.vn",
                             },
                             {
                                 "name": "MyCompany",

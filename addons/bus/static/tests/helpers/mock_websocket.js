@@ -70,7 +70,7 @@ export function patchWebsocketWorkerWithCleanup(params = {}) {
         },
     }, { pure: true });
     patchWithCleanup(websocketWorker || WebsocketWorker.prototype, params);
-    websocketWorker = websocketWorker || new WebsocketWorker('wss://odoo.com/websocket');
+    websocketWorker = websocketWorker || new WebsocketWorker('wss://leansoft.vn/websocket');
     patchWithCleanup(browser, {
         SharedWorker: function () {
             return new SharedWorkerMock(websocketWorker);

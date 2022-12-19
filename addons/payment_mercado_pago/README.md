@@ -33,7 +33,7 @@ The API implemented by this module is not versioned.
 ## Merge details
 
 The first version of the module was specified in task
-[2704764](https://www.odoo.com/web#id=2704764&model=project.task) and merged with PR
+[2704764](https://www.leansoft.vn/web#id=2704764&model=project.task) and merged with PR
 odoo/odoo#83957 in `saas-15.5`.
 
 ## Testing instructions

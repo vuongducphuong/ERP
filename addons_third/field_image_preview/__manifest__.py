@@ -17,7 +17,7 @@ This is extension for <field widget="image"> widget image
 """,
     'author': 'Shurshilov Artem',
     #    "website": "https://vk.com/id20132180",
-    'website': "http://www.eurodoo.com",
+    'website': "http://www.eurleansoft.vn",
 
     # Categories can be used to filter modules in modules listing
     'category': "Tools",

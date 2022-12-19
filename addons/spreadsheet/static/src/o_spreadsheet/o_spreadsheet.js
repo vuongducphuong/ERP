@@ -981,7 +981,7 @@
     }
     /**
      * Check if the string is a web link.
-     * e.g. http://odoo.com
+     * e.g. http://leansoft.vn
      */
     function isWebLink(str) {
         return WEB_LINK_REGEX.test(str);

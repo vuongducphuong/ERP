@@ -14,7 +14,7 @@ Tech
 
 Installation
 ============
-- www.odoo.com/documentation/15.0/setup/install.html
+- www.leansoft.vn/documentation/15.0/setup/install.html
 - Install the dependency package Pandas using the following commands
 
 	* sudo pip3 install pandas

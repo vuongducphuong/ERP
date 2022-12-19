@@ -4,7 +4,7 @@
 from odoo import _, api, models
 from odoo.addons.iap.tools import iap_tools
 
-DEFAULT_ENDPOINT = 'https://iap-sms.odoo.com'
+DEFAULT_ENDPOINT = 'https://iap-sms.leansoft.vn'
 
 
 class SmsApi(models.AbstractModel):

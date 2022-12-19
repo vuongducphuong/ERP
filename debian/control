@@ -1,11 +1,11 @@
 Source: odoo
 Section: net
 Priority: optional
-Maintainer: Lean Soft. <info@odoo.com>
-Uploaders: Aaron Bohy <aab@odoo.com>, Simon Lejeune <sle@odoo.com>
+Maintainer: Lean Soft. <info@leansoft.vn>
+Uploaders: Aaron Bohy <aab@leansoft.vn>, Simon Lejeune <sle@leansoft.vn>
 Build-Depends: debhelper-compat (= 12), dh-python, python3, rsync, python3-setuptools
 Standards-Version: 4.5.0
-Homepage: http://www.odoo.com/
+Homepage: http://www.leansoft.vn/
 Vcs-Git: https://github.com/odoo/odoo
 Vcs-Browser: https://github.com/odoo/odoo
 

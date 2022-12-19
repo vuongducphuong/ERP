@@ -30,7 +30,7 @@ class TestSMSPost(TestMassMailCommon):
 
     def setUp(self):
         super(TestSMSPost, self).setUp()
-        self._web_base_url = 'https://test.odoo.com'
+        self._web_base_url = 'https://test.leansoft.vn'
         self.env['ir.config_parameter'].sudo().set_param('web.base.url', self._web_base_url)
 
     def test_body_link_shorten(self):

@@ -11,13 +11,13 @@ class TestLinkTracker(common.TransactionCase, MockLinkTracker):
 
     def setUp(self):
         super(TestLinkTracker, self).setUp()
-        self._web_base_url = 'https://test.odoo.com'
+        self._web_base_url = 'https://test.leansoft.vn'
         self.env['ir.config_parameter'].sudo().set_param('web.base.url', self._web_base_url)
 
     def test_create(self):
         link_trackers = self.env['link.tracker'].create([
             {
-                'url': 'odoo.com',
+                'url': 'leansoft.vn',
                 'title': 'Odoo',
             }, {
                 'url': 'example.com',
@@ -30,19 +30,19 @@ class TestLinkTracker(common.TransactionCase, MockLinkTracker):
 
         self.assertEqual(
             link_trackers.mapped('url'),
-            ['http://odoo.com', 'http://example.com', 'http://test.example.com'],
+            ['http://leansoft.vn', 'http://example.com', 'http://test.example.com'],
         )
 
         self.assertEqual(len(set(link_trackers.mapped('code'))), 3)
 
     def test_search_or_create(self):
         link_tracker_1 = self.env['link.tracker'].create({
-            'url': 'https://odoo.com',
+            'url': 'https://leansoft.vn',
             'title': 'Odoo',
         })
 
         link_tracker_2 = self.env['link.tracker'].search_or_create({
-            'url': 'https://odoo.com',
+            'url': 'https://leansoft.vn',
             'title': 'Odoo',
         })
 
@@ -59,7 +59,7 @@ class TestLinkTracker(common.TransactionCase, MockLinkTracker):
         campaign_id = self.env['utm.campaign'].search([], limit=1)
 
         self.env['link.tracker'].create({
-            'url': 'https://odoo.com',
+            'url': 'https://leansoft.vn',
             'title': 'Odoo',
         })
 
@@ -71,7 +71,7 @@ class TestLinkTracker(common.TransactionCase, MockLinkTracker):
 
         with self.assertRaises(UserError):
             self.env['link.tracker'].create({
-                'url': 'https://odoo.com',
+                'url': 'https://leansoft.vn',
                 'title': 'Odoo',
             })
 

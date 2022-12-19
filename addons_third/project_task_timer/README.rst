@@ -4,7 +4,7 @@ Task Timer with Start & Stop
 
 Installation
 ============
-	- www.odoo.com/documentation/15.0/setup/install.html
+	- www.leansoft.vn/documentation/15.0/setup/install.html
 	- Install our custom addon
 
 Configuration

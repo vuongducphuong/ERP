@@ -7,7 +7,7 @@
         Arabic/English for GCC + lot/SN numbers
     """,
     'author': "Lean Soft.",
-    'website': "https://www.odoo.com",
+    'website': "https://www.leansoft.vn",
     'category': 'Accounting/Localizations',
 
     'depends': ['l10n_gcc_invoice', 'stock_account'],

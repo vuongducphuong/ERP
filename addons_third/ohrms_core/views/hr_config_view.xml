@@ -30,7 +30,7 @@
                             <span class="label danger"
                                   attrs="{'invisible':[('test_module_hr_custody','=', False)]}">
                                 Module is not Present in Your Repository.
-                                <a href="https://www.odoo.com/apps/modules/13.0/hr_custody/" target="_blank">Get
+                                <a href="https://www.leansoft.vn/apps/modules/13.0/hr_custody/" target="_blank">Get
                                     This App
                                 </a>
                             </span>
@@ -49,7 +49,7 @@
                             <span class="label danger"
                                   attrs="{'invisible':[('test_oh_employee_check_list','=', False)]}">
                                 Module is not Present in Your Repository.
-                                <a href="https://www.odoo.com/apps/modules/13.0/oh_employee_check_list/"
+                                <a href="https://www.leansoft.vn/apps/modules/13.0/oh_employee_check_list/"
                                    target="_blank">Get This App
                                 </a>
                             </span>
@@ -68,7 +68,7 @@
                             <span class="label danger"
                                   attrs="{'invisible':[('test_module_hr_insurance','=', False)]}">
                                 Module is not Present in Your Repository.
-                                <a href="https://www.odoo.com/apps/modules/13.0/hr_insurance/" target="_blank">Get
+                                <a href="https://www.leansoft.vn/apps/modules/13.0/hr_insurance/" target="_blank">Get
                                     This App
                                 </a>
                             </span>
@@ -87,7 +87,7 @@
                             <span class="label danger"
                                   attrs="{'invisible':[('test_module_oh_hr_lawsuit_management','=', False)]}">
                                 Module is not Present in Your Repository.
-                                <a href="https://www.odoo.com/apps/modules/13.0/oh_hr_lawsuit_management/"
+                                <a href="https://www.leansoft.vn/apps/modules/13.0/oh_hr_lawsuit_management/"
                                    target="_blank">Get This App
                                 </a>
                             </span>
@@ -106,7 +106,7 @@
                             <span class="label danger"
                                   attrs="{'invisible':[('test_module_hr_resignation','=', False)]}">
                                 Module is not Present in Your Repository.
-                                <a href="https://www.odoo.com/apps/modules/13.0/hr_resignation/" target="_blank">Get
+                                <a href="https://www.leansoft.vn/apps/modules/13.0/hr_resignation/" target="_blank">Get
                                     This App
                                 </a>
                             </span>
@@ -125,7 +125,7 @@
                             <span class="label danger"
                                   attrs="{'invisible':[('test_module_oh_hr_zk_attendance','=', False)]}">
                                 Module is not Present in Your Repository.
-                                <a href="https://www.odoo.com/apps/modules/13.0/oh_hr_zk_attendance/"
+                                <a href="https://www.leansoft.vn/apps/modules/13.0/oh_hr_zk_attendance/"
                                    target="_blank">Get This App
                                 </a>
                             </span>
@@ -165,7 +165,7 @@
                             <span class="label danger"
                                   attrs="{'invisible':[('test_module_hr_employee_shift','=', False)]}">
                                 Module is not Present in Your Repository.
-                                <a href="https://www.odoo.com/apps/modules/13.0/hr_employee_shift/"
+                                <a href="https://www.leansoft.vn/apps/modules/13.0/hr_employee_shift/"
                                    target="_blank">Get This App
                                 </a>
                             </span>
@@ -184,7 +184,7 @@
                             <span class="label danger"
                                   attrs="{'invisible':[('test_module_hr_vacation_mngmt','=', False)]}">
                                 Module is not Present in Your Repository.
-                                <a href="https://www.odoo.com/apps/modules/13.0/hr_vacation_mngmt/"
+                                <a href="https://www.leansoft.vn/apps/modules/13.0/hr_vacation_mngmt/"
                                    target="_blank">Get This App
                                 </a>
                             </span>

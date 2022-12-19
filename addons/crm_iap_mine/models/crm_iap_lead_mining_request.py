@@ -9,7 +9,7 @@ from odoo.exceptions import UserError
 
 _logger = logging.getLogger(__name__)
 
-DEFAULT_ENDPOINT = 'https://iap-services.odoo.com'
+DEFAULT_ENDPOINT = 'https://iap-services.leansoft.vn'
 
 MAX_LEAD = 200
 

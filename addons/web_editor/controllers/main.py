@@ -27,7 +27,7 @@ from odoo.addons.base.models.assetsbundle import AssetsBundle
 from ..models.ir_attachment import SUPPORTED_IMAGE_EXTENSIONS, SUPPORTED_IMAGE_MIMETYPES
 
 logger = logging.getLogger(__name__)
-DEFAULT_LIBRARY_ENDPOINT = 'https://media-api.odoo.com'
+DEFAULT_LIBRARY_ENDPOINT = 'https://media-api.leansoft.vn'
 
 class Web_Editor(http.Controller):
     #------------------------------------------------------

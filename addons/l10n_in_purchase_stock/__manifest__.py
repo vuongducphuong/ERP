@@ -16,7 +16,7 @@
     """,
 
     'author': "Odoo",
-    'website': "https://www.odoo.com",
+    'website': "https://www.leansoft.vn",
     'category': 'Accounting/Localizations/Purchase',
     'version': '1.0',
 

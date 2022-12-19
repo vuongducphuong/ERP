@@ -1,8 +1,8 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Contact: Odoo <info@odoo.com>
+Upstream-Contact: Odoo <info@leansoft.vn>
 
 Files: *
-Copyright: Copyright (C) 2004-2015 Odoo SA. (www.odoo.com)
+Copyright: Copyright (C) 2004-2015 Odoo SA. (www.leansoft.vn)
 License: LGPL-3+
 
 Files: odoo/tools/appdirs.py
