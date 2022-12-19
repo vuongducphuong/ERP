@@ -143,8 +143,8 @@ msgstr "Login mit Google"
 
 #. module: auth_oauth
 #: model:auth.oauth.provider,body:auth_oauth.provider_openerp
-msgid "Log in with Odoo.com"
-msgstr "Login mit Odoo.com"
+msgid "Log in with LeanSoft.vn"
+msgstr "Login mit LeanSoft.vn"
 
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_auth_oauth_provider__body

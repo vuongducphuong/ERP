@@ -143,7 +143,7 @@ msgstr "使用 Google 登入"
 
 #. module: auth_oauth
 #: model:auth.oauth.provider,body:auth_oauth.provider_openerp
-msgid "Log in with Odoo.com"
+msgid "Log in with LeanSoft.vn"
 msgstr "使用 leansoft帳號 登入"
 
 #. module: auth_oauth

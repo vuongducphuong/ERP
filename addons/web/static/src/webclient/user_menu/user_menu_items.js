@@ -80,7 +80,7 @@ function odooAccountItem(env) {
     return {
         type: "item",
         id: "account",
-        description: env._t("My Odoo.com account"),
+        description: env._t("My LeanSoft.vn account"),
         callback: () => {
             env.services
                 .rpc("/web/session/account")
