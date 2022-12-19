@@ -553,7 +553,7 @@ msgstr "Mã token truy cập ERP"
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "Odoo Server URL"
+msgid "Lean Soft Server URL"
 msgstr "URL miền ERP"
 
 #. module: mail_plugin
