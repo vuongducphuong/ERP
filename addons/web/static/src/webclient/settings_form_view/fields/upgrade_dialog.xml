@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates xml:space="preserve">
     <t t-name="web.UpgradeDialog" owl="1">
-        <Dialog size="'md'" title="'Odoo Enterprise'">
+        <Dialog size="'md'" title="'Lean Soft Enterprise'">
             <div class="row" role="status">
                 <div class="col-6">
-                    Get this feature and much more with Odoo Enterprise!
+                    Get this feature and much more with Lean Soft Enterprise!
                     <ul class="list-unstyled">
                         <li><i class="fa fa-check"></i> Access to all Enterprise Apps</li>
                         <li><i class="fa fa-check"></i> New design</li>

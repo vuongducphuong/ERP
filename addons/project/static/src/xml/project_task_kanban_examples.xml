@@ -25,7 +25,7 @@
     </t>
   
     <t t-name="project.example.customerfeedback" owl="1">
-      Customers propose feedbacks by email; Odoo creates tasks automatically, and you can
+      Customers propose feedbacks by email; Lean Soft creates tasks automatically, and you can
       communicate on the task directly. Your managers decide which feedback is accepted
       <span class="o_status d-inline-block o_status_green"></span> and which feedback is
       moved to the "Refused" column.

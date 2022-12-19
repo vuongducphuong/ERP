@@ -188,7 +188,7 @@
                 <path fill="#FFF" d="M8 8V1a1 1 0 1 1 2 0v8a1 1 0 0 1-1 1H1a1 1 0 1 1 0-2h7z"/>
             </svg>
             <div class="o_frontend_to_backend_buttons d-flex">
-                <a href="#" title="Go to your Odoo Apps" class="o_frontend_to_backend_apps_btn fa fa-th d-flex align-items-center justify-content-center text-decoration-none" data-bs-toggle="dropdown"/>
+                <a href="#" title="Go to your Lean Soft Apps" class="o_frontend_to_backend_apps_btn fa fa-th d-flex align-items-center justify-content-center text-decoration-none" data-bs-toggle="dropdown"/>
                 <div class="dropdown-menu o_frontend_to_backend_apps_menu" role="menu">
                     <a role="menuitem" class="dropdown-item" t-esc="menu['name']"
                        t-as="menu" t-foreach="env['ir.ui.menu'].load_menus_root()['children']"
@@ -1756,7 +1756,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-9 pb24">
-                            <h3>50,000+ companies run Odoo to grow their businesses.</h3>
+                            <h3>50,000+ companies run Lean Soft to grow their businesses.</h3>
                             <p class="lead">Join us and make your company a better place.</p>
                         </div>
                         <div class="col-lg-3 pb24">
@@ -2113,18 +2113,18 @@
 </record>
 
 <!-- Error and special pages -->
-<template id="website_info" name="Odoo Information">
+<template id="website_info" name="Lean Soft Information">
     <t t-call="website.layout">
         <div id="wrap" class="o_website_info"/>
     </t>
 </template>
 
-<template id="show_website_info" inherit_id="website.website_info" name="Show Odoo Information">
+<template id="show_website_info" inherit_id="website.website_info" name="Show Lean Soft Information">
     <xpath expr="//div[@id='wrap']" position="inside">
         <div class="oe_structure">
             <section class="container">
                 <h1><t t-esc="res_company.name"/>
-                    <small groups='base.group_no_one'>Odoo Version <t t-out="version.get('server_version')"/></small>
+                    <small groups='base.group_no_one'>Lean Soft Version <t t-out="version.get('server_version')"/></small>
                 </h1>
                 <p>
                     Information about the <t t-esc="res_company.name"/> instance of Odoo, the <a target="_blank" href="https://www.odoo.com">Open Source ERP</a>.

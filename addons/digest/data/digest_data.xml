@@ -442,10 +442,10 @@
     <template id="digest_section_mobile">
 <div class="global_layout" style="overflow: auto;">
     <div style="width: 50%; float: left; text-align: right;">
-        <img src="https://www.odoo.com/web/image/24717933/odoo-mobile.png" alt="Odoo Mobile" />
+        <img src="https://www.odoo.com/web/image/24717933/odoo-mobile.png" alt="Lean Soft Mobile" />
     </div>
     <div style="width: 50%; float: left;">
-        <p class="run_business">Run your business from anywhere with <b>Odoo Mobile</b>.</p>
+        <p class="run_business">Run your business from anywhere with <b>Lean Soft Mobile</b>.</p>
         <div>
             <a href="https://play.google.com/store/apps/details?id=com.odoo.mobile" target="_blank"><img class="download_app" src="https://download.odoocdn.com/digests/digest/static/src/img/google_play.png" /></a>
         </div>

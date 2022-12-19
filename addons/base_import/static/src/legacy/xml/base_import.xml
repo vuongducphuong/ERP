@@ -64,7 +64,7 @@
                 <td class="oe_import_grid-cell border-0 fw-bold" style="width: 20%;">
                     <span class="o_single_line_text" title="File Column">File Column</span></td>
                 <td class="oe_import_grid-cell border-0 fw-bold" style="width: 15%;" >
-                    <span class="o_single_line_text" title="File Column">Odoo Field</span></td>
+                    <span class="o_single_line_text" title="File Column">Lean Soft Field</span></td>
                 <td class="oe_import_grid-cell border-0 fw-bold">
                     <span class="o_single_line_text" title="File Column">Comments</span></td>
             </tr>
@@ -216,7 +216,7 @@
         <div class="oe_import_with_file d-none">
             <div class="oe_import_noheaders">
                 <p class="alert alert-info">If the file contains
-                    the column names, Odoo can try auto-detecting the
+                    the column names, Lean Soft can try auto-detecting the
                     field corresponding to the column. This makes imports
                     simpler especially when the file has many columns.</p>
             </div>

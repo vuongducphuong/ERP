@@ -1533,7 +1533,7 @@
             because `activity_type_id` uses in his domain a field `res_model`
             which is not available in the view and not even in the model.
             It has not been detected because:
-            - this view is unused / impossible to reach since Odoo 12.0,
+            - this view is unused / impossible to reach since Lean Soft 12.0,
               and therefore nobody tried to edit the many2one field `activity_type_id` which would trigger the issue
             - the field domains were not validated because `multi_edit="1"` tree views were not considered as editable,
               and therefore their field domains were not validated in the views validation, as they should have been.
