@@ -13456,11 +13456,11 @@ msgstr "Belize"
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Lean Soft S.A. "
+"Below text serves as a suggestion and doesn’t engage Lean Soft "
 "responsibility."
 msgstr ""
 "Văn bản dưới đây đóng vai trò như một gợi ý và không liên quan đến trách "
-"nhiệm của Lean Soft S.A."
+"nhiệm của Lean Soft"
 
 #. module: base
 #: model:res.country,name:base.bj

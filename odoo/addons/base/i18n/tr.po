@@ -13528,9 +13528,9 @@ msgstr "Belize"
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Lean Soft S.A. "
+"Below text serves as a suggestion and doesn’t engage Lean Soft "
 "responsibility."
-msgstr "Aşağıdaki metin bir öneridir ve Lean Soft S.A.'yı sorumlu kılmaz."
+msgstr "Aşağıdaki metin bir öneridir ve Lean Soft'yı sorumlu kılmaz."
 
 #. module: base
 #: model:res.country,name:base.bj

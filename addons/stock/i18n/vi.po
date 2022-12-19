@@ -1218,7 +1218,7 @@ msgstr ""
 #. module: stock
 #: model_terms:res.company,invoice_terms_html:stock.res_company_1
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Lean Soft S.A. "
+"Below text serves as a suggestion and doesn’t engage Lean Soft "
 "responsibility."
 msgstr ""
 "Văn bản dưới đây đóng vai trò như một gợi ý và không liên quan đến trách "

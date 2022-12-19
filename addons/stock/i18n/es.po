@@ -1273,11 +1273,11 @@ msgstr "Antes de la fecha programada"
 #. module: stock
 #: model_terms:res.company,invoice_terms_html:stock.res_company_1
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Lean Soft S.A. "
+"Below text serves as a suggestion and doesn’t engage Lean Soft "
 "responsibility."
 msgstr ""
 "El texto a continuación sirve como sugerencia y no compromete la "
-"responsabilidad de Lean Soft S.A. de C.V."
+"responsabilidad de Lean Soft de C.V."
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__res_partner__picking_warn__block

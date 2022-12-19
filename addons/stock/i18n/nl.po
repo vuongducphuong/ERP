@@ -1281,10 +1281,10 @@ msgstr "Voor geplande datum"
 #. module: stock
 #: model_terms:res.company,invoice_terms_html:stock.res_company_1
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Lean Soft S.A. "
+"Below text serves as a suggestion and doesn’t engage Lean Soft "
 "responsibility."
 msgstr ""
-"Onderstaande tekst dient als suggestie en geeft Lean Soft S.A. geen "
+"Onderstaande tekst dient als suggestie en geeft Lean Soft geen "
 "verantwoordelijkheid."
 
 #. module: stock

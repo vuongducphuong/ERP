@@ -13955,7 +13955,7 @@ msgstr "Беліз"
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Lean Soft S.A. "
+"Below text serves as a suggestion and doesn’t engage Lean Soft "
 "responsibility."
 msgstr ""
 "Нижче наведений текст є пропозицією і Lean Soft S.A не несе відповідальності."

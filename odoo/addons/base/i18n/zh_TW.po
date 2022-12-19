@@ -13725,9 +13725,9 @@ msgstr "伯利茲"
 #. module: base
 #: model_terms:res.company,invoice_terms_html:base.main_company
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Lean Soft S.A. "
+"Below text serves as a suggestion and doesn’t engage Lean Soft "
 "responsibility."
-msgstr "以下文字僅作為建議，不涉及 Lean Soft S.A. 的責任."
+msgstr "以下文字僅作為建議，不涉及 Lean Soft 的責任."
 
 #. module: base
 #: model:res.country,name:base.bj
