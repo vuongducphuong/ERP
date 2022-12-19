@@ -38,7 +38,7 @@ msgid ""
 "    <p>There are no more credits on your IAP Lead Generation account.<br/>\n"
 "    You can charge your IAP Lead Generation account in the settings of the CRM app.<br/></p>\n"
 "    <p>Best regards,</p>\n"
-"    <p>Odoo S.A.</p>\n"
+"    <p>Lean Soft S.A.</p>\n"
 "</div>"
 msgstr ""
 "<div style=\"margin: 0px; padding: 0px;\">\n"
@@ -46,7 +46,7 @@ msgstr ""
 "    <p>There are no more credits on your IAP Lead Generation account.<br/>\n"
 "    You can charge your IAP Lead Generation account in the settings of the CRM app.<br/></p>\n"
 "    <p>Best regards,</p>\n"
-"    <p>Odoo S.A.</p>\n"
+"    <p>Lean Soft S.A.</p>\n"
 "</div>"
 
 #. module: crm_iap_mine
@@ -499,8 +499,8 @@ msgstr "Cơ hội"
 #. module: crm_iap_mine
 #: code:addons/crm_iap_mine/models/crm_iap_lead_mining_request.py:0
 #, python-format
-msgid "Opportunity created by Odoo Lead Generation"
-msgstr "Cơ hội được tạo bởi chức năng tạo lead của Odoo"
+msgid "Opportunity created by Lean Soft Lead Generation"
+msgstr "Cơ hội được tạo bởi chức năng tạo lead của Lean Soft"
 
 #. module: crm_iap_mine
 #: model:ir.model.fields,field_description:crm_iap_mine.field_crm_iap_lead_mining_request__role_ids

@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* survey
 # 
@@ -11,7 +11,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-04 09:24+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
@@ -3164,7 +3164,7 @@ msgstr "发生"
 #. module: survey
 #: code:addons/survey/models/survey_survey_template.py:0
 #, python-format
-msgid "Odoo Certification"
+msgid "Lean Soft Certification"
 msgstr "leansoft 认证"
 
 #. module: survey
@@ -4871,9 +4871,9 @@ msgstr "网上沟通记录"
 #: code:addons/survey/models/survey_survey_template.py:0
 #, python-format
 msgid ""
-"Welcome to this Odoo certification. You will receive 2 random questions out "
+"Welcome to this Lean Soft certification. You will receive 2 random questions out "
 "of a pool of 3."
-msgstr "欢迎来到这个Odoo认证。您将从 3 个问题中随机收到 2 个问题。"
+msgstr "欢迎来到这个Lean Soft认证。您将从 3 个问题中随机收到 2 个问题。"
 
 #. module: survey
 #: model:survey.question,title:survey.vendor_certification_page_3_question_5
@@ -4913,8 +4913,8 @@ msgstr "“ODOO”代表什么？"
 #. module: survey
 #: code:addons/survey/models/survey_survey_template.py:0
 #, python-format
-msgid "What does one need to get to pass an Odoo Survey?"
-msgstr "通过Odoo调查需要什么？"
+msgid "What does one need to get to pass an Lean Soft Survey?"
+msgstr "通过Lean Soft调查需要什么？"
 
 #. module: survey
 #: code:addons/survey/models/survey_survey_template.py:0
@@ -4977,8 +4977,8 @@ msgstr "您的出生日期是什么时候？"
 #. openerp-web
 #: code:addons/survey/static/src/js/tours/survey_tour.js:0
 #, python-format
-msgid "Whenever you pick an answer, Odoo saves it for you."
-msgstr "每当您选择答案时，Odoo都会为您保存答案。"
+msgid "Whenever you pick an answer, Lean Soft saves it for you."
+msgstr "每当您选择答案时，Lean Soft都会为您保存答案。"
 
 #. module: survey
 #: model:survey.question,title:survey.survey_demo_quiz_p1_q3

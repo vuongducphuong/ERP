@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* web
 # 
@@ -16,7 +16,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-10 10:23+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
@@ -474,7 +474,7 @@ msgstr "必须为您收藏的筛选输入一个名称。"
 msgid ""
 "A popup window has been blocked. You may need to change your browser "
 "settings to allow popup windows for this page."
-msgstr "Odoo的弹出窗口已被浏览器阻止弹出。您需要更改浏览器的设置选项以便允许本页的弹出窗口。"
+msgstr "Lean Soft的弹出窗口已被浏览器阻止弹出。您需要更改浏览器的设置选项以便允许本页的弹出窗口。"
 
 #. module: web
 #. openerp-web
@@ -2547,8 +2547,8 @@ msgstr "获取视图"
 #. openerp-web
 #: code:addons/web/static/src/webclient/settings_form_view/fields/upgrade_dialog.xml:0
 #, python-format
-msgid "Get this feature and much more with Odoo Enterprise!"
-msgstr "通过Odoo企业版获得该功能及其他更多！"
+msgid "Get this feature and much more with Lean Soft Enterprise!"
+msgstr "通过Lean Soft企业版获得该功能及其他更多！"
 
 #. module: web
 #. openerp-web
@@ -3296,8 +3296,8 @@ msgstr "多行文字"
 #. openerp-web
 #: code:addons/web/static/src/webclient/user_menu/user_menu_items.js:0
 #, python-format
-msgid "My Odoo.com account"
-msgstr "Odoo.com账户"
+msgid "My Lean Soft.com account"
+msgstr "Lean Soft.com账户"
 
 #. module: web
 #. openerp-web
@@ -3581,75 +3581,75 @@ msgstr "对象:"
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_edition.xml:0
 #: model_terms:ir.ui.view,arch_db:web.brand_promotion_message
 #, python-format
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Lean Soft"
+msgstr "Lean Soft"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/legacy/js/apps.js:0
 #, python-format
-msgid "Odoo Apps will be available soon"
-msgstr "Odoo Apps 将马上可用"
+msgid "Lean Soft Apps will be available soon"
+msgstr "Lean Soft Apps 将马上可用"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Client Error"
-msgstr "Odoo客户端错误"
+msgid "Lean Soft Client Error"
+msgstr "Lean Soft客户端错误"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Error"
-msgstr "Odoo错误"
+msgid "Lean Soft Error"
+msgstr "Lean Soft错误"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Network Error"
-msgstr "Odoo网络错误"
+msgid "Lean Soft Network Error"
+msgstr "Lean Soft网络错误"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_edition.xml:0
 #, python-format
-msgid "Odoo S.A."
-msgstr "Odoo S.A."
+msgid "Lean Soft S.A."
+msgstr "Lean Soft S.A."
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Server Error"
-msgstr "Odoo服务器错误"
+msgid "Lean Soft Server Error"
+msgstr "Lean Soft服务器错误"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
-msgid "Odoo Session Expired"
-msgstr "Odoo会话过期"
+msgid "Lean Soft Session Expired"
+msgstr "Lean Soft会话过期"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Warning"
-msgstr "Odoo警告"
+msgid "Lean Soft Warning"
+msgstr "Lean Soft警告"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/webclient/barcode/barcode_scanner.js:0
 #, python-format
-msgid "Odoo needs your authorization first."
-msgstr "Odoo首先需要您的授权。"
+msgid "Lean Soft needs your authorization first."
+msgstr "Lean Soft首先需要您的授权。"
 
 #. module: web
 #. openerp-web
@@ -4058,8 +4058,8 @@ msgstr "由%s%s提供支持"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.login_layout
-msgid "Powered by <span>Odoo</span>"
-msgstr "由<span>Odoo</span>提供支持"
+msgid "Powered by <span>Lean Soft</span>"
+msgstr "由<span>Lean Soft</span>提供支持"
 
 #. module: web
 #. openerp-web
@@ -5994,9 +5994,9 @@ msgstr "您需要在编辑翻译之前保存此新记录，您要继续吗？"
 #: code:addons/web/static/src/webclient/actions/action_service.js:0
 #, python-format
 msgid ""
-"You need to start Odoo with at least two workers to print a pdf version of "
+"You need to start Lean Soft with at least two workers to print a pdf version of "
 "the reports."
-msgstr "您需要至少使用两个工人来启动Odoo以打印报告的pdf版本。"
+msgstr "您需要至少使用两个工人来启动Lean Soft以打印报告的pdf版本。"
 
 #. module: web
 #. openerp-web
@@ -6013,8 +6013,8 @@ msgstr "您应该将Wkhtmltopdf的版本至少升级到0.12.0，以便正确显�
 #: code:addons/web/static/src/core/errors/error_dialogs.xml:0
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
-msgid "Your Odoo session expired. The current page is about to be refreshed."
-msgstr "您的Odoo会话已过期。当前页面即将被刷新。"
+msgid "Your Lean Soft session expired. The current page is about to be refreshed."
+msgstr "您的Lean Soft会话已过期。当前页面即将被刷新。"
 
 #. module: web
 #. openerp-web

@@ -264,7 +264,7 @@ msgstr "Tiềm năng/Cơ hội"
 
 #. module: website_crm_iap_reveal
 #: model:ir.model.fields,help:website_crm_iap_reveal.field_crm_reveal_rule__industry_tag_ids
-msgid "Leave empty to always match. Odoo will not create lead if no match"
+msgid "Leave empty to always match. Lean Soft will not create lead if no match"
 msgstr ""
 "Để trống để luôn luôn phù hợp. ERP sẽ không tạo lead nếu không phù hợp "
 
@@ -354,7 +354,7 @@ msgstr "Điều kiện tạo cơ hội"
 #. module: website_crm_iap_reveal
 #: code:addons/website_crm_iap_reveal/models/crm_reveal_rule.py:0
 #, python-format
-msgid "Opportunity created by Odoo Lead Generation"
+msgid "Opportunity created by Lean Soft Lead Generation"
 msgstr "Cơ hội được tạo bởi chức năng tạo lead của ERP"
 
 #. module: website_crm_iap_reveal

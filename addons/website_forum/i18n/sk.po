@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # * website_forum
 # 
@@ -13,7 +13,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~11.5\n"
+"Project-Id-Version: Lean Soft Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-02 10:06+0000\n"
 "PO-Revision-Date: 2018-08-24 09:34+0000\n"
@@ -448,7 +448,7 @@ msgid ""
 "<tr><td align=\"center\" style=\"min-width: 590px;\">\n"
 "    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:separate;\">\n"
 "        <tr><td style=\"text-align: center; font-size: 13px;\">\n"
-"            Powered by <a target=\"_blank\" href=\"https://www.leensoft.vn?utm_source=db&amp;utm_medium=forum\" style=\"color: #875A7B;\">Odoo</a>\n"
+"            Powered by <a target=\"_blank\" href=\"https://www.leensoft.vn?utm_source=db&amp;utm_medium=forum\" style=\"color: #875A7B;\">Lean Soft</a>\n"
 "        </td></tr>\n"
 "    </table>\n"
 "</td></tr>\n"
@@ -2826,10 +2826,10 @@ msgstr "Fronta označených príspevkov je prázdna."
 #: model_terms:forum.forum,faq:website_forum.forum_help
 msgid ""
 "The goal of this site is create a relevant knowledge base that would answer\n"
-"    questions related to Odoo."
+"    questions related to Lean Soft."
 msgstr ""
 "Cieľom týchto stránok je vytvoriť relevantnú vedomostnú základňu, ktorá zodpovie\n"
-"otázky týkajúce sa Odoo."
+"otázky týkajúce sa Lean Soft."
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.moderation_queue
@@ -3482,9 +3482,9 @@ msgstr "tu"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
-msgid "how to configure or customize Odoo to specific business needs,"
+msgid "how to configure or customize Lean Soft to specific business needs,"
 msgstr ""
-"ako konfigurovať alebo prispôsobiť Odoo špecifickým obchodným potrebám,"
+"ako konfigurovať alebo prispôsobiť Lean Soft špecifickým obchodným potrebám,"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
@@ -3493,8 +3493,8 @@ msgstr "ako vyvinúťmodly pre vlastnú potrebu,"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
-msgid "how to install Odoo on a specific infrastructure,"
-msgstr "ako nainštalovať Odoo na špecifickej infraštruktúre,"
+msgid "how to install Lean Soft on a specific infrastructure,"
+msgstr "ako nainštalovať Lean Soft na špecifickej infraštruktúre,"
 
 #. module: website_forum
 #. openerp-web
@@ -3610,8 +3610,8 @@ msgstr "spam alebo reklama"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
-msgid "specific questions about Odoo service offers, etc."
-msgstr "konkrétne otázky týkajúce sa ponuky služieb Odoo atď."
+msgid "specific questions about Lean Soft service offers, etc."
+msgstr "konkrétne otázky týkajúce sa ponuky služieb Lean Soft atď."
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
@@ -3688,9 +3688,9 @@ msgstr "webstránka"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
-msgid "what's the best way to use Odoo for a specific business need,"
+msgid "what's the best way to use Lean Soft for a specific business need,"
 msgstr ""
-"čo je najlepší spôsob, ako využiť Odoo pre konkrétne obchodné potreby,"
+"čo je najlepší spôsob, ako využiť Lean Soft pre konkrétne obchodné potreby,"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help

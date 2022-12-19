@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* web
 # 
@@ -12,7 +12,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-10 10:23+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
@@ -2521,8 +2521,8 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/webclient/settings_form_view/fields/upgrade_dialog.xml:0
 #, python-format
-msgid "Get this feature and much more with Odoo Enterprise!"
-msgstr "Odoo 유료버전용에서 이 기능을 비롯한 다양한 기능을 활용하십시오!"
+msgid "Get this feature and much more with Lean Soft Enterprise!"
+msgstr "Lean Soft 유료버전용에서 이 기능을 비롯한 다양한 기능을 활용하십시오!"
 
 #. module: web
 #. openerp-web
@@ -3265,8 +3265,8 @@ msgstr "여러 줄 문자"
 #. openerp-web
 #: code:addons/web/static/src/webclient/user_menu/user_menu_items.js:0
 #, python-format
-msgid "My Odoo.com account"
-msgstr "내 Odoo.com 계정"
+msgid "My Lean Soft.com account"
+msgstr "내 Lean Soft.com 계정"
 
 #. module: web
 #. openerp-web
@@ -3552,51 +3552,51 @@ msgstr "객체 :"
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_edition.xml:0
 #: model_terms:ir.ui.view,arch_db:web.brand_promotion_message
 #, python-format
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Lean Soft"
+msgstr "Lean Soft"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/legacy/js/apps.js:0
 #, python-format
-msgid "Odoo Apps will be available soon"
-msgstr "Odoo 앱이 곧 사용가능해 질 것입니다"
+msgid "Lean Soft Apps will be available soon"
+msgstr "Lean Soft 앱이 곧 사용가능해 질 것입니다"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Client Error"
-msgstr "Odoo 클라이언트 오류"
+msgid "Lean Soft Client Error"
+msgstr "Lean Soft 클라이언트 오류"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Error"
-msgstr "Odoo 오류"
+msgid "Lean Soft Error"
+msgstr "Lean Soft 오류"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Network Error"
+msgid "Lean Soft Network Error"
 msgstr ""
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_edition.xml:0
 #, python-format
-msgid "Odoo S.A."
-msgstr "Odoo S.A."
+msgid "Lean Soft S.A."
+msgstr "Lean Soft S.A."
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Server Error"
+msgid "Lean Soft Server Error"
 msgstr ""
 
 #. module: web
@@ -3604,22 +3604,22 @@ msgstr ""
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
-msgid "Odoo Session Expired"
-msgstr "Odoo 세션 만료"
+msgid "Lean Soft Session Expired"
+msgstr "Lean Soft 세션 만료"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Warning"
-msgstr "Odoo 경고"
+msgid "Lean Soft Warning"
+msgstr "Lean Soft 경고"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/webclient/barcode/barcode_scanner.js:0
 #, python-format
-msgid "Odoo needs your authorization first."
+msgid "Lean Soft needs your authorization first."
 msgstr ""
 
 #. module: web
@@ -4027,8 +4027,8 @@ msgstr "제공자 %s%s"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.login_layout
-msgid "Powered by <span>Odoo</span>"
-msgstr "제공자 <span>Odoo</span>"
+msgid "Powered by <span>Lean Soft</span>"
+msgstr "제공자 <span>Lean Soft</span>"
 
 #. module: web
 #. openerp-web
@@ -5960,9 +5960,9 @@ msgstr "번역을 편집하기 전에 이 새 레코드를 저장해야 합니�
 #: code:addons/web/static/src/webclient/actions/action_service.js:0
 #, python-format
 msgid ""
-"You need to start Odoo with at least two workers to print a pdf version of "
+"You need to start Lean Soft with at least two workers to print a pdf version of "
 "the reports."
-msgstr "pdf 버전의 보고서를 인쇄하려면 두 명 이상의 직원으로 Odoo를 시작해야 합니다."
+msgstr "pdf 버전의 보고서를 인쇄하려면 두 명 이상의 직원으로 Lean Soft를 시작해야 합니다."
 
 #. module: web
 #. openerp-web
@@ -5981,7 +5981,7 @@ msgstr ""
 #: code:addons/web/static/src/core/errors/error_dialogs.xml:0
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
-msgid "Your Odoo session expired. The current page is about to be refreshed."
+msgid "Your Lean Soft session expired. The current page is about to be refreshed."
 msgstr ""
 
 #. module: web

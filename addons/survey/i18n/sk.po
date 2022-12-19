@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # * survey
 # 
@@ -10,7 +10,7 @@
 # gebri <gebri@inmail.sk>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Lean Soft Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-08 06:49+0000\n"
 "PO-Revision-Date: 2018-10-08 06:49+0000\n"
@@ -244,8 +244,8 @@ msgstr "Token musí byť unikátny!"
 
 #. module: survey
 #: model:survey.page,title:survey.feedback_1
-msgid "About your Odoo usage"
-msgstr "O vašom Odoo používaní"
+msgid "About your Lean Soft usage"
+msgstr "O vašom Lean Soft používaní"
 
 #. module: survey
 #: selection:survey.mail.compose.message,moderation_status:0
@@ -364,8 +364,8 @@ msgstr "Archivovaný"
 
 #. module: survey
 #: model:survey.question,question:survey.feedback_1_1
-msgid "Are you using Odoo on a daily basis?"
-msgstr "Používate Odoo na dennej báze?"
+msgid "Are you using Lean Soft on a daily basis?"
+msgstr "Používate Lean Soft na dennej báze?"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_survey__message_attachment_count
@@ -866,8 +866,8 @@ msgstr ""
 
 #. module: survey
 #: model:survey.question,question:survey.feedback_3_1
-msgid "How do you contribute or plan to contribute to Odoo?"
-msgstr "Ako prispievate alebo máte v úmysle prispieť k Odoo?"
+msgid "How do you contribute or plan to contribute to Lean Soft?"
+msgstr "Ako prispievate alebo máte v úmysle prispieť k Lean Soft?"
 
 #. module: survey
 #: model:survey.label,value:survey.choice_1_2_6
@@ -901,8 +901,8 @@ msgstr "Zúčastňujem sa diskusií a fór"
 
 #. module: survey
 #: model:survey.label,value:survey.choice_4_1_1
-msgid "I use Github, like all official Odoo projects"
-msgstr "Používam Github, ako všetky oficiálne Odoo projekty"
+msgid "I use Github, like all official Lean Soft projects"
+msgstr "Používam Github, ako všetky oficiálne Lean Soft projekty"
 
 #. module: survey
 #: model:survey.label,value:survey.choice_4_1_2
@@ -911,8 +911,8 @@ msgstr "Používam iný schránkový systém (SourceForge...)"
 
 #. module: survey
 #: model:survey.label,value:survey.frow_2_1_3
-msgid "I use the contextual help in Odoo"
-msgstr "Používam kontextuálnu pomoc v Odoo"
+msgid "I use the contextual help in Lean Soft"
+msgstr "Používam kontextuálnu pomoc v Lean Soft"
 
 #. module: survey
 #: model:survey.label,value:survey.choice_3_1_5
@@ -989,8 +989,8 @@ msgstr ""
 
 #. module: survey
 #: model_terms:survey.page,description:survey.feedback_4
-msgid "If you do not contribute or develop in Odoo, skip this page."
-msgstr "Ak neprispievate alebo nevyvíjate v Odoo, preskočte túto stránku."
+msgid "If you do not contribute or develop in Lean Soft, skip this page."
+msgstr "Ak neprispievate alebo nevyvíjate v Lean Soft, preskočte túto stránku."
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.sfinished
@@ -1506,8 +1506,8 @@ msgstr "Výskyt"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.layout
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Lean Soft"
+msgstr "Lean Soft"
 
 #. module: survey
 #: selection:survey.question,matrix_subtype:0
@@ -2267,10 +2267,10 @@ msgstr "Príliš veľa menu ponúk, je to komplexné na pochopenie"
 #. module: survey
 #: model_terms:survey.page,description:survey.feedback_2
 msgid ""
-"These questions relate to the ergonomy and ease of use of Odoo. Try to remind your firsts days on Odoo and\n"
+"These questions relate to the ergonomy and ease of use of Lean Soft. Try to remind your firsts days on Lean Soft and\n"
 "what have been your difficulties."
 msgstr ""
-"Tieto otázky sa týkajú ergonómie a jednoduchosti používania Odoo. Skúste si spomenúť na svoje prvé dni na Odoo a\n"
+"Tieto otázky sa týkajú ergonómie a jednoduchosti používania Lean Soft. Skúste si spomenúť na svoje prvé dni na Lean Soft a\n"
 "čo vám robilo problémy."
 
 #. module: survey
@@ -2285,8 +2285,8 @@ msgstr "Sú užitočné na denné použitie"
 
 #. module: survey
 #: model:survey.label,value:survey.frow_2_2_1
-msgid "They help new users to understand Odoo"
-msgstr "Pomáhajú novým používateľom pochopiť Odoo"
+msgid "They help new users to understand Lean Soft"
+msgstr "Pomáhajú novým používateľom pochopiť Lean Soft"
 
 #. module: survey
 #: code:addons/survey/models/survey.py:544
@@ -2582,10 +2582,10 @@ msgstr "Čo si myslíte o skupinách používateľov?"
 #. module: survey
 #: model:survey.question,question:survey.feedback_2_2
 msgid ""
-"What do you think about the process views of Odoo, available in the web "
+"What do you think about the process views of Lean Soft, available in the web "
 "client ?"
 msgstr ""
-"Čo si myslíte o procesných zobrazeniach Odoo, dostupných vo webovom kliente?"
+"Čo si myslíte o procesných zobrazeniach Lean Soft, dostupných vo webovom kliente?"
 
 #. module: survey
 #: model:survey.question,question:survey.feedback_2_4
@@ -2627,8 +2627,8 @@ msgstr "Áno, používam verziu 7.0, nainštalovanú lokálne"
 
 #. module: survey
 #: model:survey.label,value:survey.choice_1_1_3
-msgid "Yes, I use the online version of Odoo"
-msgstr "Áno, používam online verziu Odoo"
+msgid "Yes, I use the online version of Lean Soft"
+msgstr "Áno, používam online verziu Lean Soft"
 
 #. module: survey
 #: model_terms:ir.actions.act_window,help:survey.action_survey_form

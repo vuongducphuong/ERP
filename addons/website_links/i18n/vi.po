@@ -236,7 +236,7 @@ msgstr "Mã này đã được sử dụng"
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
 msgid ""
 "Those trackers can be used in Google Analytics to track clicks and visitors,"
-" or in Odoo reports to track opportunities and related revenues."
+" or in Lean Soft reports to track opportunities and related revenues."
 msgstr ""
 "Những trình theo dõi đó có thể được sử dụng trong Google Analytics để theo "
 "dõi số nhấp chuột và khách truy cập hoặc trong báo cáo của Hệ thống để theo "

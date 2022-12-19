@@ -1,16 +1,16 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* website_forum
 # 
 # Translators:
 # Martin Trigaux, 2022
-# Priscilla (prs) Odoo <prs@leensoft.vn>, 2022
+# Priscilla (prs) Lean Soft <prs@leensoft.vn>, 2022
 # Cécile Collart <cco@leensoft.vn>, 2022
 # Jolien De Paepe, 2022
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-04 09:24+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
@@ -3241,10 +3241,10 @@ msgstr "Merci pour votre message ! "
 #: model_terms:ir.ui.view,arch_db:website_forum.faq_karma
 msgid ""
 "The goal of this site is create a relevant knowledge base that would answer "
-"questions related to Odoo."
+"questions related to Lean Soft."
 msgstr ""
 "Le but de ce site est de créer une base de connaissances pertinente qui "
-"répond aux questions liées à Odoo."
+"répond aux questions liées à Lean Soft."
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
@@ -3876,9 +3876,9 @@ msgstr "ici"
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "how to configure or customize Odoo to specific business needs,"
+msgid "how to configure or customize Lean Soft to specific business needs,"
 msgstr ""
-"comment configurer ou personnaliser Odoo aux besoins business spécifiques,"
+"comment configurer ou personnaliser Lean Soft aux besoins business spécifiques,"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
@@ -3889,8 +3889,8 @@ msgstr "comment développer des modules pour vos propres besoins,"
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "how to install Odoo on a specific infrastructure,"
-msgstr "Comment installer Odoo pour une infrastructure spécifique,"
+msgid "how to install Lean Soft on a specific infrastructure,"
+msgstr "Comment installer Lean Soft pour une infrastructure spécifique,"
 
 #. module: website_forum
 #. openerp-web
@@ -3992,8 +3992,8 @@ msgstr "résolu"
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "specific questions about Odoo service offers, etc."
-msgstr "questions spécifiques sur les services, offres,... d'Odoo."
+msgid "specific questions about Lean Soft service offers, etc."
+msgstr "questions spécifiques sur les services, offres,... d'Lean Soft."
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
@@ -4053,9 +4053,9 @@ msgstr ""
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "what's the best way to use Odoo for a specific business need,"
+msgid "what's the best way to use Lean Soft for a specific business need,"
 msgstr ""
-"quelle est la meilleure manière d'utiliser Odoo pour un besoin business "
+"quelle est la meilleure manière d'utiliser Lean Soft pour un besoin business "
 "spécifique,"
 
 #. module: website_forum

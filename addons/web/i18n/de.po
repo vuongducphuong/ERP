@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* web
 # 
@@ -12,7 +12,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-10 10:23+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
@@ -2554,8 +2554,8 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/webclient/settings_form_view/fields/upgrade_dialog.xml:0
 #, python-format
-msgid "Get this feature and much more with Odoo Enterprise!"
-msgstr "Erhalten Sie diese Funktion und viel mehr mit Odoo Enterprise!"
+msgid "Get this feature and much more with Lean Soft Enterprise!"
+msgstr "Erhalten Sie diese Funktion und viel mehr mit Lean Soft Enterprise!"
 
 #. module: web
 #. openerp-web
@@ -3304,8 +3304,8 @@ msgstr "Mehrzeiliger Text"
 #. openerp-web
 #: code:addons/web/static/src/webclient/user_menu/user_menu_items.js:0
 #, python-format
-msgid "My Odoo.com account"
-msgstr "Mein Odoo.com Konto"
+msgid "My Lean Soft.com account"
+msgstr "Mein Lean Soft.com Konto"
 
 #. module: web
 #. openerp-web
@@ -3590,75 +3590,75 @@ msgstr "Objekt:"
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_edition.xml:0
 #: model_terms:ir.ui.view,arch_db:web.brand_promotion_message
 #, python-format
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Lean Soft"
+msgstr "Lean Soft"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/legacy/js/apps.js:0
 #, python-format
-msgid "Odoo Apps will be available soon"
-msgstr "Die Odoo Apps sind demnächst Online"
+msgid "Lean Soft Apps will be available soon"
+msgstr "Die Lean Soft Apps sind demnächst Online"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Client Error"
-msgstr "Odoo-Client-Fehler"
+msgid "Lean Soft Client Error"
+msgstr "Lean Soft-Client-Fehler"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Error"
-msgstr "Odoo Fehler "
+msgid "Lean Soft Error"
+msgstr "Lean Soft Fehler "
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Network Error"
-msgstr "Odoo Netzwerk-Fehler"
+msgid "Lean Soft Network Error"
+msgstr "Lean Soft Netzwerk-Fehler"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_edition.xml:0
 #, python-format
-msgid "Odoo S.A."
-msgstr "Odoo S.A."
+msgid "Lean Soft S.A."
+msgstr "Lean Soft S.A."
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Server Error"
-msgstr "Odoo Server-Fehler"
+msgid "Lean Soft Server Error"
+msgstr "Lean Soft Server-Fehler"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
-msgid "Odoo Session Expired"
-msgstr "Odoo Session abgelaufen"
+msgid "Lean Soft Session Expired"
+msgstr "Lean Soft Session abgelaufen"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
-msgid "Odoo Warning"
-msgstr "Odoo Warnung"
+msgid "Lean Soft Warning"
+msgstr "Lean Soft Warnung"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/webclient/barcode/barcode_scanner.js:0
 #, python-format
-msgid "Odoo needs your authorization first."
-msgstr "Odoo benötigt erst Ihre Authorisierung."
+msgid "Lean Soft needs your authorization first."
+msgstr "Lean Soft benötigt erst Ihre Authorisierung."
 
 #. module: web
 #. openerp-web
@@ -4079,8 +4079,8 @@ msgstr "Powered by %s%s"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.login_layout
-msgid "Powered by <span>Odoo</span>"
-msgstr "Powered by <span>Odoo</span>"
+msgid "Powered by <span>Lean Soft</span>"
+msgstr "Powered by <span>Lean Soft</span>"
 
 #. module: web
 #. openerp-web
@@ -6044,10 +6044,10 @@ msgstr ""
 #: code:addons/web/static/src/webclient/actions/action_service.js:0
 #, python-format
 msgid ""
-"You need to start Odoo with at least two workers to print a pdf version of "
+"You need to start Lean Soft with at least two workers to print a pdf version of "
 "the reports."
 msgstr ""
-"Sie müssen Odoo mit mindestens zwei Mitarbeitern starten, um eine PDF-"
+"Sie müssen Lean Soft mit mindestens zwei Mitarbeitern starten, um eine PDF-"
 "Version der Berichte zu drucken."
 
 #. module: web
@@ -6068,9 +6068,9 @@ msgstr ""
 #: code:addons/web/static/src/core/errors/error_dialogs.xml:0
 #: code:addons/web/static/src/public/error_notifications.js:0
 #, python-format
-msgid "Your Odoo session expired. The current page is about to be refreshed."
+msgid "Your Lean Soft session expired. The current page is about to be refreshed."
 msgstr ""
-"Ihre Odoo-Sitzung ist abgelaufen. Die aktuelle Seite wird gerade "
+"Ihre Lean Soft-Sitzung ist abgelaufen. Die aktuelle Seite wird gerade "
 "aktualisiert."
 
 #. module: web

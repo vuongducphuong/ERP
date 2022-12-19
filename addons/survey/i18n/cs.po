@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* survey
 # 
@@ -14,7 +14,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-04 09:24+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
@@ -3133,7 +3133,7 @@ msgstr "Výskyt"
 #. module: survey
 #: code:addons/survey/models/survey_survey_template.py:0
 #, python-format
-msgid "Odoo Certification"
+msgid "Lean Soft Certification"
 msgstr ""
 
 #. module: survey
@@ -4862,7 +4862,7 @@ msgstr "Historie komunikace webstránky"
 #: code:addons/survey/models/survey_survey_template.py:0
 #, python-format
 msgid ""
-"Welcome to this Odoo certification. You will receive 2 random questions out "
+"Welcome to this Lean Soft certification. You will receive 2 random questions out "
 "of a pool of 3."
 msgstr ""
 
@@ -4908,7 +4908,7 @@ msgstr ""
 #. module: survey
 #: code:addons/survey/models/survey_survey_template.py:0
 #, python-format
-msgid "What does one need to get to pass an Odoo Survey?"
+msgid "What does one need to get to pass an Lean Soft Survey?"
 msgstr ""
 
 #. module: survey
@@ -4972,7 +4972,7 @@ msgstr "Kdy je tvé datum narození?"
 #. openerp-web
 #: code:addons/survey/static/src/js/tours/survey_tour.js:0
 #, python-format
-msgid "Whenever you pick an answer, Odoo saves it for you."
+msgid "Whenever you pick an answer, Lean Soft saves it for you."
 msgstr ""
 
 #. module: survey

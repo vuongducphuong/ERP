@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* website_slides
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-10 10:22+0000\n"
 "PO-Revision-Date: 2022-09-22 05:57+0000\n"
@@ -4109,15 +4109,15 @@ msgstr "Кількість запитань"
 
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.mail_notification_channel_invite
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Lean Soft"
+msgstr "Lean Soft"
 
 #. module: website_slides
 #: model_terms:slide.slide,html_content:website_slides.slide_slide_demo_1_4
 #: model_terms:slide.slide,html_content:website_slides.slide_slide_demo_2_1
 #: model_terms:slide.slide,html_content:website_slides.slide_slide_demo_4_0
-msgid "Odoo • Image and Text"
-msgstr "Odoo • Зображення та текст"
+msgid "Lean Soft • Image and Text"
+msgstr "Lean Soft • Зображення та текст"
 
 #. module: website_slides
 #: model:res.groups,name:website_slides.group_website_slides_officer
@@ -6452,11 +6452,11 @@ msgstr "напр. Комп'ютерна наука для дітей "
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.view_slide_slide_form
 msgid ""
-"e.g. In this video, we'll give you the keys on how Odoo can help you to grow"
+"e.g. In this video, we'll give you the keys on how Lean Soft can help you to grow"
 " your business. At the end, we'll propose you a quiz to test your knowledge."
 msgstr ""
 "напр., У цьому відео ми дамо вам кейс, який допоможе покращити ваш бізнес з "
-"Odoo. В кінці ми запропонуємо вам пройти вікторину для перевірки ваших "
+"Lean Soft. В кінці ми запропонуємо вам пройти вікторину для перевірки ваших "
 "знань."
 
 #. module: website_slides

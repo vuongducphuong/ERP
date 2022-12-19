@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* stock
 # 
@@ -22,7 +22,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-10 10:22+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
@@ -1261,7 +1261,7 @@ msgstr "Enne planeeritud kuupäeva"
 #. module: stock
 #: model_terms:res.company,invoice_terms_html:stock.res_company_1
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Lean Soft S.A. "
 "responsibility."
 msgstr "Allolev tekst toimib soovitusena ja ei laiene ODOO S.Avastutusalale."
 
@@ -2222,7 +2222,7 @@ msgstr "Vaikimi marsruudid"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_orderpoint
 msgid ""
-"Define a minimum stock rule so that Odoo automatically creates requests for "
+"Define a minimum stock rule so that Lean Soft automatically creates requests for "
 "quotations or confirmed manufacturing orders to resupply your stock."
 msgstr ""
 
@@ -2235,13 +2235,13 @@ msgstr "Määratle uus ladu"
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
 "Define your locations to reflect your warehouse structure and\n"
-"            organization. Odoo is able to manage physical locations\n"
+"            organization. Lean Soft is able to manage physical locations\n"
 "            (warehouses, shelves, bin, etc), partner locations (customers,\n"
 "            vendors) and virtual locations which are the counterpart of\n"
 "            the stock operations like the manufacturing orders\n"
 "            consumptions, inventories, etc."
 msgstr ""
-"Määrake Odoos oma laoasukohad, et kajastada lao struktuuri. Odoos saab "
+"Määrake Lean Softs oma laoasukohad, et kajastada lao struktuuri. Lean Softs saab "
 "hallata füüsilisi asukohti(laod, riiulid, prügikastid, jne), partnerite "
 "asukohti(kliendid, müüjad) ja virtuaalseid asukohti."
 
@@ -2723,12 +2723,12 @@ msgstr "E-kiri saadetakse kliendile kui tellimus on valmis."
 #. module: stock
 #: model_terms:digest.tip,tip_description:stock.digest_tip_stock_0
 msgid ""
-"Enjoy a quick-paced experience with the Odoo barcode app. It is blazing fast"
+"Enjoy a quick-paced experience with the Lean Soft barcode app. It is blazing fast"
 " and works even without a stable internet connection. It supports all flows:"
 " inventory adjustments, batch picking, moving lots or pallets, low inventory"
 " checks, etc. Go to the \"Apps\" menu to activate the barcode interface."
 msgstr ""
-"Nautige kiiret kogemust Odoo triipkoodi mooduliga. See töötab kiiresti ja ka"
+"Nautige kiiret kogemust Lean Soft triipkoodi mooduliga. See töötab kiiresti ja ka"
 " ilma stabiilse interneti ühenduseta. See toetab kõiki töövoogusid: "
 "inventuurid, koondatud korjed, partiide või kaubaaluste liigutamine, "
 "madalate varude kontrollimine, jne.  Avage \"Rakendused\" menüü ja "
@@ -2755,14 +2755,14 @@ msgstr "Viga"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
-"Every stock operation in Odoo moves the products from one\n"
+"Every stock operation in Lean Soft moves the products from one\n"
 "            location to another one.  For instance, if you receive products\n"
-"            from a vendor, Odoo will move products from the Vendor\n"
+"            from a vendor, Lean Soft will move products from the Vendor\n"
 "            location to the Stock location. Each report can be performed on\n"
 "            physical, partner or virtual locations."
 msgstr ""
-"Iga laotegevus Odoos liigutab tooted ühest asukohast teise. Näiteks, kui "
-"võtad vastu saabunud toote müüjalt, teisaldab Odoo toote laos Partneri "
+"Iga laotegevus Lean Softs liigutab tooted ühest asukohast teise. Näiteks, kui "
+"võtad vastu saabunud toote müüjalt, teisaldab Lean Soft toote laos Partneri "
 "asukohalt Lao asukohale. "
 
 #. module: stock
@@ -3391,17 +3391,17 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_picking__show_reserved
 #: model:ir.model.fields,help:stock.field_stock_picking_type__show_reserved
 msgid ""
-"If this checkbox is ticked, Odoo will automatically pre-fill the detailed "
+"If this checkbox is ticked, Lean Soft will automatically pre-fill the detailed "
 "operations with the corresponding products, locations and lot/serial "
 "numbers."
 msgstr ""
-"Kui see kast on märgitud, täidab Odoo automaatselt detailsed operatsioonid "
+"Kui see kast on märgitud, täidab Lean Soft automaatselt detailsed operatsioonid "
 "vastavate toodete, asukohtade ning partii- ja seerianumbritega."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking_type__auto_show_reception_report
 msgid ""
-"If this checkbox is ticked, Odoo will automatically show the reception "
+"If this checkbox is ticked, Lean Soft will automatically show the reception "
 "report (if there are moves to allocate to) when validating."
 msgstr ""
 
@@ -9229,18 +9229,18 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_min_qty
 msgid ""
 "When the virtual stock goes below the Min Quantity specified for this field,"
-" Odoo generates a procurement to bring the forecasted quantity to the Max "
+" Lean Soft generates a procurement to bring the forecasted quantity to the Max "
 "Quantity."
 msgstr ""
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_max_qty
 msgid ""
-"When the virtual stock goes below the Min Quantity, Odoo generates a "
+"When the virtual stock goes below the Min Quantity, Lean Soft generates a "
 "procurement to bring the forecasted quantity to the Quantity specified as "
 "Max Quantity."
 msgstr ""
-"Kui virtuaalse ladu läheb alla minimaalse koguse, siis Odoo genereerib "
+"Kui virtuaalse ladu läheb alla minimaalse koguse, siis Lean Soft genereerib "
 "ostutellimuse, et viia ennustatav kogus maksimaalse koguseni."
 
 #. module: stock
@@ -9607,10 +9607,10 @@ msgstr "Te olete loonud käsitsi tooteread, palun kustutage need, et jätkata."
 #: model_terms:ir.ui.view,arch_db:stock.view_immediate_transfer
 msgid ""
 "You have not recorded <i>done</i> quantities yet, by clicking on "
-"<i>apply</i> Odoo will process all the quantities."
+"<i>apply</i> Lean Soft will process all the quantities."
 msgstr ""
 "Te pole veel määranud <i>tehtud</i> koguseid, vajutades nupul <i>Kinnita</i>"
-" märgib Odoo kogused tehtuks."
+" märgib Lean Soft kogused tehtuks."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation

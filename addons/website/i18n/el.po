@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # * website
 # 
@@ -10,7 +10,7 @@
 # George Tarasidis <george_tarasidis@yahoo.com>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Lean Soft Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-08 06:48+0000\n"
 "PO-Revision-Date: 2018-10-08 06:48+0000\n"
@@ -215,7 +215,7 @@ msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_call_to_action
-msgid "<b>50,000+ companies</b> run Odoo to grow their businesses."
+msgid "<b>50,000+ companies</b> run Lean Soft to grow their businesses."
 msgstr ""
 
 #. module: website
@@ -889,7 +889,7 @@ msgid ""
 "Analyze the efficiency of your marketing campaigns by using trackable UTM "
 "trackers (campaigns, medium, sources). Create trackers and follow clicks "
 "from the Promote menu of your website. Those trackers can be used in Google "
-"Analytics or in Odoo reports where you can see the opportunities and sales "
+"Analytics or in Lean Soft reports where you can see the opportunities and sales "
 "revenue generated thanks to your links."
 msgstr ""
 
@@ -1887,7 +1887,7 @@ msgstr "Ακολουθείστε όλα"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "Follow your website traffic in Odoo."
+msgid "Follow your website traffic in Lean Soft."
 msgstr ""
 
 #. module: website
@@ -2412,7 +2412,7 @@ msgstr ""
 #, python-format
 msgid ""
 "It might be possible to edit the relevant items or fix the issue in <a "
-"href=\"%s\">the classic Odoo interface</a>"
+"href=\"%s\">the classic Lean Soft interface</a>"
 msgstr ""
 
 #. module: website
@@ -2954,49 +2954,49 @@ msgstr "Πλήθος γλωσσών"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.brand_promotion
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Lean Soft"
+msgstr "Lean Soft"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_three_columns
-msgid "Odoo - Sample 1 for three columns"
-msgstr "Odoo - Παράδειγμα 1 για 3 στήλες"
+msgid "Lean Soft - Sample 1 for three columns"
+msgstr "Lean Soft - Παράδειγμα 1 για 3 στήλες"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_three_columns
-msgid "Odoo - Sample 2 for three columns"
-msgstr "Odoo - Παράδειγμα 2 για 3 στήλες"
+msgid "Lean Soft - Sample 2 for three columns"
+msgstr "Lean Soft - Παράδειγμα 2 για 3 στήλες"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_three_columns
-msgid "Odoo - Sample 3 for three columns"
-msgstr "Odoo - Παράδειγμα 3 για 3 στήλες"
+msgid "Lean Soft - Sample 3 for three columns"
+msgstr "Lean Soft - Παράδειγμα 3 για 3 στήλες"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
-msgid "Odoo Version"
-msgstr "Έκδοση Odoo"
+msgid "Lean Soft Version"
+msgstr "Έκδοση Lean Soft"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_quotes_carousel
 msgid ""
-"Odoo provides essential platform for our project management. Things are "
+"Lean Soft provides essential platform for our project management. Things are "
 "better organized and more visible with it."
 msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_picture
-msgid "Odoo • A picture with a caption"
+msgid "Lean Soft • A picture with a caption"
 msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_image_text
-msgid "Odoo • Image and Text"
+msgid "Lean Soft • Image and Text"
 msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_text_image
-msgid "Odoo • Text and Image"
+msgid "Lean Soft • Text and Image"
 msgstr ""
 
 #. module: website
@@ -4715,7 +4715,7 @@ msgstr "δωρεάν ιστότοπο"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
-msgid "instance of Odoo, the"
+msgid "instance of Lean Soft, the"
 msgstr "παράδειγμα του leansoft, το"
 
 #. module: website

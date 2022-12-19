@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* stock
 # 
@@ -9,7 +9,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-10 10:22+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
@@ -1206,7 +1206,7 @@ msgstr ""
 #. module: stock
 #: model_terms:res.company,invoice_terms_html:stock.res_company_1
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Lean Soft S.A. "
 "responsibility."
 msgstr ""
 
@@ -2151,7 +2151,7 @@ msgstr "창고를 통한 기본 경로"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_orderpoint
 msgid ""
-"Define a minimum stock rule so that Odoo automatically creates requests for "
+"Define a minimum stock rule so that Lean Soft automatically creates requests for "
 "quotations or confirmed manufacturing orders to resupply your stock."
 msgstr ""
 
@@ -2164,14 +2164,14 @@ msgstr "새 창고 정의"
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
 "Define your locations to reflect your warehouse structure and\n"
-"            organization. Odoo is able to manage physical locations\n"
+"            organization. Lean Soft is able to manage physical locations\n"
 "            (warehouses, shelves, bin, etc), partner locations (customers,\n"
 "            vendors) and virtual locations which are the counterpart of\n"
 "            the stock operations like the manufacturing orders\n"
 "            consumptions, inventories, etc."
 msgstr ""
 "창고 구조 및 조직을 반영하도록 공간을\n"
-"            정의하십시오. Odoo는 생산계획 소요,\n"
+"            정의하십시오. Lean Soft는 생산계획 소요,\n"
 "            재고 자산 등과 같은 재고 작업의,\n"
 "            상대적인 물리적 공간(위치)(창고, 선반, 박스 등) 파트너 창고(고객, 공급업체) 및 가상 공간을 관리 할 수 있습니다.\n"
 "            파트너 창고(고객, 공급업체) 및 가상 공간을\n"
@@ -2649,7 +2649,7 @@ msgstr "주문이 완료되면 고객에게 이메일이 발송됩니다."
 #. module: stock
 #: model_terms:digest.tip,tip_description:stock.digest_tip_stock_0
 msgid ""
-"Enjoy a quick-paced experience with the Odoo barcode app. It is blazing fast"
+"Enjoy a quick-paced experience with the Lean Soft barcode app. It is blazing fast"
 " and works even without a stable internet connection. It supports all flows:"
 " inventory adjustments, batch picking, moving lots or pallets, low inventory"
 " checks, etc. Go to the \"Apps\" menu to activate the barcode interface."
@@ -2676,15 +2676,15 @@ msgstr "오류"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
-"Every stock operation in Odoo moves the products from one\n"
+"Every stock operation in Lean Soft moves the products from one\n"
 "            location to another one.  For instance, if you receive products\n"
-"            from a vendor, Odoo will move products from the Vendor\n"
+"            from a vendor, Lean Soft will move products from the Vendor\n"
 "            location to the Stock location. Each report can be performed on\n"
 "            physical, partner or virtual locations."
 msgstr ""
-"Odoo의 모든 재고 작업은 품목을 한 공간에서\n"
+"Lean Soft의 모든 재고 작업은 품목을 한 공간에서\n"
 "            다른 공간으로 옮깁니다.  예를 들어, 공급 업체로부터\n"
-"            품목을 받은 경우, Odoo는 품목을 공급 업체 창고에서\n"
+"            품목을 받은 경우, Lean Soft는 품목을 공급 업체 창고에서\n"
 "            재고 공간로 옮깁니다. 각 보고서는 실제,\n"
 "            파트너, 또는 가상 공간에서 수행 할 수 있습니다."
 
@@ -3306,15 +3306,15 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_picking__show_reserved
 #: model:ir.model.fields,help:stock.field_stock_picking_type__show_reserved
 msgid ""
-"If this checkbox is ticked, Odoo will automatically pre-fill the detailed "
+"If this checkbox is ticked, Lean Soft will automatically pre-fill the detailed "
 "operations with the corresponding products, locations and lot/serial "
 "numbers."
-msgstr "이 확인란을 선택하면 Odoo는 해당 품목, 공간 및 일련번호로 작업을 자동으로 미리 채웁니다."
+msgstr "이 확인란을 선택하면 Lean Soft는 해당 품목, 공간 및 일련번호로 작업을 자동으로 미리 채웁니다."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking_type__auto_show_reception_report
 msgid ""
-"If this checkbox is ticked, Odoo will automatically show the reception "
+"If this checkbox is ticked, Lean Soft will automatically show the reception "
 "report (if there are moves to allocate to) when validating."
 msgstr ""
 
@@ -9066,17 +9066,17 @@ msgstr "선별을 하지 않으면 초기 수요를 변결할 수 있습니다. 
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_min_qty
 msgid ""
 "When the virtual stock goes below the Min Quantity specified for this field,"
-" Odoo generates a procurement to bring the forecasted quantity to the Max "
+" Lean Soft generates a procurement to bring the forecasted quantity to the Max "
 "Quantity."
-msgstr "가상 재고가 이 필드에 지정된 최소 수량보다 낮아지면 Odoo는 예측 수량을 최대 수량으로 가져 오는 조달을 생성합니다."
+msgstr "가상 재고가 이 필드에 지정된 최소 수량보다 낮아지면 Lean Soft는 예측 수량을 최대 수량으로 가져 오는 조달을 생성합니다."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_max_qty
 msgid ""
-"When the virtual stock goes below the Min Quantity, Odoo generates a "
+"When the virtual stock goes below the Min Quantity, Lean Soft generates a "
 "procurement to bring the forecasted quantity to the Quantity specified as "
 "Max Quantity."
-msgstr "가상 재고가 최소 수량보다 낮아지면 Odoo는 예측 수량을 최대 수량으로 지정된 수량을 가져 오는 조달을 생성합니다."
+msgstr "가상 재고가 최소 수량보다 낮아지면 Lean Soft는 예측 수량을 최대 수량으로 지정된 수량을 가져 오는 조달을 생성합니다."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_rule__propagate_carrier
@@ -9413,7 +9413,7 @@ msgstr "품목 내역를 수동으로 생성했습니다. 계속 진행하려면
 #: model_terms:ir.ui.view,arch_db:stock.view_immediate_transfer
 msgid ""
 "You have not recorded <i>done</i> quantities yet, by clicking on "
-"<i>apply</i> Odoo will process all the quantities."
+"<i>apply</i> Lean Soft will process all the quantities."
 msgstr ""
 
 #. module: stock

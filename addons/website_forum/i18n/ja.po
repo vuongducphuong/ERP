@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* website_forum
 # 
@@ -7,7 +7,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-04 09:24+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
@@ -713,7 +713,7 @@ msgstr "新しい質問"
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_nav_header
 msgid "About"
-msgstr "Odooについて"
+msgstr "Lean Softについて"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_forum__karma_answer_accept_own
@@ -3176,8 +3176,8 @@ msgstr "ご投稿ありがとうございます！"
 #: model_terms:ir.ui.view,arch_db:website_forum.faq_karma
 msgid ""
 "The goal of this site is create a relevant knowledge base that would answer "
-"questions related to Odoo."
-msgstr "このサイトの目標は、Odooに関連する質問に答える関連知識ベースを作成することです。"
+"questions related to Lean Soft."
+msgstr "このサイトの目標は、Lean Softに関連する質問に答える関連知識ベースを作成することです。"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
@@ -3782,8 +3782,8 @@ msgstr "こちら"
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "how to configure or customize Odoo to specific business needs,"
-msgstr "Odooを特定のビジネスニーズに合わせて構成またはカスタマイズする方法、"
+msgid "how to configure or customize Lean Soft to specific business needs,"
+msgstr "Lean Softを特定のビジネスニーズに合わせて構成またはカスタマイズする方法、"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
@@ -3794,8 +3794,8 @@ msgstr "あなた自身の必要に応じてにモジュールを開発する方
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "how to install Odoo on a specific infrastructure,"
-msgstr "Odooを特定のインフラストラクチャにインストールする方法、"
+msgid "how to install Lean Soft on a specific infrastructure,"
+msgstr "Lean Softを特定のインフラストラクチャにインストールする方法、"
 
 #. module: website_forum
 #. openerp-web
@@ -3895,8 +3895,8 @@ msgstr "解決済"
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "specific questions about Odoo service offers, etc."
-msgstr "Odooサービスの提供に関する具体的な質問など。"
+msgid "specific questions about Lean Soft service offers, etc."
+msgstr "Lean Softサービスの提供に関する具体的な質問など。"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
@@ -3952,8 +3952,8 @@ msgstr "自由形式の仮説的な質問があります。: “______が発生�
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "what's the best way to use Odoo for a specific business need,"
-msgstr "特定のビジネスニーズにOdooを使用するための最良の方法は何ですか?"
+msgid "what's the best way to use Lean Soft for a specific business need,"
+msgstr "特定のビジネスニーズにLean Softを使用するための最良の方法は何ですか?"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.author_box

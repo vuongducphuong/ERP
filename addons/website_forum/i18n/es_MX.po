@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* website_forum
 # 
@@ -9,7 +9,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-04 09:24+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
@@ -3245,10 +3245,10 @@ msgstr "¡Gracias por publicar!"
 #: model_terms:ir.ui.view,arch_db:website_forum.faq_karma
 msgid ""
 "The goal of this site is create a relevant knowledge base that would answer "
-"questions related to Odoo."
+"questions related to Lean Soft."
 msgstr ""
 "El objetivo de este sitio es crear una base de conocimiento relevante que "
-"responda a preguntas relacionadas con Odoo."
+"responda a preguntas relacionadas con Lean Soft."
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
@@ -3880,9 +3880,9 @@ msgstr "aquí"
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "how to configure or customize Odoo to specific business needs,"
+msgid "how to configure or customize Lean Soft to specific business needs,"
 msgstr ""
-"cómo configurar o personalizar Odoo según las necesidades empresariales "
+"cómo configurar o personalizar Lean Soft según las necesidades empresariales "
 "específicas,"
 
 #. module: website_forum
@@ -3894,8 +3894,8 @@ msgstr "cómo desarrollar módulos para sus propias necesidades,"
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "how to install Odoo on a specific infrastructure,"
-msgstr "cómo instalar Odoo en una infraestructura específica,"
+msgid "how to install Lean Soft on a specific infrastructure,"
+msgstr "cómo instalar Lean Soft en una infraestructura específica,"
 
 #. module: website_forum
 #. openerp-web
@@ -3997,8 +3997,8 @@ msgstr "resuelto"
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "specific questions about Odoo service offers, etc."
-msgstr "preguntas específicas sobre las ofertas de servicio de Odoo, etc."
+msgid "specific questions about Lean Soft service offers, etc."
+msgstr "preguntas específicas sobre las ofertas de servicio de Lean Soft, etc."
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
@@ -4058,9 +4058,9 @@ msgstr ""
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "what's the best way to use Odoo for a specific business need,"
+msgid "what's the best way to use Lean Soft for a specific business need,"
 msgstr ""
-"cuál es la mejor manera de usar Odoo para una necesidad empresarial "
+"cuál es la mejor manera de usar Lean Soft para una necesidad empresarial "
 "especifica,"
 
 #. module: website_forum

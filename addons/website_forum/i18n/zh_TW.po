@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* website_forum
 # 
@@ -7,7 +7,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-04 09:24+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
@@ -3161,8 +3161,8 @@ msgstr "謝謝張貼！"
 #: model_terms:ir.ui.view,arch_db:website_forum.faq_karma
 msgid ""
 "The goal of this site is create a relevant knowledge base that would answer "
-"questions related to Odoo."
-msgstr "該站點的目標是建立一個相關的知識庫，以回答與 Odoo 相關的問題。"
+"questions related to Lean Soft."
+msgstr "該站點的目標是建立一個相關的知識庫，以回答與 Lean Soft 相關的問題。"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_description_full
@@ -3766,8 +3766,8 @@ msgstr "這裡"
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "how to configure or customize Odoo to specific business needs,"
-msgstr "如何為特定的業務需求配置或自訂Odoo,"
+msgid "how to configure or customize Lean Soft to specific business needs,"
+msgstr "如何為特定的業務需求配置或自訂Lean Soft,"
 
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
@@ -3778,8 +3778,8 @@ msgstr "如何為您的需求開發模組,"
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "how to install Odoo on a specific infrastructure,"
-msgstr "如何在特定環境下安裝Odoo,"
+msgid "how to install Lean Soft on a specific infrastructure,"
+msgstr "如何在特定環境下安裝Lean Soft,"
 
 #. module: website_forum
 #. openerp-web
@@ -3881,8 +3881,8 @@ msgstr "已解決"
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "specific questions about Odoo service offers, etc."
-msgstr "有關Odoo服務等具體問題等。"
+msgid "specific questions about Lean Soft service offers, etc."
+msgstr "有關Lean Soft服務等具體問題等。"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
@@ -3938,8 +3938,8 @@ msgstr "我們被問到一個開放式的假設性問題：“如果______發生
 #. module: website_forum
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
-msgid "what's the best way to use Odoo for a specific business need,"
-msgstr "什麼是為特定業務需求使用Odoo 的最佳方式,"
+msgid "what's the best way to use Lean Soft for a specific business need,"
+msgstr "什麼是為特定業務需求使用Lean Soft 的最佳方式,"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.author_box

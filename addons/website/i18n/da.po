@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* website
 # 
@@ -14,7 +14,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0\n"
+"Project-Id-Version: Lean Soft Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-03 16:37+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
@@ -456,8 +456,8 @@ msgstr "50%"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_call_to_action
-msgid "50,000+ companies run Odoo to grow their businesses."
-msgstr "50.000+ virksomheder bruger Odoo til at vokse deres virksomhed."
+msgid "50,000+ companies run Lean Soft to grow their businesses."
+msgstr "50.000+ virksomheder bruger Lean Soft til at vokse deres virksomhed."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_hr_options
@@ -479,9 +479,9 @@ msgstr "80% Udvikling"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_call_to_action
-msgid "<b>50,000+ companies</b> run Odoo to grow their businesses."
+msgid "<b>50,000+ companies</b> run Lean Soft to grow their businesses."
 msgstr ""
-"<b>50.000+ virksomheder</b> bruger Odoo til at udvide deres forretning."
+"<b>50.000+ virksomheder</b> bruger Lean Soft til at udvide deres forretning."
 
 #. module: website
 #. openerp-web
@@ -2518,10 +2518,10 @@ msgstr "Skift ikoner"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_table_of_content
 msgid ""
-"Change theme in a few clicks, and browse through Odoo's catalog of\n"
+"Change theme in a few clicks, and browse through Lean Soft's catalog of\n"
 "                            ready-to-use themes available in our app store."
 msgstr ""
-"Ændr temaet i et par klik, og gennemgå Odoos katalog af\n"
+"Ændr temaet i et par klik, og gennemgå Lean Softs katalog af\n"
 "                             temaer som er klar til brug i vores app butik."
 
 #. module: website
@@ -3923,10 +3923,10 @@ msgstr "F.eks. https://www.mitdomæne.dk"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_table_of_content
 msgid ""
-"Easily design your own Odoo templates thanks to clean HTML\n"
+"Easily design your own Lean Soft templates thanks to clean HTML\n"
 "                            structure and bootstrap CSS."
 msgstr ""
-"Design nemt dine egne Odoo skabeloner, takket være ren HTML\n"
+"Design nemt dine egne Lean Soft skabeloner, takket være ren HTML\n"
 "                              struktur og bootstrap CSS."
 
 #. module: website
@@ -4745,7 +4745,7 @@ msgstr "Gå til Tema fanen"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.layout
-msgid "Go to your Odoo Apps"
+msgid "Go to your Lean Soft Apps"
 msgstr ""
 
 #. module: website
@@ -4940,8 +4940,8 @@ msgstr "Burger menu"
 #. openerp-web
 #: code:addons/website/static/src/snippets/s_countdown/options.xml:0
 #, python-format
-msgid "Happy Odoo Anniversary!"
-msgstr "Glædelig Odoo Jubilæum!"
+msgid "Happy Lean Soft Anniversary!"
+msgstr "Glædelig Lean Soft Jubilæum!"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website__has_social_default_image
@@ -5791,12 +5791,12 @@ msgstr "Er angivet"
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid ""
 "It appears your website is still using the old color system of\n"
-"            Odoo 13.0 in some places. We made sure it is still working but\n"
+"            Lean Soft 13.0 in some places. We made sure it is still working but\n"
 "            we recommend you to try to use the new color system, which is\n"
 "            still customizable."
 msgstr ""
 "Det ser ud til at din hjemmeside stadig anvender det gamle farve system fra\n"
-"             Odoo 13,0 visse steder. Vi har forsikret at det stadig virker, men\n"
+"             Lean Soft 13,0 visse steder. Vi har forsikret at det stadig virker, men\n"
 "             vi forslår, at du prøver det nye farve system, som stadig kan\n"
 "             tilpasses."
 
@@ -6637,12 +6637,12 @@ msgstr "Overvåg Google Søgning resultats data"
 #. module: website
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_0
 msgid ""
-"Monitor your visitors while they are browsing your website with the Odoo "
+"Monitor your visitors while they are browsing your website with the Lean Soft "
 "Social app. Engage with them in just a click using a live chat request or a "
 "push notification. If they have completed one of your forms, you can send "
 "them an SMS, or call them right away while they are browsing your website."
 msgstr ""
-"Overvåg dine besøgende imens de gennemser din hjemmeside med Odoo Social "
+"Overvåg dine besøgende imens de gennemser din hjemmeside med Lean Soft Social "
 "app'en. Interager med dem ved blot et enkelt klik via en live chat anmodning"
 " eller push notifikation. Hvis de har udfyldt en af dine formularer, kan du "
 "sende dem en SMS, eller ringe til dem med det samme, imens de gennemser din "
@@ -7053,18 +7053,18 @@ msgstr "ELLER"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
-msgid "Odoo Information"
+msgid "Lean Soft Information"
 msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
-msgid "Odoo Menu"
-msgstr "Odoo Menu"
+msgid "Lean Soft Menu"
+msgstr "Lean Soft Menu"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
-msgid "Odoo Version"
-msgstr "Odoo version"
+msgid "Lean Soft Version"
+msgstr "Lean Soft version"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -8351,12 +8351,12 @@ msgstr "Søg besøgende"
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_1
 msgid ""
 "Search in the media dialogue when you need photos to illustrate your "
-"website. Odoo's integration with Unsplash, featuring millions of royalty "
+"website. Lean Soft's integration with Unsplash, featuring millions of royalty "
 "free and high quality photos, makes it possible for you to get the perfect "
 "picture, in just a few clicks."
 msgstr ""
 "Søg i medie dialogen når du skal bruge fotografier til at illustrere din "
-"hjemmeside. Odoos integration med Unsplash, som har millioner af gratis "
+"hjemmeside. Lean Softs integration med Unsplash, som har millioner af gratis "
 "billeder af høj kvalitet, hjælper dig med at finde det perfekte billede med "
 "blot et par klik."
 
@@ -8708,11 +8708,11 @@ msgstr ""
 msgid ""
 "Sitemap.xml: Help search engine crawlers to find out what pages are present "
 "and which have recently changed, and to crawl your site accordingly. This "
-"file is automatically generated by Odoo."
+"file is automatically generated by Lean Soft."
 msgstr ""
 "Sitemap.xml: Hjælp søgemaskiner crawlers med at finde ud af hvilke siger er "
 "tilstede, og hvilke der er blevet ændret for nyligt, og til at crawle din "
-"side derudfra. Denne fil genereres automatisk af Odoo."
+"side derudfra. Denne fil genereres automatisk af Lean Soft."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_alert_options
@@ -9703,13 +9703,13 @@ msgstr ""
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_2
 msgid ""
 "To get more visitors, you should target keywords that are often searched in "
-"Google. With the built-in SEO tool, once you define a few keywords, Odoo "
+"Google. With the built-in SEO tool, once you define a few keywords, Lean Soft "
 "will recommend you the best keywords to target. Then adapt your title and "
 "description accordingly to boost your traffic."
 msgstr ""
 "For at få flere besøgende bør du sigte efter nøgleord der ofte søges efter i"
 " Google. Med det indbyggede SEO værktøj - når du har defineret et par "
-"nøgleord - vil Odoo foreslå dig de nøgleord der er bedst at bruge. Tilpas "
+"nøgleord - vil Lean Soft foreslå dig de nøgleord der er bedst at bruge. Tilpas "
 "derefter din titel og beskrivelse derudfra, for at forøge din trafik."
 
 #. module: website
@@ -11355,8 +11355,8 @@ msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
-msgid "frontend_lang (Odoo)"
-msgstr "frontend_lang (Odoo)"
+msgid "frontend_lang (Lean Soft)"
+msgstr "frontend_lang (Lean Soft)"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -11411,15 +11411,15 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
 msgid ""
-"im_livechat_previous_operator_pid (Odoo)<br/>\n"
-"                                            utm_campaign (Odoo)<br/>\n"
-"                                            utm_source (Odoo)<br/>\n"
-"                                            utm_medium (Odoo)"
+"im_livechat_previous_operator_pid (Lean Soft)<br/>\n"
+"                                            utm_campaign (Lean Soft)<br/>\n"
+"                                            utm_source (Lean Soft)<br/>\n"
+"                                            utm_medium (Lean Soft)"
 msgstr ""
-"im_livechat_previous_operator_pid (Odoo)<br/>\n"
-"                                            utm_campaign (Odoo)<br/>\n"
-"                                            utm_source (Odoo)<br/>\n"
-"                                            utm_medium (Odoo)"
+"im_livechat_previous_operator_pid (Lean Soft)<br/>\n"
+"                                            utm_campaign (Lean Soft)<br/>\n"
+"                                            utm_source (Lean Soft)<br/>\n"
+"                                            utm_medium (Lean Soft)"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -11458,8 +11458,8 @@ msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
-msgid "instance of Odoo, the"
-msgstr "Odoo instansen"
+msgid "instance of Lean Soft, the"
+msgstr "Lean Soft instansen"
 
 #. module: website
 #: model:ir.model.fields.selection,name:website.selection__theme_ir_ui_view__inherit_id__ir_ui_view
@@ -11577,7 +11577,7 @@ msgstr "separator, opdeler"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
-msgid "session_id (Odoo)<br/>"
+msgid "session_id (Lean Soft)<br/>"
 msgstr ""
 
 #. module: website

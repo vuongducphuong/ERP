@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # * web
 # 
@@ -15,7 +15,7 @@
 # Sahar Daraye <sahar.daraye.1369@gmail.com>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Lean Soft Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-08 06:49+0000\n"
 "PO-Revision-Date: 2018-10-08 06:49+0000\n"
@@ -1578,7 +1578,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:1565
 #, python-format
-msgid "Get this feature and much more with Odoo Enterprise!"
+msgid "Get this feature and much more with Lean Soft Enterprise!"
 msgstr ""
 
 #. module: web
@@ -2130,8 +2130,8 @@ msgstr "بفرست بالا"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:1550
 #, python-format
-msgid "My Odoo.com account"
-msgstr "اکانت من در Odoo.com"
+msgid "My Lean Soft.com account"
+msgstr "اکانت من در Lean Soft.com"
 
 #. module: web
 #. openerp-web
@@ -2270,14 +2270,14 @@ msgstr "شی:"
 #: code:addons/web/static/src/js/core/dialog.js:59
 #: code:addons/web/static/src/xml/menu.xml:100
 #, python-format
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Lean Soft"
+msgstr "Lean Soft"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/apps.js:148
 #, python-format
-msgid "Odoo Apps will be available soon"
+msgid "Lean Soft Apps will be available soon"
 msgstr "برنامه‌های اودو به زودی در دسترس خواهد بود"
 
 #. module: web
@@ -2286,28 +2286,28 @@ msgstr "برنامه‌های اودو به زودی در دسترس خواهد 
 #: code:addons/web/static/src/js/chrome/abstract_web_client.js:209
 #: code:addons/web/static/src/js/services/crash_manager.js:153
 #, python-format
-msgid "Odoo Client Error"
+msgid "Lean Soft Client Error"
 msgstr "خطای کلاینت اودو"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/fields/upgrade_fields.js:86
 #, python-format
-msgid "Odoo Enterprise"
+msgid "Lean Soft Enterprise"
 msgstr "اودو سازمانی"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/services/crash_manager.js:115
 #, python-format
-msgid "Odoo Error"
+msgid "Lean Soft Error"
 msgstr "خطای اودو"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/services/crash_manager.js:212
 #, python-format
-msgid "Odoo Session Expired"
+msgid "Lean Soft Session Expired"
 msgstr "نشست اودو منقضی شده"
 
 #. module: web
@@ -2315,7 +2315,7 @@ msgstr "نشست اودو منقضی شده"
 #: code:addons/web/static/src/js/services/crash_manager.js:105
 #: code:addons/web/static/src/js/services/crash_manager.js:194
 #, python-format
-msgid "Odoo Warning"
+msgid "Lean Soft Warning"
 msgstr "هشدار اودو"
 
 #. module: web
@@ -2568,7 +2568,7 @@ msgstr ""
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.login_layout
-msgid "Powered by <span>Odoo</span>"
+msgid "Powered by <span>Lean Soft</span>"
 msgstr "راه اندازی شده به وسیله <span>اُدو</span>"
 
 #. module: web
@@ -3293,7 +3293,7 @@ msgstr ""
 #, python-format
 msgid ""
 "Timezone Mismatch : The timezone of your browser doesn't match the selected "
-"one. The time in Odoo is displayed according to the timezone set on your "
+"one. The time in Lean Soft is displayed according to the timezone set on your "
 "user's preferences."
 msgstr ""
 
@@ -3709,7 +3709,7 @@ msgstr ""
 #: code:addons/web/static/src/js/chrome/action_manager_report.js:29
 #, python-format
 msgid ""
-"You need to start Odoo with at least two workers to print a pdf version of "
+"You need to start Lean Soft with at least two workers to print a pdf version of "
 "the reports."
 msgstr ""
 
@@ -3727,7 +3727,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/js/services/crash_manager.js:212
 #, python-format
-msgid "Your Odoo session expired. Please refresh the current web page."
+msgid "Your Lean Soft session expired. Please refresh the current web page."
 msgstr ""
 
 #. module: web

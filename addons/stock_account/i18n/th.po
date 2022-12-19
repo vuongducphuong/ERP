@@ -1,9 +1,9 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* stock_account
 # 
 # Translators:
-# Odoo Thaidev <leansoftthaidev@gmail.com>, 2022
+# Lean Soft Thaidev <leansoftthaidev@gmail.com>, 2022
 # Pornvibool Tippayawat <pornvibool.t@gmail.com>, 2022
 # Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2022
 # Wichanon Jamwutthipreecha, 2022
@@ -11,7 +11,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.5alpha1\n"
+"Project-Id-Version: Lean Soft Server 15.5alpha1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-20 09:01+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"

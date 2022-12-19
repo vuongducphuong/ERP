@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* account
 # 
@@ -20,7 +20,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-10 10:22+0000\n"
 "PO-Revision-Date: 2022-09-22 05:44+0000\n"
@@ -261,10 +261,10 @@ msgstr ". Veuillez vous assurer qu'il s'agit d'un comportement souhaité."
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid ""
-". The journal entries need to be computed by Odoo before being posted in "
+". The journal entries need to be computed by Lean Soft before being posted in "
 "your company's currency."
 msgstr ""
-". Les écritures de journal doivent être calculées par Odoo avant d'être "
+". Les écritures de journal doivent être calculées par Lean Soft avant d'être "
 "enregistrées dans la devise de votre entreprise."
 
 #. module: account
@@ -3301,11 +3301,11 @@ msgstr "Avant"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_default_terms_and_conditions
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Lean Soft S.A. "
 "responsibility."
 msgstr ""
 "Le texte ci-dessous sert de suggestion et n'engage pas la responsabilité "
-"d'Odoo S.A.."
+"d'Lean Soft S.A.."
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_setup_bank_manual_config__bank_bic
@@ -5152,10 +5152,10 @@ msgstr "Exemple de date"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_financial_year_op__opening_date
 msgid ""
-"Date from which the accounting is managed in Odoo. It is the date of the "
+"Date from which the accounting is managed in Lean Soft. It is the date of the "
 "opening entry."
 msgstr ""
-"Date à compter de laquelle la comptabilité est gérée dans Odoo. Il s'agit de"
+"Date à compter de laquelle la comptabilité est gérée dans Lean Soft. Il s'agit de"
 " la date de l'écriture d'ouverture."
 
 #. module: account
@@ -9053,12 +9053,12 @@ msgstr "Entrée manuelle"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__inbound_payment_method_line_ids
 msgid ""
-"Manual: Get paid by any method outside of Odoo.\n"
+"Manual: Get paid by any method outside of Lean Soft.\n"
 "Payment Providers: Each payment provider has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
 msgstr ""
-"Manuel : Soyez payé par n'importe quelle méthode en dehors d'Odoo.\n"
+"Manuel : Soyez payé par n'importe quelle méthode en dehors d'Lean Soft.\n"
 "Fournisseurs de paiement : Chaque fournisseur de paiement a sa propre méthode de paiement. Demandez une transaction sur/vers une carte grâce à un jeton de paiement enregistré par le partenaire lors d'un achat ou d'un abonnement en ligne.\n"
 "Dépôt par lots : Collectez plusieurs chèques de clients en une seule fois en générant et en soumettant un dépôt par lots à votre banque. Le module account_batch_payment est nécessaire.\n"
 "Prélèvement SEPA : Soyez payé dans la zone SEPA grâce à un mandat que votre partenaire vous aura accordé. Le module account_sepa est nécessaire.\n"
@@ -9066,28 +9066,28 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__outbound_payment_method_line_ids
 msgid ""
-"Manual: Pay by any method outside of Odoo.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Manual: Pay by any method outside of Lean Soft.\n"
+"Check: Pay bills by check and print it from Lean Soft.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 msgstr ""
-"Paiement manuel : payez par tout autre moyen externe à Odoo.\n"
-"Chèque : payez par chèque en l'imprimant depuis Odoo.\n"
+"Paiement manuel : payez par tout autre moyen externe à Lean Soft.\n"
+"Chèque : payez par chèque en l'imprimant depuis Lean Soft.\n"
 "Virement SEPA : payez en envoyant un fichier de virement SEPA à votre banque. Activez cette option dans les paramètres.\n"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_payment__payment_method_line_id
 #: model:ir.model.fields,help:account.field_account_payment_register__payment_method_line_id
 msgid ""
-"Manual: Pay or Get paid by any method outside of Odoo.\n"
+"Manual: Pay or Get paid by any method outside of Lean Soft.\n"
 "Payment Providers: Each payment provider has its own Payment Method. Request a transaction on/to a card thanks to a payment token saved by the partner when buying or subscribing online.\n"
-"Check: Pay bills by check and print it from Odoo.\n"
+"Check: Pay bills by check and print it from Lean Soft.\n"
 "Batch Deposit: Collect several customer checks at once generating and submitting a batch deposit to your bank. Module account_batch_payment is necessary.\n"
 "SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit Transfer file to your bank. Module account_sepa is necessary.\n"
 "SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your partner will have granted to you. Module account_sepa is necessary.\n"
 msgstr ""
-"Manuel : Payez ou soyez payé par n'importe quelle méthode en dehors d'Odoo.\n"
+"Manuel : Payez ou soyez payé par n'importe quelle méthode en dehors d'Lean Soft.\n"
 "Acquéreurs de paiement : Chaque acquéreur de paiement a sa propre méthode de paiement. Demandez une transaction sur/vers une carte grâce à un jeton de paiement enregistré par le partenaire lors d'un achat ou d'un abonnement en ligne.\n"
-"Chèque : Payez vos factures par chèque et imprimez-le depuis Odoo.\n"
+"Chèque : Payez vos factures par chèque et imprimez-le depuis Lean Soft.\n"
 "Dépôt par lot : Collectez plusieurs chèques clients en une seule fois en générant et en soumettant un dépôt par lot à votre banque. Le module account_batch_payment est nécessaire.\n"
 "Virement SEPA : Payez dans la zone SEPA en soumettant un fichier de virement SEPA à votre banque. Le module account_sepa est nécessaire.\n"
 "Prélèvement SEPA : Soyez payé dans la zone SEPA grâce à un mandat que votre partenaire vous aura accordé. Le module account_sepa est nécessaire.\n"
@@ -9870,34 +9870,34 @@ msgstr "Octobre"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__leansoft
-msgid "Odoo"
-msgstr "Odoo"
+msgid "Lean Soft"
+msgstr "Lean Soft"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_report_expression__engine__domain
-msgid "Odoo Domain"
-msgstr "Domaine Odoo"
+msgid "Lean Soft Domain"
+msgstr "Domaine Lean Soft"
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_bank_statement_tree
 msgid ""
-"Odoo allows you to reconcile a statement line directly with\n"
+"Lean Soft allows you to reconcile a statement line directly with\n"
 "                the related sale or purchase invoices."
 msgstr ""
-"Odoo vous permet de lettrer directement une ligne de relevé avec\n"
+"Lean Soft vous permet de lettrer directement une ligne de relevé avec\n"
 " les factures de vente ou d'achat associées."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_customer
-msgid "Odoo helps you easily track all activities related to a customer."
+msgid "Lean Soft helps you easily track all activities related to a customer."
 msgstr ""
-"Odoo vous aide à facilement suivre toutes les activités liées à un vendeur."
+"Lean Soft vous aide à facilement suivre toutes les activités liées à un vendeur."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_supplier
-msgid "Odoo helps you easily track all activities related to a supplier."
+msgid "Lean Soft helps you easily track all activities related to a supplier."
 msgstr ""
-"Odoo vous aide à suivre facilement toutes les activités liées à un "
+"Lean Soft vous aide à suivre facilement toutes les activités liées à un "
 "fournisseur."
 
 #. module: account
@@ -12348,13 +12348,13 @@ msgid ""
 "\n"
 "Any file extension will be accepted.\n"
 "\n"
-"Only PDF and XML files will be interpreted by Odoo"
+"Only PDF and XML files will be interpreted by Lean Soft"
 msgstr ""
 "Envoyer un email distinct pour chaque facture.\n"
 "\n"
 "Toute extension de fichier sera acceptée.\n"
 "\n"
-"Seuls les fichiers PDF et XML seront interprétés par Odoo."
+"Seuls les fichiers PDF et XML seront interprétés par Lean Soft."
 
 #. module: account
 #: model:ir.actions.act_window,name:account.account_send_payment_receipt_by_email_action
@@ -14906,11 +14906,11 @@ msgstr "Ce déménagement sera comptabilisé à la date comptable : %(date)s"
 msgid ""
 "This option permanently removes any track of email after it's been sent, "
 "including from the Technical menu in the Settings, in order to preserve "
-"storage space of your Odoo database."
+"storage space of your Lean Soft database."
 msgstr ""
 "Cette option supprime définitivement quelconque trace de l'email après son "
 "envoi, y compris du Menu technique dans les Paramètres, afin de préserver de"
-" l'espace de stockage dans votre base de données Odoo."
+" l'espace de stockage dans votre base de données Lean Soft."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_account_template__chart_template_id
@@ -15532,10 +15532,10 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_payment__quick_edit_total_amount
 msgid ""
 "Use this field to encode the total amount of the invoice.\n"
-"Odoo will automatically create one invoice line with default values to match it."
+"Lean Soft will automatically create one invoice line with default values to match it."
 msgstr ""
 "Utilisez ce champ pour encoder le montant total de la facture.\n"
-"Odoo créera automatiquement une ligne de facture avec des valeurs par défaut pour y correspondre."
+"Lean Soft créera automatiquement une ligne de facture avec des valeurs par défaut pour y correspondre."
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__used
@@ -15911,8 +15911,8 @@ msgstr "Sera utilisé pour nommer le Journal lié à ce compte bancaire"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_tour_upload_bill
-msgid "With Odoo, you won't have to record bills manually"
-msgstr "Avec Odoo, vous n'aurez pas à enregistrer les factures manuellement"
+msgid "With Lean Soft, you won't have to record bills manually"
+msgstr "Avec Lean Soft, vous n'aurez pas à enregistrer les factures manuellement"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_search
@@ -15964,10 +15964,10 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_journal__invoice_reference_model
 msgid ""
 "You can choose different models for each type of reference. The default one "
-"is the Odoo reference."
+"is the Lean Soft reference."
 msgstr ""
 "Vous pouvez choisir différents modèles par type de référence. Le modèle par "
-"défaut est la référence Odoo."
+"défaut est la référence Lean Soft."
 
 #. module: account
 #: code:addons/account/models/account_journal.py:0

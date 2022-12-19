@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* stock
 # 
@@ -20,7 +20,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-10 10:22+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
@@ -1236,7 +1236,7 @@ msgstr "Před plánovaným datem"
 #. module: stock
 #: model_terms:res.company,invoice_terms_html:stock.res_company_1
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Lean Soft S.A. "
 "responsibility."
 msgstr ""
 
@@ -2201,7 +2201,7 @@ msgstr "Předvolené trasy skrz sklad"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_orderpoint
 msgid ""
-"Define a minimum stock rule so that Odoo automatically creates requests for "
+"Define a minimum stock rule so that Lean Soft automatically creates requests for "
 "quotations or confirmed manufacturing orders to resupply your stock."
 msgstr ""
 
@@ -2214,13 +2214,13 @@ msgstr "Definovat nový sklad"
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
 "Define your locations to reflect your warehouse structure and\n"
-"            organization. Odoo is able to manage physical locations\n"
+"            organization. Lean Soft is able to manage physical locations\n"
 "            (warehouses, shelves, bin, etc), partner locations (customers,\n"
 "            vendors) and virtual locations which are the counterpart of\n"
 "            the stock operations like the manufacturing orders\n"
 "            consumptions, inventories, etc."
 msgstr ""
-"Definujte umístění tak, aby odrážely strukturu a organizaci skladu. Odoo je "
+"Definujte umístění tak, aby odrážely strukturu a organizaci skladu. Lean Soft je "
 "schopen spravovat fyzická místa (sklady, police, přihrádky atd.), Partnerská"
 " místa (zákazníci, prodejci) a virtuální místa, která jsou protějškem "
 "skladových operací, jako jsou spotřeby výrobních objednávek, zásoby atd."
@@ -2705,12 +2705,12 @@ msgstr "E-mail odeslaný zákazníkovi po dokončení objednávky."
 #. module: stock
 #: model_terms:digest.tip,tip_description:stock.digest_tip_stock_0
 msgid ""
-"Enjoy a quick-paced experience with the Odoo barcode app. It is blazing fast"
+"Enjoy a quick-paced experience with the Lean Soft barcode app. It is blazing fast"
 " and works even without a stable internet connection. It supports all flows:"
 " inventory adjustments, batch picking, moving lots or pallets, low inventory"
 " checks, etc. Go to the \"Apps\" menu to activate the barcode interface."
 msgstr ""
-"Vychutnejte si rychlý zážitek s aplikací čárových kódů Odoo. Je bleskurychlá"
+"Vychutnejte si rychlý zážitek s aplikací čárových kódů Lean Soft. Je bleskurychlá"
 " a funguje i bez stabilního připojení k internetu. Podporuje všechny toky: "
 "úpravy zásob, vychystávání dávek, přesuny šarží nebo palet, kontroly nízkých"
 " zásob atd. Přejděte do nabídky \"Aplikace\" a aktivujte rozhraní čárového "
@@ -2737,14 +2737,14 @@ msgstr "Chyba"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
-"Every stock operation in Odoo moves the products from one\n"
+"Every stock operation in Lean Soft moves the products from one\n"
 "            location to another one.  For instance, if you receive products\n"
-"            from a vendor, Odoo will move products from the Vendor\n"
+"            from a vendor, Lean Soft will move products from the Vendor\n"
 "            location to the Stock location. Each report can be performed on\n"
 "            physical, partner or virtual locations."
 msgstr ""
-"Každá skladová operace v Odoo přesouvá produkty z jednoho místa na druhé. "
-"Pokud například obdržíte produkty od dodavatele, Odoo bude přesouvat "
+"Každá skladová operace v Lean Soft přesouvá produkty z jednoho místa na druhé. "
+"Pokud například obdržíte produkty od dodavatele, Lean Soft bude přesouvat "
 "produkty z místa dodavatele do místa skladu. Každá sestava může být "
 "prováděna na fyzických, partnerských nebo virtuálních místech."
 
@@ -3377,18 +3377,18 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_picking__show_reserved
 #: model:ir.model.fields,help:stock.field_stock_picking_type__show_reserved
 msgid ""
-"If this checkbox is ticked, Odoo will automatically pre-fill the detailed "
+"If this checkbox is ticked, Lean Soft will automatically pre-fill the detailed "
 "operations with the corresponding products, locations and lot/serial "
 "numbers."
 msgstr ""
-"If this checkbox is ticked, Odoo will automatically pre-fill the detailed "
+"If this checkbox is ticked, Lean Soft will automatically pre-fill the detailed "
 "operations with the corresponding products, locations and lot/serial "
 "numbers."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking_type__auto_show_reception_report
 msgid ""
-"If this checkbox is ticked, Odoo will automatically show the reception "
+"If this checkbox is ticked, Lean Soft will automatically show the reception "
 "report (if there are moves to allocate to) when validating."
 msgstr ""
 
@@ -9193,21 +9193,21 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_min_qty
 msgid ""
 "When the virtual stock goes below the Min Quantity specified for this field,"
-" Odoo generates a procurement to bring the forecasted quantity to the Max "
+" Lean Soft generates a procurement to bring the forecasted quantity to the Max "
 "Quantity."
 msgstr ""
 "Když virtuální zásoba klesne pod minimální množství určené pro toto pole, "
-"Odoo generuje zakázku, aby přivedl odhadované množství na maximální "
+"Lean Soft generuje zakázku, aby přivedl odhadované množství na maximální "
 "množství."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_max_qty
 msgid ""
-"When the virtual stock goes below the Min Quantity, Odoo generates a "
+"When the virtual stock goes below the Min Quantity, Lean Soft generates a "
 "procurement to bring the forecasted quantity to the Quantity specified as "
 "Max Quantity."
 msgstr ""
-"Když virtuální zásoba klesne pod Min Množství, Odoo vygeneruje zakázku, "
+"Když virtuální zásoba klesne pod Min Množství, Lean Soft vygeneruje zakázku, "
 "která uvede předpokládané množství na Množství určené jako Max Množství."
 
 #. module: stock
@@ -9544,7 +9544,7 @@ msgstr "Ručně jste vytvořili produktové trasy, pokračujte prosím odstraně
 #: model_terms:ir.ui.view,arch_db:stock.view_immediate_transfer
 msgid ""
 "You have not recorded <i>done</i> quantities yet, by clicking on "
-"<i>apply</i> Odoo will process all the quantities."
+"<i>apply</i> Lean Soft will process all the quantities."
 msgstr ""
 
 #. module: stock

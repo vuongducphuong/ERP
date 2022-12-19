@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* website
 # 
@@ -14,7 +14,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0\n"
+"Project-Id-Version: Lean Soft Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-03 16:37+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
@@ -464,7 +464,7 @@ msgstr "50%"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_call_to_action
-msgid "50,000+ companies run Odoo to grow their businesses."
+msgid "50,000+ companies run Lean Soft to grow their businesses."
 msgstr "أكثر من 50,000 شركة تستخدم أودو لتنمية أعمالها. "
 
 #. module: website
@@ -487,7 +487,7 @@ msgstr "تطوير بنسبة 80% "
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_call_to_action
-msgid "<b>50,000+ companies</b> run Odoo to grow their businesses."
+msgid "<b>50,000+ companies</b> run Lean Soft to grow their businesses."
 msgstr "<b>أكثر من 50,000 شركة</b> تستخدم أودو لتنمية أعمالها. "
 
 #. module: website
@@ -2585,7 +2585,7 @@ msgstr "تغيير الأيقونات"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_table_of_content
 msgid ""
-"Change theme in a few clicks, and browse through Odoo's catalog of\n"
+"Change theme in a few clicks, and browse through Lean Soft's catalog of\n"
 "                            ready-to-use themes available in our app store."
 msgstr ""
 "تمكن من تغيير السمات ببضع نقرات فقط، وتصفح كاتالوج أودو للسمات\n"
@@ -3989,7 +3989,7 @@ msgstr "مثال: https://www.mydomain.com"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_table_of_content
 msgid ""
-"Easily design your own Odoo templates thanks to clean HTML\n"
+"Easily design your own Lean Soft templates thanks to clean HTML\n"
 "                            structure and bootstrap CSS."
 msgstr ""
 "تمكن من تصميم قوالب أودو الخاصة بك، بفضل نظام HTML المنظم\n"
@@ -4809,7 +4809,7 @@ msgstr "الذهاب إلى علامة تبويب السمات "
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.layout
-msgid "Go to your Odoo Apps"
+msgid "Go to your Lean Soft Apps"
 msgstr "الذهاب إلى تطبيقات أودو "
 
 #. module: website
@@ -5004,7 +5004,7 @@ msgstr "القائمة "
 #. openerp-web
 #: code:addons/website/static/src/snippets/s_countdown/options.xml:0
 #, python-format
-msgid "Happy Odoo Anniversary!"
+msgid "Happy Lean Soft Anniversary!"
 msgstr "ذكرى سنوية سعيدة لأودو! "
 
 #. module: website
@@ -5855,7 +5855,7 @@ msgstr "تم تعيينه "
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid ""
 "It appears your website is still using the old color system of\n"
-"            Odoo 13.0 in some places. We made sure it is still working but\n"
+"            Lean Soft 13.0 in some places. We made sure it is still working but\n"
 "            we recommend you to try to use the new color system, which is\n"
 "            still customizable."
 msgstr ""
@@ -6704,7 +6704,7 @@ msgstr "مراقبة بيانات نتائج بحث Google "
 #. module: website
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_0
 msgid ""
-"Monitor your visitors while they are browsing your website with the Odoo "
+"Monitor your visitors while they are browsing your website with the Lean Soft "
 "Social app. Engage with them in just a click using a live chat request or a "
 "push notification. If they have completed one of your forms, you can send "
 "them an SMS, or call them right away while they are browsing your website."
@@ -7117,17 +7117,17 @@ msgstr "أو "
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
-msgid "Odoo Information"
+msgid "Lean Soft Information"
 msgstr "معلومات أودو "
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
-msgid "Odoo Menu"
+msgid "Lean Soft Menu"
 msgstr "قائمة أودو "
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
-msgid "Odoo Version"
+msgid "Lean Soft Version"
 msgstr "نسخة أودو"
 
 #. module: website
@@ -8415,7 +8415,7 @@ msgstr "البحث في قائمة الزوار "
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_1
 msgid ""
 "Search in the media dialogue when you need photos to illustrate your "
-"website. Odoo's integration with Unsplash, featuring millions of royalty "
+"website. Lean Soft's integration with Unsplash, featuring millions of royalty "
 "free and high quality photos, makes it possible for you to get the perfect "
 "picture, in just a few clicks."
 msgstr ""
@@ -8772,7 +8772,7 @@ msgstr "الموقع "
 msgid ""
 "Sitemap.xml: Help search engine crawlers to find out what pages are present "
 "and which have recently changed, and to crawl your site accordingly. This "
-"file is automatically generated by Odoo."
+"file is automatically generated by Lean Soft."
 msgstr ""
 "Sitemap.xml: قم بمساعدة زاحفات محرك البحث على إيجاد الصفحات المعروضة "
 "والصفحات التي تم تغييرها مؤخراً، والزحف في موقعك الإلكتروني بناء على ذلك. "
@@ -9763,7 +9763,7 @@ msgstr "حتى تكون ناجحاً، يجب أن يكون المحتوى ال�
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_2
 msgid ""
 "To get more visitors, you should target keywords that are often searched in "
-"Google. With the built-in SEO tool, once you define a few keywords, Odoo "
+"Google. With the built-in SEO tool, once you define a few keywords, Lean Soft "
 "will recommend you the best keywords to target. Then adapt your title and "
 "description accordingly to boost your traffic."
 msgstr ""
@@ -11422,7 +11422,7 @@ msgstr "من الشعار "
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
-msgid "frontend_lang (Odoo)"
+msgid "frontend_lang (Lean Soft)"
 msgstr "frontend_lang (أودو)"
 
 #. module: website
@@ -11478,10 +11478,10 @@ msgstr "iPhone"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
 msgid ""
-"im_livechat_previous_operator_pid (Odoo)<br/>\n"
-"                                            utm_campaign (Odoo)<br/>\n"
-"                                            utm_source (Odoo)<br/>\n"
-"                                            utm_medium (Odoo)"
+"im_livechat_previous_operator_pid (Lean Soft)<br/>\n"
+"                                            utm_campaign (Lean Soft)<br/>\n"
+"                                            utm_source (Lean Soft)<br/>\n"
+"                                            utm_medium (Lean Soft)"
 msgstr ""
 "im_livechat_previous_operator_pid (أودو)<br/>\n"
 "                                            utm_campaign (أودو)<br/>\n"
@@ -11525,7 +11525,7 @@ msgstr "إعلام العملاء "
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
-msgid "instance of Odoo, the"
+msgid "instance of Lean Soft, the"
 msgstr "مثيل لأودو، "
 
 #. module: website
@@ -11644,7 +11644,7 @@ msgstr "مفرِّق، مقسِّم "
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
-msgid "session_id (Odoo)<br/>"
+msgid "session_id (Lean Soft)<br/>"
 msgstr "session_id (أودو)<br/>"
 
 #. module: website

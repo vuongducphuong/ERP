@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* stock
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-10 10:22+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
@@ -1269,10 +1269,10 @@ msgstr "Перед запланованою датою"
 #. module: stock
 #: model_terms:res.company,invoice_terms_html:stock.res_company_1
 msgid ""
-"Below text serves as a suggestion and doesn’t engage Odoo S.A. "
+"Below text serves as a suggestion and doesn’t engage Lean Soft S.A. "
 "responsibility."
 msgstr ""
-"Нижче наведений текст є пропозицією і Odoo S.A не несе відповідальності."
+"Нижче наведений текст є пропозицією і Lean Soft S.A не несе відповідальності."
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__res_partner__picking_warn__block
@@ -2249,7 +2249,7 @@ msgstr "Маршрути всередині складу за замовчува
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_orderpoint
 msgid ""
-"Define a minimum stock rule so that Odoo automatically creates requests for "
+"Define a minimum stock rule so that Lean Soft automatically creates requests for "
 "quotations or confirmed manufacturing orders to resupply your stock."
 msgstr ""
 
@@ -2262,14 +2262,14 @@ msgstr "Визначте новий склад"
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
 "Define your locations to reflect your warehouse structure and\n"
-"            organization. Odoo is able to manage physical locations\n"
+"            organization. Lean Soft is able to manage physical locations\n"
 "            (warehouses, shelves, bin, etc), partner locations (customers,\n"
 "            vendors) and virtual locations which are the counterpart of\n"
 "            the stock operations like the manufacturing orders\n"
 "            consumptions, inventories, etc."
 msgstr ""
 "Визначте ваше місцезнаходження, щоб відобразити структуру вашого складу та\n"
-"організацію. Odoo може керувати фізичними місцями\n"
+"організацію. Lean Soft може керувати фізичними місцями\n"
 "(склади, полиці, кошики тощо), місцезнаходженням партнерів (клієнти,\n"
 "постачальники) та віртуальними місцезнаходженнями, які є аналогом\n"
 "операції з фондовими операціями, такі як замовлення на виробництво\n"
@@ -2763,12 +2763,12 @@ msgstr ""
 #. module: stock
 #: model_terms:digest.tip,tip_description:stock.digest_tip_stock_0
 msgid ""
-"Enjoy a quick-paced experience with the Odoo barcode app. It is blazing fast"
+"Enjoy a quick-paced experience with the Lean Soft barcode app. It is blazing fast"
 " and works even without a stable internet connection. It supports all flows:"
 " inventory adjustments, batch picking, moving lots or pallets, low inventory"
 " checks, etc. Go to the \"Apps\" menu to activate the barcode interface."
 msgstr ""
-"Насолоджуйтесь швидким досвідом роботи з модулем штрих-коду Odoo. Ві швидко "
+"Насолоджуйтесь швидким досвідом роботи з модулем штрих-коду Lean Soft. Ві швидко "
 "працює навіть без стабільного підключення до Інтернету. Він підтримує всі "
 "процеси: коригування запасів, групове надходження, переміщення партій або "
 "піддонів, перевірку низького запасу тощо. Перейдіть до меню \"Додатки\", щоб"
@@ -2795,15 +2795,15 @@ msgstr "Помилка"
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_location_form
 msgid ""
-"Every stock operation in Odoo moves the products from one\n"
+"Every stock operation in Lean Soft moves the products from one\n"
 "            location to another one.  For instance, if you receive products\n"
-"            from a vendor, Odoo will move products from the Vendor\n"
+"            from a vendor, Lean Soft will move products from the Vendor\n"
 "            location to the Stock location. Each report can be performed on\n"
 "            physical, partner or virtual locations."
 msgstr ""
-"Кожна складська операція в Odoo переміщує товари з одного\n"
+"Кожна складська операція в Lean Soft переміщує товари з одного\n"
 "місцезнаходження на інше. Наприклад, якщо ви отримуєте товари\n"
-"від постачальника, Odoo буде переміщати товари від місцезнаходження постачальника\n"
+"від постачальника, Lean Soft буде переміщати товари від місцезнаходження постачальника\n"
 "до складу. Кожен звіт може бути виконаний на\n"
 "фізичні, партнерські або віртуальні місцезнаходження."
 
@@ -3440,17 +3440,17 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_picking__show_reserved
 #: model:ir.model.fields,help:stock.field_stock_picking_type__show_reserved
 msgid ""
-"If this checkbox is ticked, Odoo will automatically pre-fill the detailed "
+"If this checkbox is ticked, Lean Soft will automatically pre-fill the detailed "
 "operations with the corresponding products, locations and lot/serial "
 "numbers."
 msgstr ""
-"Якщо це позначено, Odoo автоматично попередньо заповнить детальні операції "
+"Якщо це позначено, Lean Soft автоматично попередньо заповнить детальні операції "
 "відповідними товарами, місцезнаходженнми та партійними/серійними номерами."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking_type__auto_show_reception_report
 msgid ""
-"If this checkbox is ticked, Odoo will automatically show the reception "
+"If this checkbox is ticked, Lean Soft will automatically show the reception "
 "report (if there are moves to allocate to) when validating."
 msgstr ""
 
@@ -9385,21 +9385,21 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_min_qty
 msgid ""
 "When the virtual stock goes below the Min Quantity specified for this field,"
-" Odoo generates a procurement to bring the forecasted quantity to the Max "
+" Lean Soft generates a procurement to bring the forecasted quantity to the Max "
 "Quantity."
 msgstr ""
 "Коли віртуальний запас перевищує мінімальний коефіцієнт, зазначений для "
-"цього поля, Odoo генерує забезпечення, щоб довести прогнозовану кількість до"
+"цього поля, Lean Soft генерує забезпечення, щоб довести прогнозовану кількість до"
 " максимальної кількості."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_orderpoint__product_max_qty
 msgid ""
-"When the virtual stock goes below the Min Quantity, Odoo generates a "
+"When the virtual stock goes below the Min Quantity, Lean Soft generates a "
 "procurement to bring the forecasted quantity to the Quantity specified as "
 "Max Quantity."
 msgstr ""
-"Коли віртуальний запас перевищує мінімальну кількість, Odoo генерує "
+"Коли віртуальний запас перевищує мінімальну кількість, Lean Soft генерує "
 "закупівлю, щоб довести прогнозовану кількість до кількості, зазначеного як "
 "максимальна кількість."
 
@@ -9778,10 +9778,10 @@ msgstr "Ви створили рядки товарів вручну, видал
 #: model_terms:ir.ui.view,arch_db:stock.view_immediate_transfer
 msgid ""
 "You have not recorded <i>done</i> quantities yet, by clicking on "
-"<i>apply</i> Odoo will process all the quantities."
+"<i>apply</i> Lean Soft will process all the quantities."
 msgstr ""
 "Ви ще не записали <i>виконані</i> кількості, натиснувши <i>застосувати</i> "
-"Odoo обробить всі кількості."
+"Lean Soft обробить всі кількості."
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_backorder_confirmation

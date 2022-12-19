@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* survey
 # 
@@ -9,7 +9,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Lean Soft Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-04 09:24+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
@@ -3235,8 +3235,8 @@ msgstr "Voorkomen"
 #. module: survey
 #: code:addons/survey/models/survey_survey_template.py:0
 #, python-format
-msgid "Odoo Certification"
-msgstr "Odoo-certificering"
+msgid "Lean Soft Certification"
+msgstr "Lean Soft-certificering"
 
 #. module: survey
 #: model:survey.question.answer,value:survey.vendor_certification_page_2_question_2_choice_5
@@ -4985,10 +4985,10 @@ msgstr "Website communicatie geschiedenis"
 #: code:addons/survey/models/survey_survey_template.py:0
 #, python-format
 msgid ""
-"Welcome to this Odoo certification. You will receive 2 random questions out "
+"Welcome to this Lean Soft certification. You will receive 2 random questions out "
 "of a pool of 3."
 msgstr ""
-"Welkom bij deze Odoo-certificering. Je krijgt 2 willekeurige vragen uit een "
+"Welkom bij deze Lean Soft-certificering. Je krijgt 2 willekeurige vragen uit een "
 "pool van 3."
 
 #. module: survey
@@ -5033,8 +5033,8 @@ msgstr "Waar staat \"ODOO\" voor?"
 #. module: survey
 #: code:addons/survey/models/survey_survey_template.py:0
 #, python-format
-msgid "What does one need to get to pass an Odoo Survey?"
-msgstr "Wat heeft men nodig om te slagen voor een Odoo-enquête?"
+msgid "What does one need to get to pass an Lean Soft Survey?"
+msgstr "Wat heeft men nodig om te slagen voor een Lean Soft-enquête?"
 
 #. module: survey
 #: code:addons/survey/models/survey_survey_template.py:0
@@ -5097,8 +5097,8 @@ msgstr "Wat is je geboortedatum?"
 #. openerp-web
 #: code:addons/survey/static/src/js/tours/survey_tour.js:0
 #, python-format
-msgid "Whenever you pick an answer, Odoo saves it for you."
-msgstr "Telkens wanneer je een antwoord kiest, bewaart Odoo het voor je."
+msgid "Whenever you pick an answer, Lean Soft saves it for you."
+msgstr "Telkens wanneer je een antwoord kiest, bewaart Lean Soft het voor je."
 
 #. module: survey
 #: model:survey.question,title:survey.survey_demo_quiz_p1_q3

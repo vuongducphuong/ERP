@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* website_links
 # 
@@ -7,7 +7,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.5alpha1\n"
+"Project-Id-Version: Lean Soft Server 15.5alpha1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-20 09:02+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
@@ -236,10 +236,10 @@ msgstr "Denne kode er allerede i brug"
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
 msgid ""
 "Those trackers can be used in Google Analytics to track clicks and visitors,"
-" or in Odoo reports to track opportunities and related revenues."
+" or in Lean Soft reports to track opportunities and related revenues."
 msgstr ""
 "Disse sporinger kan bruges i Google Analytics til at spore klik og besøgende"
-" eller i Odoo rapporter til at spore muligheder og relaterede indtægter."
+" eller i Lean Soft rapporter til at spore muligheder og relaterede indtægter."
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url

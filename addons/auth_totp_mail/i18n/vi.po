@@ -48,7 +48,7 @@ msgstr "Bảo mật tài khoản"
 
 #. module: auth_totp_mail
 #: model:mail.template,subject:auth_totp_mail.mail_template_totp_invite
-msgid "Invitation to activate two-factor authentication on your Odoo account"
+msgid "Invitation to activate two-factor authentication on your Lean Soft account"
 msgstr ""
 
 #. module: auth_totp_mail

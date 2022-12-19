@@ -1,4 +1,4 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* website
 # 
@@ -8,7 +8,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0\n"
+"Project-Id-Version: Lean Soft Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-03 16:37+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
@@ -454,8 +454,8 @@ msgstr "50%"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_call_to_action
-msgid "50,000+ companies run Odoo to grow their businesses."
-msgstr "50,000+ компаній користуються Odoo, щоби розвивати свій бізнес."
+msgid "50,000+ companies run Lean Soft to grow their businesses."
+msgstr "50,000+ компаній користуються Lean Soft, щоби розвивати свій бізнес."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_hr_options
@@ -477,8 +477,8 @@ msgstr "80% розробки"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_call_to_action
-msgid "<b>50,000+ companies</b> run Odoo to grow their businesses."
-msgstr "<b>50,000+ компаній</b> розвивають свій бізнес з Odoo."
+msgid "<b>50,000+ companies</b> run Lean Soft to grow their businesses."
+msgstr "<b>50,000+ компаній</b> розвивають свій бізнес з Lean Soft."
 
 #. module: website
 #. openerp-web
@@ -2516,10 +2516,10 @@ msgstr "Змінити піктограми"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_table_of_content
 msgid ""
-"Change theme in a few clicks, and browse through Odoo's catalog of\n"
+"Change theme in a few clicks, and browse through Lean Soft's catalog of\n"
 "                            ready-to-use themes available in our app store."
 msgstr ""
-"Змініть тему кількома кліками та перегляньте каталог Odoo \n"
+"Змініть тему кількома кліками та перегляньте каталог Lean Soft \n"
 "готових до використання тем, доступних у нашому магазині додатків."
 
 #. module: website
@@ -3922,10 +3922,10 @@ msgstr "Напр. https://www.mydomain.com"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_table_of_content
 msgid ""
-"Easily design your own Odoo templates thanks to clean HTML\n"
+"Easily design your own Lean Soft templates thanks to clean HTML\n"
 "                            structure and bootstrap CSS."
 msgstr ""
-"Легко створюйте власні шаблони Odoo завдяки чистій структурі HTML \n"
+"Легко створюйте власні шаблони Lean Soft завдяки чистій структурі HTML \n"
 "і CSS для завантаження."
 
 #. module: website
@@ -4740,7 +4740,7 @@ msgstr "Перейдіть на вкладку Тема"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.layout
-msgid "Go to your Odoo Apps"
+msgid "Go to your Lean Soft Apps"
 msgstr ""
 
 #. module: website
@@ -4934,8 +4934,8 @@ msgstr "Меню гамбургер"
 #. openerp-web
 #: code:addons/website/static/src/snippets/s_countdown/options.xml:0
 #, python-format
-msgid "Happy Odoo Anniversary!"
-msgstr "З ювілеєм Odoo!"
+msgid "Happy Lean Soft Anniversary!"
+msgstr "З ювілеєм Lean Soft!"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website__has_social_default_image
@@ -5783,12 +5783,12 @@ msgstr "Встановлено"
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid ""
 "It appears your website is still using the old color system of\n"
-"            Odoo 13.0 in some places. We made sure it is still working but\n"
+"            Lean Soft 13.0 in some places. We made sure it is still working but\n"
 "            we recommend you to try to use the new color system, which is\n"
 "            still customizable."
 msgstr ""
 "Схоже, у деяких місцях ваш веб-сайт все ще використовує стару систему \n"
-"кольорів Odoo 13.0. Ми переконалися, що він все ще працює, але \n"
+"кольорів Lean Soft 13.0. Ми переконалися, що він все ще працює, але \n"
 "рекомендуємо вам спробувати використовувати нову систему кольорів, яку \n"
 "все ще можна налаштувати."
 
@@ -6635,13 +6635,13 @@ msgstr "Дані пошуку в Google Search"
 #. module: website
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_0
 msgid ""
-"Monitor your visitors while they are browsing your website with the Odoo "
+"Monitor your visitors while they are browsing your website with the Lean Soft "
 "Social app. Engage with them in just a click using a live chat request or a "
 "push notification. If they have completed one of your forms, you can send "
 "them an SMS, or call them right away while they are browsing your website."
 msgstr ""
 "Відстежуйте відвідувачів, коли вони переглядають ваш веб-сайт за допомогою "
-"програми Odoo Social. Спілкуйтеся з ними одним кліком, використовуючи запит "
+"програми Lean Soft Social. Спілкуйтеся з ними одним кліком, використовуючи запит "
 "у чаті або push-сповіщення. Якщо вони заповнили одну з ваших форм, ви можете"
 " надіслати їм SMS або зателефонувати одразу, поки вони переглядають ваш веб-"
 "сайт."
@@ -7051,18 +7051,18 @@ msgstr "OR"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
-msgid "Odoo Information"
+msgid "Lean Soft Information"
 msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
-msgid "Odoo Menu"
-msgstr "Меню Odoo"
+msgid "Lean Soft Menu"
+msgstr "Меню Lean Soft"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
-msgid "Odoo Version"
-msgstr "Версія Odoo "
+msgid "Lean Soft Version"
+msgstr "Версія Lean Soft "
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -8353,12 +8353,12 @@ msgstr "Пошук відвідувача"
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_1
 msgid ""
 "Search in the media dialogue when you need photos to illustrate your "
-"website. Odoo's integration with Unsplash, featuring millions of royalty "
+"website. Lean Soft's integration with Unsplash, featuring millions of royalty "
 "free and high quality photos, makes it possible for you to get the perfect "
 "picture, in just a few clicks."
 msgstr ""
 "Шукайте в діалозі медіа, коли вам потрібні фотографії для ілюстрації вашого "
-"веб-сайту. Інтеграція Odoo з Unsplash, що містить мільйони безкоштовних і "
+"веб-сайту. Інтеграція Lean Soft з Unsplash, що містить мільйони безкоштовних і "
 "високоякісних фотографій, дає змогу отримати ідеальне зображення всього за "
 "кілька кліків."
 
@@ -8710,11 +8710,11 @@ msgstr ""
 msgid ""
 "Sitemap.xml: Help search engine crawlers to find out what pages are present "
 "and which have recently changed, and to crawl your site accordingly. This "
-"file is automatically generated by Odoo."
+"file is automatically generated by Lean Soft."
 msgstr ""
 "Sitemap.xml: Допоможіть сканерам пошукових систем дізнатися, які сторінки є,"
 " а які нещодавно змінилися, і відповідно просканувати ваш сайт. Цей файл "
-"автоматично генерується Odoo."
+"автоматично генерується Lean Soft."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_alert_options
@@ -9709,13 +9709,13 @@ msgstr ""
 #: model_terms:digest.tip,tip_description:website.digest_tip_website_2
 msgid ""
 "To get more visitors, you should target keywords that are often searched in "
-"Google. With the built-in SEO tool, once you define a few keywords, Odoo "
+"Google. With the built-in SEO tool, once you define a few keywords, Lean Soft "
 "will recommend you the best keywords to target. Then adapt your title and "
 "description accordingly to boost your traffic."
 msgstr ""
 "Щоб отримати більше відвідувачів, ви повинні націлюватися на ключові слова, "
 "які часто шукають у Google. За допомогою вбудованого інструменту SEO, як "
-"тільки ви визначите кілька ключових слів, Odoo порекомендує вам найкращі "
+"тільки ви визначите кілька ключових слів, Lean Soft порекомендує вам найкращі "
 "ключові слова для націлювання. Потім адаптуйте назву й опис відповідно до "
 "того, щоб збільшити трафік."
 
@@ -11376,8 +11376,8 @@ msgstr "з Лого"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
-msgid "frontend_lang (Odoo)"
-msgstr "frontend_lang (Odoo)"
+msgid "frontend_lang (Lean Soft)"
+msgstr "frontend_lang (Lean Soft)"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -11432,15 +11432,15 @@ msgstr "iPhone"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
 msgid ""
-"im_livechat_previous_operator_pid (Odoo)<br/>\n"
-"                                            utm_campaign (Odoo)<br/>\n"
-"                                            utm_source (Odoo)<br/>\n"
-"                                            utm_medium (Odoo)"
+"im_livechat_previous_operator_pid (Lean Soft)<br/>\n"
+"                                            utm_campaign (Lean Soft)<br/>\n"
+"                                            utm_source (Lean Soft)<br/>\n"
+"                                            utm_medium (Lean Soft)"
 msgstr ""
-"im_livechat_previous_operator_pid (Odoo)<br/>\n"
-"                                            utm_campaign (Odoo)<br/>\n"
-"                                            utm_source (Odoo)<br/>\n"
-"                                            utm_medium (Odoo)"
+"im_livechat_previous_operator_pid (Lean Soft)<br/>\n"
+"                                            utm_campaign (Lean Soft)<br/>\n"
+"                                            utm_source (Lean Soft)<br/>\n"
+"                                            utm_medium (Lean Soft)"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -11479,8 +11479,8 @@ msgstr "інформувати клієнтів"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
-msgid "instance of Odoo, the"
-msgstr "зразок від Odoo, "
+msgid "instance of Lean Soft, the"
+msgstr "зразок від Lean Soft, "
 
 #. module: website
 #: model:ir.model.fields.selection,name:website.selection__theme_ir_ui_view__inherit_id__ir_ui_view
@@ -11598,8 +11598,8 @@ msgstr "розділювач"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
-msgid "session_id (Odoo)<br/>"
-msgstr "session_id (Odoo)<br/>"
+msgid "session_id (Lean Soft)<br/>"
+msgstr "session_id (Lean Soft)<br/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
