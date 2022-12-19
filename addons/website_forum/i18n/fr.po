@@ -4,8 +4,8 @@
 # 
 # Translators:
 # Martin Trigaux, 2022
-# Priscilla (prs) Odoo <prs@odoo.com>, 2022
-# Cécile Collart <cco@odoo.com>, 2022
+# Priscilla (prs) Odoo <prs@leensoft.vn>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
 # Jolien De Paepe, 2022
 # 
 msgid ""

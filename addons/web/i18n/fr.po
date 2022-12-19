@@ -6,10 +6,10 @@
 # f477e7ae9c75a2428d6113663a8354fe_bcd021c <0ff4ce060a36f446722508a48e99c22a_347081>, 2022
 # e2f <projects@e2f.com>, 2022
 # Xavier Belmere <Info@cartmeleon.com>, 2022
-# Melanie Bernard <mbe@odoo.com>, 2022
-# Nathan Grognet <ngr@odoo.com>, 2022
+# Melanie Bernard <mbe@leensoft.vn>, 2022
+# Nathan Grognet <ngr@leensoft.vn>, 2022
 # Martin Trigaux, 2022
-# Cécile Collart <cco@odoo.com>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
 # Jolien De Paepe, 2022
 # 
 msgid ""

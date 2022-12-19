@@ -3,7 +3,7 @@
 # 	* microsoft_calendar
 # 
 # Translators:
-# Jonas Zinkevicius <jozi@odoo.com>, 2022
+# Jonas Zinkevicius <jozi@leensoft.vn>, 2022
 # Gailius Kazlauskas <gailius@vialaurea.lt>, 2022
 # digitouch UAB <digitouchagencyeur@gmail.com>, 2022
 # Silvija Butko <silvija.butko@gmail.com>, 2022

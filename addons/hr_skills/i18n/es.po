@@ -3,7 +3,7 @@
 # 	* hr_skills
 # 
 # Translators:
-# Lucia Pacheco <lpo@odoo.com>, 2022
+# Lucia Pacheco <lpo@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""

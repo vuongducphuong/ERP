@@ -3,7 +3,7 @@
 # 	* event_crm
 # 
 # Translators:
-# Camille Dantinne <cmd@odoo.com>, 2022
+# Camille Dantinne <cmd@leensoft.vn>, 2022
 # marcescu, 2022
 # Martin Trigaux, 2022
 # juankfj, 2022

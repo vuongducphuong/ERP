@@ -10,7 +10,7 @@
 # Aleksander, 2022
 # Jorunn D. Newth, 2022
 # Marius Stedjan <marius@stedjan.com>, 2022
-# Cécile Collart <cco@odoo.com>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # Henning Fyllingsnes, 2022
 # 
@@ -11158,7 +11158,7 @@ msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "https://www.odoo.com"
+msgid "https://www.leensoft.vn"
 msgstr ""
 
 #. module: website

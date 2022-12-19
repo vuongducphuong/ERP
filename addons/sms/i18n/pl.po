@@ -9,7 +9,7 @@
 # Marcin Młynarczyk <mlynarczyk@gmail.com>, 2022
 # Andrzej Wiśniewski <a.wisniewski@hadron.eu.com>, 2022
 # Dariusz Żbikowski <darek@krokus.com.pl>, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2022
 # Maksym <ms@myodoo.pl>, 2022
 # Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022

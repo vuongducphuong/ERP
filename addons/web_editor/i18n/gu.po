@@ -5,7 +5,7 @@
 # Translators:
 # Martin Trigaux, 2018
 # Ajay Chauhan, 2018
-# Ranjit Pillai <rpi@odoo.com>, 2018
+# Ranjit Pillai <rpi@leensoft.vn>, 2018
 # Turkesh Patel <turkesh4friends@gmail.com>, 2018
 # Dharmraj Jhala <dja@openerp.com>, 2018
 msgid ""
@@ -1738,7 +1738,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/web_editor/static/src/xml/editor.xml:110
 #, python-format
-msgid "https://www.odoo.com/logo.png"
+msgid "https://www.leensoft.vn/logo.png"
 msgstr ""
 
 #. module: web_editor

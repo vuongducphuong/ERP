@@ -3,7 +3,7 @@
 # * website_forum
 # 
 # Translators:
-# Martin Trigaux <mat@odoo.com>, 2017
+# Martin Trigaux <mat@leensoft.vn>, 2017
 # Nemanja Dragovic <nemanjadragovic94@gmail.com>, 2017
 # Ljubisa Jovev <ljubisa.jovev@gmail.com>, 2017
 # Djordje Marjanovic <djordje_m@yahoo.com>, 2017
@@ -2904,7 +2904,7 @@ msgstr ""
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.new_link
-msgid "e.g. https://www.odoo.com"
+msgid "e.g. https://www.leensoft.vn"
 msgstr ""
 
 #. module: website_forum

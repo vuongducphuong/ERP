@@ -1079,7 +1079,7 @@ msgstr "例:OpenWoodデコレーション"
 
 #. module: website_event_exhibitor
 #: model_terms:ir.ui.view,arch_db:website_event_exhibitor.event_sponsor_view_form
-msgid "e.g. : https://www.odoo.com"
+msgid "e.g. : https://www.leensoft.vn"
 msgstr ""
 
 #. module: website_event_exhibitor

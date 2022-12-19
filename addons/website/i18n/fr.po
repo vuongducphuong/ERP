@@ -3,10 +3,10 @@
 # 	* website
 # 
 # Translators:
-# Priscilla (prs) Odoo <prs@odoo.com>, 2022
+# Priscilla (prs) Odoo <prs@leensoft.vn>, 2022
 # Maxime Chambreuil <mchambreuil@ursainfosystems.com>, 2022
-# Cécile Collart <cco@odoo.com>, 2022
-# Pierre Delacroix <pde@odoo.com>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
+# Pierre Delacroix <pde@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # Jolien De Paepe, 2022
 # 
@@ -11554,8 +11554,8 @@ msgstr "https://fonts.google.com/specimen/Roboto"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "https://www.odoo.com"
-msgstr "https://www.odoo.com"
+msgid "https://www.leensoft.vn"
+msgstr "https://www.leensoft.vn"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu

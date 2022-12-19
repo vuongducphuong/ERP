@@ -7586,10 +7586,10 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 "El nom d'aquest pseudònim de correu electrònic. Per exemple, \"jobs\", si "
-"voleu obtenir els correus per <jobs@example.odoo.com>"
+"voleu obtenir els correus per <jobs@example.leensoft.vn>"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_user_id
@@ -8315,7 +8315,7 @@ msgstr ""
 msgid ""
 "Using your own email server is required to send/receive emails in Community "
 "and Enterprise versions. Online users already benefit from a ready-to-use "
-"email server (@mycompany.odoo.com)."
+"email server (@mycompany.leensoft.vn)."
 msgstr ""
 "Es requereix usar el vostre propi servidor de correu electrònic per enviar "
 "correus/receitius a les versions de la Comunitat i de l'Enterprise. Els "
@@ -8938,7 +8938,7 @@ msgstr "p.g. true. true.f"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
-msgid "e.g: \"info@mycompany.odoo.com\""
+msgid "e.g: \"info@mycompany.leensoft.vn\""
 msgstr ""
 
 #. module: mail

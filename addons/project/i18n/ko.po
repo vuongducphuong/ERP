@@ -5173,8 +5173,8 @@ msgstr ""
 #: model:ir.model.fields,help:project.field_project_project__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
-msgstr "이메일 별칭 이름. <jobs@example.odoo.com>에 대한 이메일을 수신하도록 하려면 'jobs'라고 적습니다."
+"<jobs@example.leensoft.vn>"
+msgstr "이메일 별칭 이름. <jobs@example.leensoft.vn>에 대한 이메일을 수신하도록 하려면 'jobs'라고 적습니다."
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__alias_user_id

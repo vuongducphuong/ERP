@@ -3,7 +3,7 @@
 # * account
 # 
 # Translators:
-# Martin Trigaux <mat@odoo.com>, 2017
+# Martin Trigaux <mat@leensoft.vn>, 2017
 # Igor Sheludko <igor.sheludko@gmail.com>, 2017
 # B Dochev <dochevb@gmail.com>, 2017
 msgid ""
@@ -242,7 +242,7 @@ msgid ""
 "    </tr>\n"
 "    <tr>\n"
 "        <td align=\"center\">\n"
-"            Powered by <a target=\"_blank\" href=\"https://www.odoo.com\">Odoo</a>.\n"
+"            Powered by <a target=\"_blank\" href=\"https://www.leensoft.vn\">Odoo</a>.\n"
 "        </td>\n"
 "    </tr>\n"
 "</tbody>\n"

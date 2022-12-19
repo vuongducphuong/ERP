@@ -11,8 +11,8 @@
 # Xavier Brochard <xavier@alternatif.org>, 2017
 # Xavier Belmere <Info@cartmeleon.com>, 2017
 # Maxime Chambreuil <mchambreuil@ursainfosystems.com>, 2017
-# Richard Mathot <rim@odoo.com>, 2017
-# Eloïse Stilmant <est@odoo.com>, 2017
+# Richard Mathot <rim@leensoft.vn>, 2017
+# Eloïse Stilmant <est@leensoft.vn>, 2017
 # Fabrice Henrion, 2017
 # Fabien Pinckaers <fp@openerp.com>, 2017
 # Lionel Sausin <ls@numerigraphe.com>, 2017

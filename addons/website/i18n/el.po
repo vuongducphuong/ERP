@@ -4774,7 +4774,7 @@ msgstr "με"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "www.odoo.com"
+msgid "www.leensoft.vn"
 msgstr ""
 
 #. module: website

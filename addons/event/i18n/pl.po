@@ -13,7 +13,7 @@
 # Radosław Biegalski <radoslaw.biegalski@openglobe.pl>, 2022
 # Wiktor Kaźmierczak <wik92tor@wp.pl>, 2022
 # Piotr Strębski <strebski@gmail.com>, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Marcin Młynarczyk <mlynarczyk@gmail.com>, 2022
 # Paweł Wodyński <pw@myodoo.pl>, 2022
 # Grzegorz Krukar <grzegorzgk1@gmail.com>, 2022
@@ -3541,8 +3541,8 @@ msgstr ""
 
 #. module: event
 #: model_terms:event.event,description:event.event_2
-msgid "events@odoo.com"
-msgstr "events@odoo.com"
+msgid "events@leensoft.vn"
+msgstr "events@leensoft.vn"
 
 #. module: event
 #: model_terms:event.event,description:event.event_7

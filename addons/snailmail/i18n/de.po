@@ -694,11 +694,11 @@ msgstr "Sie sind im Begriff dies abzuschicken:"
 #, python-format
 msgid ""
 "You don't have an IAP account registered for this service.<br>Please go to "
-"<a href=%s target=\"new\">iap.odoo.com</a> to claim your free credits."
+"<a href=%s target=\"new\">iap.leensoft.vn</a> to claim your free credits."
 msgstr ""
 "Sie haben noch kein IAP-Konto für diesen Dienst registriert. <br> Bitte "
 "beantragen Sie Ihr kostenloses Guthaben auf <a href=%s "
-"target=\"new\">iap.odoo.com</a>. "
+"target=\"new\">iap.leensoft.vn</a>. "
 
 #. module: snailmail
 #: code:addons/snailmail/models/snailmail_letter.py:0

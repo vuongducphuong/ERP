@@ -3,10 +3,10 @@
 # 	* account
 # 
 # Translators:
-# Cécile Collart <cco@odoo.com>, 2022
-# Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2022
-# Lucia Pacheco <lpo@odoo.com>, 2022
-# Braulio D. López Vázquez <bdl@odoo.com>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
+# Patricia Gutiérrez Capetillo <pagc@leensoft.vn>, 2022
+# Lucia Pacheco <lpo@leensoft.vn>, 2022
+# Braulio D. López Vázquez <bdl@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""

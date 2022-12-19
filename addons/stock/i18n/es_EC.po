@@ -7699,8 +7699,8 @@ msgstr ""
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.inventory_planner
-msgid "feedback@mail.odoo.com"
-msgstr "feedback@mail.odoo.com"
+msgid "feedback@mail.leensoft.vn"
+msgstr "feedback@mail.leensoft.vn"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.inventory_planner

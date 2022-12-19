@@ -3,14 +3,14 @@
 # 	* website_sale
 # 
 # Translators:
-# Clo <clo@odoo.com>, 2022
-# Eloïse Stilmant <est@odoo.com>, 2022
-# Fernanda Marques <fem@odoo.com>, 2022
+# Clo <clo@leensoft.vn>, 2022
+# Eloïse Stilmant <est@leensoft.vn>, 2022
+# Fernanda Marques <fem@leensoft.vn>, 2022
 # Alexandra Jubert, 2022
 # RHTodoo, 2022
 # Martin Trigaux, 2022
-# Cécile Collart <cco@odoo.com>, 2022
-# Pierre Delacroix <pde@odoo.com>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
+# Pierre Delacroix <pde@leensoft.vn>, 2022
 # Jolien De Paepe, 2022
 # 
 msgid ""

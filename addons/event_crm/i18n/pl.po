@@ -9,7 +9,7 @@
 # Tomasz Leppich <t.leppich@gmail.com>, 2022
 # Marcin Młynarczyk <mlynarczyk@gmail.com>, 2022
 # Andrzej Wiśniewski <a.wisniewski@hadron.eu.com>, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2022
 # Paweł Wodyński <pw@myodoo.pl>, 2022

@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Mateo Tibaquirá Palacios <nestormateo@gmail.com>, 2022
-# Jon Perez <jop@odoo.com>, 2022
+# Jon Perez <jop@leensoft.vn>, 2022
 # Michael Epstein, 2022
 # Pedro M. Baeza <pedro.baeza@tecnativa.com>, 2022
 # marcescu, 2022

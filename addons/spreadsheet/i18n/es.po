@@ -3,7 +3,7 @@
 # 	* spreadsheet
 # 
 # Translators:
-# Jon Perez <jop@odoo.com>, 2022
+# Jon Perez <jop@leensoft.vn>, 2022
 # marcescu, 2022
 # Martin Trigaux, 2022
 # Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2022

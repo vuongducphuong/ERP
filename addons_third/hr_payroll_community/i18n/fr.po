@@ -3,9 +3,9 @@
  # * hr_payroll_community
  # 
  # Translators:
- # Eloïse Stilmant <est@odoo.com>, 2018
- # Marie Willemyns <mwi@odoo.com>, 2018
- # Cécile Collart <cco@odoo.com>, 2018
+ # Eloïse Stilmant <est@leensoft.vn>, 2018
+ # Marie Willemyns <mwi@leensoft.vn>, 2018
+ # Cécile Collart <cco@leensoft.vn>, 2018
  # Olivier ANDRE <frsw194@gmail.com>, 2018
  # Martin Trigaux, 2019
  # 

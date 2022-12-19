@@ -2619,8 +2619,8 @@ msgstr "napr. Ceny produktov"
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_case_form_view_leads
 #: model_terms:ir.ui.view,arch_db:crm.crm_case_form_view_oppor
-msgid "e.g. www.odoo.com"
-msgstr "napr. www.odoo.com"
+msgid "e.g. www.leensoft.vn"
+msgstr "napr. www.leensoft.vn"
 
 #. module: crm
 #: code:addons/crm/models/crm_lead.py:946

@@ -3,7 +3,7 @@
 # 	* event
 # 
 # Translators:
-# Malaz Abuidris <msea@odoo.com>, 2022
+# Malaz Abuidris <msea@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""
@@ -3606,8 +3606,8 @@ msgstr "مثال: تذكرة كبار الشخصيات "
 
 #. module: event
 #: model_terms:event.event,description:event.event_2
-msgid "events@odoo.com"
-msgstr "events@odoo.com"
+msgid "events@leensoft.vn"
+msgstr "events@leensoft.vn"
 
 #. module: event
 #: model_terms:event.event,description:event.event_7

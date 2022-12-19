@@ -6,7 +6,7 @@
 # Abdullah Mohamed, 2022
 # Mustafa Rawi <mustafa@cubexco.com>, 2022
 # Farid Fox, 2022
-# Malaz Abuidris <msea@odoo.com>, 2022
+# Malaz Abuidris <msea@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""

@@ -3,7 +3,7 @@
 # 	* hr_org_chart
 # 
 # Translators:
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
 # Karol Rybak <karolrybak85@gmail.com>, 2022
 # Martin Trigaux, 2022

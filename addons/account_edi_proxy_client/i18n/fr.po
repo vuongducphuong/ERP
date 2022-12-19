@@ -3,7 +3,7 @@
 # 	* account_edi_proxy_client
 # 
 # Translators:
-# Cécile Collart <cco@odoo.com>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""

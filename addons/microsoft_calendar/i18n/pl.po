@@ -3,7 +3,7 @@
 # 	* microsoft_calendar
 # 
 # Translators:
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2022
 # Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022
 # Marcin Młynarczyk <mlynarczyk@gmail.com>, 2022

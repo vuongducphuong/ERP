@@ -7356,8 +7356,8 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
-msgstr "이메일 별칭 이름. <jobs@example.odoo.com>에 대한 이메일을 수신하도록 하려면 'jobs'라고 적습니다."
+"<jobs@example.leensoft.vn>"
+msgstr "이메일 별칭 이름. <jobs@example.leensoft.vn>에 대한 이메일을 수신하도록 하려면 'jobs'라고 적습니다."
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_user_id
@@ -8064,10 +8064,10 @@ msgstr ""
 msgid ""
 "Using your own email server is required to send/receive emails in Community "
 "and Enterprise versions. Online users already benefit from a ready-to-use "
-"email server (@mycompany.odoo.com)."
+"email server (@mycompany.leensoft.vn)."
 msgstr ""
 "커뮤니티 및 유료버전에서 이메일을 보내고 받으려면 전자 메일 서버를 사용해야 합니다. 온라인 사용자는 이미 가입하면 바로 사용가능한 "
-"이메일 서버(@ mycompany.odoo.com)를 이미 활용하고 있습니다."
+"이메일 서버(@ mycompany.leensoft.vn)를 이미 활용하고 있습니다."
 
 #. module: mail
 #. openerp-web
@@ -8669,7 +8669,7 @@ msgstr ""
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
-msgid "e.g: \"info@mycompany.odoo.com\""
+msgid "e.g: \"info@mycompany.leensoft.vn\""
 msgstr ""
 
 #. module: mail

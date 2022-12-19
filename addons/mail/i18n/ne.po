@@ -101,7 +101,7 @@ msgid ""
 "    </a>\n"
 "    % endif\n"
 "    using\n"
-"    <a target=\"_blank\" href=\"https://www.odoo.com\" style=\"text-decoration:none; color: #875A7B;\">Odoo</a>.\n"
+"    <a target=\"_blank\" href=\"https://www.leensoft.vn\" style=\"text-decoration:none; color: #875A7B;\">Odoo</a>.\n"
 "</p>\n"
 "</div>"
 msgstr ""
@@ -4737,7 +4737,7 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_mail_test_alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 
 #. module: mail
@@ -5192,7 +5192,7 @@ msgstr ""
 msgid ""
 "Using your own email server is required to send/receive emails in Community "
 "and Enterprise versions. Online users already benefit from a ready-to-use "
-"email server (@mycompany.odoo.com)."
+"email server (@mycompany.leensoft.vn)."
 msgstr ""
 
 #. module: mail
@@ -5517,7 +5517,7 @@ msgstr ""
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
-msgid "mycompany.odoo.com"
+msgid "mycompany.leensoft.vn"
 msgstr ""
 
 #. module: mail

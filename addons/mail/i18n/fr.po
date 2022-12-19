@@ -5,7 +5,7 @@
 # Translators:
 # Olivier Lenoir <olivier.lenoir@free.fr>, 2022
 # laje_odoo, 2022
-# Cécile Collart <cco@odoo.com>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # Jolien De Paepe, 2022
 # 
@@ -7651,10 +7651,10 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 "Le nom de l'alias de messagerie, par exemple 'carrières' pour relever les "
-"emails de <carrieres@example.odoo.com>"
+"emails de <carrieres@example.leensoft.vn>"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_user_id
@@ -8395,12 +8395,12 @@ msgstr ""
 msgid ""
 "Using your own email server is required to send/receive emails in Community "
 "and Enterprise versions. Online users already benefit from a ready-to-use "
-"email server (@mycompany.odoo.com)."
+"email server (@mycompany.leensoft.vn)."
 msgstr ""
 "Vous devez utiliser votre propre serveur d'emails pour envoyer ou recevoir "
 "des e-mails dans les versions Community et Enterprise. Les utilisateurs en "
 "ligne bénéficient déjà d'un serveur d'emails préalablement compatible "
-"(@mycompany.odoo.com)."
+"(@mycompany.leensoft.vn)."
 
 #. module: mail
 #. openerp-web
@@ -9031,8 +9031,8 @@ msgstr "par ex. true.true..f"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
-msgid "e.g: \"info@mycompany.odoo.com\""
-msgstr "par ex. \"info@mycompany.odoo.com\""
+msgid "e.g: \"info@mycompany.leensoft.vn\""
+msgstr "par ex. \"info@mycompany.leensoft.vn\""
 
 #. module: mail
 #. openerp-web

@@ -2571,8 +2571,8 @@ msgstr "Čo si myslíte o sprievodcoch inštaláciou?"
 
 #. module: survey
 #: model:survey.question,question:survey.feedback_2_1
-msgid "What do you think about the documentation available on doc.odoo.com?"
-msgstr "Čo si myslíte o dokumentácii dostupnej na doc.odoo.com?"
+msgid "What do you think about the documentation available on doc.leensoft.vn?"
+msgstr "Čo si myslíte o dokumentácii dostupnej na doc.leensoft.vn?"
 
 #. module: survey
 #: model:survey.question,question:survey.feedback_2_5

@@ -11,7 +11,7 @@
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
 # Dawid Prus, 2022
 # Mariusz, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Dariusz Żbikowski <darek@krokus.com.pl>, 2022
 # Marcin Młynarczyk <mlynarczyk@gmail.com>, 2022
 # Rafał Kozak <rafal.kozak@openglobe.pl>, 2022

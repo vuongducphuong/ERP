@@ -9,7 +9,7 @@
 # Christelle Wehbe <libanon_cristelle@hotmail.com>, 2022
 # Haojun Zou <apollo_zhj@msn.com>, 2022
 # Egils Verkstad <egils@riseup.net>, 2022
-# fah_odoo <fah@odoo.com>, 2022
+# fah_odoo <fah@leensoft.vn>, 2022
 # Jonathan S <jonathan.c.strom@gmail.com>, 2022
 # Daniel Löfgren, 2022
 # Robin Calvin, 2022

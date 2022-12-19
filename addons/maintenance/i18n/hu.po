@@ -1358,10 +1358,10 @@ msgstr ""
 #: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 "Az e-mail álnév neve, pl. 'állások', ha erre az e-mailcímre szeretne "
-"leveleket kapni: <allasok@pelda.odoo.com>"
+"leveleket kapni: <allasok@pelda.leensoft.vn>"
 
 #. module: maintenance
 #: model:ir.model.fields,help:maintenance.field_maintenance_equipment_category__alias_user_id

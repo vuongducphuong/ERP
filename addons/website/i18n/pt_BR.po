@@ -3,7 +3,7 @@
 # 	* website
 # 
 # Translators:
-# Keli Brugalli <kbr@odoo.com>, 2022
+# Keli Brugalli <kbr@leensoft.vn>, 2022
 # Marcelo at JambuTec <marcelo@jambu.com.br>, 2022
 # Mateus Lopes <mateus1@gmail.com>, 2022
 # Luis Felipe Miléo <mileo@kmee.com.br>, 2022
@@ -11370,8 +11370,8 @@ msgstr "https://fonts.google.com/specimen/Roboto"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "https://www.odoo.com"
-msgstr "https://www.odoo.com"
+msgid "https://www.leensoft.vn"
+msgstr "https://www.leensoft.vn"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu

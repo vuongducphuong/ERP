@@ -6,7 +6,7 @@
 # 5cad1b0f1319985f8413d48b70c3c192_b038c35, 2022
 # Fabien Pinckaers <fp@openerp.com>, 2022
 # Olivier ANDRE <frsw194@gmail.com>, 2022
-# Damien Bouvy <dbo@odoo.com>, 2022
+# Damien Bouvy <dbo@leensoft.vn>, 2022
 # laje_odoo, 2022
 # Malika Berardi, 2022
 # Loïc De Greef, 2022
@@ -15,7 +15,7 @@
 # Martin Trigaux, 2022
 # beau sebastien <sebastien.beau@akretion.com>, 2022
 # HASSAN ABDELLAH <aitabdellahhassan@gmail.com>, 2022
-# Cécile Collart <cco@odoo.com>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
 # Jolien De Paepe, 2022
 # 
 msgid ""

@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2022
-# Emily Jia <eji@odoo.com>, 2022
+# Emily Jia <eji@leensoft.vn>, 2022
 # Jeffery CHEN <jeffery9@gmail.com>, 2022
 # Allen Likey, 2022
 # Raymond Yu <cl_yu@hotmail.com>, 2022

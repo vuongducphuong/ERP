@@ -6,7 +6,7 @@
 # ievaputnina <ievai.putninai@gmail.com>, 2022
 # Anzelika Adejanova, 2022
 # InfernalLV <karlisdreizis@gmail.com>, 2022
-# Camille Dantinne <cmd@odoo.com>, 2022
+# Camille Dantinne <cmd@leensoft.vn>, 2022
 # Konstantins Zabogonskis <inculin4ik@gmail.com>, 2022
 # Arnis Putniņš <arnis@allegro.lv>, 2022
 # Martin Trigaux, 2022

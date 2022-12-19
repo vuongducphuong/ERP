@@ -8,7 +8,7 @@
 # Jorunn D. Newth, 2022
 # Marius Stedjan <marius@stedjan.com>, 2022
 # Martin Trigaux, 2022
-# Cécile Collart <cco@odoo.com>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
 # Henrik Norlin <henrik@appstogrow.net>, 2022
 # Thor Arne Hvidsten, 2022
 # 
@@ -3277,7 +3277,7 @@ msgstr "Flere linjer med tekst"
 #: code:addons/web/static/src/webclient/user_menu/user_menu_items.js:0
 #, python-format
 msgid "My Odoo.com account"
-msgstr "Min konto på odoo.com"
+msgstr "Min konto på leensoft.vn"
 
 #. module: web
 #. openerp-web

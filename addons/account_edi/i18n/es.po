@@ -3,7 +3,7 @@
 # 	* account_edi
 # 
 # Translators:
-# Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2022
+# Patricia Gutiérrez Capetillo <pagc@leensoft.vn>, 2022
 # marcescu, 2022
 # Martin Trigaux, 2022
 # Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2022

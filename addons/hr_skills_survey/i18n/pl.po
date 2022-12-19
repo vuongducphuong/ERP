@@ -3,7 +3,7 @@
 # 	* hr_skills_survey
 # 
 # Translators:
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Tomasz Leppich <t.leppich@gmail.com>, 2022
 # Karol Rybak <karolrybak85@gmail.com>, 2022
 # Maja Stawicka <mjstwck@wp.pl>, 2022

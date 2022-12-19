@@ -11,7 +11,7 @@
 # Wiktor Kaźmierczak <wik92tor@wp.pl>, 2022
 # Jaroslaw Kaczmarski, 2022
 # Rafał Kozak <rafal.kozak@openglobe.pl>, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Grażyna Grzelak <grazyna.grzelak@openglobe.pl>, 2022
 # Daniel Koć <daniel@xn--ko-wla.pl>, 2022
 # Andrzej Wiśniewski <a.wisniewski@hadron.eu.com>, 2022
@@ -11109,7 +11109,7 @@ msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "https://www.odoo.com"
+msgid "https://www.leensoft.vn"
 msgstr ""
 
 #. module: website

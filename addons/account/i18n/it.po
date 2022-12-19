@@ -3,7 +3,7 @@
 # 	* account
 # 
 # Translators:
-# Léonie Bouchat <lbo@odoo.com>, 2022
+# Léonie Bouchat <lbo@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # Sergio Zanchetta <primes2h@gmail.com>, 2022
 # 

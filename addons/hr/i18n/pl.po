@@ -20,7 +20,7 @@
 # Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022
 # Martin Trigaux, 2022
 # Tomasz Leppich <t.leppich@gmail.com>, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Dawid Prus, 2022
 # Piotr Strębski <strebski@gmail.com>, 2022
 # Dariusz Żbikowski <darek@krokus.com.pl>, 2022

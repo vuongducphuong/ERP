@@ -3,7 +3,7 @@
  # * hr_payroll_community
  # 
  # Translators:
- # Johannes Croe <jcr@odoo.com>, 2018
+ # Johannes Croe <jcr@leensoft.vn>, 2018
  # Rudolf Schnapka <rs@techno-flex.de>, 2018
  # Martin Trigaux, 2019
  # 

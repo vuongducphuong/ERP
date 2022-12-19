@@ -5,7 +5,7 @@
 # Translators:
 # Martin Trigaux, 2022
 # 山西清水欧度(QQ:54773801) <54773801@qq.com>, 2022
-# Emily Jia <eji@odoo.com>, 2022
+# Emily Jia <eji@leensoft.vn>, 2022
 # 稀饭~~ <wangwhai@qq.com>, 2022
 # Jeffery CHEN <jeffery9@gmail.com>, 2022
 # 

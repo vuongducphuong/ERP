@@ -6,9 +6,9 @@
 # Martin Trigaux, 2018
 # Gaurav Marsoniya <marsoniyagaurav@gmail.com>, 2018
 # Dharmraj Jhala <dja@openerp.com>, 2018
-# Ranjit Pillai <rpi@odoo.com>, 2018
+# Ranjit Pillai <rpi@leensoft.vn>, 2018
 # Turkesh Patel <turkesh4friends@gmail.com>, 2018
-# Divya Pandya <dia@odoo.com>, 2018
+# Divya Pandya <dia@leensoft.vn>, 2018
 # Spellbound Soft Solutions <jeel.spellbound@gmail.com>, 2018
 msgid ""
 msgstr ""

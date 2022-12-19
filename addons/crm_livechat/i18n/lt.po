@@ -3,7 +3,7 @@
 # 	* crm_livechat
 # 
 # Translators:
-# Jonas Zinkevicius <jozi@odoo.com>, 2022
+# Jonas Zinkevicius <jozi@leensoft.vn>, 2022
 # Audrius Palenskis <audrius.palenskis@gmail.com>, 2022
 # Andrius Laukavičius <andrius@focusate.eu>, 2022
 # 

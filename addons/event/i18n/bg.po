@@ -3,7 +3,7 @@
 # * event
 # 
 # Translators:
-# Martin Trigaux <mat@odoo.com>, 2017
+# Martin Trigaux <mat@leensoft.vn>, 2017
 # B Dochev <dochevb@gmail.com>, 2017
 msgid ""
 msgstr ""
@@ -1964,7 +1964,7 @@ msgstr ""
 #. module: event
 #: model_terms:event.event,description:event.event_2
 #: model_terms:event.event,description:event.event_3
-msgid "events@odoo.com"
+msgid "events@leensoft.vn"
 msgstr ""
 
 #. module: event
@@ -1981,7 +1981,7 @@ msgstr ""
 
 #. module: event
 #: model_terms:event.event,description:event.event_3
-msgid "https://www.odoo.com/services/technical-training"
+msgid "https://www.leensoft.vn/services/technical-training"
 msgstr ""
 
 #. module: event

@@ -3,7 +3,7 @@
 # 	* account
 # 
 # Translators:
-# Daniela Cervantes <dace@odoo.com>, 2022
+# Daniela Cervantes <dace@leensoft.vn>, 2022
 # José Cabrera Lozano <jose.cabrera@edukative.es>, 2022
 # Pablo Rojas <rojaspablo88@gmail.com>, 2022
 # José Vicente <txusev@gmail.com>, 2022

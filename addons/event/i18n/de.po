@@ -3660,8 +3660,8 @@ msgstr "z.B. VIP Ticket"
 
 #. module: event
 #: model_terms:event.event,description:event.event_2
-msgid "events@odoo.com"
-msgstr "events@odoo.com"
+msgid "events@leensoft.vn"
+msgstr "events@leensoft.vn"
 
 #. module: event
 #: model_terms:event.event,description:event.event_7

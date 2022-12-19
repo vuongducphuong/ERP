@@ -7,7 +7,7 @@
 # Wiktor Kaźmierczak <wik92tor@wp.pl>, 2022
 # Zdzisław Krajewski <zdzichucb@gmail.com>, 2022
 # Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
 # Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2022

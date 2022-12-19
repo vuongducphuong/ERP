@@ -6,7 +6,7 @@
 # Dawid Prus, 2022
 # Wiktor Kaźmierczak <wik92tor@wp.pl>, 2022
 # Radosław Biegalski <radoslaw.biegalski@openglobe.pl>, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Jacek Michalski <michalski.jck@gmail.com>, 2022
 # Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2022
 # Jan Dziurz <jan.dziurzynski@openglobe.pl>, 2022

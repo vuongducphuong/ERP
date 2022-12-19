@@ -8,7 +8,7 @@
 # Jorunn D. Newth, 2022
 # Aleksander, 2022
 # Marius Stedjan <marius@stedjan.com>, 2022
-# Cécile Collart <cco@odoo.com>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
 # Lars Aam <lars.aam@vikenfiber.no>, 2022
 # Henning Fyllingsnes, 2022
 # 

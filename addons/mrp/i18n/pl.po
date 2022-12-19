@@ -26,7 +26,7 @@
 # Paweł Wodyński <pw@myodoo.pl>, 2022
 # Wiktor Kaźmierczak <wik92tor@wp.pl>, 2022
 # Marcin Młynarczyk <mlynarczyk@gmail.com>, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Dariusz Żbikowski <darek@krokus.com.pl>, 2022
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
 # Maja Stawicka <mjstwck@wp.pl>, 2022

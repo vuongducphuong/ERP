@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Djordje Marjanovic <djordje_m@yahoo.com>, 2017
-# Martin Trigaux <mat@odoo.com>, 2017
+# Martin Trigaux <mat@leensoft.vn>, 2017
 # Nemanja Dragovic <nemanjadragovic94@gmail.com>, 2017
 # Ljubisa Jovev <ljubisa.jovev@gmail.com>, 2017
 msgid ""
@@ -1968,7 +1968,7 @@ msgstr ""
 #. module: event
 #: model_terms:event.event,description:event.event_2
 #: model_terms:event.event,description:event.event_3
-msgid "events@odoo.com"
+msgid "events@leensoft.vn"
 msgstr ""
 
 #. module: event
@@ -1985,7 +1985,7 @@ msgstr ""
 
 #. module: event
 #: model_terms:event.event,description:event.event_3
-msgid "https://www.odoo.com/services/technical-training"
+msgid "https://www.leensoft.vn/services/technical-training"
 msgstr ""
 
 #. module: event

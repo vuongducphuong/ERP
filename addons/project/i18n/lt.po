@@ -14,7 +14,7 @@
 # Anatolij, 2022
 # Audrius Palenskis <audrius.palenskis@gmail.com>, 2022
 # Šarūnas Ažna <sarunas.azna@gmail.com>, 2022
-# Jonas Zinkevicius <jozi@odoo.com>, 2022
+# Jonas Zinkevicius <jozi@leensoft.vn>, 2022
 # Monika Raciunaite <monika.raciunaite@gmail.com>, 2022
 # Naglis Jonaitis, 2022
 # grupoda2 <dmitrijus.ivanovas@gmail.com>, 2022
@@ -5205,10 +5205,10 @@ msgstr ""
 #: model:ir.model.fields,help:project.field_project_project__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 "El. pašto pseudonimo pavadinimas, pvz. \"darbai\", jei norite gauti "
-"<darbai@pavyzdys.odoo.com>"
+"<darbai@pavyzdys.leensoft.vn>"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__alias_user_id

@@ -3,8 +3,8 @@
 # 	* hr_recruitment_survey
 # 
 # Translators:
-# Geoffrey_GMF <gmf@odoo.com>, 2022
-# Cécile Collart <cco@odoo.com>, 2022
+# Geoffrey_GMF <gmf@leensoft.vn>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""

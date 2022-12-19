@@ -29225,3 +29225,123 @@ ketoan.access_ketoan_bao_cao_so_cai,access_ketoan_bao_cao_so_cai,ketoan.model_ke
 2022-12-19 18:19:09,935 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:19:09] "POST /web/dataset/call_kw/ketoan.bao.cao.so.cai/view_report HTTP/1.1" 200 - 28 0.008 0.027
 2022-12-19 18:19:10,785 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:19:10] "POST /web/dataset/call_kw/ketoan.bao.cao.so.cai/get_accounts_line HTTP/1.1" 200 - 13 0.006 0.009
 2022-12-19 18:19:12,031 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:19:12] "POST /web/dataset/call_kw/ketoan.bao.cao.so.cai/get_accounts_line HTTP/1.1" 200 - 13 0.010 0.010
+2022-12-19 18:19:49,184 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-19 18:19:49,186 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-19 18:20:02,651 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:20:02] "POST /web/action/load HTTP/1.1" 200 - 11 0.007 0.011
+2022-12-19 18:20:03,026 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:20:03] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 38 0.005 0.034
+2022-12-19 18:20:03,291 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:20:03] "POST /web/dataset/call_kw/ir.module.module/read HTTP/1.1" 200 - 11 0.005 0.038
+2022-12-19 18:20:03,365 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:20:03] "POST /web/dataset/call_kw/ir.module.module.dependency/read HTTP/1.1" 200 - 4 0.002 0.004
+2022-12-19 18:20:03,707 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:20:03] "GET /web/bundle/web_editor.assets_wysiwyg?lang=en_US&debug=assets HTTP/1.1" 200 - 11 0.005 0.092
+2022-12-19 18:20:03,714 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:20:03] "GET /web/assets/debug/web_editor.assets_wysiwyg.css HTTP/1.1" 304 - 5 0.001 0.003
+2022-12-19 18:20:04,028 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:20:04] "GET /web/assets/debug/web_editor.assets_wysiwyg.js HTTP/1.1" 304 - 5 0.002 0.006
+2022-12-19 18:20:04,401 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:20:04] "GET /base/static/src/css/description.css HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-19 18:20:04,408 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:20:04] "GET /web/image?model=ir.module.module&id=580&field=icon_image&unique=1671448707000 HTTP/1.1" 200 - 3 0.001 0.007
+2022-12-19 18:20:50,214 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-19 18:20:50,217 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-19 18:21:51,248 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-19 18:21:51,253 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-19 18:22:52,268 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-19 18:22:52,272 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-19 18:23:53,305 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-19 18:23:53,308 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-19 18:24:54,337 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-19 18:24:54,340 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-19 18:25:45,019 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:45] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 3 0.001 0.007
+2022-12-19 18:25:45,303 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:45] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 43 0.008 0.014
+2022-12-19 18:25:45,352 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:45] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.008
+2022-12-19 18:25:45,627 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:45] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:45,727 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:45] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:45,729 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:45] "GET /base/static/img/icons/knowledge.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:45,733 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:45] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:45,737 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:45] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-19 18:25:45,738 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:45] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-19 18:25:45,940 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:45] "GET /mrp/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-19 18:25:46,050 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:25:46,053 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /stock/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-19 18:25:46,056 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /project/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-19 18:25:46,059 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /website_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:46,061 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:46,252 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /base_accounting_kit/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:25:46,361 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-19 18:25:46,365 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /website/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-19 18:25:46,369 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /hr_expense/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-12-19 18:25:46,370 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-19 18:25:46,371 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /hr/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-19 18:25:46,561 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /crm_dashboard/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:46,687 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /hr_employee_shift/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:46,691 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /data_recycle/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:46,693 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /hr_employee_transfer/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-19 18:25:46,696 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /hrms_dashboard/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:46,699 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /maintenance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:46,872 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /ohrms_core/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:46,999 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:46] "GET /rowno_in_tree/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:25:47,002 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /query_deluxe/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-19 18:25:47,006 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /sale_discount_total/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-19 18:25:47,009 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /salon_management/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-19 18:25:47,010 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /base/static/img/icons/sign.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:47,185 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:25:47,314 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:47,318 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:47,321 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /base/static/img/icons/planning.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-19 18:25:47,322 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /website_slides/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-19 18:25:47,324 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /website_event/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:25:47,500 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /mail/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:25:47,628 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /contacts/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:47,632 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:47,640 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /om_account_accountant/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-19 18:25:47,644 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /sale_management/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-12-19 18:25:47,660 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 42 0.013 0.013
+2022-12-19 18:25:47,823 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.001 0.010
+2022-12-19 18:25:47,940 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /account/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-19 18:25:47,940 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:47,955 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /crm/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-19 18:25:47,956 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /ketoan/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-19 18:25:47,968 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:47] "GET /calendar/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:25:48,143 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /base/static/img/icons/social.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:25:48,255 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /fleet/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-19 18:25:48,258 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:48,261 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:48,266 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /im_livechat/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:48,285 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /base/static/img/icons/appointment.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:25:48,459 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /survey/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:48,569 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-19 18:25:48,572 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /repair/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:25:48,576 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:25:48,582 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:25:48,598 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:25:48,776 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /note/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-19 18:25:48,885 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /hr_skills/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-12-19 18:25:48,886 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /base/static/img/icons/voip.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-19 18:25:48,887 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /lunch/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-19 18:25:48,890 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:48,914 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:48] "GET /base/static/img/icons/sale_ebay.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:25:49,096 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:49] "GET /hr_contract/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:25:49,194 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:49] "GET /om_fiscal_year/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-19 18:25:49,196 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:49] "GET /accounting_pdf_reports/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-19 18:25:49,200 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:25:49] "GET /base/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-19 18:25:55,368 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-19 18:25:55,371 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-19 18:26:01,558 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:26:01] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 42 0.011 0.017
+2022-12-19 18:26:01,803 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:26:01] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.005
+2022-12-19 18:26:01,889 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:26:01] "GET /account_check_printing/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:26:02,128 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:26:02] "GET /base_account_budget/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:26:02,130 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:26:02] "GET /sale_timesheet/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-19 18:26:02,135 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:26:02] "GET /website_sale_comparison/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:26:02,138 24168 INFO ? werkzeug: 127.0.0.1 - - [19/Dec/2022 18:26:02] "GET /payment_asiapay/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-19 18:26:28,022 24168 INFO ABCCompany werkzeug: 127.0.0.1 - - [19/Dec/2022 18:26:28] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
+2022-12-19 18:26:56,387 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-19 18:26:56,390 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-19 18:27:57,415 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-19 18:27:57,418 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-19 18:28:58,453 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-19 18:28:58,455 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-19 18:28:58,459 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-19 18:28:58,461 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-19 18:29:59,483 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-19 18:29:59,486 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-19 18:31:00,519 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Product: send email regarding products availability`. 
+2022-12-19 18:31:00,521 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `eCommerce: send email to customers about their abandoned cart`. 
+2022-12-19 18:31:00,527 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Product: send email regarding products availability` done. 
+2022-12-19 18:31:00,530 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `eCommerce: send email to customers about their abandoned cart` done. 
+2022-12-19 18:31:00,535 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-19 18:31:00,538 24168 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 

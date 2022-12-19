@@ -11,7 +11,7 @@
 # Andrzej Wiśniewski <a.wisniewski@hadron.eu.com>, 2022
 # zieloo <zieloo@gmail.com>, 2022
 # Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Karol Rybak <karolrybak85@gmail.com>, 2022
 # Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2022
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022

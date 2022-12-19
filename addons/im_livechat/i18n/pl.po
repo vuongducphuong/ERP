@@ -7,7 +7,7 @@
 # Grzegorz Krukar <grzegorzgk1@gmail.com>, 2022
 # Wiktor Kaźmierczak <wik92tor@wp.pl>, 2022
 # Maksym <ms@myodoo.pl>, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Andrzej Wiśniewski <a.wisniewski@hadron.eu.com>, 2022
 # Maja Stawicka <mjstwck@wp.pl>, 2022
 # Karol Rybak <karolrybak85@gmail.com>, 2022

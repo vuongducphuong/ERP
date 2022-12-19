@@ -3,7 +3,7 @@
 # 	* hr_holidays
 # 
 # Translators:
-# Jérôme JEK <jek@odoo.com>, 2022
+# Jérôme JEK <jek@leensoft.vn>, 2022
 # grazziano <gra.negocia@gmail.com>, 2022
 # Éder Brito <britoederr@gmail.com>, 2022
 # Marcel Savegnago <marcel.savegnago@gmail.com>, 2022

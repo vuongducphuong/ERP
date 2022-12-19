@@ -5,8 +5,8 @@
 # Translators:
 # Martin Trigaux, 2022
 # Jolien De Paepe, 2022
-# Cécile Collart <cco@odoo.com>, 2022
-# Pierre Delacroix <pde@odoo.com>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
+# Pierre Delacroix <pde@leensoft.vn>, 2022
 # Logan Gônet <logan.gonet.perso@outlook.com>, 2022
 # 
 msgid ""

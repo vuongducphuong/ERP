@@ -4,9 +4,9 @@
 # 
 # Translators:
 # Grégory Schreiner <gregory@mokatourisme.fr>, 2022
-# Camille Dantinne <cmd@odoo.com>, 2022
+# Camille Dantinne <cmd@leensoft.vn>, 2022
 # Martin Trigaux, 2022
-# Cécile Collart <cco@odoo.com>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
 # Jolien De Paepe, 2022
 # 
 msgid ""
@@ -4114,8 +4114,8 @@ msgstr "ex : Billet VIP"
 
 #. module: event
 #: model_terms:event.event,description:event.event_2
-msgid "events@odoo.com"
-msgstr "events@odoo.com"
+msgid "events@leensoft.vn"
+msgstr "events@leensoft.vn"
 
 #. module: event
 #: model_terms:event.event,description:event.event_7

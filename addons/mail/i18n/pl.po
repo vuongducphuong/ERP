@@ -11,7 +11,7 @@
 # Grażyna Grzelak <grazyna.grzelak@openglobe.pl>, 2022
 # DanielDemedziuk <daniel.demedziuk@gmail.com>, 2022
 # Rafał Kozak <rafal.kozak@openglobe.pl>, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Jacek Michalski <michalski.jck@gmail.com>, 2022
 # Jaroslaw Kaczmarski, 2022
 # Grzegorz Krukar <grzegorzgk1@gmail.com>, 2022
@@ -7479,10 +7479,10 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 "Nazwa aliasu e-mail, np. \"jobs\", jeśli chcesz przechwytywać wiadomości "
-"e-mail dla <jobs@example.odoo.com>"
+"e-mail dla <jobs@example.leensoft.vn>"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_user_id
@@ -8196,11 +8196,11 @@ msgstr ""
 msgid ""
 "Using your own email server is required to send/receive emails in Community "
 "and Enterprise versions. Online users already benefit from a ready-to-use "
-"email server (@mycompany.odoo.com)."
+"email server (@mycompany.leensoft.vn)."
 msgstr ""
 "Korzystanie z własnego serwera e-mail jest wymagane do wysyłania / "
 "odbierania wiadomości e-mail w wersjach Community i Enterprise. Użytkownicy "
-"online korzystają z gotowego do użycia serwera e-mail (@mycompany.odoo.com)."
+"online korzystają z gotowego do użycia serwera e-mail (@mycompany.leensoft.vn)."
 
 #. module: mail
 #. openerp-web
@@ -8813,7 +8813,7 @@ msgstr ""
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
-msgid "e.g: \"info@mycompany.odoo.com\""
+msgid "e.g: \"info@mycompany.leensoft.vn\""
 msgstr ""
 
 #. module: mail

@@ -6,7 +6,7 @@
 # Martin Trigaux, 2018
 # Turkesh Patel <turkesh4friends@gmail.com>, 2018
 # Dharmraj Jhala <dja@openerp.com>, 2018
-# Divya Pandya <dia@odoo.com>, 2018
+# Divya Pandya <dia@leensoft.vn>, 2018
 # Spellbound Soft Solutions <jeel.spellbound@gmail.com>, 2018
 msgid ""
 msgstr ""
@@ -2671,7 +2671,7 @@ msgstr ""
 #: model:ir.model.fields,help:project.field_project_project__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 
 #. module: project

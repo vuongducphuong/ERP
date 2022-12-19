@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Maksym <ms@myodoo.pl>, 2022
 # Wiktor Kaźmierczak <wik92tor@wp.pl>, 2022
 # Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022

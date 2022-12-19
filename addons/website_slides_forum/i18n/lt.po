@@ -3,7 +3,7 @@
 # 	* website_slides_forum
 # 
 # Translators:
-# Jonas Zinkevicius <jozi@odoo.com>, 2022
+# Jonas Zinkevicius <jozi@leensoft.vn>, 2022
 # Naglis Jonaitis, 2022
 # Martin Trigaux, 2022
 # Rolandas <panauto1@gmail.com>, 2022

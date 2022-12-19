@@ -7299,7 +7299,7 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 
 #. module: mail
@@ -8000,7 +8000,7 @@ msgstr ""
 msgid ""
 "Using your own email server is required to send/receive emails in Community "
 "and Enterprise versions. Online users already benefit from a ready-to-use "
-"email server (@mycompany.odoo.com)."
+"email server (@mycompany.leensoft.vn)."
 msgstr ""
 
 #. module: mail
@@ -8595,7 +8595,7 @@ msgstr ""
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
-msgid "e.g: \"info@mycompany.odoo.com\""
+msgid "e.g: \"info@mycompany.leensoft.vn\""
 msgstr ""
 
 #. module: mail

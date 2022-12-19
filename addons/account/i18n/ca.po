@@ -17,7 +17,7 @@
 # RGB Consulting <odoo@rgbconsulting.com>, 2022
 # eriiikgt, 2022
 # AncesLatino2004, 2022
-# Anh Thao PHAM <pta@odoo.com>, 2022
+# Anh Thao PHAM <pta@leensoft.vn>, 2022
 # M Palau <mpalau@tda.ad>, 2022
 # Carles Antoli <carlesantoli@hotmail.com>, 2022
 # Marc Tormo i Bochaca <mtbochaca@gmail.com>, 2022

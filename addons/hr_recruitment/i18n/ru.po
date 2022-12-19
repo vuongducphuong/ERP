@@ -2913,10 +2913,10 @@ msgstr "Название степени набора кадров должно �
 #: model:ir.model.fields,help:hr_recruitment.field_hr_job__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 "Название псевдонима электронной почты, наприм 'jobs' если вы хотите получать"
-" почту на <jobs@example.odoo.com>"
+" почту на <jobs@example.leensoft.vn>"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,help:hr_recruitment.field_hr_job__alias_user_id

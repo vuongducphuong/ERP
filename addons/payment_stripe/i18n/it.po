@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Paolo Valier, 2019
-# Luigia Cimmino Caserta <lcc@odoo.com>, 2019
+# Luigia Cimmino Caserta <lcc@leensoft.vn>, 2019
 # Sergio Zanchetta <primes2h@gmail.com>, 2019
 # 
 msgid ""

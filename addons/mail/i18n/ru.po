@@ -7470,10 +7470,10 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 "Название псевдонима электронной почты, наприм 'jobs' если вы хотите получать"
-" почту на <jobs@example.odoo.com>"
+" почту на <jobs@example.leensoft.vn>"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_user_id
@@ -8189,12 +8189,12 @@ msgstr ""
 msgid ""
 "Using your own email server is required to send/receive emails in Community "
 "and Enterprise versions. Online users already benefit from a ready-to-use "
-"email server (@mycompany.odoo.com)."
+"email server (@mycompany.leensoft.vn)."
 msgstr ""
 "Использование собственного сервера электронной почты требуется для передачи "
 "и приема электронных писем в сообществе и версии Enterprise. Интернет-"
 "пользователи уже пользуются готовым к использованию электронным сервером (@ "
-"mycompany.odoo.com)."
+"mycompany.leensoft.vn)."
 
 #. module: mail
 #. openerp-web
@@ -8808,7 +8808,7 @@ msgstr ""
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
-msgid "e.g: \"info@mycompany.odoo.com\""
+msgid "e.g: \"info@mycompany.leensoft.vn\""
 msgstr ""
 
 #. module: mail

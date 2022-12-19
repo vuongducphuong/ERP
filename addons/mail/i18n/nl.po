@@ -7620,7 +7620,7 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 "De naam van de e-mail alias, bijvoorbeeld: 'vacature' als je alle e-mails "
 "van vacature@bedrijf.nl wilt afvangen."
@@ -8365,11 +8365,11 @@ msgstr ""
 msgid ""
 "Using your own email server is required to send/receive emails in Community "
 "and Enterprise versions. Online users already benefit from a ready-to-use "
-"email server (@mycompany.odoo.com)."
+"email server (@mycompany.leensoft.vn)."
 msgstr ""
 "Het gebruik van je eigen e-mailserver is vereist voor het verzenden / "
 "ontvangen van e-mails in Community- en Enterprise-versies. Online gebruikers"
-" profiteren van een kant-en-klare e-mailserver (@ mijnbedrijf.odoo.com)."
+" profiteren van een kant-en-klare e-mailserver (@ mijnbedrijf.leensoft.vn)."
 
 #. module: mail
 #. openerp-web
@@ -8996,8 +8996,8 @@ msgstr "bijv. waar.waar..f"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
-msgid "e.g: \"info@mycompany.odoo.com\""
-msgstr "bijvoorbeeld: \"info@mijnbedrijf.odoo.com\""
+msgid "e.g: \"info@mycompany.leensoft.vn\""
+msgstr "bijvoorbeeld: \"info@mijnbedrijf.leensoft.vn\""
 
 #. module: mail
 #. openerp-web

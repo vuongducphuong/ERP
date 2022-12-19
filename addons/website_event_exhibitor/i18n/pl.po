@@ -12,7 +12,7 @@
 # Andrzej Wiśniewski <a.wisniewski@hadron.eu.com>, 2022
 # Karol Rybak <karolrybak85@gmail.com>, 2022
 # Mariusz, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Dariusz Żbikowski <darek@krokus.com.pl>, 2022
 # Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022
 # Tomasz Leppich <t.leppich@gmail.com>, 2022
@@ -1094,8 +1094,8 @@ msgstr "np. Dekoracje Otwartego Dębu"
 
 #. module: website_event_exhibitor
 #: model_terms:ir.ui.view,arch_db:website_event_exhibitor.event_sponsor_view_form
-msgid "e.g. : https://www.odoo.com"
-msgstr "np.: https://www.odoo.com"
+msgid "e.g. : https://www.leensoft.vn"
+msgstr "np.: https://www.leensoft.vn"
 
 #. module: website_event_exhibitor
 #: model_terms:ir.ui.view,arch_db:website_event_exhibitor.event_sponsor_view_form

@@ -27,7 +27,7 @@
 # Murat Kaplan <muratk@projetgrup.com>, 2022
 # Ertuğrul Güreş <ertugrulg@projetgrup.com>, 2022
 # Nadir Gazioglu <nadirgazioglu@gmail.com>, 2022
-# Jérôme JEK <jek@odoo.com>, 2022
+# Jérôme JEK <jek@leensoft.vn>, 2022
 # Yedigen, 2022
 # muhammed ateş, 2022
 # Ediz Duman <neps1192@gmail.com>, 2022

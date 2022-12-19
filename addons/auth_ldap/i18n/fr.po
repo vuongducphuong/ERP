@@ -3,7 +3,7 @@
 # 	* auth_ldap
 # 
 # Translators:
-# Cécile Collart <cco@odoo.com>, 2019
+# Cécile Collart <cco@leensoft.vn>, 2019
 # Christophe CHAUVET <christophe.chauvet@gmail.com>, 2019
 # Martin Trigaux, 2019
 # 

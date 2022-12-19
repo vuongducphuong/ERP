@@ -3,8 +3,8 @@
 # 	* website_sale_loyalty
 # 
 # Translators:
-# Lucia Pacheco <lpo@odoo.com>, 2022
-# Braulio D. López Vázquez <bdl@odoo.com>, 2022
+# Lucia Pacheco <lpo@leensoft.vn>, 2022
+# Braulio D. López Vázquez <bdl@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""

@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2019
-# Leon Grill <leg@odoo.com>, 2019
+# Leon Grill <leg@leensoft.vn>, 2019
 # Chris Egal <sodaswed@web.de>, 2019
 # 
 msgid ""

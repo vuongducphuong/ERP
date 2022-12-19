@@ -5,7 +5,7 @@
 # Translators:
 # Silvija Butko <silvija.butko@gmail.com>, 2022
 # Monika Raciunaite <monika.raciunaite@gmail.com>, 2022
-# Jonas Zinkevicius <jozi@odoo.com>, 2022
+# Jonas Zinkevicius <jozi@leensoft.vn>, 2022
 # UAB "Draugiški sprendimai" <transifex@draugiskisprendimai.lt>, 2022
 # Arunas V. <arunas@devoro.com>, 2022
 # Linas Versada <linaskrisiukenas@gmail.com>, 2022
@@ -1300,10 +1300,10 @@ msgstr ""
 #: model:ir.model.fields,help:mail_group.field_mail_group__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 "El. pašto pseudonimo pavadinimas, pvz. \"darbai\", jei norite gauti "
-"<darbai@pavyzdys.odoo.com>"
+"<darbai@pavyzdys.leensoft.vn>"
 
 #. module: mail_group
 #: code:addons/mail_group/models/mail_group.py:0

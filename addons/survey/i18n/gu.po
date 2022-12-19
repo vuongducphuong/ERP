@@ -5,9 +5,9 @@
 # Translators:
 # Martin Trigaux, 2018
 # Ajay Chauhan, 2018
-# Ranjit Pillai <rpi@odoo.com>, 2018
+# Ranjit Pillai <rpi@leensoft.vn>, 2018
 # Turkesh Patel <turkesh4friends@gmail.com>, 2018
-# Divya Pandya <dia@odoo.com>, 2018
+# Divya Pandya <dia@leensoft.vn>, 2018
 # Dharmraj Jhala <dja@openerp.com>, 2018
 # Spellbound Soft Solutions <jeel.spellbound@gmail.com>, 2018
 msgid ""
@@ -2525,7 +2525,7 @@ msgstr ""
 
 #. module: survey
 #: model:survey.question,question:survey.feedback_2_1
-msgid "What do you think about the documentation available on doc.odoo.com?"
+msgid "What do you think about the documentation available on doc.leensoft.vn?"
 msgstr ""
 
 #. module: survey

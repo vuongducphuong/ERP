@@ -6,7 +6,7 @@
 # Retropikzel, 2022
 # Miku Laitinen <miku.laitinen@gmail.com>, 2022
 # Miika Nissi <miika.nissi@tawasta.fi>, 2022
-# Vallen Delobel <edv@odoo.com>, 2022
+# Vallen Delobel <edv@leensoft.vn>, 2022
 # Mikko Virtanen <mikko.virtanen2013@gmail.com>, 2022
 # Atte Isopuro <atte.isopuro@web-veistamo.fi>, 2022
 # Marko Happonen <marko.happonen@sprintit.fi>, 2022

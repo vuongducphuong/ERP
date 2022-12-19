@@ -3,7 +3,7 @@
 # 	* project
 # 
 # Translators:
-# Braulio D. López Vázquez <bdl@odoo.com>, 2022
+# Braulio D. López Vázquez <bdl@leensoft.vn>, 2022
 # marcescu, 2022
 # Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2022
 # Daniel Salazar, 2022
@@ -5269,11 +5269,11 @@ msgstr ""
 #: model:ir.model.fields,help:project.field_project_project__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 "El nombre de este seudónimo de correo electrónico. Por ejemplo, "
 "\"trabajos\",  si lo que quiere es obtener los correos para "
-"<trabajos@example.odoo.com>"
+"<trabajos@example.leensoft.vn>"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__alias_user_id

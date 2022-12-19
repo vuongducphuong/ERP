@@ -3,7 +3,7 @@
 # 	* auth_totp_mail
 # 
 # Translators:
-# Jonas Zinkevicius <jozi@odoo.com>, 2022
+# Jonas Zinkevicius <jozi@leensoft.vn>, 2022
 # Arunas V. <arunas@devoro.com>, 2022
 # Monika Raciunaite <monika.raciunaite@gmail.com>, 2022
 # 

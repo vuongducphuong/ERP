@@ -5,7 +5,7 @@
 # Translators:
 # Martin Trigaux, 2022
 # Alexandra Jubert, 2022
-# Cécile Collart <cco@odoo.com>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
 # Jolien De Paepe, 2022
 # 
 msgid ""

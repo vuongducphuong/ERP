@@ -4,7 +4,7 @@
 # 
 # Translators:
 # milda dvorak <milda.dvorak@optimal4.cz>, 2022
-# Pauline Thiry <pth@odoo.com>, 2022
+# Pauline Thiry <pth@leensoft.vn>, 2022
 # Ladislav Tomm <tomm@helemik.cz>, 2022
 # Jan Horzinka <jan.horzinka@centrum.cz>, 2022
 # Jakub Snášel <jakub@potisk-tricek.cz>, 2022

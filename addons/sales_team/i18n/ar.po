@@ -3,8 +3,8 @@
 # 	* sales_team
 # 
 # Translators:
-# Nisrine Tagri <nta@odoo.com>, 2022
-# Malaz Abuidris <msea@odoo.com>, 2022
+# Nisrine Tagri <nta@leensoft.vn>, 2022
+# Malaz Abuidris <msea@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""

@@ -23,7 +23,7 @@
 # Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022
 # Andrzej Wiśniewski <a.wisniewski@hadron.eu.com>, 2022
 # Monika Grzelak <m.e.grzelak@gmail.com>, 2022
-# Natalia Gros <nag@odoo.com>, 2022
+# Natalia Gros <nag@leensoft.vn>, 2022
 # Maja Stawicka <mjstwck@wp.pl>, 2022
 # Tomasz Leppich <t.leppich@gmail.com>, 2022
 # taksun <taksun@o2.pl>, 2022

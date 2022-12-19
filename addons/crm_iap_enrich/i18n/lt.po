@@ -3,7 +3,7 @@
 # 	* crm_iap_enrich
 # 
 # Translators:
-# Jonas Zinkevicius <jozi@odoo.com>, 2022
+# Jonas Zinkevicius <jozi@leensoft.vn>, 2022
 # Linas Versada <linaskrisiukenas@gmail.com>, 2022
 # Andrius Laukavičius <andrius@focusate.eu>, 2022
 # 

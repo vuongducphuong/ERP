@@ -693,10 +693,10 @@ msgstr "Invio per posta del seguente documento:"
 #, python-format
 msgid ""
 "You don't have an IAP account registered for this service.<br>Please go to "
-"<a href=%s target=\"new\">iap.odoo.com</a> to claim your free credits."
+"<a href=%s target=\"new\">iap.leensoft.vn</a> to claim your free credits."
 msgstr ""
 "Nessun account acquisti integrati (IAP) registrato per il "
-"servizio.<br>Andare su <a href=%s target=\"new\">iap.odoo.com</a> per "
+"servizio.<br>Andare su <a href=%s target=\"new\">iap.leensoft.vn</a> per "
 "richiedere crediti gratuiti."
 
 #. module: snailmail

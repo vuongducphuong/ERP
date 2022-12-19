@@ -3,7 +3,7 @@
 # 	* spreadsheet_dashboard_purchase_stock
 # 
 # Translators:
-# Malaz Abuidris <msea@odoo.com>, 2022
+# Malaz Abuidris <msea@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""

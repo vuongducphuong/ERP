@@ -1113,8 +1113,8 @@ msgstr "напр., : Декорації OpenWood"
 
 #. module: website_event_exhibitor
 #: model_terms:ir.ui.view,arch_db:website_event_exhibitor.event_sponsor_view_form
-msgid "e.g. : https://www.odoo.com"
-msgstr "напр. : https://www.odoo.com"
+msgid "e.g. : https://www.leensoft.vn"
+msgstr "напр. : https://www.leensoft.vn"
 
 #. module: website_event_exhibitor
 #: model_terms:ir.ui.view,arch_db:website_event_exhibitor.event_sponsor_view_form

@@ -3,7 +3,7 @@
 # 	* website_crm_iap_reveal
 # 
 # Translators:
-# Kevin Harrings <kha@odoo.com>, 2022
+# Kevin Harrings <kha@leensoft.vn>, 2022
 # Éder Brito <britoederr@gmail.com>, 2022
 # Martin Trigaux, 2022
 # 

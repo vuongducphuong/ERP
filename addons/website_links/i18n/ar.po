@@ -323,8 +323,8 @@ msgstr "على سبيل المثال محرك بحث، صفحة موقع إلك�
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
-msgid "e.g. https://www.odoo.com/contactus"
-msgstr "على سبيل المثال https://www.odoo.com/contactus"
+msgid "e.g. https://www.leensoft.vn/contactus"
+msgstr "على سبيل المثال https://www.leensoft.vn/contactus"
 
 #. module: website_links
 #. openerp-web

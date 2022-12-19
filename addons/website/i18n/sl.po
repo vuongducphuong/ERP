@@ -3,7 +3,7 @@
 # * website
 # 
 # Translators:
-# Martin Trigaux <mat@odoo.com>, 2017
+# Martin Trigaux <mat@leensoft.vn>, 2017
 # Matjaž Mozetič <m.mozetic@matmoz.si>, 2017
 # Vida Potočnik <vida.potocnik@mentis.si>, 2017
 # Dejan Sraka <dejan.sraka@picolabs.si>, 2017

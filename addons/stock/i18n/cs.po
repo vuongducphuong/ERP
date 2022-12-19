@@ -5,7 +5,7 @@
 # Translators:
 # Jakub Snášel <jakub@potisk-tricek.cz>, 2022
 # David Kliment <daklime@gmail.com>, 2022
-# Pauline Thiry <pth@odoo.com>, 2022
+# Pauline Thiry <pth@leensoft.vn>, 2022
 # Tomas Bosek, 2022
 # Jan Horzinka <jan.horzinka@centrum.cz>, 2022
 # milda dvorak <milda.dvorak@optimal4.cz>, 2022

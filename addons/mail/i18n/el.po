@@ -5182,10 +5182,10 @@ msgstr ""
 #: model:ir.model.fields,help:mail.field_mail_channel__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 "Το όνομα του ψευδώνυμου email , π.χ. 'jobs', αν θέλετε να πάρετε emails για "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_mail_alias__alias_user_id
@@ -5640,13 +5640,13 @@ msgstr "Χρήστες αυτού του καναλιού: %s %s και εσεί
 msgid ""
 "Using your own email server is required to send/receive emails in Community "
 "and Enterprise versions. Online users already benefit from a ready-to-use "
-"email server (@mycompany.odoo.com)."
+"email server (@mycompany.leensoft.vn)."
 msgstr ""
 "Η χρήση του δικού σας διακομιστή ηλεκτρονικού ταχυδρομείου απαιτείται για "
 "την αποστολή / λήψη μηνυμάτων ηλεκτρονικού ταχυδρομείου στις εκδόσεις "
 "Community και Enterprise. Οι χρήστες του προϊόντος Odoo Online ήδη "
 "επωφελούνται από έναν έτοιμο προς χρήση διακομιστή ηλεκτρονικού ταχυδρομείου"
-" (@mycompany.odoo.com)."
+" (@mycompany.leensoft.vn)."
 
 #. module: mail
 #. openerp-web
@@ -6133,8 +6133,8 @@ msgstr "μήνες"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_config_settings_view_form
-msgid "mycompany.odoo.com"
-msgstr "mycompany.odoo.com"
+msgid "mycompany.leensoft.vn"
+msgstr "mycompany.leensoft.vn"
 
 #. module: mail
 #. openerp-web

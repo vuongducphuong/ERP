@@ -2742,10 +2742,10 @@ msgstr "Назва рівня рекрутингу має бути унікал�
 #: model:ir.model.fields,help:hr_recruitment.field_hr_job__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 "Ім'я псевдоніма електронної пошти, наприклад, \"Робота\", якщо ви хочете "
-"отримувати повідомлення електронної пошти на <jobs@example.odoo.com>"
+"отримувати повідомлення електронної пошти на <jobs@example.leensoft.vn>"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,help:hr_recruitment.field_hr_job__alias_user_id

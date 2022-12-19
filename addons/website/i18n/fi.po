@@ -31,7 +31,7 @@
 # Mikko Salmela <salmemik@gmail.com>, 2022
 # Miika Nissi <miika.nissi@tawasta.fi>, 2022
 # Kari Lindgren <kari.lindgren@emsystems.fi>, 2022
-# Richard Mouthier <rmo@odoo.com>, 2022
+# Richard Mouthier <rmo@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # Jarmo Kortetjärvi <jarmo.kortetjarvi@gmail.com>, 2022
 # 
@@ -11220,7 +11220,7 @@ msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
-msgid "https://www.odoo.com"
+msgid "https://www.leensoft.vn"
 msgstr ""
 
 #. module: website

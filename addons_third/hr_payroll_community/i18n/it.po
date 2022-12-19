@@ -11,15 +11,15 @@
  # Giovanni Casalini <casalini.g@gmail.com>, 2018
  # Alberto Vincenzi <alberto.vincenzi@gmail.com>, 2018
  # Alessandro Forte <a.forte1010@gmail.com>, 2018
- # Cécile Collart <cco@odoo.com>, 2018
+ # Cécile Collart <cco@leensoft.vn>, 2018
  # David Minneci <david@numeko.it>, 2018
  # Martin Trigaux, 2018
  # Cesare Cugnasco <cesare.cugnasco@gmail.com>, 2018
  # Maurizio Delmonte <maurizio.delmonte@gmail.com>, 2018
  # Paolo Valier, 2018
  # Manuela Feliciani <mfeliciani@alice.it>, 2018
- # mbo_odoo <mbo@odoo.com>, 2018
- # Léonie Bouchat <lbo@odoo.com>, 2018
+ # mbo_odoo <mbo@leensoft.vn>, 2018
+ # Léonie Bouchat <lbo@leensoft.vn>, 2018
  # maiolif <maiolif@mgftools.com>, 2019
  # Lorenzo Battistini <lorenzo.battistini@agilebg.com>, 2019
  # 

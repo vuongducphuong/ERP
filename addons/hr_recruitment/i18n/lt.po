@@ -18,7 +18,7 @@
 # Martin Trigaux, 2022
 # Monika Raciunaite <monika.raciunaite@gmail.com>, 2022
 # digitouch UAB <digitouchagencyeur@gmail.com>, 2022
-# Jonas Zinkevicius <jozi@odoo.com>, 2022
+# Jonas Zinkevicius <jozi@leensoft.vn>, 2022
 # Linas Versada <linaskrisiukenas@gmail.com>, 2022
 # 
 msgid ""
@@ -2662,10 +2662,10 @@ msgstr "Įdarbinimo laipsnio pavadinimas turi būti unikalus!"
 #: model:ir.model.fields,help:hr_recruitment.field_hr_job__alias_name
 msgid ""
 "The name of the email alias, e.g. 'jobs' if you want to catch emails for "
-"<jobs@example.odoo.com>"
+"<jobs@example.leensoft.vn>"
 msgstr ""
 "El. pašto pseudonimo pavadinimas, pvz. \"darbai\", jei norite gauti "
-"<darbai@pavyzdys.odoo.com>"
+"<darbai@pavyzdys.leensoft.vn>"
 
 #. module: hr_recruitment
 #: model:ir.model.fields,help:hr_recruitment.field_hr_job__alias_user_id

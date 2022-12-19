@@ -3618,7 +3618,7 @@ msgstr "VD: Vé VIP"
 
 #. module: event
 #: model_terms:event.event,description:event.event_2
-msgid "events@odoo.com"
+msgid "events@leensoft.vn"
 msgstr "events@ERP.com"
 
 #. module: event

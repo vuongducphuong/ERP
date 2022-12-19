@@ -3,8 +3,8 @@
 # 	* website_sale_digital
 # 
 # Translators:
-# Cécile Collart <cco@odoo.com>, 2022
-# Ludvig Auvens <lau@odoo.com>, 2022
+# Cécile Collart <cco@leensoft.vn>, 2022
+# Ludvig Auvens <lau@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""

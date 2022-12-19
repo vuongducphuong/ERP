@@ -3,7 +3,7 @@
 # 	* event
 # 
 # Translators:
-# Camille Dantinne <cmd@odoo.com>, 2022
+# Camille Dantinne <cmd@leensoft.vn>, 2022
 # Rafael Blasco <rblasco@moduon.team>, 2022
 # marcescu, 2022
 # Martin Trigaux, 2022
@@ -4098,8 +4098,8 @@ msgstr "ej. Entrada VIP"
 
 #. module: event
 #: model_terms:event.event,description:event.event_2
-msgid "events@odoo.com"
-msgstr "events@odoo.com"
+msgid "events@leensoft.vn"
+msgstr "events@leensoft.vn"
 
 #. module: event
 #: model_terms:event.event,description:event.event_7

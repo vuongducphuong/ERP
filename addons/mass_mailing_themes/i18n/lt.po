@@ -3,7 +3,7 @@
 # 	* mass_mailing_themes
 # 
 # Translators:
-# Jonas Zinkevicius <jozi@odoo.com>, 2022
+# Jonas Zinkevicius <jozi@leensoft.vn>, 2022
 # Martin Trigaux, 2022
 # Linas Versada <linaskrisiukenas@gmail.com>, 2022
 # Antanas Muliuolis <an.muliuolis@gmail.com>, 2022
