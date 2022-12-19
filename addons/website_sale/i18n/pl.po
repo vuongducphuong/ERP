@@ -24,8 +24,8 @@
 # Monika Grzelak <m.e.grzelak@gmail.com>, 2022
 # Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2022
 # Dariusz Żbikowski <darek@krokus.com.pl>, 2022
-# Paweł Wodyński <pw@myodoo.pl>, 2022
-# Maksym <ms@myodoo.pl>, 2022
+# Paweł Wodyński <pw@myleansoft.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2022
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
 # Martin Trigaux, 2022

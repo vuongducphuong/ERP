@@ -144,7 +144,7 @@ msgstr "服务名称"
 #: code:addons/iap/static/src/js/insufficient_credit_error_handler.js:0
 #, python-format
 msgid "Start a Trial at Odoo"
-msgstr "在odoo中开始试用"
+msgstr "在leansoft中开始试用"
 
 #. module: iap
 #: code:addons/iap/tools/iap_tools.py:0

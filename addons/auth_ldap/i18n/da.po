@@ -5,7 +5,7 @@
 # Translators:
 # Martin Trigaux, 2019
 # Morten Schou <ms@msteknik.dk>, 2019
-# Jesper Carstensen <jc@danodoo.dk>, 2019
+# Jesper Carstensen <jc@danleansoft.dk>, 2019
 # Sanne Kristensen <sanne@vkdata.dk>, 2019
 # lhmflexerp <lhm@flexerp.dk>, 2019
 # 

@@ -3861,7 +3861,7 @@ msgstr "buraya"
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
 msgid "how to configure or customize Odoo to specific business needs,"
 msgstr ""
-"odoo'nun belirli iş ihtiyaçlarına göre nasıl yapılandırılacağı veya "
+"leansoft'nun belirli iş ihtiyaçlarına göre nasıl yapılandırılacağı veya "
 "özelleştirileceği,"
 
 #. module: website_forum
@@ -3874,7 +3874,7 @@ msgstr "kendi ihtiyaçlarınız için modüller nasıl geliştirilir,"
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
 msgid "how to install Odoo on a specific infrastructure,"
-msgstr "odoo'nun belirli bir altyapıya nasıl kurulacağı,"
+msgstr "leansoft'nun belirli bir altyapıya nasıl kurulacağı,"
 
 #. module: website_forum
 #. openerp-web
@@ -3978,7 +3978,7 @@ msgstr "çözülmüş"
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
 msgid "specific questions about Odoo service offers, etc."
-msgstr "odoo hizmet teklifleri hakkında belirli sorular."
+msgstr "leansoft hizmet teklifleri hakkında belirli sorular."
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.forum_index
@@ -4037,7 +4037,7 @@ msgstr "açık uçlu, varsayımsal bir soru soruluyor: “______ ne oldu?”"
 #: model_terms:forum.forum,faq:website_forum.forum_help
 #: model_terms:ir.ui.view,arch_db:website_forum.default_faq
 msgid "what's the best way to use Odoo for a specific business need,"
-msgstr "odoo'yu belirli bir iş ihtiyacı için kullanmanın en iyi yolu nedir,"
+msgstr "leansoft'yu belirli bir iş ihtiyacı için kullanmanın en iyi yolu nedir,"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.author_box

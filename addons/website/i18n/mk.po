@@ -823,7 +823,7 @@ msgstr "<strong>е-Комерс</strong>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_planner
-msgid "@odoo"
+msgid "@leansoft"
 msgstr ""
 
 #. module: website

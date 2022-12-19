@@ -5,7 +5,7 @@
 # Translators:
 # Chatcha Mee, 2022
 # surapas haemaprasertsuk <surapas@gmail.com>, 2022
-# Odoo Thaidev <odoothaidev@gmail.com>, 2022
+# Odoo Thaidev <leansoftthaidev@gmail.com>, 2022
 # Martin Trigaux, 2022
 # Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2022
 # Wichanon Jamwutthipreecha, 2022

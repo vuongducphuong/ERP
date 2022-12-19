@@ -16,7 +16,7 @@
 # Jaroslaw Kaczmarski, 2022
 # Grzegorz Krukar <grzegorzgk1@gmail.com>, 2022
 # Andrzej Wiśniewski <a.wisniewski@hadron.eu.com>, 2022
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2022
 # Marcin Młynarczyk <mlynarczyk@gmail.com>, 2022
 # Dariusz Żbikowski <darek@krokus.com.pl>, 2022
@@ -32,7 +32,7 @@
 # Mariusz, 2022
 # Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022
 # Karol Rybak <karolrybak85@gmail.com>, 2022
-# Paweł Wodyński <pw@myodoo.pl>, 2022
+# Paweł Wodyński <pw@myleansoft.pl>, 2022
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
 # 
 msgid ""
@@ -104,7 +104,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail/static/src/models/notification_request_view.js:0
 #, python-format
-msgid "%(odoobotName)s has a request"
+msgid "%(leansoftbotName)s has a request"
 msgstr ""
 
 #. module: mail

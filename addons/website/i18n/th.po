@@ -9,7 +9,7 @@
 # Seksan Poltree <seksan.poltree@gmail.com>, 2022
 # Martin Trigaux, 2022
 # Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2022
-# Odoo Thaidev <odoothaidev@gmail.com>, 2022
+# Odoo Thaidev <leansoftthaidev@gmail.com>, 2022
 # Wichanon Jamwutthipreecha, 2022
 # 
 msgid ""
@@ -1423,7 +1423,7 @@ msgstr "การเข้าถึงโทเคนควรแตกต่า
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_menus_logos
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Accessories"
 msgstr "เครื่องประดับเสริม"
 
@@ -2382,7 +2382,7 @@ msgid "Call-to-action"
 msgstr "การกระตุ้นให้เกิดความสนใจ"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Camera"
 msgstr "กล้อง"
 
@@ -2834,18 +2834,18 @@ msgstr "CRM ที่สมบูรณ์แบบสำหรับทีม�
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:website.page,arch_db:website.bs_debug_page
 msgid "Components"
 msgstr "ส่วนประกอบ"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Computers"
 msgstr "คอมพิวเตอร์"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Computers &amp; Devices"
 msgstr "คอมพิวเตอร์และอุปกรณ์"
 
@@ -3548,7 +3548,7 @@ msgid "Desktop"
 msgstr "เดสก์ทอป"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Desktop computers"
 msgstr "คอมพิวเตอร์ตั้งโต๊ะ"
 
@@ -4022,7 +4022,7 @@ msgid "Either action_server_id or filter_id must be provided."
 msgstr "ต้องระบุ action_server_id หรือ filter_id"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Electronics"
 msgstr "อิเล็กทรอนิกส์"
 
@@ -4485,7 +4485,7 @@ msgstr "ติดตามเรา"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.footer_custom
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:ir.ui.view,arch_db:website.template_footer_centered
 #: model_terms:ir.ui.view,arch_db:website.template_footer_contact
 #: model_terms:ir.ui.view,arch_db:website.template_footer_descriptive
@@ -4653,7 +4653,7 @@ msgid "G-XXXXXXXXXX"
 msgstr "G-XXXXXXXXXX"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "GPS &amp; navigation"
 msgstr "GPS และการนำทาง"
 
@@ -5115,7 +5115,7 @@ msgid "Home <span class=\"visually-hidden\">(current)</span>"
 msgstr ""
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Home audio"
 msgstr "เครื่องเสียงบ้าน"
 
@@ -5909,7 +5909,7 @@ msgid "Languages available on your website"
 msgstr "ภาษาที่แสดงในเว็บไซต์ของคุณ"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_thumbnails
 msgid "Laptops"
 msgstr "แล็ปท็อป"
@@ -6627,7 +6627,7 @@ msgstr ""
 "หรือโทรหาพวกเขาได้ทันทีในขณะที่พวกเขากำลังเรียกดูเว็บไซต์ของคุณ"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Monitors"
 msgstr "จอภาพ"
 
@@ -6801,7 +6801,7 @@ msgid "Network Advertising Initiative opt-out page"
 msgstr "หน้าที่เลือกไม่เข้าร่วม Network Advertising Initiative"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Networks"
 msgstr "เครือข่าย"
 
@@ -7051,12 +7051,12 @@ msgid "Off-Canvas Logo"
 msgstr ""
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Office audio"
 msgstr "เครื่องเสียงสำนักงาน"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Office screens"
 msgstr "หน้าจอสำนักงาน"
 
@@ -7763,13 +7763,13 @@ msgid "Progress Bar Weight"
 msgstr "ความหนาแถบความคืบหน้า"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Projectors"
 msgstr "เครื่องฉายภาพ"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_menus_logos
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Promotions"
 msgstr "โปรโมชั่น"
 
@@ -8781,7 +8781,7 @@ msgstr ""
 "elit. <i>Integer posuere erat a ante</i>."
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Smartphones"
 msgstr "สมาร์ทโฟน"
 
@@ -9075,7 +9075,7 @@ msgid "TRANSLATE"
 msgstr "แปล"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_thumbnails
 msgid "Tablets"
 msgstr "แท็บเล็ต"
@@ -9111,7 +9111,7 @@ msgid "Telephone"
 msgstr "โทรศัพท์"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Televisions"
 msgstr "โทรทัศน์"
 
@@ -11354,7 +11354,7 @@ msgid "https://www.leensoft.vn"
 msgstr "https://www.leensoft.vn"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "iPhone"
 msgstr "ไอโฟน"
 

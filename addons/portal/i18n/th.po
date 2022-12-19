@@ -3,7 +3,7 @@
 # 	* portal
 # 
 # Translators:
-# Odoo Thaidev <odoothaidev@gmail.com>, 2022
+# Odoo Thaidev <leansoftthaidev@gmail.com>, 2022
 # Martin Trigaux, 2022
 # Wichanon Jamwutthipreecha, 2022
 # Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2022
@@ -1366,7 +1366,7 @@ msgstr ""
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_record_sidebar
-msgid "odoo"
+msgid "leansoft"
 msgstr ""
 
 #. module: portal

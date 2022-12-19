@@ -16,7 +16,7 @@
 # Harcogourmet, 2022
 # José Cabrera Lozano <jose.cabrera@edukative.es>, 2022
 # CristianCruzParra, 2022
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # marcescu, 2022
 # 
 msgid ""
@@ -96,7 +96,7 @@ msgstr "<small><b>LLEGIR</b></small>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.hr_job_website_inherit
-msgid "<span class=\"bg-odoo\">Published</span>"
+msgid "<span class=\"bg-leansoft\">Published</span>"
 msgstr ""
 
 #. module: website_hr_recruitment
@@ -744,7 +744,7 @@ msgstr "fil d'Ariadna"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
-msgid "e.g. https://www.linkedin.com/in/fpodoo/"
+msgid "e.g. https://www.linkedin.com/in/fpleansoft/"
 msgstr ""
 
 #. module: website_hr_recruitment

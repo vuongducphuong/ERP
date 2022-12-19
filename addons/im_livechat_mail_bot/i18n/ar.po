@@ -41,19 +41,19 @@ msgstr "Mail Bot"
 #, python-format
 msgid ""
 "Not sure what you are doing. Please, type <span "
-"class=\"o_odoobot_command\">:</span> and wait for the propositions. Select "
+"class=\"o_leansoftbot_command\">:</span> and wait for the propositions. Select "
 "one of them and press enter."
 msgstr ""
-"لست متأكداً مما تفعله. قم بكتابة <span class=\"o_odoobot_command\">:</span> "
+"لست متأكداً مما تفعله. قم بكتابة <span class=\"o_leansoftbot_command\">:</span> "
 "وانتظر ظهور المقترحات. اختر إحداها ثم اضغط على إدخال. "
 
 #. module: im_livechat_mail_bot
-#: model:ir.model.fields,field_description:im_livechat_mail_bot.field_res_users__odoobot_state
+#: model:ir.model.fields,field_description:im_livechat_mail_bot.field_res_users__leansoftbot_state
 msgid "OdooBot Status"
 msgstr "حالة OdooBot"
 
 #. module: im_livechat_mail_bot
-#: model:ir.model.fields.selection,name:im_livechat_mail_bot.selection__res_users__odoobot_state__onboarding_canned
+#: model:ir.model.fields.selection,name:im_livechat_mail_bot.selection__res_users__leansoftbot_state__onboarding_canned
 msgid "Onboarding canned"
 msgstr "الرد الجاهز للتهيئة "
 
@@ -61,10 +61,10 @@ msgstr "الرد الجاهز للتهيئة "
 #: code:addons/im_livechat_mail_bot/models/mail_bot.py:0
 #, python-format
 msgid ""
-"That's me! 🎉<br/>Try typing <span class=\"o_odoobot_command\">:</span> to "
+"That's me! 🎉<br/>Try typing <span class=\"o_leansoftbot_command\">:</span> to "
 "use canned responses."
 msgstr ""
-"هذا أنا! 🎉<br/>جرب كتابة <span class=\"o_odoobot_command\">:</span> لاستخدام"
+"هذا أنا! 🎉<br/>جرب كتابة <span class=\"o_leansoftbot_command\">:</span> لاستخدام"
 " الردود الجاهزة. "
 
 #. module: im_livechat_mail_bot

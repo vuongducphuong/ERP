@@ -3,7 +3,7 @@
 # 	* payment
 # 
 # Translators:
-# Bojan Borovnjak <bojan.borovnjak@modoolar.com>, 2022
+# Bojan Borovnjak <bojan.borovnjak@mleansoftlar.com>, 2022
 # Slobodan Simić <slsimic@gmail.com>, 2022
 # Uros Kalajdzic <ukalajdzic@gmail.com>, 2022
 # Martin Trigaux, 2022

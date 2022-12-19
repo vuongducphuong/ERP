@@ -8,7 +8,7 @@
 # Harcogourmet, 2022
 # Carles Antoli <carlesantoli@hotmail.com>, 2022
 # César López Ramírez <cesar.lopez@coopdevs.org>, 2022
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # Quim - eccit <quim@eccit.com>, 2022
 # jabelchi, 2022
 # Jonatan Gk, 2022

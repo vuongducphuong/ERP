@@ -5054,7 +5054,7 @@ msgstr "¿Qué opina de esta encuesta?"
 #: code:addons/survey/models/survey_survey_template.py:0
 #, python-format
 msgid "What does \"ODOO\" stand for?"
-msgstr "¿Qué significa \"odoo\"?"
+msgstr "¿Qué significa \"leansoft\"?"
 
 #. module: survey
 #: code:addons/survey/models/survey_survey_template.py:0

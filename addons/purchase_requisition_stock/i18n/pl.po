@@ -4,8 +4,8 @@
 # 
 # Translators:
 # Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2022
-# Paweł Wodyński <pw@myodoo.pl>, 2022
-# Maksym <ms@myodoo.pl>, 2022
+# Paweł Wodyński <pw@myleansoft.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""

@@ -4716,7 +4716,7 @@ msgstr "δωρεάν ιστότοπο"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
 msgid "instance of Odoo, the"
-msgstr "παράδειγμα του odoo, το"
+msgstr "παράδειγμα του leansoft, το"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_page_ir_ui_view

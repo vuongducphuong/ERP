@@ -21,12 +21,12 @@
 # Tomasz Leppich <t.leppich@gmail.com>, 2022
 # Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022
 # Martin Trigaux, 2022
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Grażyna Grzelak <grazyna.grzelak@openglobe.pl>, 2022
 # Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2022
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
 # Radosław Biegalski <radoslaw.biegalski@openglobe.pl>, 2022
-# Paweł Wodyński <pw@myodoo.pl>, 2022
+# Paweł Wodyński <pw@myleansoft.pl>, 2022
 # Piotr Strębski <strebski@gmail.com>, 2022
 # 
 msgid ""

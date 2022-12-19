@@ -18,7 +18,7 @@
  # Maurizio Delmonte <maurizio.delmonte@gmail.com>, 2018
  # Paolo Valier, 2018
  # Manuela Feliciani <mfeliciani@alice.it>, 2018
- # mbo_odoo <mbo@leensoft.vn>, 2018
+ # mbo_leansoft <mbo@leensoft.vn>, 2018
  # Léonie Bouchat <lbo@leensoft.vn>, 2018
  # maiolif <maiolif@mgftools.com>, 2019
  # Lorenzo Battistini <lorenzo.battistini@agilebg.com>, 2019

@@ -11,7 +11,7 @@
 # ericrolo, 2022
 # M Palau <mpalau@tda.ad>, 2022
 # eriiikgt, 2022
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # marcescu, 2022
 # José Cabrera Lozano <jose.cabrera@edukative.es>, 2022
 # Carles Antoli <carlesantoli@hotmail.com>, 2022
@@ -6470,7 +6470,7 @@ msgid ""
 "This sequence is automatically created by Odoo but you can change it to "
 "customize the reference numbers of your orders lines."
 msgstr ""
-"La seqüència és creat automàticament per odoo però la teva pots canviar-ho "
+"La seqüència és creat automàticament per leansoft però la teva pots canviar-ho "
 "per a personalitzar els números de referència en les teves línies d'ordenis."
 
 #. module: point_of_sale

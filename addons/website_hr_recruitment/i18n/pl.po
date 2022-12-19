@@ -5,7 +5,7 @@
 # Translators:
 # Tomasz Leppich <t.leppich@gmail.com>, 2022
 # Wiktor Kaźmierczak <wik92tor@wp.pl>, 2022
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2022
 # Dawid Prus, 2022
 # Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022
@@ -93,7 +93,7 @@ msgstr ""
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.hr_job_website_inherit
-msgid "<span class=\"bg-odoo\">Published</span>"
+msgid "<span class=\"bg-leansoft\">Published</span>"
 msgstr ""
 
 #. module: website_hr_recruitment
@@ -745,7 +745,7 @@ msgstr ""
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
-msgid "e.g. https://www.linkedin.com/in/fpodoo/"
+msgid "e.g. https://www.linkedin.com/in/fpleansoft/"
 msgstr ""
 
 #. module: website_hr_recruitment

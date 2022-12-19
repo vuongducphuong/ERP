@@ -3,7 +3,7 @@
 # 	* website_sale_product_configurator
 # 
 # Translators:
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Martin Trigaux, 2022
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
 # 

@@ -13,7 +13,7 @@
 # Harcogourmet, 2022
 # jabelchi, 2022
 # marcescu, 2022
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # Quim - eccit <quim@eccit.com>, 2022
 # 
 msgid ""

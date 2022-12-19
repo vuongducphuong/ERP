@@ -3,7 +3,7 @@
 # 	* base_vat
 # 
 # Translators:
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Rafał Kozak <rafal.kozak@openglobe.pl>, 2022
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
 # Tomasz Leppich <t.leppich@gmail.com>, 2022

@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Kristoffer Grundström <lovaren@gmail.com>, 2022
-# fah_odoo <fah@leensoft.vn>, 2022
+# fah_leansoft <fah@leensoft.vn>, 2022
 # Simon S, 2022
 # Kim Asplund <kim.asplund@gmail.com>, 2022
 # Martin Trigaux, 2022

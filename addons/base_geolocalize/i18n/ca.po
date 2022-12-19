@@ -3,7 +3,7 @@
 # 	* base_geolocalize
 # 
 # Translators:
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # Martin Trigaux, 2022
 # Harcogourmet, 2022
 # Jonatan Gk, 2022

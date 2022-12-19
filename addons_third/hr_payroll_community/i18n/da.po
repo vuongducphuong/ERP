@@ -4,7 +4,7 @@
  # 
  # Translators:
  # peso <peer.sommerlund@gmail.com>, 2018
- # Jesper Carstensen <jc@danodoo.dk>, 2018
+ # Jesper Carstensen <jc@danleansoft.dk>, 2018
  # Jarnhold Nattestad <nattestads@gmail.com>, 2018
  # Ejner Sønniksen <ejner@vkdata.dk>, 2018
  # Martin Trigaux, 2018

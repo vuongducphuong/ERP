@@ -1467,7 +1467,7 @@ msgstr "访问令牌应是唯一的。"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_menus_logos
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Accessories"
 msgstr "配件"
 
@@ -2416,7 +2416,7 @@ msgid "Call-to-action"
 msgstr "调用动作"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Camera"
 msgstr "摄像头"
 
@@ -2857,18 +2857,18 @@ msgstr "为任何规模的团队完成CRM"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:website.page,arch_db:website.bs_debug_page
 msgid "Components"
 msgstr "组件"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Computers"
 msgstr "电脑"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Computers &amp; Devices"
 msgstr "电脑 &amp; 设备"
 
@@ -3564,7 +3564,7 @@ msgid "Desktop"
 msgstr "桌面"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Desktop computers"
 msgstr "台式机"
 
@@ -4035,7 +4035,7 @@ msgid "Either action_server_id or filter_id must be provided."
 msgstr "必须提供 action_server_id 或 filter_id。"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Electronics"
 msgstr "电子产品"
 
@@ -4493,7 +4493,7 @@ msgstr "关注我们"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.footer_custom
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:ir.ui.view,arch_db:website.template_footer_centered
 #: model_terms:ir.ui.view,arch_db:website.template_footer_contact
 #: model_terms:ir.ui.view,arch_db:website.template_footer_descriptive
@@ -4659,7 +4659,7 @@ msgid "G-XXXXXXXXXX"
 msgstr "G-XXXXXXXXXX"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "GPS &amp; navigation"
 msgstr "GPS &amp; 导航"
 
@@ -5109,7 +5109,7 @@ msgid "Home <span class=\"visually-hidden\">(current)</span>"
 msgstr "首页<span class=\"visually-hidden\">(当前)</span>"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Home audio"
 msgstr "家庭音响"
 
@@ -5891,7 +5891,7 @@ msgid "Languages available on your website"
 msgstr "在您的网站上可以使用的语言"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_thumbnails
 msgid "Laptops"
 msgstr "笔记本电脑"
@@ -6602,7 +6602,7 @@ msgstr ""
 "社交应用程序浏览您的网站时监控他们。使用实时聊天请求或推送通知，只需单击一下即可与他们互动。如果他们填写了您的一份表格，您可以向他们发送短信息，或在他们浏览您的网站时立即致电给他们。"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Monitors"
 msgstr "显示器"
 
@@ -6774,7 +6774,7 @@ msgid "Network Advertising Initiative opt-out page"
 msgstr "网络广告倡议选择退出页面"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Networks"
 msgstr "网络"
 
@@ -7021,12 +7021,12 @@ msgid "Off-Canvas Logo"
 msgstr "画布外标志"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Office audio"
 msgstr "办公室音响"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Office screens"
 msgstr "办公室屏幕"
 
@@ -7731,13 +7731,13 @@ msgid "Progress Bar Weight"
 msgstr "进度条权重"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Projectors"
 msgstr "投影仪"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_menus_logos
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Promotions"
 msgstr "促销"
 
@@ -8739,7 +8739,7 @@ msgstr ""
 "<i>Integer posuere erat a ante</i>."
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Smartphones"
 msgstr "智能手机"
 
@@ -9031,7 +9031,7 @@ msgid "TRANSLATE"
 msgstr "翻译"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_thumbnails
 msgid "Tablets"
 msgstr "平板电脑"
@@ -9067,7 +9067,7 @@ msgid "Telephone"
 msgstr "电话"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Televisions"
 msgstr "电视"
 
@@ -11258,7 +11258,7 @@ msgid "https://www.leensoft.vn"
 msgstr "https://www.leensoft.vn"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "iPhone"
 msgstr "iPhone"
 

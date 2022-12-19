@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2022
-# Erwin van der Ploeg <erwin@odooexperts.nl>, 2022
+# Erwin van der Ploeg <erwin@leansoftexperts.nl>, 2022
 # Jolien De Paepe, 2022
 # 
 msgid ""
@@ -88,8 +88,8 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail/static/src/models/notification_request_view.js:0
 #, python-format
-msgid "%(odoobotName)s has a request"
-msgstr "%(odoobotName)s heeft een verzoek"
+msgid "%(leansoftbotName)s has a request"
+msgstr "%(leansoftbotName)s heeft een verzoek"
 
 #. module: mail
 #: code:addons/mail/wizard/mail_wizard_invite.py:0

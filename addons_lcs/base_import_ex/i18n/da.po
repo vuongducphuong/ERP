@@ -6,7 +6,7 @@
 # Pernille Kristensen <pernillekristensen1994@gmail.com>, 2017
 # Morten Schou <ms@msteknik.dk>, 2017
 # Sanne Kristensen <sanne@vkdata.dk>, 2017
-# Jesper Carstensen <jc@danodoo.dk>, 2017
+# Jesper Carstensen <jc@danleansoft.dk>, 2017
 # Martin Trigaux, 2017
 # jonas jensen <j.jensen@tcomp.dk>, 2017
 # JonathanStein <jstein@image.dk>, 2017

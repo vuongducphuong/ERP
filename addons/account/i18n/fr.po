@@ -7,7 +7,7 @@
 # Fabien Pinckaers <fp@openerp.com>, 2022
 # Olivier ANDRE <frsw194@gmail.com>, 2022
 # Damien Bouvy <dbo@leensoft.vn>, 2022
-# laje_odoo, 2022
+# laje_leansoft, 2022
 # Malika Berardi, 2022
 # Loïc De Greef, 2022
 # Pierre Verkest <pierreverkest84@gmail.com>, 2022
@@ -9869,7 +9869,7 @@ msgid "October"
 msgstr "Octobre"
 
 #. module: account
-#: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__odoo
+#: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__leansoft
 msgid "Odoo"
 msgstr "Odoo"
 

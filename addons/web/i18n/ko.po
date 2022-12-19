@@ -5,7 +5,7 @@
 # Translators:
 # Linkup <link-up@naver.com>, 2022
 # Seongseok Shin <shinss61@hotmail.com>, 2022
-# Mark Lee <odoos@soti.33mail.com>, 2022
+# Mark Lee <leansofts@soti.33mail.com>, 2022
 # JH CHOI <hwangtog@gmail.com>, 2022
 # Martin Trigaux, 2022
 # Sarah Park, 2022

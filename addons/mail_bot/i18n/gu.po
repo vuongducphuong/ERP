@@ -34,7 +34,7 @@ msgid "Contact"
 msgstr "સંપર્ક"
 
 #. module: mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Disabled"
 msgstr ""
 
@@ -115,7 +115,7 @@ msgid "ID"
 msgstr "ઓળખ"
 
 #. module: mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Idle"
 msgstr ""
 
@@ -146,7 +146,7 @@ msgid ""
 msgstr ""
 
 #. module: mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Not initialized"
 msgstr ""
 
@@ -176,7 +176,7 @@ msgid ""
 msgstr ""
 
 #. module: mail_bot
-#: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_state
+#: model:ir.model.fields,field_description:mail_bot.field_res_users__leansoftbot_state
 msgid "OdooBot Status"
 msgstr ""
 
@@ -188,27 +188,27 @@ msgid "OdooBot has a request"
 msgstr ""
 
 #. module: mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Onboarding attachement"
 msgstr ""
 
 #. module: mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Onboarding canned"
 msgstr ""
 
 #. module: mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Onboarding command"
 msgstr ""
 
 #. module: mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Onboarding emoji"
 msgstr ""
 
 #. module: mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Onboarding ping"
 msgstr ""
 
@@ -238,7 +238,7 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write \"@odoobot\" and select me."
+"Write \"@leansoftbot\" and select me."
 msgstr ""
 
 #. module: mail_bot

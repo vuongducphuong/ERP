@@ -89,8 +89,8 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail/static/src/models/notification_request_view.js:0
 #, python-format
-msgid "%(odoobotName)s has a request"
-msgstr "%(odoobotName)s tiene una solicitud"
+msgid "%(leansoftbotName)s has a request"
+msgstr "%(leansoftbotName)s tiene una solicitud"
 
 #. module: mail
 #: code:addons/mail/wizard/mail_wizard_invite.py:0

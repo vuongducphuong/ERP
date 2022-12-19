@@ -1385,8 +1385,8 @@ msgstr "přihlášen"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_record_sidebar
-msgid "odoo"
-msgstr "odoo"
+msgid "leansoft"
+msgstr "leansoft"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security

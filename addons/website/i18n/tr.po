@@ -1458,7 +1458,7 @@ msgstr "Erişim belirteci benzersiz olmalıdır."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_menus_logos
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Accessories"
 msgstr "Aksesuarlar"
 
@@ -2422,7 +2422,7 @@ msgid "Call-to-action"
 msgstr "Eylem Çağrısı"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Camera"
 msgstr "Kamera"
 
@@ -2876,18 +2876,18 @@ msgstr "Her boyutta takım için CRM'i tamamlayın"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:website.page,arch_db:website.bs_debug_page
 msgid "Components"
 msgstr "Bileşenler"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Computers"
 msgstr "Bigisayarlar"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Computers &amp; Devices"
 msgstr "Bilgisayarlar &amp; Cihazlar"
 
@@ -3588,7 +3588,7 @@ msgid "Desktop"
 msgstr "Masaüstü"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Desktop computers"
 msgstr "Masaüstü bilgisayarlar"
 
@@ -4063,7 +4063,7 @@ msgid "Either action_server_id or filter_id must be provided."
 msgstr "action_server_id veya filter_id sağlanmalıdır."
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Electronics"
 msgstr "Elektronik"
 
@@ -4527,7 +4527,7 @@ msgstr "Bizi takip et"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.footer_custom
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:ir.ui.view,arch_db:website.template_footer_centered
 #: model_terms:ir.ui.view,arch_db:website.template_footer_contact
 #: model_terms:ir.ui.view,arch_db:website.template_footer_descriptive
@@ -4697,7 +4697,7 @@ msgid "G-XXXXXXXXXX"
 msgstr "G-XXXXXXXXXX"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "GPS &amp; navigation"
 msgstr "GPS &amp; navigasyon"
 
@@ -5164,7 +5164,7 @@ msgid "Home <span class=\"visually-hidden\">(current)</span>"
 msgstr ""
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Home audio"
 msgstr "Ev sesi"
 
@@ -5957,7 +5957,7 @@ msgid "Languages available on your website"
 msgstr "Sitenizde diller mevcut"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_thumbnails
 msgid "Laptops"
 msgstr "Dizüstü"
@@ -6674,7 +6674,7 @@ msgstr ""
 "onlara SMS gönderebilir veya web sitenize göz atarken hemen arayabilirsiniz."
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Monitors"
 msgstr "Monitörler"
 
@@ -6850,7 +6850,7 @@ msgid "Network Advertising Initiative opt-out page"
 msgstr "Ağ Reklamcılığı Girişimi devre dışı bırakma sayfası"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Networks"
 msgstr "Ağlar"
 
@@ -7101,12 +7101,12 @@ msgid "Off-Canvas Logo"
 msgstr ""
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Office audio"
 msgstr "Ofis sesi"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Office screens"
 msgstr "Ofis ekranları"
 
@@ -7816,13 +7816,13 @@ msgid "Progress Bar Weight"
 msgstr "İlerleme Çubuğu Ağırlığı"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Projectors"
 msgstr "Projektörler"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_menus_logos
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Promotions"
 msgstr "Promosyonlar"
 
@@ -8834,7 +8834,7 @@ msgstr ""
 " <i>Tamsayı posuere erat a ante</i>."
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Smartphones"
 msgstr "Kuluçka Makineleri"
 
@@ -9133,7 +9133,7 @@ msgid "TRANSLATE"
 msgstr "ÇEVİR"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_thumbnails
 msgid "Tablets"
 msgstr "Tabletler"
@@ -9169,7 +9169,7 @@ msgid "Telephone"
 msgstr "Telefon"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Televisions"
 msgstr "Televizyon"
 
@@ -11449,7 +11449,7 @@ msgid "https://www.leensoft.vn"
 msgstr "https://www.leensoft.vn"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "iPhone"
 msgstr "IPhone"
 

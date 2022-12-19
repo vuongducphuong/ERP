@@ -9,7 +9,7 @@
 # Sandra Franch <sandra.franch@upc.edu>, 2022
 # Jonatan Gk, 2022
 # marcescu, 2022
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # Martin Trigaux, 2022
 # Cristian Cruz, 2022
 # 

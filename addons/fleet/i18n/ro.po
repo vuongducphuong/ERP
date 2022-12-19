@@ -6,7 +6,7 @@
 # Hongu Cosmin <cosmin513@gmail.com>, 2022
 # Cozmin Candea <office@terrabit.ro>, 2022
 # Foldi Robert <foldirobert@nexterp.ro>, 2022
-# nle_odoo, 2022
+# nle_leansoft, 2022
 # Dorin Hongu <dhongu@gmail.com>, 2022
 # Martin Trigaux, 2022
 # 

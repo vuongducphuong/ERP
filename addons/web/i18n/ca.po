@@ -13,7 +13,7 @@
 # M Palau <mpalau@tda.ad>, 2022
 # Quim - eccit <quim@eccit.com>, 2022
 # eriiikgt, 2022
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # Manel Fernandez Ramirez <manelfera@outlook.com>, 2022
 # marcescu, 2022
 # Josep Anton Belchi, 2022

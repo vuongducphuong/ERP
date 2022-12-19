@@ -3,7 +3,7 @@
 # 	* hr_recruitment_survey
 # 
 # Translators:
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # Martin Trigaux, 2022
 # Carles Antoli <carlesantoli@hotmail.com>, 2022
 # Manel Fernandez Ramirez <manelfera@outlook.com>, 2022

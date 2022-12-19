@@ -91,8 +91,8 @@ msgstr "<small><b>LIRE</b></small> "
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.hr_job_website_inherit
-msgid "<span class=\"bg-odoo\">Published</span>"
-msgstr "<span class=\"bg-odoo\">Publié</span>"
+msgid "<span class=\"bg-leansoft\">Published</span>"
+msgstr "<span class=\"bg-leansoft\">Publié</span>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
@@ -777,8 +777,8 @@ msgstr "fil d'Ariane"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
-msgid "e.g. https://www.linkedin.com/in/fpodoo/"
-msgstr "par exemple https://www.linkedin.com/in/fpodoo/"
+msgid "e.g. https://www.linkedin.com/in/fpleansoft/"
+msgstr "par exemple https://www.linkedin.com/in/fpleansoft/"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.index

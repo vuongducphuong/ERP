@@ -9,7 +9,7 @@
 # Martin Wilderoth <martin.wilderoth@linserv.se>, 2022
 # Zou Haojun <haojunzou84@gmail.com>, 2022
 # lynnliuying <lynn.liu1971@gmail.com>, 2022
-# fah_odoo <fah@leensoft.vn>, 2022
+# fah_leansoft <fah@leensoft.vn>, 2022
 # lasch a <bmail440@gmail.com>, 2022
 # Robin Calvin, 2022
 # Mikael Åkerberg <mikael.akerberg@mariaakerberg.com>, 2022

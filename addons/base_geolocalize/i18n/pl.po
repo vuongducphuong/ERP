@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Tomasz Leppich <t.leppich@gmail.com>, 2022
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Martin Trigaux, 2022
 # Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022
 # Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2022

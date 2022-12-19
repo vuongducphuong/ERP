@@ -5,7 +5,7 @@
 # Translators:
 # Martin Trigaux, 2018
 # Marc Tormo i Bochaca <mtbochaca@gmail.com>, 2018
-# RGB Consulting <odoo@rgbconsulting.com>, 2018
+# RGB Consulting <leansoft@rgbconsulting.com>, 2018
 # Quim - eccit <quim@eccit.com>, 2018
 # 
 msgid ""

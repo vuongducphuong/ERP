@@ -37,8 +37,8 @@ msgstr ""
 
 #. module: sales_team
 #: model_terms:ir.ui.view,arch_db:sales_team.crm_team_member_view_kanban
-msgid "<span class=\"bg-odoo\">Archived</span>"
-msgstr "<span class=\"bg-odoo\">Archivado</span>"
+msgid "<span class=\"bg-leansoft\">Archived</span>"
+msgstr "<span class=\"bg-leansoft\">Archivado</span>"
 
 #. module: sales_team
 #: model_terms:ir.ui.view,arch_db:sales_team.crm_team_view_kanban_dashboard

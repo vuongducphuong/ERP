@@ -5,7 +5,7 @@
  # Translators:
  # Thomas Pot <thomas@open2bizz.nl>, 2018
  # Yenthe Van Ginneken <yenthespam@gmail.com>, 2018
- # Erwin van der Ploeg <erwin@odooexperts.nl>, 2018
+ # Erwin van der Ploeg <erwin@leansoftexperts.nl>, 2018
  # Martin Trigaux, 2019
  # 
  msgid ""

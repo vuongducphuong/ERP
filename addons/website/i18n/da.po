@@ -1428,7 +1428,7 @@ msgstr "Adgangs token bør være unik."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_menus_logos
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Accessories"
 msgstr "Tilbehør"
 
@@ -2390,7 +2390,7 @@ msgid "Call-to-action"
 msgstr "Call-to-action"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Camera"
 msgstr "Kamera"
 
@@ -2843,18 +2843,18 @@ msgstr "Komplet CRM for teams af alle størrelser"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:website.page,arch_db:website.bs_debug_page
 msgid "Components"
 msgstr "Komponenter"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Computers"
 msgstr "Computers"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Computers &amp; Devices"
 msgstr "Computere &amp; Enheder"
 
@@ -3556,7 +3556,7 @@ msgid "Desktop"
 msgstr "Skrivebord"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Desktop computers"
 msgstr "Stationære computere"
 
@@ -4031,7 +4031,7 @@ msgid "Either action_server_id or filter_id must be provided."
 msgstr "Enten action_server_id eller filter_id skal være angivet."
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Electronics"
 msgstr "Elektronik"
 
@@ -4500,7 +4500,7 @@ msgstr "Følg os:"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.footer_custom
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:ir.ui.view,arch_db:website.template_footer_centered
 #: model_terms:ir.ui.view,arch_db:website.template_footer_contact
 #: model_terms:ir.ui.view,arch_db:website.template_footer_descriptive
@@ -4670,7 +4670,7 @@ msgid "G-XXXXXXXXXX"
 msgstr "G-XXXXXXXXXX"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "GPS &amp; navigation"
 msgstr "GPS &amp; navigation"
 
@@ -5138,7 +5138,7 @@ msgid "Home <span class=\"visually-hidden\">(current)</span>"
 msgstr ""
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Home audio"
 msgstr "Hjemme audio"
 
@@ -5933,7 +5933,7 @@ msgid "Languages available on your website"
 msgstr "Tilgængelige sprog på din hjemmeside"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_thumbnails
 msgid "Laptops"
 msgstr "Bærbare"
@@ -6649,7 +6649,7 @@ msgstr ""
 "hjemmeside."
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Monitors"
 msgstr "Skærme"
 
@@ -6826,7 +6826,7 @@ msgid "Network Advertising Initiative opt-out page"
 msgstr "Netværk Reklame Initiativ udmeldings side"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Networks"
 msgstr "Netværker"
 
@@ -7077,12 +7077,12 @@ msgid "Off-Canvas Logo"
 msgstr ""
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Office audio"
 msgstr "Kontor Audio"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Office screens"
 msgstr "Kontor skærme"
 
@@ -7791,13 +7791,13 @@ msgid "Progress Bar Weight"
 msgstr "Fremskridt Bar Vægt"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Projectors"
 msgstr "Projektører"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_menus_logos
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Promotions"
 msgstr "Kampagner"
 
@@ -8808,7 +8808,7 @@ msgstr ""
 " <i>Integer posuere erat a ante</i>."
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Smartphones"
 msgstr ""
 
@@ -9106,7 +9106,7 @@ msgid "TRANSLATE"
 msgstr "OVERSÆT"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_thumbnails
 msgid "Tablets"
 msgstr ""
@@ -9142,7 +9142,7 @@ msgid "Telephone"
 msgstr "Telefon"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "Televisions"
 msgstr ""
 
@@ -11404,7 +11404,7 @@ msgid "https://www.leensoft.vn"
 msgstr "https://www.leensoft.vn"
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
+#: model_terms:ir.ui.view,arch_db:website.s_mega_menu_leansoft_menu
 msgid "iPhone"
 msgstr ""
 

@@ -85,8 +85,8 @@ msgstr "%(email)s不是有效的电子邮件。需要创建新的客户。"
 #. openerp-web
 #: code:addons/mail/static/src/models/notification_request_view.js:0
 #, python-format
-msgid "%(odoobotName)s has a request"
-msgstr "%(odoobotName)s有请求"
+msgid "%(leansoftbotName)s has a request"
+msgstr "%(leansoftbotName)s有请求"
 
 #. module: mail
 #: code:addons/mail/wizard/mail_wizard_invite.py:0

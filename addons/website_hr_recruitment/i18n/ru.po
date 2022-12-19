@@ -98,8 +98,8 @@ msgstr "<small><b>ЧИТАТЬ</b></small>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.hr_job_website_inherit
-msgid "<span class=\"bg-odoo\">Published</span>"
-msgstr "<span class=\"bg-odoo\">Опубликовано</span>"
+msgid "<span class=\"bg-leansoft\">Published</span>"
+msgstr "<span class=\"bg-leansoft\">Опубликовано</span>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
@@ -781,8 +781,8 @@ msgstr "строка навигации"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
-msgid "e.g. https://www.linkedin.com/in/fpodoo/"
-msgstr "например, https://www.linkedin.com/in/fpodoo/"
+msgid "e.g. https://www.linkedin.com/in/fpleansoft/"
+msgstr "например, https://www.linkedin.com/in/fpleansoft/"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.index

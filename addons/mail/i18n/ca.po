@@ -17,7 +17,7 @@
 # Pete M, 2022
 # marcescu, 2022
 # M Palau <mpalau@tda.ad>, 2022
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # Manel Fernandez Ramirez <manelfera@outlook.com>, 2022
 # Eric Antones <eantones@users.noreply.github.com>, 2022
 # eriiikgt, 2022
@@ -101,7 +101,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail/static/src/models/notification_request_view.js:0
 #, python-format
-msgid "%(odoobotName)s has a request"
+msgid "%(leansoftbotName)s has a request"
 msgstr ""
 
 #. module: mail

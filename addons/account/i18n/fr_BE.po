@@ -8776,7 +8776,7 @@ msgid "October"
 msgstr ""
 
 #. module: account
-#: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__odoo
+#: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__leansoft
 msgid "Odoo"
 msgstr ""
 

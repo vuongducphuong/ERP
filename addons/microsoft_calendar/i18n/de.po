@@ -136,7 +136,7 @@ msgid "Created on"
 msgstr "Erstellt am"
 
 #. module: microsoft_calendar
-#: model:ir.model.fields.selection,name:microsoft_calendar.selection__microsoft_calendar_account_reset__delete_policy__delete_odoo
+#: model:ir.model.fields.selection,name:microsoft_calendar.selection__microsoft_calendar_account_reset__delete_policy__delete_leansoft
 msgid "Delete from Odoo"
 msgstr "Aus Odoo löschen"
 

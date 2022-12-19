@@ -3,7 +3,7 @@
 # 	* pos_adyen
 # 
 # Translators:
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""

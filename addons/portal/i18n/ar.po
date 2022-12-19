@@ -1389,7 +1389,7 @@ msgstr "تم تسجيل الدخول"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_record_sidebar
-msgid "odoo"
+msgid "leansoft"
 msgstr "أودو"
 
 #. module: portal

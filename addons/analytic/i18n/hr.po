@@ -494,7 +494,7 @@ msgid ""
 "                analytic accounts. You can track costs and revenues to analyse\n"
 "                your margins easily."
 msgstr ""
-"U odoo-u ponude u prodaji i projekti su implementirane korištenjem\n"
+"U leansoft-u ponude u prodaji i projekti su implementirane korištenjem\n"
 "analitičkih konta. Možete pratiti troškove i prihode kako bi jednostavno analizirali poslovanje "
 
 #. module: analytic

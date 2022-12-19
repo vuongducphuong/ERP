@@ -6189,7 +6189,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/account/static/src/xml/account_reconciliation.xml:24
 #, python-format
-msgid "Let odoo try to reconcile entries for the user"
+msgid "Let leansoft try to reconcile entries for the user"
 msgstr ""
 
 #. module: account

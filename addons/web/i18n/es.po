@@ -4,7 +4,7 @@
 # 
 # Translators:
 # José Vicente <txusev@gmail.com>, 2022
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # e2f <projects@e2f.com>, 2022
 # Martin Trigaux, 2022
 # Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2022

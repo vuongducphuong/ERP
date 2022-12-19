@@ -33,10 +33,10 @@
 # Paweł Michoń <michon.pawel@wp.pl>, 2022
 # zieloo <zieloo@gmail.com>, 2022
 # Piotr Strębski <strebski@gmail.com>, 2022
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Rafał Kozak <rafal.kozak@openglobe.pl>, 2022
 # Ludwik Trammer <ludwik@gmail.com>, 2022
-# Paweł Wodyński <pw@myodoo.pl>, 2022
+# Paweł Wodyński <pw@myleansoft.pl>, 2022
 # Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2022
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
 # Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2022
@@ -9415,7 +9415,7 @@ msgid "October"
 msgstr "Październik"
 
 #. module: account
-#: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__odoo
+#: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__leansoft
 msgid "Odoo"
 msgstr "Odoo"
 

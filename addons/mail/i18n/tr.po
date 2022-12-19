@@ -100,7 +100,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/mail/static/src/models/notification_request_view.js:0
 #, python-format
-msgid "%(odoobotName)s has a request"
+msgid "%(leansoftbotName)s has a request"
 msgstr ""
 
 #. module: mail

@@ -6,7 +6,7 @@
 # Martin Trigaux, 2022
 # Amin Cheloh <nineamin@hotmail.com>, 2022
 # Wichanon Jamwutthipreecha, 2022
-# Odoo Thaidev <odoothaidev@gmail.com>, 2022
+# Odoo Thaidev <leansoftthaidev@gmail.com>, 2022
 # Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2022
 # 
 msgid ""

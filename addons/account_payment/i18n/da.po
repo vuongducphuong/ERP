@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Mads Søndergaard, 2022
-# Jesper Carstensen <info@danodoo.dk>, 2022
+# Jesper Carstensen <info@danleansoft.dk>, 2022
 # lhmflexerp <lhm@flexerp.dk>, 2022
 # Martin Trigaux, 2022
 # 

@@ -3,7 +3,7 @@
 # 	* hr_recruitment
 # 
 # Translators:
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # ericrolo, 2022
 # AncesLatino2004, 2022
 # Susanna Pujol, 2022

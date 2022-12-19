@@ -3,7 +3,7 @@
 # 	* event_crm
 # 
 # Translators:
-# Erwin van der Ploeg <erwin@odooexperts.nl>, 2022
+# Erwin van der Ploeg <erwin@leansoftexperts.nl>, 2022
 # Martin Trigaux, 2022
 # Gunther Clauwaert <gclauwae@hotmail.com>, 2022
 # 

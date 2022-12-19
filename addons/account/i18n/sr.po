@@ -7,7 +7,7 @@
 # Đorđe Cvijanović <cdorde@gmail.com>, 2022
 # Bojan Milovanovic <bojan.milovanovic@gmail.com>, 2022
 # Uros Kalajdzic <ukalajdzic@gmail.com>, 2022
-# Bojan Borovnjak <bojan.borovnjak@modoolar.com>, 2022
+# Bojan Borovnjak <bojan.borovnjak@mleansoftlar.com>, 2022
 # Martin Trigaux, 2022
 # Slobodan Simić <slsimic@gmail.com>, 2022
 # Geoinfo d.o.o. <geoinfobih@gmail.com>, 2022
@@ -9268,7 +9268,7 @@ msgid "October"
 msgstr "Oktobar"
 
 #. module: account
-#: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__odoo
+#: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__leansoft
 msgid "Odoo"
 msgstr ""
 

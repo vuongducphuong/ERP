@@ -3,7 +3,7 @@
 # * report_xml
 #
 # Translators:
-# OCA Transbot <transbot@odoo-community.org>, 2017
+# OCA Transbot <transbot@leansoft-community.org>, 2017
 # Niki Waibel <niki.waibel@gmail.com>, 2017
 msgid ""
 msgstr ""

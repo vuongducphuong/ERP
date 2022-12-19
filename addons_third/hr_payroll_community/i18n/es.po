@@ -3,7 +3,7 @@
  # * hr_payroll_community
  # 
  # Translators:
- # nle_odoo, 2018
+ # nle_leansoft, 2018
  # Diego de cos <diegodecos@hotmail.com>, 2018
  # Cristopher Cravioto <ccr@leensoft.vn>, 2018
  # Israel Cevallos <israel.cevallos1792@gmail.com>, 2018

@@ -92,8 +92,8 @@ msgstr "<small><b>MÁS INFORMACIÓN</b></small>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.hr_job_website_inherit
-msgid "<span class=\"bg-odoo\">Published</span>"
-msgstr "<span class=\"bg-odoo\">Publicado</span>"
+msgid "<span class=\"bg-leansoft\">Published</span>"
+msgstr "<span class=\"bg-leansoft\">Publicado</span>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
@@ -780,8 +780,8 @@ msgstr "migas de pan"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
-msgid "e.g. https://www.linkedin.com/in/fpodoo/"
-msgstr "Por ejemplo, https://www.linkedin.com/in/fpodoo/"
+msgid "e.g. https://www.linkedin.com/in/fpleansoft/"
+msgstr "Por ejemplo, https://www.linkedin.com/in/fpleansoft/"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.index

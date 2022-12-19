@@ -40,14 +40,14 @@ msgid "Help, English"
 msgstr ""
 
 #. module: test_translation_import
-#. odoo-python
+#. leansoft-python
 #: code:addons/test_translation_import/models/models.py:0
 #, python-format
 msgid "Code, English"
 msgstr ""
 
 #. module: test_translation_import
-#. odoo-python
+#. leansoft-python
 #: code:addons/test_translation_import/models/models.py:0
 #, python-format
 msgid "Code Lazy, English"

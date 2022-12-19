@@ -249,7 +249,7 @@ msgstr "该密码已被使用"
 msgid ""
 "Those trackers can be used in Google Analytics to track clicks and visitors,"
 " or in Odoo reports to track opportunities and related revenues."
-msgstr "这些跟踪器可以被谷歌分析去跟踪点击和访问，或者在odoo的报表里跟踪机会和相关收益。"
+msgstr "这些跟踪器可以被谷歌分析去跟踪点击和访问，或者在leansoft的报表里跟踪机会和相关收益。"
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url

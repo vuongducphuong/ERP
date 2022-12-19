@@ -4,10 +4,10 @@
 # 
 # Translators:
 # Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2022
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
 # Radosław Biegalski <radoslaw.biegalski@openglobe.pl>, 2022
-# Paweł Wodyński <pw@myodoo.pl>, 2022
+# Paweł Wodyński <pw@myleansoft.pl>, 2022
 # Tomasz Leppich <t.leppich@gmail.com>, 2022
 # Jacek Michalski <michalski.jck@gmail.com>, 2022
 # Martin Trigaux, 2022

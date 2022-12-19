@@ -3,7 +3,7 @@
 # 	* crm_iap_enrich
 # 
 # Translators:
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Piotr Strębski <strebski@gmail.com>, 2022
 # 
 msgid ""

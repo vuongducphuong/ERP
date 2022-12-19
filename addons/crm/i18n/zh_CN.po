@@ -1032,7 +1032,7 @@ msgstr "转换为商机"
 msgid ""
 "Convert visitors of your website into leads and perform data enrichment "
 "based on their IP address"
-msgstr "假如填了联系我们那个页面上的表单，则访客所填写的表单信息，将被odoo自动转成一条线索，出现在CRM线索列表中。"
+msgstr "假如填了联系我们那个页面上的表单，则访客所填写的表单信息，将被leansoft自动转成一条线索，出现在CRM线索列表中。"
 
 #. module: crm
 #: model:ir.model.fields.selection,name:crm.selection__crm_lead__email_state__correct

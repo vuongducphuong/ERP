@@ -6,7 +6,7 @@
 # ILMIR <karamov@it-projects.info>, 2022
 # Irina Fedulova <istartlin@gmail.com>, 2022
 # Диляра Дельтаева <dilya.kz93@gmail.com>, 2022
-# nle_odoo, 2022
+# nle_leansoft, 2022
 # Denis Trepalin <zekarious@gmail.com>, 2022
 # Collex100, 2022
 # Ivan Kropotkin <yelizariev@itpp.dev>, 2022

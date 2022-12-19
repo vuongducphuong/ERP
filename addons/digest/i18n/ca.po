@@ -7,7 +7,7 @@
 # Manel Fernandez Ramirez <manelfera@outlook.com>, 2022
 # jabelchi, 2022
 # Arnau Ros, 2022
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # Carles Antoli <carlesantoli@hotmail.com>, 2022
 # Martin Trigaux, 2022
 # Quim - eccit <quim@eccit.com>, 2022
@@ -39,8 +39,8 @@ msgstr "<span class=\"button\" id=\"button_open_report\">Obre l'informe</span>"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_mail_main
-msgid "<span class=\"odoo_link_text\">Odoo</span>"
-msgstr "<span class=\"odoo_link_text\">Odoo</span>"
+msgid "<span class=\"leansoft_link_text\">Odoo</span>"
+msgstr "<span class=\"leansoft_link_text\">Odoo</span>"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_mail_main

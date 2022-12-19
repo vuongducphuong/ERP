@@ -3,9 +3,9 @@
 # 	* website_event_exhibitor
 # 
 # Translators:
-# Odoo Experts Consultants <consultants@odooexperts.nl>, 2022
+# Odoo Experts Consultants <consultants@leansoftexperts.nl>, 2022
 # Martin Trigaux, 2022
-# Erwin van der Ploeg <erwin@odooexperts.nl>, 2022
+# Erwin van der Ploeg <erwin@leansoftexperts.nl>, 2022
 # Jolien De Paepe, 2022
 # 
 msgid ""

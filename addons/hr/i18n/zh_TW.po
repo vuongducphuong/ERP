@@ -3216,7 +3216,7 @@ msgid ""
 "               can easily find all the information you need for each person;\n"
 "               contact data, job position, availability, etc."
 msgstr ""
-"只需在odoo員工資料庫快速瀏覽，您\n"
+"只需在leansoft員工資料庫快速瀏覽，您\n"
 "可以很容易地找到您所需要的每個人\n"
 "的資訊、聯絡人資料、工作職位、可用性等。"
 

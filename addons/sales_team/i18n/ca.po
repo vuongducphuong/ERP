@@ -8,7 +8,7 @@
 # eriiikgt, 2022
 # Marc Tormo i Bochaca <mtbochaca@gmail.com>, 2022
 # jabelchi, 2022
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # Josep Sànchez <papapep@gmx.com>, 2022
 # Manel Fernandez Ramirez <manelfera@outlook.com>, 2022
 # marcescu, 2022
@@ -42,7 +42,7 @@ msgstr ""
 
 #. module: sales_team
 #: model_terms:ir.ui.view,arch_db:sales_team.crm_team_member_view_kanban
-msgid "<span class=\"bg-odoo\">Archived</span>"
+msgid "<span class=\"bg-leansoft\">Archived</span>"
 msgstr ""
 
 #. module: sales_team

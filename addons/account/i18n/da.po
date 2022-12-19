@@ -8,7 +8,7 @@
 # Ejner Sønniksen <ejner@vkdata.dk>, 2022
 # Alex Lyngsøe <al@flexerp.dk>, 2022
 # Jarnhold Nattestad <nattestads@gmail.com>, 2022
-# Jesper Carstensen <info@danodoo.dk>, 2022
+# Jesper Carstensen <info@danleansoft.dk>, 2022
 # Sanne Kristensen <sanne@vkdata.dk>, 2022
 # lhmflexerp <lhm@flexerp.dk>, 2022
 # Mads Søndergaard, 2022
@@ -9572,7 +9572,7 @@ msgid "October"
 msgstr "Oktober"
 
 #. module: account
-#: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__odoo
+#: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__leansoft
 msgid "Odoo"
 msgstr "Odoo"
 

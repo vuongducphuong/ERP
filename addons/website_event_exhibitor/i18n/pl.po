@@ -5,7 +5,7 @@
 # Translators:
 # Zdzisław Krajewski <zdzichucb@gmail.com>, 2022
 # Wiktor Kaźmierczak <wik92tor@wp.pl>, 2022
-# Paweł Wodyński <pw@myodoo.pl>, 2022
+# Paweł Wodyński <pw@myleansoft.pl>, 2022
 # Piotr Strębski <strebski@gmail.com>, 2022
 # Jaroslaw Kaczmarski, 2022
 # Marcin Młynarczyk <mlynarczyk@gmail.com>, 2022
@@ -19,7 +19,7 @@
 # Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2022
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
 # Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2022
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Martin Trigaux, 2022
 # Dawid Prus, 2022
 # Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2022

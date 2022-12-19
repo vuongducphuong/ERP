@@ -34,7 +34,7 @@ msgstr ""
 "per a mi! Mantenim-ho professional ❤️"
 
 #. module: mail_bot
-#: model:ir.model.fields.selection,name:mail_bot.selection__res_users__odoobot_state__disabled
+#: model:ir.model.fields.selection,name:mail_bot.selection__res_users__leansoftbot_state__disabled
 msgid "Disabled"
 msgstr "Inhabilitat "
 
@@ -53,10 +53,10 @@ msgstr "Fil de correus"
 #, python-format
 msgid ""
 "Great! 👍<br/>To access special commands, <b>start your sentence with</b> "
-"<span class=\"o_odoobot_command\">/</span>. Try getting help."
+"<span class=\"o_leansoftbot_command\">/</span>. Try getting help."
 msgstr ""
 "Genial! 👍<br/>Per accedir a comandes especials <b>inicieu la frase amb</b> "
-"<span class=\"o_odoobot_command\">/</span>. Intenta obtenir ajuda."
+"<span class=\"o_leansoftbot_command\">/</span>. Intenta obtenir ajuda."
 
 #. module: mail_bot
 #: model:ir.model,name:mail_bot.model_ir_http
@@ -69,12 +69,12 @@ msgstr "Enrutament HTTP"
 msgid ""
 "Hello,<br/>Odoo's chat helps employees collaborate efficiently. I'm here to "
 "help you discover its features.<br/><b>Try to send me an emoji</b> <span "
-"class=\"o_odoobot_command\">:)</span>"
+"class=\"o_leansoftbot_command\">:)</span>"
 msgstr ""
 "Hola,<br/>El xat d'Odoo ajuda els empleats a col·laborar de manera eficient."
 " Soc aquí per ajudar-te a descobrir les seves "
 "característiques.<br/><b>Intenta enviar-me un emoji</b> <span "
-"class=\"o_odoobot_command\">:)</span>"
+"class=\"o_leansoftbot_command\">:)</span>"
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -105,13 +105,13 @@ msgstr "Em temo que no ho entenc. Ho sento!"
 #, python-format
 msgid ""
 "I'm not smart enough to answer your question.<br/>To follow my guide, ask: "
-"<span class=\"o_odoobot_command\">start the tour</span>."
+"<span class=\"o_leansoftbot_command\">start the tour</span>."
 msgstr ""
 "No soc prou llest per respondre la teva pregunta.<br/>Per seguir la meva "
-"guia, pregunta: <span class=\"o_odoobot_command\">iniciar la gira</span>."
+"guia, pregunta: <span class=\"o_leansoftbot_command\">iniciar la gira</span>."
 
 #. module: mail_bot
-#: model:ir.model.fields.selection,name:mail_bot.selection__res_users__odoobot_state__idle
+#: model:ir.model.fields.selection,name:mail_bot.selection__res_users__leansoftbot_state__idle
 msgid "Idle"
 msgstr "Ociós"
 
@@ -125,13 +125,13 @@ msgstr "Robot de correu"
 #, python-format
 msgid ""
 "Not exactly. To continue the tour, send an emoji: <b>type</b> <span "
-"class=\"o_odoobot_command\">:)</span> and press enter."
+"class=\"o_leansoftbot_command\">:)</span> and press enter."
 msgstr ""
 "No exactament. Per continuar la gira, envieu un emoji: <b>tipus</b> <span "
-"class=\"o_odoobot_command\">:)</span> i premi Intro."
+"class=\"o_leansoftbot_command\">:)</span> i premi Intro."
 
 #. module: mail_bot
-#: model:ir.model.fields.selection,name:mail_bot.selection__res_users__odoobot_state__not_initialized
+#: model:ir.model.fields.selection,name:mail_bot.selection__res_users__leansoftbot_state__not_initialized
 msgid "Not initialized"
 msgstr "No iniciat"
 
@@ -140,40 +140,40 @@ msgstr "No iniciat"
 #, python-format
 msgid ""
 "Not sure what you are doing. Please, type <span "
-"class=\"o_odoobot_command\">/</span> and wait for the propositions. Select "
-"<span class=\"o_odoobot_command\">help</span> and press enter"
+"class=\"o_leansoftbot_command\">/</span> and wait for the propositions. Select "
+"<span class=\"o_leansoftbot_command\">help</span> and press enter"
 msgstr ""
 "No estic segur del que està fent. Si us plau, escrigui<span "
-"class=\"o_odoobot_command\">/</span> i espera les proposicions. Selecciona "
-"<span class=\"o_odoobot_command\">ajuda</span> i premi enter."
+"class=\"o_leansoftbot_command\">/</span> i espera les proposicions. Selecciona "
+"<span class=\"o_leansoftbot_command\">ajuda</span> i premi enter."
 
 #. module: mail_bot
-#: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_state
+#: model:ir.model.fields,field_description:mail_bot.field_res_users__leansoftbot_state
 msgid "OdooBot Status"
 msgstr "Estat de l'OdooBot"
 
 #. module: mail_bot
-#: model:ir.model.fields,field_description:mail_bot.field_res_users__odoobot_failed
+#: model:ir.model.fields,field_description:mail_bot.field_res_users__leansoftbot_failed
 msgid "Odoobot Failed"
 msgstr "Odoobot ha fallat"
 
 #. module: mail_bot
-#: model:ir.model.fields.selection,name:mail_bot.selection__res_users__odoobot_state__onboarding_attachement
+#: model:ir.model.fields.selection,name:mail_bot.selection__res_users__leansoftbot_state__onboarding_attachement
 msgid "Onboarding attachment"
 msgstr ""
 
 #. module: mail_bot
-#: model:ir.model.fields.selection,name:mail_bot.selection__res_users__odoobot_state__onboarding_command
+#: model:ir.model.fields.selection,name:mail_bot.selection__res_users__leansoftbot_state__onboarding_command
 msgid "Onboarding command"
 msgstr "Comandament a bord"
 
 #. module: mail_bot
-#: model:ir.model.fields.selection,name:mail_bot.selection__res_users__odoobot_state__onboarding_emoji
+#: model:ir.model.fields.selection,name:mail_bot.selection__res_users__leansoftbot_state__onboarding_emoji
 msgid "Onboarding emoji"
 msgstr "Incorporació d'emoji"
 
 #. module: mail_bot
-#: model:ir.model.fields.selection,name:mail_bot.selection__res_users__odoobot_state__onboarding_ping
+#: model:ir.model.fields.selection,name:mail_bot.selection__res_users__leansoftbot_state__onboarding_ping
 msgid "Onboarding ping"
 msgstr "Ping d'incorporació"
 
@@ -183,21 +183,21 @@ msgstr "Ping d'incorporació"
 msgid ""
 "Sorry I'm sleepy. Or not! Maybe I'm just trying to hide my unawareness of "
 "human language...<br/>I can show you features if you write: <span "
-"class=\"o_odoobot_command\">start the tour</span>."
+"class=\"o_leansoftbot_command\">start the tour</span>."
 msgstr ""
 "Em sap greu dormir. O no! Potser només intento amagar el meu desconeixement "
 "del llenguatge humà...<br/>Puc mostrar-te les característiques si "
-"m'escrius:<span class=\"o_odoobot_command\">iniciar la gira</span>."
+"m'escrius:<span class=\"o_leansoftbot_command\">iniciar la gira</span>."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write <span class=\"o_odoobot_command\">@OdooBot</span> and select me."
+"Write <span class=\"o_leansoftbot_command\">@OdooBot</span> and select me."
 msgstr ""
 "Ho sento, no estic escoltant. Per cridar l'atenció d'algú,<b>ping a ell</b>."
-" Escriu <span class=\"o_odoobot_command\">@OdooBot</span> i selecciona'm."
+" Escriu <span class=\"o_leansoftbot_command\">@OdooBot</span> i selecciona'm."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -248,11 +248,11 @@ msgstr "Usuari"
 msgid ""
 "Wow you are a natural!<br/>Ping someone with @username to grab their "
 "attention. <b>Try to ping me using</b> <span "
-"class=\"o_odoobot_command\">@OdooBot</span> in a sentence."
+"class=\"o_leansoftbot_command\">@OdooBot</span> in a sentence."
 msgstr ""
 "Vaja, tens un talent natural<br/>Fes ping a algú amb @nomd'usuario per a "
 "cridar la seva atenció.<b>Prova d'enviarme un ping fent servir</b> <span "
-"class=\"o_odoobot_command\">@OdooBot</span> en una frase."
+"class=\"o_leansoftbot_command\">@OdooBot</span> en una frase."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0

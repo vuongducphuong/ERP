@@ -999,8 +999,8 @@ msgstr "<strong>Comercio Electrónico</strong>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_planner
-msgid "@odoo"
-msgstr "@odoo"
+msgid "@leansoft"
+msgstr "@leansoft"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_text_block

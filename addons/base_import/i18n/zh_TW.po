@@ -682,7 +682,7 @@ msgstr "沒有找到以下對應的資料"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Odoo Field"
-msgstr "odoo欄位"
+msgstr "leansoft欄位"
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__othervalue

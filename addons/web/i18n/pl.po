@@ -17,7 +17,7 @@
 # Slawomir Adamus <melthalion@gmail.com>, 2022
 # Grażyna Grzelak <grazyna.grzelak@openglobe.pl>, 2022
 # Monika Motyczyńska <m.monia@op.pl>, 2022
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # DanielDemedziuk <daniel.demedziuk@gmail.com>, 2022
 # Dawid Prus, 2022
 # Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2022
@@ -36,7 +36,7 @@
 # Dariusz Żbikowski <darek@krokus.com.pl>, 2022
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
 # Martin Trigaux, 2022
-# Paweł Wodyński <pw@myodoo.pl>, 2022
+# Paweł Wodyński <pw@myleansoft.pl>, 2022
 # 8cells Team <admin@8cells.com>, 2022
 # Karol Rybak <karolrybak85@gmail.com>, 2022
 # 

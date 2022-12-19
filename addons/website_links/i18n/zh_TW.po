@@ -235,7 +235,7 @@ msgstr "此代碼已被使用"
 msgid ""
 "Those trackers can be used in Google Analytics to track clicks and visitors,"
 " or in Odoo reports to track opportunities and related revenues."
-msgstr "這些追蹤器可以被Google分析去追蹤點選和訪問，或者在odoo的報表裡追蹤機會和相關收益。"
+msgstr "這些追蹤器可以被Google分析去追蹤點選和訪問，或者在leansoft的報表裡追蹤機會和相關收益。"
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url

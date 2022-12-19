@@ -84,7 +84,7 @@ msgstr "<small><b>อ่าน</b></small>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.hr_job_website_inherit
-msgid "<span class=\"bg-odoo\">Published</span>"
+msgid "<span class=\"bg-leansoft\">Published</span>"
 msgstr ""
 
 #. module: website_hr_recruitment
@@ -754,7 +754,7 @@ msgstr "เกล็ดขนมปัง"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
-msgid "e.g. https://www.linkedin.com/in/fpodoo/"
+msgid "e.g. https://www.linkedin.com/in/fpleansoft/"
 msgstr ""
 
 #. module: website_hr_recruitment

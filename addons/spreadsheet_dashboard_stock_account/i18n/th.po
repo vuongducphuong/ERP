@@ -5,7 +5,7 @@
 # Translators:
 # Wichanon Jamwutthipreecha, 2022
 # Seksan Poltree <seksan.poltree@gmail.com>, 2022
-# Odoo Thaidev <odoothaidev@gmail.com>, 2022
+# Odoo Thaidev <leansoftthaidev@gmail.com>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""

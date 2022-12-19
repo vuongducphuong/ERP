@@ -43,20 +43,20 @@ msgstr "Robot de correu"
 #, python-format
 msgid ""
 "Not sure what you are doing. Please, type <span "
-"class=\"o_odoobot_command\">:</span> and wait for the propositions. Select "
+"class=\"o_leansoftbot_command\">:</span> and wait for the propositions. Select "
 "one of them and press enter."
 msgstr ""
 "No estic segur del que està fent. Si us plau, escrigui <span "
-"class=\"o_odoobot_command\">:</span> i espera les proposicions. Seleccioneu-"
+"class=\"o_leansoftbot_command\">:</span> i espera les proposicions. Seleccioneu-"
 "ne un i premeu la tecla enter."
 
 #. module: im_livechat_mail_bot
-#: model:ir.model.fields,field_description:im_livechat_mail_bot.field_res_users__odoobot_state
+#: model:ir.model.fields,field_description:im_livechat_mail_bot.field_res_users__leansoftbot_state
 msgid "OdooBot Status"
 msgstr "Estat de l'OdooBot"
 
 #. module: im_livechat_mail_bot
-#: model:ir.model.fields.selection,name:im_livechat_mail_bot.selection__res_users__odoobot_state__onboarding_canned
+#: model:ir.model.fields.selection,name:im_livechat_mail_bot.selection__res_users__leansoftbot_state__onboarding_canned
 msgid "Onboarding canned"
 msgstr "Incorporació enllaunada"
 
@@ -64,11 +64,11 @@ msgstr "Incorporació enllaunada"
 #: code:addons/im_livechat_mail_bot/models/mail_bot.py:0
 #, python-format
 msgid ""
-"That's me! 🎉<br/>Try typing <span class=\"o_odoobot_command\">:</span> to "
+"That's me! 🎉<br/>Try typing <span class=\"o_leansoftbot_command\">:</span> to "
 "use canned responses."
 msgstr ""
 "¡Aquest soc jo! 🎉<br/>Prova d'escriure <span "
-"class=\"o_odoobot_command\">:</span> per utilitzar respostes enllaunades."
+"class=\"o_leansoftbot_command\">:</span> per utilitzar respostes enllaunades."
 
 #. module: im_livechat_mail_bot
 #: model:ir.model,name:im_livechat_mail_bot.model_res_users

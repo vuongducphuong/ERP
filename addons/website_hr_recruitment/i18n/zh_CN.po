@@ -87,8 +87,8 @@ msgstr "<small><b>读</b></small>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.hr_job_website_inherit
-msgid "<span class=\"bg-odoo\">Published</span>"
-msgstr "<span class=\"bg-odoo\">发表</span>"
+msgid "<span class=\"bg-leansoft\">Published</span>"
+msgstr "<span class=\"bg-leansoft\">发表</span>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
@@ -757,8 +757,8 @@ msgstr "浏览路径"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
-msgid "e.g. https://www.linkedin.com/in/fpodoo/"
-msgstr "例如 https://www.linkedin.com/in/fpodoo/"
+msgid "e.g. https://www.linkedin.com/in/fpleansoft/"
+msgstr "例如 https://www.linkedin.com/in/fpleansoft/"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.index

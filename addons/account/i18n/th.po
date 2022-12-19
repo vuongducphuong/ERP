@@ -6,7 +6,7 @@
 # gsong <gsong2014@foxmail.com>, 2022
 # surapas haemaprasertsuk <surapas@gmail.com>, 2022
 # Krisa C, 2022
-# Odoo Thaidev <odoothaidev@gmail.com>, 2022
+# Odoo Thaidev <leansoftthaidev@gmail.com>, 2022
 # Pornvibool Tippayawat <pornvibool.t@gmail.com>, 2022
 # Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2022
 # Somchart Jabsung <jabsung.s@gmail.com>, 2022
@@ -9406,7 +9406,7 @@ msgid "October"
 msgstr "ตุลาคม"
 
 #. module: account
-#: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__odoo
+#: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_model__leansoft
 msgid "Odoo"
 msgstr "Odoo"
 

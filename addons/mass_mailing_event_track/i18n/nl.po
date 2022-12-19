@@ -3,7 +3,7 @@
 # 	* mass_mailing_event_track
 # 
 # Translators:
-# Erwin van der Ploeg <erwin@odooexperts.nl>, 2022
+# Erwin van der Ploeg <erwin@leansoftexperts.nl>, 2022
 # Martin Trigaux, 2022
 # 
 msgid ""

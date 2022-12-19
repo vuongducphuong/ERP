@@ -3165,7 +3165,7 @@ msgstr "发生"
 #: code:addons/survey/models/survey_survey_template.py:0
 #, python-format
 msgid "Odoo Certification"
-msgstr "odoo 认证"
+msgstr "leansoft 认证"
 
 #. module: survey
 #: model:survey.question.answer,value:survey.vendor_certification_page_2_question_2_choice_5

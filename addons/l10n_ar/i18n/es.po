@@ -462,10 +462,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Can not change the POS number, you can only change the first number for "
-"document type that you are creating in odoo"
+"document type that you are creating in leansoft"
 msgstr ""
 "No puede cambiar el número de POS, solo puede cambiar el el primer número "
-"para el tipo de document que esta creando en odoo"
+"para el tipo de document que esta creando en leansoft"
 
 #. module: l10n_ar
 #: code:addons/l10n_ar/models/account_journal.py:0

@@ -17,7 +17,7 @@
 # Marc Tormo i Bochaca <mtbochaca@gmail.com>, 2022
 # Manel Fernandez Ramirez <manelfera@outlook.com>, 2022
 # jabelchi, 2022
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # Martin Trigaux, 2022
 # Arnau Ros, 2022
 # eriiikgt, 2022

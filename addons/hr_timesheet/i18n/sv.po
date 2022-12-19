@@ -3,7 +3,7 @@
 # 	* hr_timesheet
 # 
 # Translators:
-# fah_odoo <fah@leensoft.vn>, 2022
+# fah_leansoft <fah@leensoft.vn>, 2022
 # Kim Asplund <kim.asplund@gmail.com>, 2022
 # Christelle Wehbe <libanon_cristelle@hotmail.com>, 2022
 # Jakob Krabbe <jakob.krabbe@vertel.se>, 2022

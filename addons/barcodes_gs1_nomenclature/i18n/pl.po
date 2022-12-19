@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Dawid Prus, 2022
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2022
 # Mariusz, 2022
 # Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2022

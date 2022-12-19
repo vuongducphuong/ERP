@@ -652,7 +652,7 @@ msgstr "Ingresos"
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
 msgid "Save in Odoo"
-msgstr "Guardar en odoo"
+msgstr "Guardar en leansoft"
 
 #. module: mail_plugin
 #. openerp-web

@@ -6,7 +6,7 @@
 # Xavier Diumé <xdiume@gmail.com>, 2022
 # AncesLatino2004, 2022
 # Eric Antones <eantones@users.noreply.github.com>, 2022
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # Marc Tormo i Bochaca <mtbochaca@gmail.com>, 2022
 # Harcogourmet, 2022
 # Quim - eccit <quim@eccit.com>, 2022
@@ -1412,8 +1412,8 @@ msgstr "connectat"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_record_sidebar
-msgid "odoo"
-msgstr "odoo"
+msgid "leansoft"
+msgstr "leansoft"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_security

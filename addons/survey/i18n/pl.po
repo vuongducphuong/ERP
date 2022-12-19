@@ -7,7 +7,7 @@
 # Grzegorz Krukar <grzegorzgk1@gmail.com>, 2022
 # Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2022
 # Zdzisław Krajewski <zdzichucb@gmail.com>, 2022
-# Paweł Wodyński <pw@myodoo.pl>, 2022
+# Paweł Wodyński <pw@myleansoft.pl>, 2022
 # Tomasz Leppich <t.leppich@gmail.com>, 2022
 # Ludwik Trammer <ludwik@gmail.com>, 2022
 # Radosław Biegalski <radoslaw.biegalski@openglobe.pl>, 2022
@@ -20,7 +20,7 @@
 # Monika Grzelak <m.e.grzelak@gmail.com>, 2022
 # Michał <michal.gorecki@esnc.pl>, 2022
 # Dawid Prus, 2022
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2022
 # Natalia Gros <nag@leensoft.vn>, 2022
 # Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022

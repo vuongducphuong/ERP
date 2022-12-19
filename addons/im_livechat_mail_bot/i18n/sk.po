@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
 #. module: im_livechat_mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Disabled"
 msgstr ""
 
@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 
 #. module: im_livechat_mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Idle"
 msgstr "Nečinný"
 
@@ -44,7 +44,7 @@ msgid "Mail Bot"
 msgstr ""
 
 #. module: im_livechat_mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Not initialized"
 msgstr ""
 
@@ -57,32 +57,32 @@ msgid ""
 msgstr ""
 
 #. module: im_livechat_mail_bot
-#: model:ir.model.fields,field_description:im_livechat_mail_bot.field_res_users__odoobot_state
+#: model:ir.model.fields,field_description:im_livechat_mail_bot.field_res_users__leansoftbot_state
 msgid "OdooBot Status"
 msgstr ""
 
 #. module: im_livechat_mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Onboarding attachement"
 msgstr ""
 
 #. module: im_livechat_mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Onboarding canned"
 msgstr ""
 
 #. module: im_livechat_mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Onboarding command"
 msgstr ""
 
 #. module: im_livechat_mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Onboarding emoji"
 msgstr ""
 
 #. module: im_livechat_mail_bot
-#: selection:res.users,odoobot_state:0
+#: selection:res.users,leansoftbot_state:0
 msgid "Onboarding ping"
 msgstr ""
 

@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Martin Trigaux, 2022
-# Erwin van der Ploeg <erwin@odooexperts.nl>, 2022
+# Erwin van der Ploeg <erwin@leansoftexperts.nl>, 2022
 # Jolien De Paepe, 2022
 # 
 msgid ""
@@ -90,8 +90,8 @@ msgstr "<small><b>LEES</b></small>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.hr_job_website_inherit
-msgid "<span class=\"bg-odoo\">Published</span>"
-msgstr "<span class=\"bg-odoo\">Gepubliceerd</span>"
+msgid "<span class=\"bg-leansoft\">Published</span>"
+msgstr "<span class=\"bg-leansoft\">Gepubliceerd</span>"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
@@ -774,8 +774,8 @@ msgstr "kruimelpad"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.apply
-msgid "e.g. https://www.linkedin.com/in/fpodoo/"
-msgstr "bijv. https://www.linkedin.com/in/fpodoo/"
+msgid "e.g. https://www.linkedin.com/in/fpleansoft/"
+msgstr "bijv. https://www.linkedin.com/in/fpleansoft/"
 
 #. module: website_hr_recruitment
 #: model_terms:ir.ui.view,arch_db:website_hr_recruitment.index

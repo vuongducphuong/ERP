@@ -5,7 +5,7 @@
 # Translators:
 # Martin Trigaux, 2022
 # Dariusz Żbikowski <darek@krokus.com.pl>, 2022
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
 # Dawid Prus, 2022
 # 

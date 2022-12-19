@@ -3,7 +3,7 @@
 # 	* google_gmail
 # 
 # Translators:
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Marcin Młynarczyk <mlynarczyk@gmail.com>, 2022
 # Piotr Strębski <strebski@gmail.com>, 2022
 # DanielDemedziuk <daniel.demedziuk@gmail.com>, 2022

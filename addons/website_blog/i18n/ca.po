@@ -12,7 +12,7 @@
 # Marc Tormo i Bochaca <mtbochaca@gmail.com>, 2022
 # Manel Fernandez Ramirez <manelfera@outlook.com>, 2022
 # Arnau Ros, 2022
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # marcescu, 2022
 # Quim - eccit <quim@eccit.com>, 2022
 # Sandra Franch <sandra.franch@upc.edu>, 2022

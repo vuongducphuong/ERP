@@ -4,7 +4,7 @@
 # 
 # Translators:
 # oscaryuu, 2022
-# RGB Consulting <odoo@rgbconsulting.com>, 2022
+# RGB Consulting <leansoft@rgbconsulting.com>, 2022
 # Marc Tormo i Bochaca <mtbochaca@gmail.com>, 2022
 # José Cabrera Lozano <jose.cabrera@edukative.es>, 2022
 # Manel Fernandez Ramirez <manelfera@outlook.com>, 2022

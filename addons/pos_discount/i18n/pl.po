@@ -3,7 +3,7 @@
 # 	* pos_discount
 # 
 # Translators:
-# Maksym <ms@myodoo.pl>, 2022
+# Maksym <ms@myleansoft.pl>, 2022
 # Tomasz Leppich <t.leppich@gmail.com>, 2022
 # Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2022
 # Martin Trigaux, 2022
