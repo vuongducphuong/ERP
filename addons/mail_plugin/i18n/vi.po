@@ -65,7 +65,7 @@ msgstr "Doanh thu hàng năm"
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
 msgid ""
-"Attachments could not be logged in Odoo because their total size exceeded "
+"Attachments could not be logged in Lean Soft because their total size exceeded "
 "the allowed maximum."
 msgstr ""
 "Tệp đính kèm không thể đăng nhập vào ERP vì tổng kích cỡ vượt quá mức tối "
@@ -546,7 +546,7 @@ msgstr "Không đủ tín dụng để tìm thông tin."
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "Odoo Access Token"
+msgid "Lean Soft Access Token"
 msgstr "Mã token truy cập ERP"
 
 #. module: mail_plugin
@@ -725,7 +725,7 @@ msgstr "Công ty không có địa chỉ email và không thể thêm thông tin
 #. openerp-web
 #: code:addons/mail_plugin/static/src/to_translate/translations_gmail.xml:0
 #, python-format
-msgid "This contact does not exist in the Odoo database."
+msgid "This contact does not exist in the Lean Soft database."
 msgstr "Liên hệ này không tồn tại trong cơ sở dữ liệu ERP."
 
 #. module: mail_plugin
@@ -748,7 +748,7 @@ msgstr "Đối tác này không tồn tại"
 #: code:addons/mail_plugin/static/src/to_translate/translations_outlook.xml:0
 #, python-format
 msgid ""
-"Warning: Attachments could not be logged in Odoo because their total size "
+"Warning: Attachments could not be logged in Lean Soft because their total size "
 "exceeded the allowed maximum."
 msgstr ""
 "Cảnh báo: Tệp đính kèm không thể đăng nhập vào ERP vì tổng kích cỡ vượt quá"
@@ -795,7 +795,7 @@ msgstr "Bạn cần phải chỉ định ít nhất một partner_id  hoặc t�
 
 #. module: mail_plugin
 #: model_terms:ir.ui.view,arch_db:mail_plugin.app_auth
-msgid "access your Odoo database?"
+msgid "access your Lean Soft database?"
 msgstr "truy cập cơ sở dữ liệu ERP?"
 
 #. module: mail_plugin

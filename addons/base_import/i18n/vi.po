@@ -456,12 +456,12 @@ msgstr "ID"
 #, python-format
 msgid ""
 "If the file contains\n"
-"                    the column names, Odoo can try auto-detecting the\n"
+"                    the column names, Lean Soft can try auto-detecting the\n"
 "                    field corresponding to the column. This makes imports\n"
 "                    simpler especially when the file has many columns."
 msgstr ""
 "Nếu tệp có chứa\n"
-"                    tên cột, Odoo có thể thử tự động phát hiện\n"
+"                    tên cột, Lean Soft có thể thử tự động phát hiện\n"
 "                    trường tương ứng với cột. Việc này giúp nhập\n"
 "                    dễ dàng hơn đặc biệt khi tệp có nhiều cột."
 
@@ -697,7 +697,7 @@ msgstr "Không tìm thấy hồ sơ khớp cho"
 #. openerp-web
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
-msgid "Odoo Field"
+msgid "Lean Soft Field"
 msgstr "Trường Odoo"
 
 #. module: base_import

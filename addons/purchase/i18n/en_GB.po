@@ -6,7 +6,7 @@
 # James Dove <james@oceancave.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: Lean Soft 9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-18 14:07+0000\n"
 "PO-Revision-Date: 2016-06-22 09:11+0000\n"
@@ -785,7 +785,7 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:purchase.purchase_rfq
 msgid ""
 "Most propositions of purchase orders are created automatically\n"
-"                by Odoo based on inventory needs."
+"                by Lean Soft based on inventory needs."
 msgstr ""
 
 #. module: purchase
@@ -1560,12 +1560,12 @@ msgstr ""
 msgid ""
 "Use this menu to control the invoices to be received from your\n"
 "            vendor. When registering a new bill, set the purchase order\n"
-"            and Odoo will fill the bill automatically according to ordered\n"
+"            and Lean Soft will fill the bill automatically according to ordered\n"
 "            or received quantities."
 msgstr ""
 "Use this menu to control the invoices to be received from your\n"
 "            supplier. When registering a new bill, set the purchase order\n"
-"            and Odoo will fill the bill automatically according to ordered\n"
+"            and Lean Soft will fill the bill automatically according to ordered\n"
 "            or received quantities."
 
 #. module: purchase

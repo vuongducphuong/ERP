@@ -260,8 +260,8 @@ msgstr "Không có phản hồi từ máy chủ (kiểm tra kết nối internet
 #: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #: code:addons/pos_mercury/static/src/js/PaymentScreen.js:0
 #, python-format
-msgid "Odoo error while processing transaction."
-msgstr "Lỗi Odoo khi thực hiện giao dịch"
+msgid "Lean Soft error while processing transaction."
+msgstr "Lỗi Lean Soft khi thực hiện giao dịch"
 
 #. module: pos_mercury
 #. openerp-web

@@ -3067,7 +3067,7 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:mass_mailing.action_view_mass_mailing_lists
 msgid ""
 "No need to import mailing lists, you can send mailings to contacts saved in "
-"other Odoo apps."
+"other Lean Soft apps."
 msgstr ""
 
 #. module: mass_mailing
@@ -4069,8 +4069,8 @@ msgstr "Phản hời của bạn đã được gửi thành công!"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_block
-msgid "That way, Odoo evolves much faster than any other solution."
-msgstr "Bằng cách này, Odoo giải quyết nhanh hơn các giải pháp khác."
+msgid "That way, Lean Soft evolves much faster than any other solution."
+msgstr "Bằng cách này, Lean Soft giải quyết nhanh hơn các giải pháp khác."
 
 #. module: mass_mailing
 #: model:ir.model.constraint,message:mass_mailing.constraint_mailing_mailing_percentage_valid
@@ -4103,18 +4103,18 @@ msgstr ""
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_block
 msgid ""
-"The open source model of Odoo has allowed us to leverage thousands of developers and\n"
+"The open source model of Lean Soft has allowed us to leverage thousands of developers and\n"
 "                    business experts to build hundreds of apps in just a few years."
 msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_image
 msgid ""
-"The open source model of Odoo has allowed us to leverage thousands of "
+"The open source model of Lean Soft has allowed us to leverage thousands of "
 "developers and business experts to build hundreds of apps in just a few "
 "years."
 msgstr ""
-"Mô hình mã nguồn mở của Odoo đã cho phép chúng tôi tận dụng hàng ngàn nhà "
+"Mô hình mã nguồn mở của Lean Soft đã cho phép chúng tôi tận dụng hàng ngàn nhà "
 "phát triển và chuyên gia kinh doanh để xây dựng hàng trăm ứng dụng chỉ trong"
 " vài năm."
 
@@ -4411,7 +4411,7 @@ msgstr ""
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_block
 msgid ""
-"Usability improvements made on Odoo will automatically apply to all\n"
+"Usability improvements made on Lean Soft will automatically apply to all\n"
 "                    of our fully integrated apps."
 msgstr ""
 
@@ -4420,11 +4420,11 @@ msgstr ""
 #: model:ir.model.fields,help:mass_mailing.field_res_config_settings__mass_mailing_outgoing_mail_server
 #: model_terms:ir.ui.view,arch_db:mass_mailing.res_config_settings_view_form
 msgid ""
-"Use a specific mail server in priority. Otherwise Odoo relies on the first "
+"Use a specific mail server in priority. Otherwise Lean Soft relies on the first "
 "outgoing mail server available (based on their sequencing) as it does for "
 "normal mails."
 msgstr ""
-"Sử dụng một máy chủ thư cụ thể ưu tiên. Nếu không, Odoo dựa vào máy chủ thư "
+"Sử dụng một máy chủ thư cụ thể ưu tiên. Nếu không, Lean Soft dựa vào máy chủ thư "
 "đi đầu tiên có sẵn (dựa trên trình tự của họ) như đối với các thư thông "
 "thường."
 
@@ -4674,10 +4674,10 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:mass_mailing.action_view_mass_mailings_from_campaign
 msgid ""
 "You don't need to import your mailing lists, you can easily\n"
-"                send emails<br> to any contact saved in other Odoo apps."
+"                send emails<br> to any contact saved in other Lean Soft apps."
 msgstr ""
 "You don't need to import your mailing lists, you can easily\n"
-"                send emails<br> to any contact saved in other Odoo apps."
+"                send emails<br> to any contact saved in other Lean Soft apps."
 
 #. module: mass_mailing
 #. openerp-web

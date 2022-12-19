@@ -1317,11 +1317,11 @@ msgstr "Tệp đính kèm chính"
 #: model_terms:ir.actions.act_window,help:fleet.fleet_vehicle_log_contract_action
 msgid ""
 "Manage all your contracts (leasing, insurances, etc.) with\n"
-"            their related services, costs. Odoo will automatically warn\n"
+"            their related services, costs. Lean Soft will automatically warn\n"
 "            you when some contracts have to be renewed."
 msgstr ""
 "Quản lý tất cả các hợp đồng của bạn (cho thuê, bảo hiểm, v.v.) với \n"
-"các dịch vụ liên quan, chi phí của họ. Odoo sẽ tự động cảnh báo \n"
+"các dịch vụ liên quan, chi phí của họ. Lean Soft sẽ tự động cảnh báo \n"
 "bạn khi một số hợp đồng phải được gia hạn."
 
 #. module: fleet

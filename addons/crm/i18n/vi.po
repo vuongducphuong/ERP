@@ -865,7 +865,7 @@ msgstr "Phân loại và phân tích nhóm tiềm năng/cơ hội như: Đào t�
 #: code:addons/crm/static/src/js/tours/crm.js:0
 #, python-format
 msgid ""
-"Click on the breadcrumb to go back to your Pipeline. Odoo will save all "
+"Click on the breadcrumb to go back to your Pipeline. Lean Soft will save all "
 "modifications as you navigate."
 msgstr ""
 
@@ -1293,7 +1293,7 @@ msgstr ""
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_4
 msgid ""
 "Did you know you can search a company by name or VAT number to instantly "
-"fill in all its data? Odoo autocompletes everything for you: logo, address, "
+"fill in all its data? Lean Soft autocompletes everything for you: logo, address, "
 "company size, business information, social media accounts, etc."
 msgstr ""
 "Bạn có biết rằng bạn có thể tìm kiếm một công ty theo tên hoặc số VAT và "
@@ -1305,12 +1305,12 @@ msgstr ""
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_5
 msgid ""
 "Did you know you can turn a list of opportunities into a map view, using the"
-" top-right map icon? A lot of screens in Odoo can be turned into a map: "
+" top-right map icon? A lot of screens in Lean Soft can be turned into a map: "
 "tasks, contacts, delivery orders, etc."
 msgstr ""
 "Bạn có biết rằng bạn có thể chuyển danh sách các cơ hội thành chế độ xem bản"
 " đồ bằng cách sử dụng biểu tượng bản đồ trên cùng bên phải không? Rất nhiều "
-"màn hình trong Odoo có thể được biến thành bản đồ: nhiệm vụ, danh bạ, lệnh "
+"màn hình trong Lean Soft có thể được biến thành bản đồ: nhiệm vụ, danh bạ, lệnh "
 "giao hàng, v.v."
 
 #. module: crm
@@ -2694,10 +2694,10 @@ msgstr "Số lượng tin gửi đi bị lỗi"
 #. module: crm
 #: model_terms:ir.actions.act_window,help:crm.crm_case_form_view_salesteams_opportunity
 msgid ""
-"Odoo helps you keep track of your sales pipeline to follow\n"
+"Lean Soft helps you keep track of your sales pipeline to follow\n"
 "                    up potential sales and better forecast your future revenues."
 msgstr ""
-"Odoo giúp bạn theo vết toàn bộ các tiềm năng và cơ hội bán hàng\n"
+"Lean Soft giúp bạn theo vết toàn bộ các tiềm năng và cơ hội bán hàng\n"
 "                    đồng thời giúp dự bán tốt hơn về doanh số tương lai của bạn."
 
 #. module: crm
@@ -2705,12 +2705,12 @@ msgstr ""
 msgid ""
 "Odoo's artificial intelligence engine predicts the success rate of each "
 "opportunity based on your history. You can always update the success rate "
-"manually, but if you let Odoo do the job the score is updated while the "
+"manually, but if you let Lean Soft do the job the score is updated while the "
 "opportunity moves forward in your sales cycle."
 msgstr ""
 "Công cụ trí tuệ nhân tạo của hệ thống dự đoán tỷ lệ thành công của từng cơ "
 "hội dựa trên lịch sử của bạn. Bạn luôn có thể cập nhật tỷ lệ thành công theo"
-" cách thủ công, nhưng nếu bạn để Odoo thực hiện công việc, điểm số sẽ được "
+" cách thủ công, nhưng nếu bạn để Lean Soft thực hiện công việc, điểm số sẽ được "
 "cập nhật trong khi cơ hội tiến lên trong chu kỳ bán hàng của bạn."
 
 #. module: crm
@@ -3567,7 +3567,7 @@ msgstr ""
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_team__alias_model_id
 msgid ""
-"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+"The model (Lean Soft Document Kind) to which this alias corresponds. Any incoming"
 " email that does not reply to an existing record will cause the creation of "
 "a new record of this model (e.g. a Project Task)"
 msgstr ""
@@ -3734,7 +3734,7 @@ msgstr "Mẹo: Chuyển đổi email đến thành cơ hội"
 #. module: crm
 #: model:digest.tip,name:crm.digest_tip_crm_1
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_1
-msgid "Tip: Did you know Odoo has built-in lead mining?"
+msgid "Tip: Did you know Lean Soft has built-in lead mining?"
 msgstr ""
 "Mẹo: Bạn có biết hệ thống đã tích hợp sẵn tính năng khai thác chì không?"
 

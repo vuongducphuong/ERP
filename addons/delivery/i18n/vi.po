@@ -41,7 +41,7 @@ msgstr ""
 #, python-format
 msgid ""
 "<p class=\"o_view_nocontent\">\n"
-"                    Buy Odoo Enterprise now to get more providers.\n"
+"                    Buy Lean Soft Enterprise now to get more providers.\n"
 "                </p>"
 msgstr ""
 "<p class=\"o_view_nocontent\">\n"

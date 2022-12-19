@@ -6,7 +6,7 @@
 # Andi Chandler <andi@gowling.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo 9.0\n"
+"Project-Id-Version: Lean Soft 9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-18 08:20+0000\n"
 "PO-Revision-Date: 2015-09-14 10:52+0000\n"

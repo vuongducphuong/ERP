@@ -562,7 +562,7 @@ msgstr ""
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_planner
-msgid "Enjoy your Odoo experience,"
+msgid "Enjoy your Lean Soft experience,"
 msgstr ""
 
 #. module: hr_expense
@@ -828,7 +828,7 @@ msgstr ""
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_planner
 msgid ""
-"For the Odoo Team,<br/>\n"
+"For the Lean Soft Team,<br/>\n"
 "                            Fabien Pinckaers, Founder"
 msgstr ""
 
@@ -885,7 +885,7 @@ msgstr ""
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_planner
-msgid "Have a wonderful day,<br/>- The Odoo Team"
+msgid "Have a wonderful day,<br/>- The Lean Soft Team"
 msgstr ""
 
 #. module: hr_expense
@@ -1562,7 +1562,7 @@ msgstr ""
 
 #. module: hr_expense
 #: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_planner
-msgid "This guide helps you start with Odoo Expenses."
+msgid "This guide helps you start with Lean Soft Expenses."
 msgstr ""
 
 #. module: hr_expense

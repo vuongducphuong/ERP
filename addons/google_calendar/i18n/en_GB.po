@@ -180,7 +180,7 @@ msgstr ""
 #: model:ir.model.fields,help:google_calendar.field_res_users_google_calendar_cal_id
 msgid ""
 "Last Calendar ID who has been synchronized. If it is changed, we remove all "
-"links between GoogleID and Odoo Google Internal ID"
+"links between GoogleID and Lean Soft Google Internal ID"
 msgstr ""
 
 #. module: google_calendar
@@ -195,12 +195,12 @@ msgstr ""
 
 #. module: google_calendar
 #: model:ir.model.fields,field_description:google_calendar.field_calendar_attendee_oe_synchro_date
-msgid "Odoo Synchro Date"
+msgid "Lean Soft Synchro Date"
 msgstr ""
 
 #. module: google_calendar
 #: model:ir.model.fields,field_description:google_calendar.field_calendar_event_oe_update_date
-msgid "Odoo Update Date"
+msgid "Lean Soft Update Date"
 msgstr ""
 
 #. module: google_calendar

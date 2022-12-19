@@ -571,7 +571,7 @@ msgstr "Chưa có dữ liệu nào!"
 #: model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_list_action_sms
 msgid ""
 "No need to import mailing lists, you can send SMS Text Messages to contacts "
-"saved in other Odoo apps."
+"saved in other Lean Soft apps."
 msgstr ""
 
 #. module: mass_mailing_sms

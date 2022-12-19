@@ -137,7 +137,7 @@ msgstr ""
 #. module: event
 #: model_terms:event.event,description:event.event_0
 msgid ""
-"<b>Technical Rooms</b> - One dedicated to advanced Odoo developers, one for "
+"<b>Technical Rooms</b> - One dedicated to advanced Lean Soft developers, one for "
 "new developers."
 msgstr ""
 "<b>Phòng kỹ thuật</b> - Một phòng dành cho các nhà phát triển ERP giàu kinh"

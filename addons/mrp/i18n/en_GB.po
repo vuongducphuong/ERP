@@ -1863,7 +1863,7 @@ msgstr ""
 #. module: mrp
 #: model_terms:ir.actions.act_window,help:mrp.mrp_bom_form_action
 msgid ""
-"Odoo uses these BoMs to automatically propose manufacturing\n"
+"Lean Soft uses these BoMs to automatically propose manufacturing\n"
 "                orders according to procurement needs."
 msgstr ""
 

@@ -326,7 +326,7 @@ msgstr ""
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Odoo Mobile"
+msgid "Lean Soft Mobile"
 msgstr "ERP Mobile"
 
 #. module: digest
@@ -369,8 +369,8 @@ msgstr "Người nhận"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_section_mobile
-msgid "Run your business from anywhere with <b>Odoo Mobile</b>."
-msgstr "Run your business from anywhere with <b>Odoo Mobile</b>."
+msgid "Run your business from anywhere with <b>Lean Soft Mobile</b>."
+msgstr "Run your business from anywhere with <b>Lean Soft Mobile</b>."
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form
@@ -540,7 +540,7 @@ msgstr ""
 
 #. module: digest
 #: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
+msgid "Your Lean Soft Periodic Digest"
 msgstr "Your ERP Periodic Digest"
 
 #. module: digest

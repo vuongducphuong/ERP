@@ -72,7 +72,7 @@ msgstr ""
 #: code:addons/mass_mailing_crm/models/mailing_mailing.py:0
 #, python-format
 msgid ""
-"Note that Odoo cannot track replies if they are sent towards email addresses"
+"Note that Lean Soft cannot track replies if they are sent towards email addresses"
 " to this database."
 msgstr ""
 

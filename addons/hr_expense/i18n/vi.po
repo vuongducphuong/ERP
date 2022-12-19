@@ -580,11 +580,11 @@ msgstr "Tên hiển thị"
 #: model_terms:digest.tip,tip_description:hr_expense.digest_tip_hr_expense_0
 msgid ""
 "Do not keep your expense tickets in your pockets any longer. Just snap a "
-"picture of your receipt and let Odoo digitalizes it for you. The OCR and "
+"picture of your receipt and let Lean Soft digitalizes it for you. The OCR and "
 "Artificial Intelligence will fill the data automatically."
 msgstr ""
 "Do not keep your expense tickets in your pockets any longer. Just snap a "
-"picture of your receipt and let Odoo digitalizes it for you. The OCR and "
+"picture of your receipt and let Lean Soft digitalizes it for you. The OCR and "
 "Artificial Intelligence will fill the data automatically."
 
 #. module: hr_expense
@@ -1523,7 +1523,7 @@ msgstr "Số lượng"
 #, python-format
 msgid ""
 "Ready? You can save it manually or discard modifications from here. You "
-"don't <em>need to save</em> - Odoo will save eveyrthing for you when you "
+"don't <em>need to save</em> - Lean Soft will save eveyrthing for you when you "
 "navigate."
 msgstr ""
 
@@ -1662,8 +1662,8 @@ msgstr "Quét"
 #. openerp-web
 #: code:addons/hr_expense/static/src/xml/expense_qr_modal_template.xml:0
 #, python-format
-msgid "Scan this QR code to get the Odoo app:"
-msgstr "Scan this QR code to get the Odoo app:"
+msgid "Scan this QR code to get the Lean Soft app:"
+msgstr "Scan this QR code to get the Lean Soft app:"
 
 #. module: hr_expense
 #: model:ir.model.fields,help:hr_expense.field_hr_employee__expense_manager_id

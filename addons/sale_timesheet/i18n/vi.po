@@ -1626,7 +1626,7 @@ msgstr "Hướng dẫn"
 #: model_terms:sale.order,website_description:sale_timesheet.sale_order_2
 #: model_terms:sale.order,website_description:sale_timesheet.sale_order_3
 msgid ""
-"You can <strong>set a description per product</strong>. Odoo will\n"
+"You can <strong>set a description per product</strong>. Lean Soft will\n"
 "                        automatically create a quotation using the descriptions\n"
 "                        of all products in the proposal. The table of content\n"
 "                        on the left is generated automatically using the styles you\n"

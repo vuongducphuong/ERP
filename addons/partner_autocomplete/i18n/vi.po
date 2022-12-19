@@ -40,7 +40,7 @@ msgstr "Công ty"
 #. module: partner_autocomplete
 #: code:addons/partner_autocomplete/models/res_company.py:0
 #, python-format
-msgid "Company auto-completed by Odoo Partner Autocomplete Service"
+msgid "Company auto-completed by Lean Soft Partner Autocomplete Service"
 msgstr ""
 
 #. module: partner_autocomplete
@@ -160,8 +160,8 @@ msgstr "Partner Autocomplete Sync"
 #. module: partner_autocomplete
 #: code:addons/partner_autocomplete/models/res_partner.py:0
 #, python-format
-msgid "Partner created by Odoo Partner Autocomplete Service"
-msgstr "Partner created by Odoo Partner Autocomplete Service"
+msgid "Partner created by Lean Soft Partner Autocomplete Service"
+msgstr "Partner created by Lean Soft Partner Autocomplete Service"
 
 #. module: partner_autocomplete
 #. openerp-web

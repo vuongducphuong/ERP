@@ -1039,7 +1039,7 @@ msgstr ""
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_provider__module_to_buy
-msgid "Odoo Enterprise Module"
+msgid "Lean Soft Enterprise Module"
 msgstr "Ứng dụng ERP cho doanh nghiệp"
 
 #. module: payment
@@ -1835,7 +1835,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/payment/static/src/xml/payment_post_processing.xml:0
 #, python-format
-msgid "Unable to contact the Odoo server."
+msgid "Unable to contact the Lean Soft server."
 msgstr "Không thể kết nối với máy chủ."
 
 #. module: payment

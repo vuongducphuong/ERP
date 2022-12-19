@@ -798,7 +798,7 @@ msgstr "Ghi chú"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_record_sidebar
-msgid "Odoo Logo"
+msgid "Lean Soft Logo"
 msgstr "Logo hệ thống"
 
 #. module: portal

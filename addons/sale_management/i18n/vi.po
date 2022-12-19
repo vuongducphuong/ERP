@@ -569,7 +569,7 @@ msgstr ""
 #. module: sale_management
 #: model:digest.tip,name:sale_management.digest_tip_sale1_management_0
 #: model_terms:digest.tip,tip_description:sale_management.digest_tip_sale1_management_0
-msgid "Tip: Odoo supports configurable products"
+msgid "Tip: Lean Soft supports configurable products"
 msgstr "Tip: ERP supports configurable products"
 
 #. module: sale_management

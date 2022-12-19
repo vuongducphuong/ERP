@@ -2534,7 +2534,7 @@ msgstr "ID"
 #. openerp-web
 #: code:addons/point_of_sale/static/src/js/Popups/ErrorTracebackPopup.js:0
 #, python-format
-msgid "IMPORTANT: Bug Report From Odoo Point Of Sale"
+msgid "IMPORTANT: Bug Report From Lean Soft Point Of Sale"
 msgstr "QUAN TRỌNG: Báo cáo lỗi từ điểm bán lẻ (PoS) trong Odoo"
 
 #. module: point_of_sale
@@ -6535,7 +6535,7 @@ msgstr "Sản phẩm này được sử dụng như một dẫn chiếu trên bi
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__sequence_line_id
 msgid ""
-"This sequence is automatically created by Odoo but you can change it to "
+"This sequence is automatically created by Lean Soft but you can change it to "
 "customize the reference numbers of your orders lines."
 msgstr ""
 "Thứ tự này được tạo tự động bởi Hệ thống nhưng bạn có thể thay đổi nó để tùy"
@@ -6545,7 +6545,7 @@ msgstr ""
 #: model:ir.model.fields,help:point_of_sale.field_pos_config__sequence_id
 #: model:ir.model.fields,help:point_of_sale.field_res_config_settings__pos_sequence_id
 msgid ""
-"This sequence is automatically created by Odoo but you can change it to "
+"This sequence is automatically created by Lean Soft but you can change it to "
 "customize the reference numbers of your orders."
 msgstr ""
 "Thứ tự này được tạo tự động bởi Hệ thống nhưng bạn có thể thay đổi nó để tùy"

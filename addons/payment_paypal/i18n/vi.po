@@ -26,7 +26,7 @@ msgstr ""
 msgid ""
 "<br/><br/>\n"
 "                Thanks,<br/>\n"
-"                <b>The Odoo Team</b>"
+"                <b>The Lean Soft Team</b>"
 msgstr ""
 
 #. module: payment_paypal

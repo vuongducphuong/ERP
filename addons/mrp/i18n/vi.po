@@ -1478,7 +1478,7 @@ msgstr "Tạo bảng việc tùy chỉnh cho kiểm tra chất lượng"
 msgid ""
 "Create operation level dependencies that will influence both planning and "
 "the status of work orders upon MO confirmation. If this feature is ticked, "
-"and nothing is specified, Odoo will assume that all operations can be "
+"and nothing is specified, Lean Soft will assume that all operations can be "
 "started simultaneously."
 msgstr ""
 
@@ -5684,7 +5684,7 @@ msgstr ""
 #: model:ir.model.fields,help:mrp.field_stock_move__manual_consumption
 msgid ""
 "When activated, then the registration of consumption for that component is recorded manually exclusively.\n"
-"If not activated, and any of the components consumption is edited manually on the manufacturing order, Odoo assumes manual consumption also."
+"If not activated, and any of the components consumption is edited manually on the manufacturing order, Lean Soft assumes manual consumption also."
 msgstr ""
 
 #. module: mrp
@@ -5712,12 +5712,12 @@ msgstr ""
 #. module: mrp
 #: model_terms:digest.tip,tip_description:mrp.digest_tip_mrp_0
 msgid ""
-"With the Odoo work center control panel, your worker can start work orders "
+"With the Lean Soft work center control panel, your worker can start work orders "
 "in the shop and follow instructions of the worksheet. Quality tests are "
 "perfectly integrated into the process. Workers can trigger feedback loops, "
 "maintenance alerts, scrap products, etc."
 msgstr ""
-"With the Odoo work center control panel, your worker can start work orders "
+"With the Lean Soft work center control panel, your worker can start work orders "
 "in the shop and follow instructions of the worksheet. Quality tests are "
 "perfectly integrated into the process. Workers can trigger feedback loops, "
 "maintenance alerts, scrap products, etc."
@@ -6176,11 +6176,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mrp.view_immediate_production
 msgid ""
 "You have not recorded <i>produced</i> quantities yet, by clicking on "
-"<i>apply</i> Odoo will produce all the finished products and consume all "
+"<i>apply</i> Lean Soft will produce all the finished products and consume all "
 "components."
 msgstr ""
 "You have not recorded <i>produced</i> quantities yet, by clicking on "
-"<i>apply</i> Odoo will produce all the finished products and consume all "
+"<i>apply</i> Lean Soft will produce all the finished products and consume all "
 "components."
 
 #. module: mrp

@@ -3420,8 +3420,8 @@ msgstr "vd: Đèn"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_variant_easy_edit_view
-msgid "e.g. Odoo Enterprise Subscription"
-msgstr "ví dụ: Đăng ký Odoo bản doanh nghiệp"
+msgid "e.g. Lean Soft Enterprise Subscription"
+msgstr "ví dụ: Đăng ký Lean Soft bản doanh nghiệp"
 
 #. module: product
 #: model_terms:ir.ui.view,arch_db:product.product_pricelist_view
