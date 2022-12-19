@@ -78,7 +78,7 @@ export class RPCErrorDialog extends ErrorDialog {
         }
         switch (this.props.type) {
             case "server":
-                this.title = this.env._t("Odoo Server Error");
+                this.title = this.env._t("Lean Soft Server Error");
                 break;
             case "script":
                 this.title = this.env._t("Odoo Client Error");

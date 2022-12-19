@@ -1,5 +1,5 @@
 # #-#-#-#-#  es_DO.po (Odoo 9.0)  #-#-#-#-#
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # * sale_stock
 #
@@ -8,7 +8,7 @@
 # Eneldo Serrata <eneldoserrata@gmail.com>, 2015
 # Gustavo Valverde, 2016
 # #-#-#-#-#  es_DO.po (Odoo 9.0)  #-#-#-#-#
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # * sale_stock
 #

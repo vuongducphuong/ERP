@@ -169,7 +169,7 @@ class IoTboxHomepage(Home):
         if server:
             res_payload['server'] = {
                 'url': server,
-                'message': 'Redirect to Odoo Server'
+                'message': 'Redirect to Lean Soft Server'
             }
         else:
             res_payload['server'] = {
@@ -241,7 +241,7 @@ class IoTboxHomepage(Home):
     def server(self):
         return server_config_template.render({
             'title': 'IoT -> Odoo server configuration',
-            'breadcrumb': 'Configure Odoo Server',
+            'breadcrumb': 'Configure Lean Soft Server',
             'hostname': subprocess.check_output('hostname').decode('utf-8').strip('\n'),
             'server_status': helpers.get_odoo_server_url() or 'Not configured yet',
             'loading_message': 'Configure Domain Server'

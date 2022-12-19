@@ -1,12 +1,12 @@
 # #-#-#-#-#  pt.po (Odoo 9.0)  #-#-#-#-#
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # * hw_escpos
 #
 # Translators:
 # Dawilson Daio <dawilsondaio@gmail.com>, 2016
 # #-#-#-#-#  pt.po (Odoo 9.0)  #-#-#-#-#
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # * hw_escpos
 #

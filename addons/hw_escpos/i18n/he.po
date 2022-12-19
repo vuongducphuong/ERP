@@ -1,5 +1,5 @@
 # #-#-#-#-#  he.po (Odoo 9.0)  #-#-#-#-#
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # * hw_escpos
 #
@@ -7,7 +7,7 @@
 # Moshe Fam <pashute@gmail.com>, 2016
 # yizhaq agronov <yizhaq@gmail.com>, 2016
 # #-#-#-#-#  he.po (Odoo 9.0)  #-#-#-#-#
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # * hw_escpos
 #

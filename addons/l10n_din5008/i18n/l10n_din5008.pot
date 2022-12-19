@@ -1,10 +1,10 @@
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # 	* l10n_din5008
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~15.2+e\n"
+"Project-Id-Version: Lean Soft Server saas~15.2+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-25 09:57+0000\n"
 "PO-Revision-Date: 2022-05-25 09:57+0000\n"

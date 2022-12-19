@@ -2,7 +2,7 @@
 %global release 1
 %global unmangled_version %{version}
 
-Summary: Odoo Server
+Summary: Lean Soft Server
 Name: %{name}
 Version: %{version}
 Release: %{release}

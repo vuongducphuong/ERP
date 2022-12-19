@@ -31,7 +31,7 @@ class TBXLSXReportController(http.Controller):
             se = http.serialize_exception(e)
             error = {
                 'code': 200,
-                'message': 'Odoo Server Error',
+                'message': 'Lean Soft Server Error',
                 'data': se
             }
             return request.make_response(html_escape(json.dumps(error)))

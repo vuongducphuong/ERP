@@ -17,7 +17,7 @@ version = '.'.join(str(s) for s in version_info[:2]) + RELEASE_LEVELS_DISPLAY[ve
 series = serie = major_version = '.'.join(str(s) for s in version_info[:2])
 
 product_name = 'Odoo'
-description = 'Odoo Server'
+description = 'Lean Soft Server'
 long_desc = '''Odoo is a complete ERP and CRM. The main features are accounting (analytic
 and financial), stock management, sales and purchases management, tasks
 automation, marketing campaigns, help desk, POS, etc. Technical features include

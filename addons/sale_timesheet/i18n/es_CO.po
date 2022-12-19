@@ -1,12 +1,12 @@
 # #-#-#-#-#  es_CO.po (Odoo 9.0)  #-#-#-#-#
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # * sale_timesheet
 #
 # Translators:
 # Mateo Tibaquirá <nestormateo@gmail.com>, 2015
 # #-#-#-#-#  es_CO.po (Odoo 9.0)  #-#-#-#-#
-# Translation of Odoo Server.
+# Translation of Lean Soft Server.
 # This file contains the translation of the following modules:
 # * sale_timesheet
 #
