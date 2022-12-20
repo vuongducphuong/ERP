@@ -121,19 +121,19 @@ odoo.define('ketoan.ke_toan_bao_cao_so_cai', function (require) {
                                         title : datas['name'],
                                     }));
                                     self.$el.find('.journals').select2({
-                                        placeholder: ' Journals...',
+                                        placeholder: ' Sổ...',
                                     });
                                     self.$el.find('.account').select2({
-                                        placeholder: ' Accounts...',
+                                        placeholder: ' Loại...',
                                     });
                                     self.$el.find('.analytics').select2({
-                                        placeholder: 'Analytic Accounts...',
+                                        placeholder: 'TK phân tích...',
                                     });
 //                                    self.$el.find('.analytic_tags').select2({
 //                                        placeholder: 'Analytic Tags...',
 //                                    });
                                     self.$el.find('.target_move').select2({
-                                        placeholder: 'Target Move...',
+                                        placeholder: 'Tình trạng...',
                                     });
 
                             }

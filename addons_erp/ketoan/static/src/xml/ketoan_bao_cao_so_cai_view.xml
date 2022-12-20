@@ -139,24 +139,11 @@
             </h1>
 
         </div>
-        <div class="row" style="margin-right: 10px; margin-left: 10px;">
-            <div class="sub_container_left" style="width:70%;">
-                <div class="report_print">
-                    <button type="button" class="btn btn-primary" id="pdf"
-                            style="position: relative;height:30px;color:white;background-color: #00A0AD;border-color: #00A0AD; padding:3px;">
-                        Xuất PDF
-                    </button>
-                    <button type="button" class="btn btn-primary" id="xlsx"
-                            style="position: relative;height:30px;color:white;background-color: #00A0AD;border-color: #00A0AD; padding:3px;">
-                        Xuất Excel
-                    </button>
-                </div>
-            </div>
-            <br></br>
+        <div class="row" style="margin-right: 10px; margin-left: 10px;">                        
             <div class="sub_container_right row"
-                 style="width:30%;height:3%;top:0px;position: relative;">
+                 style="width:70%;height:3%;top:0px;position: relative;">
 
-                <div class="time_range" style="">
+                <div class="time_range" style="width: 15%;">
                     <a type="button" class="dropdown-toggle"
                        data-bs-toggle="dropdown">
                         <span class="fa fa-calendar" title="Dates" role="img"
@@ -206,7 +193,7 @@
                     </div>
                 </div>
                 <t t-if="title == 'Sổ cái chi tiết các tài khoản'">
-                    <div class="journals_filter" style="">
+                    <div class="journals_filter" style="width: 15%;">
                         <a type="button" class="dropdown-toggle"
                            data-bs-toggle="dropdown">
                             <span class="fa fa-book"></span>
@@ -245,7 +232,7 @@
                     </div>
                 </t>
 
-                <div class="accounts_filter">
+                <div class="accounts_filter" style="width: 15%;">
                     <a type="button" class="dropdown-toggle"
                        data-bs-toggle="dropdown">
                         <span class="fa fa-book"></span>
@@ -312,7 +299,7 @@
                 <!--                        </div>-->
 
 
-                <div class="search-Target-move" style="">
+                <div class="search-Target-move" style="width: 15%;">
                     <a type="button" class="dropdown-toggle"
                        data-bs-toggle="dropdown">
                         <span class="fa fa-filter"></span>
@@ -345,6 +332,19 @@
 
             <!--                </div>-->
             <!--            </div>-->
+            <br></br>
+            <div class="sub_container_left" style="width:30%;text-align: right;">
+                <div class="report_print">
+                    <button type="button" class="btn btn-primary" id="pdf"
+                            style="position: relative;height:30px;color:white;background-color: #00A0AD;border-color: #00A0AD; padding:3px;">
+                        Xuất PDF
+                    </button>
+                    <button type="button" class="btn btn-primary" id="xlsx"
+                            style="position: relative;height:30px;color:white;background-color: #00A0AD;border-color: #00A0AD; padding:3px;">
+                        Xuất Excel
+                    </button>
+                </div>
+            </div>
         </div>
     </t>
 
