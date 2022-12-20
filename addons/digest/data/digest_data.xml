@@ -404,7 +404,7 @@
                 <t t-out="preference"/>
             </div>
             <div class="by_odoo">
-                Sent by <a href="https://www.leansoft.vn" target="_blank" class="odoo_link"><span class="odoo_link_text">Odoo</span></a>
+                Sent by <a href="https://www.leansoft.vn" target="_blank" class="odoo_link"><span class="odoo_link_text">LeanSoft</span></a>
                 <t t-if="unsubscribe_token">
                     –
                     <a t-attf-href="/digest/#{object.id}/unsubscribe?token=#{unsubscribe_token}&amp;user_id=#{user.id}"
@@ -429,7 +429,7 @@
 <div class="global_layout" id="footer">
     <p style="font-weight: bold;" t-esc="company.name"/>
     <p class="by_odoo" id="powered">
-        Phát triển bởi<a href="https://www.leansoft.vn" target="_blank" class="odoo_link"><span class="odoo_link_text">Odoo</span></a>
+        Phát triển bởi<a href="https://www.leansoft.vn" target="_blank" class="odoo_link"><span class="odoo_link_text">LeanSoft</span></a>
     </p>
 </div>
 </div>

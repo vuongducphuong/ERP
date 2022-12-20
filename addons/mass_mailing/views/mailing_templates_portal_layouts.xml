@@ -15,7 +15,7 @@
             </t>
             <body class="o_white_body">
                 <header>
-                    <div><title>Odoo</title></div>
+                    <div><title>LeanSoft</title></div>
                     <div class="text-center">
                         <img t-attf-src="/web/binary/company_logo?company={{ res_company.id }}"/>
                     </div>
@@ -29,7 +29,7 @@
                 <div class="container mt16 mb8">
                     <div class="float-end" t-ignore="true" t-if="not editable">
                         Create a <a target="_blank" href="https://www.leansoft.vn/app/website">free website</a> with
-                        <a target="_blank" class="label label-danger" href="https://www.leansoft.vn/app/website">Odoo</a>
+                        <a target="_blank" class="label label-danger" href="https://www.leansoft.vn/app/website">LeanSoft</a>
                     </div>
                     <div class="float-start text-muted" itemscope="itemscope" itemtype="https://schema.org/Organization">
                         Copyright &amp;copy; <span t-field="res_company.name" itemprop="name">Company name</span>
