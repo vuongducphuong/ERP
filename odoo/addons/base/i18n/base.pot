@@ -5212,7 +5212,7 @@ msgstr ""
 #: model:ir.module.module,description:base.module_base
 msgid ""
 "\n"
-"The kernel of Odoo, needed for all installation.\n"
+"The kernel of Lean Soft, needed for all installation.\n"
 "===================================================\n"
 msgstr ""
 
