@@ -2,7 +2,7 @@
 <templates id="template" xml:space="preserve">
     <t t-name="CRMdashboard">
          <div class="oh_dashboards">
-            <div class="container-fluid my-5 o_hr_dashboard"/>
+            <div class="container-fluid my-5 o_hr_dashboard" style="padding-left: 20px !important;"/>
         </div>
     </t>
     <t t-name="LoginUser">
@@ -17,13 +17,13 @@
                             <form class="form-group">
                                 <select id="income_expense_values" class="form-control">
                                     <option id="this_year"
-                                            value="this_year">This Year</option>
+                                            value="this_year">Năm nay</option>
                                     <option id="this_quarter"
-                                            value="this_quarter">This Quarter</option>
+                                            value="this_quarter">Quý này</option>
                                     <option id="this_month" value="this_month"
-                                            selected="">This Month</option>
+                                            selected="">Tháng này</option>
                                     <option id="this_week"
-                                            value="this_week">This Week</option>
+                                            value="this_week">Tuần này</option>
                                 </select>
                             </form>
                         </div>
@@ -51,7 +51,7 @@
                                     <div id="leads_this_week"/>
                                 </span>
                             </h3>
-                            <h4>My Leads</h4>
+                            <h4>SL tiềm năng</h4>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                                     <div id="opp_this_week"/>
                                 </span>
                             </h3>
-                            <h4>My Opportunities</h4>
+                            <h4>SL Cơ hội</h4>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                                     <div id="exp_rev_this_week"/>
                                 </span>
                             </h3>
-                            <h4>Expected Revenue</h4>
+                            <h4>Doanh thu kỳ vọng</h4>
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                                     <div id="rev_this_week"/>
                                 </span>
                             </h3>
-                            <h4>Revenue</h4>
+                            <h4>Doanh thu thực tế</h4>
                         </div>
                     </div>
                 </div>
@@ -131,12 +131,12 @@
                                     <div id="ratio_this_week"/>
                                 </span>
                             </h3>
-                            <h4>Win Ratio</h4>
+                            <h4>Tỷ lệ thành công</h4>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-3">
+                <!-- <div class="col-sm-12 col-md-3">
                     <div class="dashboard-card card-shadow avg_close_time">
                         <div
                                 class="dashboard-card__icon-container bg-mauve-light d-flex justify-content-center align-items-center">
@@ -151,10 +151,10 @@
                                     <div id="avg_time_this_week"/>
                                 </span>
                             </h3>
-                            <h4>Average Closing Time</h4>
+                            <h4>Thời gian kết thúc trung bình</h4>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="col-sm-12 col-md-3">
                     <div class="dashboard-card card-shadow opportunity_ratio">
@@ -171,12 +171,12 @@
                                     <div id="total_revenue_this_week"/>
                                 </span>
                             </h3>
-                            <h4>Opportunity Win Loss Ratio</h4>
+                            <h4>Tỷ lệ thất bại</h4>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-3">
+                <!-- <div class="col-sm-12 col-md-3">
                     <div class="dashboard-card card-shadow unassigned_leads">
                         <div
                                 class="dashboard-card__icon-container bg-mauve-light d-flex justify-content-center align-items-center">
@@ -188,16 +188,16 @@
                                     <t t-esc="widget.get_count_unassigned"/>
                                 </span>
                             </h3>
-                            <h4>Unassigned Leads Count</h4>
+                            <h4>Tiềm năng chưa phân phối</h4>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div class="row mt-5">
                 <div class="funnel_chart_div col-sm-12 col-md-4">
                     <div class="chart-container card-shadow">
-                        <h2>Funnel Chart</h2>
+                        <h2>Biểu đồ phễu</h2>
                         <hr/>
                         <div class="funnel">
                             <div id="container" class="mt-4" width="100%" height="auto"/>
