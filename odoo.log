@@ -4553,3 +4553,1061 @@ TypeError: not all arguments converted during string formatting
 2022-12-21 10:53:12,861 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:53:12] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.008
 2022-12-21 10:53:39,538 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
 2022-12-21 10:53:39,544 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 10:54:40,570 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 10:54:40,573 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 10:55:29,379 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:55:29] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:55:41,592 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 10:55:41,595 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 10:55:43,455 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:55:43] "GET /web HTTP/1.1" 200 - 54 0.018 1.216
+2022-12-21 10:55:43,473 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:55:43] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 5 0.000 0.008
+2022-12-21 10:55:43,794 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:55:43] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 304 - 5 0.003 0.009
+2022-12-21 10:55:43,796 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:55:43] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 304 - 5 0.003 0.007
+2022-12-21 10:55:43,802 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:55:43] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 304 - 5 0.003 0.006
+2022-12-21 10:55:43,808 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:55:43] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 304 - 5 0.003 0.006
+2022-12-21 10:55:43,810 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:55:43] "GET /web/assets/3211-d6d7fe4/web.assets_common.css.map HTTP/1.1" 200 - 4 0.003 0.004
+2022-12-21 10:55:44,179 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:55:44] "GET /web/assets/3215-d6d7fe4/web.assets_common.js.map HTTP/1.1" 200 - 4 0.000 0.005
+2022-12-21 10:55:44,446 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:55:44] "GET /web/assets/3403-b230b09/web.assets_backend.js.map HTTP/1.1" 200 - 4 0.002 0.003
+2022-12-21 10:55:44,526 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:55:44] "GET /web/assets/3401-b230b09/web.assets_backend.css.map HTTP/1.1" 200 - 4 0.000 0.006
+2022-12-21 10:56:15,376 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:15] "POST /web/action/load HTTP/1.1" 200 - 11 0.003 0.009
+2022-12-21 10:56:15,684 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:15] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.001 0.007
+2022-12-21 10:56:15,727 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:15] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 41 0.005 0.035
+2022-12-21 10:56:16,132 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:16] "POST /web/dataset/call_kw/ir.module.module/read HTTP/1.1" 200 - 11 0.006 0.074
+2022-12-21 10:56:16,325 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:16] "POST /web/dataset/call_kw/ir.module.module.dependency/read HTTP/1.1" 200 - 4 0.001 0.005
+2022-12-21 10:56:16,446 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:16] "GET /base/static/src/css/description.css HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:24,007 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:24] "POST /web/action/load HTTP/1.1" 200 - 8 0.003 0.006
+2022-12-21 10:56:24,332 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:24] "POST /web/dataset/call_kw/ir.module.module/get_apps_server HTTP/1.1" 200 - 1 0.000 0.003
+2022-12-21 10:56:24,594 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:24] "POST /web/action/load HTTP/1.1" 200 - 11 0.008 0.008
+2022-12-21 10:56:24,675 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:24] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 3 0.000 0.007
+2022-12-21 10:56:24,948 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:24] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 43 0.010 0.018
+2022-12-21 10:56:25,007 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:25] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.007
+2022-12-21 10:56:25,087 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:25] "GET /om_account_accountant/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:25,404 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:25] "GET /hr_employee_transfer/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:25,406 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:25] "GET /base/static/img/icons/web_studio.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:25,411 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:25] "GET /ohrms_core/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-21 10:56:25,414 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:25] "GET /dashboard_erp/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:25,418 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:25] "GET /crm_dashboard/static/description/icon.png HTTP/1.1" 404 - 0 0.000 0.001
+2022-12-21 10:56:25,420 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:25] "GET /query_deluxe/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:25,715 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:25] "GET /maintenance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:25,717 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:25] "GET /base_accounting_kit/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:25,720 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:25] "GET /base/static/img/icons/industry_fsm.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:25,722 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:25] "GET /hrms_dashboard/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:25,725 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:25] "GET /hr_employee_shift/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:25,726 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:25] "GET /hr_holidays/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:26,029 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /data_recycle/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:26,034 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /rowno_in_tree/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-21 10:56:26,035 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /sale_discount_total/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:26,039 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /salon_management/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-21 10:56:26,041 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /base/static/img/icons/sign.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-21 10:56:26,042 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /base/static/img/icons/helpdesk.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:26,338 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /base/static/img/icons/sale_subscription.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:26,341 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /base/static/img/icons/quality_control.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:26,348 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /ketoan/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-21 10:56:26,349 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /base/static/img/icons/mrp_workorder.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:26,353 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /base/static/img/icons/account_accountant.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:26,354 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /base/static/img/icons/knowledge.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:26,651 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /website_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:26,654 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /base/static/img/icons/timesheet_grid.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:26,660 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /website_event/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:26,661 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /base/static/img/icons/planning.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-21 10:56:26,666 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /mail/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-21 10:56:26,667 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /contacts/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:26,978 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /base/static/img/icons/mrp_plm.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-21 10:56:26,981 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /calendar/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-21 10:56:26,981 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /base/static/img/icons/social.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:26,986 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /base/static/img/icons/hr_appraisal.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-21 10:56:26,987 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /base/static/img/icons/marketing_automation.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-21 10:56:26,988 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:26] "GET /im_livechat/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:27,304 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:27] "GET /base/static/img/icons/appointment.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:27,308 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:27] "GET /survey/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-21 10:56:27,310 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:27] "GET /base/static/img/icons/web_mobile.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:27,313 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:27] "GET /repair/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:27,316 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:27] "GET /mass_mailing_sms/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:27,318 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:27] "GET /base/static/img/icons/stock_barcode.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:27,616 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:27] "GET /base/static/img/icons/voip.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:27,619 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:27] "GET /hr_skills/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:27,623 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:27] "GET /note/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:27,625 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:27] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:27,629 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:27] "GET /base/static/img/icons/sale_ebay.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-21 10:56:27,630 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:27] "GET /hr_contract/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:31,128 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:31] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 42 0.007 0.016
+2022-12-21 10:56:31,392 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:31] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.007
+2022-12-21 10:56:31,439 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:31] "GET /crm_dashboard/static/description/icon.png HTTP/1.1" 404 - 0 0.000 0.001
+2022-12-21 10:56:31,742 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:31] "GET /accounting_pdf_reports/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:31,745 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:31] "GET /base/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:31,749 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:31] "GET /om_fiscal_year/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:32,897 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:32] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 42 0.009 0.018
+2022-12-21 10:56:33,227 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:33] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.005
+2022-12-21 10:56:35,682 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:35] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 3 0.003 0.006
+2022-12-21 10:56:36,044 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "POST /web/dataset/call_kw/ir.module.module/read HTTP/1.1" 200 - 13 0.003 0.033
+2022-12-21 10:56:36,272 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "POST /web/dataset/call_kw/ir.module.module.dependency/read HTTP/1.1" 200 - 4 0.001 0.006
+2022-12-21 10:56:36,367 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "GET /base/static/src/css/description.css HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 10:56:36,606 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "GET /web/image?model=ir.module.module&id=581&field=icon_image&unique=1671594431000 HTTP/1.1" 200 - 3 0.000 0.005
+2022-12-21 10:56:36,611 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "GET /dashboard_erp/static/description/assets/misc/cybrosys-logo.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-21 10:56:36,612 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "GET /dashboard_erp/static/description/assets/screenshots/hero.gif HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-21 10:56:36,617 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "GET /dashboard_erp/static/description/assets/misc/compass.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-21 10:56:36,622 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "GET /dashboard_erp/static/description/assets/misc/right-arrow.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-21 10:56:36,679 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "GET /dashboard_erp/static/description/assets/misc/pie-chart.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-21 10:56:36,915 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "GET /dashboard_erp/static/description/assets/misc/features.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-21 10:56:36,918 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "GET /dashboard_erp/static/description/assets/misc/check-box.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-21 10:56:36,932 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "GET /dashboard_erp/static/description/assets/screenshots/1.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-21 10:56:36,934 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "GET /dashboard_erp/static/description/assets/misc/pictures.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-12-21 10:56:36,936 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "GET /dashboard_erp/static/description/assets/screenshots/2.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-21 10:56:36,993 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:36] "GET /dashboard_erp/static/description/assets/screenshots/3.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-21 10:56:37,228 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/screenshots/4.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-21 10:56:37,230 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/screenshots/5.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-21 10:56:37,243 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/screenshots/6.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-21 10:56:37,247 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/screenshots/7.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-12-21 10:56:37,249 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/screenshots/8.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-21 10:56:37,321 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/screenshots/9.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-21 10:56:37,556 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/modules/2.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-21 10:56:37,559 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/modules/1.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-21 10:56:37,564 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/misc/categories.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-21 10:56:37,567 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/modules/3.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-12-21 10:56:37,569 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/modules/4.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-21 10:56:37,896 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/modules/6.png HTTP/1.1" 200 - 0 0.000 0.023
+2022-12-21 10:56:37,901 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/misc/star.png HTTP/1.1" 200 - 0 0.000 0.020
+2022-12-21 10:56:37,904 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/icons/cogs.png HTTP/1.1" 200 - 0 0.000 0.009
+2022-12-21 10:56:37,905 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/icons/wrench.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-12-21 10:56:37,907 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:37] "GET /dashboard_erp/static/description/assets/icons/lifebuoy.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-12-21 10:56:38,220 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/icons/update.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-21 10:56:38,223 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/icons/puzzle.png HTTP/1.1" 200 - 0 0.000 0.007
+2022-12-21 10:56:38,225 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/icons/consultation.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-21 10:56:38,230 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/icons/training.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-12-21 10:56:38,231 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/icons/user.png HTTP/1.1" 200 - 0 0.000 0.014
+2022-12-21 10:56:38,545 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/icons/license.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-12-21 10:56:38,551 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/misc/corporate.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-21 10:56:38,555 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/icons/pos-black.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-12-21 10:56:38,557 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/icons/education-black.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-21 10:56:38,557 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/icons/trading-black.png HTTP/1.1" 200 - 0 0.000 0.007
+2022-12-21 10:56:38,756 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/modules/5.png HTTP/1.1" 404 - 170 0.056 1.067
+2022-12-21 10:56:38,858 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/icons/ecom-black.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-21 10:56:38,861 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/icons/manufacturing-black.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-21 10:56:38,864 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/icons/service-black.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-21 10:56:38,869 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/icons/restaurant-black.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-21 10:56:38,871 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:38] "GET /dashboard_erp/static/description/assets/icons/hotel-black.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-21 10:56:39,076 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:39] "GET /dashboard_erp/static/description/assets/misc/customer-support.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-21 10:56:39,172 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:39] "GET /dashboard_erp/static/description/assets/misc/support.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-21 10:56:39,176 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:39] "GET /dashboard_erp/static/description/assets/misc/whatsapp.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-21 10:56:39,176 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:39] "GET /dashboard_erp/static/description/assets/misc/logo.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-21 10:56:42,633 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 10:56:42,637 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 10:56:48,087 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:48,194 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.000 0.003
+2022-12-21 10:56:48,236 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 7 0.003 0.010
+2022-12-21 10:56:48,242 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "POST /web/action/load HTTP/1.1" 200 - 8 0.005 0.009
+2022-12-21 10:56:48,424 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "POST /mail/init_messaging HTTP/1.1" 200 - 40 0.021 0.053
+2022-12-21 10:56:48,572 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.000 0.003
+2022-12-21 10:56:48,596 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "POST /web/dataset/call_kw/crm.lead/get_monthly_goal HTTP/1.1" 200 - 5 0.005 0.012
+2022-12-21 10:56:48,597 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 10 0.008 0.017
+2022-12-21 10:56:48,605 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "POST /web/dataset/call_kw/crm.lead/get_top_deals HTTP/1.1" 200 - 8 0.008 0.018
+2022-12-21 10:56:48,606 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "POST /web/dataset/call_kw/crm.lead/get_upcoming_events HTTP/1.1" 200 - 2 0.003 0.007
+2022-12-21 10:56:48,744 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "POST /web/dataset/call_kw/crm.lead/get_top_sp_revenue HTTP/1.1" 200 - 2 0.001 0.002
+2022-12-21 10:56:48,893 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "POST /web/dataset/call_kw/crm.lead/get_country_revenue HTTP/1.1" 200 - 14 0.002 0.010
+2022-12-21 10:56:48,924 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_country HTTP/1.1" 200 - 3 0.003 0.008
+2022-12-21 10:56:48,928 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "POST /web/dataset/call_kw/crm.lead/get_country_count HTTP/1.1" 200 - 12 0.004 0.012
+2022-12-21 10:56:48,935 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sales_team HTTP/1.1" 200 - 3 0.004 0.007
+2022-12-21 10:56:48,937 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:48] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sp HTTP/1.1" 200 - 7 0.004 0.012
+2022-12-21 10:56:49,058 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/get_recent_activities HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 10:56:49,214 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/get_count_unassigned HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-21 10:56:49,242 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 10:56:49,264 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/get_top_sp_by_invoice HTTP/1.1" 200 - 6 0.005 0.010
+2022-12-21 10:56:49,264 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /mail/load_message_failures HTTP/1.1" 200 - 9 0.011 0.010
+2022-12-21 10:56:49,591 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/get_the_medium_pie HTTP/1.1" 200 - 2 0.002 0.002
+2022-12-21 10:56:49,595 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/get_the_campaign_pie HTTP/1.1" 200 - 2 0.002 0.003
+2022-12-21 10:56:49,599 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/get_the_annual_target HTTP/1.1" 200 - 4 0.001 0.002
+2022-12-21 10:56:49,614 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/get_lead_stage_data HTTP/1.1" 200 - 7 0.006 0.005
+2022-12-21 10:56:49,618 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/get_lead_month_pie HTTP/1.1" 200 - 3 0.002 0.008
+2022-12-21 10:56:49,619 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/get_the_sales_activity HTTP/1.1" 200 - 2 0.004 0.006
+2022-12-21 10:56:49,902 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/get_the_source_pie HTTP/1.1" 200 - 2 0.002 0.003
+2022-12-21 10:56:49,910 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_reason_pie HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 10:56:49,914 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 10:56:49,933 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_stage_pie HTTP/1.1" 200 - 2 0.002 0.004
+2022-12-21 10:56:49,934 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/revenue_count_pie HTTP/1.1" 200 - 4 0.002 0.004
+2022-12-21 10:56:49,943 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:49] "POST /web/dataset/call_kw/crm.lead/lead_details_user HTTP/1.1" 200 - 11 0.002 0.009
+2022-12-21 10:56:52,531 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:52] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 5 0.001 0.004
+2022-12-21 10:56:52,539 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:52] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 304 - 5 0.002 0.004
+2022-12-21 10:56:52,640 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:52] "GET /web/assets/3215-d6d7fe4/web.assets_common.js.map HTTP/1.1" 200 - 4 0.000 0.004
+2022-12-21 10:56:52,647 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:52] "GET /web/assets/2880-a1350ed/web.assets_backend_prod_only.js.map HTTP/1.1" 200 - 4 0.000 0.007
+2022-12-21 10:56:52,653 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:52] "GET /web/assets/3403-b230b09/web.assets_backend.js.map HTTP/1.1" 200 - 4 0.003 0.007
+2022-12-21 10:56:52,782 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:52] "GET /web/assets/3211-d6d7fe4/web.assets_common.css.map HTTP/1.1" 200 - 4 0.000 0.005
+2022-12-21 10:56:52,891 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 10:56:52] "GET /web/assets/3401-b230b09/web.assets_backend.css.map HTTP/1.1" 200 - 4 0.000 0.005
+2022-12-21 10:57:43,662 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 10:57:43,664 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 10:58:44,720 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2022-12-21 10:58:44,722 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2022-12-21 10:58:44,727 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2022-12-21 10:58:44,728 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
+2022-12-21 10:58:44,734 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 10:58:44,738 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 10:58:44,740 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2022-12-21 10:58:44,747 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2022-12-21 10:58:44,749 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2022-12-21 10:58:44,751 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Notification: Send scheduled message notifications` done. 
+2022-12-21 10:58:44,756 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 10:58:44,762 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2022-12-21 10:58:44,763 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 10:58:44,769 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2022-12-21 10:59:45,801 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 10:59:45,804 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:00:46,831 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:00:46,834 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:01:47,863 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `CRM: enrich leads (IAP)`. 
+2022-12-21 11:01:47,867 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:01:47,873 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `CRM: enrich leads (IAP)` done. 
+2022-12-21 11:01:47,873 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:02:26,227 16692 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-12-21 11:02:26,228 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:26] "GET /web HTTP/1.1" 200 - 110 0.124 8.023
+2022-12-21 11:02:26,251 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:26] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 7 0.006 0.005
+2022-12-21 11:02:26,252 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:26] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 7 0.001 0.011
+2022-12-21 11:02:26,564 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:26] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 304 - 5 0.002 0.008
+2022-12-21 11:02:26,568 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:26] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 304 - 5 0.001 0.009
+2022-12-21 11:02:27,216 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:27] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.004 0.656
+2022-12-21 11:02:28,063 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 11:02:28,158 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 2 0.001 0.002
+2022-12-21 11:02:28,201 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/action/load HTTP/1.1" 200 - 8 0.004 0.009
+2022-12-21 11:02:28,206 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 7 0.007 0.007
+2022-12-21 11:02:28,331 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.000 0.003
+2022-12-21 11:02:28,522 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/dataset/call_kw/crm.lead/get_upcoming_events HTTP/1.1" 200 - 2 0.004 0.004
+2022-12-21 11:02:28,534 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/dataset/call_kw/crm.lead/get_top_deals HTTP/1.1" 200 - 8 0.007 0.013
+2022-12-21 11:02:28,538 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/dataset/call_kw/crm.lead/get_monthly_goal HTTP/1.1" 200 - 5 0.007 0.012
+2022-12-21 11:02:28,544 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/dataset/call_kw/crm.lead/get_top_sp_revenue HTTP/1.1" 200 - 2 0.001 0.019
+2022-12-21 11:02:28,556 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/dataset/call_kw/crm.lead/get_country_revenue HTTP/1.1" 200 - 14 0.007 0.013
+2022-12-21 11:02:28,663 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/dataset/call_kw/crm.lead/get_country_count HTTP/1.1" 200 - 12 0.002 0.007
+2022-12-21 11:02:28,846 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_country HTTP/1.1" 200 - 3 0.000 0.005
+2022-12-21 11:02:28,859 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sales_team HTTP/1.1" 200 - 3 0.003 0.004
+2022-12-21 11:02:28,860 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sp HTTP/1.1" 200 - 7 0.004 0.008
+2022-12-21 11:02:28,868 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/dataset/call_kw/crm.lead/get_recent_activities HTTP/1.1" 200 - 2 0.000 0.006
+2022-12-21 11:02:28,869 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/dataset/call_kw/crm.lead/get_count_unassigned HTTP/1.1" 200 - 2 0.000 0.006
+2022-12-21 11:02:28,994 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:28] "POST /web/dataset/call_kw/crm.lead/get_top_sp_by_invoice HTTP/1.1" 200 - 6 0.005 0.006
+2022-12-21 11:02:29,203 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.010 0.013
+2022-12-21 11:02:29,212 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /web/dataset/call_kw/crm.lead/get_the_sales_activity HTTP/1.1" 200 - 2 0.006 0.007
+2022-12-21 11:02:29,258 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 14 0.027 0.056
+2022-12-21 11:02:29,266 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /mail/init_messaging HTTP/1.1" 200 - 57 0.035 0.077
+2022-12-21 11:02:29,337 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /web/dataset/call_kw/crm.lead/get_lead_month_pie HTTP/1.1" 200 - 3 0.001 0.007
+2022-12-21 11:02:29,338 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /web/dataset/call_kw/crm.lead/get_lead_stage_data HTTP/1.1" 200 - 7 0.006 0.005
+2022-12-21 11:02:29,519 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /web/dataset/call_kw/crm.lead/get_the_annual_target HTTP/1.1" 200 - 4 0.002 0.001
+2022-12-21 11:02:29,526 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /web/dataset/call_kw/crm.lead/get_the_campaign_pie HTTP/1.1" 200 - 2 0.002 0.002
+2022-12-21 11:02:29,583 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /web/dataset/call_kw/crm.lead/get_the_medium_pie HTTP/1.1" 200 - 2 0.002 0.003
+2022-12-21 11:02:29,584 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /web/dataset/call_kw/crm.lead/get_the_source_pie HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 11:02:29,661 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_reason_pie HTTP/1.1" 200 - 2 0.002 0.005
+2022-12-21 11:02:29,661 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 11:02:29,831 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_stage_pie HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-21 11:02:29,837 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /web/dataset/call_kw/crm.lead/revenue_count_pie HTTP/1.1" 200 - 4 0.000 0.004
+2022-12-21 11:02:29,902 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /web/dataset/call_kw/crm.lead/lead_details_user HTTP/1.1" 200 - 11 0.006 0.007
+2022-12-21 11:02:29,907 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.004 0.012
+2022-12-21 11:02:29,984 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:29] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 11:02:43,923 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:43] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 304 - 5 0.004 0.007
+2022-12-21 11:02:43,924 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:43] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 5 0.001 0.009
+2022-12-21 11:02:44,168 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:44] "GET /web/assets/3215-d6d7fe4/web.assets_common.js.map HTTP/1.1" 200 - 4 0.001 0.005
+2022-12-21 11:02:44,187 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:44] "GET /web/assets/2880-a1350ed/web.assets_backend_prod_only.js.map HTTP/1.1" 200 - 4 0.003 0.008
+2022-12-21 11:02:44,191 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:44] "GET /web/assets/3407-6fc2c72/web.assets_backend.js.map HTTP/1.1" 200 - 4 0.002 0.013
+2022-12-21 11:02:44,195 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:44] "GET /web/assets/3405-6fc2c72/web.assets_backend.css.map HTTP/1.1" 200 - 4 0.003 0.014
+2022-12-21 11:02:44,279 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:02:44] "GET /web/assets/3211-d6d7fe4/web.assets_common.css.map HTTP/1.1" 200 - 4 0.001 0.005
+2022-12-21 11:02:48,901 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:02:48,904 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:03:11,721 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:03:11] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.005
+2022-12-21 11:03:28,906 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:03:28] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.008
+2022-12-21 11:03:49,922 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:03:49,926 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:04:50,965 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:04:50,967 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:05:51,998 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:05:52,002 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:06:53,021 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:06:53,024 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:07:54,055 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:07:54,059 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:08:02,754 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:08:02] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.002 0.007
+2022-12-21 11:08:55,079 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 11:08:55,083 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 11:08:55,089 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Event: Mail Scheduler`. 
+2022-12-21 11:08:55,098 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:08:55,104 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:08:55,105 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Event: Mail Scheduler` done. 
+2022-12-21 11:09:56,142 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:09:56,145 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:10:57,161 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:10:57,164 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:11:39,794 16692 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-12-21 11:11:39,796 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:39] "GET /web?debug=assets HTTP/1.1" 200 - 171 0.142 9.236
+2022-12-21 11:11:39,851 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:39] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 7 0.004 0.034
+2022-12-21 11:11:39,851 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:39] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 7 0.005 0.032
+2022-12-21 11:11:40,140 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:40] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 304 - 5 0.002 0.005
+2022-12-21 11:11:40,150 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:40] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 304 - 5 0.001 0.005
+2022-12-21 11:11:40,799 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:40] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.004 0.657
+2022-12-21 11:11:41,637 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:41] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 11:11:41,747 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:41] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 2 0.000 0.003
+2022-12-21 11:11:41,775 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:41] "POST /web/action/load HTTP/1.1" 200 - 8 0.003 0.010
+2022-12-21 11:11:41,779 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:41] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 7 0.003 0.013
+2022-12-21 11:11:41,900 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:41] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.000 0.002
+2022-12-21 11:11:42,115 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_top_sp_revenue HTTP/1.1" 200 - 2 0.002 0.008
+2022-12-21 11:11:42,122 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_country_revenue HTTP/1.1" 200 - 14 0.008 0.013
+2022-12-21 11:11:42,125 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_monthly_goal HTTP/1.1" 200 - 5 0.006 0.008
+2022-12-21 11:11:42,138 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_upcoming_events HTTP/1.1" 200 - 2 0.004 0.006
+2022-12-21 11:11:42,139 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_top_deals HTTP/1.1" 200 - 8 0.003 0.018
+2022-12-21 11:11:42,220 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_country_count HTTP/1.1" 200 - 12 0.002 0.007
+2022-12-21 11:11:42,435 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_country HTTP/1.1" 200 - 3 0.002 0.001
+2022-12-21 11:11:42,445 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sp HTTP/1.1" 200 - 7 0.001 0.009
+2022-12-21 11:11:42,452 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sales_team HTTP/1.1" 200 - 3 0.000 0.004
+2022-12-21 11:11:42,457 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_recent_activities HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-21 11:11:42,462 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_count_unassigned HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-21 11:11:42,551 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_top_sp_by_invoice HTTP/1.1" 200 - 6 0.005 0.006
+2022-12-21 11:11:42,796 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_the_sales_activity HTTP/1.1" 200 - 2 0.005 0.014
+2022-12-21 11:11:42,819 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 14 0.020 0.033
+2022-12-21 11:11:42,864 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /mail/init_messaging HTTP/1.1" 200 - 57 0.036 0.068
+2022-12-21 11:11:42,875 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_lead_month_pie HTTP/1.1" 200 - 3 0.001 0.008
+2022-12-21 11:11:42,879 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_lead_stage_data HTTP/1.1" 200 - 7 0.004 0.009
+2022-12-21 11:11:42,881 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:42] "POST /web/dataset/call_kw/crm.lead/get_the_annual_target HTTP/1.1" 200 - 4 0.002 0.008
+2022-12-21 11:11:43,123 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:43] "POST /web/dataset/call_kw/crm.lead/get_the_campaign_pie HTTP/1.1" 200 - 2 0.001 0.002
+2022-12-21 11:11:43,131 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:43] "POST /web/dataset/call_kw/crm.lead/get_the_medium_pie HTTP/1.1" 200 - 2 0.002 0.004
+2022-12-21 11:11:43,189 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:43] "POST /web/dataset/call_kw/crm.lead/get_the_source_pie HTTP/1.1" 200 - 2 0.003 0.004
+2022-12-21 11:11:43,190 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:43] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-21 11:11:43,194 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:43] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_reason_pie HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-21 11:11:43,198 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:43] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_stage_pie HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 11:11:43,456 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:43] "POST /web/dataset/call_kw/crm.lead/revenue_count_pie HTTP/1.1" 200 - 4 0.003 0.005
+2022-12-21 11:11:43,458 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:43] "POST /web/dataset/call_kw/crm.lead/lead_details_user HTTP/1.1" 200 - 11 0.001 0.008
+2022-12-21 11:11:43,515 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:43] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 11:11:43,522 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:11:43] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.006 0.007
+2022-12-21 11:11:58,201 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:11:58,204 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:12:59,233 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:12:59,236 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:13:26,228 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:26] "GET /websocket HTTP/1.1" 101 - 6 0.002 0.059
+2022-12-21 11:13:26,250 16692 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-12-21 11:13:26,253 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:26] "GET /web?debug=assets HTTP/1.1" 200 - 171 0.145 9.234
+2022-12-21 11:13:26,287 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:26] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 5 0.002 0.020
+2022-12-21 11:13:26,307 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:26] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 5 0.013 0.029
+2022-12-21 11:13:26,586 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:26] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 304 - 5 0.005 0.007
+2022-12-21 11:13:26,588 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:26] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 304 - 5 0.001 0.009
+2022-12-21 11:13:27,246 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:27] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.004 0.666
+2022-12-21 11:13:28,085 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 11:13:28,165 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 2 0.001 0.002
+2022-12-21 11:13:28,211 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 7 0.006 0.011
+2022-12-21 11:13:28,211 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/action/load HTTP/1.1" 200 - 8 0.008 0.007
+2022-12-21 11:13:28,340 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.000 0.003
+2022-12-21 11:13:28,529 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/dataset/call_kw/crm.lead/get_top_sp_revenue HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 11:13:28,537 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/dataset/call_kw/crm.lead/get_monthly_goal HTTP/1.1" 200 - 5 0.001 0.008
+2022-12-21 11:13:28,551 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/dataset/call_kw/crm.lead/get_top_deals HTTP/1.1" 200 - 8 0.007 0.011
+2022-12-21 11:13:28,552 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/dataset/call_kw/crm.lead/get_upcoming_events HTTP/1.1" 200 - 2 0.003 0.008
+2022-12-21 11:13:28,563 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/dataset/call_kw/crm.lead/get_country_revenue HTTP/1.1" 200 - 14 0.003 0.013
+2022-12-21 11:13:28,658 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/dataset/call_kw/crm.lead/get_country_count HTTP/1.1" 200 - 12 0.003 0.005
+2022-12-21 11:13:28,842 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_country HTTP/1.1" 200 - 3 0.000 0.005
+2022-12-21 11:13:28,858 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sp HTTP/1.1" 200 - 7 0.001 0.011
+2022-12-21 11:13:28,864 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sales_team HTTP/1.1" 200 - 3 0.001 0.003
+2022-12-21 11:13:28,870 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/dataset/call_kw/crm.lead/get_recent_activities HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 11:13:28,873 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/dataset/call_kw/crm.lead/get_count_unassigned HTTP/1.1" 200 - 2 0.002 0.002
+2022-12-21 11:13:28,989 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:28] "POST /web/dataset/call_kw/crm.lead/get_top_sp_by_invoice HTTP/1.1" 200 - 6 0.001 0.010
+2022-12-21 11:13:29,230 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.011 0.022
+2022-12-21 11:13:29,232 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /web/dataset/call_kw/crm.lead/get_the_sales_activity HTTP/1.1" 200 - 2 0.008 0.015
+2022-12-21 11:13:29,270 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 14 0.031 0.056
+2022-12-21 11:13:29,274 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /mail/init_messaging HTTP/1.1" 200 - 57 0.036 0.069
+2022-12-21 11:13:29,312 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /web/dataset/call_kw/crm.lead/get_lead_month_pie HTTP/1.1" 200 - 3 0.002 0.007
+2022-12-21 11:13:29,314 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /web/dataset/call_kw/crm.lead/get_lead_stage_data HTTP/1.1" 200 - 7 0.005 0.005
+2022-12-21 11:13:29,547 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /web/dataset/call_kw/crm.lead/get_the_campaign_pie HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-21 11:13:29,551 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /web/dataset/call_kw/crm.lead/get_the_annual_target HTTP/1.1" 200 - 4 0.000 0.004
+2022-12-21 11:13:29,578 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /web/dataset/call_kw/crm.lead/get_the_medium_pie HTTP/1.1" 200 - 2 0.001 0.002
+2022-12-21 11:13:29,584 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /web/dataset/call_kw/crm.lead/get_the_source_pie HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-21 11:13:29,626 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.003 0.003
+2022-12-21 11:13:29,627 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_reason_pie HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 11:13:29,875 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_stage_pie HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 11:13:29,879 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /web/dataset/call_kw/crm.lead/revenue_count_pie HTTP/1.1" 200 - 4 0.001 0.004
+2022-12-21 11:13:29,891 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /web/dataset/call_kw/crm.lead/lead_details_user HTTP/1.1" 200 - 11 0.004 0.006
+2022-12-21 11:13:29,905 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.003 0.010
+2022-12-21 11:13:29,934 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:29] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 11:13:43,847 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:43] "POST /web/dataset/call_kw/crm.lead/crm_year HTTP/1.1" 200 - 6 0.001 0.011
+2022-12-21 11:13:46,701 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:46] "POST /web/dataset/call_kw/crm.lead/crm_quarter HTTP/1.1" 200 - 6 0.001 0.003
+2022-12-21 11:13:49,162 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:49] "POST /web/dataset/call_kw/crm.lead/crm_year HTTP/1.1" 200 - 6 0.002 0.005
+2022-12-21 11:13:51,894 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:51] "POST /web/dataset/call_kw/crm.lead/crm_week HTTP/1.1" 200 - 6 0.002 0.003
+2022-12-21 11:13:53,937 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:13:53] "POST /web/dataset/call_kw/crm.lead/crm_year HTTP/1.1" 200 - 6 0.002 0.003
+2022-12-21 11:14:00,264 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:14:00,269 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:14:12,013 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:14:12] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.007
+2022-12-21 11:15:01,288 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:15:01,291 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:15:14,323 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:15:14] "POST /web/dataset/call_kw/crm.lead/crm_quarter HTTP/1.1" 200 - 6 0.000 0.004
+2022-12-21 11:15:17,707 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:15:17] "POST /web/dataset/call_kw/crm.lead/crm_month HTTP/1.1" 200 - 6 0.000 0.005
+2022-12-21 11:16:02,328 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:16:02,332 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:16:47,898 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:16:47] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-21 11:16:49,970 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:16:49] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-21 11:17:03,356 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:17:03,360 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:18:04,389 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:18:04,392 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:19:05,412 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 11:19:05,416 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 11:19:05,422 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:19:05,425 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:20:06,451 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:20:06,454 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:21:07,484 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:21:07,488 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:22:08,513 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:22:08,518 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:22:32,936 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:32] "POST /web/dataset/call_kw/crm.lead/crm_year HTTP/1.1" 200 - 6 0.003 0.002
+2022-12-21 11:22:47,530 16692 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-12-21 11:22:47,532 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:47] "GET /web?debug=assets HTTP/1.1" 200 - 188 0.097 9.210
+2022-12-21 11:22:47,575 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:47] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 7 0.001 0.009
+2022-12-21 11:22:47,578 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:47] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 7 0.004 0.008
+2022-12-21 11:22:47,881 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:47] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 304 - 5 0.001 0.005
+2022-12-21 11:22:47,920 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:47] "GET /web/webclient/translations/618e1bb3d10019d840df4e140407d2d4a8716c6b?lang=vi_VN HTTP/1.1" 200 - 4 0.012 0.021
+2022-12-21 11:22:47,985 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:47] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 304 - 5 0.025 0.038
+2022-12-21 11:22:48,202 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:48] "GET /web/webclient/load_menus/52de037ae8a39d0e1d67878295f19c1bda4862d6a759d3eafa64a81be86cc948 HTTP/1.1" 200 - 35 0.034 0.284
+2022-12-21 11:22:48,640 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:48] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.023 0.727
+2022-12-21 11:22:49,486 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:49] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 11:22:49,582 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:49] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 2 0.000 0.003
+2022-12-21 11:22:49,618 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:49] "POST /web/action/load HTTP/1.1" 200 - 6 0.003 0.005
+2022-12-21 11:22:49,639 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:49] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 10 0.006 0.021
+2022-12-21 11:22:49,752 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:49] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 11:22:50,015 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:50] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 10 0.016 0.022
+2022-12-21 11:22:50,021 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:50] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 304 - 0 0.000 0.022
+2022-12-21 11:22:50,056 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:50] "POST /mail/init_messaging HTTP/1.1" 200 - 70 0.033 0.069
+2022-12-21 11:22:50,068 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:50] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 17 0.026 0.070
+2022-12-21 11:22:50,081 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:50] "POST /mail/load_message_failures HTTP/1.1" 200 - 10 0.002 0.010
+2022-12-21 11:22:55,131 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:55] "POST /web/action/load HTTP/1.1" 200 - 8 0.002 0.009
+2022-12-21 11:22:55,450 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:55] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.000 0.006
+2022-12-21 11:22:55,453 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:55] "POST /web/dataset/call_kw/crm.lead/get_upcoming_events HTTP/1.1" 200 - 2 0.001 0.007
+2022-12-21 11:22:55,486 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:55] "POST /web/dataset/call_kw/crm.lead/get_top_deals HTTP/1.1" 200 - 13 0.018 0.020
+2022-12-21 11:22:55,488 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:55] "POST /web/dataset/call_kw/crm.lead/get_top_sp_revenue HTTP/1.1" 200 - 6 0.011 0.017
+2022-12-21 11:22:55,489 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:55] "POST /web/dataset/call_kw/crm.lead/get_monthly_goal HTTP/1.1" 200 - 11 0.016 0.019
+2022-12-21 11:22:55,498 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:55] "POST /web/dataset/call_kw/crm.lead/get_country_revenue HTTP/1.1" 200 - 15 0.006 0.024
+2022-12-21 11:22:55,764 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:55] "POST /web/dataset/call_kw/crm.lead/get_country_count HTTP/1.1" 200 - 12 0.002 0.007
+2022-12-21 11:22:55,769 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:55] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_country HTTP/1.1" 200 - 3 0.001 0.003
+2022-12-21 11:22:55,805 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:55] "POST /web/dataset/call_kw/crm.lead/get_recent_activities HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-21 11:22:55,809 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:55] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sales_team HTTP/1.1" 200 - 3 0.002 0.005
+2022-12-21 11:22:55,816 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:55] "POST /web/dataset/call_kw/crm.lead/get_count_unassigned HTTP/1.1" 200 - 2 0.000 0.006
+2022-12-21 11:22:55,821 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:55] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sp HTTP/1.1" 200 - 7 0.004 0.011
+2022-12-21 11:22:56,098 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:56] "POST /web/dataset/call_kw/crm.lead/get_top_sp_by_invoice HTTP/1.1" 200 - 13 0.003 0.012
+2022-12-21 11:22:56,416 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:56] "POST /web/dataset/call_kw/crm.lead/get_the_sales_activity HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-21 11:22:56,433 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:56] "POST /web/dataset/call_kw/crm.lead/get_lead_month_pie HTTP/1.1" 200 - 8 0.004 0.011
+2022-12-21 11:22:56,438 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:56] "POST /web/dataset/call_kw/crm.lead/get_lead_stage_data HTTP/1.1" 200 - 8 0.009 0.005
+2022-12-21 11:22:56,442 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:56] "POST /web/dataset/call_kw/crm.lead/get_the_annual_target HTTP/1.1" 200 - 4 0.002 0.004
+2022-12-21 11:22:56,445 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:56] "POST /web/dataset/call_kw/crm.lead/get_the_campaign_pie HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-21 11:22:56,449 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:56] "POST /web/dataset/call_kw/crm.lead/get_the_medium_pie HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-21 11:22:56,741 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:56] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.000 0.005
+2022-12-21 11:22:56,744 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:56] "POST /web/dataset/call_kw/crm.lead/get_the_source_pie HTTP/1.1" 200 - 2 0.000 0.006
+2022-12-21 11:22:56,751 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:56] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_reason_pie HTTP/1.1" 200 - 2 0.000 0.005
+2022-12-21 11:22:56,760 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:56] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_stage_pie HTTP/1.1" 200 - 2 0.001 0.007
+2022-12-21 11:22:56,764 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:56] "POST /web/dataset/call_kw/crm.lead/revenue_count_pie HTTP/1.1" 200 - 4 0.003 0.007
+2022-12-21 11:22:56,766 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:56] "POST /web/dataset/call_kw/crm.lead/lead_details_user HTTP/1.1" 200 - 12 0.003 0.008
+2022-12-21 11:22:59,230 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:22:59] "POST /web/dataset/call_kw/crm.lead/crm_year HTTP/1.1" 200 - 8 0.003 0.006
+2022-12-21 11:23:01,269 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:23:01] "POST /web/dataset/call_kw/crm.lead/crm_quarter HTTP/1.1" 200 - 8 0.001 0.003
+2022-12-21 11:23:04,219 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:23:04] "POST /web/dataset/call_kw/crm.lead/crm_month HTTP/1.1" 200 - 7 0.001 0.003
+2022-12-21 11:23:05,702 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:23:05] "POST /web/dataset/call_kw/crm.lead/crm_week HTTP/1.1" 200 - 7 0.001 0.005
+2022-12-21 11:23:07,482 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:23:07] "POST /web/dataset/call_kw/crm.lead/crm_year HTTP/1.1" 200 - 8 0.003 0.004
+2022-12-21 11:23:09,546 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:23:09,549 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:23:32,856 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:23:32] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.004
+2022-12-21 11:24:06,556 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:06] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-21 11:24:08,454 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:08] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.001 0.002
+2022-12-21 11:24:10,576 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:24:10,581 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:24:11,607 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:11] "POST /web/dataset/call_kw/crm.lead/get_views HTTP/1.1" 200 - 69 0.024 0.077
+2022-12-21 11:24:11,941 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:11] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.007
+2022-12-21 11:24:11,942 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:11] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.007
+2022-12-21 11:24:12,008 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:12] "POST /web/dataset/call_kw/crm.lead/web_search_read HTTP/1.1" 200 - 35 0.010 0.066
+2022-12-21 11:24:12,261 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:12] "POST /web/dataset/call_kw/crm.lead/web_search_read HTTP/1.1" 200 - 25 0.007 0.056
+2022-12-21 11:24:12,286 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:12] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 11:24:12,791 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:12] "POST /web/dataset/call_kw/crm.lead/web_search_read HTTP/1.1" 200 - 25 0.007 0.051
+2022-12-21 11:24:13,002 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:13] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-21 11:24:13,135 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:13] "GET /web/image/res.users/2/avatar_128 HTTP/1.1" 304 - 7 0.002 0.010
+2022-12-21 11:24:14,399 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:14] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.009
+2022-12-21 11:24:14,518 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:14] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.000 0.003
+2022-12-21 11:24:14,828 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:14] "POST /web/dataset/call_kw/crm.lead/get_upcoming_events HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-21 11:24:14,844 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:14] "POST /web/dataset/call_kw/crm.lead/get_top_sp_revenue HTTP/1.1" 200 - 6 0.005 0.013
+2022-12-21 11:24:14,854 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:14] "POST /web/dataset/call_kw/crm.lead/get_monthly_goal HTTP/1.1" 200 - 7 0.008 0.017
+2022-12-21 11:24:14,868 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:14] "POST /web/dataset/call_kw/crm.lead/get_top_deals HTTP/1.1" 200 - 8 0.014 0.020
+2022-12-21 11:24:14,878 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:14] "POST /web/dataset/call_kw/crm.lead/get_country_revenue HTTP/1.1" 200 - 14 0.008 0.019
+2022-12-21 11:24:14,880 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:14] "POST /web/dataset/call_kw/crm.lead/get_country_count HTTP/1.1" 200 - 12 0.009 0.017
+2022-12-21 11:24:15,157 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_country HTTP/1.1" 200 - 3 0.001 0.003
+2022-12-21 11:24:15,167 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sp HTTP/1.1" 200 - 7 0.003 0.009
+2022-12-21 11:24:15,169 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sales_team HTTP/1.1" 200 - 3 0.001 0.007
+2022-12-21 11:24:15,189 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_recent_activities HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-21 11:24:15,192 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_count_unassigned HTTP/1.1" 200 - 2 0.002 0.005
+2022-12-21 11:24:15,202 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_top_sp_by_invoice HTTP/1.1" 200 - 6 0.002 0.012
+2022-12-21 11:24:15,534 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_the_sales_activity HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-21 11:24:15,544 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_lead_month_pie HTTP/1.1" 200 - 3 0.001 0.009
+2022-12-21 11:24:15,551 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_the_annual_target HTTP/1.1" 200 - 4 0.004 0.007
+2022-12-21 11:24:15,552 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_lead_stage_data HTTP/1.1" 200 - 7 0.003 0.013
+2022-12-21 11:24:15,557 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_the_campaign_pie HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-21 11:24:15,559 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_the_medium_pie HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 11:24:15,857 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_the_source_pie HTTP/1.1" 200 - 2 0.000 0.003
+2022-12-21 11:24:15,865 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.002 0.004
+2022-12-21 11:24:15,868 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_reason_pie HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-21 11:24:15,873 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_stage_pie HTTP/1.1" 200 - 2 0.000 0.005
+2022-12-21 11:24:15,883 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/revenue_count_pie HTTP/1.1" 200 - 4 0.005 0.005
+2022-12-21 11:24:15,886 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:15] "POST /web/dataset/call_kw/crm.lead/lead_details_user HTTP/1.1" 200 - 12 0.003 0.008
+2022-12-21 11:24:18,915 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:18] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 5 0.003 0.005
+2022-12-21 11:24:18,916 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:18] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 304 - 5 0.002 0.005
+2022-12-21 11:24:19,086 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:19] "GET /web/assets/3215-d6d7fe4/web.assets_common.js.map HTTP/1.1" 200 - 4 0.002 0.007
+2022-12-21 11:24:19,089 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:19] "GET /web/assets/2880-a1350ed/web.assets_backend_prod_only.js.map HTTP/1.1" 200 - 4 0.002 0.006
+2022-12-21 11:24:19,098 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:19] "GET /web/assets/3419-1e4c62f/web.assets_backend.js.map HTTP/1.1" 200 - 4 0.001 0.009
+2022-12-21 11:24:19,177 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:19] "GET /web/assets/3211-d6d7fe4/web.assets_common.css.map HTTP/1.1" 200 - 4 0.000 0.005
+2022-12-21 11:24:19,276 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:19] "GET /web/assets/3417-1e4c62f/web.assets_backend.css.map HTTP/1.1" 200 - 4 0.000 0.008
+2022-12-21 11:24:39,189 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:39] "POST /web/dataset/call_kw/crm.lead/web_search_read HTTP/1.1" 200 - 25 0.009 0.054
+2022-12-21 11:24:39,527 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:39] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-21 11:24:41,232 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:41] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.001 0.002
+2022-12-21 11:24:41,558 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:41] "POST /web/dataset/call_kw/crm.lead/get_country_count HTTP/1.1" 200 - 12 0.007 0.011
+2022-12-21 11:24:41,568 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:41] "POST /web/dataset/call_kw/crm.lead/get_country_revenue HTTP/1.1" 200 - 14 0.006 0.019
+2022-12-21 11:24:41,582 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:41] "POST /web/dataset/call_kw/crm.lead/get_top_sp_revenue HTTP/1.1" 200 - 6 0.010 0.023
+2022-12-21 11:24:41,583 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:41] "POST /web/dataset/call_kw/crm.lead/get_monthly_goal HTTP/1.1" 200 - 7 0.010 0.017
+2022-12-21 11:24:41,593 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:41] "POST /web/dataset/call_kw/crm.lead/get_upcoming_events HTTP/1.1" 200 - 2 0.002 0.007
+2022-12-21 11:24:41,599 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:41] "POST /web/dataset/call_kw/crm.lead/get_top_deals HTTP/1.1" 200 - 8 0.003 0.024
+2022-12-21 11:24:41,883 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:41] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_country HTTP/1.1" 200 - 3 0.001 0.002
+2022-12-21 11:24:41,904 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:41] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sp HTTP/1.1" 200 - 7 0.004 0.009
+2022-12-21 11:24:41,905 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:41] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sales_team HTTP/1.1" 200 - 3 0.003 0.007
+2022-12-21 11:24:41,912 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:41] "POST /web/dataset/call_kw/crm.lead/get_recent_activities HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-21 11:24:41,915 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:41] "POST /web/dataset/call_kw/crm.lead/get_count_unassigned HTTP/1.1" 200 - 2 0.002 0.005
+2022-12-21 11:24:41,924 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:41] "POST /web/dataset/call_kw/crm.lead/get_top_sp_by_invoice HTTP/1.1" 200 - 6 0.001 0.013
+2022-12-21 11:24:42,249 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:42] "POST /web/dataset/call_kw/crm.lead/get_the_sales_activity HTTP/1.1" 200 - 2 0.001 0.006
+2022-12-21 11:24:42,253 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:42] "POST /web/dataset/call_kw/crm.lead/get_lead_month_pie HTTP/1.1" 200 - 3 0.001 0.010
+2022-12-21 11:24:42,265 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:42] "POST /web/dataset/call_kw/crm.lead/get_the_annual_target HTTP/1.1" 200 - 4 0.003 0.008
+2022-12-21 11:24:42,268 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:42] "POST /web/dataset/call_kw/crm.lead/get_the_campaign_pie HTTP/1.1" 200 - 2 0.002 0.008
+2022-12-21 11:24:42,269 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:42] "POST /web/dataset/call_kw/crm.lead/get_lead_stage_data HTTP/1.1" 200 - 7 0.004 0.014
+2022-12-21 11:24:42,273 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:42] "POST /web/dataset/call_kw/crm.lead/get_the_medium_pie HTTP/1.1" 200 - 2 0.002 0.008
+2022-12-21 11:24:42,574 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:42] "POST /web/dataset/call_kw/crm.lead/get_the_source_pie HTTP/1.1" 200 - 2 0.003 0.003
+2022-12-21 11:24:42,575 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:42] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.002 0.005
+2022-12-21 11:24:42,580 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:42] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_reason_pie HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 11:24:42,585 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:42] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_stage_pie HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-21 11:24:42,593 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:42] "POST /web/dataset/call_kw/crm.lead/revenue_count_pie HTTP/1.1" 200 - 4 0.004 0.003
+2022-12-21 11:24:42,599 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:24:42] "POST /web/dataset/call_kw/crm.lead/lead_details_user HTTP/1.1" 200 - 12 0.005 0.008
+2022-12-21 11:25:09,838 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:25:09] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.002 0.002
+2022-12-21 11:25:11,598 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:25:11,601 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:25:11,955 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:25:11] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-21 11:26:12,635 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:26:12,639 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:26:48,625 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:26:48] "GET /web/assets/3211-d6d7fe4/web.assets_common.css.map HTTP/1.1" 200 - 4 0.000 0.007
+2022-12-21 11:26:48,633 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:26:48] "GET /web/assets/3417-1e4c62f/web.assets_backend.css.map HTTP/1.1" 200 - 4 0.002 0.009
+2022-12-21 11:26:48,636 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:26:48] "GET /web/assets/3215-d6d7fe4/web.assets_common.js.map HTTP/1.1" 200 - 4 0.003 0.009
+2022-12-21 11:26:48,641 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:26:48] "GET /web/assets/2880-a1350ed/web.assets_backend_prod_only.js.map HTTP/1.1" 200 - 4 0.002 0.011
+2022-12-21 11:26:48,648 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:26:48] "GET /web/assets/3419-1e4c62f/web.assets_backend.js.map HTTP/1.1" 200 - 4 0.002 0.008
+2022-12-21 11:26:51,660 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:26:51] "POST /web/dataset/call_kw/crm.lead/web_search_read HTTP/1.1" 200 - 25 0.005 0.054
+2022-12-21 11:26:51,992 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:26:51] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-21 11:27:13,654 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:27:13,658 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:28:14,690 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:28:14,693 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:28:53,877 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:53] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.000 0.003
+2022-12-21 11:28:53,882 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:53] "POST /web/dataset/call_kw/crm.lead/get_upcoming_events HTTP/1.1" 200 - 2 0.001 0.002
+2022-12-21 11:28:53,912 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:53] "POST /web/dataset/call_kw/crm.lead/get_top_deals HTTP/1.1" 200 - 8 0.010 0.016
+2022-12-21 11:28:53,916 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:53] "POST /web/dataset/call_kw/crm.lead/get_monthly_goal HTTP/1.1" 200 - 7 0.011 0.016
+2022-12-21 11:28:53,923 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:53] "POST /web/dataset/call_kw/crm.lead/get_top_sp_revenue HTTP/1.1" 200 - 6 0.010 0.018
+2022-12-21 11:28:53,929 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:53] "POST /web/dataset/call_kw/crm.lead/get_country_revenue HTTP/1.1" 200 - 14 0.008 0.020
+2022-12-21 11:28:54,191 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:54] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_country HTTP/1.1" 200 - 3 0.002 0.004
+2022-12-21 11:28:54,200 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:54] "POST /web/dataset/call_kw/crm.lead/get_country_count HTTP/1.1" 200 - 12 0.001 0.009
+2022-12-21 11:28:54,236 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:54] "POST /web/dataset/call_kw/crm.lead/get_count_unassigned HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 11:28:54,243 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:54] "POST /web/dataset/call_kw/crm.lead/get_recent_activities HTTP/1.1" 200 - 2 0.000 0.006
+2022-12-21 11:28:54,246 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:54] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sales_team HTTP/1.1" 200 - 3 0.001 0.008
+2022-12-21 11:28:54,256 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:54] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sp HTTP/1.1" 200 - 7 0.002 0.007
+2022-12-21 11:28:54,519 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:54] "POST /web/dataset/call_kw/crm.lead/get_top_sp_by_invoice HTTP/1.1" 200 - 6 0.002 0.008
+2022-12-21 11:28:54,871 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:54] "POST /web/dataset/call_kw/crm.lead/web_search_read HTTP/1.1" 200 - 25 0.007 0.054
+2022-12-21 11:28:55,201 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:55] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.003 0.002
+2022-12-21 11:28:58,028 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:58] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.000 0.003
+2022-12-21 11:28:58,337 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:58] "POST /web/dataset/call_kw/crm.lead/get_upcoming_events HTTP/1.1" 200 - 2 0.002 0.002
+2022-12-21 11:28:58,360 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:58] "POST /web/dataset/call_kw/crm.lead/get_monthly_goal HTTP/1.1" 200 - 7 0.008 0.014
+2022-12-21 11:28:58,361 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:58] "POST /web/dataset/call_kw/crm.lead/get_top_deals HTTP/1.1" 200 - 8 0.013 0.014
+2022-12-21 11:28:58,374 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:58] "POST /web/dataset/call_kw/crm.lead/get_top_sp_revenue HTTP/1.1" 200 - 6 0.006 0.011
+2022-12-21 11:28:58,389 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:58] "POST /web/dataset/call_kw/crm.lead/get_country_revenue HTTP/1.1" 200 - 14 0.012 0.014
+2022-12-21 11:28:58,391 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:58] "POST /web/dataset/call_kw/crm.lead/get_country_count HTTP/1.1" 200 - 12 0.005 0.019
+2022-12-21 11:28:58,650 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:58] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_country HTTP/1.1" 200 - 3 0.001 0.003
+2022-12-21 11:28:58,688 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:58] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sales_team HTTP/1.1" 200 - 3 0.003 0.005
+2022-12-21 11:28:58,688 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:58] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sp HTTP/1.1" 200 - 7 0.004 0.007
+2022-12-21 11:28:58,694 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:58] "POST /web/dataset/call_kw/crm.lead/get_recent_activities HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-21 11:28:58,699 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:58] "POST /web/dataset/call_kw/crm.lead/get_count_unassigned HTTP/1.1" 200 - 2 0.002 0.003
+2022-12-21 11:28:58,711 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:58] "POST /web/dataset/call_kw/crm.lead/get_top_sp_by_invoice HTTP/1.1" 200 - 6 0.003 0.009
+2022-12-21 11:28:59,025 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:59] "POST /web/dataset/call_kw/crm.lead/get_the_medium_pie HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 11:28:59,029 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:59] "POST /web/dataset/call_kw/crm.lead/get_the_campaign_pie HTTP/1.1" 200 - 2 0.002 0.004
+2022-12-21 11:28:59,039 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:59] "POST /web/dataset/call_kw/crm.lead/get_the_annual_target HTTP/1.1" 200 - 4 0.004 0.004
+2022-12-21 11:28:59,050 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:59] "POST /web/dataset/call_kw/crm.lead/get_lead_stage_data HTTP/1.1" 200 - 7 0.010 0.007
+2022-12-21 11:28:59,050 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:59] "POST /web/dataset/call_kw/crm.lead/get_lead_month_pie HTTP/1.1" 200 - 3 0.004 0.010
+2022-12-21 11:28:59,053 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:59] "POST /web/dataset/call_kw/crm.lead/get_the_sales_activity HTTP/1.1" 200 - 2 0.002 0.009
+2022-12-21 11:28:59,341 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:59] "POST /web/dataset/call_kw/crm.lead/get_the_source_pie HTTP/1.1" 200 - 2 0.000 0.007
+2022-12-21 11:28:59,355 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:59] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.007 0.002
+2022-12-21 11:28:59,371 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:59] "POST /web/dataset/call_kw/crm.lead/revenue_count_pie HTTP/1.1" 200 - 4 0.002 0.006
+2022-12-21 11:28:59,376 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:59] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_stage_pie HTTP/1.1" 200 - 2 0.000 0.007
+2022-12-21 11:28:59,381 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:59] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_reason_pie HTTP/1.1" 200 - 2 0.000 0.009
+2022-12-21 11:28:59,657 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:28:59] "POST /web/dataset/call_kw/crm.lead/lead_details_user HTTP/1.1" 200 - 12 0.002 0.006
+2022-12-21 11:29:08,446 16692 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-12-21 11:29:08,448 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:08] "GET /web?debug=assets HTTP/1.1" 200 - 150 0.143 8.969
+2022-12-21 11:29:08,787 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:08] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 7 0.004 0.004
+2022-12-21 11:29:08,799 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:08] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 304 - 5 0.006 0.007
+2022-12-21 11:29:08,801 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:08] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 5 0.005 0.012
+2022-12-21 11:29:08,809 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:08] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 304 - 5 0.004 0.011
+2022-12-21 11:29:09,455 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:09] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.004 0.660
+2022-12-21 11:29:09,999 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:09] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-21 11:29:10,407 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:10] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 11:29:10,460 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:10] "POST /web/action/load HTTP/1.1" 200 - 8 0.015 0.010
+2022-12-21 11:29:10,465 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:10] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 10 0.008 0.021
+2022-12-21 11:29:10,673 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:10] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.000 0.002
+2022-12-21 11:29:10,783 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:10] "POST /web/dataset/call_kw/crm.lead/get_upcoming_events HTTP/1.1" 200 - 2 0.001 0.002
+2022-12-21 11:29:10,813 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:10] "POST /web/dataset/call_kw/crm.lead/get_top_deals HTTP/1.1" 200 - 14 0.013 0.013
+2022-12-21 11:29:10,823 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:10] "POST /web/dataset/call_kw/crm.lead/get_monthly_goal HTTP/1.1" 200 - 11 0.013 0.018
+2022-12-21 11:29:10,831 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:10] "POST /web/dataset/call_kw/crm.lead/get_top_sp_revenue HTTP/1.1" 200 - 6 0.010 0.023
+2022-12-21 11:29:10,836 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:10] "POST /web/dataset/call_kw/crm.lead/get_country_revenue HTTP/1.1" 200 - 15 0.012 0.024
+2022-12-21 11:29:10,989 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:10] "POST /web/dataset/call_kw/crm.lead/get_country_count HTTP/1.1" 200 - 12 0.003 0.006
+2022-12-21 11:29:11,108 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_country HTTP/1.1" 200 - 3 0.000 0.004
+2022-12-21 11:29:11,140 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_recent_activities HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 11:29:11,148 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sales_team HTTP/1.1" 200 - 3 0.003 0.009
+2022-12-21 11:29:11,153 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sp HTTP/1.1" 200 - 7 0.005 0.010
+2022-12-21 11:29:11,156 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_count_unassigned HTTP/1.1" 200 - 2 0.000 0.008
+2022-12-21 11:29:11,323 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_top_sp_by_invoice HTTP/1.1" 200 - 13 0.004 0.011
+2022-12-21 11:29:11,494 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_the_sales_activity HTTP/1.1" 200 - 2 0.003 0.006
+2022-12-21 11:29:11,505 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 10 0.014 0.021
+2022-12-21 11:29:11,530 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /mail/init_messaging HTTP/1.1" 200 - 70 0.031 0.066
+2022-12-21 11:29:11,535 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 17 0.015 0.054
+2022-12-21 11:29:11,667 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_lead_month_pie HTTP/1.1" 200 - 8 0.008 0.006
+2022-12-21 11:29:11,670 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_lead_stage_data HTTP/1.1" 200 - 8 0.005 0.009
+2022-12-21 11:29:11,816 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_the_campaign_pie HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-21 11:29:11,816 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_the_annual_target HTTP/1.1" 200 - 4 0.002 0.005
+2022-12-21 11:29:11,846 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_the_medium_pie HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-21 11:29:11,847 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_the_source_pie HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-21 11:29:11,986 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_reason_pie HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-21 11:29:11,986 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:11] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-21 11:29:12,140 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:12] "POST /web/dataset/call_kw/crm.lead/revenue_count_pie HTTP/1.1" 200 - 4 0.001 0.004
+2022-12-21 11:29:12,143 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:12] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_stage_pie HTTP/1.1" 200 - 2 0.002 0.002
+2022-12-21 11:29:12,161 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:12] "POST /web/dataset/call_kw/crm.lead/lead_details_user HTTP/1.1" 200 - 12 0.006 0.006
+2022-12-21 11:29:12,169 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:12] "POST /mail/load_message_failures HTTP/1.1" 200 - 10 0.006 0.012
+2022-12-21 11:29:12,293 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:12] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 11:29:13,435 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:13] "POST /web/dataset/call_kw/crm.lead/get_views HTTP/1.1" 200 - 71 0.023 0.073
+2022-12-21 11:29:13,676 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:13] "POST /web/dataset/call_kw/crm.lead/web_search_read HTTP/1.1" 200 - 35 0.011 0.059
+2022-12-21 11:29:13,768 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:13] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.002 0.003
+2022-12-21 11:29:13,769 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:13] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.003 0.004
+2022-12-21 11:29:13,773 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:13] "POST /web/dataset/call_kw/crm.tag/read HTTP/1.1" 200 - 2 0.000 0.007
+2022-12-21 11:29:14,014 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:14] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 11:29:14,229 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:14] "GET /web/image/res.users/2/avatar_128 HTTP/1.1" 304 - 7 0.002 0.009
+2022-12-21 11:29:15,604 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:15] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.001 0.002
+2022-12-21 11:29:15,723 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 11:29:15,726 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:29:15,732 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 11:29:15,733 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:29:15,935 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:15] "POST /web/dataset/call_kw/crm.lead/get_upcoming_events HTTP/1.1" 200 - 2 0.002 0.012
+2022-12-21 11:29:15,939 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:15] "POST /web/dataset/call_kw/crm.lead/get_top_deals HTTP/1.1" 200 - 8 0.009 0.012
+2022-12-21 11:29:15,959 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:15] "POST /web/dataset/call_kw/crm.lead/get_top_sp_revenue HTTP/1.1" 200 - 6 0.010 0.011
+2022-12-21 11:29:15,962 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:15] "POST /web/dataset/call_kw/crm.lead/get_monthly_goal HTTP/1.1" 200 - 7 0.011 0.019
+2022-12-21 11:29:15,974 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:15] "POST /web/dataset/call_kw/crm.lead/get_country_revenue HTTP/1.1" 200 - 14 0.008 0.018
+2022-12-21 11:29:15,977 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:15] "POST /web/dataset/call_kw/crm.lead/get_country_count HTTP/1.1" 200 - 12 0.007 0.013
+2022-12-21 11:29:16,258 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sp HTTP/1.1" 200 - 7 0.002 0.010
+2022-12-21 11:29:16,258 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_country HTTP/1.1" 200 - 3 0.004 0.004
+2022-12-21 11:29:16,281 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_recent_activities HTTP/1.1" 200 - 2 0.003 0.003
+2022-12-21 11:29:16,287 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sales_team HTTP/1.1" 200 - 3 0.002 0.007
+2022-12-21 11:29:16,300 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_count_unassigned HTTP/1.1" 200 - 2 0.002 0.008
+2022-12-21 11:29:16,302 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_top_sp_by_invoice HTTP/1.1" 200 - 6 0.005 0.011
+2022-12-21 11:29:16,630 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_lead_month_pie HTTP/1.1" 200 - 3 0.001 0.011
+2022-12-21 11:29:16,632 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_the_sales_activity HTTP/1.1" 200 - 2 0.002 0.013
+2022-12-21 11:29:16,657 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_lead_stage_data HTTP/1.1" 200 - 7 0.013 0.010
+2022-12-21 11:29:16,659 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_the_annual_target HTTP/1.1" 200 - 4 0.006 0.017
+2022-12-21 11:29:16,660 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_the_campaign_pie HTTP/1.1" 200 - 2 0.001 0.012
+2022-12-21 11:29:16,667 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_the_medium_pie HTTP/1.1" 200 - 2 0.001 0.011
+2022-12-21 11:29:16,951 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_the_source_pie HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-21 11:29:16,954 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-21 11:29:16,986 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_reason_pie HTTP/1.1" 200 - 2 0.002 0.007
+2022-12-21 11:29:16,986 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_stage_pie HTTP/1.1" 200 - 2 0.002 0.005
+2022-12-21 11:29:16,991 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/revenue_count_pie HTTP/1.1" 200 - 4 0.003 0.008
+2022-12-21 11:29:16,996 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:29:16] "POST /web/dataset/call_kw/crm.lead/lead_details_user HTTP/1.1" 200 - 12 0.003 0.008
+2022-12-21 11:30:16,760 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:30:16,764 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:31:17,792 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Product: send email regarding products availability`. 
+2022-12-21 11:31:17,794 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:31:17,797 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:31:17,799 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Product: send email regarding products availability` done. 
+2022-12-21 11:31:17,804 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `eCommerce: send email to customers about their abandoned cart`. 
+2022-12-21 11:31:17,808 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `eCommerce: send email to customers about their abandoned cart` done. 
+2022-12-21 11:32:18,832 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:32:18,835 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:33:19,865 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:33:19,867 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:33:59,542 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:33:59] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.008
+2022-12-21 11:34:20,894 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:34:20,897 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:34:21,347 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:34:21] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
+2022-12-21 11:35:21,920 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:35:21,923 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:36:22,949 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:36:22,952 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:37:23,973 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:37:23,977 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:38:25,009 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 11:38:25,013 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:38:25,015 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 11:38:25,017 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:39:26,050 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:39:26,054 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:40:27,071 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:40:27,079 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:41:28,118 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:41:28,122 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:42:29,150 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:42:29,154 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:43:30,178 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:43:30,182 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:44:11,430 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:44:11] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.011
+2022-12-21 11:44:26,512 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:44:26] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.013
+2022-12-21 11:44:31,222 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:44:31,225 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:45:32,245 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:45:32,249 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:46:33,281 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:46:33,285 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:47:34,307 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:47:34,314 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:48:35,359 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 11:48:35,362 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:48:35,366 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 11:48:35,367 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:49:36,406 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:49:36,413 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:50:37,423 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:50:37,429 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:51:38,462 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:51:38,466 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:52:39,484 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:52:39,490 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:53:40,531 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:53:40,538 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:54:26,129 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:54:26] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.008
+2022-12-21 11:54:41,562 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:54:41,567 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:55:11,277 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 11:55:11] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.007
+2022-12-21 11:55:42,605 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:55:42,611 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:56:43,635 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:56:43,642 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:57:44,670 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:57:44,675 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:58:45,690 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2022-12-21 11:58:45,693 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2022-12-21 11:58:45,700 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2022-12-21 11:58:45,705 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
+2022-12-21 11:58:45,708 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2022-12-21 11:58:45,713 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2022-12-21 11:58:45,715 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 11:58:45,719 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 11:58:45,722 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2022-12-21 11:58:45,725 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Notification: Send scheduled message notifications` done. 
+2022-12-21 11:58:45,728 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:58:45,734 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 11:58:45,736 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2022-12-21 11:58:45,741 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2022-12-21 11:59:46,765 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 11:59:46,768 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:00:47,808 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:00:47,812 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:01:10,778 16692 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-12-21 12:01:10,780 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:10] "GET /web?debug=assets HTTP/1.1" 200 - 176 0.140 17.587
+2022-12-21 12:01:10,802 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:10] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 8 0.003 0.011
+2022-12-21 12:01:10,805 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:10] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 200 - 8 0.004 0.014
+2022-12-21 12:01:11,115 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:11] "GET /web/webclient/translations/618e1bb3d10019d840df4e140407d2d4a8716c6b?lang=vi_VN HTTP/1.1" 200 - 4 0.002 0.011
+2022-12-21 12:01:11,182 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:11] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 304 - 5 0.028 0.036
+2022-12-21 12:01:11,244 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:11] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 200 - 5 0.004 0.139
+2022-12-21 12:01:11,420 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:11] "GET /web/webclient/load_menus/938d789ef1c170bfa15b6b102aab3dbda2eaec80de2e466cc0c05533b770eb2a HTTP/1.1" 200 - 34 0.032 0.280
+2022-12-21 12:01:11,849 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:11] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.018 0.671
+2022-12-21 12:01:12,732 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:12] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-21 12:01:12,843 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:12] "GET /web/webclient/locale/vi_VN HTTP/1.1" 200 - 1 0.000 0.012
+2022-12-21 12:01:12,847 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:12] "GET /bus/websocket_worker_bundle HTTP/1.1" 304 - 5 0.002 0.023
+2022-12-21 12:01:12,850 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:12] "POST /web/action/load HTTP/1.1" 200 - 11 0.004 0.013
+2022-12-21 12:01:13,084 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:13] "POST /mail/init_messaging HTTP/1.1" 200 - 60 0.021 0.081
+2022-12-21 12:01:13,204 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:13] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
+2022-12-21 12:01:13,216 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:13] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.010
+2022-12-21 12:01:13,301 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:13] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 14 0.041 0.052
+2022-12-21 12:01:13,306 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:01:13] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.004 0.014
+2022-12-21 12:01:48,829 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `CRM: enrich leads (IAP)`. 
+2022-12-21 12:01:48,832 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `CRM: enrich leads (IAP)` done. 
+2022-12-21 12:01:48,840 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:01:48,843 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:02:49,878 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:02:49,882 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:03:50,914 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:03:50,918 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:04:17,148 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:17] "GET /web?debug=assets HTTP/1.1" 200 - 92 0.024 1.404
+2022-12-21 12:04:17,173 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:17] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 5 0.003 0.009
+2022-12-21 12:04:17,174 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:17] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 5 0.002 0.011
+2022-12-21 12:04:17,491 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:17] "GET /web/webclient/load_menus/82efc9e9c996aec7087a8a853a3d935b631f26729c5a99d32909da06803bbc5a HTTP/1.1" 200 - 1 0.000 0.006
+2022-12-21 12:04:17,501 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:17] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 304 - 5 0.002 0.006
+2022-12-21 12:04:17,507 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:17] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.002 0.008
+2022-12-21 12:04:17,509 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:17] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 304 - 5 0.001 0.005
+2022-12-21 12:04:18,358 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:18] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-21 12:04:18,465 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:18] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 2 0.000 0.003
+2022-12-21 12:04:18,494 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:18] "POST /web/action/load HTTP/1.1" 200 - 8 0.007 0.009
+2022-12-21 12:04:18,496 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:18] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 7 0.004 0.012
+2022-12-21 12:04:18,622 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:18] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.000 0.003
+2022-12-21 12:04:18,835 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:18] "POST /web/dataset/call_kw/crm.lead/get_top_deals HTTP/1.1" 200 - 13 0.014 0.012
+2022-12-21 12:04:18,835 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:18] "POST /web/dataset/call_kw/crm.lead/get_monthly_goal HTTP/1.1" 200 - 15 0.015 0.016
+2022-12-21 12:04:18,841 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:18] "POST /web/dataset/call_kw/crm.lead/get_upcoming_events HTTP/1.1" 200 - 2 0.003 0.011
+2022-12-21 12:04:18,850 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:18] "POST /web/dataset/call_kw/crm.lead/get_top_sp_revenue HTTP/1.1" 200 - 6 0.006 0.021
+2022-12-21 12:04:18,857 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:18] "POST /web/dataset/call_kw/crm.lead/get_country_revenue HTTP/1.1" 200 - 15 0.005 0.019
+2022-12-21 12:04:18,942 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:18] "POST /web/dataset/call_kw/crm.lead/get_country_count HTTP/1.1" 200 - 12 0.001 0.010
+2022-12-21 12:04:19,153 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_country HTTP/1.1" 200 - 3 0.001 0.006
+2022-12-21 12:04:19,162 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sp HTTP/1.1" 200 - 7 0.002 0.011
+2022-12-21 12:04:19,163 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_ratio_based_sales_team HTTP/1.1" 200 - 3 0.002 0.009
+2022-12-21 12:04:19,167 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_recent_activities HTTP/1.1" 200 - 2 0.001 0.008
+2022-12-21 12:04:19,170 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_count_unassigned HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-21 12:04:19,273 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_top_sp_by_invoice HTTP/1.1" 200 - 13 0.005 0.010
+2022-12-21 12:04:19,497 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 10 0.011 0.018
+2022-12-21 12:04:19,501 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_the_sales_activity HTTP/1.1" 200 - 2 0.004 0.013
+2022-12-21 12:04:19,542 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /mail/init_messaging HTTP/1.1" 200 - 51 0.028 0.053
+2022-12-21 12:04:19,542 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 17 0.021 0.041
+2022-12-21 12:04:19,617 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_lead_month_pie HTTP/1.1" 200 - 8 0.006 0.006
+2022-12-21 12:04:19,619 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_lead_stage_data HTTP/1.1" 200 - 13 0.010 0.008
+2022-12-21 12:04:19,822 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_the_campaign_pie HTTP/1.1" 200 - 2 0.002 0.003
+2022-12-21 12:04:19,824 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_the_annual_target HTTP/1.1" 200 - 4 0.001 0.004
+2022-12-21 12:04:19,870 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_the_medium_pie HTTP/1.1" 200 - 2 0.001 0.006
+2022-12-21 12:04:19,870 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_the_source_pie HTTP/1.1" 200 - 2 0.000 0.005
+2022-12-21 12:04:19,932 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_total_lost_crm HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-21 12:04:19,936 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:19] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_reason_pie HTTP/1.1" 200 - 2 0.001 0.007
+2022-12-21 12:04:20,137 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:20] "POST /web/dataset/call_kw/crm.lead/get_lost_lead_by_stage_pie HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-21 12:04:20,140 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:20] "POST /web/dataset/call_kw/crm.lead/revenue_count_pie HTTP/1.1" 200 - 4 0.002 0.004
+2022-12-21 12:04:20,191 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:20] "POST /web/dataset/call_kw/crm.lead/lead_details_user HTTP/1.1" 200 - 12 0.006 0.008
+2022-12-21 12:04:20,196 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:20] "POST /mail/load_message_failures HTTP/1.1" 200 - 10 0.006 0.011
+2022-12-21 12:04:20,261 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:20] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-21 12:04:26,686 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:26] "POST /web/action/load HTTP/1.1" 200 - 8 0.003 0.008
+2022-12-21 12:04:27,007 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:27] "POST /web/dataset/call_kw/website/get_current_website HTTP/1.1" 200 - 1 0.001 0.003
+2022-12-21 12:04:27,014 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:27] "POST /web/dataset/call_kw/website/search_read HTTP/1.1" 200 - 4 0.000 0.005
+2022-12-21 12:04:27,020 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:27] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.000 0.005
+2022-12-21 12:04:27,027 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:27] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-21 12:04:27,027 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:27] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.002
+2022-12-21 12:04:27,279 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:27] "GET /website/force/1?path=%2F HTTP/1.1" 303 - 9 0.005 0.008
+2022-12-21 12:04:27,519 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:27] "GET /web/static/img/spin.svg HTTP/1.1" 200 - 0 0.000 0.137
+2022-12-21 12:04:30,080 16692 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-12-21 12:04:30,084 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:30] "GET /website/iframefallback HTTP/1.1" 200 - 116 0.175 2.564
+2022-12-21 12:04:30,151 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:30] "GET /web/assets/debug/1/web.assets_frontend.css HTTP/1.1" 200 - 7 0.030 0.032
+2022-12-21 12:04:30,414 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:30] "GET /web/assets/debug/1/website.assets_wysiwyg.css HTTP/1.1" 200 - 6 0.002 0.014
+2022-12-21 12:04:30,425 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:30] "GET / HTTP/1.1" 200 - 260 0.341 2.741
+2022-12-21 12:04:30,747 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:30] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-21 12:04:30,748 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:30] "GET /web/assets/debug/1/web.assets_frontend.css HTTP/1.1" 304 - 6 0.002 0.005
+2022-12-21 12:04:31,009 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:31] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-21 12:04:31,081 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:31] "GET /web/assets/debug/1/web.assets_frontend_minimal.js HTTP/1.1" 200 - 6 0.001 0.014
+2022-12-21 12:04:31,100 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:31] "GET /web/image/website/1/logo/My%20Website?unique=b088a4d HTTP/1.1" 200 - 5 0.005 0.010
+2022-12-21 12:04:31,104 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:31] "GET /web/image/website.s_cover_default_image HTTP/1.1" 200 - 12 0.014 0.007
+2022-12-21 12:04:31,104 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:31] "GET /web/image/website.s_text_image_default_image HTTP/1.1" 200 - 9 0.004 0.012
+2022-12-21 12:04:31,384 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:31] "GET /web/assets/debug/1/web.assets_frontend_lazy.js HTTP/1.1" 200 - 6 0.000 0.264
+2022-12-21 12:04:31,438 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:31] "GET /web/image/website/1/favicon?unique=b088a4d HTTP/1.1" 200 - 6 0.001 0.007
+2022-12-21 12:04:31,850 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:31] "GET /website/translations/958840578cff686b2669bc8591e614a60c616b91 HTTP/1.1" 200 - 10 0.004 0.024
+2022-12-21 12:04:32,102 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:32] "POST /shop/cart/quantity HTTP/1.1" 200 - 13 0.005 0.009
+2022-12-21 12:04:32,196 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:32] "POST /web/dataset/call_kw/web_tour.tour/get_consumed_tours HTTP/1.1" 200 - 8 0.002 0.008
+2022-12-21 12:04:32,426 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:32] "GET /web/static/img/spin.svg HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 12:04:32,427 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:32] "POST /im_livechat/init HTTP/1.1" 200 - 8 0.005 0.005
+2022-12-21 12:04:32,445 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:32] "POST /im_livechat/load_templates HTTP/1.1" 200 - 2 0.002 0.015
+2022-12-21 12:04:33,738 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:33] "GET /web/bundle/web_editor.assets_wysiwyg?lang=vi_VN&debug=assets&website_id=1 HTTP/1.1" 200 - 65 0.019 1.537
+2022-12-21 12:04:34,062 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:34] "GET /web/assets/debug/1/web_editor.assets_wysiwyg.css HTTP/1.1" 200 - 6 0.002 0.009
+2022-12-21 12:04:34,137 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:34] "GET /web/assets/debug/1/web_editor.assets_wysiwyg.js HTTP/1.1" 200 - 6 0.002 0.078
+2022-12-21 12:04:34,472 16692 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-12-21 12:04:34,473 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:34] "GET /web/bundle/website.assets_wysiwyg?lang=vi_VN&debug=assets&website_id=1 HTTP/1.1" 200 - 50 0.017 0.142
+2022-12-21 12:04:34,480 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:34] "GET /web/assets/debug/1/website.assets_wysiwyg.css HTTP/1.1" 304 - 8 0.002 0.003
+2022-12-21 12:04:34,824 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:34] "GET /web/assets/debug/1/website.assets_wysiwyg.js HTTP/1.1" 200 - 6 0.000 0.033
+2022-12-21 12:04:38,574 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:38] "GET /base/static/img/country_flags/us.png?height=25 HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-21 12:04:42,744 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:42] "POST /web/dataset/call_kw/website/get_current_website HTTP/1.1" 200 - 3 0.001 0.002
+2022-12-21 12:04:43,054 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:43] "POST /web/dataset/call_kw/website/search_read HTTP/1.1" 200 - 6 0.002 0.007
+2022-12-21 12:04:43,413 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:43] "GET /website/force/1?path=%2F HTTP/1.1" 303 - 18 0.010 0.011
+2022-12-21 12:04:44,466 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:44] "GET /website/iframefallback HTTP/1.1" 200 - 100 0.023 1.048
+2022-12-21 12:04:44,476 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:44] "GET /web/assets/debug/1/web.assets_frontend.css HTTP/1.1" 304 - 6 0.000 0.005
+2022-12-21 12:04:44,797 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:44] "GET /web/assets/debug/1/website.assets_wysiwyg.css HTTP/1.1" 304 - 6 0.002 0.005
+2022-12-21 12:04:45,261 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:45] "GET / HTTP/1.1" 200 - 250 0.067 1.538
+2022-12-21 12:04:45,577 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:45] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-21 12:04:45,585 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:45] "GET /web/assets/debug/1/web.assets_frontend.css HTTP/1.1" 304 - 6 0.001 0.005
+2022-12-21 12:04:45,845 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:45] "GET /web/assets/debug/1/web.assets_frontend_minimal.js HTTP/1.1" 304 - 6 0.001 0.008
+2022-12-21 12:04:45,891 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:45] "GET /web/image/website.s_cover_default_image HTTP/1.1" 304 - 11 0.001 0.007
+2022-12-21 12:04:45,939 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:45] "GET /web/assets/debug/1/web.assets_frontend_lazy.js HTTP/1.1" 304 - 6 0.004 0.005
+2022-12-21 12:04:45,940 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:45] "GET /web/image/website.s_text_image_default_image HTTP/1.1" 304 - 9 0.004 0.008
+2022-12-21 12:04:46,312 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:46] "GET /web/bundle/web_editor.assets_wysiwyg?lang=vi_VN&debug=assets&website_id=1 HTTP/1.1" 200 - 33 0.010 0.090
+2022-12-21 12:04:46,386 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:46] "GET /web/static/img/spin.svg HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 12:04:46,400 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:46] "POST /im_livechat/init HTTP/1.1" 200 - 8 0.008 0.006
+2022-12-21 12:04:46,400 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:46] "POST /web/dataset/call_kw/web_tour.tour/get_consumed_tours HTTP/1.1" 200 - 8 0.006 0.005
+2022-12-21 12:04:46,408 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:46] "GET /web/assets/debug/1/web_editor.assets_wysiwyg.css HTTP/1.1" 304 - 6 0.001 0.008
+2022-12-21 12:04:46,627 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:46] "POST /im_livechat/load_templates HTTP/1.1" 200 - 2 0.001 0.007
+2022-12-21 12:04:46,628 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:46] "GET /web/assets/debug/1/web_editor.assets_wysiwyg.js HTTP/1.1" 304 - 6 0.002 0.005
+2022-12-21 12:04:46,809 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:46] "GET /web/bundle/website.assets_wysiwyg?lang=vi_VN&debug=assets&website_id=1 HTTP/1.1" 200 - 33 0.006 0.088
+2022-12-21 12:04:46,982 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:46] "GET /web/assets/debug/1/website.assets_wysiwyg.css HTTP/1.1" 304 - 6 0.002 0.004
+2022-12-21 12:04:47,123 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:47] "GET /web/assets/debug/1/website.assets_wysiwyg.js HTTP/1.1" 304 - 6 0.000 0.008
+2022-12-21 12:04:51,793 16692 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 12:04:51] "GET /base/static/img/country_flags/us.png?height=25 HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 12:04:51,933 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:04:51,937 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:05:03,784 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:05:03] "GET /websocket HTTP/1.1" 101 - 2 0.000 0.005
+2022-12-21 12:05:17,406 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:05:17] "GET /websocket HTTP/1.1" 101 - 4 0.000 0.007
+2022-12-21 12:05:52,968 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:05:52,972 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:06:53,996 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:06:53,999 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:07:55,029 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:07:55,033 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:08:56,051 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 12:08:56,055 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 12:08:56,061 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Event: Mail Scheduler`. 
+2022-12-21 12:08:56,071 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:08:56,077 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:08:56,077 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Event: Mail Scheduler` done. 
+2022-12-21 12:09:57,115 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:09:57,118 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:10:58,139 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:10:58,141 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:11:26,254 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:11:26] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.006
+2022-12-21 12:11:59,179 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:11:59,183 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:13:00,202 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:13:00,205 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:14:01,234 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:14:01,241 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:15:02,278 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:15:02,283 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:15:11,145 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:15:11] "GET /websocket HTTP/1.1" 101 - 2 0.000 0.006
+2022-12-21 12:15:26,521 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:15:26] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
+2022-12-21 12:16:03,299 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:16:03,303 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:17:04,329 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:17:04,331 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:18:05,368 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:18:05,371 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:19:06,396 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 12:19:06,399 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:19:06,402 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 12:19:06,405 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:20:07,434 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:20:07,436 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:21:08,464 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:21:08,467 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:22:09,483 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:22:09,486 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:22:11,546 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:22:11] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.005
+2022-12-21 12:23:10,519 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:23:10,522 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:24:11,552 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:24:11,557 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:25:12,575 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:25:12,578 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:25:26,393 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:25:26] "GET /websocket HTTP/1.1" 101 - 2 0.001 0.004
+2022-12-21 12:25:30,420 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:25:30] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.006
+2022-12-21 12:26:13,608 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:26:13,612 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:27:14,626 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:27:14,630 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:28:15,655 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:28:15,658 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:29:16,690 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:29:16,692 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 12:29:16,695 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:29:16,696 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 12:30:17,732 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:30:17,735 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:31:18,752 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Product: send email regarding products availability`. 
+2022-12-21 12:31:18,757 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Product: send email regarding products availability` done. 
+2022-12-21 12:31:18,764 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `eCommerce: send email to customers about their abandoned cart`. 
+2022-12-21 12:31:18,770 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `eCommerce: send email to customers about their abandoned cart` done. 
+2022-12-21 12:31:18,773 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:31:18,776 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:32:19,807 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:32:19,810 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:32:26,458 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:32:26] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.005
+2022-12-21 12:33:20,827 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:33:20,830 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:34:21,868 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:34:21,872 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:35:22,893 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:35:22,897 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:35:56,471 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:35:56] "GET /websocket HTTP/1.1" 101 - 2 0.000 0.005
+2022-12-21 12:36:14,294 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:36:14] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.005
+2022-12-21 12:36:23,927 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:36:23,930 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:37:24,946 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:37:24,950 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:38:25,985 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 12:38:25,989 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:38:25,990 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 12:38:25,993 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:39:27,015 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:39:27,019 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:40:28,048 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:40:28,051 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:41:29,077 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:41:29,080 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:42:29,427 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:42:29] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.004
+2022-12-21 12:42:30,102 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:42:30,104 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:43:31,142 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:43:31,148 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:44:32,162 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:44:32,166 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:45:33,192 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:45:33,194 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:46:17,410 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:46:17] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.003
+2022-12-21 12:46:26,397 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:46:26] "GET /websocket HTTP/1.1" 101 - 2 0.001 0.003
+2022-12-21 12:46:34,225 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:46:34,227 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:47:35,257 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:47:35,260 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:48:36,277 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 12:48:36,280 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 12:48:36,287 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:48:36,290 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:49:37,316 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:49:37,319 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:50:38,337 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:50:38,340 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:51:39,372 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:51:39,375 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:52:40,400 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:52:40,404 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:52:56,697 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:52:56] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.005
+2022-12-21 12:53:41,425 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:53:41,428 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:54:42,464 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:54:42,467 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:55:43,484 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:55:43,488 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:56:26,392 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:56:26] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
+2022-12-21 12:56:44,516 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:56:44,520 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:57:11,338 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 12:57:11] "GET /websocket HTTP/1.1" 101 - 2 0.000 0.004
+2022-12-21 12:57:45,545 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:57:45,548 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:58:46,583 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2022-12-21 12:58:46,585 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2022-12-21 12:58:46,587 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2022-12-21 12:58:46,593 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
+2022-12-21 12:58:46,595 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 12:58:46,598 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 12:58:46,603 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2022-12-21 12:58:46,608 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2022-12-21 12:58:46,610 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:58:46,616 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 12:58:46,618 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2022-12-21 12:58:46,621 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Notification: Send scheduled message notifications` done. 
+2022-12-21 12:58:46,626 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2022-12-21 12:58:46,630 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2022-12-21 12:59:47,650 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 12:59:47,652 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 13:00:48,679 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 13:00:48,682 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 13:01:49,711 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `CRM: enrich leads (IAP)`. 
+2022-12-21 13:01:49,715 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `CRM: enrich leads (IAP)` done. 
+2022-12-21 13:01:49,722 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 13:01:49,724 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 13:02:50,753 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 13:02:50,756 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 13:03:11,527 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 13:03:11] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.006
+2022-12-21 13:03:51,784 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 13:03:51,788 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 13:04:52,817 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 13:04:52,821 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 13:05:53,846 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 13:05:53,849 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 13:06:30,025 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 13:06:30] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
+2022-12-21 13:06:54,865 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 13:06:54,869 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 13:07:26,371 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 13:07:26] "GET /websocket HTTP/1.1" 101 - 2 0.000 0.004
+2022-12-21 13:07:55,905 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 13:07:55,909 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 13:08:56,929 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Event: Mail Scheduler`. 
+2022-12-21 13:08:56,937 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Event: Mail Scheduler` done. 
+2022-12-21 13:08:56,944 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 13:08:56,948 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 13:08:56,949 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 13:08:56,953 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 13:09:57,983 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 13:09:57,986 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 13:10:59,007 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 13:10:59,010 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 13:12:00,045 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 13:12:00,048 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 13:13:01,071 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 13:13:01,073 16692 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 13:13:26,260 16692 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 13:13:26] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.009
