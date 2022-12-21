@@ -103,7 +103,7 @@ export class WebsitePreview extends Component {
         });
 
         /**
-         * This removes the 'Odoo' prefix of the title service to display
+         * This removes the 'Leansoft' prefix of the title service to display
          * cleanly the frontend's document title (see _replaceBrowserUrl), and
          * replaces the backend favicon with the frontend's one.
          * These changes are reverted when the component is unmounted.

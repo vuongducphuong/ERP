@@ -230,3 +230,52 @@
 2022-12-21 23:37:36,155 19320 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 23:37:36] "GET /website_hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
 2022-12-21 23:37:36,436 19320 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 23:37:36] "GET /hr_contract/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
 2022-12-21 23:37:36,438 19320 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 23:37:36] "GET /base/static/img/icons/sale_ebay.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 23:37:54,831 19320 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 23:37:54] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 42 0.006 0.017
+2022-12-21 23:37:55,079 19320 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 23:37:55] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.006
+2022-12-21 23:38:11,862 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 23:38:11,866 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 23:38:42,372 19320 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 23:38:42] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 3 0.001 0.007
+2022-12-21 23:38:42,720 19320 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 23:38:42] "POST /web/dataset/call_kw/ir.module.module/read HTTP/1.1" 200 - 8 0.003 0.016
+2022-12-21 23:38:42,954 19320 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 23:38:42] "POST /web/dataset/call_kw/ir.module.module.dependency/read HTTP/1.1" 200 - 4 0.001 0.005
+2022-12-21 23:38:43,131 19320 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 23:38:43] "GET /web/bundle/web_editor.assets_wysiwyg?lang=vi_VN&debug=assets HTTP/1.1" 200 - 11 0.004 0.086
+2022-12-21 23:38:43,296 19320 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 23:38:43] "GET /web/assets/debug/web_editor.assets_wysiwyg.css HTTP/1.1" 304 - 5 0.000 0.005
+2022-12-21 23:38:43,456 19320 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 23:38:43] "GET /web/assets/debug/web_editor.assets_wysiwyg.js HTTP/1.1" 304 - 5 0.002 0.004
+2022-12-21 23:38:43,508 19320 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 23:38:43] "GET /base/static/src/css/description.css HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-21 23:38:43,832 19320 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 23:38:43] "GET /web/image?model=ir.module.module&id=608&field=icon_image&unique=1671640582000 HTTP/1.1" 200 - 3 0.001 0.007
+2022-12-21 23:38:43,840 19320 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 23:38:43] "GET /legion_enterprise_theme/static/description/main_screenshot.png HTTP/1.1" 200 - 0 0.000 0.012
+2022-12-21 23:38:43,844 19320 INFO ? werkzeug: 127.0.0.1 - - [21/Dec/2022 23:38:43] "GET /legion_enterprise_theme/static/description/main_2.png HTTP/1.1" 200 - 0 0.000 0.014
+2022-12-21 23:38:48,492 19320 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 23:38:48] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.006
+2022-12-21 23:39:12,897 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 23:39:12,902 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 23:39:12,910 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 23:39:12,914 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 23:40:13,943 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 23:40:13,947 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 23:41:14,963 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 23:41:14,966 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 23:42:15,992 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 23:42:15,995 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 23:43:17,028 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 23:43:17,032 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 23:44:18,049 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 23:44:18,052 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 23:45:19,075 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 23:45:19,077 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 23:46:20,108 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 23:46:20,111 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 23:46:26,154 19320 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 23:46:26] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
+2022-12-21 23:46:47,027 19320 INFO ABCCompany werkzeug: 127.0.0.1 - - [21/Dec/2022 23:46:47] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
+2022-12-21 23:47:21,128 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 23:47:21,131 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 23:48:22,212 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Google Calendar: synchronization`. 
+2022-12-21 23:48:22,215 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Outlook: synchronization`. 
+2022-12-21 23:48:22,220 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Outlook: synchronization` done. 
+2022-12-21 23:48:22,221 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Google Calendar: synchronization` done. 
+2022-12-21 23:48:22,231 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 23:48:22,236 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 23:49:23,249 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-21 23:49:23,256 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-21 23:49:23,262 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 23:49:23,265 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-21 23:50:24,302 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-21 23:50:24,305 19320 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
