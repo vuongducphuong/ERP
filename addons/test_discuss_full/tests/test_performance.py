@@ -962,7 +962,7 @@ class TestDiscussFullPerformance(TransactionCase):
                 'email': 'odoobot@example.com',
                 'id': self.user_root.partner_id.id,
                 'im_status': 'bot',
-                'name': 'OdooBot',
+                'name': 'LeansoftBot',
                 'out_of_office_date_end': False,
                 'user': [('clear',)],
             },

@@ -292,13 +292,13 @@ registerModel({
                 return;
             }
 
-            // Chat from OdooBot is considered disturbing and should only be
+            // Chat from LeansoftBot is considered disturbing and should only be
             // shown on the menu, but no notification and no thread open.
-            const isChatWithOdooBot = (
+            const isChatWithLeansoftBot = (
                 channel.correspondent &&
                 channel.correspondent === this.messaging.partnerRoot
             );
-            if (!isChatWithOdooBot) {
+            if (!isChatWithLeansoftBot) {
                 const isOdooFocused = this.env.services['presence'].isOdooFocused();
                 // Notify if out of focus
                 if (!isOdooFocused && channel.thread.isChatChannel) {

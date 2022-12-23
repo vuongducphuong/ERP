@@ -8324,3 +8324,13 @@ ERROR: could not serialize access due to concurrent update
 2022-12-23 15:47:13,974 5268 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
 2022-12-23 15:48:15,011 5268 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
 2022-12-23 15:48:15,014 5268 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 15:49:16,040 5268 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-23 15:49:16,043 5268 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 15:49:16,046 5268 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-23 15:49:16,047 5268 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 15:50:17,085 5268 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 15:50:17,087 5268 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 15:50:24,445 5268 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:50:24] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.005
+2022-12-23 15:51:09,557 5268 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:51:09] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
+2022-12-23 15:51:18,112 5268 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 15:51:18,115 5268 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
