@@ -145,8 +145,8 @@ msgstr ""
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__leansoftbot_state
-msgid "OdooBot Status"
-msgstr "حالة OdooBot"
+msgid "LeansoftBot Status"
+msgstr "حالة LeansoftBot"
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__leansoftbot_failed
@@ -190,10 +190,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write <span class=\"o_leansoftbot_command\">@OdooBot</span> and select me."
+"Write <span class=\"o_leansoftbot_command\">@LeansoftBot</span> and select me."
 msgstr ""
 "عذراً، لم أكن مصغياً. للفت انتباه أحدهم، <b>قم بمناداته</b>. اكتب <span "
-"class=\"o_leansoftbot_command\">@OdooBot</span> واخترني. "
+"class=\"o_leansoftbot_command\">@LeansoftBot</span> واخترني. "
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -243,11 +243,11 @@ msgstr "المستخدم"
 msgid ""
 "Wow you are a natural!<br/>Ping someone with @username to grab their "
 "attention. <b>Try to ping me using</b> <span "
-"class=\"o_leansoftbot_command\">@OdooBot</span> in a sentence."
+"class=\"o_leansoftbot_command\">@LeansoftBot</span> in a sentence."
 msgstr ""
 "واو أنت موهوب بالفطرة!<br/>قم بمناداة أحدهم باستخدام @username للفت انتباهه."
 " <b>  جرب مناداتي باستخدام</b> <span "
-"class=\"o_leansoftbot_command\">@OdooBot</span> في جملة. "
+"class=\"o_leansoftbot_command\">@LeansoftBot</span> في جملة. "
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0

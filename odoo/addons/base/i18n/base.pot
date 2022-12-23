@@ -8525,7 +8525,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_mail_bot
 msgid "Add OdooBot in discussions"
-msgstr ""
+msgstr "Thêm LeansoftBot trong thảo luận"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_crm_sms
@@ -8647,7 +8647,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_im_livechat_mail_bot
 msgid "Add livechat support for OdooBot"
-msgstr ""
+msgstr "Thêm hỗ trợ chat trực tuyến cho LeansoftBot"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_social_sale
@@ -21310,12 +21310,12 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mail_bot
 msgid "OdooBot"
-msgstr ""
+msgstr "LeansoftBot"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_im_livechat_mail_bot
 msgid "OdooBot for livechat"
-msgstr ""
+msgstr "LeansoftBot cho Chat trực tuyến"
 
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_12
@@ -27298,6 +27298,8 @@ msgid ""
 "This module adds the OdooBot state and notifications in the user form "
 "modified by hr."
 msgstr ""
+"This module adds the LeansoftBot state and notifications in the user form "
+"modified by hr."
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_delivery_fedex

@@ -149,8 +149,8 @@ msgstr ""
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__leansoftbot_state
-msgid "OdooBot Status"
-msgstr "Estat de l'OdooBot"
+msgid "LeansoftBot Status"
+msgstr "Estat de l'LeansoftBot"
 
 #. module: mail_bot
 #: model:ir.model.fields,field_description:mail_bot.field_res_users__leansoftbot_failed
@@ -194,10 +194,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Sorry, I am not listening. To get someone's attention, <b>ping him</b>. "
-"Write <span class=\"o_leansoftbot_command\">@OdooBot</span> and select me."
+"Write <span class=\"o_leansoftbot_command\">@LeansoftBot</span> and select me."
 msgstr ""
 "Ho sento, no estic escoltant. Per cridar l'atenció d'algú,<b>ping a ell</b>."
-" Escriu <span class=\"o_leansoftbot_command\">@OdooBot</span> i selecciona'm."
+" Escriu <span class=\"o_leansoftbot_command\">@LeansoftBot</span> i selecciona'm."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
@@ -248,11 +248,11 @@ msgstr "Usuari"
 msgid ""
 "Wow you are a natural!<br/>Ping someone with @username to grab their "
 "attention. <b>Try to ping me using</b> <span "
-"class=\"o_leansoftbot_command\">@OdooBot</span> in a sentence."
+"class=\"o_leansoftbot_command\">@LeansoftBot</span> in a sentence."
 msgstr ""
 "Vaja, tens un talent natural<br/>Fes ping a algú amb @nomd'usuario per a "
 "cridar la seva atenció.<b>Prova d'enviarme un ping fent servir</b> <span "
-"class=\"o_leansoftbot_command\">@OdooBot</span> en una frase."
+"class=\"o_leansoftbot_command\">@LeansoftBot</span> en una frase."
 
 #. module: mail_bot
 #: code:addons/mail_bot/models/mail_bot.py:0
