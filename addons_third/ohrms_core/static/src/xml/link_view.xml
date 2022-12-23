@@ -3,12 +3,12 @@
     <t t-extend="UserMenu">
         <t t-jquery="div.dropdown-menu" t-operation="replace">
             <div class="dropdown-menu" role="menu">
-                <a role="menuitem" href="#" data-menu="documentation" class="dropdown-item">Documentation</a>
-                <a role="menuitem" href="#" data-menu="support" class="dropdown-item">Open HRMS</a>
+                <a role="menuitem" href="#" data-menu="documentation" class="dropdown-item">Tài liệu</a>
+                <a role="menuitem" href="#" data-menu="support" class="dropdown-item">Hỗ trợ</a>
                 <div role="separator" class="dropdown-divider"/>
-                <a role="menuitem" href="#" data-menu="settings" class="dropdown-item">Preferences</a>
-                <a role="menuitem" href="#" data-menu="account" class="dropdown-item">My LeanSoft.vn account</a>
-                <a role="menuitem" href="#" data-menu="logout" class="dropdown-item">Log out</a>
+                <a role="menuitem" href="#" data-menu="settings" class="dropdown-item">Cài đặt</a>
+                <a role="menuitem" href="#" data-menu="account" class="dropdown-item">Tài khoản</a>
+                <a role="menuitem" href="#" data-menu="logout" class="dropdown-item">Đăng xuất</a>
             </div>
         </t>
     </t>

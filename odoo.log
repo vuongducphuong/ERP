@@ -8371,3 +8371,914 @@ ERROR: could not serialize access due to concurrent update
 2022-12-23 15:56:48,618 5268 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:56:48] "GET /mail/channel/15/partner/2/avatar_128 HTTP/1.1" 304 - 9 0.000 0.010
 2022-12-23 15:56:48,627 5268 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:56:48] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.002 0.005
 2022-12-23 15:56:48,751 5268 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:56:48] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 15:56:54,717 36984 INFO ? odoo: Odoo version 16.0 
+2022-12-23 15:56:54,718 36984 INFO ? odoo: Using configuration file at D:\Data\ERP\odoo.conf 
+2022-12-23 15:56:54,718 36984 INFO ? odoo: addons paths: ['D:\\Data\\ERP\\odoo\\addons', 'c:\\users\\vuong\\appdata\\local\\openerp s.a\\odoo\\addons\\16.0', 'd:\\data\\erp\\addons', 'd:\\data\\erp\\addons_third', 'd:\\data\\erp\\addons_erp', 'd:\\data\\erp\\odoo\\addons'] 
+2022-12-23 15:56:54,718 36984 INFO ? odoo: database: openpg@localhost:5432 
+2022-12-23 15:56:54,955 36984 INFO ? odoo.addons.base.models.ir_actions_report: A package may be missing to print Data Matrix barcodes: pylibdmtx or libdmtx. 
+2022-12-23 15:56:54,978 36984 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo16\thirdparty\wkhtmltopdf.exe 
+2022-12-23 15:56:56,132 36984 INFO ? odoo.service.server: HTTP service (werkzeug) running on PC:8068 
+2022-12-23 15:56:56,305 36984 INFO ABCCompany odoo.modules.loading: loading 1 modules... 
+2022-12-23 15:56:56,311 36984 INFO ABCCompany odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2022-12-23 15:56:56,360 36984 WARNING ABCCompany odoo.modules.module: Missing `license` key in manifest for 'dashboard_erp', defaulting to LGPL-3 
+2022-12-23 15:56:56,370 36984 WARNING ABCCompany odoo.modules.module: Missing `license` key in manifest for 'ketoan', defaulting to LGPL-3 
+2022-12-23 15:56:56,493 36984 INFO ABCCompany odoo.modules.loading: loading 243 modules... 
+2022-12-23 15:56:56,507 36984 WARNING ABCCompany odoo.addons.attachment_indexation.models.ir_attachment: Attachment indexation of PDF documents is unavailable because the 'pdfminer' Python library cannot be found on the system. You may install it from https://pypi.org/project/pdfminer.six/ (e.g. `pip3 install pdfminer.six`) 
+2022-12-23 15:56:57,180 36984 WARNING ABCCompany odoo.http: <function odoo.addons.hr_organizational_chart.controller.main.get_col_span> defined with invalid routing parameter 'method', assuming 'methods' 
+2022-12-23 15:56:57,180 36984 WARNING ABCCompany odoo.http: <function odoo.addons.hr_organizational_chart.controller.main.get_employee_ids> defined with invalid routing parameter 'method', assuming 'methods' 
+2022-12-23 15:56:57,180 36984 WARNING ABCCompany odoo.http: <function odoo.addons.hr_organizational_chart.controller.main.get_parent_child> defined with invalid routing parameter 'method', assuming 'methods' 
+2022-12-23 15:56:57,180 36984 WARNING ABCCompany odoo.http: <function odoo.addons.hr_organizational_chart.controller.main.get_child_data> defined with invalid routing parameter 'method', assuming 'methods' 
+2022-12-23 15:56:57,182 36984 WARNING ABCCompany odoo.models: The model hr.reminder has no _description 
+2022-12-23 15:56:57,184 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.hr_reward_warning.models.hr_warning is not overriding the create method in batch 
+2022-12-23 15:56:57,219 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.oh_employee_creation_from_user.models.employee_creation_from_user is not overriding the create method in batch 
+2022-12-23 15:56:57,224 36984 WARNING ABCCompany odoo.models: The model document.type has no _description 
+2022-12-23 15:56:57,331 36984 WARNING ABCCompany odoo.models: The model hr.employee.relation has no _description 
+2022-12-23 15:56:57,486 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.hr_employee_transfer.models.employee_transfer is not overriding the create method in batch 
+2022-12-23 15:56:57,487 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.hr_employee_transfer.models.hr_contract is not overriding the create method in batch 
+2022-12-23 15:56:57,492 36984 WARNING ABCCompany odoo.addons.base.models.decimal_precision: Deprecated call to decimal_precision.get_precision(<application>), use digits=<application> instead 
+2022-12-23 15:56:57,492 36984 WARNING ABCCompany odoo.addons.base.models.decimal_precision: Deprecated call to decimal_precision.get_precision(<application>), use digits=<application> instead 
+2022-12-23 15:56:57,494 36984 WARNING ABCCompany odoo.addons.base.models.decimal_precision: Deprecated call to decimal_precision.get_precision(<application>), use digits=<application> instead 
+2022-12-23 15:56:57,494 36984 WARNING ABCCompany odoo.addons.base.models.decimal_precision: Deprecated call to decimal_precision.get_precision(<application>), use digits=<application> instead 
+2022-12-23 15:56:57,494 36984 WARNING ABCCompany odoo.addons.base.models.decimal_precision: Deprecated call to decimal_precision.get_precision(<application>), use digits=<application> instead 
+2022-12-23 15:56:57,494 36984 WARNING ABCCompany odoo.addons.base.models.decimal_precision: Deprecated call to decimal_precision.get_precision(<application>), use digits=<application> instead 
+2022-12-23 15:56:57,516 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.hr_resignation.models.hr_resignation is not overriding the create method in batch 
+2022-12-23 15:56:57,517 36984 WARNING ABCCompany odoo.models: The model hr.resignation has no _description 
+2022-12-23 15:56:57,559 36984 WARNING ABCCompany odoo.models: The model hr.resignation has no _description 
+2022-12-23 15:56:57,627 36984 WARNING ABCCompany odoo.models: The model hr.resignation has no _description 
+2022-12-23 15:56:57,629 36984 WARNING ABCCompany odoo.models: The model hr.reminder has no _description 
+2022-12-23 15:56:57,629 36984 WARNING ABCCompany odoo.models: The model document.type has no _description 
+2022-12-23 15:56:57,630 36984 WARNING ABCCompany odoo.models: The model hr.employee.relation has no _description 
+2022-12-23 15:56:57,631 36984 WARNING ABCCompany odoo.models: The model hr.resignation has no _description 
+2022-12-23 15:56:57,688 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.base_account_budget.models.account_budget is not overriding the create method in batch 
+2022-12-23 15:56:57,725 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.hr_payroll_account_community.models.hr_payroll_account is not overriding the create method in batch 
+2022-12-23 15:56:57,746 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.ketoan.models.ketoan_bao_cao_so_cai is not overriding the create method in batch 
+2022-12-23 15:56:57,747 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.ketoan.models.ketoan_bao_cao_quy_tien_mat is not overriding the create method in batch 
+2022-12-23 15:56:57,747 36984 WARNING ABCCompany odoo.models: The model ketoan.bao.cao.so.cai has no _description 
+2022-12-23 15:56:57,747 36984 WARNING ABCCompany odoo.models: The model ketoan.bao.cao.quy.tien.mat has no _description 
+2022-12-23 15:56:57,792 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.ohrms_loan.models.hr_loan is not overriding the create method in batch 
+2022-12-23 15:56:58,102 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.ohrms_salary_advance.models.salary_advance is not overriding the create method in batch 
+2022-12-23 15:56:58,103 36984 WARNING ABCCompany odoo.models: The model salary.advance has no _description 
+2022-12-23 15:56:58,382 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.base_accounting_kit.models.account_asset is not overriding the create method in batch 
+2022-12-23 15:56:58,414 36984 WARNING ABCCompany odoo.models: The model ketoan.bao.cao.so.cai has no _description 
+2022-12-23 15:56:58,415 36984 WARNING ABCCompany odoo.models: The model ketoan.bao.cao.quy.tien.mat has no _description 
+2022-12-23 15:56:58,418 36984 WARNING ABCCompany odoo.models: The model account.account.type has no _description 
+2022-12-23 15:56:59,339 36984 WARNING ABCCompany odoo.models: The model report.hrms_dashboard.report_broadfactor has no _description 
+2022-12-23 15:56:59,486 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.wizard.general_ledger is not overriding the create method in batch 
+2022-12-23 15:56:59,487 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.wizard.trial_balance is not overriding the create method in batch 
+2022-12-23 15:56:59,488 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.wizard.cash_flow is not overriding the create method in batch 
+2022-12-23 15:56:59,489 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.wizard.balance_sheet is not overriding the create method in batch 
+2022-12-23 15:56:59,490 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.wizard.partner_leadger is not overriding the create method in batch 
+2022-12-23 15:56:59,491 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.wizard.ageing is not overriding the create method in batch 
+2022-12-23 15:56:59,492 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.wizard.daybook is not overriding the create method in batch 
+2022-12-23 15:56:59,498 36984 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.models.account_account_custom is not overriding the create method in batch 
+2022-12-23 15:56:59,498 36984 WARNING ABCCompany odoo.models: The model account.general.ledger has no _description 
+2022-12-23 15:56:59,498 36984 WARNING ABCCompany odoo.models: The model account.trial.balance has no _description 
+2022-12-23 15:56:59,498 36984 WARNING ABCCompany odoo.models: The model account.cash.flow has no _description 
+2022-12-23 15:56:59,498 36984 WARNING ABCCompany odoo.models: The model dynamic.balance.sheet.report has no _description 
+2022-12-23 15:56:59,499 36984 WARNING ABCCompany odoo.models: The model dynamic.balance.sheet.report has no _description 
+2022-12-23 15:56:59,499 36984 WARNING ABCCompany odoo.models: The model account.partner.ledger has no _description 
+2022-12-23 15:56:59,499 36984 WARNING ABCCompany odoo.models: The model account.partner.ageing has no _description 
+2022-12-23 15:56:59,499 36984 WARNING ABCCompany odoo.models: The model account.day.book has no _description 
+2022-12-23 15:56:59,499 36984 WARNING ABCCompany odoo.models: The model report.dynamic_accounts_report.trial_balance has no _description 
+2022-12-23 15:56:59,499 36984 WARNING ABCCompany odoo.models: The model report.dynamic_accounts_report.general_ledger has no _description 
+2022-12-23 15:56:59,499 36984 WARNING ABCCompany odoo.models: The model report.dynamic_accounts_report.cash_flow has no _description 
+2022-12-23 15:56:59,499 36984 WARNING ABCCompany odoo.models: The model report.dynamic_accounts_report.balance_sheet has no _description 
+2022-12-23 15:56:59,499 36984 WARNING ABCCompany odoo.models: The model report.dynamic_accounts_report.partner_ledger has no _description 
+2022-12-23 15:56:59,499 36984 WARNING ABCCompany odoo.models: The model report.dynamic_accounts_report.partner_ageing has no _description 
+2022-12-23 15:56:59,499 36984 WARNING ABCCompany odoo.models: The model report.dynamic_accounts_report.day_book has no _description 
+2022-12-23 15:56:59,688 36984 INFO ABCCompany odoo.modules.loading: 243 modules loaded in 3.20s, 0 queries (+0 extra) 
+2022-12-23 15:56:59,867 36984 WARNING ABCCompany odoo.fields: hr.loan.state: selection=[('draft', 'Draft'), ('waiting_approval_1', 'Submitted'), ('waiting_approval_2', 'Waiting Approval'), ('approve', 'Approved'), ('refuse', 'Refused'), ('cancel', 'Canceled')] overrides existing selection; use selection_add instead 
+2022-12-23 15:56:59,939 36984 WARNING ABCCompany odoo.fields: Field hr.announcement.state: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-23 15:56:59,944 36984 WARNING ABCCompany odoo.fields: Field hr.employee.family.birth_date: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-23 15:56:59,959 36984 WARNING ABCCompany odoo.fields: Field hr.resignation.resign_confirm_date: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-23 15:56:59,959 36984 WARNING ABCCompany odoo.fields: Field hr.resignation.approved_revealing_date: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-23 15:56:59,959 36984 WARNING ABCCompany odoo.fields: Field hr.resignation.state: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-23 15:56:59,959 36984 WARNING ABCCompany odoo.fields: Field hr.resignation.employee_contract: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-23 15:57:00,028 36984 WARNING ABCCompany odoo.fields: Field budget.budget.state: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-23 15:57:00,033 36984 WARNING ABCCompany odoo.fields: Field hr.loan.state: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-23 15:57:00,039 36984 WARNING ABCCompany odoo.fields: Field salary.advance.state: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-23 15:57:00,181 36984 INFO ABCCompany odoo.modules.loading: Modules loaded. 
+2022-12-23 15:57:00,189 36984 INFO ABCCompany odoo.modules.registry: Registry loaded in 4.038s 
+2022-12-23 15:57:00,326 36984 INFO ABCCompany odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2022-12-23 15:57:00,399 36984 INFO ABCCompany odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2022-12-23 15:57:00,463 36984 INFO ABCCompany odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2022-12-23 15:57:01,824 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:01] "GET /websocket HTTP/1.1" 101 - 19 0.046 5.628
+2022-12-23 15:57:01,825 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:01] "GET /websocket HTTP/1.1" 101 - 5 0.007 5.453
+2022-12-23 15:57:01,825 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:01] "GET /websocket HTTP/1.1" 101 - 4 0.070 5.310
+2022-12-23 15:57:01,937 36984 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-12-23 15:57:03,338 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,condition_select 
+2022-12-23 15:57:03,338 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,condition_select 
+2022-12-23 15:57:03,338 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-23 15:57:03,338 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-23 15:57:03,338 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-23 15:57:03,338 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.run,state 
+2022-12-23 15:57:03,339 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip,state 
+2022-12-23 15:57:03,339 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip,state 
+2022-12-23 15:57:03,339 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.run,state 
+2022-12-23 15:57:03,339 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,amount_select 
+2022-12-23 15:57:03,339 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,amount_select 
+2022-12-23 15:57:03,340 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-23 15:57:03,341 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,amount_select 
+2022-12-23 15:57:03,341 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,amount_select 
+2022-12-23 15:57:03,341 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,amount_select 
+2022-12-23 15:57:03,341 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,amount_select 
+2022-12-23 15:57:03,341 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,condition_select 
+2022-12-23 15:57:03,341 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,condition_select 
+2022-12-23 15:57:03,341 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-23 15:57:03,341 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,condition_select 
+2022-12-23 15:57:03,341 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,condition_select 
+2022-12-23 15:57:03,341 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip,state 
+2022-12-23 15:57:03,341 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-23 15:57:03,342 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip,state 
+2022-12-23 15:57:03,342 36984 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-23 15:57:06,967 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:06] "GET /web HTTP/1.1" 200 - 105 0.069 5.304
+2022-12-23 15:57:07,869 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:07] "GET /web/webclient/load_menus/ea84af3b3b14d16548a6c200f445ad6d1bb0ccddeef40b606412085f87ca56b8 HTTP/1.1" 200 - 1 0.000 0.557
+2022-12-23 15:57:07,872 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:07] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 304 - 5 0.010 0.882
+2022-12-23 15:57:07,876 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:07] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 5 0.012 0.884
+2022-12-23 15:57:07,892 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:07] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 304 - 5 0.002 0.581
+2022-12-23 15:57:07,892 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:07] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 304 - 5 0.005 0.581
+2022-12-23 15:57:07,895 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:07] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 304 - 5 0.006 0.580
+2022-12-23 15:57:08,501 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:08] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 15:57:08,582 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:08] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-23 15:57:08,595 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:08] "POST /web/action/load HTTP/1.1" 200 - 8 0.009 0.007
+2022-12-23 15:57:08,611 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:08] "GET /bus/websocket_worker_bundle HTTP/1.1" 304 - 5 0.003 0.012
+2022-12-23 15:57:08,635 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:08] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 10 0.013 0.024
+2022-12-23 15:57:08,888 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:08] "POST /mail/init_messaging HTTP/1.1" 200 - 57 0.047 0.077
+2022-12-23 15:57:08,939 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:08] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.003
+2022-12-23 15:57:09,621 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:09] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.121 0.240
+2022-12-23 15:57:09,918 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:09] "POST /mail/channel/messages HTTP/1.1" 200 - 20 0.317 0.231
+2022-12-23 15:57:09,931 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:09] "POST /mail/load_message_failures HTTP/1.1" 200 - 14 0.285 0.182
+2022-12-23 15:57:09,932 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:09] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 7 0.192 0.619
+2022-12-23 15:57:10,074 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:10] "GET /web/image/res.partner/93/avatar_128 HTTP/1.1" 304 - 7 0.211 0.273
+2022-12-23 15:57:10,075 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:10] "GET /web/image/res.partner/2/avatar_128 HTTP/1.1" 304 - 7 0.223 0.186
+2022-12-23 15:57:10,417 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:10] "GET /web/image?field=avatar_128&id=1&model=res.users HTTP/1.1" 304 - 7 0.135 0.193
+2022-12-23 15:57:10,625 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:10] "GET /web/image/res.partner/3/avatar_128 HTTP/1.1" 304 - 7 0.153 0.160
+2022-12-23 15:57:10,732 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:10] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.091 0.159
+2022-12-23 15:57:10,874 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:10] "GET /mail/channel/15/partner/2/avatar_128 HTTP/1.1" 304 - 9 0.068 0.184
+2022-12-23 15:57:10,907 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:10] "GET /mail/channel/15/partner/3/avatar_128 HTTP/1.1" 304 - 10 0.074 0.163
+2022-12-23 15:57:11,166 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:11] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.000 0.008
+2022-12-23 15:57:30,421 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:30] "POST /web/dataset/call_kw/res.users/search HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-23 15:57:30,697 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:30] "POST /web/dataset/call_kw/mail.channel/channel_get HTTP/1.1" 200 - 22 0.012 0.020
+2022-12-23 15:57:30,747 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:30] "POST /mail/channel/messages HTTP/1.1" 200 - 4 0.000 0.005
+2022-12-23 15:57:45,985 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:45] "POST /mail/starred/messages HTTP/1.1" 200 - 20 0.012 0.019
+2022-12-23 15:57:49,617 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:57:49] "POST /mail/inbox/messages HTTP/1.1" 200 - 3 0.005 0.004
+2022-12-23 15:57:56,267 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 15:57:56,274 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 15:58:06,705 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:06] "POST /web/action/load HTTP/1.1" 200 - 10 0.007 0.011
+2022-12-23 15:58:07,522 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:07] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 97 0.018 0.485
+2022-12-23 15:58:08,144 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:08] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 392 0.101 0.446
+2022-12-23 15:58:08,479 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:08] "POST /web/dataset/call_kw/res.lang/read HTTP/1.1" 200 - 2 0.002 0.002
+2022-12-23 15:58:08,486 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:08] "POST /web/dataset/call_kw/product.pricelist/read HTTP/1.1" 200 - 4 0.004 0.006
+2022-12-23 15:58:08,488 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:08] "POST /web/dataset/call_kw/pos.bill/read HTTP/1.1" 200 - 2 0.003 0.005
+2022-12-23 15:58:08,495 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:08] "POST /web/dataset/call_kw/pos.payment.method/read HTTP/1.1" 200 - 2 0.001 0.007
+2022-12-23 15:58:08,723 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:08] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.003 0.004
+2022-12-23 15:58:08,999 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:08] "POST /base_setup/data HTTP/1.1" 200 - 6 0.002 0.002
+2022-12-23 15:58:09,020 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /base/static/description/settings.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-23 15:58:09,330 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /hr/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-23 15:58:09,333 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 15:58:09,335 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /hr_leave_request_aliasing/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.004
+2022-12-23 15:58:09,338 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /hr_expense/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-23 15:58:09,340 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-23 15:58:09,344 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /project/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-23 15:58:09,655 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /account/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-23 15:58:09,658 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-23 15:58:09,664 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /fleet/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-12-23 15:58:09,665 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /hr_payroll_community/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.005
+2022-12-23 15:58:09,666 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /lunch/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-23 15:58:09,667 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /event/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-23 15:58:09,978 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /mrp/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-23 15:58:09,982 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-23 15:58:09,983 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /hr_timesheet/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-23 15:58:09,985 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-23 15:58:09,988 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /crm/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-23 15:58:09,991 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:09] "GET /sale_management/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-23 15:58:10,294 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:10] "GET /website/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-23 15:58:10,296 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:10] "GET /website_slides/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-23 15:58:10,300 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:10] "GET /purchase/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-23 15:58:10,303 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:10] "GET /stock/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-23 15:58:10,307 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:10] "GET /base_setup/static/src/img/google_play.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-23 15:58:10,308 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:10] "GET /base_setup/static/src/img/app_store.png HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-23 15:58:16,595 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:16] "GET /web/bundle/web_editor.assets_wysiwyg?lang=vi_VN&debug=assets HTTP/1.1" 200 - 11 0.001 0.084
+2022-12-23 15:58:16,791 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:16] "GET /web/assets/debug/web_editor.assets_wysiwyg.css HTTP/1.1" 304 - 5 0.003 0.003
+2022-12-23 15:58:16,920 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:16] "GET /web/assets/debug/web_editor.assets_wysiwyg.js HTTP/1.1" 304 - 5 0.002 0.005
+2022-12-23 15:58:31,952 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:31] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 5 0.003 0.006
+2022-12-23 15:58:32,267 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:32] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 304 - 5 0.002 0.008
+2022-12-23 15:58:32,269 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:32] "GET /web/assets/debug/web_editor.assets_wysiwyg.css HTTP/1.1" 304 - 5 0.004 0.007
+2022-12-23 15:58:32,493 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:32] "GET /web/assets/3215-d6d7fe4/web.assets_common.js.map HTTP/1.1" 200 - 4 0.002 0.017
+2022-12-23 15:58:32,498 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:32] "GET /web/assets/2880-a1350ed/web.assets_backend_prod_only.js.map HTTP/1.1" 200 - 4 0.003 0.019
+2022-12-23 15:58:32,498 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:32] "GET /web/assets/3479-516ed17/web.assets_backend.js.map HTTP/1.1" 200 - 4 0.006 0.010
+2022-12-23 15:58:32,500 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:32] "GET /web/assets/3221-549351e/web_editor.assets_wysiwyg.js.map HTTP/1.1" 200 - 4 0.003 0.019
+2022-12-23 15:58:32,646 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:32] "GET /web/assets/3477-516ed17/web.assets_backend.css.map HTTP/1.1" 200 - 4 0.002 0.010
+2022-12-23 15:58:32,647 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:32] "GET /web/assets/3219-549351e/web_editor.assets_wysiwyg.css.map HTTP/1.1" 200 - 4 0.003 0.013
+2022-12-23 15:58:32,830 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 15:58:32] "GET /web/assets/3211-d6d7fe4/web.assets_common.css.map HTTP/1.1" 200 - 4 0.001 0.011
+2022-12-23 15:58:57,317 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2022-12-23 15:58:57,324 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2022-12-23 15:58:57,324 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2022-12-23 15:58:57,333 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2022-12-23 15:58:57,334 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
+2022-12-23 15:58:57,341 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-23 15:58:57,343 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2022-12-23 15:58:57,349 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2022-12-23 15:58:57,351 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-23 15:58:57,353 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Notification: Send scheduled message notifications` done. 
+2022-12-23 15:58:57,359 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 15:58:57,364 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2022-12-23 15:58:57,366 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 15:58:57,370 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2022-12-23 15:59:58,398 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 15:59:58,401 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:00:59,442 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Lunch: alert chat notification (Alert for Office 3)`. 
+2022-12-23 16:00:59,444 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:00:59,450 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:00:59,618 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Lunch: alert chat notification (Alert for Office 3)` done. 
+2022-12-23 16:01:55,280 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:55] "GET /web?debug=assets HTTP/1.1" 200 - 23 0.015 0.379
+2022-12-23 16:01:55,312 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:55] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 304 - 5 0.006 0.007
+2022-12-23 16:01:55,314 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:55] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 5 0.003 0.013
+2022-12-23 16:01:55,628 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:55] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 304 - 5 0.002 0.008
+2022-12-23 16:01:55,630 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:55] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 304 - 5 0.003 0.012
+2022-12-23 16:01:55,631 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:55] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 304 - 5 0.001 0.010
+2022-12-23 16:01:55,706 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:55] "GET /web/assets/3211-d6d7fe4/web.assets_common.css.map HTTP/1.1" 200 - 4 0.003 0.006
+2022-12-23 16:01:55,707 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:55] "GET /web/assets/3477-516ed17/web.assets_backend.css.map HTTP/1.1" 200 - 4 0.001 0.008
+2022-12-23 16:01:56,002 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:56] "GET /web/assets/3215-d6d7fe4/web.assets_common.js.map HTTP/1.1" 200 - 4 0.001 0.005
+2022-12-23 16:01:56,270 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:56] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.000 0.003
+2022-12-23 16:01:56,549 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:56] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:01:56,661 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:56] "POST /web/action/load HTTP/1.1" 200 - 9 0.007 0.012
+2022-12-23 16:01:56,665 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:56] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 7 0.007 0.014
+2022-12-23 16:01:56,669 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:56] "GET /web/assets/3479-516ed17/web.assets_backend.js.map HTTP/1.1" 200 - 4 0.006 0.013
+2022-12-23 16:01:56,693 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:56] "GET /bus/websocket_worker_bundle HTTP/1.1" 304 - 4 0.005 0.006
+2022-12-23 16:01:56,717 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:56] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 2 0.001 0.039
+2022-12-23 16:01:57,063 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:57] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 7 0.014 0.044
+2022-12-23 16:01:57,080 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:57] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 304 - 0 0.000 0.051
+2022-12-23 16:01:57,093 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:57] "POST /mail/init_messaging HTTP/1.1" 200 - 40 0.046 0.061
+2022-12-23 16:01:57,095 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:57] "GET /websocket HTTP/1.1" 101 - 1 0.002 0.018
+2022-12-23 16:01:57,112 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:57] "GET /web/assets/2880-a1350ed/web.assets_backend_prod_only.js.map HTTP/1.1" 200 - 4 0.003 0.011
+2022-12-23 16:01:57,296 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:57] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 117 0.090 0.184
+2022-12-23 16:01:57,456 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:57] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.006 0.014
+2022-12-23 16:01:57,626 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:57] "POST /web/dataset/call_kw/res.lang/read HTTP/1.1" 200 - 2 0.002 0.003
+2022-12-23 16:01:57,634 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:57] "POST /web/dataset/call_kw/product.pricelist/read HTTP/1.1" 200 - 4 0.004 0.008
+2022-12-23 16:01:57,636 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:57] "POST /web/dataset/call_kw/pos.bill/read HTTP/1.1" 200 - 2 0.000 0.007
+2022-12-23 16:01:57,641 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:57] "POST /web/dataset/call_kw/pos.payment.method/read HTTP/1.1" 200 - 2 0.001 0.008
+2022-12-23 16:01:58,137 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.002 0.003
+2022-12-23 16:01:58,140 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "POST /base_setup/data HTTP/1.1" 200 - 5 0.002 0.004
+2022-12-23 16:01:58,140 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "GET /base_setup/static/src/img/google_play.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:01:58,144 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "GET /base_setup/static/src/img/app_store.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:01:58,387 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:01:58,496 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "GET /hr/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:01:58,499 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "GET /hr_leave_request_aliasing/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:01:58,504 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 16:01:58,505 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "GET /hr_expense/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:01:58,507 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "GET /project/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:01:58,698 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "GET /account/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:01:58,806 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:01:58,811 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "GET /fleet/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:01:58,819 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "GET /hr_payroll_community/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 16:01:58,820 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "GET /lunch/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:01:58,822 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:58] "GET /stock/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:01:59,021 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:59] "GET /event/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:01:59,116 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:59] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 16:01:59,118 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:59] "GET /mrp/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:01:59,123 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:59] "GET /hr_timesheet/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:01:59,127 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:59] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:01:59,128 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:59] "GET /base/static/description/settings.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:01:59,334 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:59] "GET /crm/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:01:59,429 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:59] "GET /sale_management/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 16:01:59,430 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:59] "GET /website/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:01:59,437 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:59] "GET /website_slides/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 16:01:59,438 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:01:59] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:02:00,488 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `CRM: enrich leads (IAP)`. 
+2022-12-23 16:02:00,494 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `CRM: enrich leads (IAP)` done. 
+2022-12-23 16:02:00,502 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:02:00,505 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:02:11,749 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:11] "GET /web/bundle/web_editor.assets_wysiwyg?lang=vi_VN&debug=assets HTTP/1.1" 200 - 6 0.000 0.013
+2022-12-23 16:02:12,006 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:12] "GET /web/assets/debug/web_editor.assets_wysiwyg.css HTTP/1.1" 304 - 5 0.001 0.005
+2022-12-23 16:02:12,071 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:12] "GET /web/assets/debug/web_editor.assets_wysiwyg.js HTTP/1.1" 304 - 5 0.004 0.006
+2022-12-23 16:02:12,071 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:12] "GET /web/assets/3219-549351e/web_editor.assets_wysiwyg.css.map HTTP/1.1" 200 - 4 0.002 0.006
+2022-12-23 16:02:12,344 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:12] "GET /web/assets/3221-549351e/web_editor.assets_wysiwyg.js.map HTTP/1.1" 200 - 4 0.000 0.004
+2022-12-23 16:02:26,542 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:26] "GET /web?debug=assets HTTP/1.1" 200 - 23 0.011 0.370
+2022-12-23 16:02:26,560 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:26] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 5 0.001 0.007
+2022-12-23 16:02:26,872 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:26] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 304 - 5 0.000 0.005
+2022-12-23 16:02:26,886 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:26] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 304 - 5 0.001 0.008
+2022-12-23 16:02:26,890 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:26] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 304 - 5 0.001 0.010
+2022-12-23 16:02:26,892 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:26] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 304 - 5 0.001 0.008
+2022-12-23 16:02:26,901 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:26] "GET /web/assets/3211-d6d7fe4/web.assets_common.css.map HTTP/1.1" 200 - 4 0.000 0.004
+2022-12-23 16:02:27,260 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:27] "GET /web/assets/3215-d6d7fe4/web.assets_common.js.map HTTP/1.1" 200 - 4 0.000 0.005
+2022-12-23 16:02:27,310 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:27] "GET /web/assets/3477-516ed17/web.assets_backend.css.map HTTP/1.1" 200 - 4 0.000 0.006
+2022-12-23 16:02:27,527 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:27] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.000 0.003
+2022-12-23 16:02:27,533 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:27] "GET /web/assets/3479-516ed17/web.assets_backend.js.map HTTP/1.1" 200 - 4 0.001 0.004
+2022-12-23 16:02:27,788 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:27] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:02:27,927 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:27] "POST /web/action/load HTTP/1.1" 200 - 9 0.006 0.009
+2022-12-23 16:02:28,008 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:28] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 7 0.005 0.010
+2022-12-23 16:02:28,034 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:28] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 2 0.002 0.041
+2022-12-23 16:02:28,046 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:28] "GET /web/assets/2880-a1350ed/web.assets_backend_prod_only.js.map HTTP/1.1" 200 - 4 0.001 0.006
+2022-12-23 16:02:28,050 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:28] "GET /bus/websocket_worker_bundle HTTP/1.1" 304 - 4 0.003 0.009
+2022-12-23 16:02:28,326 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:28] "POST /mail/init_messaging HTTP/1.1" 200 - 40 0.018 0.068
+2022-12-23 16:02:28,377 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:28] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.004 0.015
+2022-12-23 16:02:28,402 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:28] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 7 0.024 0.021
+2022-12-23 16:02:28,496 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:28] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.030
+2022-12-23 16:02:28,510 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:28] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.016 0.031
+2022-12-23 16:02:28,685 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:28] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 117 0.099 0.201
+2022-12-23 16:02:28,699 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:28] "POST /web/dataset/call_kw/res.lang/read HTTP/1.1" 200 - 2 0.001 0.002
+2022-12-23 16:02:29,008 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:29] "POST /web/dataset/call_kw/pos.payment.method/read HTTP/1.1" 200 - 2 0.001 0.005
+2022-12-23 16:02:29,012 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:29] "POST /web/dataset/call_kw/pos.bill/read HTTP/1.1" 200 - 2 0.000 0.008
+2022-12-23 16:02:29,019 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:29] "POST /web/dataset/call_kw/product.pricelist/read HTTP/1.1" 200 - 4 0.000 0.010
+2022-12-23 16:02:29,507 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:29] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-23 16:02:29,511 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:29] "GET /base_setup/static/src/img/google_play.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:02:29,514 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:29] "POST /base_setup/data HTTP/1.1" 200 - 5 0.004 0.004
+2022-12-23 16:02:29,518 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:29] "GET /base_setup/static/src/img/app_store.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:02:29,770 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:29] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:02:29,881 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:29] "GET /hr/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:02:29,884 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:29] "GET /hr_leave_request_aliasing/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-12-23 16:02:29,885 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:29] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 16:02:29,888 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:29] "GET /hr_expense/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:02:29,889 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:29] "GET /project/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:02:30,096 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /account/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:02:30,206 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /fleet/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:02:30,207 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.005
+2022-12-23 16:02:30,211 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /hr_payroll_community/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:02:30,214 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /lunch/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 16:02:30,216 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /stock/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:02:30,406 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /event/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:02:30,520 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:02:30,524 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /mrp/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 16:02:30,526 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /hr_timesheet/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:02:30,528 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:02:30,530 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /base/static/description/settings.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:02:30,719 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /crm/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:02:30,826 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /sale_management/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:02:30,833 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /website/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:02:30,838 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /website_slides/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-12-23 16:02:30,841 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:02:30] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:03:01,533 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:03:01,536 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:03:22,382 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:22] "GET /web/bundle/web_editor.assets_wysiwyg?lang=vi_VN&debug=assets HTTP/1.1" 200 - 6 0.002 0.011
+2022-12-23 16:03:22,639 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:22] "GET /web/assets/debug/web_editor.assets_wysiwyg.css HTTP/1.1" 304 - 5 0.000 0.005
+2022-12-23 16:03:22,704 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:22] "GET /web/assets/debug/web_editor.assets_wysiwyg.js HTTP/1.1" 304 - 5 0.002 0.006
+2022-12-23 16:03:22,705 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:22] "GET /web/assets/3219-549351e/web_editor.assets_wysiwyg.css.map HTTP/1.1" 200 - 4 0.001 0.006
+2022-12-23 16:03:22,973 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:22] "GET /web/assets/3221-549351e/web_editor.assets_wysiwyg.js.map HTTP/1.1" 200 - 4 0.001 0.006
+2022-12-23 16:03:26,565 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:26] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 5 0.002 0.007
+2022-12-23 16:03:26,879 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:26] "GET /web/assets/debug/web_editor.assets_wysiwyg.css HTTP/1.1" 304 - 5 0.003 0.006
+2022-12-23 16:03:26,881 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:26] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 304 - 5 0.002 0.007
+2022-12-23 16:03:26,930 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:26] "GET /web/assets/3221-549351e/web_editor.assets_wysiwyg.js.map HTTP/1.1" 200 - 4 0.002 0.009
+2022-12-23 16:03:26,944 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:26] "GET /web/assets/2880-a1350ed/web.assets_backend_prod_only.js.map HTTP/1.1" 200 - 4 0.006 0.014
+2022-12-23 16:03:26,945 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:26] "GET /web/assets/3479-516ed17/web.assets_backend.js.map HTTP/1.1" 200 - 4 0.004 0.013
+2022-12-23 16:03:26,947 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:26] "GET /web/assets/3215-d6d7fe4/web.assets_common.js.map HTTP/1.1" 200 - 4 0.005 0.011
+2022-12-23 16:03:27,260 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:27] "GET /web/assets/3219-549351e/web_editor.assets_wysiwyg.css.map HTTP/1.1" 200 - 4 0.003 0.011
+2022-12-23 16:03:27,266 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:27] "GET /web/assets/3477-516ed17/web.assets_backend.css.map HTTP/1.1" 200 - 4 0.004 0.012
+2022-12-23 16:03:27,276 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:03:27] "GET /web/assets/3211-d6d7fe4/web.assets_common.css.map HTTP/1.1" 200 - 4 0.002 0.009
+2022-12-23 16:04:02,561 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:04:02,564 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:05:03,597 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:05:03,601 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:06:04,636 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:06:04,639 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:07:05,677 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:07:05,681 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:07:09,491 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:07:09] "GET /websocket HTTP/1.1" 101 - 2 0.001 0.005
+2022-12-23 16:07:13,461 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:07:13] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
+2022-12-23 16:08:06,718 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:08:06,722 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:09:07,755 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Event: Mail Scheduler`. 
+2022-12-23 16:09:07,766 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Event: Mail Scheduler` done. 
+2022-12-23 16:09:07,773 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-23 16:09:07,777 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-23 16:09:07,782 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:09:07,785 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:10:08,810 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:10:08,813 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:11:09,849 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:11:09,852 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:12:10,887 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:12:10,890 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:13:11,916 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:13:11,920 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:13:13,690 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:13:13] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.005
+2022-12-23 16:14:12,946 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:14:12,950 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:15:13,978 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:15:13,981 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:16:15,009 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:16:15,013 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:17:16,043 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:17:16,046 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:17:24,338 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:17:24] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.006
+2022-12-23 16:17:24,339 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:17:24] "GET /websocket HTTP/1.1" 101 - 2 0.002 0.007
+2022-12-23 16:18:17,061 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:18:17,068 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:19:18,101 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-23 16:19:18,104 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:19:18,107 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-23 16:19:18,109 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:20:19,142 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:20:19,145 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:21:20,172 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:21:20,176 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:22:21,205 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:22:21,208 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:23:22,223 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:23:22,227 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:23:24,653 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:23:24] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
+2022-12-23 16:24:23,258 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:24:23,262 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:25:24,284 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:25:24,287 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:26:25,320 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:26:25,324 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:27:26,339 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:27:26,342 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:27:30,269 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:27:30] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
+2022-12-23 16:27:54,438 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:27:54] "GET /websocket HTTP/1.1" 101 - 2 0.000 0.004
+2022-12-23 16:28:27,383 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-23 16:28:27,387 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:28:27,390 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-23 16:28:27,392 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:29:28,427 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:29:28,432 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:30:29,457 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:30:29,460 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:31:30,475 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Product: send email regarding products availability`. 
+2022-12-23 16:31:30,483 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Product: send email regarding products availability` done. 
+2022-12-23 16:31:30,490 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `eCommerce: send email to customers about their abandoned cart`. 
+2022-12-23 16:31:30,496 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:31:30,499 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `eCommerce: send email to customers about their abandoned cart` done. 
+2022-12-23 16:31:30,500 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:32:31,529 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:32:31,531 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:33:30,552 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:33:30] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.005
+2022-12-23 16:33:32,557 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:33:32,563 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:34:33,582 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:34:33,585 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:35:34,617 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:35:34,620 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:36:09,553 36984 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-12-23 16:36:09,556 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:09] "GET /web?debug=assets HTTP/1.1" 200 - 112 0.128 8.390
+2022-12-23 16:36:09,588 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:09] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 7 0.006 0.007
+2022-12-23 16:36:09,591 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:09] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 7 0.006 0.009
+2022-12-23 16:36:09,893 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:09] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 304 - 5 0.001 0.010
+2022-12-23 16:36:09,897 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:09] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 304 - 5 0.003 0.007
+2022-12-23 16:36:10,569 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:10] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.004 0.679
+2022-12-23 16:36:11,487 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:11] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:36:11,581 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:11] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 2 0.001 0.004
+2022-12-23 16:36:11,598 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:11] "POST /web/action/load HTTP/1.1" 200 - 10 0.006 0.014
+2022-12-23 16:36:11,644 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:11] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 10 0.009 0.027
+2022-12-23 16:36:11,883 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:11] "POST /mail/init_messaging HTTP/1.1" 200 - 59 0.065 0.082
+2022-12-23 16:36:11,924 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:11] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 7 0.002 0.014
+2022-12-23 16:36:12,003 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:12] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.005 0.011
+2022-12-23 16:36:12,017 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:12] "POST /mail/load_message_failures HTTP/1.1" 200 - 14 0.008 0.021
+2022-12-23 16:36:12,019 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:12] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 304 - 0 0.000 0.013
+2022-12-23 16:36:12,250 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:12] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 99 0.026 0.617
+2022-12-23 16:36:12,254 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:12] "GET /bus/websocket_worker_bundle HTTP/1.1" 304 - 5 0.004 0.027
+2022-12-23 16:36:12,634 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:12] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.010
+2022-12-23 16:36:13,028 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:13] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 407 0.056 0.349
+2022-12-23 16:36:13,041 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:13] "POST /web/dataset/call_kw/res.lang/read HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-23 16:36:13,358 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:13] "POST /web/dataset/call_kw/pos.payment.method/read HTTP/1.1" 200 - 2 0.002 0.002
+2022-12-23 16:36:13,369 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:13] "POST /web/dataset/call_kw/pos.bill/read HTTP/1.1" 200 - 2 0.001 0.011
+2022-12-23 16:36:13,371 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:13] "POST /web/dataset/call_kw/product.pricelist/read HTTP/1.1" 200 - 4 0.000 0.011
+2022-12-23 16:36:13,842 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:13] "POST /base_setup/data HTTP/1.1" 200 - 6 0.002 0.004
+2022-12-23 16:36:13,844 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:13] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-23 16:36:13,847 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:13] "GET /base_setup/static/src/img/google_play.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:36:13,856 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:13] "GET /base_setup/static/src/img/app_store.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:36:14,105 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:36:14,167 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /hr/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 16:36:14,169 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /hr_leave_request_aliasing/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-12-23 16:36:14,171 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /hr_attendance/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.006
+2022-12-23 16:36:14,173 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /hr_expense/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:36:14,175 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /project/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:36:14,433 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /account/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:36:14,476 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /mass_mailing/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:36:14,477 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /fleet/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:36:14,482 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /hr_payroll_community/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 16:36:14,484 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /lunch/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 16:36:14,484 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /stock/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:36:14,740 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /event/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:36:14,787 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /mrp/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:36:14,788 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /hr_recruitment/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:36:14,794 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /hr_timesheet/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 16:36:14,795 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /base/static/description/settings.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:36:14,796 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:14] "GET /point_of_sale/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 16:36:15,054 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:15] "GET /crm/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:36:15,100 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:15] "GET /sale_management/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:36:15,106 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:15] "GET /website/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:36:15,107 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:15] "GET /website_slides/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 16:36:15,111 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:15] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:36:23,117 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:23] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 5 0.003 0.005
+2022-12-23 16:36:23,118 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:23] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 304 - 5 0.003 0.005
+2022-12-23 16:36:23,361 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:23] "GET /web/assets/3215-d6d7fe4/web.assets_common.js.map HTTP/1.1" 200 - 4 0.001 0.004
+2022-12-23 16:36:23,462 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:23] "GET /web/assets/2880-a1350ed/web.assets_backend_prod_only.js.map HTTP/1.1" 200 - 4 0.003 0.005
+2022-12-23 16:36:23,468 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:23] "GET /web/assets/3483-9e71598/web.assets_backend.js.map HTTP/1.1" 200 - 4 0.002 0.014
+2022-12-23 16:36:23,472 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:23] "GET /web/assets/3481-9e71598/web.assets_backend.css.map HTTP/1.1" 200 - 4 0.001 0.015
+2022-12-23 16:36:23,488 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:23] "GET /web/assets/3211-d6d7fe4/web.assets_common.css.map HTTP/1.1" 200 - 4 0.002 0.005
+2022-12-23 16:36:30,103 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:30] "GET /web/bundle/web_editor.assets_wysiwyg?lang=vi_VN&debug=assets HTTP/1.1" 200 - 11 0.002 0.084
+2022-12-23 16:36:30,444 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:30] "GET /web/assets/debug/web_editor.assets_wysiwyg.css HTTP/1.1" 304 - 5 0.002 0.006
+2022-12-23 16:36:30,446 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:36:30] "GET /web/assets/debug/web_editor.assets_wysiwyg.js HTTP/1.1" 304 - 5 0.002 0.004
+2022-12-23 16:36:35,640 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:36:35,644 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:37:36,674 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:37:36,677 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:38:09,407 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:38:09] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.005
+2022-12-23 16:38:11,483 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:38:11] "GET /websocket HTTP/1.1" 101 - 2 0.000 0.005
+2022-12-23 16:38:37,708 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-23 16:38:37,710 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:38:37,715 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-23 16:38:37,716 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:39:38,750 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:39:38,753 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:40:39,772 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:40:39,775 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:41:40,813 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:41:40,817 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:42:41,837 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:42:41,841 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:43:42,877 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:43:42,881 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:44:43,897 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:44:43,902 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:44:50,666 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:44:50] "POST /web/dataset/call_kw/account.incoterms/name_search HTTP/1.1" 200 - 3 0.002 0.005
+2022-12-23 16:45:14,986 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:45:14] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 5 0.002 0.035
+2022-12-23 16:45:19,503 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:45:19] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 5 0.001 0.035
+2022-12-23 16:45:28,807 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:45:28] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 4 0.001 0.031
+2022-12-23 16:45:44,926 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:45:44,929 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:46:20,406 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:46:20] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.004
+2022-12-23 16:46:21,360 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:46:21] "GET /web/static/img/enterprise_upgrade.jpg HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-23 16:46:33,517 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:46:33] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 4 0.000 0.036
+2022-12-23 16:46:45,967 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:46:45,970 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:46:51,582 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:46:51] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 9 0.005 0.566
+2022-12-23 16:47:18,065 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:47:18] "POST /web/dataset/call_kw/account.journal/name_search HTTP/1.1" 200 - 3 0.003 0.004
+2022-12-23 16:47:47,009 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:47:47,012 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:48:20,036 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:48:20] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.003
+2022-12-23 16:48:24,498 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:48:24] "GET /websocket HTTP/1.1" 101 - 2 0.000 0.004
+2022-12-23 16:48:48,034 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-23 16:48:48,037 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-23 16:48:48,044 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:48:48,047 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:49:49,083 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:49:49,086 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:50:50,113 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:50:50,117 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:51:51,145 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:51:51,149 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:52:52,172 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:52:52,175 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:53:53,198 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:53:53,201 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:54:54,227 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:54:54,230 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:55:55,267 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:55:55,271 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:56:24,280 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:24] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.003
+2022-12-23 16:56:29,061 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:29] "GET /web?debug=assets HTTP/1.1" 200 - 76 0.037 1.519
+2022-12-23 16:56:29,078 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:29] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 304 - 5 0.001 0.008
+2022-12-23 16:56:29,079 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:29] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 304 - 5 0.002 0.007
+2022-12-23 16:56:29,399 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:29] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 304 - 5 0.003 0.010
+2022-12-23 16:56:29,402 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:29] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 304 - 5 0.001 0.012
+2022-12-23 16:56:29,403 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:29] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 304 - 5 0.002 0.008
+2022-12-23 16:56:30,248 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:30] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:56:30,422 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:30] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.000 0.004
+2022-12-23 16:56:30,451 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:30] "POST /web/action/load HTTP/1.1" 200 - 16 0.012 0.020
+2022-12-23 16:56:30,453 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:30] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 7 0.005 0.012
+2022-12-23 16:56:30,597 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:30] "POST /web/dataset/call_kw/account.payment/get_views HTTP/1.1" 200 - 59 0.022 0.073
+2022-12-23 16:56:30,836 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:30] "POST /mail/init_messaging HTTP/1.1" 200 - 40 0.011 0.065
+2022-12-23 16:56:30,843 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:30] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.000 0.007
+2022-12-23 16:56:30,854 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:30] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 7 0.009 0.024
+2022-12-23 16:56:30,870 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:30] "POST /web/dataset/call_kw/account.payment/web_search_read HTTP/1.1" 200 - 9 0.015 0.022
+2022-12-23 16:56:30,933 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:30] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 304 - 0 0.000 0.003
+2022-12-23 16:56:30,950 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:30] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.006 0.015
+2022-12-23 16:56:31,180 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:31] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 304 - 0 0.000 0.001
+2022-12-23 16:56:36,050 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:36] "POST /web/action/load HTTP/1.1" 200 - 13 0.011 0.016
+2022-12-23 16:56:36,634 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:36] "POST /web/dataset/call_kw/account.journal/get_views HTTP/1.1" 200 - 42 0.008 0.256
+2022-12-23 16:56:36,808 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:36] "POST /web/dataset/call_kw/account.journal/web_search_read HTTP/1.1" 200 - 131 0.055 0.096
+2022-12-23 16:56:37,161 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:37] "GET /web/static/lib/Chart/Chart.js HTTP/1.1" 200 - 0 0.000 0.006
+2022-12-23 16:56:37,176 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:37] "POST /account/account_dashboard_onboarding HTTP/1.1" 200 - 23 0.005 0.051
+2022-12-23 16:56:37,389 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:37] "GET /account/static/src/img/account_dashboard_onboarding_bg.jpg HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-23 16:56:46,922 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:46] "POST /web/action/load HTTP/1.1" 200 - 12 0.003 0.010
+2022-12-23 16:56:47,278 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:47] "POST /web/dataset/call_kw/account.account/get_views HTTP/1.1" 200 - 28 0.004 0.025
+2022-12-23 16:56:47,526 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:47] "POST /web/dataset/call_kw/account.account/search_panel_select_range HTTP/1.1" 200 - 6 0.003 0.011
+2022-12-23 16:56:47,644 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:47] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 9 0.012 0.027
+2022-12-23 16:56:53,525 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:53] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 13 0.006 0.029
+2022-12-23 16:56:56,301 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:56:56,304 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:56:57,895 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:57] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 9 0.007 0.025
+2022-12-23 16:56:59,377 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:56:59] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 9 0.006 0.014
+2022-12-23 16:57:00,885 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:57:00] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 8 0.005 0.011
+2022-12-23 16:57:03,876 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:57:03] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 9 0.003 0.011
+2022-12-23 16:57:13,477 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:57:13] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 9 0.003 0.029
+2022-12-23 16:57:57,326 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:57:57,330 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:58:04,796 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:58:04] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 9 0.002 0.013
+2022-12-23 16:58:12,384 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:58:12] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 8 0.001 0.011
+2022-12-23 16:58:14,015 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:58:14] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 9 0.002 0.012
+2022-12-23 16:58:17,843 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:58:17] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 9 0.008 0.025
+2022-12-23 16:58:37,783 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:58:37] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 8 0.006 0.024
+2022-12-23 16:58:40,380 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:58:40] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 9 0.001 0.030
+2022-12-23 16:58:47,024 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:58:47] "POST /web/dataset/call_kw/account.account/search_panel_select_range HTTP/1.1" 200 - 6 0.003 0.010
+2022-12-23 16:58:47,370 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:58:47] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 9 0.003 0.031
+2022-12-23 16:58:56,160 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:58:56] "POST /web/dataset/call_kw/account.account/web_read_group HTTP/1.1" 200 - 2 0.002 0.001
+2022-12-23 16:58:57,672 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:58:57] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 8 0.001 0.010
+2022-12-23 16:58:58,368 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2022-12-23 16:58:58,371 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2022-12-23 16:58:58,373 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2022-12-23 16:58:58,376 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
+2022-12-23 16:58:58,384 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Notification: Delete Notifications older than 6 Month`. 
+2022-12-23 16:58:58,388 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Users: Notify About Unregistered Users`. 
+2022-12-23 16:58:58,392 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Notification: Delete Notifications older than 6 Month` done. 
+2022-12-23 16:58:58,393 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Users: Notify About Unregistered Users` done. 
+2022-12-23 16:58:58,399 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2022-12-23 16:58:58,405 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-23 16:58:58,405 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2022-12-23 16:58:58,408 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-23 16:58:58,412 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 16:58:58,419 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2022-12-23 16:58:58,419 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 16:58:58,422 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Notification: Send scheduled message notifications` done. 
+2022-12-23 16:58:58,426 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2022-12-23 16:59:01,626 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:59:01] "GET /websocket HTTP/1.1" 101 - 2 0.004 0.010
+2022-12-23 16:59:01,647 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:59:01] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 9 0.005 0.027
+2022-12-23 16:59:02,507 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2022-12-23 16:59:03,435 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:59:03] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.002
+2022-12-23 16:59:20,663 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:59:20] "POST /web/dataset/call_kw/account.account/search_panel_select_range HTTP/1.1" 200 - 6 0.004 0.009
+2022-12-23 16:59:21,023 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:59:21] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 9 0.006 0.027
+2022-12-23 16:59:23,938 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:59:23] "POST /web/dataset/call_kw/account.account/search_panel_select_range HTTP/1.1" 200 - 6 0.003 0.010
+2022-12-23 16:59:24,275 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 16:59:24] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 9 0.002 0.029
+2022-12-23 16:59:59,458 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Mail Marketing: A/B Testing`. 
+2022-12-23 16:59:59,466 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Mail Marketing: A/B Testing` done. 
+2022-12-23 16:59:59,473 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Project: Send rating`. 
+2022-12-23 16:59:59,476 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Project: Send rating` done. 
+2022-12-23 16:59:59,482 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `HR Employee: check work permit validity`. 
+2022-12-23 16:59:59,487 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `HR Employee: check work permit validity` done. 
+2022-12-23 16:59:59,493 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Gamification: Goal Challenge Check`. 
+2022-12-23 17:00:00,165 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Gamification: Goal Challenge Check` done. 
+2022-12-23 17:00:00,172 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 17:00:00,175 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 17:00:00,181 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Mail Marketing: Process queue`. 
+2022-12-23 17:00:00,185 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Mail Marketing: Process queue` done. 
+2022-12-23 17:00:03,544 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Lunch: send automatic email to Pizza Inn`. 
+2022-12-23 17:00:03,552 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Lunch: send automatic email to Pizza Inn` done. 
+2022-12-23 17:00:17,107 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:17] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 1 0.001 0.005
+2022-12-23 17:00:17,281 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:17] "POST /web/action/load HTTP/1.1" 200 - 11 0.005 0.015
+2022-12-23 17:00:17,681 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:17] "POST /web/dataset/call_kw/account.account/get_views HTTP/1.1" 200 - 3 0.000 0.010
+2022-12-23 17:00:17,771 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:17] "POST /web/dataset/call_kw/account.account/search_panel_select_range HTTP/1.1" 200 - 6 0.012 0.013
+2022-12-23 17:00:17,784 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:17] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 7 0.008 0.040
+2022-12-23 17:00:17,842 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:17] "POST /mail/init_messaging HTTP/1.1" 200 - 40 0.033 0.078
+2022-12-23 17:00:17,947 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:17] "POST /web/dataset/call_kw/account.account/web_search_read HTTP/1.1" 200 - 9 0.003 0.025
+2022-12-23 17:00:18,014 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:18] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.003
+2022-12-23 17:00:18,031 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:18] "POST /mail/load_message_failures HTTP/1.1" 200 - 11 0.003 0.016
+2022-12-23 17:00:18,177 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:18] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 17:00:28,773 36984 INFO ABCCompany werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:28] "GET /web/database/manager HTTP/1.1" 200 - 6 0.011 0.115
+2022-12-23 17:00:28,784 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:28] "GET /web/static/src/libs/fontawesome/css/font-awesome.css HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-23 17:00:28,924 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:28] "GET /web/static/lib/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-23 17:00:29,102 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:29] "GET /web/static/lib/jquery/jquery.js HTTP/1.1" 200 - 0 0.000 0.001
+2022-12-23 17:00:29,107 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:29] "GET /web/static/lib/bootstrap/js/dist/dom/data.js HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-23 17:00:29,111 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:29] "GET /web/static/lib/bootstrap/js/dist/dom/event-handler.js HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-23 17:00:29,114 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:29] "GET /web/static/lib/bootstrap/js/dist/dom/manipulator.js HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-23 17:00:29,118 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:29] "GET /web/static/lib/bootstrap/js/dist/dom/selector-engine.js HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-23 17:00:29,243 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:29] "GET /web/static/lib/bootstrap/js/dist/base-component.js HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-23 17:00:29,428 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:29] "GET /web/static/src/public/database_manager.js HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-23 17:00:29,429 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:29] "GET /web/static/lib/bootstrap/js/dist/modal.js HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-23 17:00:29,742 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:29] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 17:00:29,744 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:00:29] "GET /web/static/img/logo2.png HTTP/1.1" 200 - 0 0.000 0.003
+2022-12-23 17:01:01,212 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Calendar: Event Reminder`. 
+2022-12-23 17:01:01,216 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Calendar: Event Reminder` done. 
+2022-12-23 17:01:01,223 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 17:01:01,225 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 17:02:02,259 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Procurement: run scheduler`. 
+2022-12-23 17:02:02,467 36984 INFO ABCCompany odoo.addons.stock.models.stock_orderpoint: A batch of 5 orderpoints is processed and committed 
+2022-12-23 17:02:02,506 36984 INFO ABCCompany odoo.addons.stock.models.stock_rule: A batch of 14 moves are assigned and committed 
+2022-12-23 17:02:02,508 36984 INFO ABCCompany odoo.addons.stock.models.stock_rule: _run_scheduler_tasks is finished and committed 
+2022-12-23 17:02:02,509 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Procurement: run scheduler` done. 
+2022-12-23 17:02:02,515 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `CRM: enrich leads (IAP)`. 
+2022-12-23 17:02:02,520 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `CRM: enrich leads (IAP)` done. 
+2022-12-23 17:02:02,527 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 17:02:02,529 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 17:03:03,565 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Purchase reminder`. 
+2022-12-23 17:03:03,583 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Purchase reminder` done. 
+2022-12-23 17:03:03,590 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 17:03:03,592 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-23 17:03:13,200 36984 INFO None odoo.service.db: Create database `Template`. 
+2022-12-23 17:03:14,434 36984 INFO Template odoo.modules.loading: loading 1 modules... 
+2022-12-23 17:03:14,434 36984 INFO Template odoo.modules.loading: Loading module base (1/1) 
+2022-12-23 17:03:14,462 36984 INFO Template odoo.modules.registry: module base: creating or updating database tables 
+2022-12-23 17:03:14,831 36984 INFO Template odoo.models: Prepare computation of ir.module.module.menus_by_module 
+2022-12-23 17:03:14,831 36984 INFO Template odoo.models: Prepare computation of ir.module.module.reports_by_module 
+2022-12-23 17:03:14,831 36984 INFO Template odoo.models: Prepare computation of ir.module.module.views_by_module 
+2022-12-23 17:03:14,962 36984 INFO Template odoo.models: Prepare computation of res.partner.user_id 
+2022-12-23 17:03:14,962 36984 INFO Template odoo.models: Prepare computation of res.partner.commercial_partner_id 
+2022-12-23 17:03:14,962 36984 INFO Template odoo.models: Prepare computation of res.partner.display_name 
+2022-12-23 17:03:14,962 36984 INFO Template odoo.models: Prepare computation of res.partner.company_registry 
+2022-12-23 17:03:14,962 36984 INFO Template odoo.models: Prepare computation of res.partner.commercial_company_name 
+2022-12-23 17:03:14,962 36984 INFO Template odoo.models: Prepare computation of res.partner.partner_share 
+2022-12-23 17:03:15,007 36984 INFO Template odoo.models: Prepare computation of res.currency.decimal_places 
+2022-12-23 17:03:15,034 36984 INFO Template odoo.models: Prepare computation of res.company.logo_web 
+2022-12-23 17:03:15,064 36984 INFO Template odoo.models: Prepare computation of res.users.signature 
+2022-12-23 17:03:15,064 36984 INFO Template odoo.models: Prepare computation of res.users.share 
+2022-12-23 17:03:16,610 36984 WARNING Template odoo.addons.base.models.ir_module: docutils' system message present: <system_message level="2" line="3" source="<string>" type="WARNING"><paragraph>Title underline too short.</paragraph><literal_block xml:space="preserve">The kernel of Lean Soft, needed for all installation.
+===================================================</literal_block></system_message> 
+2022-12-23 17:03:16,611 36984 INFO Template odoo.modules.loading: loading base/data/res_bank.xml 
+2022-12-23 17:03:16,618 36984 INFO Template odoo.modules.loading: loading base/data/res.lang.csv 
+2022-12-23 17:03:16,704 36984 INFO Template odoo.modules.loading: loading base/data/res_lang_data.xml 
+2022-12-23 17:03:16,727 36984 INFO Template odoo.modules.loading: loading base/data/res_partner_data.xml 
+2022-12-23 17:03:16,781 36984 INFO Template odoo.modules.loading: loading base/data/res_company_data.xml 
+2022-12-23 17:03:16,794 36984 INFO Template odoo.modules.loading: loading base/data/res_users_data.xml 
+2022-12-23 17:03:17,125 36984 INFO Template odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2022-12-23 17:03:17,132 36984 INFO Template odoo.modules.loading: loading base/data/res_currency_data.xml 
+2022-12-23 17:03:17,450 36984 INFO Template odoo.modules.loading: loading base/data/res_country_data.xml 
+2022-12-23 17:03:17,815 36984 INFO Template odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2022-12-23 17:03:17,827 36984 INFO Template odoo.modules.loading: loading base/data/ir_config_parameter_data.xml 
+2022-12-23 17:03:17,832 36984 INFO Template odoo.modules.loading: loading base/security/base_groups.xml 
+2022-12-23 17:03:18,025 36984 INFO Template odoo.modules.loading: loading base/security/base_security.xml 
+2022-12-23 17:03:18,123 36984 INFO Template odoo.modules.loading: loading base/views/base_menus.xml 
+2022-12-23 17:03:18,183 36984 INFO Template odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2022-12-23 17:03:18,196 36984 INFO Template odoo.modules.loading: loading base/views/res_config_views.xml 
+2022-12-23 17:03:18,203 36984 INFO Template odoo.modules.loading: loading base/data/res.country.state.csv 
+2022-12-23 17:03:18,960 36984 INFO Template odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2022-12-23 17:03:19,048 36984 INFO Template odoo.modules.loading: loading base/views/ir_asset_views.xml 
+2022-12-23 17:03:19,062 36984 INFO Template odoo.modules.loading: loading base/views/ir_config_parameter_views.xml 
+2022-12-23 17:03:19,077 36984 INFO Template odoo.modules.loading: loading base/views/ir_cron_views.xml 
+2022-12-23 17:03:19,100 36984 INFO Template odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml 
+2022-12-23 17:03:19,113 36984 INFO Template odoo.modules.loading: loading base/views/ir_filters_views.xml 
+2022-12-23 17:03:19,130 36984 INFO Template odoo.modules.loading: loading base/views/ir_mail_server_views.xml 
+2022-12-23 17:03:19,146 36984 INFO Template odoo.modules.loading: loading base/views/ir_model_views.xml 
+2022-12-23 17:03:19,268 36984 INFO Template odoo.modules.loading: loading base/views/ir_attachment_views.xml 
+2022-12-23 17:03:19,286 36984 INFO Template odoo.modules.loading: loading base/views/ir_rule_views.xml 
+2022-12-23 17:03:19,306 36984 INFO Template odoo.modules.loading: loading base/views/ir_sequence_views.xml 
+2022-12-23 17:03:19,324 36984 INFO Template odoo.modules.loading: loading base/views/ir_ui_menu_views.xml 
+2022-12-23 17:03:19,340 36984 INFO Template odoo.modules.loading: loading base/views/ir_ui_view_views.xml 
+2022-12-23 17:03:19,379 36984 INFO Template odoo.modules.loading: loading base/views/ir_default_views.xml 
+2022-12-23 17:03:19,393 36984 INFO Template odoo.modules.loading: loading base/data/ir_cron_data.xml 
+2022-12-23 17:03:19,398 36984 INFO Template odoo.modules.loading: loading base/report/ir_model_report.xml 
+2022-12-23 17:03:19,401 36984 INFO Template odoo.modules.loading: loading base/report/ir_model_templates.xml 
+2022-12-23 17:03:19,407 36984 INFO Template odoo.modules.loading: loading base/views/ir_logging_views.xml 
+2022-12-23 17:03:19,423 36984 INFO Template odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml 
+2022-12-23 17:03:19,430 36984 INFO Template odoo.modules.loading: loading base/views/ir_module_views.xml 
+2022-12-23 17:03:19,485 36984 INFO Template odoo.modules.loading: loading base/data/ir_module_category_data.xml 
+2022-12-23 17:03:19,535 36984 INFO Template odoo.modules.loading: loading base/data/ir_module_module.xml 
+2022-12-23 17:03:19,592 36984 INFO Template odoo.modules.loading: loading base/report/ir_module_reports.xml 
+2022-12-23 17:03:19,595 36984 INFO Template odoo.modules.loading: loading base/report/ir_module_report_templates.xml 
+2022-12-23 17:03:19,599 36984 INFO Template odoo.modules.loading: loading base/wizard/base_module_update_views.xml 
+2022-12-23 17:03:19,608 36984 INFO Template odoo.modules.loading: loading base/wizard/base_language_install_views.xml 
+2022-12-23 17:03:19,619 36984 INFO Template odoo.modules.loading: loading base/wizard/base_import_language_views.xml 
+2022-12-23 17:03:19,627 36984 INFO Template odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml 
+2022-12-23 17:03:19,642 36984 INFO Template odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml 
+2022-12-23 17:03:19,648 36984 INFO Template odoo.modules.loading: loading base/wizard/base_export_language_views.xml 
+2022-12-23 17:03:19,657 36984 INFO Template odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml 
+2022-12-23 17:03:19,670 36984 INFO Template odoo.modules.loading: loading base/data/ir_actions_data.xml 
+2022-12-23 17:03:19,673 36984 INFO Template odoo.modules.loading: loading base/data/ir_demo_failure_data.xml 
+2022-12-23 17:03:19,681 36984 INFO Template odoo.modules.loading: loading base/views/ir_profile_views.xml 
+2022-12-23 17:03:19,697 36984 INFO Template odoo.modules.loading: loading base/views/res_company_views.xml 
+2022-12-23 17:03:19,715 36984 INFO Template odoo.modules.loading: loading base/views/res_lang_views.xml 
+2022-12-23 17:03:19,736 36984 INFO Template odoo.modules.loading: loading base/views/res_partner_views.xml 
+2022-12-23 17:03:19,834 36984 INFO Template odoo.modules.loading: loading base/views/res_bank_views.xml 
+2022-12-23 17:03:19,861 36984 INFO Template odoo.modules.loading: loading base/views/res_country_views.xml 
+2022-12-23 17:03:19,892 36984 INFO Template odoo.modules.loading: loading base/views/res_currency_views.xml 
+2022-12-23 17:03:19,924 36984 INFO Template odoo.modules.loading: loading base/views/res_users_views.xml 
+2022-12-23 17:03:20,025 36984 INFO Template odoo.modules.loading: loading base/views/ir_property_views.xml 
+2022-12-23 17:03:20,041 36984 INFO Template odoo.modules.loading: loading base/views/res_config_settings_views.xml 
+2022-12-23 17:03:20,046 36984 INFO Template odoo.modules.loading: loading base/views/report_paperformat_views.xml 
+2022-12-23 17:03:20,065 36984 INFO Template odoo.modules.loading: loading base/views/onboarding_views.xml 
+2022-12-23 17:03:20,083 36984 INFO Template odoo.modules.loading: loading base/security/ir.model.access.csv 
+2022-12-23 17:03:20,229 36984 INFO Template odoo.modules.loading: Module base: loading demo 
+2022-12-23 17:03:20,229 36984 INFO Template odoo.modules.loading: loading base/data/res_company_demo.xml 
+2022-12-23 17:03:20,236 36984 INFO Template odoo.modules.loading: loading base/data/res_users_demo.xml 
+2022-12-23 17:03:20,656 36984 INFO Template odoo.modules.loading: loading base/data/res_partner_bank_demo.xml 
+2022-12-23 17:03:20,659 36984 INFO Template odoo.modules.loading: loading base/data/res_currency_rate_demo.xml 
+2022-12-23 17:03:20,850 36984 INFO Template odoo.modules.loading: loading base/data/res_bank_demo.xml 
+2022-12-23 17:03:20,854 36984 INFO Template odoo.modules.loading: loading base/data/res_partner_demo.xml 
+2022-12-23 17:03:21,101 36984 INFO Template odoo.modules.loading: loading base/data/res_partner_image_demo.xml 
+2022-12-23 17:03:21,203 36984 INFO Template odoo.addons.base.models.ir_module: module base: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:21,203 36984 INFO Template odoo.tools.translate: loading D:\Data\ERP\odoo\addons\base\i18n\vi.po 
+2022-12-23 17:03:22,454 36984 INFO Template odoo.addons.base.models.ir_module: module base: no translation for language vi_VN 
+2022-12-23 17:03:22,514 36984 INFO Template odoo.modules.loading: Module base loaded in 8.08s, 9193 queries (+9193 other) 
+2022-12-23 17:03:22,514 36984 INFO Template odoo.modules.loading: 1 modules loaded in 8.08s, 9193 queries (+9193 extra) 
+2022-12-23 17:03:22,578 36984 INFO Template odoo.addons.base.models.ir_module: module base: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:22,578 36984 INFO Template odoo.tools.translate: loading D:\Data\ERP\odoo\addons\base\i18n\vi.po 
+2022-12-23 17:03:23,395 36984 INFO Template odoo.addons.base.models.ir_module: module base: no translation for language vi_VN 
+2022-12-23 17:03:23,396 36984 INFO Template odoo.modules.loading: updating modules list 
+2022-12-23 17:03:23,396 36984 INFO Template odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-12-23 17:03:24,002 36984 INFO Template odoo.modules.loading: loading 9 modules... 
+2022-12-23 17:03:24,002 36984 INFO Template odoo.modules.loading: Loading module web (2/9) 
+2022-12-23 17:03:24,034 36984 INFO Template odoo.modules.registry: module web: creating or updating database tables 
+2022-12-23 17:03:24,512 36984 INFO Template odoo.modules.loading: loading web/security/ir.model.access.csv 
+2022-12-23 17:03:24,525 36984 INFO Template odoo.modules.loading: loading web/views/webclient_templates.xml 
+2022-12-23 17:03:24,565 36984 INFO Template odoo.modules.loading: loading web/views/report_templates.xml 
+2022-12-23 17:03:24,628 36984 INFO Template odoo.modules.loading: loading web/views/base_document_layout_views.xml 
+2022-12-23 17:03:24,638 36984 INFO Template odoo.modules.loading: loading web/views/speedscope_template.xml 
+2022-12-23 17:03:24,642 36984 INFO Template odoo.modules.loading: loading web/views/lazy_assets.xml 
+2022-12-23 17:03:24,646 36984 INFO Template odoo.modules.loading: loading web/views/neutralize_views.xml 
+2022-12-23 17:03:24,650 36984 INFO Template odoo.modules.loading: loading web/data/ir_attachment.xml 
+2022-12-23 17:03:24,655 36984 INFO Template odoo.modules.loading: loading web/data/report_layout.xml 
+2022-12-23 17:03:24,681 36984 INFO Template odoo.addons.base.models.ir_module: module web: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:24,681 36984 INFO Template odoo.tools.translate: loading d:\data\erp\addons\web\i18n\vi.po 
+2022-12-23 17:03:24,780 36984 INFO Template odoo.addons.base.models.ir_module: module web: no translation for language vi_VN 
+2022-12-23 17:03:24,790 36984 INFO Template odoo.modules.loading: Module web loaded in 0.79s, 907 queries (+907 other) 
+2022-12-23 17:03:24,790 36984 INFO Template odoo.modules.loading: Loading module auth_totp (3/9) 
+2022-12-23 17:03:24,813 36984 INFO Template odoo.modules.registry: module auth_totp: creating or updating database tables 
+2022-12-23 17:03:24,893 36984 INFO Template odoo.modules.loading: loading auth_totp/security/security.xml 
+2022-12-23 17:03:24,918 36984 INFO Template odoo.modules.loading: loading auth_totp/security/ir.model.access.csv 
+2022-12-23 17:03:24,926 36984 INFO Template odoo.modules.loading: loading auth_totp/data/ir_action_data.xml 
+2022-12-23 17:03:24,931 36984 INFO Template odoo.modules.loading: loading auth_totp/views/res_users_views.xml 
+2022-12-23 17:03:24,954 36984 INFO Template odoo.modules.loading: loading auth_totp/views/templates.xml 
+2022-12-23 17:03:24,959 36984 INFO Template odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml 
+2022-12-23 17:03:24,970 36984 INFO Template odoo.addons.base.models.ir_module: module auth_totp: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:24,971 36984 INFO Template odoo.tools.translate: loading d:\data\erp\addons\auth_totp\i18n\vi.po 
+2022-12-23 17:03:24,988 36984 INFO Template odoo.addons.base.models.ir_module: module auth_totp: no translation for language vi_VN 
+2022-12-23 17:03:24,999 36984 INFO Template odoo.modules.loading: Module auth_totp loaded in 0.21s, 189 queries (+189 other) 
+2022-12-23 17:03:24,999 36984 INFO Template odoo.modules.loading: Loading module base_import (4/9) 
+2022-12-23 17:03:25,031 36984 INFO Template odoo.modules.registry: module base_import: creating or updating database tables 
+2022-12-23 17:03:25,634 36984 INFO Template odoo.modules.loading: loading base_import/security/ir.model.access.csv 
+2022-12-23 17:03:25,662 36984 INFO Template odoo.addons.base.models.ir_module: module base_import: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:25,662 36984 INFO Template odoo.tools.translate: loading d:\data\erp\addons\base_import\i18n\vi.po 
+2022-12-23 17:03:25,687 36984 INFO Template odoo.addons.base.models.ir_module: module base_import: no translation for language vi_VN 
+2022-12-23 17:03:25,698 36984 INFO Template odoo.modules.loading: Module base_import loaded in 0.70s, 894 queries (+894 other) 
+2022-12-23 17:03:25,698 36984 INFO Template odoo.modules.loading: Loading module bus (5/9) 
+2022-12-23 17:03:25,725 36984 INFO Template odoo.modules.registry: module bus: creating or updating database tables 
+2022-12-23 17:03:25,824 36984 INFO Template odoo.modules.loading: loading bus/security/ir.model.access.csv 
+2022-12-23 17:03:25,838 36984 INFO Template odoo.addons.base.models.ir_module: module bus: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:25,838 36984 INFO Template odoo.tools.translate: loading d:\data\erp\addons\bus\i18n\vi.po 
+2022-12-23 17:03:25,844 36984 INFO Template odoo.addons.base.models.ir_module: module bus: no translation for language vi_VN 
+2022-12-23 17:03:25,852 36984 INFO Template odoo.modules.loading: Module bus loaded in 0.15s, 109 queries (+109 other) 
+2022-12-23 17:03:25,852 36984 INFO Template odoo.modules.loading: Loading module customize_title_header (6/9) 
+2022-12-23 17:03:25,890 36984 INFO Template odoo.addons.base.models.ir_module: module customize_title_header: no translation for language vi_VN 
+2022-12-23 17:03:25,926 36984 INFO Template odoo.modules.loading: Module customize_title_header loaded in 0.07s, 12 queries (+12 other) 
+2022-12-23 17:03:25,926 36984 INFO Template odoo.modules.loading: Loading module web_kanban_gauge (7/9) 
+2022-12-23 17:03:25,961 36984 INFO Template odoo.addons.base.models.ir_module: module web_kanban_gauge: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:25,961 36984 INFO Template odoo.tools.translate: loading d:\data\erp\addons\web_kanban_gauge\i18n\vi.po 
+2022-12-23 17:03:25,962 36984 INFO Template odoo.addons.base.models.ir_module: module web_kanban_gauge: no translation for language vi_VN 
+2022-12-23 17:03:25,999 36984 INFO Template odoo.modules.loading: Module web_kanban_gauge loaded in 0.07s, 13 queries (+13 other) 
+2022-12-23 17:03:25,999 36984 INFO Template odoo.modules.loading: Loading module web_tour (8/9) 
+2022-12-23 17:03:26,027 36984 INFO Template odoo.modules.registry: module web_tour: creating or updating database tables 
+2022-12-23 17:03:26,080 36984 INFO Template odoo.modules.loading: loading web_tour/security/ir.model.access.csv 
+2022-12-23 17:03:26,089 36984 INFO Template odoo.modules.loading: loading web_tour/security/ir.rule.csv 
+2022-12-23 17:03:26,096 36984 INFO Template odoo.modules.loading: loading web_tour/views/tour_views.xml 
+2022-12-23 17:03:26,113 36984 INFO Template odoo.addons.base.models.ir_module: module web_tour: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:26,113 36984 INFO Template odoo.tools.translate: loading d:\data\erp\addons\web_tour\i18n\vi.po 
+2022-12-23 17:03:26,123 36984 INFO Template odoo.addons.base.models.ir_module: module web_tour: no translation for language vi_VN 
+2022-12-23 17:03:26,135 36984 INFO Template odoo.modules.loading: Module web_tour loaded in 0.14s, 110 queries (+110 other) 
+2022-12-23 17:03:26,136 36984 INFO Template odoo.modules.loading: Loading module web_editor (9/9) 
+2022-12-23 17:03:26,173 36984 INFO Template odoo.modules.registry: module web_editor: creating or updating database tables 
+2022-12-23 17:03:26,632 36984 INFO Template odoo.modules.loading: loading web_editor/security/ir.model.access.csv 
+2022-12-23 17:03:26,641 36984 INFO Template odoo.modules.loading: loading web_editor/data/editor_assets.xml 
+2022-12-23 17:03:26,644 36984 INFO Template odoo.modules.loading: loading web_editor/views/editor.xml 
+2022-12-23 17:03:26,660 36984 INFO Template odoo.modules.loading: loading web_editor/views/snippets.xml 
+2022-12-23 17:03:26,691 36984 INFO Template odoo.addons.base.models.ir_module: module web_editor: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:26,691 36984 INFO Template odoo.tools.translate: loading d:\data\erp\addons\web_editor\i18n\vi.po 
+2022-12-23 17:03:26,752 36984 INFO Template odoo.addons.base.models.ir_module: module web_editor: no translation for language vi_VN 
+2022-12-23 17:03:26,765 36984 INFO Template odoo.modules.loading: Module web_editor loaded in 0.63s, 833 queries (+833 other) 
+2022-12-23 17:03:26,765 36984 INFO Template odoo.modules.loading: 9 modules loaded in 2.76s, 3067 queries (+3067 extra) 
+2022-12-23 17:03:26,935 36984 INFO Template odoo.modules.loading: Modules loaded. 
+2022-12-23 17:03:26,937 36984 INFO Template odoo.modules.registry: Registry loaded in 12.510s 
+2022-12-23 17:03:26,942 36984 INFO Template odoo.addons.base.models.ir_module: module base: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:26,942 36984 INFO Template odoo.tools.translate: loading D:\Data\ERP\odoo\addons\base\i18n\vi.po 
+2022-12-23 17:03:27,845 36984 INFO Template odoo.addons.base.models.ir_module: module base: no translation for language vi_VN 
+2022-12-23 17:03:27,846 36984 INFO Template odoo.addons.base.models.ir_module: module web: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:27,846 36984 INFO Template odoo.tools.translate: loading d:\data\erp\addons\web\i18n\vi.po 
+2022-12-23 17:03:27,943 36984 INFO Template odoo.addons.base.models.ir_module: module web: no translation for language vi_VN 
+2022-12-23 17:03:27,944 36984 INFO Template odoo.addons.base.models.ir_module: module customize_title_header: no translation for language vi_VN 
+2022-12-23 17:03:27,945 36984 INFO Template odoo.addons.base.models.ir_module: module auth_totp: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:27,945 36984 INFO Template odoo.tools.translate: loading d:\data\erp\addons\auth_totp\i18n\vi.po 
+2022-12-23 17:03:27,961 36984 INFO Template odoo.addons.base.models.ir_module: module auth_totp: no translation for language vi_VN 
+2022-12-23 17:03:27,961 36984 INFO Template odoo.addons.base.models.ir_module: module base_import: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:27,961 36984 INFO Template odoo.tools.translate: loading d:\data\erp\addons\base_import\i18n\vi.po 
+2022-12-23 17:03:27,984 36984 INFO Template odoo.addons.base.models.ir_module: module base_import: no translation for language vi_VN 
+2022-12-23 17:03:27,985 36984 INFO Template odoo.addons.base.models.ir_module: module bus: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:27,985 36984 INFO Template odoo.tools.translate: loading d:\data\erp\addons\bus\i18n\vi.po 
+2022-12-23 17:03:27,991 36984 INFO Template odoo.addons.base.models.ir_module: module bus: no translation for language vi_VN 
+2022-12-23 17:03:27,991 36984 INFO Template odoo.addons.base.models.ir_module: module web_editor: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:27,991 36984 INFO Template odoo.tools.translate: loading d:\data\erp\addons\web_editor\i18n\vi.po 
+2022-12-23 17:03:28,055 36984 INFO Template odoo.addons.base.models.ir_module: module web_editor: no translation for language vi_VN 
+2022-12-23 17:03:28,056 36984 INFO Template odoo.addons.base.models.ir_module: module web_kanban_gauge: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:28,056 36984 INFO Template odoo.tools.translate: loading d:\data\erp\addons\web_kanban_gauge\i18n\vi.po 
+2022-12-23 17:03:28,057 36984 INFO Template odoo.addons.base.models.ir_module: module web_kanban_gauge: no translation for language vi_VN 
+2022-12-23 17:03:28,058 36984 INFO Template odoo.addons.base.models.ir_module: module web_tour: loading base translation file vi for language vi_VN 
+2022-12-23 17:03:28,058 36984 INFO Template odoo.tools.translate: loading d:\data\erp\addons\web_tour\i18n\vi.po 
+2022-12-23 17:03:28,065 36984 INFO Template odoo.addons.base.models.ir_module: module web_tour: no translation for language vi_VN 
+2022-12-23 17:03:28,417 36984 INFO Template odoo.addons.base.models.res_users: Login successful for db:Template login:phuongvd@leansoft.vn from 127.0.0.1 
+2022-12-23 17:03:28,434 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:03:28] "POST /web/database/create HTTP/1.1" 303 - 18005 5.474 9.785
+2022-12-23 17:03:28,440 36984 INFO Template odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-12-23 17:03:28,564 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:03:28] "GET /web HTTP/1.1" 303 - 2 0.001 0.127
+2022-12-23 17:03:32,089 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:03:32] "GET /web/login HTTP/1.1" 200 - 77 0.028 3.494
+2022-12-23 17:03:32,423 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:03:32] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - 0 0.000 0.004
+2022-12-23 17:03:32,432 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:03:32] "GET /web/assets/debug/web.assets_frontend.css HTTP/1.1" 200 - 8 0.003 0.009
+2022-12-23 17:03:32,679 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:03:32] "GET /web/assets/debug/web.assets_frontend_minimal.js HTTP/1.1" 200 - 6 0.001 0.012
+2022-12-23 17:03:32,771 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:03:32] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.003 0.026
+2022-12-23 17:03:33,026 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:03:33] "GET /web/assets/debug/web.assets_frontend_lazy.js HTTP/1.1" 200 - 6 0.002 0.228
+2022-12-23 17:03:33,432 36984 INFO ? werkzeug: 127.0.0.1 - - [23/Dec/2022 17:03:33] "GET /web/static/img/favicon.ico HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-23 17:03:33,441 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:03:33] "GET /web/webclient/translations/1671789813117 HTTP/1.1" 200 - 2 0.000 0.010
+2022-12-23 17:03:33,700 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:03:33] "GET /web/webclient/translations/1671789813445 HTTP/1.1" 200 - 2 0.000 0.002
+2022-12-23 17:03:34,182 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:03:34] "GET /websocket HTTP/1.1" 101 - 2 0.001 0.004
+2022-12-23 17:03:55,944 36984 INFO Template odoo.addons.base.models.res_users: Login successful for db:Template login:phuongvd@leansoft.vn from 127.0.0.1 
+2022-12-23 17:03:55,950 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:03:55] "POST /web/login HTTP/1.1" 303 - 27 0.006 0.193
+2022-12-23 17:03:56,071 36984 INFO Template odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-12-23 17:03:56,072 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:03:56] "GET /web/become HTTP/1.1" 303 - 5 0.003 0.009
+2022-12-23 17:04:02,676 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:04:02] "GET /web HTTP/1.1" 200 - 130 0.066 6.223
+2022-12-23 17:04:02,699 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:04:02] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 200 - 5 0.001 0.010
+2022-12-23 17:04:03,121 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:04:03] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 5 0.001 0.114
+2022-12-23 17:04:03,127 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:04:03] "GET /web/webclient/load_menus/0e30577d52cd76d7da574d14cb173e5961f0fff94e2d34985c1e4297391cc116 HTTP/1.1" 200 - 1 0.000 0.108
+2022-12-23 17:04:03,140 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:04:03] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.105
+2022-12-23 17:04:03,140 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:04:03] "GET /web/webclient/translations/03c2ec6968bb87aab0d740a52c4326558036726b?lang=vi_VN HTTP/1.1" 200 - 2 0.006 0.114
+2022-12-23 17:04:03,141 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:04:03] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 200 - 5 0.008 0.116
+2022-12-23 17:04:03,215 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:04:03] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 200 - 5 0.001 0.210
+2022-12-23 17:04:03,725 36984 INFO Template werkzeug: 127.0.0.1 - - [23/Dec/2022 17:04:03] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.008 0.702
+2022-12-23 17:04:04,644 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-23 17:04:04,653 36984 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
