@@ -225,11 +225,11 @@
 
         <record id="VND" model="res.currency">
             <field name="name">VND</field>
-            <field name="full_name">Vietnamese đồng</field>
+            <field name="full_name">Việt Nam Đồng</field>
             <field name="symbol">₫</field>
             <field name="rounding">1.00</field>
             <field name="active" eval="False"/>
-            <field name="currency_unit_label">Dong</field>
+            <field name="currency_unit_label">đồng</field>
             <field name="currency_subunit_label">Xu</field>
         </record>
 

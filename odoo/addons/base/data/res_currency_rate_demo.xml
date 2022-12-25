@@ -140,9 +140,9 @@
         </record>
 
         <record forcecreate="0" id="rateVND" model="res.currency.rate">
-            <field name="rate">26330.01</field>
+            <field name="rate">23585.00</field>
             <field name="currency_id" ref="VND"/>
-            <field name="name">2010-01-01</field>
+            <field name="name">2022-12-23</field>
         </record>
 
         <record forcecreate="0" id="rateHKD" model="res.currency.rate">

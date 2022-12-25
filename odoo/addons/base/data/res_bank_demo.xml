@@ -3,13 +3,13 @@
     <data noupdate="1">
 
         <record model="res.bank" id="bank_ing">
-            <field name="name">ING</field>
-            <field name="bic">BBRUBEBB</field>
+            <field name="name">HSBC</field>
+            <field name="bic">HSBCVNVX</field>  <!-- Swift code/BIC code -->
         </record>
 
         <record model="res.bank" id="bank_bnp">
-            <field name="name">BNP Paribas</field>
-            <field name="bic">GEBABEBB</field>
+            <field name="name">BIDV</field>
+            <field name="bic">BIDVVNVX</field>
         </record>
 
     </data>

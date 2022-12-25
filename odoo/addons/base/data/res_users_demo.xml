@@ -3,7 +3,7 @@
     <data noupdate="1">
 
         <record id="partner_demo" model="res.partner">
-            <field name="name">Marc Demo</field>
+            <field name="name">Vương Minh Đức</field>
             <field name="company_id" ref="main_company"/>
             <field name="company_name">YourCompany</field>
             <field name="street">3575  Buena Vista Avenue</field>
@@ -45,7 +45,7 @@
         </record>
 
         <record model="res.partner" id="base.partner_admin">
-            <field name="name">Mitchell Admin</field>
+            <field name="name">Vương Đức Phương</field>
             <field name="company_name">YourCompany</field>
             <field name="street">215 Vine St</field>
             <field name="city">Scranton</field>
@@ -59,12 +59,12 @@
         </record>
 
         <record id="base.user_admin" model="res.users">
-            <field name="signature" type="html"><span>-- <br/>Mitchell Admin</span></field>
+            <field name="signature" type="html"><span>-- <br/>Vương Đức Phương</span></field>
         </record>
 
         <!-- Portal : partner and user -->
         <record id="partner_demo_portal" model="res.partner">
-            <field name="name">Joel Willis</field>
+            <field name="name">Phạm Khánh Linh</field>
             <field name="email">joel.willis63@example.com</field>
             <field name="street">858 Lynn Street</field>
             <field name="city">Bayonne</field>
