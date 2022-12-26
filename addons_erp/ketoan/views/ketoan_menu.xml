@@ -22,6 +22,9 @@
             <menuitem id="menu_ketoan_bao_cao_quy_ngan_hang" name="Quỹ-Ngân hàng" sequence="30">
                 <menuitem id="menu_ketoan_bao_cao_quy_ngan_hang_quy_tien_mat" name="Quỹ tiền mặt" action="action_ketoan_bao_cao_quy_ngan_hang_quy_tien_mat" sequence="10"/>
             </menuitem>        
+            <menuitem id="menu_ketoan_bao_cao_ban_hang" name="Bán hàng" sequence="40">
+                <menuitem id="menu_ketoan_bao_cao_ban_hang_tong_hop" name="Tổng hợp bán hàng" action="action_ketoan_bao_cao_ban_hang_tong_hop_param" sequence="10"/>
+            </menuitem>                    
             <menuitem id="menu_ketoan_bao_cao_tong_hop" name="Tổng hợp" sequence="90">
                 <menuitem id="menu_ketoan_bao_cao_tong_hop_so_cai" name="Sổ cái" action="action_ketoan_bao_cao_tong_hop_so_cai" sequence="20"/>
             </menuitem>
