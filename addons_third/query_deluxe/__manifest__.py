@@ -1,13 +1,13 @@
 {
         'name': 'PostgreSQL Query Deluxe',
-        'description': 'Execute postgreSQL query into Odoo interface',
+        'description': 'Execute postgreSQL query into interface',
         'author': 'Yvan Dotet',
         'depends': ['base', 'mail'],
         'application': True,
         'version': '16.0.1.0.4',
         'license': 'AGPL-3',
-        'support': 'yvandotet@yahoo.fr',
-        'website': 'https://github.com/YvanDotet/query_deluxe/',
+        'support': '',
+        'website': '',
         'installable': True,
 
         'data': [

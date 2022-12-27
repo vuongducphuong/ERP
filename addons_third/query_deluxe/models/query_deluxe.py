@@ -4,7 +4,7 @@ from odoo.exceptions import UserError
 
 class QueryDeluxe(models.Model):
     _name = "querydeluxe"
-    _description = "Postgres queries from Odoo interface"
+    _description = "Postgres queries from interface"
     _inherit = ['mail.thread', 'mail.activity.mixin']
 
     tips = fields.Many2one('tipsqueries', string="Examples")
