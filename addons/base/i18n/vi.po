@@ -17676,7 +17676,7 @@ msgstr "Xuất Bản dịch"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.wizard_lang_export
 msgid "Export Translations"
-msgstr "Export Translations"
+msgstr "Xuất Bản dịch"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_au_aba
