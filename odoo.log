@@ -5570,3 +5570,247 @@ View error context:
 2022-12-27 16:58:06,717 13760 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
 2022-12-27 16:58:06,720 13760 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:58:06] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 304 - 5 0.014 0.014
 2022-12-27 16:58:06,722 13760 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:58:06] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 304 - 5 0.016 0.009
+2022-12-27 16:58:22,043 15796 INFO ? odoo: Odoo version 16.0 
+2022-12-27 16:58:22,043 15796 INFO ? odoo: Using configuration file at D:\Data\ERP\odoo.conf 
+2022-12-27 16:58:22,043 15796 INFO ? odoo: addons paths: ['D:\\Data\\ERP\\odoo\\addons', 'c:\\users\\vuong\\appdata\\local\\openerp s.a\\odoo\\addons\\16.0', 'd:\\data\\erp\\addons', 'd:\\data\\erp\\addons_third', 'd:\\data\\erp\\addons_erp', 'd:\\data\\erp\\odoo\\addons'] 
+2022-12-27 16:58:22,043 15796 INFO ? odoo: database: openpg@localhost:5432 
+2022-12-27 16:58:22,199 15796 INFO ? odoo.addons.base.models.ir_actions_report: A package may be missing to print Data Matrix barcodes: pylibdmtx or libdmtx. 
+2022-12-27 16:58:22,209 15796 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\Odoo16\thirdparty\wkhtmltopdf.exe 
+2022-12-27 16:58:23,236 15796 INFO ? odoo.service.server: HTTP service (werkzeug) running on PC:8068 
+2022-12-27 16:58:23,469 15796 INFO ABCCompany odoo.modules.loading: loading 1 modules... 
+2022-12-27 16:58:23,476 15796 INFO ABCCompany odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2022-12-27 16:58:23,478 15796 WARNING ABCCompany odoo.modules.module: Missing `license` key in manifest for 'ketoan', defaulting to LGPL-3 
+2022-12-27 16:58:23,509 15796 WARNING ABCCompany odoo.modules.module: Missing `license` key in manifest for 'dashboard_erp', defaulting to LGPL-3 
+2022-12-27 16:58:23,658 15796 INFO ABCCompany odoo.modules.loading: loading 253 modules... 
+2022-12-27 16:58:23,670 15796 WARNING ABCCompany odoo.addons.attachment_indexation.models.ir_attachment: Attachment indexation of PDF documents is unavailable because the 'pdfminer' Python library cannot be found on the system. You may install it from https://pypi.org/project/pdfminer.six/ (e.g. `pip3 install pdfminer.six`) 
+2022-12-27 16:58:24,282 15796 WARNING ABCCompany odoo.http: <function odoo.addons.hr_organizational_chart.controller.main.get_col_span> defined with invalid routing parameter 'method', assuming 'methods' 
+2022-12-27 16:58:24,282 15796 WARNING ABCCompany odoo.http: <function odoo.addons.hr_organizational_chart.controller.main.get_employee_ids> defined with invalid routing parameter 'method', assuming 'methods' 
+2022-12-27 16:58:24,282 15796 WARNING ABCCompany odoo.http: <function odoo.addons.hr_organizational_chart.controller.main.get_parent_child> defined with invalid routing parameter 'method', assuming 'methods' 
+2022-12-27 16:58:24,283 15796 WARNING ABCCompany odoo.http: <function odoo.addons.hr_organizational_chart.controller.main.get_child_data> defined with invalid routing parameter 'method', assuming 'methods' 
+2022-12-27 16:58:24,287 15796 WARNING ABCCompany odoo.models: The model hr.reminder has no _description 
+2022-12-27 16:58:24,288 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.hr_reward_warning.models.hr_warning is not overriding the create method in batch 
+2022-12-27 16:58:24,316 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.oh_employee_creation_from_user.models.employee_creation_from_user is not overriding the create method in batch 
+2022-12-27 16:58:24,321 15796 WARNING ABCCompany odoo.models: The model document.type has no _description 
+2022-12-27 16:58:24,416 15796 WARNING ABCCompany odoo.models: The model hr.employee.relation has no _description 
+2022-12-27 16:58:24,522 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.hr_employee_transfer.models.employee_transfer is not overriding the create method in batch 
+2022-12-27 16:58:24,523 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.hr_employee_transfer.models.hr_contract is not overriding the create method in batch 
+2022-12-27 16:58:24,527 15796 WARNING ABCCompany odoo.addons.base.models.decimal_precision: Deprecated call to decimal_precision.get_precision(<application>), use digits=<application> instead 
+2022-12-27 16:58:24,527 15796 WARNING ABCCompany odoo.addons.base.models.decimal_precision: Deprecated call to decimal_precision.get_precision(<application>), use digits=<application> instead 
+2022-12-27 16:58:24,529 15796 WARNING ABCCompany odoo.addons.base.models.decimal_precision: Deprecated call to decimal_precision.get_precision(<application>), use digits=<application> instead 
+2022-12-27 16:58:24,529 15796 WARNING ABCCompany odoo.addons.base.models.decimal_precision: Deprecated call to decimal_precision.get_precision(<application>), use digits=<application> instead 
+2022-12-27 16:58:24,529 15796 WARNING ABCCompany odoo.addons.base.models.decimal_precision: Deprecated call to decimal_precision.get_precision(<application>), use digits=<application> instead 
+2022-12-27 16:58:24,529 15796 WARNING ABCCompany odoo.addons.base.models.decimal_precision: Deprecated call to decimal_precision.get_precision(<application>), use digits=<application> instead 
+2022-12-27 16:58:24,548 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.hr_resignation.models.hr_resignation is not overriding the create method in batch 
+2022-12-27 16:58:24,548 15796 WARNING ABCCompany odoo.models: The model hr.resignation has no _description 
+2022-12-27 16:58:24,585 15796 WARNING ABCCompany odoo.models: The model hr.resignation has no _description 
+2022-12-27 16:58:24,639 15796 WARNING ABCCompany odoo.models: The model hr.resignation has no _description 
+2022-12-27 16:58:24,641 15796 WARNING ABCCompany odoo.models: The model hr.reminder has no _description 
+2022-12-27 16:58:24,641 15796 WARNING ABCCompany odoo.models: The model document.type has no _description 
+2022-12-27 16:58:24,643 15796 WARNING ABCCompany odoo.models: The model hr.employee.relation has no _description 
+2022-12-27 16:58:24,644 15796 WARNING ABCCompany odoo.models: The model hr.resignation has no _description 
+2022-12-27 16:58:24,689 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.base_account_budget.models.account_budget is not overriding the create method in batch 
+2022-12-27 16:58:24,719 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.hr_payroll_account_community.models.hr_payroll_account is not overriding the create method in batch 
+2022-12-27 16:58:24,741 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.ketoan.models.ketoan_bao_cao_so_cai is not overriding the create method in batch 
+2022-12-27 16:58:24,741 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.ketoan.models.ketoan_bao_cao_quy_tien_mat is not overriding the create method in batch 
+2022-12-27 16:58:24,743 15796 WARNING ABCCompany odoo.models: The model ketoan.bao.cao.so.cai has no _description 
+2022-12-27 16:58:24,743 15796 WARNING ABCCompany odoo.models: The model ketoan.bao.cao.quy.tien.mat has no _description 
+2022-12-27 16:58:24,743 15796 WARNING ABCCompany odoo.models: The model ketoan.bao.cao.ban.hang.tong.hop has no _description 
+2022-12-27 16:58:24,788 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.ohrms_loan.models.hr_loan is not overriding the create method in batch 
+2022-12-27 16:58:25,026 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.ohrms_salary_advance.models.salary_advance is not overriding the create method in batch 
+2022-12-27 16:58:25,027 15796 WARNING ABCCompany odoo.models: The model salary.advance has no _description 
+2022-12-27 16:58:25,231 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.base_accounting_kit.models.account_asset is not overriding the create method in batch 
+2022-12-27 16:58:25,257 15796 WARNING ABCCompany odoo.models: The model ketoan.bao.cao.so.cai has no _description 
+2022-12-27 16:58:25,257 15796 WARNING ABCCompany odoo.models: The model ketoan.bao.cao.quy.tien.mat has no _description 
+2022-12-27 16:58:25,259 15796 WARNING ABCCompany odoo.models: The model account.account.type has no _description 
+2022-12-27 16:58:25,554 15796 WARNING ABCCompany odoo.models: The model report.hrms_dashboard.report_broadfactor has no _description 
+2022-12-27 16:58:25,581 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.purchase_request.models.purchase_request is not overriding the create method in batch 
+2022-12-27 16:58:25,690 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.wizard.general_ledger is not overriding the create method in batch 
+2022-12-27 16:58:25,691 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.wizard.trial_balance is not overriding the create method in batch 
+2022-12-27 16:58:25,691 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.wizard.cash_flow is not overriding the create method in batch 
+2022-12-27 16:58:25,693 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.wizard.balance_sheet is not overriding the create method in batch 
+2022-12-27 16:58:25,694 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.wizard.partner_leadger is not overriding the create method in batch 
+2022-12-27 16:58:25,695 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.wizard.ageing is not overriding the create method in batch 
+2022-12-27 16:58:25,695 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.wizard.daybook is not overriding the create method in batch 
+2022-12-27 16:58:25,700 15796 WARNING ABCCompany odoo.api.create: The model odoo.addons.dynamic_accounts_report.models.account_account_custom is not overriding the create method in batch 
+2022-12-27 16:58:25,701 15796 WARNING ABCCompany odoo.models: The model account.general.ledger has no _description 
+2022-12-27 16:58:25,701 15796 WARNING ABCCompany odoo.models: The model account.trial.balance has no _description 
+2022-12-27 16:58:25,701 15796 WARNING ABCCompany odoo.models: The model account.cash.flow has no _description 
+2022-12-27 16:58:25,701 15796 WARNING ABCCompany odoo.models: The model dynamic.balance.sheet.report has no _description 
+2022-12-27 16:58:25,701 15796 WARNING ABCCompany odoo.models: The model dynamic.balance.sheet.report has no _description 
+2022-12-27 16:58:25,701 15796 WARNING ABCCompany odoo.models: The model account.partner.ledger has no _description 
+2022-12-27 16:58:25,701 15796 WARNING ABCCompany odoo.models: The model account.partner.ageing has no _description 
+2022-12-27 16:58:25,701 15796 WARNING ABCCompany odoo.models: The model account.day.book has no _description 
+2022-12-27 16:58:25,702 15796 WARNING ABCCompany odoo.models: The model report.dynamic_accounts_report.trial_balance has no _description 
+2022-12-27 16:58:25,702 15796 WARNING ABCCompany odoo.models: The model report.dynamic_accounts_report.general_ledger has no _description 
+2022-12-27 16:58:25,702 15796 WARNING ABCCompany odoo.models: The model report.dynamic_accounts_report.cash_flow has no _description 
+2022-12-27 16:58:25,702 15796 WARNING ABCCompany odoo.models: The model report.dynamic_accounts_report.balance_sheet has no _description 
+2022-12-27 16:58:25,702 15796 WARNING ABCCompany odoo.models: The model report.dynamic_accounts_report.partner_ledger has no _description 
+2022-12-27 16:58:25,702 15796 WARNING ABCCompany odoo.models: The model report.dynamic_accounts_report.partner_ageing has no _description 
+2022-12-27 16:58:25,702 15796 WARNING ABCCompany odoo.models: The model report.dynamic_accounts_report.day_book has no _description 
+2022-12-27 16:58:25,818 15796 WARNING ABCCompany odoo.addons.base.models.decimal_precision: Deprecated call to decimal_precision.get_precision(<application>), use digits=<application> instead 
+2022-12-27 16:58:25,819 15796 WARNING ABCCompany odoo.addons.base.models.decimal_precision: Deprecated call to decimal_precision.get_precision(<application>), use digits=<application> instead 
+2022-12-27 16:58:25,856 15796 INFO ABCCompany odoo.modules.loading: 253 modules loaded in 2.20s, 0 queries (+0 extra) 
+2022-12-27 16:58:26,042 15796 WARNING ABCCompany odoo.fields: hr.loan.state: selection=[('draft', 'Draft'), ('waiting_approval_1', 'Submitted'), ('waiting_approval_2', 'Waiting Approval'), ('approve', 'Approved'), ('refuse', 'Refused'), ('cancel', 'Canceled')] overrides existing selection; use selection_add instead 
+2022-12-27 16:58:26,056 15796 WARNING ABCCompany odoo.fields: sale.order.state: selection=[('draft', 'Quotation'), ('sent', 'Quotation Sent'), ('waiting', 'Waiting Approval'), ('sale', 'Sales Order'), ('done', 'Locked'), ('cancel', 'Cancelled')] overrides existing selection; use selection_add instead 
+2022-12-27 16:58:26,117 15796 WARNING ABCCompany odoo.fields: Field hr.announcement.state: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,122 15796 WARNING ABCCompany odoo.fields: Field hr.employee.family.birth_date: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,126 15796 WARNING ABCCompany odoo.fields: Field account.move.amount_discount: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,137 15796 WARNING ABCCompany odoo.fields: Field hr.resignation.resign_confirm_date: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,137 15796 WARNING ABCCompany odoo.fields: Field hr.resignation.approved_revealing_date: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,137 15796 WARNING ABCCompany odoo.fields: Field hr.resignation.state: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,138 15796 WARNING ABCCompany odoo.fields: Field hr.resignation.employee_contract: unknown parameter 'String', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,151 15796 WARNING ABCCompany odoo.fields: Field budget.budget.state: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,156 15796 WARNING ABCCompany odoo.fields: Field hr.loan.state: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,161 15796 WARNING ABCCompany odoo.fields: Field salary.advance.state: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,164 15796 WARNING ABCCompany odoo.fields: Field sale.order.state: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,164 15796 WARNING ABCCompany odoo.fields: Field sale.order.amount_untaxed: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,164 15796 WARNING ABCCompany odoo.fields: Field sale.order.amount_tax: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,164 15796 WARNING ABCCompany odoo.fields: Field sale.order.amount_total: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,165 15796 WARNING ABCCompany odoo.fields: Field sale.order.amount_discount: unknown parameter 'digits', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,165 15796 WARNING ABCCompany odoo.fields: Field sale.order.amount_discount: unknown parameter 'track_visibility', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2022-12-27 16:58:26,168 15796 WARNING ABCCompany odoo.fields: Field purchase.request.line.analytic_tag_ids with unknown comodel_name 'account.analytic.tag' 
+2022-12-27 16:58:26,350 15796 INFO ABCCompany odoo.modules.loading: Modules loaded. 
+2022-12-27 16:58:26,359 15796 INFO ABCCompany odoo.modules.registry: Registry loaded in 2.918s 
+2022-12-27 16:58:26,418 15796 INFO ABCCompany odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2022-12-27 16:58:26,419 15796 INFO ABCCompany odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2022-12-27 16:58:26,478 15796 INFO ABCCompany odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2022-12-27 16:58:26,683 15796 INFO ABCCompany odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2022-12-27 16:58:26,683 15796 INFO ABCCompany odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2022-12-27 16:58:28,280 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:58:28] "GET /websocket HTTP/1.1" 101 - 3 0.103 3.517
+2022-12-27 16:58:28,472 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:58:28] "GET /websocket HTTP/1.1" 101 - 3 0.082 4.523
+2022-12-27 16:58:28,618 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:58:28] "GET /websocket HTTP/1.1" 101 - 20 0.051 5.128
+2022-12-27 16:58:28,673 15796 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-12-27 16:58:29,458 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,condition_select 
+2022-12-27 16:58:29,466 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,condition_select 
+2022-12-27 16:58:29,466 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-27 16:58:29,466 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,condition_select 
+2022-12-27 16:58:29,467 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-27 16:58:29,467 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,condition_select 
+2022-12-27 16:58:29,467 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-27 16:58:29,467 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-27 16:58:29,467 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.run,state 
+2022-12-27 16:58:29,467 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-27 16:58:29,468 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip,state 
+2022-12-27 16:58:29,469 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-27 16:58:29,469 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip,state 
+2022-12-27 16:58:29,469 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.run,state 
+2022-12-27 16:58:29,469 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.run,state 
+2022-12-27 16:58:29,470 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip,state 
+2022-12-27 16:58:29,470 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,amount_select 
+2022-12-27 16:58:29,470 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip,state 
+2022-12-27 16:58:29,470 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,amount_select 
+2022-12-27 16:58:29,470 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.run,state 
+2022-12-27 16:58:29,471 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-27 16:58:29,471 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,amount_select 
+2022-12-27 16:58:29,472 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,amount_select 
+2022-12-27 16:58:29,472 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,amount_select 
+2022-12-27 16:58:29,472 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,amount_select 
+2022-12-27 16:58:29,473 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-27 16:58:29,473 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,amount_select 
+2022-12-27 16:58:29,474 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,amount_select 
+2022-12-27 16:58:29,474 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,amount_select 
+2022-12-27 16:58:29,474 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,amount_select 
+2022-12-27 16:58:29,474 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,condition_select 
+2022-12-27 16:58:29,474 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,amount_select 
+2022-12-27 16:58:29,474 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,condition_select 
+2022-12-27 16:58:29,474 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,amount_select 
+2022-12-27 16:58:29,474 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-27 16:58:29,474 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,condition_select 
+2022-12-27 16:58:29,474 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,condition_select 
+2022-12-27 16:58:29,474 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,condition_select 
+2022-12-27 16:58:29,474 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,condition_select 
+2022-12-27 16:58:29,475 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-27 16:58:29,475 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip,state 
+2022-12-27 16:58:29,475 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip.line,condition_select 
+2022-12-27 16:58:29,475 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-27 16:58:29,475 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.salary.rule,condition_select 
+2022-12-27 16:58:29,475 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip,state 
+2022-12-27 16:58:29,476 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip,state 
+2022-12-27 16:58:29,476 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-27 16:58:29,476 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-27 16:58:29,477 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.payslip,state 
+2022-12-27 16:58:29,477 15796 INFO ABCCompany odoo.tools.translate: Skipped deprecated occurrence selection:hr.contract,schedule_pay 
+2022-12-27 16:58:56,636 15796 ERROR ABCCompany odoo.sql_db: bad query: DELETE FROM ir_attachment WHERE id IN (3663)
+ERROR: could not serialize access due to concurrent delete
+ 
+2022-12-27 16:58:56,637 15796 INFO ABCCompany odoo.service.model: SERIALIZATION_FAILURE, 4 tries left, try again in 0.6524 sec... 
+2022-12-27 16:58:56,720 15796 INFO ABCCompany odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2022-12-27 16:58:56,723 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:58:56] "GET /web?debug=assets HTTP/1.1" 200 - 183 0.723 32.546
+2022-12-27 16:58:58,837 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:58:58] "GET /web?debug=assets HTTP/1.1" 200 - 190 0.540 32.277
+2022-12-27 16:58:59,073 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:58:59] "GET /web/assets/debug/web.assets_common.css HTTP/1.1" 200 - 7 0.001 0.212
+2022-12-27 16:58:59,190 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:58:59] "GET /web/assets/debug/web.assets_backend_prod_only.js HTTP/1.1" 200 - 5 0.008 0.005
+2022-12-27 16:58:59,198 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:58:59] "GET /web/assets/debug/web.assets_common.js HTTP/1.1" 200 - 5 0.002 0.011
+2022-12-27 16:58:59,201 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:58:59] "GET /web/assets/debug/web.assets_backend.css HTTP/1.1" 200 - 5 0.004 0.010
+2022-12-27 16:58:59,244 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:58:59] "GET /web/webclient/load_menus/98ee7ede7e72075ba60751195e729f8123b5781d527c8aa87d0fa6dab3fa8deb HTTP/1.1" 200 - 1 0.000 0.006
+2022-12-27 16:58:59,402 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:58:59] "GET /web/webclient/translations/1ee58aae36ccab745f945938ad1bc96dfca9eed5?lang=vi_VN HTTP/1.1" 200 - 2 0.003 0.005
+2022-12-27 16:58:59,835 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:58:59] "GET /web/assets/debug/web.assets_backend.js HTTP/1.1" 200 - 5 0.001 0.654
+2022-12-27 16:59:01,123 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:01] "POST /web/dataset/call_kw/crm.lead/check_user_group HTTP/1.1" 200 - 2 0.000 0.004
+2022-12-27 16:59:01,177 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:01] "GET /web/webclient/translations/1ee58aae36ccab745f945938ad1bc96dfca9eed5?lang=vi_VN HTTP/1.1" 200 - 2 0.001 0.008
+2022-12-27 16:59:01,283 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:01] "GET /web/webclient/translations/1ee58aae36ccab745f945938ad1bc96dfca9eed5?lang=vi_VN HTTP/1.1" 200 - 2 0.000 0.008
+2022-12-27 16:59:01,370 15796 INFO ? werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:01] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-27 16:59:01,491 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:01] "POST /mail/init_messaging HTTP/1.1" 200 - 60 0.030 0.089
+2022-12-27 16:59:01,653 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:01] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 7 0.006 0.011
+2022-12-27 16:59:01,880 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:01] "POST /web/action/load HTTP/1.1" 200 - 8 0.004 0.007
+2022-12-27 16:59:02,193 15796 INFO ? werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.004
+2022-12-27 16:59:02,201 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.002 0.007
+2022-12-27 16:59:02,212 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "POST /mail/load_message_failures HTTP/1.1" 200 - 14 0.012 0.014
+2022-12-27 16:59:02,295 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "POST /web/dataset/call_kw/stock.move/get_the_top_products HTTP/1.1" 200 - 3 0.025 0.019
+2022-12-27 16:59:02,310 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "POST /web/dataset/call_kw/stock.picking/get_operation_types HTTP/1.1" 200 - 6 0.006 0.055
+2022-12-27 16:59:02,322 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "POST /web/dataset/call_kw/stock.move/get_stock_moves HTTP/1.1" 200 - 3 0.007 0.003
+2022-12-27 16:59:02,529 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "POST /web/dataset/call_kw/stock.move.line/get_product_moves HTTP/1.1" 200 - 4 0.007 0.009
+2022-12-27 16:59:02,547 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "POST /web/dataset/call_kw/stock.picking/get_locations HTTP/1.1" 200 - 5 0.005 0.019
+2022-12-27 16:59:02,549 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "POST /web/dataset/call_kw/stock.picking/get_product_category HTTP/1.1" 200 - 16 0.023 0.011
+2022-12-27 16:59:02,628 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "POST /web/dataset/call_kw/stock.quant/get_out_of_stock HTTP/1.1" 200 - 4 0.003 0.004
+2022-12-27 16:59:02,629 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "POST /web/dataset/call_kw/stock.move/get_dead_of_stock HTTP/1.1" 200 - 5 0.000 0.006
+2022-12-27 16:59:02,640 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.003 0.006
+2022-12-27 16:59:02,864 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "POST /web/dataset/call_kw/stock.move.line/product_move_by_category HTTP/1.1" 200 - 3 0.002 0.007
+2022-12-27 16:59:02,865 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.001 0.010
+2022-12-27 16:59:02,963 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.003 0.011
+2022-12-27 16:59:02,966 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:02] "GET /web/image?model=res.users&field=avatar_128&id=1 HTTP/1.1" 304 - 7 0.006 0.010
+2022-12-27 16:59:03,184 15796 INFO ? werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:03] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 304 - 0 0.000 0.002
+2022-12-27 16:59:18,024 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:18] "POST /web/dataset/call_kw/stock.picking/get_views HTTP/1.1" 200 - 105 0.030 0.110
+2022-12-27 16:59:18,344 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:18] "POST /web/dataset/call_kw/stock.picking/web_search_read HTTP/1.1" 200 - 29 0.031 0.161
+2022-12-27 16:59:18,360 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:18] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.003
+2022-12-27 16:59:18,439 15796 INFO ? werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:18] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.002
+2022-12-27 16:59:21,989 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:21] "POST /web/dataset/call_kw/stock.move/get_stock_moves HTTP/1.1" 200 - 3 0.003 0.010
+2022-12-27 16:59:21,989 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:21] "POST /web/dataset/call_kw/stock.move.line/get_product_moves HTTP/1.1" 200 - 4 0.007 0.007
+2022-12-27 16:59:22,051 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:22] "POST /web/dataset/call_kw/stock.move/get_the_top_products HTTP/1.1" 200 - 3 0.042 0.031
+2022-12-27 16:59:22,052 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:22] "POST /web/dataset/call_kw/stock.picking/get_operation_types HTTP/1.1" 200 - 6 0.005 0.067
+2022-12-27 16:59:22,074 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:22] "POST /web/dataset/call_kw/stock.picking/get_locations HTTP/1.1" 200 - 4 0.005 0.079
+2022-12-27 16:59:22,074 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:22] "POST /web/dataset/call_kw/stock.picking/get_product_category HTTP/1.1" 200 - 16 0.069 0.017
+2022-12-27 16:59:22,311 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:22] "POST /web/dataset/call_kw/stock.move/get_dead_of_stock HTTP/1.1" 200 - 2 0.003 0.005
+2022-12-27 16:59:22,311 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:22] "POST /web/dataset/call_kw/stock.quant/get_out_of_stock HTTP/1.1" 200 - 2 0.002 0.004
+2022-12-27 16:59:22,372 15796 INFO ABCCompany werkzeug: 127.0.0.1 - - [27/Dec/2022 16:59:22] "POST /web/dataset/call_kw/stock.move.line/product_move_by_category HTTP/1.1" 200 - 3 0.001 0.005
+2022-12-27 16:59:23,446 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Users: Notify About Unregistered Users`. 
+2022-12-27 16:59:23,453 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Users: Notify About Unregistered Users` done. 
+2022-12-27 16:59:23,459 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Notification: Delete Notifications older than 6 Month`. 
+2022-12-27 16:59:23,469 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Notification: Delete Notifications older than 6 Month` done. 
+2022-12-27 16:59:23,476 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2022-12-27 16:59:23,484 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2022-12-27 16:59:23,484 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2022-12-27 16:59:23,496 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2022-12-27 16:59:23,497 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
+2022-12-27 16:59:23,501 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2022-12-27 16:59:23,505 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `HR Employee: check work permit validity`. 
+2022-12-27 16:59:23,511 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2022-12-27 16:59:23,514 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `HR Employee: check work permit validity` done. 
+2022-12-27 16:59:23,518 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2022-12-27 16:59:23,523 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-27 16:59:23,530 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Gamification: Goal Challenge Check`. 
+2022-12-27 16:59:23,533 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-27 16:59:23,542 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2022-12-27 16:59:23,550 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Notification: Send scheduled message notifications` done. 
+2022-12-27 16:59:23,562 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2022-12-27 16:59:24,273 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Gamification: Goal Challenge Check` done. 
+2022-12-27 16:59:27,644 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2022-12-27 17:00:25,301 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Mail Marketing: A/B Testing`. 
+2022-12-27 17:00:25,308 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Mail Marketing: A/B Testing` done. 
+2022-12-27 17:00:25,314 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Project: Send rating`. 
+2022-12-27 17:00:25,319 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Project: Send rating` done. 
+2022-12-27 17:00:25,324 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Lunch: send automatic email to Pizza Inn`. 
+2022-12-27 17:00:25,331 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Lunch: send automatic email to Pizza Inn` done. 
+2022-12-27 17:00:25,337 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Reminder scheduler`. 
+2022-12-27 17:00:25,340 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Job `Reminder scheduler` done. 
+2022-12-27 17:00:25,347 15796 INFO ABCCompany odoo.addons.base.models.ir_cron: Starting job `Mail Marketing: Process queue`. 
+2022-12-27 17:00:25,409 15796 INFO ABCCompany odoo.addons.mass_mailing.models.mailing: Mass-mailing mailing.mailing(2,) targets sale.order, no opt out list available 
+2022-12-27 17:00:25,410 15796 INFO ABCCompany odoo.addons.mass_mailing.models.mailing: Mass-mailing mailing.mailing(2,) has already reached 13 sale.order emails 

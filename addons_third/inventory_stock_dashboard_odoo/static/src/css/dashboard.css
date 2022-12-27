@@ -163,11 +163,6 @@
     max-width: 100%;
 }
 
- /* new tile */
-
-body {
-    background-color: #ececec;
-}
 
 .accounts-dashboard-wrap .container {
     margin: 50px 0 0 100px;
@@ -958,10 +953,6 @@ text-align: center;
 }
 
 
- body{
-background:#eee;
-font-family: 'Raleway', sans-serif;
-}
 .main-part{
 width:100%;
 margin:0 auto;
