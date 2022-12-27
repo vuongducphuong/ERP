@@ -39,9 +39,7 @@
             'inventory_stock_dashboard_odoo/static/src/css/dashboard.css',
             'inventory_stock_dashboard_odoo/static/src/js/dashboard.js',
             'inventory_stock_dashboard_odoo/static/src/js/lib/Chart.bundle.js',
-        ],
-        'web.assets_qweb': [
-            'inventory_stock_dashboard_odoo/static/src/xml/dashboard.xml'
+            'inventory_stock_dashboard_odoo/static/src/xml/dashboard.xml',
         ],
     },
     'license': 'LGPL-3',

@@ -40,7 +40,7 @@ odoo.define("inventory_dashboard.dashboard", function (require) {
 
         willStart: function() {
             var self = this;
-            return $.when(ajax.loadLibs(this), this._super()).then(function() {
+            return $.when(ajax.loadLibs, this._super()).then(function() {
                 return ;
             });
         },
@@ -93,26 +93,26 @@ odoo.define("inventory_dashboard.dashboard", function (require) {
                     result_2 = value;
                     const colors = ["red", "blue","green","orange","purple","steel","rebecca","brown","pink","grey","black"];
 
-                    $('#set').append('<div class="col-sm-12 col-md-6 col-lg-3" id="' + result_1 +  '">
+                    $('#set').append('<div class="col-sm-12 col-md-6 col-lg-3" id="' + result_1 +  `">
                     <div class="dashboard-card dashboard-card--border-top dashboard-card--border-top-' + colors[g] +  '">
-                    <div class="dashboard-card__details"><span class="dashboard-card__title">' + result[3][result_1] + '</span>
-                    <span class="count-container">' + result_2 +  '</span></div> <ul class="dashboard-card__stats"></ul></div></div>');
+                    <div class="dashboard-card__details"><span class="dashboard-card__title">` + result[3][result_1] + `</span>
+                    <span class="count-container">` + result_2 +  '</span></div> <ul class="dashboard-card__stats"></ul></div></div>');
                     g++;
 
                     if (key in late) {
-                        $('#' + key +  ' .dashboard-card__stats').append('<li class="dashboard-card__stat_late" id="' + result_1 +  '">
+                        $('#' + key +  ' .dashboard-card__stats').append('<li class="dashboard-card__stat_late" id="' + result_1 +  `">
                         <div class="d-flex justify-content-between align-items-center text-dark text-decoration-none">
-                        <div class="dashboard-card__stat-title_late">Late</div><div class="dashboard-card__stat-count_late">' + result[1][key] + '</div></div></li>');
+                        <div class="dashboard-card__stat-title_late">Late</div><div class="dashboard-card__stat-count_late">` + result[1][key] + `</div></div></li>`);
                     }
                     if (key in waiting) {
-                        $('#' + key +  ' .dashboard-card__stats').append('<li class="dashboard-card__stat_waiting" id="' + result_1 +  '">
+                        $('#' + key +  ' .dashboard-card__stats').append('<li class="dashboard-card__stat_waiting" id="' + result_1 +  `">
                         <div class="d-flex justify-content-between align-items-center text-dark text-decoration-none">
-                        <div class="dashboard-card__stat-title_waiting">Waiting</div><div class="dashboard-card__stat-count_waiting">' + result[2][key] +  '</div></div></li>');
+                        <div class="dashboard-card__stat-title_waiting">Waiting</div><div class="dashboard-card__stat-count_waiting">` + result[2][key] +  '</div></div></li>');
                     }
                     if (key in backorder) {
-                        $('#' + key +  ' .dashboard-card__stats').append('<li class="dashboard-card__stat_backorder" id="' + result_1 +  '">
+                        $('#' + key +  ' .dashboard-card__stats').append('<li class="dashboard-card__stat_backorder" id="' + result_1 +  `">
                         <div class="d-flex justify-content-between align-items-center text-dark text-decoration-none">
-                        <div class="dashboard-card__stat-title_back">Backorder</div><div class="dashboard-card__stat-count_backorder">' + result[4][key] +  '</div></div></li>');
+                        <div class="dashboard-card__stat-title_back">Backorder</div><div class="dashboard-card__stat-count_backorder">` + result[4][key] +  '</div></div></li>');
                     }
                 });
                 var ctx = self.$("#operation");
@@ -480,13 +480,13 @@ odoo.define("inventory_dashboard.dashboard", function (require) {
                 method: "get_out_of_stock",
             }).then(function (result) {
                 if (result) {
-                $('#graphs').append('<div class="year_to_date_graph_div col-sm-12 col-md-6 my-4">
+                $('#graphs').append(`<div class="year_to_date_graph_div col-sm-12 col-md-6 my-4">
                 <div class="chart-container card-shadow" id="tiles"><div style="height: 20px; max-height: 20px;"><h2>Out of Stock Products</h2>
                 <button class="btn_info" id="out_of_stock_info" title="Show Details"><i class="fa fa-ellipsis-v"></i></button>
                 <table class="graph_details_table" id="out_of_stock_table"><tr><th>Products</th><th>Out of Quantity</th>
                 </tr></table>
                 </div><hr/><div class="graph_canvas" style="margin-top: 30px;"><canvas id="out_of_stock_graph" height="500px" width="150px"/>
-                </div></div></div>')
+                </div></div></div>`)
                 var ctx = self.$("#out_of_stock_graph");
                 var name = result.product_name // Add data values to array
                 var count = result.total_quantity
@@ -538,13 +538,13 @@ odoo.define("inventory_dashboard.dashboard", function (require) {
             }).then(function (result) {
 
                 if (result) {
-                $('#graphs').append('<div class="year_to_date_graph_div col-sm-12 col-md-6 my-4">
+                $('#graphs').append(`<div class="year_to_date_graph_div col-sm-12 col-md-6 my-4">
                 <div class="chart-container card-shadow" id="tiles"><div style="height: 20px; max-height: 20px;"><h2>Dead Stock</h2>
                 <button class="btn_info" id="dead_stock_info" title="Show Details"><i class="fa fa-ellipsis-v"></i></button>
                 <table class="graph_details_table" id="dead_stock_table"><tr><th>Products</th><th>Dead Quantity</th>
                 </tr></table>
                 </div><hr/><div class="graph_canvas" style="margin-top: 30px;"><canvas id="dead_stock_graph" height="500px" width="150px"/>
-                </div></div></div>')
+                </div></div></div>`)
                 var ctx = self.$("#dead_stock_graph");
                 var name = result.product_name // Add data values to array
                 var count = result.total_quantity
