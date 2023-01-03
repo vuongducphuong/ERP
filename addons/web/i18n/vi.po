@@ -4037,8 +4037,7 @@ msgstr "Vui lòng cập nhật phần dịch thuật của:"
 msgid ""
 "Please use the copy button to report the error to your support service."
 msgstr ""
-"Vui lòng sử dụng nút Sao chép để báo cáo lỗi đến nhà cung cấp dịch vụ của "
-"bạn."
+"Vui lòng sử dụng nút Sao chép để gửi nội dung thông báo lỗi tới bộ phận hỗ trợ phần mềm."
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.report_invoice_wizard_preview
